@@ -33,3 +33,14 @@ The notebook is kept private with the competition input attached and internet di
 - All folds completed with no convergence warnings. Combined OOF predictions were reused. No parameter search or extra candidates were added.
 - Full outputs: results/stage_02/. Reproduce with python scripts/feature_ablation.py --data-dir data.
 - Decision: keep character-only as a provisional development leader and combined as a reference; next inspect errors and test predeclared style features. The private Kaggle baseline stays unchanged.
+
+## Stage 03 — surface-style features
+
+- Prospective plan commit: 09e2fb41f37fd420caf3184d4d2512b864c0e3e7. Two fixed candidates, exact saved folds, no tuning.
+- 111 deterministic features; scaling is fitted inside each training fold.
+- Style-only: 29.2637%; character plus style: 35.4131%; references: character-only 30.8553%, combined 30.1877%.
+- Gain versus character-only: +4.5578 percentage points; paired 95% prompt-bootstrap interval +2.7783 to +6.3379. All five folds improve. These are development comparisons conditional on fitted predictions.
+- Improvement occurs in all three fixed length bins, but some per-model regressions remain. Claude Opus 4.8 recall drops from 24.00% to 16.67%.
+- All 20 fold records and 2,699 OOF rows saved; metrics independently reconciled; zero convergence warnings.
+- Frozen candidate source: notebooks/Name_That_LLM_Stage_03.ipynb and scripts/stage03_candidate.py. It passed private offline Kaggle verification in version 2, reproducing 35.41% (105.7-second successful run); baseline version 1 is preserved.
+- Full plan, results and caveats: results/stage_03/REPORT.md. No paid API usage or competition submission.
