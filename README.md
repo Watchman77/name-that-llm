@@ -4,9 +4,9 @@ Private competition workspace for reproducible LLM authorship attribution.
 
 ## Current stage
 
-Stage 02 is complete. On identical prompt-grouped folds: **character-only 30.86%**, **combined 30.19%**, **word-only 26.26%** balanced accuracy. The character-only lead is small and uncertain; both character-only and combined remain references. See [the full Stage 02 report](results/stage_02/REPORT.md) and [stage tracker](STAGES.md).
+Stage 03 local experiments are complete. The fixed **character + 111 style features** candidate achieved **35.41% balanced accuracy**, versus 30.86% for character-only and 30.19% for the original combined baseline. It improved all five saved prompt-grouped folds. These are development results; see [the full Stage 03 report](results/stage_03/REPORT.md) for uncertainty and regressions.
 
-The private [Kaggle baseline](https://www.kaggle.com/code/watchman777/name-that-llm-baseline-01?scriptVersionId=359150821) is still version 1. Stage 02 results are local development comparisons, not a competition submission.
+The frozen candidate passed [private offline Kaggle verification in version 2](https://www.kaggle.com/code/watchman777/name-that-llm-baseline-01?scriptVersionId=359158002), reproducing 35.41%. Baseline version 1 is preserved. See [the stage tracker](STAGES.md). No competition submission has been made.
 
 ## First baseline
 
