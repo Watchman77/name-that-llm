@@ -23,3 +23,13 @@ Repeated tuning makes these folds development data. Reserve fresh prompts or use
 ## Kaggle setup
 
 The notebook is kept private with the competition input attached and internet disabled. Removed the preview sample-ID equality check: the hidden test can have different IDs and row counts. Predictions are checked against the actual supplied test file. Model features, parameters and validation folds are unchanged.
+
+## Stage 02 — fixed feature comparison
+
+- Plan recorded before execution: commit aafa46b8ab9fdef40bb4f88062414524f27a5f8b.
+- Same data hash and exact saved folds; only the TF-IDF feature branch changed.
+- Word-only: 26.2612%; character-only: 30.8553%; original combined reference: 30.1877%.
+- Character lead: +0.6677 percentage points, paired prompt-bootstrap 95% interval −0.5194 to +1.9673. Advantage is not established by this comparison.
+- All folds completed with no convergence warnings. Combined OOF predictions were reused. No parameter search or extra candidates were added.
+- Full outputs: results/stage_02/. Reproduce with python scripts/feature_ablation.py --data-dir data.
+- Decision: keep character-only as a provisional development leader and combined as a reference; next inspect errors and test predeclared style features. The private Kaggle baseline stays unchanged.
