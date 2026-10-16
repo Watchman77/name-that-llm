@@ -54,3 +54,14 @@ The notebook is kept private with the competition input attached and internet di
 - Only one submission made. No recipe changes after seeing the score, no paid API usage, and no manual final-selection change.
 - Decision: keep S01 frozen and predeclare a compatible offline pretrained-encoder comparison on the same development folds. Choose trials using development evidence rather than repeated leaderboard feedback.
 - Full record and prospective feedback protocol: `results/submissions/`.
+
+## Stage 04 — frozen MPNet comparison — 17 October 2026 UK time
+
+- Protocol committed before embeddings/fits: 9d34e75b0c2b2faff0f995bd441a8a3297bd77c4. Implementation committed before execution; exact original data hash and prompt-grouped folds retained.
+- Public checkpoint: sentence-transformers/all-mpnet-base-v2, revision e8c3b32edf5434bc2275fc9bab85f82640a19130, Apache-2.0. Float32 fixed encoder, mask-aware mean pooling and L2 normalization; local-only/offline modelling after resource preparation.
+- MPNet alone: **14.5946%**. Character/style plus MPNet: **34.1153%**. Frozen Stage 03 reference: **35.4131%**.
+- Combined candidate difference: **−1.2978 percentage points**, conditional paired prompt-bootstrap 95% interval **−2.6324 to −0.0370**. Three folds worsened, one tied, one improved. All three predeclared length groups worsened; mixed class regressions/gains retained.
+- Ten new fold fits completed, five reference scores reused; 545.1 seconds CPU; zero fit warnings and zero truncated passages (longest 381 tokens; cap 384). No paid services, extra candidate or official submission.
+- Decision: reject both additions and retain Stage 03/S01. This result does not establish that supervised contextual encoders fail; the experiment used a frozen semantic encoder, fixed C=1 and equal normalized block weights.
+- Evidence and independently executed evaluation companion: results/stage_04/ and notebooks/Stage_04_Evaluation.ipynb.
+- Target clarified: first in final private evaluation; public leader observed at 58.4%, 23.0 points above S01. Plan for a distinct fixed supervised DeBERTa-v3-base trial: plans/STAGE_04B_SUPERVISED_ENCODER.md. That trial is **planned, not executed**.
