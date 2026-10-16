@@ -1,0 +1,4 @@
+variant,balanced_accuracy,seconds,reused_predictions
+character_plus_style,0.35413124533929907,,True
+character_style_mpnet,0.3411533681332339,41.96937923900259,False
+mpnet_only,0.1459458115833955,11.334792818001006,False
