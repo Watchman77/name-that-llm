@@ -1,0 +1,15 @@
+{
+  "submission_label": "S01",
+  "candidate": "Stage 03 character TF-IDF + 111 style features",
+  "kaggle_notebook_version": 2,
+  "script_version_id": 359158002,
+  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-baseline-01?scriptVersionId=359158002",
+  "submissions_url": "https://www.kaggle.com/competitions/name-that-llm/submissions",
+  "description": "S01: frozen Stage 03 character TF-IDF + 111 style features; C=1 balanced LinearSVC; prompt-grouped CV=0.354131; no external data.",
+  "development_balanced_accuracy": 0.35413124533929907,
+  "candidate_source_sha256": "bee527c28fdc4a163c023d2a560d9a45066c52de8017dd69472f8e9cdbdfe294",
+  "status": "Notebook Running",
+  "public_score": null,
+  "private_score": null,
+  "interpretation": "Public score is feedback on the public portion only. Do not change the frozen candidate or infer final private standing from this one score."
+}
