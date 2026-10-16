@@ -8,8 +8,20 @@
   "description": "S01: frozen Stage 03 character TF-IDF + 111 style features; C=1 balanced LinearSVC; prompt-grouped CV=0.354131; no external data.",
   "development_balanced_accuracy": 0.35413124533929907,
   "candidate_source_sha256": "bee527c28fdc4a163c023d2a560d9a45066c52de8017dd69472f8e9cdbdfe294",
-  "status": "Notebook Running",
-  "public_score": null,
+  "status": "Succeeded",
+  "public_score": 0.354,
   "private_score": null,
-  "interpretation": "Public score is feedback on the public portion only. Do not change the frozen candidate or infer final private standing from this one score."
+  "interpretation": "Public score is feedback on the public portion only. Do not change the frozen candidate or infer final private standing from this one score.",
+  "public_score_display": "0.354",
+  "score_observed_utc": "2026-10-16T23:10:25.304575+00:00",
+  "displayed_gap_percentage_points": -0.013124533929909088,
+  "precision_note": "Public score is recorded exactly as displayed to three decimal places; the small arithmetic gap is below that display resolution and should not be overinterpreted.",
+  "public_rank_observed": 651,
+  "ranked_teams_observed": 914,
+  "top_ten_public_cutoff_observed": 0.549,
+  "public_leader_score_observed": 0.584,
+  "leaderboard_public_fraction_approx": 0.4,
+  "leaderboard_private_fraction_approx": 0.6,
+  "rank_observed_utc": "2026-10-16T23:11:20.117215+00:00",
+  "public_rank_note": "Time-specific public rank; final standing depends on private evaluation."
 }
