@@ -1,0 +1,83 @@
+{
+  "stage": "03_style_features",
+  "plan_commit": "09e2fb41f37fd420caf3184d4d2512b864c0e3e7",
+  "source_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "previous_predictions_sha256": "6473323b7fb3fd095c52730f03e402d684405c7a5a920e3fb751a778f330cf85",
+  "code_sha256": {
+    "style_comparison.py": "eafe85d2a6982f9f08a6f0e2d523f724133cfc61546f6a7cb93fe0d17f1fd6a2",
+    "style_features.py": "674e69e9ceb6c016377f1e960e2aa53845c10574e09e191eb7ad1d18b612ec7a"
+  },
+  "executed_utc": "2026-10-16T22:40:56.537724+00:00",
+  "comparisons": [
+    {
+      "variant": "style_only",
+      "balanced_accuracy": 0.2926373353218991,
+      "seconds": 5.044025968003552,
+      "convergence_warnings": 0
+    },
+    {
+      "variant": "character_plus_style",
+      "balanced_accuracy": 0.35413124533929907,
+      "seconds": 34.5891721989974,
+      "convergence_warnings": 0
+    },
+    {
+      "variant": "character_only",
+      "balanced_accuracy": 0.30855331841909023,
+      "seconds": null,
+      "convergence_warnings": 0
+    },
+    {
+      "variant": "combined",
+      "balanced_accuracy": 0.30187670892368884,
+      "seconds": null,
+      "convergence_warnings": 0
+    }
+  ],
+  "intervals": [
+    {
+      "candidate": "style_only",
+      "reference": "character_only",
+      "delta_balanced_accuracy": -0.01591598309719111,
+      "lower_95": -0.034831220482227185,
+      "upper_95": 0.004086689038031272
+    },
+    {
+      "candidate": "style_only",
+      "reference": "combined",
+      "delta_balanced_accuracy": -0.009239373601789724,
+      "lower_95": -0.028526401401401436,
+      "upper_95": 0.010778714939429222
+    },
+    {
+      "candidate": "character_plus_style",
+      "reference": "character_only",
+      "delta_balanced_accuracy": 0.045577926920208844,
+      "lower_95": 0.027782624906785947,
+      "upper_95": 0.0633786286286286
+    },
+    {
+      "candidate": "character_plus_style",
+      "reference": "combined",
+      "delta_balanced_accuracy": 0.05225453641561023,
+      "lower_95": 0.03373317194745771,
+      "upper_95": 0.07156881881881878
+    }
+  ],
+  "feature_count": 111,
+  "warnings": [],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261016,
+    "unit": "prompt_id",
+    "limitation": "Conditional on fitted OOF predictions; no refitting/selection uncertainty or multiplicity correction."
+  },
+  "status": "Development only; no Kaggle submission, paid APIs or new data."
+}
