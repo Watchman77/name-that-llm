@@ -1,0 +1,67 @@
+{
+  "stage": "04_frozen_encoder",
+  "status": "complete",
+  "plan_commit": "9d34e75b0c2b2faff0f995bd441a8a3297bd77c4",
+  "started_utc": "2026-10-16T23:20:56.920423+00:00",
+  "source_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "previous_predictions_sha256": "15ca5d9d95fead2690a6c81559a3862f12143f83ad65684d1c584a2827e92ab3",
+  "code_sha256": {
+    "frozen_encoder_comparison.py": "3618775c64da9af5497ab2b4a8d369974aadae0a457be1accbb834056db559ba",
+    "style_comparison.py": "eafe85d2a6982f9f08a6f0e2d523f724133cfc61546f6a7cb93fe0d17f1fd6a2",
+    "style_features.py": "674e69e9ceb6c016377f1e960e2aa53845c10574e09e191eb7ad1d18b612ec7a"
+  },
+  "comparisons": [
+    {
+      "variant": "mpnet_only",
+      "balanced_accuracy": 0.1459458115833955,
+      "seconds": 11.334792818001006,
+      "reused_predictions": false
+    },
+    {
+      "variant": "character_style_mpnet",
+      "balanced_accuracy": 0.3411533681332339,
+      "seconds": 41.96937923900259,
+      "reused_predictions": false
+    },
+    {
+      "variant": "character_plus_style",
+      "balanced_accuracy": 0.35413124533929907,
+      "seconds": null,
+      "reused_predictions": true
+    }
+  ],
+  "intervals": [
+    {
+      "candidate": "mpnet_only",
+      "reference": "character_plus_style",
+      "delta_balanced_accuracy": -0.20818543375590357,
+      "lower_95": -0.22717894935752078,
+      "upper_95": -0.19111111111111106
+    },
+    {
+      "candidate": "character_style_mpnet",
+      "reference": "character_plus_style",
+      "delta_balanced_accuracy": -0.012977877206065191,
+      "lower_95": -0.026324206757092718,
+      "upper_95": -0.0003703703703704625
+    }
+  ],
+  "warnings": [],
+  "total_seconds": 545.1337235009996,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "torch": "2.8.0+cpu",
+    "transformers": "4.56.2"
+  },
+  "bootstrap": {
+    "unit": "prompt_id",
+    "resamples": 2000,
+    "seed": 20261016,
+    "limitation": "Conditional development predictions; no refitting, selection or multiplicity correction."
+  },
+  "finished_utc": "2026-10-16T23:30:02.054166+00:00"
+}
