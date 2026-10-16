@@ -44,3 +44,13 @@ The notebook is kept private with the competition input attached and internet di
 - All 20 fold records and 2,699 OOF rows saved; metrics independently reconciled; zero convergence warnings.
 - Frozen candidate source: notebooks/Name_That_LLM_Stage_03.ipynb and scripts/stage03_candidate.py. It passed private offline Kaggle verification in version 2, reproducing 35.41% (105.7-second successful run); baseline version 1 is preserved.
 - Full plan, results and caveats: results/stage_03/REPORT.md. No paid API usage or competition submission.
+
+## S01 — first official competition submission — 16 October 2026
+
+- Frozen Stage 03 candidate, private Kaggle version 2, scriptVersionId 359158002; output `submission.parquet`. Source SHA256: bee527c28fdc4a163c023d2a560d9a45066c52de8017dd69472f8e9cdbdfe294.
+- Hidden-test rerun status: **Succeeded**. Public balanced accuracy, exactly as displayed: **0.354 (35.4%)**. Prompt-grouped development score: 0.35413124533929907. Agreement is at display precision; the small arithmetic difference is below that resolution.
+- Public rank observed at 2026-10-16T23:11:20Z: **651 of 914 ranked teams**. Tenth-place public score: 0.549; leader: 0.584. The gap to tenth was about 19.5 percentage points. Rank and cutoffs can change.
+- Approximately 40% public / 60% private test split as described on the leaderboard; final private score and ranking are unknown. No hidden per-class labels are available.
+- Only one submission made. No recipe changes after seeing the score, no paid API usage, and no manual final-selection change.
+- Decision: keep S01 frozen and predeclare a compatible offline pretrained-encoder comparison on the same development folds. Choose trials using development evidence rather than repeated leaderboard feedback.
+- Full record and prospective feedback protocol: `results/submissions/`.
