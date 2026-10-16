@@ -1,0 +1,5 @@
+variant,balanced_accuracy,seconds,convergence_warnings
+character_plus_style,0.35413124533929907,34.5891721989974,0
+character_only,0.30855331841909023,,0
+combined,0.30187670892368884,,0
+style_only,0.2926373353218991,5.044025968003552,0
