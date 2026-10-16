@@ -1,0 +1,57 @@
+{
+  "stage": "02_feature_comparison",
+  "source_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "baseline_predictions_sha256": "284bcb713ddf37a0daa153b78de3cbf3727c7fdfa0396aaa80eabce042e447fa",
+  "plan_commit": "aafa46b8ab9fdef40bb4f88062414524f27a5f8b",
+  "comparisons": [
+    {
+      "variant": "word_only",
+      "balanced_accuracy": 0.2626124782500622,
+      "seconds": 5.200888357998338,
+      "convergence_warnings": 0
+    },
+    {
+      "variant": "character_only",
+      "balanced_accuracy": 0.30855331841909023,
+      "seconds": 31.95362678100355,
+      "convergence_warnings": 0
+    },
+    {
+      "variant": "combined",
+      "balanced_accuracy": 0.30187670892368884,
+      "seconds": null,
+      "convergence_warnings": 0
+    }
+  ],
+  "paired_intervals": {
+    "word_only": {
+      "delta_vs_combined": -0.039264230673626666,
+      "paired_prompt_bootstrap_95_percentile": [
+        -0.052237296860618995,
+        -0.02594544544544552
+      ]
+    },
+    "character_only": {
+      "delta_vs_combined": 0.006676609495401387,
+      "paired_prompt_bootstrap_95_percentile": [
+        -0.005193943943944048,
+        0.019672818791946284
+      ]
+    }
+  },
+  "warnings": [],
+  "bootstrap": {
+    "resamples": 2000,
+    "unit": "prompt_id",
+    "seed": 20261016,
+    "limitation": "Conditional on fixed OOF predictions; does not measure refitting or model-selection uncertainty."
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0"
+  },
+  "status": "Development comparisons only. No Kaggle submission or paid API usage."
+}
