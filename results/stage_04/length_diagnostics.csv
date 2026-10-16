@@ -1,0 +1,10 @@
+variant,word_count_bin,rows,classes_present,balanced_accuracy_present_classes
+mpnet_only,<=80 words,1019,18,0.10742236744449309
+mpnet_only,81-150 words,929,18,0.1603967131323782
+mpnet_only,>150 words,751,18,0.17972845936418894
+character_style_mpnet,<=80 words,1019,18,0.27014927365618413
+character_style_mpnet,81-150 words,929,18,0.35553519671453704
+character_style_mpnet,>150 words,751,18,0.40844566620260236
+character_plus_style,<=80 words,1019,18,0.2805884838431024
+character_plus_style,81-150 words,929,18,0.36226088734477657
+character_plus_style,>150 words,751,18,0.4342234631339564
