@@ -1,0 +1,18 @@
+# Local competition data and credentials
+data/
+train.csv
+test.csv
+sample_submission.parquet
+*.zip
+.env
+.env.*
+!.env.example
+kaggle.json
+# Generated runs and caches
+/baseline_outputs/
+/submission.parquet
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.DS_Store

@@ -1,0 +1,60 @@
+{
+  "experiment": "baseline_01_word_char_linear_svm",
+  "balanced_accuracy": 0.30187670892368884,
+  "fold_results": [
+    {
+      "fold": 1,
+      "validation_rows": 540,
+      "validation_prompts": 30,
+      "balanced_accuracy": 0.2833333333333333,
+      "seconds": 7.105269689003762
+    },
+    {
+      "fold": 2,
+      "validation_rows": 540,
+      "validation_prompts": 30,
+      "balanced_accuracy": 0.29074074074074074,
+      "seconds": 7.161233168000763
+    },
+    {
+      "fold": 3,
+      "validation_rows": 540,
+      "validation_prompts": 30,
+      "balanced_accuracy": 0.3037037037037037,
+      "seconds": 7.062971842999104
+    },
+    {
+      "fold": 4,
+      "validation_rows": 540,
+      "validation_prompts": 30,
+      "balanced_accuracy": 0.32037037037037036,
+      "seconds": 6.277997037999739
+    },
+    {
+      "fold": 5,
+      "validation_rows": 539,
+      "validation_prompts": 30,
+      "balanced_accuracy": 0.31130268199233707,
+      "seconds": 6.614650771996821
+    }
+  ],
+  "source_sha256": {
+    "train.csv": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+    "test.csv": "4545aa3a3459f4c0724f97ad5bd06c4caa3506bdfea5fab905e8203184fc0c57",
+    "sample_submission.parquet": "ccf86796b80fd7f83d8463664603fd1208e17559abcf416f198776b819646188"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "sklearn": "1.8.0",
+    "pyarrow": "26.0.0"
+  },
+  "convergence_warnings": [],
+  "full_fit_preview_seconds": 7.728181685000891,
+  "total_seconds": 42.85150320100365,
+  "executed_utc": "2026-10-16T21:50:05.032439+00:00",
+  "validation": "GroupKFold(n_splits=5) by prompt_id; fold-local vocabulary and IDF",
+  "test_status": "Three-row preview only. Not submitted to Kaggle. No leaderboard result."
+}
