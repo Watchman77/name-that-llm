@@ -2,9 +2,13 @@
 
 Private competition workspace for reproducible LLM authorship attribution.
 
+The competitive goal is **first place in the final private evaluation**. The public leading score was 58.4% at the 17 October 2026 UK-time check; this is a benchmark, not a fixed winning threshold.
+
 ## Current stage
 
-Stage 03 local experiments are complete. The fixed **character + 111 style features** candidate achieved **35.41% balanced accuracy**, versus 30.86% for character-only and 30.19% for the original combined baseline. It improved all five saved prompt-grouped folds. These are development results; see [the full Stage 03 report](results/stage_03/REPORT.md) for uncertainty and regressions.
+The best development reference remains the Stage 03 **character + 111 style features** candidate at **35.41% balanced accuracy**, versus 30.86% for character-only and 30.19% for the original combined baseline. It improved all five saved prompt-grouped folds. See [the Stage 03 report](results/stage_03/REPORT.md) for uncertainty and regressions.
+
+The fixed Stage 04 frozen MPNet experiment is complete: **14.59%** alone and **34.12%** added to character/style. Both additions are rejected. All ten new fold fits completed with zero fit warnings and zero truncated passages. See [the complete Stage 04 report](results/stage_04/REPORT.md) and [executed evaluation companion](notebooks/Stage_04_Evaluation.ipynb). The [next supervised DeBERTa protocol](plans/STAGE_04B_SUPERVISED_ENCODER.md) is defined but has not been executed. These remain development comparisons.
 
 The frozen candidate passed [private offline Kaggle verification in version 2](https://www.kaggle.com/code/watchman777/name-that-llm-baseline-01?scriptVersionId=359158002), reproducing 35.41%. Its first official submission, **S01**, also succeeded and scored **0.354 (35.4%) public balanced accuracy**. Public rank was 651 of 914 ranked teams at the recorded check; the final private score remains unknown. See [the submission record](results/submissions/S01_REPORT.md) and [stage tracker](STAGES.md). Baseline version 1 is preserved.
 
