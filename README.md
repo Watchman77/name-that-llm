@@ -6,7 +6,7 @@ Private competition workspace for reproducible LLM authorship attribution.
 
 Stage 03 local experiments are complete. The fixed **character + 111 style features** candidate achieved **35.41% balanced accuracy**, versus 30.86% for character-only and 30.19% for the original combined baseline. It improved all five saved prompt-grouped folds. These are development results; see [the full Stage 03 report](results/stage_03/REPORT.md) for uncertainty and regressions.
 
-The frozen candidate passed [private offline Kaggle verification in version 2](https://www.kaggle.com/code/watchman777/name-that-llm-baseline-01?scriptVersionId=359158002), reproducing 35.41%. Baseline version 1 is preserved. See [the stage tracker](STAGES.md). No competition submission has been made.
+The frozen candidate passed [private offline Kaggle verification in version 2](https://www.kaggle.com/code/watchman777/name-that-llm-baseline-01?scriptVersionId=359158002), reproducing 35.41%. Its first official submission, **S01**, also succeeded and scored **0.354 (35.4%) public balanced accuracy**. Public rank was 651 of 914 ranked teams at the recorded check; the final private score remains unknown. See [the submission record](results/submissions/S01_REPORT.md) and [stage tracker](STAGES.md). Baseline version 1 is preserved.
 
 ## First baseline
 
