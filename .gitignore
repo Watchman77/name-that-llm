@@ -11,6 +11,8 @@ kaggle.json
 # Generated runs and caches
 /baseline_outputs/
 /submission.parquet
+/models/
+/encoder-cache/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
