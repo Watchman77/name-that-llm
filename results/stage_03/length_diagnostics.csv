@@ -1,0 +1,13 @@
+variant,word_count_bin,rows,classes_present,balanced_accuracy_present_classes
+style_only,<=80 words,1019,18,0.22245452334774907
+style_only,81-150 words,929,18,0.3046215813159854
+style_only,>150 words,751,18,0.36223749136881955
+character_plus_style,<=80 words,1019,18,0.2805884838431024
+character_plus_style,81-150 words,929,18,0.36226088734477657
+character_plus_style,>150 words,751,18,0.4342234631339564
+character_only,<=80 words,1019,18,0.2399290756295189
+character_only,81-150 words,929,18,0.3158106804564385
+character_only,>150 words,751,18,0.3833621958480801
+combined,<=80 words,1019,18,0.23590647929696706
+combined,81-150 words,929,18,0.320194182114216
+combined,>150 words,751,18,0.36190804951951
