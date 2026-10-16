@@ -170,14 +170,14 @@ pd.testing.assert_frame_equal(submission, pd.read_parquet('submission.parquet'))
 if (DATA_DIR/'sample_submission.parquet').is_file():
     example = pd.read_parquet(DATA_DIR/'sample_submission.parquet')
     assert list(example.columns)==['id','model']
-    assert set(example.id)==set(submission.id)
-print('Created submission.parquet:', len(submission), 'preview rows; no hidden-test score.')
+    # Preview example IDs do not constrain the hidden test supplied by Kaggle.
+print('Created submission.parquet:', len(submission), 'rows; scoring is handled by Kaggle.')
 metrics={'experiment':'baseline_01_word_char_linear_svm', 'balanced_accuracy':score,
     'fold_results':fold_results, 'source_sha256':hashes, 'environment':VERSIONS,
     'convergence_warnings':convergence_warnings, 'full_fit_preview_seconds':time.perf_counter()-started,
     'total_seconds':time.perf_counter()-RUN_START, 'executed_utc':datetime.now(timezone.utc).isoformat(),
     'validation':'GroupKFold(n_splits=5) by prompt_id; fold-local vocabulary and IDF',
-    'test_status':'Three-row preview only. Not submitted to Kaggle. No leaderboard result.'}
+    'test_rows':len(test), 'test_status':'Output generated; any official score is provided by Kaggle.'}
 (OUT/'baseline_metrics.json').write_text(json.dumps(metrics, indent=2))
 print(f"Total notebook computation: {metrics['total_seconds']:.1f} seconds")
 

@@ -19,3 +19,7 @@
 3. A compatible offline pretrained encoder if simpler features plateau.
 
 Repeated tuning makes these folds development data. Reserve fresh prompts or use nested evaluation for strong research claims. Do not infer prize placement from the first local result.
+
+## Kaggle setup
+
+The notebook is kept private with the competition input attached and internet disabled. Removed the preview sample-ID equality check: the hidden test can have different IDs and row counts. Predictions are checked against the actual supplied test file. Model features, parameters and validation folds are unchanged.
