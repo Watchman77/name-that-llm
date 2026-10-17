@@ -1,0 +1,16 @@
+{
+  "stage": "04B",
+  "status": "Kaggle_Save_and_Run_All_launched",
+  "trial_label": "trial_01",
+  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-04b-deberta",
+  "notebook_version": 1,
+  "internet_enabled": false,
+  "accelerator": "GPU T4 x2; code restricts computation to cuda:0",
+  "resources_version_id": 359317729,
+  "protocol_clarification_commit": "5563d45ef49311afa7ca0cacc184bb2ed46f3ba8",
+  "runner_commit": "8603667afbe1d404aec4f9855ab09be5d3ef412e",
+  "gpu_preflight_confirmed": false,
+  "supervised_score": null,
+  "official_submission_made": false,
+  "recorded_utc": "2026-10-17T10:16:38.563745+00:00"
+}
