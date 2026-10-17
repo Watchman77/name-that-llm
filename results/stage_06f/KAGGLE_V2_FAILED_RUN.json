@@ -1,0 +1,23 @@
+{
+  "status": "FAILED_PRESERVE_OUTPUTS",
+  "script_version_id": 359520233,
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06f-pair-diagnostics/log?scriptVersionId=359520233",
+  "observed_utc": "2026-10-17T23:16:17.105547+00:00",
+  "kaggle_terminal_seconds": 19.5,
+  "accelerator": "None",
+  "preexecution_git_commit": "baee805c080a06c6d797e68c0a0c1a424756d3a1",
+  "phase": "VERIFY_AND_DIAGNOSE_SAVED_EVIDENCE",
+  "blocker": "Expected byte hash was computed from a JSON-tree reconstruction; field-order mismatch is supported by the original writer and fresh Kaggle preview, pending strict runtime verification.",
+  "reconstruction_original_sha256": "626b428135f4ff377d593de29c716042a07593c74678893f874c91b7b71e2bbf",
+  "writer_derived_manifest_sha256": "a5fcffaef27f4942af8a679370c30c247b8d872b4b6d711eccc0101ea7006dbd",
+  "writer_derived_manifest_bytes": 2883,
+  "actual_source_byte_hash_confirmed": false,
+  "diagnostic_tables_produced": false,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "official_submission": false,
+  "failed_source_preserved_in_git": true,
+  "failed_quick_source_export": "KAGGLE_V1_SOURCE_EXPORT.ipynb",
+  "failed_v2_source_matches_v1": true,
+  "log_sha256": "0246f58faec4049eb7d07754a4984ca4dd874b65403be712f31ea0cd0b059103"
+}

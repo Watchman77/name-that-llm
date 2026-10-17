@@ -45,7 +45,7 @@ class IndependentContract(unittest.TestCase):
                                 and k.value.value is False for k in n.keywords))
 
     def test_immutable_hash_constants_match_archived_e_outputs(self):
-        for name in ('ensemble_result.json', 'output_manifest.json',
+        for name in ('ensemble_result.json',
                      'raw_control_scenario1_confusion.csv', 'raw_control_scenario3_confusion.csv',
                      'raw_control_scenario6_confusion.csv'):
             actual = hashlib.sha256((ROOT / 'results/stage_06e' / name).read_bytes()).hexdigest()
@@ -56,6 +56,23 @@ class IndependentContract(unittest.TestCase):
         result = json.loads((ROOT / 'results/stage_06e/ensemble_result.json').read_text())
         self.assertEqual(result['fixed_weights'], SUBJECT.WEIGHTS)
         self.assertEqual(SUBJECT.PAIR, ('gemini-3.7-flash', 'gemini-3.8-flash'))
+
+    def test_writer_reconstructed_manifest_candidate_is_semantically_identical(self):
+        # The archive is a writer reconstruction, not a downloaded original.
+        # Original Kaggle bytes will be verified by the unchanged strict runtime gate.
+        prior = ROOT / 'results/stage_06e/output_manifest.json'
+        candidate = ROOT / 'results/stage_06f/E_MANIFEST_WRITER_RECONSTRUCTED.json'
+        self.assertEqual(hashlib.sha256(prior.read_bytes()).hexdigest(),
+                         '626b428135f4ff377d593de29c716042a07593c74678893f874c91b7b71e2bbf')
+        old, reconstructed = json.loads(prior.read_text()), json.loads(candidate.read_text())
+        self.assertEqual(old, reconstructed)
+        self.assertEqual(len(reconstructed), 20)
+        expected = {key: dict(sha256=value['sha256'], bytes=value['bytes'])
+                    for key, value in sorted(old.items())}
+        exact = (json.dumps(expected, indent=2, ensure_ascii=False, allow_nan=False) + '\n').encode()
+        self.assertEqual(candidate.read_bytes(), exact)
+        self.assertEqual(hashlib.sha256(exact).hexdigest(), SUBJECT.EXPECTED_HASHES['output_manifest.json'])
+        self.assertTrue(all(list(value) == ['sha256', 'bytes'] for value in reconstructed.values()))
 
     def test_confusion_matches_hand_count(self):
         got = SUBJECT.fixed_confusion(np.array([0, 0, 1, 1, 2]),

@@ -1,0 +1,42 @@
+{
+  "status": "PASS_INDEPENDENT_SINGLE_HASH_REPAIR_AND_PACKAGE_REVIEW",
+  "source_sha256": {
+    "scripts/stage06f_pair_diagnostics.py": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+    "scripts/build_stage06f_package.py": "6f17219976abd51ce3f4248d2108819053633d4c4d9f4cf45f6c8d7d3aaa8dc9",
+    "scripts/kaggle_stage06f_runner.py": "c7d65459afe03ac0fd70bc4804d79058035655e8797b69e2bf615ef331c12c2b",
+    "notebooks/Stage_06F_Pair_Diagnostics.ipynb": "b93883cb564fbb52dd24eddef90ff94efc7704760a3f9ba2f6559fde269da6d5",
+    "plans/STAGE_06F_PAIR_DIAGNOSTICS.md": "a62a1f2e70c061b9b5c6b4be1825f3f81e148a0a3b6c37f36d12899fb8432d29",
+    "tests/test_stage06f_independent_contract.py": "188c1435cbdffefc31508f64339e8c3fd7fec0213eca76c5597625b1c57a3334",
+    "results/stage_06f/EXECUTION_FREEZE.json": "dec901a2424ddb18159366071dc5b3c5a7019572912252c9bd786e649b294f47",
+    "results/stage_06f/PACKAGING.json": "6f6539c5134b52d4be18738112763daf9f14114921f3d53acd49222696b06e9d",
+    "results/stage_06f/E_MANIFEST_WRITER_RECONSTRUCTED.json": "a5fcffaef27f4942af8a679370c30c247b8d872b4b6d711eccc0101ea7006dbd"
+  },
+  "previous_source_sha256": "b264d2f7398fda6127c306057c2e41f3d170cd430bd1d115189f7ddf40fa8d64",
+  "previous_builder_sha256": "751eeaeca31541fdc2385dc6620cf26ef8d5b6e378973f42d2af6da4e3cdb2f6",
+  "tests_run": 23,
+  "fixture_report": "results/stage_06f/INDEPENDENT_REPAIR_FIXTURES.json",
+  "original_source_export_sha256": "7e527ec7f7eaa58967af02e71eaea20e614501434a7b783f7edd2bfec441fa79",
+  "checks": [
+    "OriginalfailedV2source extracted from savedV1notebook source literal; repaired diagnostic equals exact onehashstringreplacement, allmath/gates unchanged.",
+    "Current builder with reversehashreplacement has exact oldfrozenbuilderSHA; no other change.",
+    "Old freeze and packaging snapshots retain exact original hashes; savedV1embeddedfreeze matches old snapshot byteforbyte.",
+    "Candidate manifest semantically equals all20oldrecords; frozenEwriter order sha256,bytes and freshrootpreview justify reconstructedstrictcandidate; prior626b recoveryrepresentation remains unchanged.",
+    "23 independent nofit contractfixtures PASS, including margin orientation, routing falseentries, neutral inactivecenters, repeated-rowpopulation, jointbootstrap and endpointinclusivebins.",
+    "New source/plan/freeze/hash literals, CPU/offline twoinputs, all5empty cells, runner concatenation and inert deterministic package regeneration independently verified."
+  ],
+  "repair_keeps_exact_file_hash_gate": true,
+  "any_numeric_or_prediction_gate_relaxed": false,
+  "actual_original_manifest_byte_hash_verified": false,
+  "model_fits_performed": 0,
+  "model_inference_calls_performed": 0,
+  "github_mutations_performed": false,
+  "browser_actions_performed": false,
+  "required_before_retry": [
+    "Root must freeze persisted repaired source and verify saved private immutable retry notebook exact cells/inputpins/CPU/offline.",
+    "Attachedoriginalmanifest must match stricta5fc candidate at runtime before diagnostics; furthermismatch remains preserved failure."
+  ],
+  "limits": [
+    "Authoritativepreview and frozenwriter support expectedbyteorder; rawdownload not available. Sourceinputhash completion is notclaimed before runtimegate PASS.",
+    "No actualF diagnostic result or numericNPZ independently evaluated; all evidence remains developmentproxy."
+  ]
+}

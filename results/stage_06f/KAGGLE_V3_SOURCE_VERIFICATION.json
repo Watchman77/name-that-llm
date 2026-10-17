@@ -1,0 +1,57 @@
+{
+  "status": "VERIFIED_SAVED_REPAIR_SOURCE_NOT_EXECUTED",
+  "observed_utc": "2026-10-17T23:18:12.320621+00:00",
+  "script_version_id": 359521070,
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06f-pair-diagnostics?scriptVersionId=359521070",
+  "version_type": "Quick Save",
+  "full_cell_sources_match_reviewed_package": true,
+  "kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceId": 170484,
+        "sourceType": "competition"
+      },
+      {
+        "sourceId": 359514801,
+        "sourceType": "kernelVersion"
+      }
+    ],
+    "isGpuEnabled": false,
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook"
+  },
+  "all_execution_counts_null": true,
+  "all_outputs_empty": true,
+  "cells": [
+    {
+      "index": 0,
+      "sha256": "239e66a5dd6941ab6a13816b2c67b43c619a7befa2a0825ccd0daaea66761157",
+      "characters": 362
+    },
+    {
+      "index": 1,
+      "sha256": "146d08d96b88037627faa7a84617d6938e6e53cdbcb8105e9540a797c60f4454",
+      "characters": 596
+    },
+    {
+      "index": 2,
+      "sha256": "847dbf95af6f8301d20006c401beec66554a51f485ad9a0c242d802d534b2b0f",
+      "characters": 764
+    },
+    {
+      "index": 3,
+      "sha256": "de3008fb4515354052a02a3cef8b0ff679a7941229d9ca804f4ee9edbc68ad6b",
+      "characters": 37843
+    },
+    {
+      "index": 4,
+      "sha256": "cea9b8fb3d54f6abff1a2a13e2c4c529f6dd5d2aab855e0f3655e40c73fca53a",
+      "characters": 3807
+    }
+  ],
+  "source_export_sha256": "db6479c65da04b078d064b1fda27ab6ae8ebb13203d4aa2cfdae61bc2205ca0a",
+  "private_visibility": "Previously observed selected Private; sharing unchanged",
+  "official_submission_performed": false
+}

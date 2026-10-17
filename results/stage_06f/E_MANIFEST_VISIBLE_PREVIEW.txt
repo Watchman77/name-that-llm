@@ -1,0 +1,82 @@
+"root":{20 items
+"balanced_candidate_scenario1_confusion.csv":{2 items
+"sha256":string"ca0a0e0b3686542af99a99df321486d3e68200629e3c3e437a60209fb9229fef"
+"bytes":int1227
+}
+"balanced_candidate_scenario3_confusion.csv":{2 items
+"sha256":string"256646602089482e5412be6044b9ce950b2cd999857330cdb476e5b4e5e433ec"
+"bytes":int1219
+}
+"balanced_candidate_scenario6_confusion.csv":{2 items
+"sha256":string"464f71cd3e9d66f55115ee4a54fef00daa67ac6a2a163f254a142ab78401f02d"
+"bytes":int1221
+}
+"balanced_control_scenario1_confusion.csv":{2 items
+"sha256":string"ca0a0e0b3686542af99a99df321486d3e68200629e3c3e437a60209fb9229fef"
+"bytes":int1227
+}
+"balanced_control_scenario3_confusion.csv":{2 items
+"sha256":string"d9a402547c58b255cc0262a857eeed140278902e12baa7e83df88d67346616d7"
+"bytes":int1219
+}
+"balanced_control_scenario6_confusion.csv":{2 items
+"sha256":string"965d0f827238098dbbb2cb9f3c0341e4156f0f5f37dd3f14975e3c5d051781c6"
+"bytes":int1219
+}
+"balancing_batches.csv":{2 items
+"sha256":string"a1a7b19f21d8907966520dddcd4ed7a812dfb1dae5b44ca6a7583241fa716307"
+"bytes":int7456
+}
+"cache_consumption_gate.json":{2 items
+"sha256":string"0db1757ddc9888d47540b6ca35740de2e5dcc181c5533d3dfee0eb89872f86ab"
+"bytes":int1572
+}
+"ensemble_arrays.npz":{2 items
+"sha256":string"9348eeed149ad48bdd828d8055e945f57e384d8917c654125c2ebbe8d4b99519"
+"bytes":int12065373
+}
+"ensemble_result.json":{2 items
+"sha256":string"9717bcb12f0c730b4af631067621969dcdbf239e6bed2f84304b470a38458018"
+"bytes":int11303
+}
+"fold_scores.csv":{2 items
+"sha256":string"99c16fde6f359db055e4d259b054e96b319fb6fee3a85c853acc73b8bc57d2d2"
+"bytes":int2576
+}
+"paired_changes.csv":{2 items
+"sha256":string"bdbc8f3467a84c172decd3d744dde27925cb1f24044323126c11110a75ddfc24"
+"bytes":int219
+}
+"per_class_recall.csv":{2 items
+"sha256":string"45b4b4f70bb01969a372b1e557aaf0f1faff988d2470b14560d68cad92ceddc1"
+"bytes":int10785
+}
+"raw_candidate_scenario1_confusion.csv":{2 items
+"sha256":string"a48b61f2a7ffb50764d44bb060adb925e13122abd63fed4730c9ba097685c595"
+"bytes":int1224
+}
+"raw_candidate_scenario3_confusion.csv":{2 items
+"sha256":string"2ca40ae90eb95e2aa5a3e4f24d37405de164e775ba6c4dda2d1ebea852ca4875"
+"bytes":int1221
+}
+"raw_candidate_scenario6_confusion.csv":{2 items
+"sha256":string"02d6956d5112f9380902310a7c3e02b3c445ce2b9313b98265f9bae65aef7535"
+"bytes":int1220
+}
+"raw_control_scenario1_confusion.csv":{2 items
+"sha256":string"a48b61f2a7ffb50764d44bb060adb925e13122abd63fed4730c9ba097685c595"
+"bytes":int1224
+}
+"raw_control_scenario3_confusion.csv":{2 items
+"sha256":string"fae2720b0f34b0bb701bfdffaace99051f0add84d52c91e6973aa6f124299463"
+"bytes":int1223
+}
+"raw_control_scenario6_confusion.csv":{2 items
+"sha256":string"938f3bf5a1ea51fdda8b8a75512810c5c74002063e741feef0d8e5dd614c7513"
+"bytes":int1220
+}
+"warnings.json":{2 items
+"sha256":string"e7f9b22a689a4af15d171007354d4ee445b1f9c560eb299862dc522881a26fba"
+"bytes":int2808
+}
+}

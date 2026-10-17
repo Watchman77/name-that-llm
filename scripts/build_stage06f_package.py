@@ -23,7 +23,7 @@ EXPECTED_SOURCE_INPUTS = {
     'ensemble_arrays.npz': '9348eeed149ad48bdd828d8055e945f57e384d8917c654125c2ebbe8d4b99519',
     'ensemble_result.json': '9717bcb12f0c730b4af631067621969dcdbf239e6bed2f84304b470a38458018',
     'train.csv': '40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707',
-    'output_manifest.json': '626b428135f4ff377d593de29c716042a07593c74678893f874c91b7b71e2bbf',
+    'output_manifest.json': 'a5fcffaef27f4942af8a679370c30c247b8d872b4b6d711eccc0101ea7006dbd',
     'raw_control_scenario1_confusion.csv': 'a48b61f2a7ffb50764d44bb060adb925e13122abd63fed4730c9ba097685c595',
     'raw_control_scenario3_confusion.csv': 'fae2720b0f34b0bb701bfdffaace99051f0add84d52c91e6973aa6f124299463',
     'raw_control_scenario6_confusion.csv': '938f3bf5a1ea51fdda8b8a75512810c5c74002063e741feef0d8e5dd614c7513',

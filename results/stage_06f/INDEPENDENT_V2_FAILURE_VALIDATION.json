@@ -1,0 +1,32 @@
+{
+  "status": "PASS_INDEPENDENT_FAILED_RUN_RECONCILIATION",
+  "script_version_id": 359520233,
+  "log_sha256": "0246f58faec4049eb7d07754a4984ca4dd874b65403be712f31ea0cd0b059103",
+  "failed_source_sha256": {
+    "stage06f_pair_diagnostics.py": "b264d2f7398fda6127c306057c2e41f3d170cd430bd1d115189f7ddf40fa8d64",
+    "STAGE_06F_PAIR_DIAGNOSTICS.md": "a62a1f2e70c061b9b5c6b4be1825f3f81e148a0a3b6c37f36d12899fb8432d29",
+    "EXECUTION_FREEZE.json": "d50aaec1ff33f475fce4438fff032533de18196fa9ce1e8df560eeb6f77f8c94"
+  },
+  "failed_phase": "VERIFY_AND_DIAGNOSE_SAVED_EVIDENCE",
+  "failure": "('Immutable input hash mismatch', 'output_manifest.json')",
+  "new_diagnostic_result": false,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "corrective_predictions": 0,
+  "official_submission": false,
+  "checks": [
+    "Terminal log source hash matches originally reviewed/frozen source.",
+    "Exact immutable manifest hash gate stopped before NPZ load/source gate/analyze; no complete marker or new score.",
+    "Failure preserved separately; never counted as diagnostic success."
+  ],
+  "manifest_repair_evidence": [
+    "FrozenEwriter creates each entry in sha256,bytes order; local recovered JSON tree uses bytes,sha256.",
+    "Root fresh authoritativeE359514801 preview reports all20entries in writer order.",
+    "Writer reconstruction yields strict candidatehasha5fcffaef27f4942af8a679370c30c247b8d872b4b6d711eccc0101ea7006dbd,2883bytes; raw download unavailable."
+  ],
+  "actual_original_manifest_byte_hash_independently_verified": false,
+  "repair_policy": "A single expected-hash replacement may be tested with the exact gate retained. Actual original bytes remain unverified until that runtime gate passes; no allowlist, normalization or skipped gate.",
+  "limits": [
+    "Review reads root-preserved authoritative log and UI receipt; no browser/raw-download byte access by reviewer."
+  ]
+}

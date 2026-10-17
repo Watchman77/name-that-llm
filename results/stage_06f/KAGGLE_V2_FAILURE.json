@@ -1,0 +1,16 @@
+{
+  "status": "FAILED_PRESERVE_OUTPUTS",
+  "failed_phase": "VERIFY_AND_DIAGNOSE_SAVED_EVIDENCE",
+  "exception_type": "AssertionError",
+  "exception_message": "('Immutable input hash mismatch', 'output_manifest.json')",
+  "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_16/703571065.py\", line 32, in <cell line: 0>\n    runpy.run_path(str(STAGE06F_ROOTS['sources'] / 'stage06f_pair_diagnostics.py'), run_name='__main__')\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 294, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/kaggle/working/stage06f_sources/stage06f_pair_diagnostics.py\", line 424, in <module>\n    run_diagnostics(os.environ.get('NTL_STAGE06F_INPUT', '/kaggle/input'),\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                    os.environ.get('NTL_STAGE06F_OUTPUT', '/kaggle/working/stage06f_diagnostics'), freeze_path)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/stage06f_sources/stage06f_pair_diagnostics.py\", line 374, in run_diagnostics\n    arrays, train, source_result, paths = _load_inputs(input_root)\n                                          ~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"/kaggle/working/stage06f_sources/stage06f_pair_diagnostics.py\", line 152, in _load_inputs\n    assert digest(path) == EXPECTED_HASHES[name], ('Immutable input hash mismatch', name)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('Immutable input hash mismatch', 'output_manifest.json')\n",
+  "observed_utc": "2026-10-17T23:13:42.376157+00:00",
+  "elapsed_seconds": 1.812535749999995,
+  "completed_diagnostic": false,
+  "official_submission_performed": false,
+  "source_sha256": {
+    "stage06f_pair_diagnostics.py": "b264d2f7398fda6127c306057c2e41f3d170cd430bd1d115189f7ddf40fa8d64",
+    "STAGE_06F_PAIR_DIAGNOSTICS.md": "a62a1f2e70c061b9b5c6b4be1825f3f81e148a0a3b6c37f36d12899fb8432d29",
+    "EXECUTION_FREEZE.json": "d50aaec1ff33f475fce4438fff032533de18196fa9ce1e8df560eeb6f77f8c94"
+  }
+}

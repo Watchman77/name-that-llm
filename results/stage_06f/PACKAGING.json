@@ -2,25 +2,25 @@
   "status": "PACKAGED_NOT_EXECUTED",
   "package_schema": "stage06f-five-cell-package-v1",
   "builder_path": "scripts/build_stage06f_package.py",
-  "builder_sha256": "751eeaeca31541fdc2385dc6620cf26ef8d5b6e378973f42d2af6da4e3cdb2f6",
+  "builder_sha256": "6f17219976abd51ce3f4248d2108819053633d4c4d9f4cf45f6c8d7d3aaa8dc9",
   "source_paths": {
     "diagnostic": "scripts/stage06f_pair_diagnostics.py",
     "plan": "plans/STAGE_06F_PAIR_DIAGNOSTICS.md"
   },
   "source_sha256": {
-    "diagnostic": "b264d2f7398fda6127c306057c2e41f3d170cd430bd1d115189f7ddf40fa8d64",
+    "diagnostic": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
     "plan": "a62a1f2e70c061b9b5c6b4be1825f3f81e148a0a3b6c37f36d12899fb8432d29"
   },
   "execution_freeze_path": "results/stage_06f/EXECUTION_FREEZE.json",
-  "execution_freeze_sha256": "d50aaec1ff33f475fce4438fff032533de18196fa9ce1e8df560eeb6f77f8c94",
+  "execution_freeze_sha256": "dec901a2424ddb18159366071dc5b3c5a7019572912252c9bd786e649b294f47",
   "notebook_path": "notebooks/Stage_06F_Pair_Diagnostics.ipynb",
-  "notebook_sha256": "c80aaa08219168ad305bd31c06e6d7360e42226d138af136f3d83fcac01ee25b",
+  "notebook_sha256": "b93883cb564fbb52dd24eddef90ff94efc7704760a3f9ba2f6559fde269da6d5",
   "linear_runner_path": "scripts/kaggle_stage06f_runner.py",
-  "linear_runner_sha256": "76373a391e2df8c1889b73806f632c2892b288b29797ca7819357ec7f94316fc",
+  "linear_runner_sha256": "c7d65459afe03ac0fd70bc4804d79058035655e8797b69e2bf615ef331c12c2b",
   "materialized_files": {
-    "stage06f_pair_diagnostics.py": "b264d2f7398fda6127c306057c2e41f3d170cd430bd1d115189f7ddf40fa8d64",
+    "stage06f_pair_diagnostics.py": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
     "STAGE_06F_PAIR_DIAGNOSTICS.md": "a62a1f2e70c061b9b5c6b4be1825f3f81e148a0a3b6c37f36d12899fb8432d29",
-    "EXECUTION_FREEZE.json": "d50aaec1ff33f475fce4438fff032533de18196fa9ce1e8df560eeb6f77f8c94"
+    "EXECUTION_FREEZE.json": "dec901a2424ddb18159366071dc5b3c5a7019572912252c9bd786e649b294f47"
   },
   "cells": [
     {
@@ -45,7 +45,7 @@
       "index": 3,
       "characters": 37843,
       "utf8_bytes": 37843,
-      "sha256": "c9767017abaaa9057c87e9f937a5b4dbbdf798725e3aed05384118a798ecee9b"
+      "sha256": "de3008fb4515354052a02a3cef8b0ff679a7941229d9ca804f4ee9edbc68ad6b"
     },
     {
       "index": 4,
