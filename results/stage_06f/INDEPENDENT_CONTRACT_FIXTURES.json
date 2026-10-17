@@ -1,0 +1,42 @@
+{
+  "status": "PASS_INDEPENDENT_NOFIT_CONTRACT_FIXTURES",
+  "tests_run": 22,
+  "failures": 0,
+  "errors": 0,
+  "test_names": [
+    "test_archived_confusions_reconcile_fixed_pair_counts",
+    "test_complete_synthetic_analysis_preserves_rows_and_neutral_components",
+    "test_confidence_final_bin_includes_one",
+    "test_confusion_matches_hand_count",
+    "test_confusion_rejects_out_of_bounds",
+    "test_confusion_rejects_shape_mismatch",
+    "test_constant_prompt_rates_have_exact_descriptive_intervals",
+    "test_context_overlap_counts_passages_once",
+    "test_context_overlap_rejects_duplicate_ids",
+    "test_corrupt_freeze_blocks_before_input_read",
+    "test_every_npz_load_explicitly_disables_pickle",
+    "test_extreme_margins_remain_finite",
+    "test_immutable_hash_constants_match_archived_e_outputs",
+    "test_joint_bootstrap_keeps_complementary_context_mean_fixed",
+    "test_margin_bins_cover_boundaries_once",
+    "test_nonempty_output_is_preserved_and_refused",
+    "test_pair_mass_is_logistic_and_not_global_mass",
+    "test_pair_partition_and_routing_false_entries",
+    "test_signed_and_truth_oriented_margins",
+    "test_source_has_no_estimator_or_search_invocations",
+    "test_text_shape_hand_counts_without_text_output",
+    "test_top_two_ties_have_stable_index_order"
+  ],
+  "command": "python -m unittest discover -s tests -p test_stage06f_independent_contract.py -v",
+  "source_sha256": {
+    "scripts/stage06f_pair_diagnostics.py": "b264d2f7398fda6127c306057c2e41f3d170cd430bd1d115189f7ddf40fa8d64",
+    "plans/STAGE_06F_PAIR_DIAGNOSTICS.md": "a62a1f2e70c061b9b5c6b4be1825f3f81e148a0a3b6c37f36d12899fb8432d29",
+    "tests/test_stage06f_independent_contract.py": "83984fec118017b7decca3e37361c2002b828d7cd5369677b27c089da41373c5",
+    "results/stage_06f/IMPLEMENTATION_NOTES.md": "a38976f027435ad539e73e51db8626b8d4be62910a1718f44f3d023652213a9e"
+  },
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "actual_kaggle_cache_loaded": false,
+  "bootstrap_fixtures": "Synthetic fixed outcomes and complementary contexts; no real data/bootstrap interval recomputation.",
+  "archived_data_used": "Three complete Stage06E raw-control confusion matrices only; hand-counted synthetic arrays otherwise."
+}

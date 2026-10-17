@@ -1,0 +1,34 @@
+{
+  "schema_version": "stage06f-execution-freeze-v1",
+  "status": "FROZEN_SOURCE_CANDIDATE_NOT_EXECUTED",
+  "diagnostic_source_sha256": "b264d2f7398fda6127c306057c2e41f3d170cd430bd1d115189f7ddf40fa8d64",
+  "plan_sha256": "a62a1f2e70c061b9b5c6b4be1825f3f81e148a0a3b6c37f36d12899fb8432d29",
+  "source_path": "/kaggle/working/stage06f_sources/stage06f_pair_diagnostics.py",
+  "plan_path": "/kaggle/working/stage06f_sources/STAGE_06F_PAIR_DIAGNOSTICS.md",
+  "input_version_ids": [
+    170484,
+    359514801
+  ],
+  "stage06e_script_version_id": 359514801,
+  "expected_source_input_sha256": {
+    "ensemble_arrays.npz": "9348eeed149ad48bdd828d8055e945f57e384d8917c654125c2ebbe8d4b99519",
+    "ensemble_result.json": "9717bcb12f0c730b4af631067621969dcdbf239e6bed2f84304b470a38458018",
+    "train.csv": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+    "output_manifest.json": "626b428135f4ff377d593de29c716042a07593c74678893f874c91b7b71e2bbf",
+    "raw_control_scenario1_confusion.csv": "a48b61f2a7ffb50764d44bb060adb925e13122abd63fed4730c9ba097685c595",
+    "raw_control_scenario3_confusion.csv": "fae2720b0f34b0bb701bfdffaace99051f0add84d52c91e6973aa6f124299463",
+    "raw_control_scenario6_confusion.csv": "938f3bf5a1ea51fdda8b8a75512810c5c74002063e741feef0d8e5dd614c7513"
+  },
+  "accelerator": "none",
+  "internet_enabled": false,
+  "expected_thread_limits": {
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "planned_model_fits": 0,
+  "planned_model_inference_calls": 0,
+  "planned_changed_predictions": 0,
+  "official_submission_performed": false,
+  "limitation": "Preparation only. Saved private Kaggle source, pinned inputs, CPU/offline settings and independent review must be verified before execution."
+}

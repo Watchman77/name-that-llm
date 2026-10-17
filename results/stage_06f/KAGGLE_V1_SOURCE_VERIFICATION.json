@@ -1,0 +1,57 @@
+{
+  "status": "VERIFIED_SAVED_SOURCE_NOT_EXECUTED",
+  "observed_utc": "2026-10-17T23:12:37.090393+00:00",
+  "script_version_id": 359519886,
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06f-pair-diagnostics?scriptVersionId=359519886",
+  "version_type": "Quick Save",
+  "private_visibility_observed": true,
+  "full_cell_sources_match_reviewed_package": true,
+  "cells": [
+    {
+      "index": 0,
+      "sha256": "239e66a5dd6941ab6a13816b2c67b43c619a7befa2a0825ccd0daaea66761157",
+      "characters": 362
+    },
+    {
+      "index": 1,
+      "sha256": "146d08d96b88037627faa7a84617d6938e6e53cdbcb8105e9540a797c60f4454",
+      "characters": 596
+    },
+    {
+      "index": 2,
+      "sha256": "847dbf95af6f8301d20006c401beec66554a51f485ad9a0c242d802d534b2b0f",
+      "characters": 764
+    },
+    {
+      "index": 3,
+      "sha256": "c9767017abaaa9057c87e9f937a5b4dbbdf798725e3aed05384118a798ecee9b",
+      "characters": 37843
+    },
+    {
+      "index": 4,
+      "sha256": "cea9b8fb3d54f6abff1a2a13e2c4c529f6dd5d2aab855e0f3655e40c73fca53a",
+      "characters": 3807
+    }
+  ],
+  "kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceId": 170484,
+        "sourceType": "competition"
+      },
+      {
+        "sourceId": 359514801,
+        "sourceType": "kernelVersion"
+      }
+    ],
+    "isGpuEnabled": false,
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook"
+  },
+  "all_execution_counts_null": true,
+  "all_outputs_empty": true,
+  "source_export_sha256": "7e527ec7f7eaa58967af02e71eaea20e614501434a7b783f7edd2bfec441fa79",
+  "official_submission_performed": false
+}

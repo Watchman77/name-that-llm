@@ -1,0 +1,61 @@
+{
+  "status": "PASS_INDEPENDENT_SOURCE_METHOD_AND_INERT_PACKAGE_REVIEW",
+  "source_sha256": {
+    "scripts/stage06f_pair_diagnostics.py": "b264d2f7398fda6127c306057c2e41f3d170cd430bd1d115189f7ddf40fa8d64",
+    "plans/STAGE_06F_PAIR_DIAGNOSTICS.md": "a62a1f2e70c061b9b5c6b4be1825f3f81e148a0a3b6c37f36d12899fb8432d29",
+    "tests/test_stage06f_independent_contract.py": "83984fec118017b7decca3e37361c2002b828d7cd5369677b27c089da41373c5",
+    "results/stage_06f/IMPLEMENTATION_NOTES.md": "a38976f027435ad539e73e51db8626b8d4be62910a1718f44f3d023652213a9e",
+    "scripts/build_stage06f_package.py": "751eeaeca31541fdc2385dc6620cf26ef8d5b6e378973f42d2af6da4e3cdb2f6",
+    "scripts/kaggle_stage06f_runner.py": "76373a391e2df8c1889b73806f632c2892b288b29797ca7819357ec7f94316fc",
+    "notebooks/Stage_06F_Pair_Diagnostics.ipynb": "c80aaa08219168ad305bd31c06e6d7360e42226d138af136f3d83fcac01ee25b",
+    "results/stage_06f/EXECUTION_FREEZE.json": "d50aaec1ff33f475fce4438fff032533de18196fa9ce1e8df560eeb6f77f8c94",
+    "results/stage_06f/PACKAGING.json": "b0108d0f6137add231f47b20e1ed51833f959d3b4e996de35bc4cbb733a916d7"
+  },
+  "production_files_edited_by_reviewer": [],
+  "independent_fixture_tests": 22,
+  "independent_fixtures": "results/stage_06f/INDEPENDENT_CONTRACT_FIXTURES.json",
+  "model_fits_performed": 0,
+  "model_inference_calls_performed": 0,
+  "browser_actions_performed": false,
+  "github_mutations_performed": false,
+  "checks": [
+    "Prospective fixed Gemini3.7/3.8 target, raw-control only; no candidate, balancing, weight, feature, threshold or corrective prediction selection.",
+    "Exact immutable E V2 359514801 ensemble/result/manifest/raw-confusion and official train hashes; source result binds original canonical and static caches plus fixed weights.",
+    "NPZ loads allow_pickle=False, all consumed arrays finite numeric/Unicode, official row IDs/model/class/prompt alignment, archived prompt folds and each member prompt exclusion.",
+    "Original ordered five-static-plus-plain-plus-eligible-centered fusion replay exact, same stored argmax, complete 18class confusions and balanced accuracies independently reconciled; no added estimator inference.",
+    "Known pair counts agree with all three archived full confusion matrices, including pair-correct[135,146,139],cross[94,87,94],pair-other[71,67,67],nonpair-falseentry[65,54,49].",
+    "Signed pair logmargin, true-pair-only orientation, stable logistic mass and deterministic top-two ordering are descriptive uncalibrated evidence; fixed endpoint-inclusive bins, no threshold sweep.",
+    "Weighted pair contributions decompose cached raw margin at fixed1e-12 tolerance; exact original-order fusion gate is separate. Neutral ties and inactive centered rows contribute zero votes.",
+    "Each context repeats the same2699 IDs. Overlap unions/intersections counted once by unique ID with explicit300truepair/2399nonpair populations.",
+    "Joint150prompt bootstrap resamples original prompts consistently across contexts with3000draws seed20261018; learned fits,predictions,groups remain fixed and intervals are conditional descriptive only.",
+    "Numeric passage shape and row identifiers only; no raw text,tokens,snippets,transcript output. Nonpair truth metrics are documented inactive zeros and is_true_pair is explicit.",
+    "Full synthetic analyze fixture confirms unmodified input/stored predictions, exact outcome partition, falseentries, neutral centered votes, disagreement counts, overlap populations and text-free tables.",
+    "Fresh output guard preserves prior trials; source/plan/input/settings freeze checked before loading inputs; failures retain status and do not emit success results.",
+    "AST import/call inventory contains no estimator/model/network/pickle dependency or fit/inference/regroup/optimization routine.",
+    "Independent nbformat validation, all5empty-output/null-count cells compile, exact runner concatenation and all cell hashes/lengths verified.",
+    "Independent AST literal evaluation verifies exact diagnostic/plan/freeze text materialization bytes, all frozen hashes and known immutableE/TRAIN source hashes.",
+    "Independent inert builder function call reproduces all5cells and materialized hashes exactly; no diagnostic execution.",
+    "Package CPU/noGPU/offline settings and minimal pinned input versions[170484,359514801] verified; wrapper executes single reviewed diagnostic, preserves failures and permits completion only after module terminal/zero-fit/inference/changed-prediction gates."
+  ],
+  "issues_resolved": [
+    "Added explicit is_true_pair for false-entry rows; nonpair truth-oriented margin and support counts documented as inactive placeholders.",
+    "Overlap zero-context counts now use explicitly declared300truepair/2399nonpair populations."
+  ],
+  "remaining_blocking_source_issues": [],
+  "required_before_execution": [
+    "Root must freeze persisted source bytes and verify immutable saved private Kaggle notebook/source,pinned inputs[170484,359514801],CPU accelerator and disabled internet."
+  ],
+  "limitations": [
+    "No actual E numeric NPZ is available locally or loaded in this source review. Source-bound runtime gates must execute on authoritative attached E output.",
+    "No actual F diagnostic execution/result validated yet.",
+    "All evidence is a reused-development available-component proxy; no untouched validation/fullS02/official score or attainable70percent claim."
+  ],
+  "package_cells": [
+    362,
+    596,
+    764,
+    37843,
+    3807
+  ],
+  "inert_package_review_performed": true
+}
