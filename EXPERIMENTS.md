@@ -156,6 +156,8 @@ The notebook is kept private with the competition input attached and internet di
 
 ## Stage 06D execution launch — observed 17 October 2026 at 21:47:07 UTC
 
+Historical launch observation; superseded by the terminal V7 outcome below.
+
 - Saved-source access recovered after the historical save/browser failures. QuickSave Version 2 succeeded (`Viewing Version 2`, Quick Version, Oct 17 10:45 PM), named `Verified multi-cell source - no execution`, with zero seconds run. Its full visible saved export matched all five reviewed cells exactly, with zero outputs/null execution counts; all seven input IDs and CPU/internet-off metadata matched. Numeric QuickSave scriptVersionId was not established and is not inferred.
 - Unchanged Save & Run All launched actual visible Version 3, named `Fixed raw ensemble comparison`, with advanced selection `Run without an accelerator for this session`. Fresh UI at 2026-10-17T21:47:07Z showed Running and one active event. Numeric execution ID, immutable execution-version metadata and fresh logs are still being obtained.
 - Primary raw screen, frozen protocol and all source hashes remain unchanged. This is execution launch only: no ensemble result, measured combined-model gain or official score is available. No official submission or final-selection change. Official S02 remains 0.549. Current receipt: results/stage_06d/KAGGLE_RUN.json.
@@ -179,6 +181,8 @@ The notebook is kept private with the competition input attached and internet di
 
 ## Stage 06D repaired execution launch — observed 17 October 2026 at 21:55:14 UTC
 
+Historical launch observation; superseded by the terminal V7 outcome below.
+
 - Fourteen-file repair and failure-record freeze committed before retry Save & Run All: de19608a672015fdb84e7921ed2aa1482c495a18. Metadata-only QuickSave V4 scriptVersionId 359502142 passed complete repaired five-cell source matching (77,806 / 156,105 / 156,106 / 146,225 / 60,610 characters), empty outputs/null counts, exact seven IDs and CPU/internet-off metadata.
 - Actual Version 5 Save & Run All named `Fixed ensemble - safe class metadata`, with advanced CPU/no-accelerator selection, is Running with one active event at 2026-10-17T21:55:14Z. Numeric V5 scriptVersionId/logs are still being obtained; no new fitting count or result is inferred.
 - Prior V3 359500151 failure remains immutable: failure marker20.7s, log end27.7s; UI initially0s later28s. It passed frozen style transfer and component audits but fitted no new heads. The repaired run must still pass metadata/reproduction checks and the unchanged primary raw screen. No official submission or new score; S02 remains0.549.
@@ -189,3 +193,26 @@ The notebook is kept private with the competition input attached and internet di
 - Actual V5 359502730 completed all five fixed DeBERTa folds/15 heads, then failed at164.0s `Frozen 06C argmax mismatch, control` (platformtotal175.5s). Class metadata repair passed actual cache; no ensemble result and primary raw screen NOT evaluated. Full4,864-byte log SHAe6f5896056004ee4c6f8a133f1835c9315f70a888e47a7ba858157050d4fde4e and V5_FAILURE.json preserve the run. Original sourceb27925.../preexeccommitde19608... retained.
 - Reviewed exact-C eligible-only inference override and pre-gate diagnostics sourceSHA c6005196a73100676141d18f67eb299c1bf686a547fbb077b91825d2bd2611b3. Call-shape hypothesis unproven; same fitted heads, no changed training/folds/seeds/groups/plain scaling/weights/gates. Old all-row path diagnostic only. All twelve exact argmax and score-atol1e-12 checks remain mandatory; no ensemble output if they fail. Full prediction/margin/runtime/15-head snapshots save before gate. Eight no-fit fixtures and independent AST review passed; new combinedSHA9185a208679ea99c318bb11feb9abd773661886523621e268052ca037e613893.
 - State SOURCE_PATH_REPAIR_REVIEWED_PENDING_ONE_RETRY: final69,909-character editor cell paste/copyback and metadata-only V6 gate pending at freeze; no V6 ID guessed and no CPU attempt called. Persist reviewed code before one evidence-based CPU retry. If mismatch remains, retain diagnostics and stop blind refits; no gate relaxation. Official S02 remains0.549.
+
+
+## Stage06D one source-path diagnostic CPU retry launched —17October2026 at22:05:08UTC
+
+Historical launch observation; superseded by the terminal V7 outcome below.
+
+- Pre-execution fourteen-file freeze15969f9cd696c7a4ce51be92680db16cbb42ea0d completed before Save & Run All. Metadata-only V6 359505487 full immutable export matched all5current cells including69,909-character final cell and all7pinned inputs with CPU/internet off.
+- Actual V7 named `Fixed ensemble - source path diagnostics` is Running with1ActiveEvent at2026-10-17T22:05:08Z, Advanced CPU/no accelerator confirmed. NumericV7ID/logs pending. Save&RunAllcomplete UI toast means commit completed only; execution remains Running.
+- One evidence-based retry is now used; source-path hypothesis remains unproven, strict12array/score checks unchanged. Preserve diagnostics and stop further blind fits if mismatch persists. Prior V3/V5 failures were technical and did not evaluate primary raw screen. No ensemble score or new official score; S02 remains0.549.
+
+
+## Stage 06D V7 terminal technical reproduction failure — 359505815
+
+- V7 completed all five CPU folds/15 heads, then failed the strict control argmax gate at 141.6 seconds; platform total 151.6 seconds, output 13.19 MB. The full 28,581-byte log SHA256 is c397e1eafde8fffd8335cd0f3262c6c11a678d967512201cd6d37a0b9c9ed492. No reproduction-pass or ensemble result appeared; the primary raw screen was not evaluated.
+- Source-eligible and all-row paths had zero hard-label differences. Both differed from original C in 20 of 32,388 repeated head/context comparisons; this is not a unique passage count. Maximum log-probability delta was 3.774758283725532e-15. Call shape is ruled out for these hard-label differences; the remaining cause is unproven. Oracle one-response mismatches persist without centered evidence.
+- Independent summary/log validation reconciles all 12 historical balanced accuracies, 60 fold summaries, original eligible counts, five markers/15 fits, 15 deprecations and zero convergence warnings. Full diagnostic NPZ remains Kaggle-only, reported SHA256 cf0ba543ab468329ee25cc6e01238dd04a8941f522ea61470a6b76f7435e86a5. No raw-array recomputation or unique mismatch identities are claimed.
+- Terminal state: TECHNICAL_REPRO_FAILURE_NOVALID_ENSEMBLESCORE. Stop blind refits and retain strict gates. No official submission or new score; S02 remains 0.549. Evidence is preserved in KAGGLE_V7_FAILED.log, reproduction_diagnostics.json, V7_FAILURE.json and INDEPENDENT_V7_VALIDATION.json.
+
+## Stage 06E prospective canonical CPU evidence plan
+
+- Independently reviewed plans/STAGE_06E_CANONICAL_CPU_EVIDENCE.md, SHA256 89dbf531820b965f09fab07157475b199f929f4d297bd268e0f141c765a80f32. No genuine plan errors found and no plan edits made. Review: results/stage_06e/PLAN_REVIEW.json.
+- Distinct prospective experiment: instrument the literal original C source without changing its computations; capture existing calls once; freeze a verified cache; consume it without refitting or regrouping. Historical C comparison remains separate and cannot retroactively pass Stage 06D. The fixed raw screen and contaminated-balancing limit remain unchanged.
+- Implementation, fitting and model execution have not started. Original-to-instrumented diff, schema/consumer and immutable source/input/runtime checks require pre-execution review and freeze. No new model, GPU/API/paid service, official submission or final-selection change is included.
