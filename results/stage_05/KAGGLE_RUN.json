@@ -1,7 +1,7 @@
 {
   "stage": "05_public_reproduction",
   "trial_label": "trial_01",
-  "status": "Running",
+  "status": "Succeeded",
   "recorded_utc": "2026-10-17T11:04:43.062Z",
   "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-05-public-reproduction?scriptVersionId=359332774",
   "script_version_id": 359332774,
@@ -10,7 +10,7 @@
   "source_version_id": 359126546,
   "source_reported_public_score": 0.549,
   "our_public_score": null,
-  "official_submission_made": false,
+  "official_submission_made": true,
   "code_diff_display": "+0 -0",
   "source_sha256": "261e27094fbefbfe8e6496feda4a274f8e9a8587a19b304da074a71f49cbc2f3",
   "protocol_commit": "dfc009a58c5ca3e0be8b8b6a23044eac600515e8",
@@ -19,7 +19,7 @@
   "accelerator": "GPU T4 x2",
   "gpu_preflight_confirmed": true,
   "preflight_log": "train (2699, 4) test (3, 2) gpus 2",
-  "latest_step_observed": "Stylegram and LightGBM completed; GLM clustering pass completed; Qwen3-8B head completed (721s model timer); Qwen2.5-7B feature extraction started.",
+  "latest_step_observed": "All ensemble stages completed; submission.parquet created. Official S02 accepted and hidden-test rerun shows Notebook Running.",
   "requested_environment_ui": "Pin to original environment (2026-10-02)",
   "actual_environment_label": "Latest Container Image",
   "environment_note": "Kaggle Logs contradicts requested environment label. Preserve actual label; do not claim original container was reproduced. No model-code changes or restart made.",
@@ -83,17 +83,24 @@
       "sourceId": 363140
     }
   ],
-  "artifact_output_observed_bytes": 0,
+  "artifact_output_observed_bytes": null,
   "actual_code_cell_sha256": "e3d97306f3185ea5f73d7904d81331b27803e3ceb45970596590ec306969762e",
   "source_archive_note": "Archive file adds one terminal newline; notebook preserves exact original cell. Both parse identically.",
   "warnings_observed": [
     "LightGBM/scikit-learn feature-name warnings; no failure observed at this check"
   ],
-  "last_checked_utc": "2026-10-17T11:17:55.175Z",
-  "last_ui_runtime_display": "- heading \"Running for 872.5s\" [level=5]",
+  "last_checked_utc": "2026-10-17T11:40:05.327Z",
+  "last_ui_runtime_display": "1884.8 second run - successful",
   "additional_log_evidence": {
     "qwen3_completed_log": "759.4s q3_8b_cat7+22 done (721s)",
     "qwen25_started_log": "759.5s q25_7b_cat6+20 /kaggle/input/models/qwen-lm/qwen2.5/transformers/7b/1 [6, 20] mean",
     "model_load_reports": "Extra output-head and truncated-layer weights reported UNEXPECTED; consistent with intentionally shortened feature-extraction models, no exception observed."
-  }
+  },
+  "completion_observed_utc": "2026-10-17T11:40:05.327Z",
+  "platform_runtime_seconds": 1884.8,
+  "code_timer_seconds": 1835,
+  "output_size_display": "1.76 kB",
+  "official_submission_label": "S02",
+  "official_submission_status": "Notebook Running",
+  "output_verification": "results/stage_05/OUTPUT_VERIFICATION.json"
 }
