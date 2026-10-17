@@ -6,7 +6,7 @@
   "script_version_id": 359405443,
   "version": 1,
   "visibility": "private",
-  "observed_at_utc": "2026-10-17T15:26:37.552297+00:00",
+  "observed_at_utc": "2026-10-17T15:57:33Z",
   "observed_state": "Queued",
   "actual_cuda_preflight_observed": false,
   "output_bytes_observed": 0,
@@ -47,5 +47,12 @@
   "official_submission_created": false,
   "final_selections_changed": false,
   "paid_services_used": false,
-  "result": null
+  "result": null,
+  "previous_observations": [
+    {
+      "observed_at_utc": "2026-10-17T15:26:37.552297+00:00",
+      "state": "Queued",
+      "output_bytes": 0
+    }
+  ]
 }
