@@ -18,7 +18,7 @@ The leading account's private recipe remains unknown. At the 17 October browser 
 - Preserve original source, markdown credits, Apache-2.0 licence and fork lineage. Change only our notebook title and run metadata. No model weights, blend weights, clustering thresholds or decision rules are tuned.
 - Official train SHA256: `40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707`.
 - GPU T4 x2; internet off; inherited environment pinned to 2026-10-02. Included Kaggle quota only. No API calls, paid subscriptions, new synthetic data or paid compute.
-- Source preview ran in 34m 8s. The author's markdown estimates about 1.5 hours for a full test rerun. These are estimates for our run, not guarantees. Request a three-hour execution limit if supported in the save dialog; otherwise record the actual platform limit before starting.
+- Source preview ran in 34m 8s. The author's markdown estimates about 1.5 hours for a full test rerun. These are estimates for our run, not guarantees. Prelaunch clarification: Save Version's advanced settings expose only accelerator use, with no configurable execution timeout. Do not claim a three-hour hard stop. Run the unchanged recipe under the included platform quota (00:00 / 30 hrs displayed); competition hidden-test execution is subject to its nine-hour limit. The preview session's exact hard limit is not exposed in this dialog. No continuous monitoring after this conversation turn is promised.
 - Leave the separate Stage 04B DeBERTa V1 (`359319680`) unchanged. It remains an independently declared trial.
 
 ## Inputs inherited from the exact V3 fork
