@@ -1,0 +1,35 @@
+{
+  "original_npz_sha256": "e970fa1c3b8d3b7c5b73e28c2654e6e26843d6d7335cbd42b101a3a3e5e9c269",
+  "raw_sha256": "5e2e05577b7dc632f38f67d47958d7f3d069e8b758ead4664050f0d984803bad",
+  "compressed_sha256": "68d9794c750b7e00c45939e479c13023ee6d7f89fdb0567ca098ee0f0ca348f1",
+  "payload_characters": 455182,
+  "raw_bytes": 388656,
+  "id_order_sha256": "707edf645b0f09bba8f0983b5bc9f522595c95e8ca5b763b38babeb38200368d",
+  "classes": [
+    "claude-fable-5",
+    "claude-opus-4-6",
+    "claude-opus-4-8",
+    "claude-opus-5",
+    "claude-sonnet-5",
+    "gemini-3.1-pro-preview",
+    "gemini-3.6-flash",
+    "gemini-3.7-flash",
+    "gemini-3.8-flash",
+    "glm-5.3",
+    "glm-5.3-flash",
+    "gpt-5.5",
+    "gpt-5.6-luna",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-6-astra",
+    "kimi-k3",
+    "qwen3.8-max"
+  ],
+  "compressed_bytes": 364145,
+  "prediction_sha256": "e5ae984faecc98404f459a760778a73074f3dbcc928dc1b2901f7795a1dd048d",
+  "metadata_file_hashes": {
+    "id_provenance.json": "bbca170e3837b3f5ba911169339a736e9737a7e562237257b7e36ed508ffce97",
+    "metrics.json": "3c2b6bec6af2cdcaed05b4f220d1d3ea14149ca8ebeba7736357ba8b1b54f367",
+    "warnings.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  }
+}

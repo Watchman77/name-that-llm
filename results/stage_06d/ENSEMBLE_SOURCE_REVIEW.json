@@ -1,0 +1,25 @@
+{
+  "status": "PRE_EXECUTION_SOURCE_REVIEW_PASSED",
+  "primary_endpoint": "Raw fixed rowwise log-evidence fusion; source alpha0.5 balancing is potentially contaminated diagnostic only",
+  "reviewers": 2,
+  "model_fits_performed_in_review": 0,
+  "checks": [
+    "Complete source reviewed independently",
+    "Style original NPZ verified against existing artifact manifest",
+    "All 2699x18 probability float64 bytes preserved exactly in local transfer check",
+    "Tampered payload rejected before output",
+    "Bounded decompression, little-endian dtype, shape and hash checks",
+    "Fusion compiled and balancing/singleton/corrected-broken fixtures passed",
+    "All 12 immutable Stage06C argmax tensors and scores required to reproduce before fusion",
+    "No fitting on source code import",
+    "No new weights, representations, thresholds or candidate search"
+  ],
+  "source_sha256": {
+    "stage06d_fixed_ensemble.py": "61cf698548c1352caa2e81eea937753c607a554cffea2e2b5d32c678c7101163",
+    "stage06d_style_transfer.py": "8f35539e47cd877c41b47a692cb2cb4ece95b768a5ae95612e9c56e2bd0ecdb1",
+    "kaggle_stage06d_runner.py": "b0db5a4e8ef82ef3f90b5b4f74af61d68fd24ff515f7e2f968797312801396f1"
+  },
+  "combined_source_characters": 589885,
+  "execution_pending": true,
+  "remaining_verification": "Metadata-only Quick Save, exact full source roundtrip and seven pinned input IDs before unchanged Save & Run All CPU version"
+}
