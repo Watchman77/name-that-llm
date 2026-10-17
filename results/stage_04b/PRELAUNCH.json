@@ -1,0 +1,20 @@
+{
+  "stage": "04B",
+  "status": "implementation_verified_prelaunch",
+  "protocol_commit": "5563d45ef49311afa7ca0cacc184bb2ed46f3ba8",
+  "runner_commit": "8603667afbe1d404aec4f9855ab09be5d3ef412e",
+  "runner_sha256": "dfff975f59870518bdaedd614de48aa7dd4e9c4fd9ac9b10b4e433b35d440b9a",
+  "resources_notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-04b-resources?scriptVersionId=359317729",
+  "resources_kaggle_version": 1,
+  "resources_status": "Succeeded",
+  "resources_runtime_seconds": 35.6,
+  "quota_hours_observed_before_launch": 30,
+  "checks": [
+    "Uneven accumulation group 4+4+4+3 matches full 15-example weighted gradients at atol=1e-7, rtol=1e-6.",
+    "Pinned actual checkpoint and slow tokenizer load offline and produce finite 18-class CPU logits.",
+    "AdamW parameter groups cover every model parameter exactly once.",
+    "Kaggle resource code clipboard round trip equals committed source."
+  ],
+  "supervised_fitting_started": false,
+  "official_submission_made": false
+}
