@@ -14,7 +14,7 @@
   "official_submission_made": false,
   "recorded_utc": "2026-10-17T10:16:38.563745+00:00",
   "script_version_id": 359319680,
-  "last_checked_utc": "2026-10-17T11:17:55.175Z",
+  "last_checked_utc": "2026-10-17T11:40:05.327Z",
   "last_ui_age_display": "1h ago",
-  "queue_note": "Fresh Logs page still shows Queued... with 0 B output and no training/preflight logs. Stage 05 is independently running; Stage 04B was not restarted or changed."
+  "queue_note": "Fresh Logs page still shows Queued... and 0 B output. Stage 05 preview succeeded and S02 was submitted independently; Stage 04B remains unchanged with no training/preflight logs."
 }
