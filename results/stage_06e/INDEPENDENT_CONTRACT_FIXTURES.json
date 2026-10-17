@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "tests_run": 31,
+  "failures": 0,
+  "errors": 0,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "kind": "independent synthetic corruption fixtures",
+  "checks_source_sha256": "981e07456a4f47a166eb4678aa497786cf92d2cb89bc8a5f204f57b5b4ee5c1b",
+  "consumer_source_sha256": "a1b1d6f63cf1b9e7305ef866814e82a7ef7900659d0b8d3d1c255b90cd243086"
+}

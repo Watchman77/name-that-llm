@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic output-capture and cache-schema fixtures only; no model fitting, inference, Kaggle execution or evidence generation",
+  "checks": [
+    {
+      "name": "complete_five_fold_synthetic_cache_replays_all_twelve_arrays_and_confusions",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_probability_normalization",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_exact_clip_log_relationship",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_inactive_centered_log_contribution",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_hard_prediction_replay",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_once_only_plain_coverage",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_once_only_component_coverage",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_whole_prompt_exclusion",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_numeric_unicode_only",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_integer_batch_membership",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_nonnegative_batches",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_cluster_size_reconciliation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_exact_global_batch_membership",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_unique_ids",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_finite_active_values",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_inmemory_score_mismatch",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "all_saved_arrays_exact_readback_no_pickle",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "reject_saved_array_corruption",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "capture_copies_existing_values_without_mutation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "failure_preserves_partial_evidence_and_no_success_marker",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "refuse_existing_nonempty_trial",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "actual_local_runtime_mismatch_stops_before_fitting",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "checks_count": 22,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "source_sha256": {
+    "scripts/stage06e_capture_original.py": "0445e9c3f8d64f72dfedecdc63881262fc796f00ae8275230a232155b8855ce9",
+    "scripts/stage06e_cache_checks.py": "981e07456a4f47a166eb4678aa497786cf92d2cb89bc8a5f204f57b5b4ee5c1b",
+    "scripts/stage06c_mixed_confirmation.py": "5c27fcdffde2bcfd512d20fb4edec9bd7133430e79ccd71e31875151d235a23d"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS_NOFIT_SYNTHETIC_FIXTURES",
+  "fixture_groups": 8,
+  "checks": [
+    "AST: consumer has no fit, estimator inference, affine readout or group reconstruction; static audit has no fit",
+    "Exact D balancing for singleton, two-row and multirow evidence",
+    "All twelve saved component arrays replay exactly; inactive or evidence corruption rejected",
+    "Control/candidate fusion, raw/balanced arrays and contamination counts exactly match archived D statements",
+    "Exact archived D paired prompt/class bootstrap, 3000 draws and fixed seed",
+    "Canonical production gate accepts synthetic official geometry and rejects missing coverage/plan/runtime/head count",
+    "Bound-cache exact roundtrip plus altered cache/gate/schema/array hash/path/byte strings/object rejection",
+    "Failed cache gate preserves failure and cannot emit result; existing trial output refused"
+  ],
+  "model_fits": 0,
+  "estimator_inference_calls": 0,
+  "new_neural_inference": false,
+  "actual_Kaggle_cache_evaluation": false,
+  "source_sha256": {
+    "stage06e_cached_ensemble.py": "a1b1d6f63cf1b9e7305ef866814e82a7ef7900659d0b8d3d1c255b90cd243086",
+    "stage06e_static_members.py": "eb7cae4b47ef8153a0b60b856319ba95b4d985bdc1277544239a35226c0d2a35"
+  },
+  "archived_D_source_sha256": "c6005196a73100676141d18f67eb299c1bf686a547fbb077b91825d2bd2611b3",
+  "limitations": [
+    "Synthetic fixtures validate cached arithmetic and fail-closed behavior; no actual attached artifact or model fit was executed."
+  ]
+}

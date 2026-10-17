@@ -1,0 +1,142 @@
+{
+  "status": "PACKAGED_NOT_EXECUTED",
+  "package_schema": "stage06e-five-cell-package-v1",
+  "builder_path": "scripts/build_stage06e_package.py",
+  "builder_sha256": "1ee913d049663da3eb49e6cf086415d4623e7566311534bd8800298d5f019536",
+  "source_paths": {
+    "producer": "scripts/stage06e_capture_original.py",
+    "capture_helper": "scripts/stage06e_cache_checks.py",
+    "static_preparation": "scripts/stage06e_static_members.py",
+    "consumer": "scripts/stage06e_cached_ensemble.py",
+    "original_C": "scripts/stage06c_mixed_confirmation.py",
+    "plan": "plans/STAGE_06E_CANONICAL_CPU_EVIDENCE.md"
+  },
+  "source_sha256": {
+    "producer": "0445e9c3f8d64f72dfedecdc63881262fc796f00ae8275230a232155b8855ce9",
+    "capture_helper": "981e07456a4f47a166eb4678aa497786cf92d2cb89bc8a5f204f57b5b4ee5c1b",
+    "static_preparation": "eb7cae4b47ef8153a0b60b856319ba95b4d985bdc1277544239a35226c0d2a35",
+    "consumer": "a1b1d6f63cf1b9e7305ef866814e82a7ef7900659d0b8d3d1c255b90cd243086",
+    "original_C": "5c27fcdffde2bcfd512d20fb4edec9bd7133430e79ccd71e31875151d235a23d",
+    "plan": "89dbf531820b965f09fab07157475b199f929f4d297bd268e0f141c765a80f32"
+  },
+  "execution_freeze_path": "results/stage_06e/EXECUTION_FREEZE.json",
+  "execution_freeze_sha256": "627cf35731ca8ea65526c73aa0cab08502aa574b5f20e6d97351c74cfef563d4",
+  "notebook_path": "notebooks/Stage_06E_Canonical_CPU_Evidence.ipynb",
+  "notebook_sha256": "7df28abfc7e8b072f58b3340f92446b9bef52f9c35d5b671691efa4e1190e455",
+  "linear_runner_path": "scripts/kaggle_stage06e_multicell.py",
+  "linear_runner_sha256": "b45e6a61022afee87a622ef861dd3cabd3910b84d535b8a960491645925e1ae9",
+  "style_transfer_prefix_sha256": "9dca75f9ede28b7262d8d318bf94d61fbc0b5e08160b5b7dd0452ffd8efb0630",
+  "style_transfer_prefix_characters": 4954,
+  "materialized_files": {
+    "stage06e_capture_original.py": "0445e9c3f8d64f72dfedecdc63881262fc796f00ae8275230a232155b8855ce9",
+    "stage06e_cache_checks.py": "981e07456a4f47a166eb4678aa497786cf92d2cb89bc8a5f204f57b5b4ee5c1b",
+    "stage06e_static_members.py": "eb7cae4b47ef8153a0b60b856319ba95b4d985bdc1277544239a35226c0d2a35",
+    "stage06e_cached_ensemble.py": "a1b1d6f63cf1b9e7305ef866814e82a7ef7900659d0b8d3d1c255b90cd243086",
+    "stage06c_mixed_confirmation.py": "5c27fcdffde2bcfd512d20fb4edec9bd7133430e79ccd71e31875151d235a23d",
+    "STAGE_06E_CANONICAL_CPU_EVIDENCE.md": "89dbf531820b965f09fab07157475b199f929f4d297bd268e0f141c765a80f32",
+    "EXECUTION_FREEZE.json": "627cf35731ca8ea65526c73aa0cab08502aa574b5f20e6d97351c74cfef563d4"
+  },
+  "cells": [
+    {
+      "index": 0,
+      "characters": 77806,
+      "utf8_bytes": 77806,
+      "sha256": "86e5a3d50cd1850e65139b3fc7c8c39a77bd8ab8508f3208d101fe194a357fda",
+      "exact_Stage06D_payload_cell": true
+    },
+    {
+      "index": 1,
+      "characters": 156105,
+      "utf8_bytes": 156105,
+      "sha256": "bd765f02846b89e7537a6d92655cafa7f7664ba8199463048aca422ad9f04bac",
+      "exact_Stage06D_payload_cell": true
+    },
+    {
+      "index": 2,
+      "characters": 156106,
+      "utf8_bytes": 156106,
+      "sha256": "e7f8d7e91ad9179852c6606710d490c30fa510175d9e0d99101c29b6f2847504",
+      "exact_Stage06D_payload_cell": true
+    },
+    {
+      "index": 3,
+      "characters": 146225,
+      "utf8_bytes": 146225,
+      "sha256": "6c17db3c11cc0e1d4ad51710aa4874e16b1831701f608a3f54048b2cb2f06a29",
+      "exact_Stage06D_payload_cell": true
+    },
+    {
+      "index": 4,
+      "characters": 149236,
+      "utf8_bytes": 149236,
+      "sha256": "d9b48ff6df902e0a8d24635612ef021a4c760d8ae78cbe7088e5535c769b3e17",
+      "exact_Stage06D_payload_cell": false
+    }
+  ],
+  "validation": {
+    "nbformat_schema": true,
+    "all_five_cells_compile": true,
+    "all_module_sources_compile": true,
+    "linear_source_equals_exact_cell_concatenation": true,
+    "first_four_cells_unchanged": true,
+    "maximum_cell_characters": 190000,
+    "empty_outputs_and_null_execution_counts": true,
+    "exact_materialized_source_literal_hashes": true,
+    "no_self_referential_freeze_hash": true
+  },
+  "prospective_kaggle_metadata": {
+    "accelerator": "none",
+    "isGpuEnabled": false,
+    "isInternetEnabled": false,
+    "dataSources": [
+      {
+        "sourceId": 170484,
+        "sourceType": "competition"
+      },
+      {
+        "sourceId": 358745836,
+        "sourceType": "kernelVersion"
+      },
+      {
+        "sourceId": 358831649,
+        "sourceType": "kernelVersion"
+      },
+      {
+        "sourceId": 358911769,
+        "sourceType": "kernelVersion"
+      },
+      {
+        "sourceId": 358928013,
+        "sourceType": "kernelVersion"
+      },
+      {
+        "sourceId": 358948428,
+        "sourceType": "kernelVersion"
+      },
+      {
+        "sourceId": 359405443,
+        "sourceType": "kernelVersion"
+      }
+    ]
+  },
+  "input_version_ids": [
+    170484,
+    358745836,
+    358831649,
+    358911769,
+    358928013,
+    358948428,
+    359405443
+  ],
+  "accelerator": "none",
+  "internet_enabled": false,
+  "stage06e_model_fits_during_packaging": 0,
+  "stage06e_model_inference_calls_during_packaging": 0,
+  "browser_actions_performed": false,
+  "official_submission_performed": false,
+  "limitations": [
+    "Source packaging is inert preparation; no valid development result exists yet.",
+    "Saved immutable Kaggle source/settings verification and independent review remain external pre-execution gates.",
+    "Regenerate after any reviewed-module change; only the final manifest hashes define launchable source."
+  ]
+}

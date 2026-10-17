@@ -1,0 +1,116 @@
+--- scripts/stage06c_mixed_confirmation.py
++++ scripts/stage06e_capture_original.py
+@@ -5,6 +5,7 @@
+ for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS'):
+     os.environ[key]='2'
+ import hashlib, io, json, pickletools, time, warnings, zipfile
++from stage06e_cache_checks import CanonicalCapture
+ from pathlib import Path
+ import numpy as np
+ import pandas as pd
+@@ -18,7 +19,8 @@
+ from threadpoolctl import threadpool_limits
+ threadpool_limits(2)
+ START=time.monotonic()
+-INPUT=Path('/kaggle/input'); OUT=Path('/kaggle/working/stage06c'); OUT.mkdir(exist_ok=True)
++INPUT=Path(os.environ.get('NTL_STAGE06E_INPUT','/kaggle/input')); OUT=Path(os.environ.get('NTL_STAGE06E_OUTPUT','/kaggle/working/stage06e_cache'))
++CAP=CanonicalCapture(OUT,INPUT,Path(__file__))
+ TRAIN_SHA='40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707'
+ 
+ def digest(path):
+@@ -67,7 +69,7 @@
+     return actual
+ 
+ # The separately reviewed extractor writes this frozen representation first.
+-glm_path=OUT/'glm_features.npz'
++glm_path=one('glm_features.npz'); assert digest(glm_path)=='2b41585a9482cef825962a8cc096697933c0b1237e8ede0712d1f8ab361d9414'
+ with np.load(glm_path,allow_pickle=False) as z:
+     assert np.array_equal(z['ids'],ids)
+     glm_layers=z['layers'].copy()
+@@ -78,7 +80,7 @@
+ glm_cache_sha256=digest(glm_path)
+ del glm_features
+ # Preselected S02 frozen DeBERTa large representation, no layer/model search.
+-cache=one('enc_debv3l2_train.npz'); safe_ids(cache,ids)
++cache=one('enc_debv3l2_train.npz'); assert digest(cache)=='11eed58762ad128f97457dde9cc4ab03c7932e1b4b04845ec6664c834b1b1dda'; safe_ids(cache,ids)
+ with np.load(cache,allow_pickle=False) as z:
+     layers=z['layers'];emb=z['emb']
+     assert emb.shape==(len(train),9,1024) and emb.dtype==np.float16
+@@ -91,6 +93,7 @@
+ splits=list(GroupKFold(5).split(X,y,groups))
+ for number,(_,valid) in enumerate(splits):our_folds[valid]=number+1
+ assert all(REFERENCE_PROMPT_FOLDS[g]==int(k) for g,k in zip(groups,our_folds))
++CAP.initialize(ids,classes,y,groups,our_folds,splits,REFERENCE_PROMPT_FOLDS,train_path,cache,glm_path)
+ 
+ def centered(features,labels):
+     result=features.copy()
+@@ -147,16 +150,20 @@
+ convergence=[]
+ warning_records=[]
+ def fit_head(features,targets,weights=None):
++    CAP.begin_fit()
+     scaler=StandardScaler().fit(features,sample_weight=weights)
+     with warnings.catch_warnings(record=True) as caught:
+         warnings.simplefilter('always');clf=LogisticRegression(C=.005,max_iter=5000).fit(scaler.transform(features),targets,sample_weight=weights)
+     warning_records.extend(dict(category=w.category.__name__,message=str(w.message)) for w in caught)
+     convergence.extend(str(w.message) for w in caught if w.category.__name__ != 'DeprecationWarning')
+     assert np.array_equal(clf.classes_,np.arange(18))
++    CAP.end_fit()
+     return scaler,clf
+ 
+ def logprob(head,features):
+-    scaler,clf=head;return np.log(np.clip(clf.predict_proba(scaler.transform(features)),1e-9,1))
++    scaler,clf=head;probability=clf.predict_proba(scaler.transform(features));value=np.log(np.clip(probability,1e-9,1))
++    CAP.last_centered(probability,value)
++    return value
+ 
+ predictions={key:np.empty((3,len(train)),int) for key in ('control','candidate','oracle_control','oracle_candidate')}
+ fold_scores=[]; realised=[]
+@@ -168,17 +175,22 @@
+     pieces=[]
+     for size in (2,3,6):
+         grouping=partition_training(fit,size,rng);pieces.append(centered(X[fit],grouping))
++        CAP.training_partition(number,size,fit,valid,grouping)
+         counts=np.bincount(grouping);realised.append(dict(fold=number,target=size,sizes=np.unique(counts,return_counts=True)[0].tolist(),counts=np.unique(counts,return_counts=True)[1].tolist()))
+     candidate=fit_head(np.concatenate(pieces),np.tile(y[fit],3),np.full(3*len(fit),1/3))
+     del pieces
++    for capture_label,capture_head in [('plain',plain),('control',control),('candidate',candidate)]:CAP.head(number,capture_label,capture_head,fit,valid)
+     for scenario,size in enumerate((1,3,6)):
+         batches,inferred,oracle=contexts(valid,size,number)
++        CAP.context(scenario,number,valid,batches,inferred,oracle)
+         plain_log=np.empty((len(valid),18))
+         _,plain_clf=plain
+         for batch in np.unique(batches):
+             pos=np.flatnonzero(batches==batch);features=X[valid[pos]]
+             standardized=(features-features.mean(0))/(features.std(0)+1e-6) if len(pos)>=2 else plain[0].transform(features)
+-            plain_log[pos]=np.log(np.clip(plain_clf.predict_proba(standardized),1e-9,1))
++            probability=plain_clf.predict_proba(standardized)
++            plain_log[pos]=np.log(np.clip(probability,1e-9,1))
++            CAP.plain(scenario,valid[pos],probability,plain_log[pos])
+         for mode,labels in [('inferred',inferred),('oracle',oracle)]:
+             sizes=np.bincount(labels)[labels];eligible=(sizes>=2)&(sizes<=18)
+             residual=centered(X[valid],labels)
+@@ -187,6 +199,7 @@
+                 if eligible.any():evidence[eligible]+=.25*logprob(head,residual[eligible])
+                 key=label if mode=='inferred' else 'oracle_'+label
+                 predictions[key][scenario,valid]=evidence.argmax(1)
++                CAP.component(key,scenario,valid,eligible,evidence,predictions[key][scenario,valid])
+                 fold_scores.append(dict(fold=number,scenario=size,grouping=mode,head=label,balanced_accuracy=float(balanced_accuracy_score(y[valid],evidence.argmax(1))),eligible_rows=int(eligible.sum())))
+     print('CENTERING_FOLD_COMPLETE',number+1,'seconds',round(time.monotonic()-START,1),flush=True)
+     del plain,control,candidate
+@@ -207,11 +220,12 @@
+         for i,label in enumerate(classes):recalls.append(dict(head=key,scenario=size,model=label,recall=float((pred[scenario,y==i]==i).mean())))
+ pd.DataFrame(recalls).to_csv(OUT/'per_class_recall.csv',index=False)
+ pd.DataFrame(fold_scores).to_csv(OUT/'fold_scores.csv',index=False)
+-np.savez_compressed(OUT/'paired_predictions.npz',ids=ids,classes=classes,y=y,groups=groups,fold=our_folds,**predictions)
+-result=dict(status='COMPLETE_MIXED_GROUP_COMPONENT_CONFIRMATION',representation='frozen DeBERTa-v3-large mean L24+L6; fp16 public cache',train_sha256=TRAIN_SHA,cache_sha256=digest(cache),glm_cache_sha256=glm_cache_sha256,grouping='S02 mixed GLM24/TF-IDF average linkage threshold0.60',scenarios=[1,3,6],scores=scores,primary_mean_gain=mean_gain,scenario_gains=gains.tolist(),paired_prompt_95_interval=interval,screen_pass=screen,convergence_warnings=convergence,all_warning_records=warning_records,realised_training_group_sizes=realised,seconds=time.monotonic()-START,limitations=['Only one of five frozen centered twins tested; not a complete S02 ensemble.','Thirty-prompt fold batches, not full hidden-test batch size; clustering scale transfer unverified.','Quantized cached features; not bitwise reproduction of fp32 S02 extraction.','Only the weighted DeBERTa component is scored, not its marginal change to S02 ensemble accuracy.','Historical development reuse; conditional fixed-prediction bootstrap omits refitting/clustering variability; no official submission or paid service.'])
++np.savez_compressed(OUT/'paired_predictions.npz',ids=ids,classes=classes.astype(str),y=y,groups=groups,fold=our_folds,**predictions)
++result=dict(status='COMPLETE_CANONICAL_CPU_COMPONENT_EVIDENCE',representation='frozen DeBERTa-v3-large mean L24+L6; fp16 public cache',train_sha256=TRAIN_SHA,cache_sha256=digest(cache),glm_cache_sha256=glm_cache_sha256,grouping='S02 mixed GLM24/TF-IDF average linkage threshold0.60',scenarios=[1,3,6],scores=scores,primary_mean_gain=mean_gain,scenario_gains=gains.tolist(),paired_prompt_95_interval=interval,screen_pass=screen,convergence_warnings=convergence,all_warning_records=warning_records,realised_training_group_sizes=realised,seconds=time.monotonic()-START,limitations=['Only one of five frozen centered twins tested; not a complete S02 ensemble.','Thirty-prompt fold batches, not full hidden-test batch size; clustering scale transfer unverified.','Quantized cached features; not bitwise reproduction of fp32 S02 extraction.','Only the weighted DeBERTa component is scored, not its marginal change to S02 ensemble accuracy.','Historical development reuse; conditional fixed-prediction bootstrap omits refitting/clustering variability; no official submission or paid service.'])
+ write_json('centering_result.json',result);write_json('id_checks.json',id_checks)
+ write_json('group_diagnostics.json',group_diagnostics)
+ print('GROUP_DIAGNOSTICS',json.dumps(group_diagnostics),flush=True)
+ print('PER_CLASS_RECALL_CSV',json.dumps(pd.DataFrame(recalls).to_csv(index=False)),flush=True)
+ print('CENTERING_RESULT',json.dumps(result),flush=True)
+-print('STAGE06C_COMPLETE',flush=True)
++CAP.finalize(predictions,scores,warning_records,convergence,id_checks,fold_scores,group_diagnostics)
++print('STAGE06E_CANONICAL_CACHE_COMPLETE',flush=True)

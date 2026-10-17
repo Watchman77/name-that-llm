@@ -1,0 +1,31 @@
+{
+  "status": "IMPLEMENTED_NOT_EXECUTED",
+  "fits": 0,
+  "inference_calls": 0,
+  "files": {
+    "scripts/stage06c_mixed_confirmation.py": {
+      "bytes": 15038,
+      "sha256": "5c27fcdffde2bcfd512d20fb4edec9bd7133430e79ccd71e31875151d235a23d"
+    },
+    "scripts/stage06e_capture_original.py": {
+      "bytes": 16215,
+      "sha256": "0445e9c3f8d64f72dfedecdc63881262fc796f00ae8275230a232155b8855ce9"
+    },
+    "scripts/stage06e_cache_checks.py": {
+      "bytes": 30367,
+      "sha256": "981e07456a4f47a166eb4678aa497786cf92d2cb89bc8a5f204f57b5b4ee5c1b"
+    },
+    "results/stage_06e/ORIGINAL_TO_CAPTURE.diff": {
+      "bytes": 8963,
+      "sha256": "d0e358003484fc8d852ace9de32d409e53b01ef9fd9941290df071a56172112d"
+    },
+    "results/stage_06e/CANONICAL_CACHE_SCHEMA.md": {
+      "bytes": 7901,
+      "sha256": "b542e1b92e6c0693527c54b956970b5d22090e52567cdb406dcdeb24d505725a"
+    },
+    "results/stage_06e/PRODUCER_FIXTURES.json": {
+      "bytes": 3070,
+      "sha256": "6c95cfb4042b91469c6f67e6b69decdc69847d3bc516dc89ad409ab237e602bb"
+    }
+  }
+}

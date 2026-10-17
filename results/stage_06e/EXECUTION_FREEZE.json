@@ -1,0 +1,40 @@
+{
+  "schema_version": "stage06e-execution-freeze-v1",
+  "status": "FROZEN_SOURCE_CANDIDATE_NOT_EXECUTED",
+  "capture_source_sha256": "0445e9c3f8d64f72dfedecdc63881262fc796f00ae8275230a232155b8855ce9",
+  "cache_checks_source_sha256": "981e07456a4f47a166eb4678aa497786cf92d2cb89bc8a5f204f57b5b4ee5c1b",
+  "static_preparation_source_sha256": "eb7cae4b47ef8153a0b60b856319ba95b4d985bdc1277544239a35226c0d2a35",
+  "consumer_source_sha256": "a1b1d6f63cf1b9e7305ef866814e82a7ef7900659d0b8d3d1c255b90cd243086",
+  "original_source_sha256": "5c27fcdffde2bcfd512d20fb4edec9bd7133430e79ccd71e31875151d235a23d",
+  "plan_sha256": "89dbf531820b965f09fab07157475b199f929f4d297bd268e0f141c765a80f32",
+  "original_D_fusion_source_sha256": "c6005196a73100676141d18f67eb299c1bf686a547fbb077b91825d2bd2611b3",
+  "input_version_ids": [
+    170484,
+    358745836,
+    358831649,
+    358911769,
+    358928013,
+    358948428,
+    359405443
+  ],
+  "accelerator": "none",
+  "internet_enabled": false,
+  "expected_runtime": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "threadpoolctl": "3.6.0"
+  },
+  "expected_thread_limits": {
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "planned_head_fits": 15,
+  "static_style_probability_fits": 0,
+  "cache_consumer_fits": 0,
+  "official_submission_performed": false,
+  "limitation": "Preparation record only. Exact saved private Kaggle source, seven input versions and settings must be verified before execution."
+}
