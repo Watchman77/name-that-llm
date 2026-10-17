@@ -26,6 +26,6 @@ The editor showed **Pin to original environment (2026-10-02)**, but the running 
 
 ## Interpretation and next action
 
-No official S02 has been submitted yet, and neither 0.549 nor 0.552 is our measured score. A successful three-row preview proves technical execution only. After completion, verify output IDs, labels and runtime/parity checks before one declared S02 hidden-test rerun. Preserve failures and diagnose before retrying.
+The private preview has now succeeded in 31m 25s. All stages and LoRA anchor checks passed; the exact code hash matches and submission.parquet exists. Source construction and assertions verify its intended IDs/columns, unique IDs, row count and labels; the Parquet UI preview is unsupported and no independent binary read is claimed. One declared official S02 has been accepted and shows Notebook Running for hidden-test execution. Neither 0.549 nor 0.552 is our measured score. The three-row preview proves technical execution only. Preserve failures and diagnose before retrying. See OUTPUT_VERIFICATION.json and results/submissions/S02_REPORT.md.
 
 The pretrained competition classifiers were fitted on the training set. Reusing those final checkpoints to score our saved training folds would leak labels. Independent development evaluation of a new method requires fitting within each held-out-prompt split. This copied recipe is a competitive reference; an original publication needs an attributable contribution, full upstream licence/provenance review and stronger independent evaluation.
