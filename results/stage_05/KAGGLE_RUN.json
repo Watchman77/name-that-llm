@@ -1,0 +1,92 @@
+{
+  "stage": "05_public_reproduction",
+  "trial_label": "trial_01",
+  "status": "Running",
+  "recorded_utc": "2026-10-17T11:04:43.062Z",
+  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-05-public-reproduction?scriptVersionId=359332774",
+  "script_version_id": 359332774,
+  "notebook_version": 1,
+  "source_author": "Lucas Boesen",
+  "source_version_id": 359126546,
+  "source_reported_public_score": 0.549,
+  "our_public_score": null,
+  "official_submission_made": false,
+  "code_diff_display": "+0 -0",
+  "source_sha256": "261e27094fbefbfe8e6496feda4a274f8e9a8587a19b304da074a71f49cbc2f3",
+  "protocol_commit": "dfc009a58c5ca3e0be8b8b6a23044eac600515e8",
+  "privacy": "Private",
+  "internet_enabled": false,
+  "accelerator": "GPU T4 x2",
+  "gpu_preflight_confirmed": true,
+  "preflight_log": "train (2699, 4) test (3, 2) gpus 2",
+  "latest_step_observed": "stylegram done (14s); style_lgb done (39s); glm9b extraction started",
+  "requested_environment_ui": "Pin to original environment (2026-10-02)",
+  "actual_environment_label": "Latest Container Image",
+  "environment_note": "Kaggle Logs contradicts requested environment label. Preserve actual label; do not claim original container was reproduced. No model-code changes or restart made.",
+  "notebook_export_metadata_note": "Rendered version JSON says isGpuEnabled=false while accelerator=nvidiaTeslaT4; GPU-for-this-session Save option and live gpus 2 confirm actual GPU execution. Export is preserved as displayed.",
+  "paid_services_used": false,
+  "input_version_ids": [
+    {
+      "sourceType": "competition",
+      "sourceId": 170484
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 18975315
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 20736096
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358683059
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358745836
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358758062
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358770408
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358831649
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358911769
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358928013
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358948428
+    },
+    {
+      "sourceType": "modelInstanceVersion",
+      "sourceId": 166254
+    },
+    {
+      "sourceType": "modelInstanceVersion",
+      "sourceId": 363135
+    },
+    {
+      "sourceType": "modelInstanceVersion",
+      "sourceId": 363140
+    }
+  ],
+  "artifact_output_observed_bytes": 0,
+  "actual_code_cell_sha256": "e3d97306f3185ea5f73d7904d81331b27803e3ceb45970596590ec306969762e",
+  "source_archive_note": "Archive file adds one terminal newline; notebook preserves exact original cell. Both parse identically.",
+  "warnings_observed": [
+    "LightGBM/scikit-learn feature-name warnings; no failure observed at this check"
+  ]
+}
