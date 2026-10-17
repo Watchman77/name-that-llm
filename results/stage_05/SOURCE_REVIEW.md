@@ -1,6 +1,6 @@
 # Public method review and launch record
 
-Observed 17 October 2026. This is an independently tracked reproduction, with no new measured accuracy yet.
+Observed 17 October 2026. This independently tracked reproduction has now succeeded as official S02 with displayed public balanced accuracy 0.549.
 
 ## What we learned
 
@@ -26,6 +26,10 @@ The editor showed **Pin to original environment (2026-10-02)**, but the running 
 
 ## Interpretation and next action
 
-The private preview has now succeeded in 31m 25s. All stages and LoRA anchor checks passed; the exact code hash matches and submission.parquet exists. Source construction and assertions verify its intended IDs/columns, unique IDs, row count and labels; the Parquet UI preview is unsupported and no independent binary read is claimed. One declared official S02 has been accepted and shows Notebook Running for hidden-test execution. Neither 0.549 nor 0.552 is our measured score. The three-row preview proves technical execution only. Preserve failures and diagnose before retrying. See OUTPUT_VERIFICATION.json and results/submissions/S02_REPORT.md.
+The private preview has now succeeded in 31m 25s. All stages and LoRA anchor checks passed; the exact code hash matches and submission.parquet exists. Source construction and assertions verify its intended IDs/columns, unique IDs, row count and labels; the Parquet UI preview is unsupported and no independent binary read is claimed. The declared official S02 has now succeeded at 0.549 public balanced accuracy, matching the source's displayed score and improving S01's 0.354 by 19.5 percentage points. The separate 0.552 recipe was not run. The three-row preview proves technical execution only. Preserve failures and diagnose before retrying. See OUTPUT_VERIFICATION.json and results/submissions/S02_REPORT.md.
 
 The pretrained competition classifiers were fitted on the training set. Reusing those final checkpoints to score our saved training folds would leak labels. Independent development evaluation of a new method requires fitting within each held-out-prompt split. This copied recipe is a competitive reference; an original publication needs an attributable contribution, full upstream licence/provenance review and stronger independent evaluation.
+
+## Final official outcome
+
+Observed 2026-10-17T14:02:20.265Z: S02 Succeeded, public score **0.549**, rank **177/1204**. Tenth place 0.559, leader 0.593. The score matches the copied recipe at displayed precision; the final private score is unknown and no original contribution is claimed. The separate own DeBERTa trial completed at 22.76% development BA and is rejected. See results/submissions/S02_REPORT.md and results/stage_04b/REPORT.md.
