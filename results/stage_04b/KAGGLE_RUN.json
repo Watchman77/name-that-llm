@@ -13,5 +13,8 @@
   "supervised_score": null,
   "official_submission_made": false,
   "recorded_utc": "2026-10-17T10:16:38.563745+00:00",
-  "script_version_id": 359319680
+  "script_version_id": 359319680,
+  "last_checked_utc": "2026-10-17T10:43:48.323Z",
+  "last_ui_age_display": "27m ago",
+  "queue_note": "Fresh Kaggle Logs page still shows Queued... and 0 B output; no GPU preflight or training logs are available."
 }
