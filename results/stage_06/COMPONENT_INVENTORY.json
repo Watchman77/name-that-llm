@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-17",
+  "scope": "Visible frozen S02 input trees and source review; numeric checks in Stage06B",
+  "components": [
+    {
+      "component": "stylegram/style_lgb",
+      "source": "S02 inference source V3 359126546",
+      "available": "Recipe and official train rows",
+      "gap": "No saved OOF in S02 output; recompute fold-local vectorizers and heads",
+      "status": "CPU-reproducible recipe; current full-ensemble OOF not built"
+    },
+    {
+      "component": "Qwen3-8B, Qwen2.5-7B, Qwen3-4B frozen centered twins",
+      "source": "Attached official model weights",
+      "available": "Pretrained weights/tokenizers",
+      "gap": "No passage feature cache located in frozen S02 inputs",
+      "status": "Feature extraction required for matched representations"
+    },
+    {
+      "component": "GLM frozen twin and clustering features",
+      "source": "lucasboesen/name-that-llm-glm4-9b-trunc25 V358683059",
+      "available": "Truncated weights/tokenizer/config",
+      "gap": "No layer8/3 mean or layer24 clustering feature cache listed",
+      "status": "Mixed GLM/lexical clustering unavailable for current CPU test"
+    },
+    {
+      "component": "DeBERTa-large mean24+6 centered twin",
+      "source": "lucasboesen/name-that-llm-extract-encoders2 V358745836",
+      "available": "enc_debv3l2_train.npz with mean/style layers6,12,16,18,20,21,22,23,24",
+      "gap": "Cache fp16 vs S02 fp32; row IDs saved as object metadata",
+      "status": "Selected for one fixed CPU component test"
+    },
+    {
+      "component": "ELECTRA-large frozen plain head",
+      "source": "extract-encoders2 V358745836; electra-large-weights V358758062",
+      "available": "enc_electl_train.npz layers6,12,18,21,24 mean/style; separate pretrained weights",
+      "gap": "No existing S02 fold-local plain-head predictions",
+      "status": "Cached features located; not selected for parameter/layer search"
+    },
+    {
+      "component": "desklib detector frozen plain head",
+      "source": "lucasboesen/name-that-llm-desklib-weights V358770408",
+      "available": "Weights/tokenizer/config",
+      "gap": "No passage feature cache listed",
+      "status": "Feature extraction needed for full ensemble"
+    },
+    {
+      "component": "First public LoRA24",
+      "source": "lightningv08/ntl-lora24-fivefold-training V358831649",
+      "available": "Five held-out feature banks/readouts; plain/center/half OOF",
+      "gap": "Not full S02; original folds differ from seed0/our folds",
+      "status": "Numeric reconstruction verified in Stage06A"
+    },
+    {
+      "component": "Second LoRA24 seed7",
+      "source": "lucasboesen/name-that-llm-train-lora24-s7 V358911769",
+      "available": "Five held-out valid_features/readouts/completion reports plus final adapter",
+      "gap": "Features fp16; completion manifests lack file hashes",
+      "status": "CPU numeric audit in Stage06B"
+    },
+    {
+      "component": "Qwen3.5 token attention",
+      "source": "lucasboesen/name-that-llm-train-tokattn V358928013",
+      "available": "tokattn_oof.npz; final .pt",
+      "gap": "OOF can be checked but no saved outer heads/token-state banks for independent re-inference",
+      "status": "CPU probability/ID/fold audit in Stage06B; .pt not loaded"
+    },
+    {
+      "component": "DeBERTa token attention",
+      "source": "lucasboesen/name-that-llm-train-tokattn2 V358948428",
+      "available": "tokattn_debl23_oof.npz; final .pt; additional Qwen8B OOF not used in S02",
+      "gap": "No saved outer heads/token states for independent inference",
+      "status": "CPU probability/ID/fold audit in Stage06B"
+    },
+    {
+      "component": "UltraBERT fivefold ensemble",
+      "source": "pjmathematician/ultrabert-380m-ntl datasetV20736096 (version mapping to confirm)",
+      "available": "Root fold0..fold4 and wheels; fold0 has six config/code/weights/tokenizer files",
+      "gap": "No root OOF file; original prompt membership and other fold metadata not verified",
+      "status": "Insufficient provenance for honest OOF; final fold ensemble in-sample inference would not solve it"
+    }
+  ]
+}
