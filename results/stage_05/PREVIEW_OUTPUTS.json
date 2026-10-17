@@ -1,0 +1,90 @@
+[
+  {
+    "kind": "stdout",
+    "text": "train (2699, 4) test (3, 2) gpus 2\nstylegram done (14s)\nstyle_lgb done (39s)\n"
+  },
+  {
+    "kind": "stderr",
+    "text": "/usr/local/lib/python3.13/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names\n  warnings.warn(\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "glm9b /kaggle/input/notebooks/lucasboesen/name-that-llm-glm4-9b-trunc25/glm4_9b_trunc25 [8, 3, 24] mean\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "clustering mixglm | test cluster sizes (passages): 1: 3  2-3: 0  4-18: 0  >18: 0  | adapt rows: 0 add\nadapt self-test rows: 51 of 54\nclustering QA on 433 train passages (1-5/prompt): pair precision 0.940 recall 0.772 | sizes 1: 78  2-3: 176  4-18: 179  >18: 0\nq3_8b_cat7+22 /kaggle/input/models/qwen-lm/qwen-3/transformers/8b-base/1 [7, 22] mean\n"
+  },
+  {
+    "kind": "stderr",
+    "text": "[transformers] Qwen3Model LOAD REPORT from: /kaggle/input/models/qwen-lm/qwen-3/transformers/8b-base/1\nKey                                                    | Status     |  | \n-------------------------------------------------------+------------+--+-\nlm_head.weight                                         | UNEXPECTED |  | \nmodel.layers.{23...35}.mlp.up_proj.weight              | UNEXPECTED |  | \nmodel.layers.{23...35}.post_attention_layernorm.weight | UNEXPECTED |  | \nmodel.layers.{23...35}.self_attn.q_proj.weight         | UNEXPECTED |  | \nmodel.layers.{23...35}.input_layernorm.weight          | UNEXPECTED |  | \nmodel.layers.{23...35}.self_attn.q_norm.weight         | UNEXPECTED |  | \nmodel.layers.{23...35}.self_attn.k_proj.weight         | UNEXPECTED |  | \nmodel.layers.{23...35}.self_attn.o_proj.weight         | UNEXPECTED |  | \nmodel.layers.{23...35}.mlp.down_proj.weight            | UNEXPECTED |  | \nmodel.layers.{23...35}.self_attn.v_proj.weight         | UNEXPECTED |  | \nmodel.layers.{23...35}.self_attn.k_norm.weight         | UNEXPECTED |  | \nmodel.layers.{23...35}.mlp.gate_proj.weight            | UNEXPECTED |  | \n\nNotes:\n- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "  adapt self-test (51 train rows, seen in training): acc 0.92\nq3_8b_cat7+22 done (721s)\nq25_7b_cat6+20 /kaggle/input/models/qwen-lm/qwen2.5/transformers/7b/1 [6, 20] mean\n"
+  },
+  {
+    "kind": "stderr",
+    "text": "[transformers] Qwen2Model LOAD REPORT from: /kaggle/input/models/qwen-lm/qwen2.5/transformers/7b/1\nKey                                                                       | Status     |  | \n--------------------------------------------------------------------------+------------+--+-\nlm_head.weight                                                            | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.self_attn.q_proj.bias           | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.mlp.down_proj.weight            | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.post_attention_layernorm.weight | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.self_attn.q_proj.weight         | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.input_layernorm.weight          | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.self_attn.v_proj.weight         | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.mlp.gate_proj.weight            | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.self_attn.o_proj.weight         | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.self_attn.k_proj.bias           | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.self_attn.k_proj.weight         | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.self_attn.v_proj.bias           | UNEXPECTED |  | \nmodel.layers.{21, 22, 23, 24, 25, 26, 27}.mlp.up_proj.weight              | UNEXPECTED |  | \n\nNotes:\n- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "  adapt self-test (51 train rows, seen in training): acc 0.96\nq25_7b_cat6+20 done (1035s)\nstyle4b /kaggle/input/models/qwen-lm/qwen-3/transformers/4b-base/1 [4, 7] style\n"
+  },
+  {
+    "kind": "stderr",
+    "text": "[transformers] Qwen3Model LOAD REPORT from: /kaggle/input/models/qwen-lm/qwen-3/transformers/4b-base/1\nKey                                                   | Status     |  | \n------------------------------------------------------+------------+--+-\nmodel.layers.{8...35}.self_attn.q_proj.weight         | UNEXPECTED |  | \nmodel.layers.{8...35}.post_attention_layernorm.weight | UNEXPECTED |  | \nmodel.layers.{8...35}.input_layernorm.weight          | UNEXPECTED |  | \nmodel.layers.{8...35}.self_attn.k_proj.weight         | UNEXPECTED |  | \nmodel.layers.{8...35}.self_attn.o_proj.weight         | UNEXPECTED |  | \nmodel.layers.{8...35}.mlp.up_proj.weight              | UNEXPECTED |  | \nmodel.layers.{8...35}.mlp.down_proj.weight            | UNEXPECTED |  | \nmodel.layers.{8...35}.self_attn.v_proj.weight         | UNEXPECTED |  | \nmodel.layers.{8...35}.mlp.gate_proj.weight            | UNEXPECTED |  | \nmodel.layers.{8...35}.self_attn.k_norm.weight         | UNEXPECTED |  | \nmodel.layers.{8...35}.self_attn.q_norm.weight         | UNEXPECTED |  | \n\nNotes:\n- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "  adapt self-test (51 train rows, seen in training): acc 0.92\nstyle4b done (1153s)\n  adapt self-test (51 train rows, seen in training): acc 0.96\nglm9b done (1246s)\ndebv3l /kaggle/input/notebooks/lucasboesen/name-that-llm-extract-encoders2/deberta-v3-large [(24, 'mean'), (6, 'mean')]\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "  adapt self-test (51 train rows, seen in training): acc 0.82\ndebv3l done (1428s)\nelectl /kaggle/input/notebooks/lucasboesen/name-that-llm-electra-large-weights/electra-large-discriminator [(21, 'mean'), (24, 'style')]\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "electl done (1562s)\ndesk /kaggle/input/notebooks/lucasboesen/name-that-llm-desklib-weights/desklib-detector [(23, 'mean'), (23, 'style')]\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "desk done (1726s)\n"
+  },
+  {
+    "kind": "stderr",
+    "text": "[transformers] Qwen3Model LOAD REPORT from: /kaggle/input/models/qwen-lm/qwen-3/transformers/8b-base/1\nKey                                                    | Status     |  | \n-------------------------------------------------------+------------+--+-\nlm_head.weight                                         | UNEXPECTED |  | \nmodel.layers.{24...35}.mlp.up_proj.weight              | UNEXPECTED |  | \nmodel.layers.{24...35}.post_attention_layernorm.weight | UNEXPECTED |  | \nmodel.layers.{24...35}.self_attn.q_proj.weight         | UNEXPECTED |  | \nmodel.layers.{24...35}.input_layernorm.weight          | UNEXPECTED |  | \nmodel.layers.{24...35}.self_attn.q_norm.weight         | UNEXPECTED |  | \nmodel.layers.{24...35}.self_attn.k_proj.weight         | UNEXPECTED |  | \nmodel.layers.{24...35}.self_attn.o_proj.weight         | UNEXPECTED |  | \nmodel.layers.{24...35}.mlp.down_proj.weight            | UNEXPECTED |  | \nmodel.layers.{24...35}.self_attn.v_proj.weight         | UNEXPECTED |  | \nmodel.layers.{24...35}.mlp.gate_proj.weight            | UNEXPECTED |  | \nmodel.layers.{24...35}.self_attn.k_norm.weight         | UNEXPECTED |  | \n\nNotes:\n- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "lora /kaggle/input/notebooks/lightningv08/ntl-lora24-fivefold-training/lora24/final\n  lora parity vs saved anchor features: max abs 0.0000, mean rel 0.00000\nlora done (1739s)\nlora2 /kaggle/input/name-that-llm-train-lora24-s7/lora_out/job_final\n  lora2 parity vs saved anchor features: max abs 0.0156, mean rel 0.00017\nlora2 done (1743s)\n"
+  },
+  {
+    "kind": "stderr",
+    "text": "[transformers] Qwen3_5Model LOAD REPORT from: /kaggle/input/datasets/bbucxi/qwen35-9b-safetensors\nKey                                                                                             | Status     |  | \n------------------------------------------------------------------------------------------------+------------+--+-\nlm_head.weight                                                                                  | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.conv1d.weight      | UNEXPECTED |  | \nmodel.language_model.layers.{19...31}.mlp.up_proj.weight                                        | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.A_log              | UNEXPECTED |  | \nmodel.language_model.layers.{19...31}.post_attention_layernorm.weight                           | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.in_proj_a.weight   | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.k_proj.weight                            | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.k_norm.weight                            | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.norm.weight        | UNEXPECTED |  | \nmodel.language_model.layers.{19...31}.input_layernorm.weight                                    | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.in_proj_z.weight   | UNEXPECTED |  | \nmodel.language_model.layers.{19...31}.mlp.gate_proj.weight                                      | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.in_proj_qkv.weight | UNEXPECTED |  | \nmodel.language_model.layers.{19...31}.mlp.down_proj.weight                                      | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.in_proj_b.weight   | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.out_proj.weight    | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.q_proj.weight                            | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.dt_bias            | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.v_proj.weight                            | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.q_norm.weight                            | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.o_proj.weight                            | UNEXPECTED |  | \n\nNotes:\n- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "  tokattn in-sample check on 40 train rows: acc 1.00\n"
+  },
+  {
+    "kind": "stderr",
+    "text": "[transformers] Qwen3_5Model LOAD REPORT from: /kaggle/input/datasets/bbucxi/qwen35-9b-safetensors\nKey                                                                                             | Status     |  | \n------------------------------------------------------------------------------------------------+------------+--+-\nlm_head.weight                                                                                  | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.conv1d.weight      | UNEXPECTED |  | \nmodel.language_model.layers.{19...31}.mlp.up_proj.weight                                        | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.A_log              | UNEXPECTED |  | \nmodel.language_model.layers.{19...31}.post_attention_layernorm.weight                           | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.in_proj_a.weight   | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.k_proj.weight                            | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.k_norm.weight                            | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.norm.weight        | UNEXPECTED |  | \nmodel.language_model.layers.{19...31}.input_layernorm.weight                                    | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.in_proj_z.weight   | UNEXPECTED |  | \nmodel.language_model.layers.{19...31}.mlp.gate_proj.weight                                      | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.in_proj_qkv.weight | UNEXPECTED |  | \nmodel.language_model.layers.{19...31}.mlp.down_proj.weight                                      | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.in_proj_b.weight   | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.out_proj.weight    | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.q_proj.weight                            | UNEXPECTED |  | \nmodel.language_model.layers.{20, 21, 22, 24, 25, 26, 28, 29, 30}.linear_attn.dt_bias            | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.v_proj.weight                            | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.q_norm.weight                            | UNEXPECTED |  | \nmodel.language_model.layers.{19, 23, 27, 31}.self_attn.o_proj.weight                            | UNEXPECTED |  | \n\nNotes:\n- UNEXPECTED:\tcan be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "tokattn done (1780s)\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "  tokattn_deb in-sample check on 40 train rows: acc 0.75\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "tokattn_deb done (1797s)\n"
+  },
+  {
+    "kind": "stdout",
+    "text": "ultrabert done (1835s)\nbalancing changed 0 of 3\nmodel\nclaude-opus-4-8           1\ngpt-5.6-terra             1\ngemini-3.1-pro-preview    1\ntotal 1835s\n"
+  }
+]
