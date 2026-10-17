@@ -89,7 +89,7 @@
   "warnings_observed": [
     "LightGBM/scikit-learn feature-name warnings; no failure observed at this check"
   ],
-  "last_checked_utc": "2026-10-17T11:40:05.327Z",
+  "last_checked_utc": "2026-10-17T13:12:36.877Z",
   "last_ui_runtime_display": "1884.8 second run - successful",
   "additional_log_evidence": {
     "qwen3_completed_log": "759.4s q3_8b_cat7+22 done (721s)",
