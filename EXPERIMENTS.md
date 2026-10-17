@@ -65,3 +65,12 @@ The notebook is kept private with the competition input attached and internet di
 - Decision: reject both additions and retain Stage 03/S01. This result does not establish that supervised contextual encoders fail; the experiment used a frozen semantic encoder, fixed C=1 and equal normalized block weights.
 - Evidence and independently executed evaluation companion: results/stage_04/ and notebooks/Stage_04_Evaluation.ipynb.
 - Target clarified: first in final private evaluation; public leader observed at 58.4%, 23.0 points above S01. Plan for a distinct fixed supervised DeBERTa-v3-base trial: plans/STAGE_04B_SUPERVISED_ENCODER.md. That trial is **planned, not executed**.
+
+## Stage 04B — supervised trial launch — 17 October 2026
+
+- Original protocol commit 8ab67d337b139059669455d605cf802eda9d4301; implementation clarifications committed before fitting in 5563d45ef49311afa7ca0cacc184bb2ed46f3ba8.
+- Pinned DeBERTa-v3-base, one fixed three-epoch recipe, exact saved prompt folds. Runner commit 8603667afbe1d404aec4f9855ab09be5d3ef412e.
+- Exact uneven accumulation gradient check and actual offline model/tokenizer CPU forward passed. No supervised fitting or validation score was produced by these checks.
+- Separate private CPU resources version 359317729 succeeded in 35.6 seconds. Includes pinned weights, offline dependency wheels and the exact frozen reference OOF file.
+- Kaggle reported 30 included GPU hours before launch. The private training version 359319680 is queued with GPU T4 x2 selected, computation restricted to cuda:0, internet disabled and a three-hour budget. GPU preflight and results are pending.
+- No new official submission. See results/stage_04b/KAGGLE_RUN.json for current execution status.
