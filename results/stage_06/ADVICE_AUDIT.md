@@ -1,5 +1,5 @@
 # Stage 06: audit of the proposed route to 70%
-Date: 2026-10-17. Status: source audit complete; prediction-artifact audit and new experiments NOT run.
+Date: 2026-10-17. Status: source audit and one public LoRA prediction-artifact audit complete. Full S02 reconstruction and centering experiment remain pending. See REPORT.md.
 
 ## Verified starting point
 Our unchanged S02 reproduction scored 0.549 official public balanced accuracy. S01 scored 0.354: +19.5 percentage points. At this live check, the leader is 0.600, tenth 0.559, and Watchman 777 is rank 181/1212 with two entries. These standings can change; final private results are unknown.
@@ -41,7 +41,7 @@ Static review of evaluate_lora24.py shows:
 - Public mixtures reference a separate Gemma baseline and exclude UltraBERT. They are NOT full S02 OOF predictions.
 - Report explicitly calls three fixed mixture comparisons descriptive and notes development data reuse.
 
-Limitations: we inspected source and public file listings, not downloaded/independently recomputed the NPZ contents. A private helper input appears in the source notebook; embedded code is public, but complete training reproducibility/dependency provenance is not yet certified. No published score is silently promoted to our own result.
+Update: private CPU V1 359394412 has now independently reconstructed this component's numeric predictions from the saved outer feature banks and heads; all values and component metrics matched. The earlier source-only limitation is resolved for this component. See REPORT.md and LOra_COMPONENT_PROVENANCE.json. Limitations: A private helper input appears in the source notebook; embedded code is public, but complete training reproducibility/dependency provenance is not yet certified. No published score is silently promoted to our own result.
 
 ## Evaluation corrections
 1. Full-fit adapters trained on all 2,699 rows cannot generate honest training OOF predictions. Use actual outer checkpoints; align component folds before ensemble evaluation.
