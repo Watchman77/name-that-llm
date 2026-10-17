@@ -74,7 +74,7 @@
     },
     {
       "component": "UltraBERT fivefold ensemble",
-      "source": "pjmathematician/ultrabert-380m-ntl datasetV20736096 (version mapping to confirm)",
+      "source": "pjmathematician/ultrabert-380m-ntl, attached version in frozen S02; datasetVersion ID mapping not yet resolved",
       "available": "Root fold0..fold4 and wheels; fold0 has six config/code/weights/tokenizer files",
       "gap": "No root OOF file; original prompt membership and other fold metadata not verified",
       "status": "Insufficient provenance for honest OOF; final fold ensemble in-sample inference would not solve it"
