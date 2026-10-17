@@ -12,6 +12,7 @@ Target first place in the final private evaluation. At the latest 17 October 202
 | 04 — offline pretrained encoders / complementary models | Complete; both fixed experiments rejected | Frozen MPNet: 14.59% alone, 34.12% added. Supervised DeBERTa: 22.76% development BA, below the 35.41% reference in every fold; all five folds completed. |
 | 05 — candidate freeze and competition submission | S02 succeeded at 54.9% official public BA | S01 remains 35.4%. Unchanged public baseline V1 359332774 reproduced 0.549; rank 177/1204 at observation. Final private evaluation and further original improvements remain pending. |
 | 06 — OOF provenance and centering | CPU component audit and one fixed centering test complete | Stage 06B mean component BA 46.57% to 47.25% (+0.68pp, interval +0.09 to +1.30); repeated exact scenario scores. Class regressions and lexical/fp16 limits retained. Stage 06C V1 359405443 queued for actual mixed grouping; no CUDA preflight or result yet. Official 54.9% unchanged. |
+| 06D — fixed available-component ensemble | CPU stylegram prerequisite complete; fusion pending | Exact S02 stylegram on original prompt folds: 38.4484% development BA, zero warnings, full probabilities verified. Stage 06C still queued; no new ensemble or official score. |
 | Publication assessment | Pending | Review related work and establish a contribution with stronger independent/nested evaluation. Ranking alone is insufficient. |
 
 ## How each experiment is tracked

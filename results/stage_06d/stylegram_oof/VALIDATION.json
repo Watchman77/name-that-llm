@@ -1,0 +1,294 @@
+{
+  "status": "PASS_INDEPENDENT_NO_REFIT_VALIDATION",
+  "checked_utc": "2026-10-17T16:00:22.112189+00:00",
+  "model_fits": 0,
+  "official_data_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "original_output_hashes": {
+    "artifact_manifest.json": "94636b6fcc0dd02f7c32c68f2aa66e0af471b67629343dbefa7b7e39781a3bb4",
+    "confusion_matrix.csv": "5a873a880464340149e454f62b250de67fabeb9761373f32a5e2ab395589c645",
+    "fold_metrics.csv": "ed3b363885e2c4916359281c3cf15c0845264be8deb92b064d541fbd44887b30",
+    "id_provenance.json": "bbca170e3837b3f5ba911169339a736e9737a7e562237257b7e36ed508ffce97",
+    "metrics.json": "3c2b6bec6af2cdcaed05b4f220d1d3ea14149ca8ebeba7736357ba8b1b54f367",
+    "per_class_recall.csv": "7b0d646ecd2ade14e317cd0359444cbd513d5adabdf0d6823326433b2c1e5b37",
+    "status.json": "aa07bacf3ffc588418d609438eee19aca8befb27719a7de3c31b0eed72806672",
+    "stylegram_oof.npz": "e970fa1c3b8d3b7c5b73e28c2654e6e26843d6d7335cbd42b101a3a3e5e9c269",
+    "stylegram_oof_probabilities.csv": "eecad38078b5c32982aad6344344b0395bdcd0e8faef8443b2e1ca137ebfbf0e",
+    "warnings.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  "checks": {
+    "manifest_hashes_match": true,
+    "npz_no_object_arrays": true,
+    "id_class_prompt_y_alignment": true,
+    "archived_fold_mapping_exact_match": true,
+    "groupkfold_recomputed_exact_match": true,
+    "once_only_validation_coverage": true,
+    "prompt_disjoint_for_all_splits": true,
+    "recorded_prompt_memberships_reconciled": true,
+    "csv_probabilities_exact_float64_roundtrip": true,
+    "probabilities_finite_and_normalized": true,
+    "max_probability_row_sum_error": 4.440892098500626e-16,
+    "score_softmax_exactly_reproduced": true,
+    "s02_log_floor_exactly_reproduced": true,
+    "confusion_matrix_exactly_reproduced": true,
+    "per_class_recall_exactly_reproduced": true,
+    "all_fold_metrics_exactly_reproduced": true
+  },
+  "balanced_accuracy": 0.3844842157593836,
+  "correct": 1038,
+  "errors": 1661,
+  "folds": [
+    {
+      "fold": 1,
+      "validation_rows": 540,
+      "validation_prompts": 30,
+      "balanced_accuracy": 0.3574074074074074,
+      "prompt_overlap": 0
+    },
+    {
+      "fold": 2,
+      "validation_rows": 540,
+      "validation_prompts": 30,
+      "balanced_accuracy": 0.36296296296296293,
+      "prompt_overlap": 0
+    },
+    {
+      "fold": 3,
+      "validation_rows": 540,
+      "validation_prompts": 30,
+      "balanced_accuracy": 0.39999999999999997,
+      "prompt_overlap": 0
+    },
+    {
+      "fold": 4,
+      "validation_rows": 540,
+      "validation_prompts": 30,
+      "balanced_accuracy": 0.40925925925925927,
+      "prompt_overlap": 0
+    },
+    {
+      "fold": 5,
+      "validation_rows": 539,
+      "validation_prompts": 30,
+      "balanced_accuracy": 0.39284802043422734,
+      "prompt_overlap": 0
+    }
+  ],
+  "lowest_recall_classes": [
+    {
+      "model": "claude-fable-5",
+      "recall": 0.10738255033557047,
+      "correct": 16,
+      "support": 149
+    },
+    {
+      "model": "glm-5.3",
+      "recall": 0.16,
+      "correct": 24,
+      "support": 150
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "recall": 0.18,
+      "correct": 27,
+      "support": 150
+    },
+    {
+      "model": "glm-5.3-flash",
+      "recall": 0.22,
+      "correct": 33,
+      "support": 150
+    },
+    {
+      "model": "claude-opus-4-8",
+      "recall": 0.26666666666666666,
+      "correct": 40,
+      "support": 150
+    },
+    {
+      "model": "kimi-k3",
+      "recall": 0.28,
+      "correct": 42,
+      "support": 150
+    }
+  ],
+  "top_directional_confusions": [
+    {
+      "true_class": "gemini-3.8-flash",
+      "predicted_class": "gemini-3.7-flash",
+      "count": 42
+    },
+    {
+      "true_class": "gemini-3.7-flash",
+      "predicted_class": "gemini-3.8-flash",
+      "count": 38
+    },
+    {
+      "true_class": "gemini-3.6-flash",
+      "predicted_class": "gemini-3.1-pro-preview",
+      "count": 34
+    },
+    {
+      "true_class": "claude-fable-5",
+      "predicted_class": "glm-5.3-flash",
+      "count": 33
+    },
+    {
+      "true_class": "glm-5.3-flash",
+      "predicted_class": "glm-5.3",
+      "count": 31
+    },
+    {
+      "true_class": "claude-opus-4-8",
+      "predicted_class": "claude-sonnet-5",
+      "count": 29
+    },
+    {
+      "true_class": "gemini-3.6-flash",
+      "predicted_class": "gemini-3.7-flash",
+      "count": 29
+    },
+    {
+      "true_class": "glm-5.3",
+      "predicted_class": "glm-5.3-flash",
+      "count": 28
+    },
+    {
+      "true_class": "gpt-5.6-sol",
+      "predicted_class": "gpt-5.6-terra",
+      "count": 28
+    },
+    {
+      "true_class": "gemini-3.7-flash",
+      "predicted_class": "gemini-3.1-pro-preview",
+      "count": 27
+    },
+    {
+      "true_class": "gpt-5.5",
+      "predicted_class": "qwen3.8-max",
+      "count": 26
+    },
+    {
+      "true_class": "gpt-5.6-terra",
+      "predicted_class": "gpt-5.6-luna",
+      "count": 26
+    }
+  ],
+  "top_bidirectional_confusions": [
+    {
+      "classes": [
+        "gemini-3.7-flash",
+        "gemini-3.8-flash"
+      ],
+      "count": 80,
+      "direction_counts": [
+        38,
+        42
+      ]
+    },
+    {
+      "classes": [
+        "glm-5.3",
+        "glm-5.3-flash"
+      ],
+      "count": 59,
+      "direction_counts": [
+        28,
+        31
+      ]
+    },
+    {
+      "classes": [
+        "gemini-3.6-flash",
+        "gemini-3.7-flash"
+      ],
+      "count": 47,
+      "direction_counts": [
+        29,
+        18
+      ]
+    },
+    {
+      "classes": [
+        "claude-fable-5",
+        "glm-5.3-flash"
+      ],
+      "count": 45,
+      "direction_counts": [
+        33,
+        12
+      ]
+    },
+    {
+      "classes": [
+        "gpt-5.5",
+        "qwen3.8-max"
+      ],
+      "count": 45,
+      "direction_counts": [
+        26,
+        19
+      ]
+    },
+    {
+      "classes": [
+        "gpt-5.6-luna",
+        "gpt-5.6-sol"
+      ],
+      "count": 45,
+      "direction_counts": [
+        20,
+        25
+      ]
+    },
+    {
+      "classes": [
+        "gpt-5.6-luna",
+        "gpt-5.6-terra"
+      ],
+      "count": 45,
+      "direction_counts": [
+        19,
+        26
+      ]
+    },
+    {
+      "classes": [
+        "gpt-5.6-sol",
+        "gpt-5.6-terra"
+      ],
+      "count": 45,
+      "direction_counts": [
+        28,
+        17
+      ]
+    },
+    {
+      "classes": [
+        "claude-opus-4-8",
+        "claude-sonnet-5"
+      ],
+      "count": 44,
+      "direction_counts": [
+        29,
+        15
+      ]
+    },
+    {
+      "classes": [
+        "gemini-3.1-pro-preview",
+        "gemini-3.6-flash"
+      ],
+      "count": 42,
+      "direction_counts": [
+        8,
+        34
+      ]
+    }
+  ],
+  "warnings": [],
+  "limits": [
+    "These are the fixed stylegram component errors, not full S02 or fixed-proxy ensemble errors.",
+    "Split exclusion is verified from recomputed/archived assignments, recorded memberships and reviewed fold-local implementation; no independent refit was performed.",
+    "This is development evidence on repeatedly used prompts."
+  ]
+}

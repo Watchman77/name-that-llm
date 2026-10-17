@@ -1,0 +1,14 @@
+{
+  "source_hash": "73b8c397733075ea7cbb183964d3b59cbfc24881a71cc043859532edf380acf6",
+  "self_check": {
+    "status": "PASSED",
+    "checks": [
+      "source transforms",
+      "punctuation-aware tokenization",
+      "four-block vectorizer wiring",
+      "sklearn 1.8.0 classifier defaults"
+    ],
+    "model_fits": 0
+  },
+  "independent_vendor_fixture_matches": 4
+}

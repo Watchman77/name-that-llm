@@ -1,0 +1,6 @@
+STYLEGRAM_FOLD {"fold": 1, "balanced_accuracy": 0.3574074074074074, "seconds": 8.50878139300039, "feature_count": 200771, "n_iter": 19, "warning_count": 0}
+STYLEGRAM_FOLD {"fold": 2, "balanced_accuracy": 0.36296296296296293, "seconds": 8.51745172200026, "feature_count": 201275, "n_iter": 19, "warning_count": 0}
+STYLEGRAM_FOLD {"fold": 3, "balanced_accuracy": 0.39999999999999997, "seconds": 8.376155072000984, "feature_count": 200310, "n_iter": 20, "warning_count": 0}
+STYLEGRAM_FOLD {"fold": 4, "balanced_accuracy": 0.40925925925925927, "seconds": 8.257295404997421, "feature_count": 198978, "n_iter": 20, "warning_count": 0}
+STYLEGRAM_FOLD {"fold": 5, "balanced_accuracy": 0.39284802043422734, "seconds": 8.59861962099967, "feature_count": 201373, "n_iter": 19, "warning_count": 0}
+STYLEGRAM_COMPLETE {"balanced_accuracy": 0.3844842157593836, "seconds": 42.48337526599789, "convergence_warning_count": 0}

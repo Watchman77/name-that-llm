@@ -124,3 +124,12 @@ The notebook is kept private with the competition input attached and internet di
 - Frozen GLM inference saves fixed layers 8, 3 and 24 once, with data/ID/text/model hashes; no supervised neural training. The CPU comparison preserves Stage 06B recipe and changes only group recovery to exact S02 mixed grouping, adding group diagnostics.
 - Export reports isGpuEnabled=false despite the GPU-for-this-session save selection and T4 x2 Logs label. Actual CUDA preflight has not yet been observed, nor has any output/cache/result. Preserve this inconsistency.
 - No official submission, final-selection change or paid service. S02 remains 0.549. Next decision: drop candidate if mixed-grouping confirmation fails; otherwise test marginal benefit in a fixed available-component ensemble, explicitly not full S02. Protocol: plans/STAGE_06D_FIXED_ENSEMBLE_PROXY.md.
+
+
+## Stage 06D CPU prerequisite — 17 October 2026
+
+- Prospective clarification f1105cb880b947b7653b1acdb5a09ca3602f179b; reviewed source committed before fitting in 4afba147c4290ae24ddf4f1ea078fe8a8fc729d1.
+- Reproduced exact S02 stylegram recipe on original five prompt folds with fold-local vocabularies/IDF, fixed sklearn 1.8.0 defaults and stable score-softmax. No model or weight search.
+- All five folds completed in 42.48s CPU; pooled development BA 0.3844842157593836 (38.4484%). Zero warnings. Full class probabilities and scores for all 2,699 rows saved, with no passage text or pickle arrays.
+- Independent no-refit checks exactly reconcile IDs/classes/prompts/folds, probabilities/log floor, confusion matrix, per-class recall, fold metrics and original artifact hashes. Largest stylegram confusion is Gemini 3.7/3.8 (80 bidirectional errors), with cross-family errors also present; these are component diagnostics only.
+- The GPU Stage 06C confirmation remains queued with no CUDA preflight/output/result at the latest live read. Fusion still awaits common mixed contexts and full DeBERTa class probabilities. No new official score, submission, final selection, neural training or paid service. Report: results/stage_06d/REPORT.md.

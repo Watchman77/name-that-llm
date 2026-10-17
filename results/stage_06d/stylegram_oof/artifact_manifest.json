@@ -1,0 +1,34 @@
+{
+  "confusion_matrix.csv": {
+    "sha256": "5a873a880464340149e454f62b250de67fabeb9761373f32a5e2ab395589c645",
+    "bytes": 1241
+  },
+  "fold_metrics.csv": {
+    "sha256": "ed3b363885e2c4916359281c3cf15c0845264be8deb92b064d541fbd44887b30",
+    "bytes": 476
+  },
+  "id_provenance.json": {
+    "sha256": "bbca170e3837b3f5ba911169339a736e9737a7e562237257b7e36ed508ffce97",
+    "bytes": 14497
+  },
+  "metrics.json": {
+    "sha256": "3c2b6bec6af2cdcaed05b4f220d1d3ea14149ca8ebeba7736357ba8b1b54f367",
+    "bytes": 25497
+  },
+  "per_class_recall.csv": {
+    "sha256": "7b0d646ecd2ade14e317cd0359444cbd513d5adabdf0d6823326433b2c1e5b37",
+    "bytes": 708
+  },
+  "stylegram_oof.npz": {
+    "sha256": "e970fa1c3b8d3b7c5b73e28c2654e6e26843d6d7335cbd42b101a3a3e5e9c269",
+    "bytes": 1125409
+  },
+  "stylegram_oof_probabilities.csv": {
+    "sha256": "eecad38078b5c32982aad6344344b0395bdcd0e8faef8443b2e1ca137ebfbf0e",
+    "bytes": 1151721
+  },
+  "warnings.json": {
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "bytes": 3
+  }
+}
