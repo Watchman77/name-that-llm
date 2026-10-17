@@ -22,5 +22,8 @@
   "manual_final_selection_changed": false,
   "automatic_selection_candidates_display": "0/2",
   "paid_services_used": false,
-  "interpretation": "Preview succeeded; Kaggle accepted S02 and shows Notebook Running for hidden-test rerun. No new measured score yet. Keep S01 frozen and do not retune on this feedback."
+  "interpretation": "Preview succeeded; Kaggle accepted S02 and shows Notebook Running for hidden-test rerun. No new measured score yet. Keep S01 frozen and do not retune on this feedback.",
+  "last_checked_utc": "2026-10-17T13:12:36.877Z",
+  "latest_ui_status": "Notebook Running · 2h ago",
+  "last_check_note": "Fresh official Submissions page and details show no public score or displayed error."
 }
