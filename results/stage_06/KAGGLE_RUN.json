@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE_COMPONENT_AUDIT",
+  "date": "2026-10-17",
+  "script_version_id": 359394412,
+  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06a-oof-audit?scriptVersionId=359394412",
+  "runtime_seconds": 31.1,
+  "accelerator": "None",
+  "internet_enabled": false,
+  "private": true,
+  "output_bytes_display": "260.32 kB",
+  "script_sha256": "89872b8b773ca40bf0aa3ed21f790e6ba3efc09b1fcf1e254ee756a72e6550fa",
+  "source_artifact_version": 358831649,
+  "full_s02_oof_reconstructed": false,
+  "centering_candidate_run": false,
+  "official_submission_created": false,
+  "paid_services_used": false,
+  "artifacts_retained_on_kaggle": true
+}
