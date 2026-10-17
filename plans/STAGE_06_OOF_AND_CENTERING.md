@@ -1,6 +1,6 @@
 # Stage 06: honest error analysis, then matched-context centering
 Date: 2026-10-17.
-Status: protocol prepared; no new notebook execution or S03 submission.
+Status: public LoRA component artifact audit executed successfully as private CPU V1 359394412. Full S02 artifact inventory and the centering candidate comparison remain pending. No S03 submission. See results/stage_06/REPORT.md.
 
 ## Question and sequence
 Can training a frozen centered classifier on smaller same-prompt groups improve generalisation to inferred small test groups, versus fitting centered features on all 17–18 responses? S02's frozen twins use full prompt groups; its LoRA centered head already uses triples. This is one specific hypothesis, not a claim that centering is absent.
