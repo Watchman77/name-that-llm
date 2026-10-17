@@ -54,6 +54,132 @@ def stage06d_self_check():
             'checks': ['source balancing exact order', 'row-constant stability', 'singleton no balance', 'corrected/broken arithmetic']}
 
 
+
+def stage06d_safe_classes(path, expected):
+    """Read exact class strings without ever executing object-array pickle.
+
+    Stage 06C wrote classes=np.sort(train.model.unique()), an object array.
+    Interpret only the small NumPy ndarray/dtype serialization grammar as
+    inert symbols. REDUCE/BUILD never invoke Python callables or constructors.
+    Numeric predictions and the Unicode ID/prompt arrays keep normal loading.
+    """
+    import io
+    import pickletools
+    import zipfile
+    import numpy as np
+    expected = np.asarray(expected, dtype=str)
+    assert expected.shape == (18,) and len(np.unique(expected)) == 18
+    try:
+        with np.load(path, allow_pickle=False) as saved:
+            actual = saved['classes']
+        assert actual.dtype.kind in ('U', 'S') and actual.shape == expected.shape
+        actual = actual.astype(str)
+        mode = 'numpy_nonobject_class_strings'
+    except ValueError as error:
+        assert 'Object arrays cannot be loaded' in str(error)
+        with zipfile.ZipFile(path) as archive:
+            info = archive.getinfo('classes.npy')
+            assert info.file_size < 65536
+            stream = io.BytesIO(archive.read(info))
+        file_version = np.lib.format.read_magic(stream)
+        assert file_version in ((1, 0), (2, 0))
+        reader = np.lib.format.read_array_header_1_0 if file_version == (1, 0) else np.lib.format.read_array_header_2_0
+        shape, fortran, dtype = reader(stream)
+        assert shape == expected.shape and dtype == np.dtype(object) and not fortran
+        payload = stream.read()
+        marker = object()
+        stack = []
+        memo = {}
+        allowed_globals = {('numpy.core.multiarray', '_reconstruct'),
+                           ('numpy._core.multiarray', '_reconstruct'),
+                           ('numpy', 'ndarray'), ('numpy', 'dtype')}
+        stopped = False
+        for opcode, argument, position in pickletools.genops(payload):
+            name = opcode.name
+            if name == 'PROTO':
+                assert argument in (3, 4, 5)
+            elif name == 'FRAME':
+                assert isinstance(argument, int) and 0 <= argument <= len(payload)
+            elif name in ('SHORT_BINUNICODE', 'BINUNICODE', 'BINUNICODE8', 'UNICODE',
+                          'SHORT_BINBYTES', 'BINBYTES', 'BINBYTES8', 'BININT', 'BININT1', 'BININT2'):
+                stack.append(argument)
+            elif name in ('NEWTRUE', 'NEWFALSE', 'NONE'):
+                stack.append({'NEWTRUE': True, 'NEWFALSE': False, 'NONE': None}[name])
+            elif name == 'GLOBAL' or name == 'STACK_GLOBAL':
+                if name == 'GLOBAL':
+                    module, symbol = argument.split(' ')
+                else:
+                    symbol = stack.pop(); module = stack.pop()
+                assert (module, symbol) in allowed_globals
+                stack.append({'global': (module, symbol)})
+            elif name in ('MEMOIZE', 'BINPUT', 'LONG_BINPUT'):
+                index = len(memo) if name == 'MEMOIZE' else argument
+                assert isinstance(index, int) and index >= 0 and index not in memo and stack
+                memo[index] = stack[-1]
+            elif name in ('BINGET', 'LONG_BINGET'):
+                assert argument in memo
+                stack.append(memo[argument])
+            elif name == 'MARK':
+                stack.append(marker)
+            elif name == 'EMPTY_LIST':
+                stack.append([])
+            elif name == 'EMPTY_TUPLE':
+                stack.append(())
+            elif name in ('TUPLE1', 'TUPLE2', 'TUPLE3'):
+                count = int(name[-1])
+                assert len(stack) >= count
+                values = tuple(stack[-count:]); del stack[-count:]
+                stack.append(values)
+            elif name in ('TUPLE', 'APPENDS'):
+                assert marker in stack
+                index = len(stack) - 1 - stack[::-1].index(marker)
+                values = stack[index + 1:]; del stack[index:]
+                if name == 'TUPLE':
+                    stack.append(tuple(values))
+                else:
+                    assert stack and isinstance(stack[-1], list)
+                    stack[-1].extend(values)
+            elif name == 'APPEND':
+                value = stack.pop()
+                assert stack and isinstance(stack[-1], list)
+                stack[-1].append(value)
+            elif name == 'REDUCE':
+                arguments = stack.pop(); symbol = stack.pop()
+                assert isinstance(symbol, dict) and set(symbol) == {'global'}
+                if symbol['global'][1] == '_reconstruct':
+                    assert arguments == ({'global': ('numpy', 'ndarray')}, (0,), b'b')
+                    stack.append({'kind': 'ndarray', 'state': None})
+                else:
+                    assert symbol['global'] == ('numpy', 'dtype')
+                    assert arguments == (f'O{dtype.itemsize}', False, True)
+                    stack.append({'kind': 'dtype', 'state': None})
+            elif name == 'BUILD':
+                state = stack.pop()
+                assert stack and isinstance(stack[-1], dict) and stack[-1].get('state') is None
+                target = stack[-1]
+                if target.get('kind') == 'dtype':
+                    assert state == (3, '|', None, None, None, -1, -1, 63)
+                else:
+                    assert target.get('kind') == 'ndarray' and isinstance(state, tuple) and len(state) == 5
+                    assert state[0] == 1 and state[1] == expected.shape and state[3] is False
+                    assert state[2] == {'kind': 'dtype', 'state': (3, '|', None, None, None, -1, -1, 63)}
+                    assert isinstance(state[4], list) and len(state[4]) == len(expected)
+                    assert all(isinstance(value, str) for value in state[4])
+                    assert len(set(state[4])) == len(expected)
+                    assert np.array_equal(np.asarray(state[4], dtype=str), expected)
+                target['state'] = state
+            elif name == 'STOP':
+                assert position == len(payload) - 1 and len(stack) == 1
+                assert isinstance(stack[0], dict) and stack[0].get('kind') == 'ndarray' and stack[0]['state'] is not None
+                actual = np.asarray(stack[0]['state'][4], dtype=str)
+                stopped = True
+            else:
+                raise AssertionError(('Unsupported class-metadata pickle opcode', name))
+        assert stopped
+        mode = 'object_class_strings_static_numpy_grammar_no_unpickling'
+    assert np.array_equal(actual, expected), 'Class metadata alignment mismatch'
+    return actual, mode
+
 def run_fixed_ensemble(style_probabilities, style_classes, style_ids):
     """Run the fixed paired comparison with the caller-provided frozen style OOF.
 
@@ -401,8 +527,12 @@ def run_fixed_ensemble(style_probabilities, style_classes, style_ids):
         assert glm_features.shape == (n, 3, 4096) and glm_features.dtype == np.float32 and np.isfinite(glm_features).all()
         glm_group_features = glm_features[:, 2].copy()
         del glm_features
-        with np.load(own_root / 'paired_predictions.npz', allow_pickle=False) as saved:
-            for key, value in [('ids', ids), ('classes', classes), ('y', y), ('groups', groups), ('fold', our_folds)]:
+        frozen_path = own_root / 'paired_predictions.npz'
+        frozen_classes, class_read_mode = stage06d_safe_classes(frozen_path, classes)
+        id_checks.append(dict(path=str(frozen_path), key='classes', mode=class_read_mode,
+                              rows=len(frozen_classes), ordered_classes_sha256=strings_digest(frozen_classes)))
+        with np.load(frozen_path, allow_pickle=False) as saved:
+            for key, value in [('ids', ids), ('y', y), ('groups', groups), ('fold', our_folds)]:
                 assert np.array_equal(saved[key], value), ('06C frozen', key)
             frozen_prediction = {key: saved[key].copy() for key in ('control', 'candidate', 'oracle_control', 'oracle_candidate')}
         assert all(part.shape == (3, n) for part in frozen_prediction.values())

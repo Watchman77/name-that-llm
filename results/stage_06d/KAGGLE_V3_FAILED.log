@@ -1,0 +1,61 @@
+6.5s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.5s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.5s 3 0.00s - to python to disable frozen modules.
+6.5s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.0s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.0s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.0s 7 0.00s - to python to disable frozen modules.
+7.0s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.9s 9 STYLE_TRANSFER_COMPLETE {"rows": 2699, "balanced_accuracy": 0.3844842157593836, "status": "VERIFIED_EXACT_FROZEN_PROBABILITY_TRANSFER", "source_original_npz_sha256": "e970fa1c3b8d3b7c5b73e28c2654e6e26843d6d7335cbd42b101a3a3e5e9c269", "derived_npz_sha256": "3e3fcb3459844813a42ee7d28c8ee1bf2526465118e4a9729710c28e13d98c44", "raw_probability_sha256": "5e2e05577b7dc632f38f67d47958d7f3d069e8b758ead4664050f0d984803bad", "original_metadata_file_sha256": {"id_provenance.json": "bbca170e3837b3f5ba911169339a736e9737a7e562237257b7e36ed508ffce97", "metrics.json": "3c2b6bec6af2cdcaed05b4f220d1d3ea14149ca8ebeba7736357ba8b1b54f367", "warnings.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"}, "raw_bytes": 388656, "entire_probability_array_bitwise_preserved": true, "new_model_fits": 0, "limitation": "Derived NPZ container is not the original file; probability bytes are identical. Original metrics describe the original CPU fit."}
+19.4s 10 STAGE06D_COMPONENTS_AUDITED {"members": ["stylegram", "lora", "lora2", "tokattn", "tokattn_deb"], "files": 47}
+20.7s 11 STAGE06D_ENSEMBLE_FAILED ValueError Object arrays cannot be loaded when allow_pickle=False
+21.4s 12 Traceback (most recent call last):
+21.4s 13 File "<string>", line 1, in <module>
+21.4s 14 import sys;import papermill as pm;pm.execute_notebook("__notebook__.ipynb","__notebook__.ipynb",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)
+21.4s 15 ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+21.4s 16 File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 131, in execute_notebook
+21.4s 17 raise_for_execution_errors(nb, output_path)
+21.4s 18 ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+21.4s 19 File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+21.4s 20 raise error
+21.4s 21 papermill.exceptions.PapermillExecutionError:
+21.4s 22 ---------------------------------------------------------------------------
+21.4s 23 Exception encountered at "In [5]":
+21.4s 24 ---------------------------------------------------------------------------
+21.4s 25 ValueError                                Traceback (most recent call last)
+21.4s 26 /tmp/ipykernel_16/976991126.py in <cell line: 0>()
+21.4s 27 782
+21.4s 28 783 STYLE_P, STYLE_CLASSES, STYLE_IDS = transfer_style_reference()
+21.4s 29 --> 784 run_fixed_ensemble(STYLE_P, STYLE_CLASSES, STYLE_IDS)
+21.4s 30 
+21.4s 31 /tmp/ipykernel_16/976991126.py in run_fixed_ensemble(style_probabilities, style_classes, style_ids)
+21.4s 32 474         with np.load(own_root / 'paired_predictions.npz', allow_pickle=False) as saved:
+21.4s 33 475             for key, value in [('ids', ids), ('classes', classes), ('y', y), ('groups', groups), ('fold', our_folds)]:
+21.4s 34 --> 476                 assert np.array_equal(saved[key], value), ('06C frozen', key)
+21.4s 35 477             frozen_prediction = {key: saved[key].copy() for key in ('control', 'candidate', 'oracle_control', 'oracle_candidate')}
+21.4s 36 478         assert all(part.shape == (3, n) for part in frozen_prediction.values())
+21.4s 37 
+21.4s 38 /usr/local/lib/python3.13/dist-packages/numpy/lib/_npyio_impl.py in __getitem__(self, key)
+21.4s 39 256             if magic == format.MAGIC_PREFIX:
+21.4s 40 257                 bytes = self.zip.open(key)
+21.4s 41 --> 258                 return format.read_array(bytes,
+21.4s 42 259                                          allow_pickle=self.allow_pickle,
+21.4s 43 260                                          pickle_kwargs=self.pickle_kwargs,
+21.4s 44 
+21.4s 45 /usr/local/lib/python3.13/dist-packages/numpy/lib/format.py in read_array(fp, allow_pickle, pickle_kwargs, max_header_size)
+21.4s 46 820         # The array contained Python objects. We need to unpickle the data.
+21.4s 47 821         if not allow_pickle:
+21.4s 48 --> 822             raise ValueError("Object arrays cannot be loaded when "
+21.4s 49 823                              "allow_pickle=False")
+21.4s 50 824         if pickle_kwargs is None:
+21.4s 51 
+21.4s 52 ValueError: Object arrays cannot be loaded when allow_pickle=False
+21.4s 53 
+23.6s 54 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+23.6s 55 cells[i][c] = re.sub('\\\\\|', '|', cell)
+23.7s 56 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+23.7s 57 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+24.4s 58 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+24.5s 59 [NbConvertApp] Writing 627582 bytes to __notebook__.ipynb
+26.9s 60 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+27.7s 61 [NbConvertApp] Writing 1351692 bytes to __results__.html

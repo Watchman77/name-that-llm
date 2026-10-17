@@ -1,0 +1,46 @@
+{
+  "version": 3,
+  "script_version_id": 359500151,
+  "status": "FAILED_BEFORE_DEBERTA_HEAD_FITS",
+  "log_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06d-fixed-ensemble/log?scriptVersionId=359500151",
+  "failure_marker_seconds": 20.7,
+  "ui_reported_seconds": 0,
+  "ui_duration_is_not_actual_execution_duration": true,
+  "exception_type": "ValueError",
+  "message": "Object arrays cannot be loaded when allow_pickle=False",
+  "location": "Stage06C paired_predictions.npz metadata comparison loop",
+  "identified_object_member_from_archived_writer": "classes.npy (np.sort(train.model.unique()) retains object dtype)",
+  "numeric_predictions_were_not_unpickled": true,
+  "deberta_fold_complete_markers": 0,
+  "combined_score_available": false,
+  "source_preserved_in_commit": "9db86f28cfd763ccbc3dcc048fb35fe649f6445f",
+  "log_sha256": "a4a92d501d696289e4d3a2a833933d7ebd3f64fc4ef6c426d9de3d5c36d9b4c3",
+  "style_transfer": {
+    "rows": 2699,
+    "balanced_accuracy": 0.3844842157593836,
+    "status": "VERIFIED_EXACT_FROZEN_PROBABILITY_TRANSFER",
+    "source_original_npz_sha256": "e970fa1c3b8d3b7c5b73e28c2654e6e26843d6d7335cbd42b101a3a3e5e9c269",
+    "derived_npz_sha256": "3e3fcb3459844813a42ee7d28c8ee1bf2526465118e4a9729710c28e13d98c44",
+    "raw_probability_sha256": "5e2e05577b7dc632f38f67d47958d7f3d069e8b758ead4664050f0d984803bad",
+    "original_metadata_file_sha256": {
+      "id_provenance.json": "bbca170e3837b3f5ba911169339a736e9737a7e562237257b7e36ed508ffce97",
+      "metrics.json": "3c2b6bec6af2cdcaed05b4f220d1d3ea14149ca8ebeba7736357ba8b1b54f367",
+      "warnings.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "raw_bytes": 388656,
+    "entire_probability_array_bitwise_preserved": true,
+    "new_model_fits": 0,
+    "limitation": "Derived NPZ container is not the original file; probability bytes are identical. Original metrics describe the original CPU fit."
+  },
+  "component_audit": {
+    "members": [
+      "stylegram",
+      "lora",
+      "lora2",
+      "tokattn",
+      "tokattn_deb"
+    ],
+    "files": 47
+  },
+  "official_submission_performed": false
+}

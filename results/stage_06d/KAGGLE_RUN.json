@@ -1,14 +1,14 @@
 {
-  "status": "BLOCKED_AT_SAVED_SOURCE_VERIFICATION",
+  "status": "REPAIR_REVIEWED_PENDING_RETRY",
   "account": "watchman777",
   "notebook_title": "Name That LLM - Stage 06D Fixed Ensemble",
   "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06d-fixed-ensemble",
   "editor_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06d-fixed-ensemble/edit",
   "run_type": "Fixed CPU available-component development comparison",
   "official_submission": false,
-  "actual_comparison_execution_started": false,
-  "actual_execution_script_version_id": null,
-  "actual_execution_logs_observed": false,
+  "actual_comparison_execution_started": true,
+  "actual_execution_script_version_id": 359500151,
+  "actual_execution_logs_observed": true,
   "new_result_available": false,
   "settings_observed": {
     "accelerator": "CPU / None",
@@ -19,7 +19,7 @@
     "five_code_cells_present": true,
     "all_five_cell_clipboard_roundtrips_exact": true,
     "verification_source": "Root browser observation; full live cell contents matched the reviewed local packaging through clipboard roundtrips.",
-    "saved_immutable_five_cell_source_verified": false,
+    "saved_immutable_five_cell_source_verified": true,
     "after_intentional_refresh": {
       "five_code_cells_preserved": true,
       "all_seven_input_titles_preserved": true,
@@ -72,26 +72,192 @@
   },
   "quicksave_v2": {
     "requested": true,
-    "purpose": "Persist the reviewed five-cell packaging before any comparison execution.",
-    "response_confirmed": false,
-    "immutable_saved_five_cell_source_verified": false,
-    "script_version_id": null,
-    "blocker": "The pre-refresh metadata retry returned Chat API request failed, with a screenshot showing the Kaggle Failed to fetch commit error and V1 only. Refresh preserved the five cells and seven input titles, but reopening QuickSave failed with Chat API request failed before Save was called. No V2 ID or immutable five-cell source is confirmed.",
-    "latest_ui_error": "An error occurred while committing kernel: Failed to fetch",
+    "purpose": "Persist and inspect the reviewed five-cell packaging before comparison execution.",
+    "response_confirmed": true,
+    "immutable_saved_five_cell_source_verified": true,
+    "script_version_id": 359499684,
+    "script_version_id_note": "Confirmed from Version 2 own More options Open in Viewer href.",
+    "visible_heading": "Viewing Version 2",
+    "visible_version_type": "Quick Version",
+    "visible_created_time": "Oct 17, 10:45 PM",
+    "visible_version_name": "Verified multi-cell source - no execution",
+    "visible_run_seconds": 0,
+    "code_cell_count": 5,
+    "entire_visible_saved_export_matches_reviewed_cells_exactly": true,
+    "all_code_cell_outputs_empty": true,
+    "all_execution_counts_null": true,
+    "metadata_input_source_ids": [
+      170484,
+      358745836,
+      358831649,
+      358911769,
+      358928013,
+      358948428,
+      359405443
+    ],
+    "all_seven_input_ids_exact_match": true,
+    "metadata_accelerator": "none",
+    "metadata_isGpuEnabled": false,
+    "metadata_isInternetEnabled": false,
     "bounded_metadata_only_retry_in_progress": false,
     "post_refresh_retry_in_progress": false,
-    "post_refresh_save_action_called": false
+    "blocker": null,
+    "historical_prior_failures": "failure_history",
+    "viewer_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06d-fixed-ensemble?scriptVersionId=359499684"
   },
   "reviewed_source": {
-    "packaging_commit": "9db86f28cfd763ccbc3dcc048fb35fe649f6445f",
-    "packaging_manifest_path": "results/stage_06d/MULTICELL_SOURCE.json",
+    "source_state": "Independently reviewed classes-only repair, persisted by the Git commit containing this receipt.",
+    "prior_state_commit": "1176c845d5c6e2258b0ba2f65d1b51314d0f7bc1",
+    "packaging_manifest_path": "results/stage_06d/CLASS_METADATA_REPAIR_PACKAGING.json",
+    "independent_review_path": "results/stage_06d/SAFE_CLASSES_INDEPENDENT_REVIEW.json",
+    "fixture_review_path": "results/stage_06d/CLASS_METADATA_REPAIR_FIXTURES.json",
+    "fusion_path": "scripts/stage06d_fixed_ensemble.py",
+    "fusion_sha256": "b27925f978b0c87938c92adc36bcbb52e6536aa79fbe9330217daec7fecbae51",
     "notebook_path": "notebooks/Stage_06D_Fixed_Ensemble.ipynb",
-    "notebook_sha256": "fb86b90861aca45e630b64abb32634693df5c8c14c868394a3bbf992d5b870bc",
+    "notebook_sha256": "e7d461408da4500f85fb584312e9bcecca5d5b2bcbf7d6ed1b25ee9c64d44852",
     "linear_runner_path": "scripts/kaggle_stage06d_multicell.py",
-    "combined_source_sha256": "13d4cbd40a563033fcc12d8c8773bc27ab6e112b171a519aa34f0ce2cbc9103b",
-    "original_runner_path": "scripts/kaggle_stage06d_runner.py",
-    "original_runner_sha256": "b0db5a4e8ef82ef3f90b5b4f74af61d68fd24ff515f7e2f968797312801396f1",
+    "combined_source_sha256": "8d2b999b78cccb48bbed5d223b7c30d1e4b3bc9369abed06c870ba499d6a3b27",
+    "single_runner_path": "scripts/kaggle_stage06d_runner.py",
+    "single_runner_sha256": "36a2b8b02561f199a5a6813342163c962a48fd6217734120473fdfdfbcaa7e9b",
     "cell_count": 5,
+    "cells": [
+      {
+        "index": 0,
+        "characters": 77806,
+        "sha256": "86e5a3d50cd1850e65139b3fc7c8c39a77bd8ab8508f3208d101fe194a357fda",
+        "unchanged_from_V3": true
+      },
+      {
+        "index": 1,
+        "characters": 156105,
+        "sha256": "bd765f02846b89e7537a6d92655cafa7f7664ba8199463048aca422ad9f04bac",
+        "unchanged_from_V3": true
+      },
+      {
+        "index": 2,
+        "characters": 156106,
+        "sha256": "e7f8d7e91ad9179852c6606710d490c30fa510175d9e0d99101c29b6f2847504",
+        "unchanged_from_V3": true
+      },
+      {
+        "index": 3,
+        "characters": 146225,
+        "sha256": "6c17db3c11cc0e1d4ad51710aa4874e16b1831701f608a3f54048b2cb2f06a29",
+        "unchanged_from_V3": true
+      },
+      {
+        "index": 4,
+        "characters": 60610,
+        "sha256": "c594790c3675e73b35f7c95f055d22377f8e454eeff95a4d9bb3e9809903d33e",
+        "unchanged_from_V3": false
+      }
+    ],
+    "frozen_style_probability_raw_sha256": "5e2e05577b7dc632f38f67d47958d7f3d069e8b758ead4664050f0d984803bad"
+  },
+  "remaining_before_launch": [],
+  "scientific_endpoint": "Raw fixed rowwise fusion is primary; exact source balancing is a potentially contaminated diagnostic only.",
+  "official_best_score_unchanged": {
+    "submission": "S02",
+    "public_balanced_accuracy": 0.549
+  },
+  "limitations": [
+    "Last actual execution remains failed Version 3 359500151, tied to its historical original source hashes.",
+    "Current source hashes describe only the reviewed repair; no repaired execution has started.",
+    "Metadata-only QuickSave V4 is requested but its response, numeric ID and saved-source verification are unconfirmed.",
+    "Static fixtures and AST equivalence prove the scoped repair, not full Kaggle execution compatibility or an ensemble gain."
+  ],
+  "browser_transport_observations": {
+    "status": "RECOVERED_FOR_SAVED_SOURCE_VERIFICATION",
+    "source": "Root fresh browser observations",
+    "quick_save_version_2_success": true,
+    "immutable_five_cell_export_inspection_succeeded": true,
+    "retry_in_progress": false,
+    "historical_failure_details": "failure_history",
+    "interpretation": "Saved-source gate passed. This success is metadata/source preparation, not comparison execution."
+  },
+  "save_and_run_ever_called": true,
+  "last_browser_error": null,
+  "last_verified_repository_head": "9db86f28cfd763ccbc3dcc048fb35fe649f6445f",
+  "evidence_screenshot": {
+    "path": "/workspace/scratch/43236e37f3d6/browser-proof/stage06d-save-error.png",
+    "sha256": "36e0a428368d36868ae9c2e9b1ab83a4ea065a2b6160ed0a2ea764807e65d30a",
+    "timing": "Before the intentional refresh",
+    "observed": [
+      "An error occurred while committing kernel: Failed to fetch",
+      "V1 only",
+      "Draft Session off",
+      "Zero active events"
+    ],
+    "limitation": "Does not establish that the error banner remained present after refresh.",
+    "binary_in_repository": false,
+    "binary_in_library": false
+  },
+  "local_execution_fallback": {
+    "available": false,
+    "reason": "Required public neural numeric feature/prediction caches have not been downloaded to the local workspace.",
+    "verification_source": "Fusion agent local cache inventory reported to root.",
+    "note": "Prepared code and local style OOF probabilities alone are insufficient to execute the full fixed comparison locally."
+  },
+  "failure_history": [
+    {
+      "status": "HISTORICAL_PRE_RECOVERY_SAVE_AND_BROWSER_FAILURES",
+      "superseded_by": "QuickSave Version 2 success and complete immutable saved-source verification",
+      "browser_transport_observations": {
+        "source": "Root browser observations during final saved-source verification",
+        "repeated_requests_stalled": true,
+        "explicit_error": "MCP request timed out",
+        "version_history_ui_error": "Versions failed to load. Try refreshing the page.",
+        "final_compact_dom_status_check": "Pre-refresh screenshot verified V1 only, Draft Session off and zero active events; immutable five-cell saved-source verification remains incomplete.",
+        "interpretation": "Preparation/save/source-verification access is blocked; no ensemble execution or execution failure is established. The error-banner screenshot predates refresh.",
+        "kernel_commit_ui_error": "An error occurred while committing kernel: Failed to fetch",
+        "pre_refresh_bounded_metadata_retry_error": "Chat API request failed",
+        "intentional_refresh_performed": true,
+        "refresh_result": "Editor recovered with all five code cells and all seven input titles preserved.",
+        "post_refresh_attempt": "Opening QuickSave failed while clicking the QuickSave option; the Save action was not called in this attempt.",
+        "last_browser_error": "Chat API request failed",
+        "retry_in_progress": false
+      },
+      "quicksave_v2_attempts": {
+        "requested": true,
+        "purpose": "Persist the reviewed five-cell packaging before any comparison execution.",
+        "response_confirmed": false,
+        "immutable_saved_five_cell_source_verified": false,
+        "script_version_id": null,
+        "blocker": "The pre-refresh metadata retry returned Chat API request failed, with a screenshot showing the Kaggle Failed to fetch commit error and V1 only. Refresh preserved the five cells and seven input titles, but reopening QuickSave failed with Chat API request failed before Save was called. No V2 ID or immutable five-cell source is confirmed.",
+        "latest_ui_error": "An error occurred while committing kernel: Failed to fetch",
+        "bounded_metadata_only_retry_in_progress": false,
+        "post_refresh_retry_in_progress": false,
+        "post_refresh_save_action_called": false
+      },
+      "last_browser_error": "Chat API request failed",
+      "screenshot_proof": {
+        "path": "/workspace/scratch/43236e37f3d6/browser-proof/stage06d-save-error.png",
+        "sha256": "36e0a428368d36868ae9c2e9b1ab83a4ea065a2b6160ed0a2ea764807e65d30a",
+        "timing": "Before the intentional refresh",
+        "observed": [
+          "An error occurred while committing kernel: Failed to fetch",
+          "V1 only",
+          "Draft Session off",
+          "Zero active events"
+        ],
+        "limitation": "Does not establish that the error banner remained present after refresh.",
+        "binary_in_repository": false,
+        "binary_in_library": false
+      }
+    }
+  ],
+  "last_browser_error_note": "Prior failures are historical in failure_history; the latest saved-source inspection succeeded.",
+  "saved_source_gate": {
+    "status": "PASSED",
+    "verification_source": "Root complete visible saved-version export comparison against all five reviewed source strings.",
+    "visible_version_ordinal": 2,
+    "script_version_id": 359499684,
+    "five_cell_source_exact_match": true,
+    "all_seven_pinned_inputs_exact_match": true,
+    "cpu_and_internet_off_verified": true,
+    "outputs_empty_and_execution_counts_null": true,
+    "source_manifest": "results/stage_06d/MULTICELL_SOURCE.json",
+    "combined_source_sha256": "13d4cbd40a563033fcc12d8c8773bc27ab6e112b171a519aa34f0ce2cbc9103b",
     "cells": [
       {
         "index": 0,
@@ -125,58 +291,142 @@
       }
     ]
   },
-  "remaining_before_launch": [
-    "Recover reliable access to saving and reading Kaggle versions.",
-    "Establish whether a metadata-only saved version exists and verify its complete five-cell source, exact hashes and seven pinned input bindings.",
-    "Only after immutable source verification, launch unchanged Save & Run All on CPU with internet disabled.",
-    "Record the actual execution version ID and logs separately from QuickSave metadata."
-  ],
-  "scientific_endpoint": "Raw fixed rowwise fusion is primary; exact source balancing is a potentially contaminated diagnostic only.",
-  "official_best_score_unchanged": {
-    "submission": "S02",
-    "public_balanced_accuracy": 0.549
+  "next_execution_preparation": {
+    "intended_visible_version_ordinal": 3,
+    "save_and_run_all_being_prepared": false,
+    "launched": true,
+    "numeric_script_version_id": 359500151,
+    "note": "Version 3 ran and failed before new head fits; any repaired rerun remains unexecuted pending review."
   },
-  "limitations": [
-    "Receipt records root-verified preparation observations; this writer performed no browser actions.",
-    "Local five-cell checks and exact live editor roundtrips do not establish an immutable saved execution source.",
-    "No Stage 06D ensemble result or new official score is established."
-  ],
-  "browser_transport_observations": {
-    "source": "Root browser observations during final saved-source verification",
-    "repeated_requests_stalled": true,
-    "explicit_error": "MCP request timed out",
-    "version_history_ui_error": "Versions failed to load. Try refreshing the page.",
-    "final_compact_dom_status_check": "Pre-refresh screenshot verified V1 only, Draft Session off and zero active events; immutable five-cell saved-source verification remains incomplete.",
-    "interpretation": "Preparation/save/source-verification access is blocked; no ensemble execution or execution failure is established. The error-banner screenshot predates refresh.",
-    "kernel_commit_ui_error": "An error occurred while committing kernel: Failed to fetch",
-    "pre_refresh_bounded_metadata_retry_error": "Chat API request failed",
-    "intentional_refresh_performed": true,
-    "refresh_result": "Editor recovered with all five code cells and all seven input titles preserved.",
-    "post_refresh_attempt": "Opening QuickSave failed while clicking the QuickSave option; the Save action was not called in this attempt.",
-    "last_browser_error": "Chat API request failed",
-    "retry_in_progress": false
+  "actual_execution_visible_version_ordinal": 3,
+  "actual_execution_name": "Fixed raw ensemble comparison",
+  "actual_execution_status_observed": "Failed",
+  "actual_execution_observed_at_utc": "2026-10-17T21:47:07Z",
+  "actual_execution_selection": {
+    "save_mode": "Save & Run All",
+    "advanced_accelerator_choice": "Run without an accelerator for this session",
+    "accelerator": "CPU / None",
+    "observation_source": "Root fresh Save Version and Version History UI observations."
   },
-  "save_and_run_ever_called": false,
-  "last_browser_error": "Chat API request failed",
-  "last_verified_repository_head": "9db86f28cfd763ccbc3dcc048fb35fe649f6445f",
-  "evidence_screenshot": {
-    "path": "/workspace/scratch/43236e37f3d6/browser-proof/stage06d-save-error.png",
-    "sha256": "36e0a428368d36868ae9c2e9b1ab83a4ea065a2b6160ed0a2ea764807e65d30a",
-    "timing": "Before the intentional refresh",
-    "observed": [
-      "An error occurred while committing kernel: Failed to fetch",
-      "V1 only",
-      "Draft Session off",
-      "Zero active events"
+  "remaining_execution_verification": [
+    "Confirm metadata-only QuickSave V4 response and obtain its numeric scriptVersionId without guessing.",
+    "Verify all five immutable saved source cells against the repaired packaging manifest plus exact seven input bindings.",
+    "Only after saved-source verification, launch a separately identified unchanged CPU retry.",
+    "Require all twelve Stage 06C prediction arrays and scores to reproduce before interpreting raw fusion outcomes."
+  ],
+  "actual_execution_completed": true,
+  "actual_execution_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06d-fixed-ensemble?scriptVersionId=359500151",
+  "actual_execution_log_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06d-fixed-ensemble/log?scriptVersionId=359500151",
+  "actual_execution_log_elapsed_seconds": 20.7,
+  "ui_reported_run_seconds": 0,
+  "run_seconds_note": "Root verified actual log failure at 20.7 seconds; the terminal UI displayed zero seconds and is not used as execution duration.",
+  "active_events_at_launch_observed": 1,
+  "execution_failure": {
+    "phase": "Own completed Stage 06C paired_predictions.npz metadata validation, before cached DeBERTa head fitting.",
+    "input_file": "paired_predictions.npz",
+    "metadata_loop_keys": [
+      "ids",
+      "classes",
+      "y",
+      "groups",
+      "fold"
     ],
-    "limitation": "Does not establish that the error banner remained present after refresh.",
-    "binary_in_repository": false,
-    "binary_in_library": false
+    "error": "Object arrays cannot be loaded when allow_pickle=False",
+    "cause_status": "Own Stage 06C writer classes=np.sort(train.model.unique()) produces an object array; ids/groups were explicitly Unicode. The classes-only reader repair is independently reviewed.",
+    "style_transfer_complete": true,
+    "style_transfer_rows": 2699,
+    "style_probability_raw_sha256": "5e2e05577b7dc632f38f67d47958d7f3d069e8b758ead4664050f0d984803bad",
+    "style_entire_probability_array_bitwise_preserved": true,
+    "audited_component_members": 5,
+    "audited_component_files": 47,
+    "components_audited_marker_seen": true,
+    "deberta_fold_complete_markers": 0,
+    "new_head_fits_started": false,
+    "ensemble_result_available": false,
+    "observations_source": "Root fresh terminal Version 3 logs.",
+    "object_metadata_key": "classes",
+    "preserved_log": {
+      "path": "results/stage_06d/KAGGLE_V3_FAILED.log",
+      "bytes": 5631,
+      "sha256": "a4a92d501d696289e4d3a2a833933d7ebd3f64fc4ef6c426d9de3d5c36d9b4c3"
+    },
+    "parsed_failure_record": "results/stage_06d/V3_FAILURE.json",
+    "source_snapshot": {
+      "packaging_commit": "9db86f28cfd763ccbc3dcc048fb35fe649f6445f",
+      "packaging_manifest_path": "results/stage_06d/MULTICELL_SOURCE.json",
+      "notebook_path": "notebooks/Stage_06D_Fixed_Ensemble.ipynb",
+      "notebook_sha256": "fb86b90861aca45e630b64abb32634693df5c8c14c868394a3bbf992d5b870bc",
+      "linear_runner_path": "scripts/kaggle_stage06d_multicell.py",
+      "combined_source_sha256": "13d4cbd40a563033fcc12d8c8773bc27ab6e112b171a519aa34f0ce2cbc9103b",
+      "original_runner_path": "scripts/kaggle_stage06d_runner.py",
+      "original_runner_sha256": "b0db5a4e8ef82ef3f90b5b4f74af61d68fd24ff515f7e2f968797312801396f1",
+      "cell_count": 5,
+      "cells": [
+        {
+          "index": 0,
+          "characters": 77806,
+          "utf8_bytes": 77806,
+          "sha256": "86e5a3d50cd1850e65139b3fc7c8c39a77bd8ab8508f3208d101fe194a357fda"
+        },
+        {
+          "index": 1,
+          "characters": 156105,
+          "utf8_bytes": 156105,
+          "sha256": "bd765f02846b89e7537a6d92655cafa7f7664ba8199463048aca422ad9f04bac"
+        },
+        {
+          "index": 2,
+          "characters": 156106,
+          "utf8_bytes": 156106,
+          "sha256": "e7f8d7e91ad9179852c6606710d490c30fa510175d9e0d99101c29b6f2847504"
+        },
+        {
+          "index": 3,
+          "characters": 146225,
+          "utf8_bytes": 146225,
+          "sha256": "6c17db3c11cc0e1d4ad51710aa4874e16b1831701f608a3f54048b2cb2f06a29"
+        },
+        {
+          "index": 4,
+          "characters": 53685,
+          "utf8_bytes": 53685,
+          "sha256": "49585850b251e8f207e9b64db748d031f9453504949a8b9fca345362b725fce1"
+        }
+      ],
+      "failure_execution_script_version_id": 359500151,
+      "source_packaging_commit": "9db86f28cfd763ccbc3dcc048fb35fe649f6445f"
+    }
   },
-  "local_execution_fallback": {
-    "available": false,
-    "reason": "Required public neural numeric feature/prediction caches have not been downloaded to the local workspace.",
-    "verification_source": "Fusion agent local cache inventory reported to root.",
-    "note": "Prepared code and local style OOF probabilities alone are insufficient to execute the full fixed comparison locally."
+  "minimal_repair_preparation": {
+    "status": "REVIEW_PASSED_SAVED_SOURCE_AND_RETRY_PENDING",
+    "scope": "Classes-only static NumPy serialization grammar interpreter, exact eighteen unique expected class strings; IDs, groups, y, fold and predictions retain numeric/Unicode-only loading.",
+    "allow_pickle_true_authorized_or_used": false,
+    "protocol_changed": false,
+    "independent_review_pending": false,
+    "new_execution_id": null,
+    "independent_review_path": "results/stage_06d/SAFE_CLASSES_INDEPENDENT_REVIEW.json",
+    "reviewed_fusion_sha256": "b27925f978b0c87938c92adc36bcbb52e6536aa79fbe9330217daec7fecbae51",
+    "repair_packaging_manifest": "results/stage_06d/CLASS_METADATA_REPAIR_PACKAGING.json",
+    "new_combined_sha256": "8d2b999b78cccb48bbed5d223b7c30d1e4b3bc9369abed06c870ba499d6a3b27",
+    "algorithm_unchanged": true,
+    "new_head_fit_count": 0,
+    "last_editor_cell_characters": 60610,
+    "last_editor_cell_full_clipboard_roundtrip_exact": true,
+    "first_four_cells_unchanged_from_V3": true
+  },
+  "active_attempt": "classes_only_repair_pending_saved_source_verification_and_retry",
+  "retry_execution_started": false,
+  "retry_execution_script_version_id": null,
+  "new_head_fits_started": false,
+  "new_head_fit_count": 0,
+  "quicksave_v4": {
+    "purpose": "Metadata-only persistence of reviewed classes-only repaired source before CPU retry.",
+    "requested": true,
+    "response_confirmed": false,
+    "immutable_saved_source_verified": false,
+    "script_version_id": null,
+    "visible_version_ordinal_intended": 4,
+    "actual_cpu_retry_called": false,
+    "note": "Root replaced the final editor cell and verified all 60,610 characters by clipboard roundtrip; save request does not establish saved-source parity or execution."
   }
 }

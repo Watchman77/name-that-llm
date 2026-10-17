@@ -1,0 +1,157 @@
+{
+  "status": "PASS_FOCUSED_CLASS_METADATA_REPAIR_FIXTURES",
+  "recorded_at_utc": "2026-10-17T21:52:09.722701+00:00",
+  "source_file": "scripts/stage06d_fixed_ensemble.py",
+  "old_source_sha256": "61cf698548c1352caa2e81eea937753c607a554cffea2e2b5d32c678c7101163",
+  "old_source_bytes": 48613,
+  "old_hash_evidence": "Matches previously reviewed source and reverse-application of only this repair.",
+  "new_source_sha256": "b27925f978b0c87938c92adc36bcbb52e6536aa79fbe9330217daec7fecbae51",
+  "new_source_bytes": 55538,
+  "failed_execution_context": {
+    "source": "root-agent live-run observation supplied to repair task",
+    "script_version_id": 359500151,
+    "execution_seconds": 20.7,
+    "failure": "Stage06C paired_predictions.npz classes object array refused by allow_pickle=False",
+    "head_fits_started": false,
+    "earlier_style_transfer_and_5_component_audits_passed": true
+  },
+  "minimal_change": [
+    "New stage06d_safe_classes helper interprets a bounded NumPy object-class NPY serialization as inert symbols, never invokes REDUCE/BUILD callables.",
+    "Frozen Stage06C classes use the safe helper and exact 18-label order proof; class read mode/hash added to metadata checks.",
+    "IDs/groups/y/fold and all numeric prediction arrays keep existing allow_pickle=False reads.",
+    "All weights, heads, folds, contexts, criteria, 12 hard-prediction reproduction assertions and score checks unchanged."
+  ],
+  "security_checks": [
+    "classes.npy size below 65536 bytes",
+    "NPY header v1/v2, expected shape (18,), object dtype, non-Fortran layout",
+    "Explicit allowed NumPy globals only; no dynamic import or function call from pickle",
+    "Only narrowly supported transport/memo/primitive/list/tuple/NumPy-envelope operations",
+    "Exactly 18 unique Python string labels in exact official order",
+    "Strict ndarray and dtype BUILD state validation",
+    "STOP at last payload byte, single fully validated symbolic ndarray",
+    "Unknown opcode or nonstring class objects rejected"
+  ],
+  "fixtures": [
+    {
+      "fixture": "synthetic CSV round-trip then exact Stage06C writer",
+      "expected": "accept",
+      "observed": "PASS",
+      "checks": [
+        "classes=np.sort(train.model.unique()) has object dtype with Python string elements",
+        "18 ordered labels match",
+        "Unicode ids/groups and numeric y/fold/all four 3-scenario prediction arrays read unchanged using allow_pickle=False"
+      ]
+    },
+    {
+      "fixture": "Unicode class metadata",
+      "expected": "accept",
+      "observed": "PASS",
+      "checks": [
+        "non-object NumPy path",
+        "exact 18-class order"
+      ]
+    },
+    {
+      "fixture": "wrong_class_order",
+      "expected": "reject",
+      "observed": "REJECTED"
+    },
+    {
+      "fixture": "wrong_label",
+      "expected": "reject",
+      "observed": "REJECTED"
+    },
+    {
+      "fixture": "duplicate_label",
+      "expected": "reject",
+      "observed": "REJECTED"
+    },
+    {
+      "fixture": "extra_label",
+      "expected": "reject",
+      "observed": "REJECTED"
+    },
+    {
+      "fixture": "missing_label",
+      "expected": "reject",
+      "observed": "REJECTED"
+    },
+    {
+      "fixture": "nonstring_integer",
+      "expected": "reject",
+      "observed": "REJECTED"
+    },
+    {
+      "fixture": "nonstring_mapping",
+      "expected": "reject",
+      "observed": "REJECTED"
+    },
+    {
+      "fixture": "nonstring_bytes",
+      "expected": "reject",
+      "observed": "REJECTED"
+    },
+    {
+      "fixture": "real official CSV exact Stage06C metadata writer",
+      "expected": "accept",
+      "observed": "PASS",
+      "checks": [
+        "all 2699 official ids/groups preserved",
+        "exact 18 labels from actual official CSV",
+        "unchanged numeric arrays",
+        "pickle.load and pickle.loads both monkeypatched to raise during metadata read; neither called"
+      ]
+    },
+    {
+      "fixture": "object class metadata pickle protocol 3",
+      "expected": "accept_without_execution",
+      "observed": "PASS",
+      "checks": [
+        "strict NPY header",
+        "static NumPy ndarray/dtype opcode grammar only",
+        "exact ordered class strings"
+      ]
+    },
+    {
+      "fixture": "object class metadata pickle protocol 4",
+      "expected": "accept_without_execution",
+      "observed": "PASS",
+      "checks": [
+        "strict NPY header",
+        "static NumPy ndarray/dtype opcode grammar only",
+        "exact ordered class strings"
+      ]
+    },
+    {
+      "fixture": "object class metadata pickle protocol 5",
+      "expected": "accept_without_execution",
+      "observed": "PASS",
+      "checks": [
+        "strict NPY header",
+        "static NumPy ndarray/dtype opcode grammar only",
+        "exact ordered class strings",
+        "NPY v1 and v2 header variants both pass under protocol5"
+      ]
+    }
+  ],
+  "fixture_count": 14,
+  "compilation": "python -m py_compile scripts/stage06d_fixed_ensemble.py PASS",
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "model_fits": 0,
+  "neural_training": false,
+  "pickle_load_or_loads_executed": false,
+  "network_used": false,
+  "browser_actions": false,
+  "new_kaggle_execution_started": false,
+  "limits": [
+    "Tests reconstruct the Stage06C writer locally, including using the real official CSV; the actual failed immutable paired_predictions NPZ is not available locally.",
+    "Prediction arrays in fixtures are dummy numeric arrays used only to verify unchanged metadata/numeric loading; they are not model results.",
+    "Only known 18-unique class-string metadata is supported; this is not a general-purpose pickle deserializer.",
+    "NumPy scalar string objects serialized through scalar constructors and arbitrary nonstring objects are deliberately outside the accepted narrow grammar.",
+    "NPY v1/v2 and pickle protocols3/4/5 tested; unsupported serialization forms fail closed.",
+    "Focused metadata acceptance does not prove full ensemble execution or head-reproduction success; those checks remain mandatory in the repaired run."
+  ]
+}

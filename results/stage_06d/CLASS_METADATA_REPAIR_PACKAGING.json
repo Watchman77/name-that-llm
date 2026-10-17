@@ -1,0 +1,48 @@
+{
+  "purpose": "Classes-only compatibility repair after V3; all first four source cells and frozen probability bytes remain unchanged.",
+  "old_fusion_sha256": "61cf698548c1352caa2e81eea937753c607a554cffea2e2b5d32c678c7101163",
+  "new_fusion_sha256": "b27925f978b0c87938c92adc36bcbb52e6536aa79fbe9330217daec7fecbae51",
+  "notebook_path": "notebooks/Stage_06D_Fixed_Ensemble.ipynb",
+  "notebook_sha256": "e7d461408da4500f85fb584312e9bcecca5d5b2bcbf7d6ed1b25ee9c64d44852",
+  "linear_runner_path": "scripts/kaggle_stage06d_multicell.py",
+  "linear_runner_sha256": "8d2b999b78cccb48bbed5d223b7c30d1e4b3bc9369abed06c870ba499d6a3b27",
+  "single_runner_path": "scripts/kaggle_stage06d_runner.py",
+  "single_runner_sha256": "36a2b8b02561f199a5a6813342163c962a48fd6217734120473fdfdfbcaa7e9b",
+  "cells": [
+    {
+      "index": 0,
+      "characters": 77806,
+      "sha256": "86e5a3d50cd1850e65139b3fc7c8c39a77bd8ab8508f3208d101fe194a357fda",
+      "unchanged_from_V3": true
+    },
+    {
+      "index": 1,
+      "characters": 156105,
+      "sha256": "bd765f02846b89e7537a6d92655cafa7f7664ba8199463048aca422ad9f04bac",
+      "unchanged_from_V3": true
+    },
+    {
+      "index": 2,
+      "characters": 156106,
+      "sha256": "e7f8d7e91ad9179852c6606710d490c30fa510175d9e0d99101c29b6f2847504",
+      "unchanged_from_V3": true
+    },
+    {
+      "index": 3,
+      "characters": 146225,
+      "sha256": "6c17db3c11cc0e1d4ad51710aa4874e16b1831701f608a3f54048b2cb2f06a29",
+      "unchanged_from_V3": true
+    },
+    {
+      "index": 4,
+      "characters": 60610,
+      "sha256": "c594790c3675e73b35f7c95f055d22377f8e454eeff95a4d9bb3e9809903d33e",
+      "unchanged_from_V3": false
+    }
+  ],
+  "schema_valid": true,
+  "all_cells_compile": true,
+  "linear_source_equals_cell_concatenation": true,
+  "probability_payload_unchanged": true,
+  "model_fits": 0
+}

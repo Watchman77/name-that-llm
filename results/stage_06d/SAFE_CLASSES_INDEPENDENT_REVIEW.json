@@ -1,0 +1,119 @@
+{
+  "status": "PASS_INDEPENDENT_CLASSES_ONLY_REPAIR_REVIEW",
+  "source_sha256": "b27925f978b0c87938c92adc36bcbb52e6536aa79fbe9330217daec7fecbae51",
+  "prior_fusion_reference_sha256": "61cf698548c1352caa2e81eea937753c607a554cffea2e2b5d32c678c7101163",
+  "train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "model_fits": 0,
+  "browser_actions": false,
+  "github_actions": false,
+  "checks": {
+    "original_C_writer_object_classes_failure_reproduced": true,
+    "C_writer_ids_groups_unicode": true,
+    "added_helper_only": true,
+    "approved_four_statement_classes_handoff_only": true,
+    "all_remaining_run_algorithm_AST_exact_match": true,
+    "balancing_and_self_check_AST_unchanged": true,
+    "every_np_load_pickle_disabled": true,
+    "all_numeric_reading_folds_weights_raw_gates_12_comparisons_unchanged": true
+  },
+  "accepted_fixtures": [
+    {
+      "name": "exact_own_c_writer",
+      "mode": "object_class_strings_static_numpy_grammar_no_unpickling"
+    },
+    {
+      "name": "unicode",
+      "mode": "numpy_nonobject_class_strings"
+    },
+    {
+      "name": "bytes_fixed",
+      "mode": "numpy_nonobject_class_strings"
+    },
+    {
+      "name": "protocol_3",
+      "mode": "object_class_strings_static_numpy_grammar_no_unpickling"
+    },
+    {
+      "name": "protocol_4",
+      "mode": "object_class_strings_static_numpy_grammar_no_unpickling"
+    },
+    {
+      "name": "protocol_5",
+      "mode": "object_class_strings_static_numpy_grammar_no_unpickling"
+    }
+  ],
+  "rejected_fixtures": [
+    {
+      "name": "wrong_order",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "wrong_label",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "duplicate",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "extra_value",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "missing_value",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "integer",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "mapping_element",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "bytes_object",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "dangerous_reduce",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "trailing_pickle",
+      "rejected": true,
+      "exception": "AssertionError"
+    }
+  ],
+  "guarded_execution_surface_calls": {
+    "pickle_load": 0,
+    "pickle_loads": 0,
+    "reconstruct": 0,
+    "dangerous_callable": 0
+  },
+  "packaging_checks": {
+    "new_manifest_file_hashes_match": true,
+    "notebook_schema_valid": true,
+    "all_5_cells_compile": true,
+    "first_4_cell_hashes_match_historical_V3": true,
+    "last_cell_contains_exact_new_fusion_module_once": true,
+    "notebook_linear_AST_exact_match": true,
+    "single_runner_contains_exact_new_fusion_module_once": true,
+    "historical_manifest_preserved": true,
+    "combined_sha256": "8d2b999b78cccb48bbed5d223b7c30d1e4b3bc9369abed06c870ba499d6a3b27",
+    "notebook_sha256": "e7d461408da4500f85fb584312e9bcecca5d5b2bcbf7d6ed1b25ee9c64d44852"
+  },
+  "limitations": [
+    "Fixtures validate the exact official-data writer expression and local protocols3/4/5, not the actual Kaggle cache bytes.",
+    "Full Kaggle run is required to establish repaired end-to-end compatibility; no head fitting occurred."
+  ]
+}
