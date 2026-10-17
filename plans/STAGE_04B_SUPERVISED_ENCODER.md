@@ -32,3 +32,9 @@ Primary metric: pooled OOF balanced accuracy, compared with the frozen Stage 03 
 Report the paired development difference with 2,000 prompt-cluster bootstrap resamples, seed 20261016, and the same conditional/selection caveats as Stage 04. Inspect all five folds and class regressions before selecting a provisional candidate. No supplied prompt is an untouched confirmation set.
 
 This is one fixed supervised recipe. Do not add learning rates, epochs, seeds or architectures after inspecting outcomes under this protocol. No competition submission or final-selection change is part of this trial. A successful candidate must pass a separate offline Kaggle inference/version check before any official submission.
+
+## Implementation clarifications recorded before the first fit
+
+Use the checkpoint's slow SentencePiece tokenizer (`use_fast=False`) with SentencePiece 0.2.1. Use Transformers 4.56.2, tokenizers 0.22.2, huggingface-hub 0.36.2 and protobuf 6.31.1 from prepared offline wheels; record the Kaggle torch version (minimum 2.6 for the original checkpoint format). Set AMP GradScaler initial scale to 1024 and growth interval to 2000; an overflow/nonfinite gradient ends the attempt as incomplete with its record preserved. Warmup steps round upward to the nearest whole optimizer step. Accumulated summed weighted losses divide by the actual total row count in that accumulation group, including its final partial group. Keep final checkpoint parameters in float32. Reserve the final minute of the three-hour allowance for status/checkpoint preservation.
+
+Kaggle's accelerator dialog reported **30 included hours remaining** on 17 October 2026 before resource preparation. Resource preparation is a separate private CPU notebook; no classifier is fitted there. Actual T4 runtime availability still requires the training preflight check.
