@@ -9,7 +9,7 @@
   "source_author": "Lucas Boesen",
   "source_version_id": 359126546,
   "source_reported_public_score": 0.549,
-  "our_public_score": null,
+  "our_public_score": 0.549,
   "official_submission_made": true,
   "code_diff_display": "+0 -0",
   "source_sha256": "261e27094fbefbfe8e6496feda4a274f8e9a8587a19b304da074a71f49cbc2f3",
@@ -19,7 +19,7 @@
   "accelerator": "GPU T4 x2",
   "gpu_preflight_confirmed": true,
   "preflight_log": "train (2699, 4) test (3, 2) gpus 2",
-  "latest_step_observed": "All ensemble stages completed; submission.parquet created. Official S02 accepted and hidden-test rerun shows Notebook Running.",
+  "latest_step_observed": "S02 hidden-test rerun succeeded, displayed public score 0.549; rank 177/1204. Reproduction complete at displayed score precision.",
   "requested_environment_ui": "Pin to original environment (2026-10-02)",
   "actual_environment_label": "Latest Container Image",
   "environment_note": "Kaggle Logs contradicts requested environment label. Preserve actual label; do not claim original container was reproduced. No model-code changes or restart made.",
@@ -89,7 +89,7 @@
   "warnings_observed": [
     "LightGBM/scikit-learn feature-name warnings; no failure observed at this check"
   ],
-  "last_checked_utc": "2026-10-17T13:12:36.877Z",
+  "last_checked_utc": "2026-10-17T14:02:20.265Z",
   "last_ui_runtime_display": "1884.8 second run - successful",
   "additional_log_evidence": {
     "qwen3_completed_log": "759.4s q3_8b_cat7+22 done (721s)",
@@ -101,6 +101,19 @@
   "code_timer_seconds": 1835,
   "output_size_display": "1.76 kB",
   "official_submission_label": "S02",
-  "official_submission_status": "Notebook Running",
-  "output_verification": "results/stage_05/OUTPUT_VERIFICATION.json"
+  "official_submission_status": "Succeeded",
+  "output_verification": "results/stage_05/OUTPUT_VERIFICATION.json",
+  "official_score_observed_utc": "2026-10-17T14:02:20.265Z",
+  "leaderboard_observation": {
+    "observed_utc": "2026-10-17T14:02:20.265Z",
+    "public_rank": 177,
+    "ranked_teams": 1204,
+    "public_score": 0.549,
+    "tenth_place_score": 0.559,
+    "leader_score": 0.593,
+    "gap_to_tenth_percentage_points": 1,
+    "gap_to_leader_percentage_points": 4.4,
+    "public_fraction_approx": 0.4,
+    "private_fraction_approx": 0.6
+  }
 }
