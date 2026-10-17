@@ -1,0 +1,24 @@
+{
+  "status": "NUMERICAL_SCREEN_PASSES_AFTER_WARNING_REVIEW",
+  "original_v1_screen_pass": false,
+  "statistical_screen_pass": true,
+  "warning_review": {
+    "count": 15,
+    "exact_message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0.",
+    "classification": "Future SciPy API deprecation, not an optimizer convergence failure",
+    "unrecognised_messages": [],
+    "v1_bug": "V1 stored all caught warnings under convergence_warnings and rejected any warning."
+  },
+  "model_or_prediction_changes": false,
+  "refit_performed": false,
+  "primary_mean_gain": 0.006798409147402429,
+  "paired_prompt_95_interval": [
+    0.0008602044438174214,
+    0.012962962962962957
+  ],
+  "decision": "Advance only to further matched full-ensemble validation; no official submission justified.",
+  "limits": [
+    "Review uses preserved completed-run numeric results; does not recreate unobserved training.",
+    "One fp16-cache DeBERTa component with lexical-only grouping; no full S02 score gain established."
+  ]
+}
