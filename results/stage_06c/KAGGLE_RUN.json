@@ -6,10 +6,10 @@
   "script_version_id": 359405443,
   "version": 1,
   "visibility": "private",
-  "observed_at_utc": "2026-10-17T18:24:31Z",
-  "observed_state": "Queued",
-  "actual_cuda_preflight_observed": false,
-  "output_bytes_observed": 0,
+  "observed_at_utc": "2026-10-17T19:39:21Z",
+  "observed_state": "Succeeded",
+  "actual_cuda_preflight_observed": true,
+  "output_bytes_observed": null,
   "requested_accelerator_ui": "GPU T4 x2",
   "internet_enabled": false,
   "included_gpu_hours_remaining_at_launch": 28,
@@ -47,7 +47,17 @@
   "official_submission_created": false,
   "final_selections_changed": false,
   "paid_services_used": false,
-  "result": null,
+  "result": {
+    "type": "component development balanced accuracy; not ensemble or official score",
+    "control_mean": 0.45827574778357777,
+    "candidate_mean": 0.46951777280636336,
+    "gain_pp": 1.1242025022785616,
+    "conditional_95_interval_pp": [
+      0.5190943740160741,
+      1.7178970637303972
+    ],
+    "screen_pass": true
+  },
   "previous_observations": [
     {
       "observed_at_utc": "2026-10-17T15:26:37.552297+00:00",
@@ -58,12 +68,48 @@
       "observed_at_utc": "2026-10-17T15:57:33Z",
       "state": "Queued",
       "output_bytes": 0
+    },
+    {
+      "observed_at_utc": "2026-10-17T18:24:31Z",
+      "state": "Queued",
+      "output_bytes": 0,
+      "version_history_state": "Starting..."
     }
   ],
-  "version_history_state": "Starting...",
+  "version_history_state": "Previously Starting; final Logs page reports Successfully ran",
   "save_type_verified": "Save & Run All",
-  "quota_display": "01:21 / 30 hrs",
-  "quota_assessment": "Quota exhaustion is not indicated by the displayed fraction; cause of delay is not displayed.",
-  "code_execution_logs_observed": false,
-  "execution_error_displayed": false
+  "code_execution_logs_observed": true,
+  "execution_error_displayed": false,
+  "platform_execution_seconds": 524.8,
+  "displayed_output": "122.82 MB",
+  "gpu_preflight": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "total_memory": 15636037632,
+      "free_memory": 15526068224
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4",
+      "total_memory": 15636037632,
+      "free_memory": 15526068224
+    }
+  ],
+  "cache": {
+    "cache_sha256": "2b41585a9482cef825962a8cc096697933c0b1237e8ede0712d1f8ab361d9414",
+    "shape": [
+      2699,
+      3,
+      4096
+    ],
+    "seconds": 417.15706673200003
+  },
+  "startup_diagnostic_observation": {
+    "observed_at_utc": "2026-10-17T18:24:31Z",
+    "version_history_state": "Starting...",
+    "quota_display": "01:21 / 30 hrs",
+    "quota_assessment": "Quota exhaustion is not indicated by the displayed fraction; cause of delay is not displayed."
+  },
+  "gpu_export_inconsistency_resolution": "Actual completed-run logs confirm two Tesla T4 GPUs and successful frozen extraction. The exported isGpuEnabled=false value was not an execution blocker."
 }

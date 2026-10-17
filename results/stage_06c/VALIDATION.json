@@ -1,0 +1,350 @@
+{
+  "status": "PASS_SAVED_SUMMARY_AND_CLASS_RECALL_VALIDATION",
+  "method": "No model fits or execution. Parsed saved complete log, result JSON, grouping diagnostics and class recall CSV; compared Stage06B class recall CSV.",
+  "scope": "Numerical consistency checks and source-code logic review, not independent per-row prediction recomputation.",
+  "prediction_npz_locally_recomputed": false,
+  "bootstrap_independently_recomputed": false,
+  "bootstrap_limitation": "The archived paired_predictions.npz was not locally available in this check. Interval endpoints are verified against log and screen logic only. Prompt bootstrap is conditional on fixed fits/grouping and one partition seed; it omits refitting, clustering and batch-scale uncertainty.",
+  "input_sha256": {
+    "centering_result.json": "a75326fb8f62c46aa8bd23b471e7d9c8cacbd0857ebe2167b3c9122df9c92e2a",
+    "group_diagnostics.json": "b3743846e6a14e6e627e91fd7cb323d843fd9ea20d4cab55a804a476ce3e44f6",
+    "per_class_recall.csv": "ff2b8b3567e85f6cedeb9b3340ce109888e580752a61636111f3723e827d60ed",
+    "KAGGLE_V1_COMPLETE.log": "821d3b1a3dd66a6baa09288906bc93f28a02c7af4c377d596f03bb63f6962b9d",
+    "GLM_CACHE_COMPLETE.json": "9d6b7b60f92f4f22d7b82dda1b4d3425f23bbf3f4721b8788c0088d67b522ccb"
+  },
+  "macro_recall_checks": [
+    {
+      "head": "control",
+      "scenario": 1,
+      "reconstructed_score": 0.4364156102411136,
+      "declared_score": 0.4364156102411136,
+      "absolute_difference": 0.0
+    },
+    {
+      "head": "control",
+      "scenario": 3,
+      "reconstructed_score": 0.444188416604524,
+      "declared_score": 0.444188416604524,
+      "absolute_difference": 0.0
+    },
+    {
+      "head": "control",
+      "scenario": 6,
+      "reconstructed_score": 0.4942232165050957,
+      "declared_score": 0.49422321650509576,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "head": "candidate",
+      "scenario": 1,
+      "reconstructed_score": 0.4364156102411136,
+      "declared_score": 0.4364156102411136,
+      "absolute_difference": 0.0
+    },
+    {
+      "head": "candidate",
+      "scenario": 3,
+      "reconstructed_score": 0.4645811583395476,
+      "declared_score": 0.4645811583395476,
+      "absolute_difference": 0.0
+    },
+    {
+      "head": "candidate",
+      "scenario": 6,
+      "reconstructed_score": 0.507556549838429,
+      "declared_score": 0.507556549838429,
+      "absolute_difference": 0.0
+    },
+    {
+      "head": "oracle_control",
+      "scenario": 1,
+      "reconstructed_score": 0.4364156102411136,
+      "declared_score": 0.4364156102411136,
+      "absolute_difference": 0.0
+    },
+    {
+      "head": "oracle_control",
+      "scenario": 3,
+      "reconstructed_score": 0.4723514789957743,
+      "declared_score": 0.47235147899577434,
+      "absolute_difference": 5.551115123125783e-17
+    },
+    {
+      "head": "oracle_control",
+      "scenario": 6,
+      "reconstructed_score": 0.5397887148893861,
+      "declared_score": 0.5397887148893861,
+      "absolute_difference": 0.0
+    },
+    {
+      "head": "oracle_candidate",
+      "scenario": 1,
+      "reconstructed_score": 0.4364156102411136,
+      "declared_score": 0.4364156102411136,
+      "absolute_difference": 0.0
+    },
+    {
+      "head": "oracle_candidate",
+      "scenario": 3,
+      "reconstructed_score": 0.4845960725826498,
+      "declared_score": 0.4845960725826497,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "head": "oracle_candidate",
+      "scenario": 6,
+      "reconstructed_score": 0.5390355456127268,
+      "declared_score": 0.5390355456127268,
+      "absolute_difference": 0.0
+    }
+  ],
+  "mean_control_development_balanced_accuracy": 0.45827574778357777,
+  "mean_candidate_development_balanced_accuracy": 0.4695177728063634,
+  "mean_component_gain_pp": 1.1242025022785616,
+  "scenario_component_gains_pp": [
+    0.0,
+    2.039274173502359,
+    1.3333333333333253
+  ],
+  "conditional_prompt_95_interval_pp": [
+    0.5190943740160741,
+    1.7178970637303972
+  ],
+  "screen_recomputed_from_saved_values": true,
+  "screen_logic": "mean_gain > 0 and interval_low > 0 and each scenario_gain >= -0.005 and no non-deprecation fit warnings",
+  "warning_categories": [
+    "DeprecationWarning"
+  ],
+  "warnings": 15,
+  "group_diagnostic_aggregates": [
+    {
+      "rows": 2699,
+      "eligible_rows": 4,
+      "true_positive_directed_pairs": 0,
+      "predicted_directed_pairs": 4,
+      "true_directed_pairs": 0,
+      "scenario": 1,
+      "batches": 90,
+      "fold_row_totals": {
+        "0": 540,
+        "1": 540,
+        "2": 540,
+        "3": 540,
+        "4": 539
+      },
+      "row_cluster_size_counts": {
+        "1": 2695,
+        "2": 4
+      },
+      "pair_precision": 0.0,
+      "pair_recall": null,
+      "eligible_fraction": 0.0014820303816228233
+    },
+    {
+      "rows": 2699,
+      "eligible_rows": 2311,
+      "true_positive_directed_pairs": 4090,
+      "predicted_directed_pairs": 4090,
+      "true_directed_pairs": 5396,
+      "scenario": 3,
+      "batches": 30,
+      "fold_row_totals": {
+        "0": 540,
+        "1": 540,
+        "2": 540,
+        "3": 540,
+        "4": 539
+      },
+      "row_cluster_size_counts": {
+        "1": 388,
+        "2": 532,
+        "3": 1779
+      },
+      "pair_precision": 1.0,
+      "pair_recall": 0.7579688658265382,
+      "eligible_fraction": 0.8562430529825862
+    },
+    {
+      "rows": 2699,
+      "eligible_rows": 2496,
+      "true_positive_directed_pairs": 10064,
+      "predicted_directed_pairs": 10064,
+      "true_directed_pairs": 13490,
+      "scenario": 6,
+      "batches": 15,
+      "fold_row_totals": {
+        "0": 540,
+        "1": 540,
+        "2": 540,
+        "3": 540,
+        "4": 539
+      },
+      "row_cluster_size_counts": {
+        "1": 203,
+        "2": 216,
+        "3": 246,
+        "4": 232,
+        "5": 350,
+        "6": 1452
+      },
+      "pair_precision": 1.0,
+      "pair_recall": 0.7460340993328392,
+      "eligible_fraction": 0.9247869581326417
+    }
+  ],
+  "group_coverage_limit": "Diagnostic row counts and five-fold totals reconcile; full ID-level coverage assertion was executed in the saved script but paired predictions were not locally rechecked.",
+  "class_mean_changes_pp": [
+    {
+      "model": "claude-opus-4-8",
+      "mean_recall_change_pp": -2.666666666666669
+    },
+    {
+      "model": "qwen3.8-max",
+      "mean_recall_change_pp": -2.0000000000000018
+    },
+    {
+      "model": "gemini-3.6-flash",
+      "mean_recall_change_pp": -1.3333333333333346
+    },
+    {
+      "model": "glm-5.3-flash",
+      "mean_recall_change_pp": -1.3333333333333346
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "mean_recall_change_pp": -0.4444444444444473
+    },
+    {
+      "model": "kimi-k3",
+      "mean_recall_change_pp": -0.4444444444444455
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "mean_recall_change_pp": -0.4444444444444435
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "mean_recall_change_pp": -0.22222222222222365
+    },
+    {
+      "model": "claude-sonnet-5",
+      "mean_recall_change_pp": 1.8503717077085944e-15
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "mean_recall_change_pp": 0.2222222222222238
+    },
+    {
+      "model": "gemini-3.7-flash",
+      "mean_recall_change_pp": 1.1111111111111107
+    },
+    {
+      "model": "claude-opus-4-6",
+      "mean_recall_change_pp": 1.111111111111111
+    },
+    {
+      "model": "glm-5.3",
+      "mean_recall_change_pp": 1.9999999999999998
+    },
+    {
+      "model": "claude-fable-5",
+      "mean_recall_change_pp": 2.013422818791947
+    },
+    {
+      "model": "gpt-5.5",
+      "mean_recall_change_pp": 2.888888888888889
+    },
+    {
+      "model": "gpt-6-astra",
+      "mean_recall_change_pp": 3.7777777777777724
+    },
+    {
+      "model": "gemini-3.1-pro-preview",
+      "mean_recall_change_pp": 6.000000000000002
+    },
+    {
+      "model": "claude-opus-5",
+      "mean_recall_change_pp": 10.000000000000002
+    }
+  ],
+  "worst_scenario_regressions_pp": [
+    {
+      "scenario": 6,
+      "model": "gpt-5.6-terra",
+      "recall_change_pp": -7.33333333333333
+    },
+    {
+      "scenario": 3,
+      "model": "qwen3.8-max",
+      "recall_change_pp": -6.666666666666665
+    },
+    {
+      "scenario": 3,
+      "model": "claude-opus-4-8",
+      "recall_change_pp": -4.0000000000000036
+    },
+    {
+      "scenario": 3,
+      "model": "gemini-3.8-flash",
+      "recall_change_pp": -4.0000000000000036
+    },
+    {
+      "scenario": 6,
+      "model": "claude-opus-4-8",
+      "recall_change_pp": -4.0000000000000036
+    },
+    {
+      "scenario": 6,
+      "model": "glm-5.3-flash",
+      "recall_change_pp": -4.0000000000000036
+    }
+  ],
+  "best_scenario_improvements_pp": [
+    {
+      "scenario": 6,
+      "model": "claude-opus-5",
+      "recall_change_pp": 15.333333333333343
+    },
+    {
+      "scenario": 3,
+      "model": "claude-opus-5",
+      "recall_change_pp": 14.66666666666666
+    },
+    {
+      "scenario": 3,
+      "model": "gemini-3.1-pro-preview",
+      "recall_change_pp": 9.999999999999998
+    },
+    {
+      "scenario": 6,
+      "model": "gemini-3.1-pro-preview",
+      "recall_change_pp": 8.000000000000007
+    },
+    {
+      "scenario": 3,
+      "model": "gpt-6-astra",
+      "recall_change_pp": 7.333333333333325
+    },
+    {
+      "scenario": 3,
+      "model": "claude-fable-5",
+      "recall_change_pp": 6.040268456375841
+    }
+  ],
+  "context1_vs_stage06b": {
+    "control_difference_pp": 0.0740740740740764,
+    "class_recall_differences_pp": {
+      "claude-sonnet-5": 0.6666666666666654,
+      "kimi-k3": 0.6666666666666654
+    },
+    "trace": "Context1 oracle per-class recalls are identical in06B and06C. The06B inferred score is lower than its oracle by one correct Sonnet and one correct Kimi response;06C inferred per-class recalls equal its oracle. Only grouping code changed this inference path, so false inferred cross-prompt groups explain the aggregate06B difference.06C still formed two false pairs (four eligible rows), but they produced no net per-class recall difference versus its oracle. Exact row-level mechanisms were not locally verified."
+  },
+  "conclusion": "Candidate passes this predeclared development component screen. This is not full S02 ensemble evaluation, not an official public balanced-accuracy score, and +1.1242 percentage points cannot be added to54.9%. Proceed to fixed ensemble validation before any submission.",
+  "limitations": [
+    "Only one of five frozen centered twins tested; not a complete S02 ensemble.",
+    "Thirty-prompt fold batches, not full hidden-test batch size; clustering scale transfer unverified.",
+    "Quantized cached features; not bitwise reproduction of fp32 S02 extraction.",
+    "Only the weighted DeBERTa component is scored, not its marginal change to S02 ensemble accuracy.",
+    "Historical development reuse; conditional fixed-prediction bootstrap omits refitting/clustering variability; no official submission or paid service."
+  ]
+}
