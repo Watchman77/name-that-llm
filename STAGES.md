@@ -2,7 +2,7 @@
 
 ## Competition goal
 
-Target first place in the final private evaluation. At the latest 17 October 2026 check, S02 scores **0.549**, the public leader **0.600** (5.1 percentage points ahead), and tenth place **0.559** (1.0 point ahead). Current rank is **181 of 1,212 teams**. S01 remains frozen at 0.354. Public standings are time-specific; the final private result is unknown. The user's request to adopt stronger public methods was completed as one frozen external-baseline reproduction, not an original-method claim or parameter search.
+Target first place in the final private evaluation. At an earlier recorded 17 October 2026 check, S02 scored **0.549**, the public leader **0.600** (5.1 percentage points ahead), and tenth place **0.559** (1.0 point ahead). Our rank was **181 of 1,212 teams**. No fresh leaderboard check accompanies the Stage 06D preparation update. S01 remains frozen at 0.354. Public standings are time-specific; the final private result is unknown. The user's request to adopt stronger public methods was completed as one frozen external-baseline reproduction, not an original-method claim or parameter search.
 
 | Stage | Status | Evidence / next decision |
 |---|---|---|
@@ -12,7 +12,7 @@ Target first place in the final private evaluation. At the latest 17 October 202
 | 04 — offline pretrained encoders / complementary models | Complete; both fixed experiments rejected | Frozen MPNet: 14.59% alone, 34.12% added. Supervised DeBERTa: 22.76% development BA, below the 35.41% reference in every fold; all five folds completed. |
 | 05 — candidate freeze and competition submission | S02 succeeded at 54.9% official public BA | S01 remains 35.4%. Unchanged public baseline V1 359332774 reproduced 0.549; rank 177/1204 at observation. Final private evaluation and further original improvements remain pending. |
 | 06 — OOF provenance and centering | Audit, lexical test and mixed confirmation complete | Stage 06C mixed-grouping component BA 45.8276% to 46.9518% (+1.1242pp, conditional interval +0.5191 to +1.7179); fixed screen passes. All 2,699 GLM cache rows and five CPU folds complete. Class/context limits remain; official 54.9% unchanged. |
-| 06D — fixed available-component ensemble | CPU stylegram prerequisite complete; fusion pending | Exact S02 stylegram on original prompt folds: 38.4484% development BA, zero warnings, full probabilities verified. GLM cache prerequisite complete; CPU head probabilities/fusion pending. No new ensemble or official score. |
+| 06D — fixed available-component ensemble | Blocked at immutable saved-source verification; comparison not launched | Reviewed five-cell code and seven inputs prepared privately on CPU with internet off. Save/browser errors prevented verification; refresh preserved the editor, but reopening QuickSave failed before Save. No V2 ID or execution; required caches are unavailable locally. Stylegram prerequisite remains 38.4484% development BA; no ensemble or new official score. |
 | Publication assessment | Pending | Review related work and establish a contribution with stronger independent/nested evaluation. Ranking alone is insufficient. |
 
 ## How each experiment is tracked
@@ -38,3 +38,5 @@ Stage 06 audit: `results/stage_06/ADVICE_AUDIT.md`; next protocol: `plans/STAGE_
 Stage 06B completed result: `results/stage_06b/REPORT.md`; fixed CPU protocol: `plans/STAGE_06B_CACHED_CENTERING.md`; next prerequisite and confirmation: `plans/STAGE_06C_MIXED_GROUP_VALIDATION.md`.
 
 Stage 06C: `results/stage_06c/KAGGLE_RUN.json`. Next fixed ensemble endpoint: `plans/STAGE_06D_FIXED_ENSEMBLE_PROXY.md`.
+
+Stage 06D preparation: `results/stage_06d/KAGGLE_RUN.json`; current implementation and limits: `results/stage_06d/REPORT.md`. Exact five-cell packaging was committed in 9db86f28cfd763ccbc3dcc048fb35fe649f6445f; execution remains unstarted and blocked at immutable saved-source verification after bounded save/access recovery attempts.
