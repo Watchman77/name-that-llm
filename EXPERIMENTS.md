@@ -115,3 +115,12 @@ The notebook is kept private with the competition input attached and internet di
 - V1 359399756 succeeded155.8s. Its false screening flag came from classifying15identical SciPy deprecation notices as convergence failures. Original result/log preserved. V2 359401219 changed only warning categorisation and diagnostics/assertions; succeeded170.1s, reproduced all control/candidate scenario scores to1e-12, had zero convergence warnings and passed the numeric screen. No new model setting/candidate was selected.
 - Numeric OOF audits: second seed7 LoRA48.04425%; Qwen3.5 token attention39.37808%; DeBERTa token attention41.08153%. Extra Qwen8B attention37.00795% audited but not selected. Object-ID metadata statically inspected without unpickling; numeric arrays read withallow_pickle=False. Twenty NPZ files inventoried.
 - Decision: provisional component improvement only. Confirm the same DeBERTa change with S02's actual mixed GLM/lexical grouping before adoption. Missing GLM layer24 passage-feature cache is the next precise prerequisite. No official submission, final-selection change, GPU or paid service used in Stage06B. Full report: results/stage_06b/REPORT.md; next fixed protocol: plans/STAGE_06C_MIXED_GROUP_VALIDATION.md.
+
+
+## Stage 06C launch — 17 October 2026
+
+- Prospective protocol amendment committed before extraction: 8c10205da8a962d977f144a0b1ebcd3d9da39b79. Reviewed extractor, paired mixed-grouping confirmation and combined runner committed before Kaggle save.
+- Private V1 359405443 is queued with GPU T4 x2 requested; 28 included GPU hours were displayed before launch. Internet disabled. Exact UI version export binds competition 170484 and public kernels 358683059 (GLM) / 358745836 (encoder cache).
+- Frozen GLM inference saves fixed layers 8, 3 and 24 once, with data/ID/text/model hashes; no supervised neural training. The CPU comparison preserves Stage 06B recipe and changes only group recovery to exact S02 mixed grouping, adding group diagnostics.
+- Export reports isGpuEnabled=false despite the GPU-for-this-session save selection and T4 x2 Logs label. Actual CUDA preflight has not yet been observed, nor has any output/cache/result. Preserve this inconsistency.
+- No official submission, final-selection change or paid service. S02 remains 0.549. Next decision: drop candidate if mixed-grouping confirmation fails; otherwise test marginal benefit in a fixed available-component ensemble, explicitly not full S02. Protocol: plans/STAGE_06D_FIXED_ENSEMBLE_PROXY.md.
