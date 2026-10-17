@@ -1,0 +1,44 @@
+{
+  "stage": "05",
+  "recorded_utc": "2026-10-17T11:39:02.853Z",
+  "script_version_id": 359332774,
+  "status": "PreviewSucceeded",
+  "platform_runtime_seconds": 1884.8,
+  "code_timer_seconds": 1835,
+  "output_file": "submission.parquet",
+  "output_size_display": "1.76 kB",
+  "preview_rows": 3,
+  "expected_preview_ids": [
+    "00353fb1c541",
+    "005f5a9a6139",
+    "0062a53d5487"
+  ],
+  "output_columns_constructed_in_executed_code": [
+    "id",
+    "model"
+  ],
+  "executed_code_sha256": "e3d97306f3185ea5f73d7904d81331b27803e3ceb45970596590ec306969762e",
+  "frozen_code_hash_matches": true,
+  "checks": {
+    "all_recipe_stages_completed": true,
+    "id_uniqueness_assertion_passed": true,
+    "valid_model_labels_assertion_passed": true,
+    "row_count_equals_test_assertion_passed": true,
+    "ids_constructed_directly_from_test": true,
+    "columns_constructed_explicitly": true,
+    "lora_anchor_relative_error": 0,
+    "lora2_anchor_relative_error": 0.00017,
+    "anchor_tolerance": 0.02,
+    "token_attention_sanity_assertions_passed": true
+  },
+  "prediction_label_counts": {
+    "claude-opus-4-8": 1,
+    "gpt-5.6-terra": 1,
+    "gemini-3.1-pro-preview": 1
+  },
+  "limitations": [
+    "Kaggle Output UI cannot preview this Parquet type; no independent binary read/round-trip was performed. File presence and executed construction/assertions are verified.",
+    "In-sample sanity checks and clustering QA are technical checks, not independent accuracy.",
+    "Three preview rows have no scoring labels; no new official score exists at this point."
+  ]
+}
