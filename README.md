@@ -2,11 +2,13 @@
 
 Private competition workspace for reproducible LLM authorship attribution.
 
-The competitive goal is **first place in the final private evaluation**. The public leading score was 59.3% at the latest 17 October 2026 check (previously 58.4%); this is a benchmark, not a fixed winning threshold.
+The competitive goal is **first place in the final private evaluation**. The public leading score was 60.0% at the latest 17 October 2026 check (previously 59.3%); this is a benchmark, not a fixed winning threshold.
 
 ## Current stage
 
-**Our best confirmed official public score is now 0.549 (54.9%), from S02**, the unchanged Lucas Boesen V3 reproduction. This improves S01's 0.354 by **19.5 percentage points** and matches the source score at displayed precision. At the latest check we rank **177 of 1,204 teams**; tenth is 0.559 and the leader 0.593. The final private result remains unknown. See [S02 outcome](results/submissions/S02_REPORT.md), [source attribution](vendor/NOTICE.md) and [reproduction protocol](plans/STAGE_05_PUBLIC_REPRODUCTION.md). No paid services were used.
+**Our best confirmed official public score is now 0.549 (54.9%), from S02**, the unchanged Lucas Boesen V3 reproduction. This improves S01's 0.354 by **19.5 percentage points** and matches the source score at displayed precision. At the latest check we rank **181 of 1,212 teams**; tenth is 0.559 and the leader 0.600. The final private result remains unknown. See [S02 outcome](results/submissions/S02_REPORT.md), [source attribution](vendor/NOTICE.md) and [reproduction protocol](plans/STAGE_05_PUBLIC_REPRODUCTION.md). No paid services were used.
+
+Stage 06 is prepared: [advice audit](results/stage_06/ADVICE_AUDIT.md) and [OOF/centering protocol](plans/STAGE_06_OOF_AND_CENTERING.md). Most suggested model families, style features, centering and balancing are already in S02. Prediction provenance and honest held-out error analysis come first; the new centering comparison has not run. 70% is a stretch goal, not a promised outcome.
 
 The best development reference remains the Stage 03 **character + 111 style features** candidate at **35.41% balanced accuracy**, versus 30.86% for character-only and 30.19% for the original combined baseline. It improved all five saved prompt-grouped folds. See [the Stage 03 report](results/stage_03/REPORT.md) for uncertainty and regressions.
 
