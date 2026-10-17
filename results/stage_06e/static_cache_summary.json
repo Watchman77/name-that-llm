@@ -1,0 +1,12 @@
+{
+  "cache_sha256": "513a889477b8940d5f4a1df304b793361ff3860857e4e846e29e28429d9b3d08",
+  "members": [
+    "stylegram",
+    "lora",
+    "lora2",
+    "tokattn",
+    "tokattn_deb"
+  ],
+  "input_files_audited": 47,
+  "model_fits": 0
+}

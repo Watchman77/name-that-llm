@@ -1,0 +1,7 @@
+endpoint,scenario,changed,corrected,broken,changed_both_wrong,eligible_rows
+raw,1,0,0,0,0,4
+raw,3,130,40,40,50,2311
+raw,6,135,41,52,42,2496
+balanced,1,0,0,0,0,4
+balanced,3,116,37,30,49,2311
+balanced,6,144,47,52,45,2496

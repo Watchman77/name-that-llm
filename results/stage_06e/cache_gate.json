@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "canonical_cache_sha256": "2c6aa02a0bafd9389f436a25de70868b581d829bd8e39835b8e2f6a8354a3b2b",
+  "all_saved_arrays_exact_readback": true,
+  "component_predictions_exact": true,
+  "component_scores_atol_1e_12": true,
+  "warnings_non_deprecation": 0,
+  "fitted_heads": 15,
+  "internal_reference": "same-run captured original-script evidence",
+  "historical_comparison_is_separate": true,
+  "historical_repeated_mismatches": 20,
+  "historical_unique_affected_ids": 12
+}

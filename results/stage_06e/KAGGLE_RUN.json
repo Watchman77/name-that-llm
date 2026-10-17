@@ -1,26 +1,26 @@
 {
-  "status": "IMPLEMENTED_REVIEWED_SAVED_SOURCE_VERIFIED_NOT_EXECUTED",
-  "updated_utc": "2026-10-17T22:40:31.759823+00:00",
+  "status": "COMPLETE_FIXED_PROXY_PRIMARY_SCREEN_NOT_MET",
+  "updated_utc": "2026-10-17T22:49:47.321374+00:00",
   "account": "watchman777",
   "notebook_title": "Name That LLM - Stage 06E Canonical CPU Evidence",
   "editor_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06e-canonical-cpu-evidence/edit",
   "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06e-canonical-cpu-evidence",
   "private": true,
   "planned_cpu_executions": 1,
-  "cpu_executions_started": 0,
-  "head_fits_executed": 0,
-  "actual_execution_script_version_id": null,
-  "actual_execution_logs_observed": false,
-  "valid_development_result_available": false,
-  "primary_raw_screen_evaluated": false,
+  "cpu_executions_started": 1,
+  "head_fits_executed": 15,
+  "actual_execution_script_version_id": 359514801,
+  "actual_execution_logs_observed": true,
+  "valid_development_result_available": true,
+  "primary_raw_screen_evaluated": true,
   "official_submission_performed": false,
   "final_selection_changed": false,
   "paid_services_used": false,
   "new_neural_training": false,
   "gpu_execution": false,
   "best_confirmed_official_public_balanced_accuracy": 0.549,
-  "source_freeze_commit": null,
-  "source_freeze_commit_note": "Commit SHA will be recorded after guarded remote persistence; all launchable bytes are already bound by the execution freeze and packaging manifests.",
+  "source_freeze_commit": "ac9d9d4b0487d71b3265b1b2b0f2621803a8b701",
+  "source_freeze_commit_note": "Exact 25-file pre-execution commit and every remote blob verified before Save & Run All.",
   "execution_freeze_sha256": "627cf35731ca8ea65526c73aa0cab08502aa574b5f20e6d97351c74cfef563d4",
   "source_sha256": {
     "producer": "0445e9c3f8d64f72dfedecdc63881262fc796f00ae8275230a232155b8855ce9",
@@ -110,8 +110,149 @@
     "source": "Root read the complete visible JSON saved-source export; compared all five source strings, metadata and cells. Viewer shows Private, zero output files and successful render only."
   },
   "limits": [
-    "New canonical CPU development reference; historical C discrepancy remains unresolved and Stage06D keeps its failed gate.",
-    "Available-component proxy, not full S02 or an official score.",
-    "Quick Save is metadata/render-only; no planned fitting has executed."
-  ]
+    "Available-component development proxy, not full S02 or an official score.",
+    "Conditional interval includes zero; failed acceptance does not establish a population-level deterioration.",
+    "Balancing is potentially contaminated and cannot rescue the failed primary raw screen.",
+    "Historical C mismatch remains unresolved; Stage06D retains failed status.",
+    "Raw NPZ files remain on immutable Kaggle V2; no local row-level prediction or bootstrap-draw audit claimed."
+  ],
+  "actual_execution_version_ordinal": 2,
+  "actual_execution_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06e-canonical-cpu-evidence?scriptVersionId=359514801",
+  "actual_execution_log_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06e-canonical-cpu-evidence/log?scriptVersionId=359514801",
+  "launch_requested_utc": "2026-10-17T22:41:41.982197+00:00",
+  "immutable_source_v2": {
+    "status": "PASS_COMPLETE_IMMUTABLE_SAVED_SOURCE",
+    "observed_utc": "2026-10-17T22:42:34.837888+00:00",
+    "script_version_id": 359514801,
+    "version_ordinal": 2,
+    "version_type": "Save & Run All",
+    "version_name": "Canonical CPU evidence and fixed ensemble",
+    "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06e-canonical-cpu-evidence?scriptVersionId=359514801",
+    "all_five_source_strings_exact_match": true,
+    "cells": [
+      {
+        "index": 0,
+        "characters": 77806,
+        "utf8_bytes": 77806,
+        "sha256": "86e5a3d50cd1850e65139b3fc7c8c39a77bd8ab8508f3208d101fe194a357fda",
+        "exact_Stage06D_payload_cell": true
+      },
+      {
+        "index": 1,
+        "characters": 156105,
+        "utf8_bytes": 156105,
+        "sha256": "bd765f02846b89e7537a6d92655cafa7f7664ba8199463048aca422ad9f04bac",
+        "exact_Stage06D_payload_cell": true
+      },
+      {
+        "index": 2,
+        "characters": 156106,
+        "utf8_bytes": 156106,
+        "sha256": "e7f8d7e91ad9179852c6606710d490c30fa510175d9e0d99101c29b6f2847504",
+        "exact_Stage06D_payload_cell": true
+      },
+      {
+        "index": 3,
+        "characters": 146225,
+        "utf8_bytes": 146225,
+        "sha256": "6c17db3c11cc0e1d4ad51710aa4874e16b1831701f608a3f54048b2cb2f06a29",
+        "exact_Stage06D_payload_cell": true
+      },
+      {
+        "index": 4,
+        "characters": 149236,
+        "utf8_bytes": 149236,
+        "sha256": "d9b48ff6df902e0a8d24635612ef021a4c760d8ae78cbe7088e5535c769b3e17",
+        "exact_Stage06D_payload_cell": false
+      }
+    ],
+    "all_seven_input_ids_exact_match": true,
+    "input_version_ids": [
+      170484,
+      358745836,
+      358831649,
+      358911769,
+      358928013,
+      358948428,
+      359405443
+    ],
+    "accelerator": "none",
+    "isGpuEnabled": false,
+    "isInternetEnabled": false,
+    "private_viewer_verified": true,
+    "source": "Root complete post-launch immutable Version 2 saved-source export comparison; source strings and all seven metadata IDs/settings match reviewed package."
+  },
+  "latest_ui_observation": {
+    "observed_utc": "2026-10-17T22:49:47.321374+00:00",
+    "status": "Successfully ran",
+    "total_seconds": 169.5,
+    "accelerator": "None",
+    "environment": "Latest Container Image",
+    "output_size": "38.58 MB",
+    "private": true
+  },
+  "all_five_folds_complete": true,
+  "actual_execution_total_seconds": 169.5,
+  "actual_execution_output_size": "38.58 MB",
+  "pipeline_completed_at_log_seconds": 159.0,
+  "primary_raw_screen_pass": false,
+  "technical_cache_gate_pass": true,
+  "cache_consumer_gate_pass": true,
+  "historical_C_reproduction_exact": false,
+  "historical_repeated_mismatches": 20,
+  "historical_unique_affected_ids": 12,
+  "primary_raw_control_mean": 0.54812246250725,
+  "primary_raw_candidate_mean": 0.5467669235230757,
+  "primary_raw_mean_gain": -0.001355538984174287,
+  "primary_raw_conditional_95_interval": [
+    -0.0051886251463991945,
+    0.0023747914581247996
+  ],
+  "scientific_decision": "Retain original control centering. This experiment did not demonstrate an ensemble improvement; no candidate adoption or official submission.",
+  "full_log": {
+    "path": "results/stage_06e/KAGGLE_V2.log",
+    "bytes": 127465,
+    "sha256": "a267176c4c5e6be764f48381a981fe29acf4c841f6371cc21afe8425d72e3278"
+  },
+  "numeric_caches": {
+    "canonical": {
+      "sha256": "2c6aa02a0bafd9389f436a25de70868b581d829bd8e39835b8e2f6a8354a3b2b",
+      "local": false
+    },
+    "static": {
+      "sha256": "513a889477b8940d5f4a1df304b793361ff3860857e4e846e29e28429d9b3d08",
+      "local": false
+    },
+    "ensemble": {
+      "sha256": "9348eeed149ad48bdd828d8055e945f57e384d8917c654125c2ebbe8d4b99519",
+      "local": false
+    }
+  },
+  "validation": {
+    "independent_terminal_report": "results/stage_06e/INDEPENDENT_TERMINAL_VALIDATION.json",
+    "full_log_and_printed_json_csv_saved": true,
+    "canonical_gate_and_manifest_hash_match_runtime": true,
+    "ensemble_result_metrics_three_control_confusions_hash_match_runtime_output_manifest": true,
+    "raw_npz_downloaded_or_recomputed_locally": false
+  },
+  "error_analysis": {
+    "status": "COMPLETE_AGGREGATE_ANALYSIS",
+    "report": "results/stage_06e/ERROR_ANALYSIS.md",
+    "pair_rankings": "results/stage_06e/error_pairs.csv",
+    "largest_mutual_confusion": [
+      "gemini-3.7-flash",
+      "gemini-3.8-flash"
+    ],
+    "errors_per_context": [
+      94,
+      87,
+      94
+    ],
+    "second_mutual_confusion": [
+      "glm-5.3",
+      "glm-5.3-flash"
+    ],
+    "contexts_repeat_same_passages": true,
+    "next_step": "Inspect saved row-level predictions, margins and prompt distribution, then freeze one complementary pair-separation hypothesis before fitting."
+  }
 }

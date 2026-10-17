@@ -1,0 +1,32 @@
+{
+  "source_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06e-canonical-cpu-evidence/output?scriptVersionId=359514801",
+  "source": "Complete visible Kaggle CSV previews, all18columns/all18rows, No more data to show",
+  "matrices": [
+    {
+      "file": "raw_control_scenario1_confusion.csv",
+      "bytes": 1224,
+      "sha256": "a48b61f2a7ffb50764d44bb060adb925e13122abd63fed4730c9ba097685c595"
+    },
+    {
+      "file": "raw_control_scenario3_confusion.csv",
+      "bytes": 1223,
+      "sha256": "fae2720b0f34b0bb701bfdffaace99051f0add84d52c91e6973aa6f124299463"
+    },
+    {
+      "file": "raw_control_scenario6_confusion.csv",
+      "bytes": 1220,
+      "sha256": "938f3bf5a1ea51fdda8b8a75512810c5c74002063e741feef0d8e5dd614c7513"
+    }
+  ],
+  "verified_against_visible_runtime_output_manifest": true,
+  "verified_file_hashes": [
+    "cache_consumption_gate.json",
+    "ensemble_result.json",
+    "fold_scores.csv",
+    "paired_changes.csv",
+    "per_class_recall.csv",
+    "raw_control_scenario1_confusion.csv",
+    "raw_control_scenario3_confusion.csv",
+    "raw_control_scenario6_confusion.csv"
+  ]
+}

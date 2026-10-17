@@ -1,0 +1,293 @@
+{
+  "status": "COMPLETE_CANONICAL_CPU_COMPONENT_EVIDENCE",
+  "representation": "frozen DeBERTa-v3-large mean L24+L6; fp16 public cache",
+  "train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "cache_sha256": "11eed58762ad128f97457dde9cc4ab03c7932e1b4b04845ec6664c834b1b1dda",
+  "glm_cache_sha256": "2b41585a9482cef825962a8cc096697933c0b1237e8ede0712d1f8ab361d9414",
+  "grouping": "S02 mixed GLM24/TF-IDF average linkage threshold0.60",
+  "scenarios": [
+    1,
+    3,
+    6
+  ],
+  "scores": {
+    "control": [
+      0.4364156102411136,
+      0.4456698980860055,
+      0.49422321650509576
+    ],
+    "candidate": [
+      0.4364156102411136,
+      0.4645811583395476,
+      0.507556549838429
+    ],
+    "oracle_control": [
+      0.4364156102411136,
+      0.4727218493661447,
+      0.5401590852597563
+    ],
+    "oracle_candidate": [
+      0.4364156102411136,
+      0.4845960725826497,
+      0.5386651752423565
+    ]
+  },
+  "primary_mean_gain": 0.01074819786229179,
+  "scenario_gains": [
+    0.0,
+    0.018911260253542117,
+    0.013333333333333253
+  ],
+  "paired_prompt_95_interval": [
+    0.004698628718203665,
+    0.016685102328279067
+  ],
+  "screen_pass": true,
+  "convergence_warnings": [],
+  "all_warning_records": [
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+    }
+  ],
+  "realised_training_group_sizes": [
+    {
+      "fold": 0,
+      "target": 2,
+      "sizes": [
+        2,
+        3
+      ],
+      "counts": [
+        1078,
+        1
+      ]
+    },
+    {
+      "fold": 0,
+      "target": 3,
+      "sizes": [
+        2,
+        3
+      ],
+      "counts": [
+        1,
+        719
+      ]
+    },
+    {
+      "fold": 0,
+      "target": 6,
+      "sizes": [
+        5,
+        6
+      ],
+      "counts": [
+        1,
+        359
+      ]
+    },
+    {
+      "fold": 1,
+      "target": 2,
+      "sizes": [
+        2,
+        3
+      ],
+      "counts": [
+        1078,
+        1
+      ]
+    },
+    {
+      "fold": 1,
+      "target": 3,
+      "sizes": [
+        2,
+        3
+      ],
+      "counts": [
+        1,
+        719
+      ]
+    },
+    {
+      "fold": 1,
+      "target": 6,
+      "sizes": [
+        5,
+        6
+      ],
+      "counts": [
+        1,
+        359
+      ]
+    },
+    {
+      "fold": 2,
+      "target": 2,
+      "sizes": [
+        2,
+        3
+      ],
+      "counts": [
+        1078,
+        1
+      ]
+    },
+    {
+      "fold": 2,
+      "target": 3,
+      "sizes": [
+        2,
+        3
+      ],
+      "counts": [
+        1,
+        719
+      ]
+    },
+    {
+      "fold": 2,
+      "target": 6,
+      "sizes": [
+        5,
+        6
+      ],
+      "counts": [
+        1,
+        359
+      ]
+    },
+    {
+      "fold": 3,
+      "target": 2,
+      "sizes": [
+        2,
+        3
+      ],
+      "counts": [
+        1078,
+        1
+      ]
+    },
+    {
+      "fold": 3,
+      "target": 3,
+      "sizes": [
+        2,
+        3
+      ],
+      "counts": [
+        1,
+        719
+      ]
+    },
+    {
+      "fold": 3,
+      "target": 6,
+      "sizes": [
+        5,
+        6
+      ],
+      "counts": [
+        1,
+        359
+      ]
+    },
+    {
+      "fold": 4,
+      "target": 2,
+      "sizes": [
+        2
+      ],
+      "counts": [
+        1080
+      ]
+    },
+    {
+      "fold": 4,
+      "target": 3,
+      "sizes": [
+        3
+      ],
+      "counts": [
+        720
+      ]
+    },
+    {
+      "fold": 4,
+      "target": 6,
+      "sizes": [
+        6
+      ],
+      "counts": [
+        360
+      ]
+    }
+  ],
+  "seconds": 123.62746086300001,
+  "limitations": [
+    "Only one of five frozen centered twins tested; not a complete S02 ensemble.",
+    "Thirty-prompt fold batches, not full hidden-test batch size; clustering scale transfer unverified.",
+    "Quantized cached features; not bitwise reproduction of fp32 S02 extraction.",
+    "Only the weighted DeBERTa component is scored, not its marginal change to S02 ensemble accuracy.",
+    "Historical development reuse; conditional fixed-prediction bootstrap omits refitting/clustering variability; no official submission or paid service."
+  ]
+}

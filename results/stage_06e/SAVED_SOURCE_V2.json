@@ -1,0 +1,62 @@
+{
+  "status": "PASS_COMPLETE_IMMUTABLE_SAVED_SOURCE",
+  "observed_utc": "2026-10-17T22:42:34.837888+00:00",
+  "script_version_id": 359514801,
+  "version_ordinal": 2,
+  "version_type": "Save & Run All",
+  "version_name": "Canonical CPU evidence and fixed ensemble",
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06e-canonical-cpu-evidence?scriptVersionId=359514801",
+  "all_five_source_strings_exact_match": true,
+  "cells": [
+    {
+      "index": 0,
+      "characters": 77806,
+      "utf8_bytes": 77806,
+      "sha256": "86e5a3d50cd1850e65139b3fc7c8c39a77bd8ab8508f3208d101fe194a357fda",
+      "exact_Stage06D_payload_cell": true
+    },
+    {
+      "index": 1,
+      "characters": 156105,
+      "utf8_bytes": 156105,
+      "sha256": "bd765f02846b89e7537a6d92655cafa7f7664ba8199463048aca422ad9f04bac",
+      "exact_Stage06D_payload_cell": true
+    },
+    {
+      "index": 2,
+      "characters": 156106,
+      "utf8_bytes": 156106,
+      "sha256": "e7f8d7e91ad9179852c6606710d490c30fa510175d9e0d99101c29b6f2847504",
+      "exact_Stage06D_payload_cell": true
+    },
+    {
+      "index": 3,
+      "characters": 146225,
+      "utf8_bytes": 146225,
+      "sha256": "6c17db3c11cc0e1d4ad51710aa4874e16b1831701f608a3f54048b2cb2f06a29",
+      "exact_Stage06D_payload_cell": true
+    },
+    {
+      "index": 4,
+      "characters": 149236,
+      "utf8_bytes": 149236,
+      "sha256": "d9b48ff6df902e0a8d24635612ef021a4c760d8ae78cbe7088e5535c769b3e17",
+      "exact_Stage06D_payload_cell": false
+    }
+  ],
+  "all_seven_input_ids_exact_match": true,
+  "input_version_ids": [
+    170484,
+    358745836,
+    358831649,
+    358911769,
+    358928013,
+    358948428,
+    359405443
+  ],
+  "accelerator": "none",
+  "isGpuEnabled": false,
+  "isInternetEnabled": false,
+  "private_viewer_verified": true,
+  "source": "Root complete post-launch immutable Version 2 saved-source export comparison; source strings and all seven metadata IDs/settings match reviewed package."
+}

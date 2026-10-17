@@ -223,3 +223,20 @@ Historical launch observation; superseded by the terminal V7 outcome below.
 - Focused producer fixtures (22), consumer fixture groups (8) and independent contract tests (31) passed. Inert five-cell packaging and deterministic rebuild passed. Full review/hash inventory: results/stage_06e/INDEPENDENT_IMPLEMENTATION_REVIEW.json and PACKAGING.json.
 - Private metadata-only V1 359514410 exactly matches all five reviewed source strings (77806/156105/156106/146225/149236 characters), seven pinned input IDs, CPU and internet off. All cells have null execution counts and zero outputs. Viewer render 8.3s, zero output files: no head fitting or ensemble evaluation.
 - One unchanged CPU execution is planned after guarded remote freeze verification. Primary raw endpoint, weights, prompt bootstrap and screen preserved; balancing remains a contaminated diagnostic. Historical C mismatch remains unresolved. Official S02 remains 0.549. No official submission, final selection change, GPU or paid service.
+
+## Stage 06E CPU execution launch — 2026-10-17T22:42:34.837888+00:00
+
+- Pre-execution freeze ac9d9d4b0487d71b3265b1b2b0f2621803a8b701 verified before Save & Run All. Actual private V2 359514801 is Running with CPU/internet off; complete actual V2 source and seven inputs exactly match the reviewed package. Initial logs page shows 34.2s and 0 B; fitting not yet observed. Source proof: results/stage_06e/SAVED_SOURCE_V2.json. No official submission.
+
+
+## Stage 06E terminal result — 17 October 2026
+
+- Private V2 359514801 succeeded in 169.5 seconds on CPU, producing 38.58 MB. The pipeline completed at 159.0 log seconds. Five folds/fifteen heads, the same-run cache gate and pure consumer gate passed. Only fifteen deprecation fit warnings were recorded.
+- Primary raw mean development BA: control 54.81224625% versus candidate 54.67669235%, change -0.13555390 pp; conditional prompt 95% interval [-0.51886251, +0.23747915] pp. The fixed primary screen was not met. Context 6 corrected 41/broke 52 (net −11); context 3 corrected 40/broke 40. Retain original control centering. The interval includes zero; no population-deterioration claim is made.
+- Historical C comparison remains twenty mismatches in 32,388 repeated cells across twelve unique IDs; the cause is unresolved and D stays failed. The pure consumer fitted/inferred/regrouped zero times. Full log SHA256: a267176c4c5e6be764f48381a981fe29acf4c841f6371cc21afe8425d72e3278.
+- Independent validation reconciled 216 recalls, sixty fold scores, paired counts and source/cache/runtime gates. Actual output-manifest hashes match local result/metric artifacts and three complete original-control confusion CSVs. Numeric NPZs remain Kaggle-only; no local raw-row/bootstrap-draw audit is claimed.
+- Balanced diagnostic mean change +0.02502279 pp is potentially contaminated and cannot select the candidate. Best confirmed official S02 remains 0.549. Next: error analysis of the original control and a prospective complementary hypothesis. No further fits or official submissions were launched.
+
+### Stage 06E aggregate error analysis
+
+Three complete original-control confusion CSVs were recovered through the visible Kaggle preview and matched runtime output-manifest hashes exactly. Gemini 3.7/3.8 is the largest mutual confusion in every context (94 / 87 / 94); GLM 5.3/Flash is second (73 / 69 / 73). These contexts predict the same 2,699 passages, so counts are not additional independent examples. Next inspect saved row probabilities/margins and prompt distribution before choosing a correction. No additional fits were run. Analysis: results/stage_06e/ERROR_ANALYSIS.md and error_pairs.csv.

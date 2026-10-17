@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "canonical": {
+    "manifest_path": "/kaggle/working/stage06e_cache/cache_manifest.json",
+    "manifest_sha256": "b67dc58644db33ffc28a7f69fa34fbf18f3b140d300f983d1b12b3fc016ee2b6",
+    "cache_path": "/kaggle/working/stage06e_cache/canonical_cpu_evidence.npz",
+    "cache_sha256": "2c6aa02a0bafd9389f436a25de70868b581d829bd8e39835b8e2f6a8354a3b2b",
+    "gate_sha256": "a464a43d672e6752d7ec6e218b5d029df593afd1ccac1568c0f70955ec4fc156"
+  },
+  "static": {
+    "manifest_path": "/kaggle/working/stage06e_static_members/static_cache_manifest.json",
+    "manifest_sha256": "c7bdbcee806c120662790799098dec412010287eef6419e51ef6528e7c02c5b4",
+    "cache_path": "/kaggle/working/stage06e_static_members/static_member_probabilities.npz",
+    "cache_sha256": "513a889477b8940d5f4a1df304b793361ff3860857e4e846e29e28429d9b3d08",
+    "gate_sha256": "25548040541a82c6402ffe3704b5013f35e06bb145006a0c2d658e97f1bcc855"
+  },
+  "canonical_component_scores": {
+    "control": [
+      0.4364156102411136,
+      0.4456698980860055,
+      0.49422321650509576
+    ],
+    "candidate": [
+      0.4364156102411136,
+      0.4645811583395476,
+      0.507556549838429
+    ],
+    "oracle_control": [
+      0.4364156102411136,
+      0.4727218493661447,
+      0.5401590852597563
+    ],
+    "oracle_candidate": [
+      0.4364156102411136,
+      0.4845960725826497,
+      0.5386651752423565
+    ]
+  },
+  "all_12_same_run_component_arrays_exact": true,
+  "historical_Stage06D_reproduction_passed": false,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "group_recovery_calls": 0
+}

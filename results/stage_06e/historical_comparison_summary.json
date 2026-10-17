@@ -1,0 +1,8 @@
+{
+  "status": "SEPARATE_HISTORICAL_COMPARISON_NOT_AN_INTERNAL_GATE",
+  "historical_prediction_sha256": "f207ffe62fe783302965885c8737d02a00e9ec3ac66f3d13afbd43e1869f4b3a",
+  "repeated_comparison_cells": 32388,
+  "repeated_mismatches": 20,
+  "unique_affected_ids": 12,
+  "interpretation": "New canonical CPU development reference; any historical discrepancy remains unresolved. Stage06D retains its failed gate."
+}

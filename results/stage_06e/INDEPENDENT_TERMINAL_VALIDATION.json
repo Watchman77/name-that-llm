@@ -1,0 +1,422 @@
+{
+  "status": "PASS_INDEPENDENT_PRINTED_TERMINAL_EVIDENCE_RECONCILIATION",
+  "log_path": "results/stage_06e/KAGGLE_V2.log",
+  "log_sha256": "a267176c4c5e6be764f48381a981fe29acf4c841f6371cc21afe8425d72e3278",
+  "train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "run_script_version_id": 359514801,
+  "development_only": true,
+  "official_submission_performed": false,
+  "fit_completion": {
+    "ordered_fold_markers": [
+      [
+        1,
+        30.2
+      ],
+      [
+        2,
+        51.6
+      ],
+      [
+        3,
+        75.8
+      ],
+      [
+        4,
+        99.3
+      ],
+      [
+        5,
+        123.2
+      ]
+    ],
+    "reported_completed_heads": 15,
+    "archived_head_parameter_entries": 15
+  },
+  "canonical_cache_sha256": "2c6aa02a0bafd9389f436a25de70868b581d829bd8e39835b8e2f6a8354a3b2b",
+  "static_cache_sha256": "513a889477b8940d5f4a1df304b793361ff3860857e4e846e29e28429d9b3d08",
+  "source_hashes": {
+    "producer": "0445e9c3f8d64f72dfedecdc63881262fc796f00ae8275230a232155b8855ce9",
+    "capture_helper": "981e07456a4f47a166eb4678aa497786cf92d2cb89bc8a5f204f57b5b4ee5c1b",
+    "static_preparation": "eb7cae4b47ef8153a0b60b856319ba95b4d985bdc1277544239a35226c0d2a35",
+    "consumer": "a1b1d6f63cf1b9e7305ef866814e82a7ef7900659d0b8d3d1c255b90cd243086",
+    "original_C": "5c27fcdffde2bcfd512d20fb4edec9bd7133430e79ccd71e31875151d235a23d",
+    "plan": "89dbf531820b965f09fab07157475b199f929f4d297bd268e0f141c765a80f32",
+    "freeze": "627cf35731ca8ea65526c73aa0cab08502aa574b5f20e6d97351c74cfef563d4"
+  },
+  "runtime": {
+    "python": "3.13.15",
+    "packages": {
+      "numpy": "2.1.3",
+      "pandas": "2.3.3",
+      "scipy": "1.16.3",
+      "scikit-learn": "1.6.1",
+      "threadpoolctl": "3.6.0"
+    },
+    "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+    "python_executable": "/usr/bin/python3",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "/usr/local/lib/python3.13/dist-packages/numpy.libs/libscipy_openblas64_-ff651d7f.so",
+        "version": "0.3.27",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 2,
+        "prefix": "libscipy_openblas",
+        "filepath": "/usr/local/lib/python3.13/dist-packages/scipy.libs/libscipy_openblas-b75cc656.so",
+        "version": "0.3.29.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 2,
+        "prefix": "libgomp",
+        "filepath": "/usr/local/lib/python3.13/dist-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+        "version": null
+      }
+    ],
+    "resolved_estimator_parameters": {
+      "scaler": {
+        "copy": true,
+        "with_mean": true,
+        "with_std": true
+      },
+      "classifier": {
+        "C": 0.005,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 5000,
+        "multi_class": "deprecated",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": null,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      }
+    },
+    "environment": {
+      "OMP_NUM_THREADS": "2",
+      "OPENBLAS_NUM_THREADS": "2",
+      "MKL_NUM_THREADS": "2"
+    }
+  },
+  "independently_reconciled_scores": {
+    "raw_control": {
+      "scenario_scores": [
+        0.526380810340542,
+        0.553067362664678,
+        0.5649192145165299
+      ],
+      "mean_score": 0.54812246250725,
+      "correct_totals": [
+        1421,
+        1493,
+        1525
+      ]
+    },
+    "raw_candidate": {
+      "scenario_scores": [
+        0.526380810340542,
+        0.5530723340790455,
+        0.5608476261496396
+      ],
+      "mean_score": 0.5467669235230757,
+      "correct_totals": [
+        1421,
+        1493,
+        1514
+      ]
+    },
+    "balanced_control": {
+      "scenario_scores": [
+        0.5141585881183196,
+        0.5430748197862293,
+        0.5593785732040766
+      ],
+      "mean_score": 0.5388706603695418,
+      "correct_totals": [
+        1388,
+        1466,
+        1510
+      ]
+    },
+    "balanced_candidate": {
+      "scenario_scores": [
+        0.5141585881183196,
+        0.5456748695003728,
+        0.5575292070594083
+      ],
+      "mean_score": 0.5391208882260337,
+      "correct_totals": [
+        1388,
+        1473,
+        1505
+      ]
+    }
+  },
+  "paired_integer_count_checks": [
+    {
+      "endpoint": "raw",
+      "scenario": 1,
+      "corrected": 0,
+      "broken": 0,
+      "net_correct_change": 0
+    },
+    {
+      "endpoint": "raw",
+      "scenario": 3,
+      "corrected": 40,
+      "broken": 40,
+      "net_correct_change": 0
+    },
+    {
+      "endpoint": "raw",
+      "scenario": 6,
+      "corrected": 41,
+      "broken": 52,
+      "net_correct_change": -11
+    },
+    {
+      "endpoint": "balanced",
+      "scenario": 1,
+      "corrected": 0,
+      "broken": 0,
+      "net_correct_change": 0
+    },
+    {
+      "endpoint": "balanced",
+      "scenario": 3,
+      "corrected": 37,
+      "broken": 30,
+      "net_correct_change": 7
+    },
+    {
+      "endpoint": "balanced",
+      "scenario": 6,
+      "corrected": 47,
+      "broken": 52,
+      "net_correct_change": -5
+    }
+  ],
+  "fold_score_checks": [
+    {
+      "endpoint": "raw_control",
+      "scenario": 1,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "raw_control",
+      "scenario": 3,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "raw_control",
+      "scenario": 6,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "raw_candidate",
+      "scenario": 1,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "raw_candidate",
+      "scenario": 3,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "raw_candidate",
+      "scenario": 6,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "balanced_control",
+      "scenario": 1,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "balanced_control",
+      "scenario": 3,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "balanced_control",
+      "scenario": 6,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "balanced_candidate",
+      "scenario": 1,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "balanced_candidate",
+      "scenario": 3,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    },
+    {
+      "endpoint": "balanced_candidate",
+      "scenario": 6,
+      "integer_count_feasible": true,
+      "compatible_fold_total_options": 1
+    }
+  ],
+  "primary_raw_screen_pass": false,
+  "reported_conditional_intervals": {
+    "raw": {
+      "scenario_gains": [
+        0.0,
+        4.971414367505034e-06,
+        -0.004071588366890366
+      ],
+      "mean_gain": -0.001355538984174287,
+      "conditional_prompt_95_interval": [
+        -0.0051886251463991945,
+        0.0023747914581247996
+      ],
+      "bootstrap_draws": 3000,
+      "bootstrap_seed": 20261017,
+      "interpretation": "Conditional on fixed fits, grouping, batch assignment and reused development prompts."
+    },
+    "balanced": {
+      "scenario_gains": [
+        0.0,
+        0.0026000497141435153,
+        -0.0018493661446682408
+      ],
+      "mean_gain": 0.00025022785649175816,
+      "conditional_prompt_95_interval": [
+        -0.0028370408999603626,
+        0.003333333333333333
+      ],
+      "bootstrap_draws": 3000,
+      "bootstrap_seed": 20261017,
+      "interpretation": "Potentially contaminated diagnostic: peer supervision can cross target prompt; not a clean validation interval."
+    }
+  },
+  "historical_comparison_summary": {
+    "status": "SEPARATE_HISTORICAL_COMPARISON_NOT_AN_INTERNAL_GATE",
+    "historical_prediction_sha256": "f207ffe62fe783302965885c8737d02a00e9ec3ac66f3d13afbd43e1869f4b3a",
+    "repeated_comparison_cells": 32388,
+    "repeated_mismatches": 20,
+    "unique_affected_ids": 12,
+    "interpretation": "New canonical CPU development reference; any historical discrepancy remains unresolved. Stage06D retains its failed gate."
+  },
+  "recovered_confusion_checks": [
+    {
+      "file": "raw_control_scenario1_confusion.csv",
+      "rows": 18,
+      "columns": 18,
+      "total": 2699,
+      "correct": 1421,
+      "errors": 1278,
+      "balanced_accuracy": 0.526380810340542,
+      "sha256": "a48b61f2a7ffb50764d44bb060adb925e13122abd63fed4730c9ba097685c595",
+      "supports_and_diagonal_exactly_reconciled": true,
+      "runtime_manifest_hash_exact": true
+    },
+    {
+      "file": "raw_control_scenario3_confusion.csv",
+      "rows": 18,
+      "columns": 18,
+      "total": 2699,
+      "correct": 1493,
+      "errors": 1206,
+      "balanced_accuracy": 0.553067362664678,
+      "sha256": "fae2720b0f34b0bb701bfdffaace99051f0add84d52c91e6973aa6f124299463",
+      "supports_and_diagonal_exactly_reconciled": true,
+      "runtime_manifest_hash_exact": true
+    },
+    {
+      "file": "raw_control_scenario6_confusion.csv",
+      "rows": 18,
+      "columns": 18,
+      "total": 2699,
+      "correct": 1525,
+      "errors": 1174,
+      "balanced_accuracy": 0.5649192145165299,
+      "sha256": "938f3bf5a1ea51fdda8b8a75512810c5c74002063e741feef0d8e5dd614c7513",
+      "supports_and_diagonal_exactly_reconciled": true,
+      "runtime_manifest_hash_exact": true
+    }
+  ],
+  "runtime_output_manifest_file_hashes": {
+    "cache_consumption_gate.json": {
+      "bytes": 1572,
+      "sha256": "0db1757ddc9888d47540b6ca35740de2e5dcc181c5533d3dfee0eb89872f86ab"
+    },
+    "ensemble_result.json": {
+      "bytes": 11303,
+      "sha256": "9717bcb12f0c730b4af631067621969dcdbf239e6bed2f84304b470a38458018"
+    },
+    "fold_scores.csv": {
+      "bytes": 2576,
+      "sha256": "99c16fde6f359db055e4d259b054e96b319fb6fee3a85c853acc73b8bc57d2d2"
+    },
+    "paired_changes.csv": {
+      "bytes": 219,
+      "sha256": "bdbc8f3467a84c172decd3d744dde27925cb1f24044323126c11110a75ddfc24"
+    },
+    "per_class_recall.csv": {
+      "bytes": 10785,
+      "sha256": "45b4b4f70bb01969a372b1e557aaf0f1faff988d2470b14560d68cad92ceddc1"
+    },
+    "raw_control_scenario1_confusion.csv": {
+      "bytes": 1224,
+      "sha256": "a48b61f2a7ffb50764d44bb060adb925e13122abd63fed4730c9ba097685c595"
+    },
+    "raw_control_scenario3_confusion.csv": {
+      "bytes": 1223,
+      "sha256": "fae2720b0f34b0bb701bfdffaace99051f0add84d52c91e6973aa6f124299463"
+    },
+    "raw_control_scenario6_confusion.csv": {
+      "bytes": 1220,
+      "sha256": "938f3bf5a1ea51fdda8b8a75512810c5c74002063e741feef0d8e5dd614c7513"
+    }
+  },
+  "warning_categories": {
+    "DeprecationWarning": 15
+  },
+  "validations": [
+    "216 printed per-class recalls reconcile all12 ensemble scores/4means with official149/150supports and integerclass-correctcounts.",
+    "Six paired corrected-minus-broken totals reconcile independently recovered global correct-count changes.",
+    "60 printed fold scores are integer-count feasible under archived prompt folds and compatible with pooled class-correct totals; per-fold class recalls unavailable.",
+    "Five ordered completion markers, fifteen archived parameter entries, passed same-run and cache-consumption gates, source/freeze/plan/runtime/input hashes match printed receipts.",
+    "Three complete recovered raw-control confusion matrices independently reconcile class supports, diagonal correct counts and all context balanced accuracies; eight recovered aggregate files match preserved runtime output_manifest hashes and byte sizes.",
+    "Fixed raw screen formula recomputed from reconciled gains and reported conditional confidence bounds; balanced results excluded from selection."
+  ],
+  "actual_raw_npz_available_locally": false,
+  "raw_predictions_independently_recomputed": false,
+  "bootstrap_draws_independently_recomputed": false,
+  "limits": [
+    "Validation uses complete authoritative Downloadlogs preserved by root; runtime cache-hash and exact-array claims are source-bound run receipts.",
+    "Raw canonical/static/ensemble NPZ arrays are not locally available to reviewer; no independent row-level predictions/paired membership, captured log arrays or bootstrapdraw audit is claimed. Aggregate confusion counts were independently reconciled from the three complete recovered previews.",
+    "Printed confidence intervals checked for bookkeeping/formula use only; confidence bounds themselves were not independently recomputed.",
+    "HistoricalC discrepancy remains unresolved and Stage06D remains failed; this is a new CPU development proxy, not full S02 or an official score."
+  ]
+}
