@@ -1,0 +1,609 @@
+8.3s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.3s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.3s 3 0.00s - to python to disable frozen modules.
+8.3s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.9s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.9s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.9s 7 0.00s - to python to disable frozen modules.
+8.9s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+13.0s 9 Looking in links: /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels
+13.0s 10 Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/transformers-4.56.2-py3-none-any.whl
+13.1s 11 Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/huggingface_hub-0.36.2-py3-none-any.whl
+13.2s 12 Looking in links: /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels
+13.2s 13 Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/transformers-4.56.2-py3-none-any.whl
+13.2s 14 Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/huggingface_hub-0.36.2-py3-none-any.whl
+13.2s 15 Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+13.2s 16 Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/sentencepiece-0.2.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+13.2s 17 Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl
+13.2s 18 Installing collected packages: transformers, tokenizers, sentencepiece, protobuf, huggingface-hub
+13.2s 19 Attempting uninstall: transformers
+13.4s 20 Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+13.4s 21 Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/sentencepiece-0.2.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+13.4s 22 Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl
+13.4s 23 Installing collected packages: transformers, tokenizers, sentencepiece, protobuf, huggingface-hub
+13.4s 24 Attempting uninstall: transformers
+13.4s 25 Found existing installation: transformers 5.16.1
+13.6s 26 Found existing installation: transformers 5.16.1
+13.9s 27 Uninstalling transformers-5.16.1:
+14.1s 28 Uninstalling transformers-5.16.1:
+16.4s 29 Successfully uninstalled transformers-5.16.1
+16.6s 30 Successfully uninstalled transformers-5.16.1
+24.1s 31 Attempting uninstall: tokenizers
+24.3s 32 Attempting uninstall: tokenizers
+24.4s 33 Found existing installation: tokenizers 0.23.1
+24.5s 34 Uninstalling tokenizers-0.23.1:
+24.5s 35 Successfully uninstalled tokenizers-0.23.1
+24.6s 36 Attempting uninstall: sentencepiece
+24.6s 37 Found existing installation: tokenizers 0.23.1
+24.6s 38 Uninstalling tokenizers-0.23.1:
+24.6s 39 Successfully uninstalled tokenizers-0.23.1
+24.6s 40 Attempting uninstall: sentencepiece
+24.7s 41 Found existing installation: sentencepiece 0.2.2
+24.8s 42 Uninstalling sentencepiece-0.2.2:
+24.8s 43 Successfully uninstalled sentencepiece-0.2.2
+24.8s 44 Attempting uninstall: protobuf
+24.9s 45 Found existing installation: protobuf 5.29.5
+24.9s 46 Uninstalling protobuf-5.29.5:
+24.9s 47 Successfully uninstalled protobuf-5.29.5
+24.9s 48 Found existing installation: sentencepiece 0.2.2
+24.9s 49 Uninstalling sentencepiece-0.2.2:
+24.9s 50 Successfully uninstalled sentencepiece-0.2.2
+24.9s 51 Attempting uninstall: protobuf
+24.9s 52 Found existing installation: protobuf 5.29.5
+24.9s 53 Uninstalling protobuf-5.29.5:
+24.9s 54 Successfully uninstalled protobuf-5.29.5
+25.1s 55 Attempting uninstall: huggingface-hub
+25.3s 56 Attempting uninstall: huggingface-hub
+25.4s 57 Found existing installation: huggingface_hub 1.29.0
+25.5s 58 Uninstalling huggingface_hub-1.29.0:
+25.7s 59 Found existing installation: huggingface_hub 1.29.0
+25.7s 60 Uninstalling huggingface_hub-1.29.0:
+25.7s 61 Successfully uninstalled huggingface_hub-1.29.0
+25.9s 62 Successfully uninstalled huggingface_hub-1.29.0
+26.0s 63 Successfully installed huggingface-hub-0.36.2 protobuf-6.31.1 sentencepiece-0.2.1 tokenizers-0.22.2 transformers-4.56.2
+26.2s 64 Successfully installed huggingface-hub-0.36.2 protobuf-6.31.1 sentencepiece-0.2.1 tokenizers-0.22.2 transformers-4.56.2
+57.5s 65 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+57.5s 66 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+57.5s 67 
+57.5s 68 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+57.5s 69 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+59.1s 70 PREFLIGHT PASSED: {"python": "3.13.15", "packages": {"torch": "2.11.0+cu128", "transformers": "4.56.2", "tokenizers": "0.22.2", "sentencepiece": "0.2.1", "protobuf": "6.31.1", "numpy": "2.1.3", "pandas": "2.3.3", "scikit-learn": "1.6.1", "huggingface-hub": "0.36.2", "safetensors": "0.8.0"}, "cuda": "12.8", "gpu": "Tesla T4", "visible_gpu_count": 1, "determinism": "Seeded, deterministic algorithms warn-only; GPU nondeterminism remains possible."}
+59.8s 71 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+59.8s 72 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+59.8s 73 
+59.8s 74 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+59.8s 75 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+95.7s 76 fold=1 epoch=1 update=25/405 elapsed=85.6s
+131.5s 77 fold=1 epoch=1 update=50/405 elapsed=121.5s
+167.2s 78 fold=1 epoch=1 update=75/405 elapsed=157.1s
+204.2s 79 fold=1 epoch=1 update=100/405 elapsed=194.1s
+239.5s 80 fold=1 epoch=1 update=125/405 elapsed=229.4s
+255.8s 81 EPOCH: {"fold": 1, "epoch": 1, "rows": 2159, "mean_weighted_training_loss": 2.790080115551085, "cumulative_optimizer_steps": 135, "amp_overflow_steps": 0, "seconds": 195.8054368349999, "validation_performed": false}
+279.0s 82 fold=1 epoch=2 update=150/405 elapsed=269.0s
+315.5s 83 fold=1 epoch=2 update=175/405 elapsed=305.4s
+351.7s 84 fold=1 epoch=2 update=200/405 elapsed=341.6s
+386.1s 85 fold=1 epoch=2 update=225/405 elapsed=376.0s
+420.6s 86 fold=1 epoch=2 update=250/405 elapsed=410.5s
+449.0s 87 EPOCH: {"fold": 1, "epoch": 2, "rows": 2159, "mean_weighted_training_loss": 2.401484398446518, "cumulative_optimizer_steps": 270, "amp_overflow_steps": 0, "seconds": 193.1830561119998, "validation_performed": false}
+455.6s 88 fold=1 epoch=3 update=275/405 elapsed=445.6s
+490.0s 89 fold=1 epoch=3 update=300/405 elapsed=479.9s
+527.4s 90 fold=1 epoch=3 update=325/405 elapsed=517.3s
+562.7s 91 fold=1 epoch=3 update=350/405 elapsed=552.6s
+599.8s 92 fold=1 epoch=3 update=375/405 elapsed=589.7s
+634.8s 93 fold=1 epoch=3 update=400/405 elapsed=624.7s
+641.6s 94 EPOCH: {"fold": 1, "epoch": 3, "rows": 2159, "mean_weighted_training_loss": 2.1902617966482736, "cumulative_optimizer_steps": 405, "amp_overflow_steps": 0, "seconds": 192.68895934099987, "validation_performed": false}
+650.3s 95 FINAL_EPOCH_FOLD_SCORE fold=1 balanced_accuracy=0.231481481
+651.3s 96 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+651.3s 97 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+651.3s 98 
+651.3s 99 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+651.3s 100 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+687.3s 101 fold=2 epoch=1 update=25/405 elapsed=677.2s
+723.2s 102 fold=2 epoch=1 update=50/405 elapsed=713.1s
+759.3s 103 fold=2 epoch=1 update=75/405 elapsed=749.2s
+794.1s 104 fold=2 epoch=1 update=100/405 elapsed=784.1s
+828.5s 105 fold=2 epoch=1 update=125/405 elapsed=818.4s
+843.9s 106 EPOCH: {"fold": 2, "epoch": 1, "rows": 2159, "mean_weighted_training_loss": 2.8001125995181897, "cumulative_optimizer_steps": 135, "amp_overflow_steps": 0, "seconds": 192.380016265, "validation_performed": false}
+865.1s 107 fold=2 epoch=2 update=150/405 elapsed=855.0s
+900.8s 108 fold=2 epoch=2 update=175/405 elapsed=890.7s
+935.6s 109 fold=2 epoch=2 update=200/405 elapsed=925.5s
+972.9s 110 fold=2 epoch=2 update=225/405 elapsed=962.8s
+1008.1s 111 fold=2 epoch=2 update=250/405 elapsed=998.0s
+1036.0s 112 EPOCH: {"fold": 2, "epoch": 2, "rows": 2159, "mean_weighted_training_loss": 2.3719835961621465, "cumulative_optimizer_steps": 270, "amp_overflow_steps": 0, "seconds": 192.0320483500002, "validation_performed": false}
+1042.5s 113 fold=2 epoch=3 update=275/405 elapsed=1032.4s
+1078.7s 114 fold=2 epoch=3 update=300/405 elapsed=1068.6s
+1115.5s 115 fold=2 epoch=3 update=325/405 elapsed=1105.4s
+1150.8s 116 fold=2 epoch=3 update=350/405 elapsed=1140.8s
+1186.6s 117 fold=2 epoch=3 update=375/405 elapsed=1176.6s
+1222.6s 118 fold=2 epoch=3 update=400/405 elapsed=1212.5s
+1229.4s 119 EPOCH: {"fold": 2, "epoch": 3, "rows": 2159, "mean_weighted_training_loss": 2.1344963741169973, "cumulative_optimizer_steps": 405, "amp_overflow_steps": 0, "seconds": 193.46259954300012, "validation_performed": false}
+1238.1s 120 FINAL_EPOCH_FOLD_SCORE fold=2 balanced_accuracy=0.218518519
+1239.1s 121 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+1239.1s 122 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+1239.1s 123 
+1239.1s 124 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+1239.1s 125 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+1274.3s 126 fold=3 epoch=1 update=25/405 elapsed=1264.2s
+1310.7s 127 fold=3 epoch=1 update=50/405 elapsed=1300.6s
+1346.5s 128 fold=3 epoch=1 update=75/405 elapsed=1336.5s
+1383.3s 129 fold=3 epoch=1 update=100/405 elapsed=1373.2s
+1418.8s 130 fold=3 epoch=1 update=125/405 elapsed=1408.8s
+1433.3s 131 EPOCH: {"fold": 3, "epoch": 1, "rows": 2159, "mean_weighted_training_loss": 2.798004081923965, "cumulative_optimizer_steps": 135, "amp_overflow_steps": 0, "seconds": 193.9087125599999, "validation_performed": false}
+1453.1s 132 fold=3 epoch=2 update=150/405 elapsed=1443.1s
+1489.9s 133 fold=3 epoch=2 update=175/405 elapsed=1479.8s
+1526.3s 134 fold=3 epoch=2 update=200/405 elapsed=1516.2s
+1561.8s 135 fold=3 epoch=2 update=225/405 elapsed=1551.7s
+1598.8s 136 fold=3 epoch=2 update=250/405 elapsed=1588.8s
+1626.6s 137 EPOCH: {"fold": 3, "epoch": 2, "rows": 2159, "mean_weighted_training_loss": 2.438708752600779, "cumulative_optimizer_steps": 270, "amp_overflow_steps": 0, "seconds": 193.30473113100015, "validation_performed": false}
+1634.6s 138 fold=3 epoch=3 update=275/405 elapsed=1624.5s
+1670.2s 139 fold=3 epoch=3 update=300/405 elapsed=1660.1s
+1706.9s 140 fold=3 epoch=3 update=325/405 elapsed=1696.9s
+1742.4s 141 fold=3 epoch=3 update=350/405 elapsed=1732.4s
+1779.0s 142 fold=3 epoch=3 update=375/405 elapsed=1768.9s
+1812.2s 143 fold=3 epoch=3 update=400/405 elapsed=1802.1s
+1820.2s 144 EPOCH: {"fold": 3, "epoch": 3, "rows": 2159, "mean_weighted_training_loss": 2.2546225327372054, "cumulative_optimizer_steps": 405, "amp_overflow_steps": 0, "seconds": 193.60577142400007, "validation_performed": false}
+1828.9s 145 FINAL_EPOCH_FOLD_SCORE fold=3 balanced_accuracy=0.224074074
+1830.0s 146 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+1830.0s 147 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+1830.0s 148 
+1830.0s 149 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+1830.0s 150 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+1867.9s 151 fold=4 epoch=1 update=25/405 elapsed=1857.9s
+1904.0s 152 fold=4 epoch=1 update=50/405 elapsed=1893.9s
+1938.9s 153 fold=4 epoch=1 update=75/405 elapsed=1928.8s
+1973.7s 154 fold=4 epoch=1 update=100/405 elapsed=1963.6s
+2010.5s 155 fold=4 epoch=1 update=125/405 elapsed=2000.5s
+2025.0s 156 EPOCH: {"fold": 4, "epoch": 1, "rows": 2159, "mean_weighted_training_loss": 2.8195339121604306, "cumulative_optimizer_steps": 135, "amp_overflow_steps": 0, "seconds": 194.74709324900005, "validation_performed": false}
+2046.3s 157 fold=4 epoch=2 update=150/405 elapsed=2036.2s
+2081.8s 158 fold=4 epoch=2 update=175/405 elapsed=2071.7s
+2118.3s 159 fold=4 epoch=2 update=200/405 elapsed=2108.2s
+2154.2s 160 fold=4 epoch=2 update=225/405 elapsed=2144.1s
+2189.3s 161 fold=4 epoch=2 update=250/405 elapsed=2179.2s
+2218.2s 162 EPOCH: {"fold": 4, "epoch": 2, "rows": 2159, "mean_weighted_training_loss": 2.4425862629472133, "cumulative_optimizer_steps": 270, "amp_overflow_steps": 0, "seconds": 193.23409871100012, "validation_performed": false}
+2225.5s 163 fold=4 epoch=3 update=275/405 elapsed=2215.4s
+2260.8s 164 fold=4 epoch=3 update=300/405 elapsed=2250.7s
+2296.2s 165 fold=4 epoch=3 update=325/405 elapsed=2286.1s
+2330.3s 166 fold=4 epoch=3 update=350/405 elapsed=2320.3s
+2368.1s 167 fold=4 epoch=3 update=375/405 elapsed=2358.0s
+2404.1s 168 fold=4 epoch=3 update=400/405 elapsed=2394.1s
+2410.7s 169 EPOCH: {"fold": 4, "epoch": 3, "rows": 2159, "mean_weighted_training_loss": 2.249664772876494, "cumulative_optimizer_steps": 405, "amp_overflow_steps": 0, "seconds": 192.53373529400005, "validation_performed": false}
+2419.6s 170 FINAL_EPOCH_FOLD_SCORE fold=4 balanced_accuracy=0.222222222
+2420.6s 171 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+2420.6s 172 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2420.6s 173 
+2420.6s 174 Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/deberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+2420.6s 175 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2457.9s 176 fold=5 epoch=1 update=25/405 elapsed=2447.8s
+2492.6s 177 fold=5 epoch=1 update=50/405 elapsed=2482.5s
+2526.2s 178 fold=5 epoch=1 update=75/405 elapsed=2516.1s
+2561.8s 179 fold=5 epoch=1 update=100/405 elapsed=2551.7s
+2601.0s 180 fold=5 epoch=1 update=125/405 elapsed=2590.9s
+2615.6s 181 EPOCH: {"fold": 5, "epoch": 1, "rows": 2160, "mean_weighted_training_loss": 2.8106449824792366, "cumulative_optimizer_steps": 135, "amp_overflow_steps": 0, "seconds": 194.72146803099986, "validation_performed": false}
+2636.6s 182 fold=5 epoch=2 update=150/405 elapsed=2626.5s
+2672.6s 183 fold=5 epoch=2 update=175/405 elapsed=2662.5s
+2707.7s 184 fold=5 epoch=2 update=200/405 elapsed=2697.6s
+2743.6s 185 fold=5 epoch=2 update=225/405 elapsed=2733.5s
+2779.9s 186 fold=5 epoch=2 update=250/405 elapsed=2769.8s
+2809.2s 187 EPOCH: {"fold": 5, "epoch": 2, "rows": 2160, "mean_weighted_training_loss": 2.4276523448802805, "cumulative_optimizer_steps": 270, "amp_overflow_steps": 0, "seconds": 193.62591119299987, "validation_performed": false}
+2816.5s 188 fold=5 epoch=3 update=275/405 elapsed=2806.4s
+2852.6s 189 fold=5 epoch=3 update=300/405 elapsed=2842.5s
+2889.0s 190 fold=5 epoch=3 update=325/405 elapsed=2878.9s
+2924.3s 191 fold=5 epoch=3 update=350/405 elapsed=2914.2s
+2958.6s 192 fold=5 epoch=3 update=375/405 elapsed=2948.5s
+2995.3s 193 fold=5 epoch=3 update=400/405 elapsed=2985.2s
+3002.7s 194 EPOCH: {"fold": 5, "epoch": 3, "rows": 2160, "mean_weighted_training_loss": 2.2214508180265073, "cumulative_optimizer_steps": 405, "amp_overflow_steps": 0, "seconds": 193.42500762100008, "validation_performed": false}
+3011.4s 195 FINAL_EPOCH_FOLD_SCORE fold=5 balanced_accuracy=0.242337165
+3012.1s 196 TRIAL_COMPLETE_JSON_BEGIN
+3012.1s 197 {
+3012.1s 198 "stage": "04B_supervised_encoder",
+3012.1s 199 "status": "complete",
+3012.1s 200 "plan_commit": "8ab67d337b139059669455d605cf802eda9d4301",
+3012.1s 201 "started_utc": "2026-10-17T12:44:50.365666+00:00",
+3012.1s 202 "completed_folds": [
+3012.1s 203 1,
+3012.1s 204 2,
+3012.1s 205 3,
+3012.1s 206 4,
+3012.1s 207 5
+3012.1s 208 ],
+3012.1s 209 "gpu_budget_seconds": 10800,
+3012.1s 210 "preflight_passed_utc": "2026-10-17T12:45:05.339195+00:00",
+3012.1s 211 "finished_utc": "2026-10-17T13:34:18.329998+00:00",
+3012.1s 212 "source_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+3012.1s 213 "reference_sha256": "15ca5d9d95fead2690a6c81559a3862f12143f83ad65684d1c584a2827e92ab3",
+3012.1s 214 "model_id": "microsoft/deberta-v3-base",
+3012.1s 215 "revision": "8ccc9b6f36199bec6961081d44eb72fb3f7353f3",
+3012.1s 216 "comparisons": [
+3012.1s 217 {
+3012.1s 218 "variant": "deberta_v3_base_final_epoch",
+3012.1s 219 "balanced_accuracy": 0.22763857817549094
+3012.1s 220 },
+3012.1s 221 {
+3012.1s 222 "variant": "character_plus_style",
+3012.1s 223 "balanced_accuracy": 0.35413124533929907
+3012.1s 224 }
+3012.1s 225 ],
+3012.1s 226 "paired_difference": {
+3012.1s 227 "candidate": "deberta_v3_base_final_epoch",
+3012.1s 228 "reference": "character_plus_style",
+3012.1s 229 "delta_balanced_accuracy": -0.12649266716380814,
+3012.1s 230 "lower_95": -0.14692686819472536,
+3012.1s 231 "upper_95": -0.1070370370370371,
+3012.1s 232 "unit": "prompt_id",
+3012.1s 233 "resamples": 2000,
+3012.1s 234 "seed": 20261016,
+3012.1s 235 "limitation": "Conditional development predictions; no refitting/selection uncertainty or multiplicity correction."
+3012.1s 236 },
+3012.1s 237 "fold_records": [
+3012.1s 238 {
+3012.1s 239 "variant": "deberta_v3_base_final_epoch",
+3012.1s 240 "fold": 1,
+3012.1s 241 "balanced_accuracy": 0.2314814814814815,
+3012.1s 242 "rows": 540,
+3012.1s 243 "prompts": 30,
+3012.1s 244 "seconds": 590.3037269239999,
+3012.1s 245 "epochs": 3,
+3012.1s 246 "optimizer_steps": 405,
+3012.1s 247 "amp_overflow_steps": 0,
+3012.1s 248 "warmup_steps": 41,
+3012.1s 249 "training_class_support": [
+3012.1s 250 119,
+3012.1s 251 120,
+3012.1s 252 120,
+3012.1s 253 120,
+3012.1s 254 120,
+3012.1s 255 120,
+3012.1s 256 120,
+3012.1s 257 120,
+3012.1s 258 120,
+3012.1s 259 120,
+3012.1s 260 120,
+3012.1s 261 120,
+3012.1s 262 120,
+3012.1s 263 120,
+3012.1s 264 120,
+3012.1s 265 120,
+3012.1s 266 120,
+3012.1s 267 120
+3012.1s 268 ],
+3012.1s 269 "training_class_weights": [
+3012.1s 270 1.0079328044797013,
+3012.1s 271 0.9995333644423706,
+3012.1s 272 0.9995333644423706,
+3012.1s 273 0.9995333644423706,
+3012.1s 274 0.9995333644423706,
+3012.1s 275 0.9995333644423706,
+3012.1s 276 0.9995333644423706,
+3012.1s 277 0.9995333644423706,
+3012.1s 278 0.9995333644423706,
+3012.1s 279 0.9995333644423706,
+3012.1s 280 0.9995333644423706,
+3012.1s 281 0.9995333644423706,
+3012.1s 282 0.9995333644423706,
+3012.1s 283 0.9995333644423706,
+3012.1s 284 0.9995333644423706,
+3012.1s 285 0.9995333644423706,
+3012.1s 286 0.9995333644423706,
+3012.1s 287 0.9995333644423706
+3012.1s 288 ],
+3012.1s 289 "checkpoint_sha256": {
+3012.1s 290 "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+3012.1s 291 "config.json": "8433eabf8aa5560ab5f60d02f0f8cd1520e61680ac8585b5c9a724cfc38882f9",
+3012.1s 292 "model.safetensors": "4d4b600b84f39142611f9ba74fe4eb1b32754cb479c0b4038acb333f65486f07",
+3012.1s 293 "special_tokens_map.json": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+3012.1s 294 "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+3012.1s 295 "tokenizer_config.json": "e6c4c771911c211618a2d46488dc7e9e499f051773cd4ff4faeca6fe55fdf569"
+3012.1s 296 }
+3012.1s 297 },
+3012.1s 298 {
+3012.1s 299 "variant": "deberta_v3_base_final_epoch",
+3012.1s 300 "fold": 2,
+3012.1s 301 "balanced_accuracy": 0.2185185185185185,
+3012.1s 302 "rows": 540,
+3012.1s 303 "prompts": 30,
+3012.1s 304 "seconds": 586.5194377,
+3012.1s 305 "epochs": 3,
+3012.1s 306 "optimizer_steps": 405,
+3012.1s 307 "amp_overflow_steps": 0,
+3012.1s 308 "warmup_steps": 41,
+3012.1s 309 "training_class_support": [
+3012.1s 310 119,
+3012.1s 311 120,
+3012.1s 312 120,
+3012.1s 313 120,
+3012.1s 314 120,
+3012.1s 315 120,
+3012.1s 316 120,
+3012.1s 317 120,
+3012.1s 318 120,
+3012.1s 319 120,
+3012.1s 320 120,
+3012.1s 321 120,
+3012.1s 322 120,
+3012.1s 323 120,
+3012.1s 324 120,
+3012.1s 325 120,
+3012.1s 326 120,
+3012.1s 327 120
+3012.1s 328 ],
+3012.1s 329 "training_class_weights": [
+3012.1s 330 1.0079328044797013,
+3012.1s 331 0.9995333644423706,
+3012.1s 332 0.9995333644423706,
+3012.1s 333 0.9995333644423706,
+3012.1s 334 0.9995333644423706,
+3012.1s 335 0.9995333644423706,
+3012.1s 336 0.9995333644423706,
+3012.1s 337 0.9995333644423706,
+3012.1s 338 0.9995333644423706,
+3012.1s 339 0.9995333644423706,
+3012.1s 340 0.9995333644423706,
+3012.1s 341 0.9995333644423706,
+3012.1s 342 0.9995333644423706,
+3012.1s 343 0.9995333644423706,
+3012.1s 344 0.9995333644423706,
+3012.1s 345 0.9995333644423706,
+3012.1s 346 0.9995333644423706,
+3012.1s 347 0.9995333644423706
+3012.1s 348 ],
+3012.1s 349 "checkpoint_sha256": {
+3012.1s 350 "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+3012.1s 351 "config.json": "8433eabf8aa5560ab5f60d02f0f8cd1520e61680ac8585b5c9a724cfc38882f9",
+3012.1s 352 "model.safetensors": "936291cf9825822e370882b18a990fe00c0e13a643ea2d3e7f710a23f3ceaa14",
+3012.1s 353 "special_tokens_map.json": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+3012.1s 354 "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+3012.1s 355 "tokenizer_config.json": "e6c4c771911c211618a2d46488dc7e9e499f051773cd4ff4faeca6fe55fdf569"
+3012.1s 356 }
+3012.1s 357 },
+3012.1s 358 {
+3012.1s 359 "variant": "deberta_v3_base_final_epoch",
+3012.1s 360 "fold": 3,
+3012.1s 361 "balanced_accuracy": 0.22407407407407406,
+3012.1s 362 "rows": 540,
+3012.1s 363 "prompts": 30,
+3012.1s 364 "seconds": 589.580193585,
+3012.1s 365 "epochs": 3,
+3012.1s 366 "optimizer_steps": 405,
+3012.1s 367 "amp_overflow_steps": 0,
+3012.1s 368 "warmup_steps": 41,
+3012.1s 369 "training_class_support": [
+3012.1s 370 119,
+3012.1s 371 120,
+3012.1s 372 120,
+3012.1s 373 120,
+3012.1s 374 120,
+3012.1s 375 120,
+3012.1s 376 120,
+3012.1s 377 120,
+3012.1s 378 120,
+3012.1s 379 120,
+3012.1s 380 120,
+3012.1s 381 120,
+3012.1s 382 120,
+3012.1s 383 120,
+3012.1s 384 120,
+3012.1s 385 120,
+3012.1s 386 120,
+3012.1s 387 120
+3012.1s 388 ],
+3012.1s 389 "training_class_weights": [
+3012.1s 390 1.0079328044797013,
+3012.1s 391 0.9995333644423706,
+3012.1s 392 0.9995333644423706,
+3012.1s 393 0.9995333644423706,
+3012.1s 394 0.9995333644423706,
+3012.1s 395 0.9995333644423706,
+3012.1s 396 0.9995333644423706,
+3012.1s 397 0.9995333644423706,
+3012.1s 398 0.9995333644423706,
+3012.1s 399 0.9995333644423706,
+3012.1s 400 0.9995333644423706,
+3012.1s 401 0.9995333644423706,
+3012.1s 402 0.9995333644423706,
+3012.1s 403 0.9995333644423706,
+3012.1s 404 0.9995333644423706,
+3012.1s 405 0.9995333644423706,
+3012.1s 406 0.9995333644423706,
+3012.1s 407 0.9995333644423706
+3012.1s 408 ],
+3012.1s 409 "checkpoint_sha256": {
+3012.1s 410 "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+3012.1s 411 "config.json": "8433eabf8aa5560ab5f60d02f0f8cd1520e61680ac8585b5c9a724cfc38882f9",
+3012.1s 412 "model.safetensors": "90bdb42c0d35375daa3954986a4a2b786787a7e52e7526f4152a6f0301b61b7a",
+3012.1s 413 "special_tokens_map.json": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+3012.1s 414 "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+3012.1s 415 "tokenizer_config.json": "e6c4c771911c211618a2d46488dc7e9e499f051773cd4ff4faeca6fe55fdf569"
+3012.1s 416 }
+3012.1s 417 },
+3012.1s 418 {
+3012.1s 419 "variant": "deberta_v3_base_final_epoch",
+3012.1s 420 "fold": 4,
+3012.1s 421 "balanced_accuracy": 0.2222222222222222,
+3012.1s 422 "rows": 540,
+3012.1s 423 "prompts": 30,
+3012.1s 424 "seconds": 589.4039122680001,
+3012.1s 425 "epochs": 3,
+3012.1s 426 "optimizer_steps": 405,
+3012.1s 427 "amp_overflow_steps": 0,
+3012.1s 428 "warmup_steps": 41,
+3012.1s 429 "training_class_support": [
+3012.1s 430 119,
+3012.1s 431 120,
+3012.1s 432 120,
+3012.1s 433 120,
+3012.1s 434 120,
+3012.1s 435 120,
+3012.1s 436 120,
+3012.1s 437 120,
+3012.1s 438 120,
+3012.1s 439 120,
+3012.1s 440 120,
+3012.1s 441 120,
+3012.1s 442 120,
+3012.1s 443 120,
+3012.1s 444 120,
+3012.1s 445 120,
+3012.1s 446 120,
+3012.1s 447 120
+3012.1s 448 ],
+3012.1s 449 "training_class_weights": [
+3012.1s 450 1.0079328044797013,
+3012.1s 451 0.9995333644423706,
+3012.1s 452 0.9995333644423706,
+3012.1s 453 0.9995333644423706,
+3012.1s 454 0.9995333644423706,
+3012.1s 455 0.9995333644423706,
+3012.1s 456 0.9995333644423706,
+3012.1s 457 0.9995333644423706,
+3012.1s 458 0.9995333644423706,
+3012.1s 459 0.9995333644423706,
+3012.1s 460 0.9995333644423706,
+3012.1s 461 0.9995333644423706,
+3012.1s 462 0.9995333644423706,
+3012.1s 463 0.9995333644423706,
+3012.1s 464 0.9995333644423706,
+3012.1s 465 0.9995333644423706,
+3012.1s 466 0.9995333644423706,
+3012.1s 467 0.9995333644423706
+3012.1s 468 ],
+3012.1s 469 "checkpoint_sha256": {
+3012.1s 470 "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+3012.1s 471 "config.json": "8433eabf8aa5560ab5f60d02f0f8cd1520e61680ac8585b5c9a724cfc38882f9",
+3012.1s 472 "model.safetensors": "15408062ca2261fb3f83271d41735edbf99986074f4384112c93d72a6c0d2902",
+3012.1s 473 "special_tokens_map.json": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+3012.1s 474 "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+3012.1s 475 "tokenizer_config.json": "e6c4c771911c211618a2d46488dc7e9e499f051773cd4ff4faeca6fe55fdf569"
+3012.1s 476 }
+3012.1s 477 },
+3012.1s 478 {
+3012.1s 479 "variant": "deberta_v3_base_final_epoch",
+3012.1s 480 "fold": 5,
+3012.1s 481 "balanced_accuracy": 0.24233716475095785,
+3012.1s 482 "rows": 539,
+3012.1s 483 "prompts": 30,
+3012.1s 484 "seconds": 590.5551270920005,
+3012.1s 485 "epochs": 3,
+3012.1s 486 "optimizer_steps": 405,
+3012.1s 487 "amp_overflow_steps": 0,
+3012.1s 488 "warmup_steps": 41,
+3012.1s 489 "training_class_support": [
+3012.1s 490 120,
+3012.1s 491 120,
+3012.1s 492 120,
+3012.1s 493 120,
+3012.1s 494 120,
+3012.1s 495 120,
+3012.1s 496 120,
+3012.1s 497 120,
+3012.1s 498 120,
+3012.1s 499 120,
+3012.1s 500 120,
+3012.1s 501 120,
+3012.1s 502 120,
+3012.1s 503 120,
+3012.1s 504 120,
+3012.1s 505 120,
+3012.1s 506 120,
+3012.1s 507 120
+3012.1s 508 ],
+3012.1s 509 "training_class_weights": [
+3012.1s 510 1.0,
+3012.1s 511 1.0,
+3012.1s 512 1.0,
+3012.1s 513 1.0,
+3012.1s 514 1.0,
+3012.1s 515 1.0,
+3012.1s 516 1.0,
+3012.1s 517 1.0,
+3012.1s 518 1.0,
+3012.1s 519 1.0,
+3012.1s 520 1.0,
+3012.1s 521 1.0,
+3012.1s 522 1.0,
+3012.1s 523 1.0,
+3012.1s 524 1.0,
+3012.1s 525 1.0,
+3012.1s 526 1.0,
+3012.1s 527 1.0
+3012.1s 528 ],
+3012.1s 529 "checkpoint_sha256": {
+3012.1s 530 "added_tokens.json": "dc046d04c9b0ada7ae6f1dc89c465801799acdf0c9a6aab8c15a1b2d5ca4e91f",
+3012.1s 531 "config.json": "8433eabf8aa5560ab5f60d02f0f8cd1520e61680ac8585b5c9a724cfc38882f9",
+3012.1s 532 "model.safetensors": "a9e6b0588a9cfeb93397cb661f55a0057c725e05f391066d235aee94f3e5007b",
+3012.1s 533 "special_tokens_map.json": "9463f61e1b109a8eb4688b829260d7c6b1e6dff04c98ff7269bb89e2b92369b9",
+3012.1s 534 "spm.model": "c679fbf93643d19aab7ee10c0b99e460bdbc02fedf34b92b05af343b4af586fd",
+3012.1s 535 "tokenizer_config.json": "e6c4c771911c211618a2d46488dc7e9e499f051773cd4ff4faeca6fe55fdf569"
+3012.1s 536 }
+3012.1s 537 }
+3012.1s 538 ],
+3012.1s 539 "warnings": [],
+3012.1s 540 "environment": {
+3012.1s 541 "python": "3.13.15",
+3012.1s 542 "packages": {
+3012.1s 543 "torch": "2.11.0+cu128",
+3012.1s 544 "transformers": "4.56.2",
+3012.1s 545 "tokenizers": "0.22.2",
+3012.1s 546 "sentencepiece": "0.2.1",
+3012.1s 547 "protobuf": "6.31.1",
+3012.1s 548 "numpy": "2.1.3",
+3012.1s 549 "pandas": "2.3.3",
+3012.1s 550 "scikit-learn": "1.6.1",
+3012.1s 551 "huggingface-hub": "0.36.2",
+3012.1s 552 "safetensors": "0.8.0"
+3012.1s 553 },
+3012.1s 554 "cuda": "12.8",
+3012.1s 555 "gpu": "Tesla T4",
+3012.1s 556 "visible_gpu_count": 1,
+3012.1s 557 "determinism": "Seeded, deterministic algorithms warn-only; GPU nondeterminism remains possible."
+3012.1s 558 },
+3012.1s 559 "total_seconds": 3002.0589715290002,
+3012.1s 560 "selection": "Final epoch 3, fixed prospectively; no validation-driven epoch or parameter selection.",
+3012.1s 561 "official_submission_made": false,
+3012.1s 562 "private_test_result": null
+3012.1s 563 }
+3012.1s 564 TRIAL_COMPLETE_JSON_END
+3012.2s 565 variant                  model   recall  support
+3012.2s 566 deberta_v3_base_final_epoch         claude-fable-5 0.624161      149
+3012.2s 567 deberta_v3_base_final_epoch        claude-opus-4-6 0.340000      150
+3012.2s 568 deberta_v3_base_final_epoch        claude-opus-4-8 0.000000      150
+3012.2s 569 deberta_v3_base_final_epoch          claude-opus-5 0.340000      150
+3012.2s 570 deberta_v3_base_final_epoch        claude-sonnet-5 0.186667      150
+3012.2s 571 deberta_v3_base_final_epoch gemini-3.1-pro-preview 0.426667      150
+3012.2s 572 deberta_v3_base_final_epoch       gemini-3.6-flash 0.460000      150
+3012.2s 573 deberta_v3_base_final_epoch       gemini-3.7-flash 0.226667      150
+3012.2s 574 deberta_v3_base_final_epoch       gemini-3.8-flash 0.173333      150
+3012.2s 575 deberta_v3_base_final_epoch                glm-5.3 0.026667      150
+3012.2s 576 deberta_v3_base_final_epoch          glm-5.3-flash 0.006667      150
+3012.2s 577 deberta_v3_base_final_epoch                gpt-5.5 0.206667      150
+3012.2s 578 deberta_v3_base_final_epoch           gpt-5.6-luna 0.026667      150
+3012.2s 579 deberta_v3_base_final_epoch            gpt-5.6-sol 0.086667      150
+3012.2s 580 deberta_v3_base_final_epoch          gpt-5.6-terra 0.133333      150
+3012.2s 581 deberta_v3_base_final_epoch            gpt-6-astra 0.426667      150
+3012.2s 582 deberta_v3_base_final_epoch                kimi-k3 0.020000      150
+3012.2s 583 deberta_v3_base_final_epoch            qwen3.8-max 0.386667      150
+3012.2s 584 character_plus_style         claude-fable-5 0.154362      149
+3012.2s 585 character_plus_style        claude-opus-4-6 0.480000      150
+3012.2s 586 character_plus_style        claude-opus-4-8 0.166667      150
+3012.2s 587 character_plus_style          claude-opus-5 0.600000      150
+3012.2s 588 character_plus_style        claude-sonnet-5 0.366667      150
+3012.2s 589 character_plus_style gemini-3.1-pro-preview 0.786667      150
+3012.2s 590 character_plus_style       gemini-3.6-flash 0.346667      150
+3012.2s 591 character_plus_style       gemini-3.7-flash 0.426667      150
+3012.2s 592 character_plus_style       gemini-3.8-flash 0.406667      150
+3012.2s 593 character_plus_style                glm-5.3 0.153333      150
+3012.2s 594 character_plus_style          glm-5.3-flash 0.133333      150
+3012.2s 595 character_plus_style                gpt-5.5 0.373333      150
+3012.2s 596 character_plus_style           gpt-5.6-luna 0.340000      150
+3012.2s 597 character_plus_style            gpt-5.6-sol 0.166667      150
+3012.2s 598 character_plus_style          gpt-5.6-terra 0.240000      150
+3012.2s 599 character_plus_style            gpt-6-astra 0.586667      150
+3012.2s 600 character_plus_style                kimi-k3 0.206667      150
+3012.2s 601 character_plus_style            qwen3.8-max 0.440000      150
+3017.8s 602 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+3017.8s 603 cells[i][c] = re.sub('\\\\\|', '|', cell)
+3018.0s 604 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+3018.0s 605 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+3018.8s 606 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+3018.9s 607 [NbConvertApp] Writing 61432 bytes to __notebook__.ipynb
+3021.3s 608 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+3021.8s 609 [NbConvertApp] Writing 377420 bytes to __results__.html
