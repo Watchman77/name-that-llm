@@ -74,3 +74,13 @@ The notebook is kept private with the competition input attached and internet di
 - Separate private CPU resources version 359317729 succeeded in 35.6 seconds. Includes pinned weights, offline dependency wheels and the exact frozen reference OOF file.
 - Kaggle reported 30 included GPU hours before launch. The private training version 359319680 is queued with GPU T4 x2 selected, computation restricted to cuda:0, internet disabled and a three-hour budget. GPU preflight and results are pending.
 - No new official submission. See results/stage_04b/KAGGLE_RUN.json for current execution status.
+
+## Stage 05 — public baseline reproduction launch — 17 October 2026
+
+- User asked us to inspect and adopt stronger public methods. Leader observed at 0.593; its private recipe is unknown. The separate public 0.552 V1 requires a private `lora24c` checkpoint and was excluded.
+- Selected Lucas Boesen's exact public V3, scriptVersionId 359126546, displayed score 0.549. All 14 inputs are public and attached. Preserved original source, credits, Apache-2.0 licence and exact resource IDs. Prospective plan/clarification committed before execution: dfc009a58c5ca3e0be8b8b6a23044eac600515e8.
+- Our private V1 359332774 is running with source diff +0 -0, internet off and T4 x2. Live log confirms two GPUs and completion of stylegram/LightGBM, then GLM feature extraction. No paid APIs, new synthetic data or paid compute.
+- Runtime label discrepancy retained: editor requested original environment dated 2026-10-02; Logs labels Latest Container Image. Notebook JSON also says isGpuEnabled=false although the GPU-for-this-session option and live log confirm actual GPU execution. Do not claim bitwise environment reproduction.
+- No new accuracy or S02 yet. Source reported 0.549 is not our measured improvement. After a successful preview, verify outputs/parity before one declared official S02 rerun. Public final-fit checkpoints cannot provide independent CV on training folds. Preserve S01 and the separate Stage 04B trial.
+- Exact code-cell SHA256 e3d97306f3185ea5f73d7904d81331b27803e3ceb45970596590ec306969762e. Python archive has one extra terminal newline (SHA256 261e27094fbefbfe8e6496feda4a274f8e9a8587a19b304da074a71f49cbc2f3); parsed code is identical. Notebook JSON and format validation passed.
+- Evidence: plans/STAGE_05_PUBLIC_REPRODUCTION.md, results/stage_05/, notebooks/Stage_05_Public_Reproduction.ipynb and vendor/NOTICE.md.
