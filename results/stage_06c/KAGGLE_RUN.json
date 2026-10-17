@@ -6,7 +6,7 @@
   "script_version_id": 359405443,
   "version": 1,
   "visibility": "private",
-  "observed_at_utc": "2026-10-17T15:57:33Z",
+  "observed_at_utc": "2026-10-17T18:24:31Z",
   "observed_state": "Queued",
   "actual_cuda_preflight_observed": false,
   "output_bytes_observed": 0,
@@ -53,6 +53,17 @@
       "observed_at_utc": "2026-10-17T15:26:37.552297+00:00",
       "state": "Queued",
       "output_bytes": 0
+    },
+    {
+      "observed_at_utc": "2026-10-17T15:57:33Z",
+      "state": "Queued",
+      "output_bytes": 0
     }
-  ]
+  ],
+  "version_history_state": "Starting...",
+  "save_type_verified": "Save & Run All",
+  "quota_display": "01:21 / 30 hrs",
+  "quota_assessment": "Quota exhaustion is not indicated by the displayed fraction; cause of delay is not displayed.",
+  "code_execution_logs_observed": false,
+  "execution_error_displayed": false
 }
