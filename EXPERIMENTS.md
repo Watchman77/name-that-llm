@@ -84,3 +84,11 @@ The notebook is kept private with the competition input attached and internet di
 - No new accuracy or S02 yet. Source reported 0.549 is not our measured improvement. After a successful preview, verify outputs/parity before one declared official S02 rerun. Public final-fit checkpoints cannot provide independent CV on training folds. Preserve S01 and the separate Stage 04B trial.
 - Exact code-cell SHA256 e3d97306f3185ea5f73d7904d81331b27803e3ceb45970596590ec306969762e. Python archive has one extra terminal newline (SHA256 261e27094fbefbfe8e6496feda4a274f8e9a8587a19b304da074a71f49cbc2f3); parsed code is identical. Notebook JSON and format validation passed.
 - Evidence: plans/STAGE_05_PUBLIC_REPRODUCTION.md, results/stage_05/, notebooks/Stage_05_Public_Reproduction.ipynb and vendor/NOTICE.md.
+
+## Stage 05 preview completion and S02 — 17 October 2026
+
+- Private V1 359332774 succeeded in 1884.8 seconds (31m 25s), all recipe stages complete. Exact executed code-cell hash matches the declared source. LoRA mean-relative anchor errors were 0 and 0.00017, both below 0.02. Technical in-sample checks passed; they are not independent accuracy.
+- Output `submission.parquet` exists (1.76 kB displayed); source construction/row-count/ID-uniqueness/valid-label assertions passed. Parquet UI preview is unsupported, so no independent binary round-trip is claimed. Verification and full rendered stdout/stderr were committed before S02.
+- One official S02 was accepted. The competition Submissions page shows Notebook Running for the exact private V1 and output file. No new public/private score yet; S01 remains 0.354. No parameter changes, repeated leaderboard tuning, paid services or manual final-selection changes.
+- Stage 04B remains queued with no GPU preflight/training logs. It was not restarted or changed.
+- Records: results/stage_05/OUTPUT_VERIFICATION.json, PREVIEW_OUTPUTS.json and results/submissions/S02.json / S02_REPORT.md.
