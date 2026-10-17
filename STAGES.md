@@ -9,7 +9,7 @@ Target first place in the final private evaluation. At the latest 17 October 202
 | 01 — data checks and fixed baseline | Complete | 30.19% balanced accuracy; private offline Kaggle version 1 ran successfully. |
 | 02 — word/character comparison | Complete | Word 26.26%, character 30.86%, combined 30.19%. Character lead remains uncertain; retain both references. |
 | 03 — error diagnosis and surface-style features | Complete and Kaggle-verified | Character + style: 35.41%; improved all folds; private offline version 2 succeeded. |
-| 04 — offline pretrained encoders / complementary models | Frozen MPNet trial complete; supervised trial queued | MPNet alone 14.59%; added to character/style 34.12%, below the 35.41% reference. Both rejected. Stage 04B private offline T4 version 1 is queued (359319680); GPU preflight and results pending. |
+| 04 — offline pretrained encoders / complementary models | Frozen MPNet rejected; supervised trial running | Actual T4 preflight passed. DeBERTa folds 1–2: 23.15%, 21.85%, below Stage 03 on matching folds. Fold 3 in progress; full pooled result pending. |
 | 05 — candidate freeze and competition submission | S01 complete; S02 hidden-test rerun running | S01 public score 35.4%. Public baseline reproduction V1 359332774 completed preview in 31m 25s, with all stages and anchor checks passed. S02 accepted and shows Notebook Running; its score is pending. |
 | Publication assessment | Pending | Review related work and establish a contribution with stronger independent/nested evaluation. Ranking alone is insufficient. |
 
@@ -27,6 +27,6 @@ Stage 03 report: `results/stage_03/REPORT.md`.
 
 Stage 04 plan: `plans/STAGE_04_FROZEN_ENCODER.md`.
 Stage 04 report: `results/stage_04/REPORT.md`.
-Next fixed protocol: `plans/STAGE_04B_SUPERVISED_ENCODER.md` (private GPU trial queued; results pending).
+Next fixed protocol: `plans/STAGE_04B_SUPERVISED_ENCODER.md` (private GPU trial now running; two completed folds, final results pending).
 
 Public reproduction protocol: `plans/STAGE_05_PUBLIC_REPRODUCTION.md` (private offline T4 V1 preview succeeded; official S02 hidden-test rerun running, no new measured accuracy). Complete source review: `results/stage_05/SOURCE_REVIEW.md`. The separate 55.2% public recipe was excluded because its exact scored version requires a private checkpoint.
