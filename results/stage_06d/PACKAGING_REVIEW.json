@@ -1,0 +1,45 @@
+{
+  "status": "PASS_PACKAGING_ONLY_REVIEW",
+  "model_fits": 0,
+  "notebook_executed": false,
+  "browser_actions": false,
+  "github_actions": false,
+  "files_sha256": {
+    "notebook": "fb86b90861aca45e630b64abb32634693df5c8c14c868394a3bbf992d5b870bc",
+    "combined": "13d4cbd40a563033fcc12d8c8773bc27ab6e112b171a519aa34f0ce2cbc9103b",
+    "style_transfer": "8f35539e47cd877c41b47a692cb2cb4ece95b768a5ae95612e9c56e2bd0ecdb1",
+    "fusion": "61cf698548c1352caa2e81eea937753c607a554cffea2e2b5d32c678c7101163"
+  },
+  "nbformat_schema_valid": true,
+  "code_cells": 5,
+  "cell_characters": [
+    77806,
+    156105,
+    156106,
+    146225,
+    53685
+  ],
+  "each_cell_below_200000_characters": true,
+  "all_cells_compile": true,
+  "combined_runner_compiles": true,
+  "notebook_combined_runner_AST_exact_match": true,
+  "all_original_function_AST_bodies_exact_match": true,
+  "function_names": [
+    "_style_string_digest",
+    "run_fixed_ensemble",
+    "stage06d_balance",
+    "stage06d_self_check",
+    "transfer_style_reference"
+  ],
+  "all_original_STYLE_constants_exact_match": true,
+  "payload_characters": 455182,
+  "decoded_probability_bytes": 388656,
+  "raw_probability_sha256": "5e2e05577b7dc632f38f67d47958d7f3d069e8b758ead4664050f0d984803bad",
+  "payload_hashes_verified": true,
+  "execution_outputs_empty": true,
+  "final_entrypoint_order_unchanged": true,
+  "limitations": [
+    "Packaging review only; no model fits or end-to-end Kaggle execution.",
+    "Saved live Kaggle cell contents still require complete round-trip verification before launch."
+  ]
+}

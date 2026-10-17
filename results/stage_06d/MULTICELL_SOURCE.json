@@ -1,0 +1,52 @@
+{
+  "status": "VERIFIED_PACKAGING_MANIFEST",
+  "purpose": "Five-cell packaging preserves the exact reviewed implementation and frozen probability payload while keeping each cell below the Kaggle QuickSave source viewer 200,000-character truncation boundary. This is a UI preview workaround; no model recipe or numerical data changes.",
+  "notebook_path": "notebooks/Stage_06D_Fixed_Ensemble.ipynb",
+  "notebook_sha256": "fb86b90861aca45e630b64abb32634693df5c8c14c868394a3bbf992d5b870bc",
+  "linear_runner_path": "scripts/kaggle_stage06d_multicell.py",
+  "combined_source_sha256": "13d4cbd40a563033fcc12d8c8773bc27ab6e112b171a519aa34f0ce2cbc9103b",
+  "original_runner_path": "scripts/kaggle_stage06d_runner.py",
+  "original_runner_sha256": "b0db5a4e8ef82ef3f90b5b4f74af61d68fd24ff515f7e2f968797312801396f1",
+  "source_join": "Read the five code-cell source strings in notebook order and join with one newline; AST equals the linear runner.",
+  "cell_count": 5,
+  "cells": [
+    {
+      "index": 0,
+      "characters": 77806,
+      "utf8_bytes": 77806,
+      "sha256": "86e5a3d50cd1850e65139b3fc7c8c39a77bd8ab8508f3208d101fe194a357fda"
+    },
+    {
+      "index": 1,
+      "characters": 156105,
+      "utf8_bytes": 156105,
+      "sha256": "bd765f02846b89e7537a6d92655cafa7f7664ba8199463048aca422ad9f04bac"
+    },
+    {
+      "index": 2,
+      "characters": 156106,
+      "utf8_bytes": 156106,
+      "sha256": "e7f8d7e91ad9179852c6606710d490c30fa510175d9e0d99101c29b6f2847504"
+    },
+    {
+      "index": 3,
+      "characters": 146225,
+      "utf8_bytes": 146225,
+      "sha256": "6c17db3c11cc0e1d4ad51710aa4874e16b1831701f608a3f54048b2cb2f06a29"
+    },
+    {
+      "index": 4,
+      "characters": 53685,
+      "utf8_bytes": 53685,
+      "sha256": "49585850b251e8f207e9b64db748d031f9453504949a8b9fca345362b725fce1"
+    }
+  ],
+  "checks": {
+    "notebook_schema_valid": true,
+    "cells_compile": true,
+    "notebook_linear_runner_AST_exact_match": true,
+    "cell_hashes_match_preexisting_source_manifest": true,
+    "code_files_unchanged": true
+  },
+  "model_fits": 0
+}
