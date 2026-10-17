@@ -4,7 +4,7 @@
 
 Source: https://www.kaggle.com/code/lucasboesen/lora-x-adaptive-centering?scriptVersionId=359126546
 
-The notebook displays the Apache License, Version 2.0. A copy is provided as `APACHE-2.0.txt`. Our title/run records are separate from the original implementation. No original research or independent performance claim is made for this reproduction.
+The notebook displays the Apache License, Version 2.0. A copy is provided as `APACHE-2.0.txt`. Our title/run records are separate from the original implementation. No original research or independent performance claim is made for this reproduction. The Python archive has one extra terminal newline from capture; the complete notebook preserves the exact original cell text. Both parse to identical Python.
 
 The original notebook's credits are retained in our private Kaggle fork. They include:
 
