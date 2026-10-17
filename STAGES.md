@@ -2,7 +2,7 @@
 
 ## Competition goal
 
-Target first place in the final private evaluation. At the latest 17 October 2026 check, S02 scores **0.549**, the public leader **0.593** (4.4 percentage points ahead), and tenth place **0.559** (1.0 point ahead). Current rank is **177 of 1,204 teams**. S01 remains frozen at 0.354. Public standings are time-specific; the final private result is unknown. The user's request to adopt stronger public methods was completed as one frozen external-baseline reproduction, not an original-method claim or parameter search.
+Target first place in the final private evaluation. At the latest 17 October 2026 check, S02 scores **0.549**, the public leader **0.600** (5.1 percentage points ahead), and tenth place **0.559** (1.0 point ahead). Current rank is **181 of 1,212 teams**. S01 remains frozen at 0.354. Public standings are time-specific; the final private result is unknown. The user's request to adopt stronger public methods was completed as one frozen external-baseline reproduction, not an original-method claim or parameter search.
 
 | Stage | Status | Evidence / next decision |
 |---|---|---|
@@ -11,6 +11,7 @@ Target first place in the final private evaluation. At the latest 17 October 202
 | 03 — error diagnosis and surface-style features | Complete and Kaggle-verified | Character + style: 35.41%; improved all folds; private offline version 2 succeeded. |
 | 04 — offline pretrained encoders / complementary models | Complete; both fixed experiments rejected | Frozen MPNet: 14.59% alone, 34.12% added. Supervised DeBERTa: 22.76% development BA, below the 35.41% reference in every fold; all five folds completed. |
 | 05 — candidate freeze and competition submission | S02 succeeded at 54.9% official public BA | S01 remains 35.4%. Unchanged public baseline V1 359332774 reproduced 0.549; rank 177/1204 at observation. Final private evaluation and further original improvements remain pending. |
+| 06 — OOF provenance and centering | Protocol prepared; not executed | Audit saved public held-out artifacts before diagnosing S02 errors. Test matched small-group centering only after feature provenance is verified; no new GPU run or submission. |
 | Publication assessment | Pending | Review related work and establish a contribution with stronger independent/nested evaluation. Ranking alone is insufficient. |
 
 ## How each experiment is tracked
@@ -30,3 +31,5 @@ Stage 04 report: `results/stage_04/REPORT.md`.
 Completed supervised protocol: `plans/STAGE_04B_SUPERVISED_ENCODER.md`; results: `results/stage_04b/REPORT.md` (22.76%, rejected).
 
 Completed public reproduction protocol: `plans/STAGE_05_PUBLIC_REPRODUCTION.md`; official S02 result: `results/submissions/S02_REPORT.md` (0.549). Full source review: `results/stage_05/SOURCE_REVIEW.md`. The separate 55.2% recipe was excluded because its scored version requires a private checkpoint.
+
+Stage 06 audit: `results/stage_06/ADVICE_AUDIT.md`; next protocol: `plans/STAGE_06_OOF_AND_CENTERING.md`. 70% is a stretch goal (+15.1 percentage points), not a forecast.
