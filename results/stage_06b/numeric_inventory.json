@@ -1,0 +1,723 @@
+[
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/enc_debv2xl_train.npz",
+    "bytes": 82954951,
+    "arrays": {
+      "emb": {
+        "shape": [
+          2699,
+          5,
+          1536
+        ],
+        "dtype": "float16",
+        "object": false
+      },
+      "emb_style": {
+        "shape": [
+          2699,
+          5,
+          1536
+        ],
+        "dtype": "float16",
+        "object": false
+      },
+      "layers": {
+        "shape": [
+          5
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "ids": {
+        "shape": [
+          2699
+        ],
+        "dtype": "object",
+        "object": true
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/enc_debv2xxl_train.npz",
+    "bytes": 82954951,
+    "arrays": {
+      "emb": {
+        "shape": [
+          2699,
+          5,
+          1536
+        ],
+        "dtype": "float16",
+        "object": false
+      },
+      "emb_style": {
+        "shape": [
+          2699,
+          5,
+          1536
+        ],
+        "dtype": "float16",
+        "object": false
+      },
+      "layers": {
+        "shape": [
+          5
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "ids": {
+        "shape": [
+          2699
+        ],
+        "dtype": "object",
+        "object": true
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/enc_debv3l2_train.npz",
+    "bytes": 99537639,
+    "arrays": {
+      "emb": {
+        "shape": [
+          2699,
+          9,
+          1024
+        ],
+        "dtype": "float16",
+        "object": false
+      },
+      "emb_style": {
+        "shape": [
+          2699,
+          9,
+          1024
+        ],
+        "dtype": "float16",
+        "object": false
+      },
+      "layers": {
+        "shape": [
+          9
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "ids": {
+        "shape": [
+          2699
+        ],
+        "dtype": "object",
+        "object": true
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/enc_electl_train.npz",
+    "bytes": 55317191,
+    "arrays": {
+      "emb": {
+        "shape": [
+          2699,
+          5,
+          1024
+        ],
+        "dtype": "float16",
+        "object": false
+      },
+      "emb_style": {
+        "shape": [
+          2699,
+          5,
+          1024
+        ],
+        "dtype": "float16",
+        "object": false
+      },
+      "layers": {
+        "shape": [
+          5
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "ids": {
+        "shape": [
+          2699
+        ],
+        "dtype": "object",
+        "object": true
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/enc_mbertl_train.npz",
+    "bytes": 55317191,
+    "arrays": {
+      "emb": {
+        "shape": [
+          2699,
+          5,
+          1024
+        ],
+        "dtype": "float16",
+        "object": false
+      },
+      "emb_style": {
+        "shape": [
+          2699,
+          5,
+          1024
+        ],
+        "dtype": "float16",
+        "object": false
+      },
+      "layers": {
+        "shape": [
+          5
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "ids": {
+        "shape": [
+          2699
+        ],
+        "dtype": "object",
+        "object": true
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_0/readouts.npz",
+    "bytes": 4379669,
+    "arrays": {
+      "classes": {
+        "shape": [
+          18
+        ],
+        "dtype": "<U22",
+        "object": false
+      },
+      "pool_layers": {
+        "shape": [
+          8
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "plain_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "plain_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_0/valid_features.npz",
+    "bytes": 32983640,
+    "arrays": {
+      "ids": {
+        "shape": [
+          540
+        ],
+        "dtype": "object",
+        "object": true
+      },
+      "features": {
+        "shape": [
+          540,
+          32768
+        ],
+        "dtype": "float16",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_1/readouts.npz",
+    "bytes": 4379547,
+    "arrays": {
+      "classes": {
+        "shape": [
+          18
+        ],
+        "dtype": "<U22",
+        "object": false
+      },
+      "pool_layers": {
+        "shape": [
+          8
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "plain_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "plain_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_1/valid_features.npz",
+    "bytes": 32920785,
+    "arrays": {
+      "ids": {
+        "shape": [
+          539
+        ],
+        "dtype": "object",
+        "object": true
+      },
+      "features": {
+        "shape": [
+          539,
+          32768
+        ],
+        "dtype": "float16",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_2/readouts.npz",
+    "bytes": 4379728,
+    "arrays": {
+      "classes": {
+        "shape": [
+          18
+        ],
+        "dtype": "<U22",
+        "object": false
+      },
+      "pool_layers": {
+        "shape": [
+          8
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "plain_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "plain_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_2/valid_features.npz",
+    "bytes": 32987026,
+    "arrays": {
+      "ids": {
+        "shape": [
+          540
+        ],
+        "dtype": "object",
+        "object": true
+      },
+      "features": {
+        "shape": [
+          540,
+          32768
+        ],
+        "dtype": "float16",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_3/readouts.npz",
+    "bytes": 4380030,
+    "arrays": {
+      "classes": {
+        "shape": [
+          18
+        ],
+        "dtype": "<U22",
+        "object": false
+      },
+      "pool_layers": {
+        "shape": [
+          8
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "plain_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "plain_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_3/valid_features.npz",
+    "bytes": 32985459,
+    "arrays": {
+      "ids": {
+        "shape": [
+          540
+        ],
+        "dtype": "object",
+        "object": true
+      },
+      "features": {
+        "shape": [
+          540,
+          32768
+        ],
+        "dtype": "float16",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_4/readouts.npz",
+    "bytes": 4380056,
+    "arrays": {
+      "classes": {
+        "shape": [
+          18
+        ],
+        "dtype": "<U22",
+        "object": false
+      },
+      "pool_layers": {
+        "shape": [
+          8
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "plain_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "plain_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_4/valid_features.npz",
+    "bytes": 32983917,
+    "arrays": {
+      "ids": {
+        "shape": [
+          540
+        ],
+        "dtype": "object",
+        "object": true
+      },
+      "features": {
+        "shape": [
+          540,
+          32768
+        ],
+        "dtype": "float16",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/readouts.npz",
+    "bytes": 4378243,
+    "arrays": {
+      "classes": {
+        "shape": [
+          18
+        ],
+        "dtype": "<U22",
+        "object": false
+      },
+      "pool_layers": {
+        "shape": [
+          8
+        ],
+        "dtype": "int64",
+        "object": false
+      },
+      "plain_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "plain_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_coef": {
+        "shape": [
+          18,
+          32768
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "center_intercept": {
+        "shape": [
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/valid_features.npz",
+    "bytes": 183638,
+    "arrays": {
+      "ids": {
+        "shape": [
+          3
+        ],
+        "dtype": "object",
+        "object": true
+      },
+      "features": {
+        "shape": [
+          3,
+          32768
+        ],
+        "dtype": "float16",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-tokattn/tokattn_oof.npz",
+    "bytes": 259131,
+    "arrays": {
+      "ids": {
+        "shape": [
+          2699
+        ],
+        "dtype": "object",
+        "object": true
+      },
+      "probs": {
+        "shape": [
+          2699,
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "classes": {
+        "shape": [
+          18
+        ],
+        "dtype": "<U22",
+        "object": false
+      },
+      "fold": {
+        "shape": [
+          2699
+        ],
+        "dtype": "int64",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-tokattn2/tokattn_debl23_oof.npz",
+    "bytes": 259131,
+    "arrays": {
+      "ids": {
+        "shape": [
+          2699
+        ],
+        "dtype": "object",
+        "object": true
+      },
+      "probs": {
+        "shape": [
+          2699,
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "classes": {
+        "shape": [
+          18
+        ],
+        "dtype": "<U22",
+        "object": false
+      },
+      "fold": {
+        "shape": [
+          2699
+        ],
+        "dtype": "int64",
+        "object": false
+      }
+    }
+  },
+  {
+    "path": "notebooks/lucasboesen/name-that-llm-train-tokattn2/tokattn_q8l22_oof.npz",
+    "bytes": 259131,
+    "arrays": {
+      "ids": {
+        "shape": [
+          2699
+        ],
+        "dtype": "object",
+        "object": true
+      },
+      "probs": {
+        "shape": [
+          2699,
+          18
+        ],
+        "dtype": "float32",
+        "object": false
+      },
+      "classes": {
+        "shape": [
+          18
+        ],
+        "dtype": "<U22",
+        "object": false
+      },
+      "fold": {
+        "shape": [
+          2699
+        ],
+        "dtype": "int64",
+        "object": false
+      }
+    }
+  }
+]
