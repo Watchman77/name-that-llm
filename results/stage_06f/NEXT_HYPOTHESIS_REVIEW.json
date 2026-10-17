@@ -1,0 +1,34 @@
+{
+  "status": "PASS_INDEPENDENT_FINAL_REPORTS_FINDINGS_AND_PROSPECTIVE_NEXT_PLAN_REVIEW",
+  "source_files_sha256": {
+    "results/stage_06f/FINDINGS.md": "8432a14be74c6c5b588854210e760efe5fae65a5099a06ea4b5e76adc1752ab7",
+    "plans/STAGE_06G_PAIR_COMPLEMENT.md": "ece986eb6244bd322564cd7fd7a437239e5f74635a2cea2b9a39968bd891b927",
+    "README.md": "1d33ae4a359f15e0620ae5b72b64060a3d175da094040cab53ed7e166706553c",
+    "STAGES.md": "8e37ef50c87269b2f484d6a207782b1dbf5c7758f62a16c3c8ca1a3a30e9f1ea",
+    "EXPERIMENTS.md": "097f4d06dab7f2dec2b731974b73a0fef620e7f727a04fc7c98147030bbae3f4",
+    "results/stage_06f/REPORT.md": "aab4433a6fd18ff18bc745a8d81b13a5810652b4f60c42d88577ba93e3ca40c9"
+  },
+  "stage06f_run": 359521305,
+  "stage06g_executed": false,
+  "new_candidate_score": false,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "checks": [
+    "Findings fixedpair counts/membertruthsupport/harmcounts/top2scope/109unique77persistent/conditionalintervals match independently reconciled runtime aggregates.",
+    "Both idealcross-error ceilings independently calculated with equal150supports for affectedpairclasses and18classbalancedaccuracy denominator:allcross3.3950617284pp;scoped2.4814814815pp. These label-informed restricted bounds are notforecast/attainability/fullS02 bounds.",
+    "Originalofficial truepairtrain rows independently checked all300singleline,zero codefences; no rawpassages printed or persisted.",
+    "ProspectiveGfixes pair,members,equalcoefficients,wholematrixcliplog,additionorder,stabletop2scope and exactzero tiekeepcontrol before singleevaluation.",
+    "No fittedmeta classifier on globalOOFscores; deterministiccandidate avoids nestedbasefittinglabel-exclusion issue.",
+    "Scopedsourcepredictions alreadyinpair, so toggling preservespair-entrymask, nonpaircorrectness/otherclassrecall and outsidepredictions; currentcorrectpairrows remainharmrisk.",
+    "Full18class/context rawbalancedaccuracy, corrected/broken bookkeeping, sourcepreservation, candidatearrayhash/readback, conditionalpromptbootstrap3000seed20261017 and inheritedfixedscreen defined.",
+    "Onecandidate/no alternativesearch; failure retained; no officialsubmission/fullS02/70percent claim. Reuseddevelopmentselection explicitly acknowledged.",
+    "FinalREADME/STAGES/currentexperimententry/report consistently separate officialS0254.9 from replayedproxy54.812246 and Fdiagnostics; no freshleaderboard/currentrank claim and no Gcandidate/run/result claimed.",
+    "FinalREPORT correctly distinguishes numericNPZ schema/exactreadback from CSV production/runtimehashbinding, and explicitly limits independentlocal row/margin/bootstrapaudit."
+  ],
+  "findings_limitations": [
+    "Attention-membermarginal counts do not determine jointgain; no independentrow-levelbinary/overlap/margin/bootstrapdraw recomputation.",
+    "A positive development screen would require matchedfullsystem investigation; it cannot establish an official or untouched-validation gain."
+  ],
+  "production_source_changed": false,
+  "wording_issue_resolved": "REPORT now distinguishes NPZ readback from CSV production/hashbinding; no CSV roundtrip is claimed."
+}

@@ -1,0 +1,327 @@
+{
+  "status": "COMPLETE_FIXED_PAIR_DIAGNOSTICS",
+  "pair": [
+    "gemini-3.7-flash",
+    "gemini-3.8-flash"
+  ],
+  "source_script_version_id": 359514801,
+  "primary_source": "raw_control",
+  "contexts": [
+    1,
+    3,
+    6
+  ],
+  "rows": 2699,
+  "distinct_true_pair_passages": 300,
+  "context_rows_are_repeated_passages": true,
+  "source_raw_scores": [
+    0.526380810340542,
+    0.553067362664678,
+    0.5649192145165299
+  ],
+  "source_raw_mean": 0.54812246250725,
+  "summary": [
+    {
+      "scenario": 1,
+      "pair_support": 300,
+      "pair_correct": 135,
+      "pair_cross": 94,
+      "pair_other_error": 71,
+      "a_to_b": 50,
+      "b_to_a": 44,
+      "false_entries": 65,
+      "predicted_pair": 294,
+      "global_errors": 1278,
+      "top2_scope_rows": 193,
+      "top2_scope_true_pair": 169,
+      "top2_scope_cross": 68,
+      "top2_scope_pair_correct": 101,
+      "top2_scope_other_class": 24,
+      "top2_scope_false_entries": 24
+    },
+    {
+      "scenario": 3,
+      "pair_support": 300,
+      "pair_correct": 146,
+      "pair_cross": 87,
+      "pair_other_error": 67,
+      "a_to_b": 49,
+      "b_to_a": 38,
+      "false_entries": 54,
+      "predicted_pair": 287,
+      "global_errors": 1206,
+      "top2_scope_rows": 196,
+      "top2_scope_true_pair": 175,
+      "top2_scope_cross": 62,
+      "top2_scope_pair_correct": 113,
+      "top2_scope_other_class": 21,
+      "top2_scope_false_entries": 21
+    },
+    {
+      "scenario": 6,
+      "pair_support": 300,
+      "pair_correct": 139,
+      "pair_cross": 94,
+      "pair_other_error": 67,
+      "a_to_b": 52,
+      "b_to_a": 42,
+      "false_entries": 49,
+      "predicted_pair": 282,
+      "global_errors": 1174,
+      "top2_scope_rows": 190,
+      "top2_scope_true_pair": 172,
+      "top2_scope_cross": 71,
+      "top2_scope_pair_correct": 101,
+      "top2_scope_other_class": 18,
+      "top2_scope_false_entries": 18
+    }
+  ],
+  "overlap": {
+    "pair_cross": {
+      "repeated_context_observations": 275,
+      "unique_passages_union": 109,
+      "unique_passages_all_contexts": 77,
+      "unique_passages_by_number_of_contexts": {
+        "0": 191,
+        "1": 20,
+        "2": 12,
+        "3": 77
+      },
+      "context_pattern_counts": {
+        "000": 191,
+        "010": 1,
+        "100": 12,
+        "110": 2,
+        "001": 7,
+        "011": 7,
+        "101": 3,
+        "111": 77
+      },
+      "pairwise_intersections": {
+        "1_3": 79,
+        "1_6": 80,
+        "3_6": 84
+      },
+      "population_passages": 300,
+      "population": "true_pair"
+    },
+    "pair_correct": {
+      "repeated_context_observations": 420,
+      "unique_passages_union": 151,
+      "unique_passages_all_contexts": 126,
+      "unique_passages_by_number_of_contexts": {
+        "0": 149,
+        "1": 8,
+        "2": 17,
+        "3": 126
+      },
+      "context_pattern_counts": {
+        "000": 149,
+        "010": 3,
+        "100": 3,
+        "110": 6,
+        "001": 2,
+        "011": 11,
+        "101": 0,
+        "111": 126
+      },
+      "pairwise_intersections": {
+        "1_3": 132,
+        "1_6": 126,
+        "3_6": 137
+      },
+      "population_passages": 300,
+      "population": "true_pair"
+    },
+    "pair_other_error": {
+      "repeated_context_observations": 205,
+      "unique_passages_union": 76,
+      "unique_passages_all_contexts": 61,
+      "unique_passages_by_number_of_contexts": {
+        "0": 224,
+        "1": 8,
+        "2": 7,
+        "3": 61
+      },
+      "context_pattern_counts": {
+        "000": 224,
+        "010": 1,
+        "100": 6,
+        "110": 2,
+        "001": 1,
+        "011": 3,
+        "101": 2,
+        "111": 61
+      },
+      "pairwise_intersections": {
+        "1_3": 63,
+        "1_6": 63,
+        "3_6": 64
+      },
+      "population_passages": 300,
+      "population": "true_pair"
+    },
+    "nonpair_false_entry": {
+      "repeated_context_observations": 168,
+      "unique_passages_union": 71,
+      "unique_passages_all_contexts": 42,
+      "unique_passages_by_number_of_contexts": {
+        "0": 2328,
+        "1": 16,
+        "2": 13,
+        "3": 42
+      },
+      "context_pattern_counts": {
+        "000": 2328,
+        "010": 1,
+        "100": 14,
+        "110": 7,
+        "001": 1,
+        "011": 4,
+        "101": 2,
+        "111": 42
+      },
+      "pairwise_intersections": {
+        "1_3": 49,
+        "1_6": 44,
+        "3_6": 46
+      },
+      "population_passages": 2399,
+      "population": "true_nonpair"
+    }
+  },
+  "uncertainty": {
+    "pair_correct_rate": {
+      "by_context": [
+        [
+          0.4,
+          0.5033333333333333
+        ],
+        [
+          0.4365833333333333,
+          0.54
+        ],
+        [
+          0.41,
+          0.5167500000000004
+        ]
+      ],
+      "mean_across_contexts": [
+        0.4177777777777778,
+        0.5188888888888888
+      ],
+      "draws": 3000,
+      "seed": 20261018,
+      "resampling_unit": "prompt",
+      "interpretation": "Conditional descriptive interval for fixed reused-development predictions; omits fitting and new-data uncertainty."
+    },
+    "pair_cross_rate": {
+      "by_context": [
+        [
+          0.27,
+          0.3566666666666667
+        ],
+        [
+          0.24666666666666667,
+          0.33666666666666667
+        ],
+        [
+          0.26666666666666666,
+          0.36
+        ]
+      ],
+      "mean_across_contexts": [
+        0.26333333333333336,
+        0.3477777777777778
+      ],
+      "draws": 3000,
+      "seed": 20261018,
+      "resampling_unit": "prompt",
+      "interpretation": "Conditional descriptive interval for fixed reused-development predictions; omits fitting and new-data uncertainty."
+    }
+  },
+  "disagreements": [
+    {
+      "scenario": 1,
+      "pair_rows_with_member_disagreement": 222,
+      "cross_rows_with_member_disagreement": 78,
+      "cross_rows_with_any_member_supporting_true": 78,
+      "cross_rows_with_no_member_supporting_true": 16,
+      "inactive_centered_rows": 2695
+    },
+    {
+      "scenario": 3,
+      "pair_rows_with_member_disagreement": 240,
+      "cross_rows_with_member_disagreement": 79,
+      "cross_rows_with_any_member_supporting_true": 79,
+      "cross_rows_with_no_member_supporting_true": 8,
+      "inactive_centered_rows": 388
+    },
+    {
+      "scenario": 6,
+      "pair_rows_with_member_disagreement": 238,
+      "cross_rows_with_member_disagreement": 83,
+      "cross_rows_with_any_member_supporting_true": 83,
+      "cross_rows_with_no_member_supporting_true": 11,
+      "inactive_centered_rows": 203
+    }
+  ],
+  "source_gate": {
+    "status": "PASS",
+    "immutable_input_hashes": {
+      "train.csv": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+      "ensemble_arrays.npz": "9348eeed149ad48bdd828d8055e945f57e384d8917c654125c2ebbe8d4b99519",
+      "ensemble_result.json": "9717bcb12f0c730b4af631067621969dcdbf239e6bed2f84304b470a38458018",
+      "output_manifest.json": "a5fcffaef27f4942af8a679370c30c247b8d872b4b6d711eccc0101ea7006dbd",
+      "raw_control_scenario1_confusion.csv": "a48b61f2a7ffb50764d44bb060adb925e13122abd63fed4730c9ba097685c595",
+      "raw_control_scenario3_confusion.csv": "fae2720b0f34b0bb701bfdffaace99051f0add84d52c91e6973aa6f124299463",
+      "raw_control_scenario6_confusion.csv": "938f3bf5a1ea51fdda8b8a75512810c5c74002063e741feef0d8e5dd614c7513"
+    },
+    "source_script_version_id": 359514801,
+    "source_canonical_cache_sha256": "2c6aa02a0bafd9389f436a25de70868b581d829bd8e39835b8e2f6a8354a3b2b",
+    "source_static_cache_sha256": "513a889477b8940d5f4a1df304b793361ff3860857e4e846e29e28429d9b3d08",
+    "ordered_ids_labels_prompts_and_folds_exact": true,
+    "exact_raw_evidence_and_predictions": true,
+    "source_confusions_exact": true,
+    "raw_control_scores": [
+      0.526380810340542,
+      0.553067362664678,
+      0.5649192145165299
+    ],
+    "source_raw_mean_balanced_accuracy": 0.54812246250725,
+    "weighted_pair_contribution_sum_atol": 1e-12,
+    "raw_probability_replay_atol": 2e-15,
+    "execution_freeze": {
+      "freeze_sha256": "dec901a2424ddb18159366071dc5b3c5a7019572912252c9bd786e649b294f47",
+      "diagnostic_source_sha256": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+      "plan_sha256": "a62a1f2e70c061b9b5c6b4be1825f3f81e148a0a3b6c37f36d12899fb8432d29",
+      "input_version_ids": [
+        170484,
+        359514801
+      ]
+    }
+  },
+  "runtime": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3"
+  },
+  "fits": 0,
+  "model_inference_calls": 0,
+  "regrouping_calls": 0,
+  "optimization_or_threshold_search": false,
+  "changed_predictions": 0,
+  "corrective_candidate_evaluated": false,
+  "official_submission": false,
+  "paid_services": false,
+  "seconds": 1.5741024640000205,
+  "limitations": [
+    "Available-component development proxy, not full S02 or an official score.",
+    "Pair selected after inspecting reused-development confusion counts; findings generate hypotheses only.",
+    "Contexts reuse the same passages and trained heads; repeated counts are not independent examples.",
+    "Softmax and conditional pair masses are descriptive uncalibrated scores.",
+    "Prompt bootstrap fixes all learned models and predictions; it omits fitting, grouping and future-data uncertainty.",
+    "Text-shape associations and component disagreement do not establish causal mechanisms or recoverable accuracy.",
+    "Top-two scope is diagnostic only and never changes a prediction."
+  ]
+}

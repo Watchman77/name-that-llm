@@ -1,0 +1,265 @@
+{
+  "status": "PASS_INDEPENDENT_PRINTED_TERMINAL_AND_RECOVERED_AGGREGATE_RECONCILIATION",
+  "run_script_version_id": 359521305,
+  "source_script_version_id": 359514801,
+  "log_sha256": "6f5113e6fc785e4fa1977dc478d2d1b46ba0b86ea4c7029b8782090c778ccc21",
+  "development_diagnostic_only": true,
+  "new_candidate_evaluated": false,
+  "official_submission": false,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "regrouping_calls": 0,
+  "changed_predictions": 0,
+  "execution_freeze_sha256": "dec901a2424ddb18159366071dc5b3c5a7019572912252c9bd786e649b294f47",
+  "diagnostic_source_sha256": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+  "original_manifest_hash_runtime_gate_passed": true,
+  "original_manifest_sha256": "a5fcffaef27f4942af8a679370c30c247b8d872b4b6d711eccc0101ea7006dbd",
+  "original_manifest_downloaded_locally": false,
+  "recovered_files_exactly_match_runtime_manifest": [
+    {
+      "file": "source_gate.json",
+      "bytes": 1754,
+      "sha256": "315a69d067608361af71001a54e4f08a724d6a6b7aaa2f39459be4df4581ca76"
+    },
+    {
+      "file": "pair_result.json",
+      "bytes": 9442,
+      "sha256": "4fd94b436c6e82539d9f7c66d24deb374b575048827dd297ec9a049e8e90aaab"
+    },
+    {
+      "file": "component_contributions.csv",
+      "bytes": 7334,
+      "sha256": "d3f657b69f43c6c92c610cc28f2f49592e3a960a7e9b94139bf8b9db0baaae76"
+    },
+    {
+      "file": "confidence_bins.csv",
+      "bytes": 2671,
+      "sha256": "959a69e3ce17a2f635ea68dcaf71cad7f34ea4d1cbc71ff138d318d63f409410"
+    },
+    {
+      "file": "other_class_false_entries.csv",
+      "bytes": 1306,
+      "sha256": "931308a3d8766338153eb9d782a01df4710b12f332174328372e52b261a485e5"
+    },
+    {
+      "file": "folds.csv",
+      "bytes": 950,
+      "sha256": "4595bd4522694fee82a885800f839c3551d0bf36590dcc2ca1056e15d8379d22"
+    },
+    {
+      "file": "text_features.csv",
+      "bytes": 7824,
+      "sha256": "d0889e78a7b9bdcb6888e5f7af6370867ed48a3386126a77aa1c7a091e96a029"
+    }
+  ],
+  "source_raw_scores": [
+    0.526380810340542,
+    0.553067362664678,
+    0.5649192145165299
+  ],
+  "source_raw_mean": 0.54812246250725,
+  "fixed_pair_counts": [
+    {
+      "scenario": 1,
+      "pair_support": 300,
+      "pair_correct": 135,
+      "pair_cross": 94,
+      "pair_other_error": 71,
+      "a_to_b": 50,
+      "b_to_a": 44,
+      "false_entries": 65,
+      "predicted_pair": 294,
+      "global_errors": 1278,
+      "top2_scope_rows": 193,
+      "top2_scope_true_pair": 169,
+      "top2_scope_cross": 68,
+      "top2_scope_pair_correct": 101,
+      "top2_scope_other_class": 24,
+      "top2_scope_false_entries": 24
+    },
+    {
+      "scenario": 3,
+      "pair_support": 300,
+      "pair_correct": 146,
+      "pair_cross": 87,
+      "pair_other_error": 67,
+      "a_to_b": 49,
+      "b_to_a": 38,
+      "false_entries": 54,
+      "predicted_pair": 287,
+      "global_errors": 1206,
+      "top2_scope_rows": 196,
+      "top2_scope_true_pair": 175,
+      "top2_scope_cross": 62,
+      "top2_scope_pair_correct": 113,
+      "top2_scope_other_class": 21,
+      "top2_scope_false_entries": 21
+    },
+    {
+      "scenario": 6,
+      "pair_support": 300,
+      "pair_correct": 139,
+      "pair_cross": 94,
+      "pair_other_error": 67,
+      "a_to_b": 52,
+      "b_to_a": 42,
+      "false_entries": 49,
+      "predicted_pair": 282,
+      "global_errors": 1174,
+      "top2_scope_rows": 190,
+      "top2_scope_true_pair": 172,
+      "top2_scope_cross": 71,
+      "top2_scope_pair_correct": 101,
+      "top2_scope_other_class": 18,
+      "top2_scope_false_entries": 18
+    }
+  ],
+  "independently_reconciled_overlap_bookkeeping": {
+    "pair_cross": {
+      "repeated_context_observations": 275,
+      "unique_passages_union": 109,
+      "unique_passages_all_contexts": 77,
+      "unique_passages_by_number_of_contexts": {
+        "0": 191,
+        "1": 20,
+        "2": 12,
+        "3": 77
+      },
+      "context_pattern_counts": {
+        "000": 191,
+        "010": 1,
+        "100": 12,
+        "110": 2,
+        "001": 7,
+        "011": 7,
+        "101": 3,
+        "111": 77
+      },
+      "pairwise_intersections": {
+        "1_3": 79,
+        "1_6": 80,
+        "3_6": 84
+      },
+      "population_passages": 300,
+      "population": "true_pair"
+    },
+    "pair_correct": {
+      "repeated_context_observations": 420,
+      "unique_passages_union": 151,
+      "unique_passages_all_contexts": 126,
+      "unique_passages_by_number_of_contexts": {
+        "0": 149,
+        "1": 8,
+        "2": 17,
+        "3": 126
+      },
+      "context_pattern_counts": {
+        "000": 149,
+        "010": 3,
+        "100": 3,
+        "110": 6,
+        "001": 2,
+        "011": 11,
+        "101": 0,
+        "111": 126
+      },
+      "pairwise_intersections": {
+        "1_3": 132,
+        "1_6": 126,
+        "3_6": 137
+      },
+      "population_passages": 300,
+      "population": "true_pair"
+    },
+    "pair_other_error": {
+      "repeated_context_observations": 205,
+      "unique_passages_union": 76,
+      "unique_passages_all_contexts": 61,
+      "unique_passages_by_number_of_contexts": {
+        "0": 224,
+        "1": 8,
+        "2": 7,
+        "3": 61
+      },
+      "context_pattern_counts": {
+        "000": 224,
+        "010": 1,
+        "100": 6,
+        "110": 2,
+        "001": 1,
+        "011": 3,
+        "101": 2,
+        "111": 61
+      },
+      "pairwise_intersections": {
+        "1_3": 63,
+        "1_6": 63,
+        "3_6": 64
+      },
+      "population_passages": 300,
+      "population": "true_pair"
+    },
+    "nonpair_false_entry": {
+      "repeated_context_observations": 168,
+      "unique_passages_union": 71,
+      "unique_passages_all_contexts": 42,
+      "unique_passages_by_number_of_contexts": {
+        "0": 2328,
+        "1": 16,
+        "2": 13,
+        "3": 42
+      },
+      "context_pattern_counts": {
+        "000": 2328,
+        "010": 1,
+        "100": 14,
+        "110": 7,
+        "001": 1,
+        "011": 4,
+        "101": 2,
+        "111": 42
+      },
+      "pairwise_intersections": {
+        "1_3": 49,
+        "1_6": 44,
+        "3_6": 46
+      },
+      "population_passages": 2399,
+      "population": "true_nonpair"
+    }
+  },
+  "aggregate_csv_dimensions": {
+    "component_contributions": 63,
+    "confidence_bins": 54,
+    "other_class_false_entries": 48,
+    "folds": 15,
+    "text_features": 108
+  },
+  "validations": [
+    "Complete unique log markers,result/sourcegate/outputmanifest equality; terminalmodule andpipeline success, nofailuremarker.",
+    "Runtime freeze/source/plan/twoinput hashes match persisted repair; strictoriginalmanifesthashgate passed at runtime for a5fc candidate.",
+    "Seven recovered artifact byte counts/SHA256s match authoritative runtime outputmanifest and5printedCSV strings exactly.",
+    "PriorEsource scores, allknownpairconfusions, support/outcome/routing/top-two partitions exactly reconcile.",
+    "All overlap populations, histograms,8patterns, contextmarginals, intersections, repeatedtotals and uniqueunion/allcontextbookkeeping internally reconcile.",
+    "63componentrows partition bypairoutcome/member/context withneutralvotes; context1centered neutraltruepairrows verified.",
+    "54fixedbinrows/15foldrows/48falseentryrows/108numerictextshaperows reconcile scenario/outcomesupports; foldcounts sumexactglobalcounts.",
+    "Disagreementpartition andinactivecentered counts reconcile priorEeligiblecounts; conditionalintervalsettings/bounds bookkeeping valid."
+  ],
+  "remaining_unavailable_artifacts": [
+    "pair_diagnostics.npz",
+    "pair_rows.csv",
+    "prompts.csv"
+  ],
+  "raw_npz_available_locally": false,
+  "raw_predictions_independently_recomputed_locally": false,
+  "row_level_overlap_membership_independently_recomputed": false,
+  "margin_or_contribution_values_independently_recomputed": false,
+  "bootstrap_draws_independently_recomputed": false,
+  "limitations": [
+    "Source-bound runtime gates verify actual attachednumericcache andsavedarray arithmetic; independentreviewusesfullpreservedlog/recoveredaggregatefiles,notrawNPZ.",
+    "Overlap counts are arithmeticallyreconciled fromprintedpatterns; exactIDmembership remains onKaggle.",
+    "Contribution/margin/textmeans and confidencebinassignment notrecomputedfromrowlevelarrays; intervalsnotindependentlyredrawn.",
+    "Reused-development available-componentproxy,notfullS02,untouchedholdout,calibratedprobability,causalityorrecoverablegain.",
+    "Largestpairselectioncamefrompriorerrors; no correctivecandidate or newofficialscore produced."
+  ]
+}

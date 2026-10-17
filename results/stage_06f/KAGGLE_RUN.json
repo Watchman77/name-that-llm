@@ -1,0 +1,67 @@
+{
+  "status": "COMPLETE_FIXED_PAIR_DIAGNOSTICS",
+  "observed_utc": "2026-10-17T23:21:05.438752+00:00",
+  "script_version_id": 359521305,
+  "version_ordinal": 4,
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06f-pair-diagnostics?scriptVersionId=359521305",
+  "log_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06f-pair-diagnostics/log?scriptVersionId=359521305",
+  "output_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06f-pair-diagnostics/output?scriptVersionId=359521305",
+  "kaggle_terminal_seconds": 20.3,
+  "displayed_output": "1.08 MB",
+  "accelerator": "none",
+  "gpu_enabled": false,
+  "internet_enabled": false,
+  "private_visibility_observed": true,
+  "input_version_ids": [
+    170484,
+    359514801
+  ],
+  "preexecution_git_commit": "1c9f0650f01d2adc43731876f4fe7e8439f34f48",
+  "initial_failed_source_git_commit": "baee805c080a06c6d797e68c0a0c1a424756d3a1",
+  "saved_preexecution_quick_version_id": 359521070,
+  "actual_execution_source_all_five_cells_equal_saved_v3": true,
+  "source_sha256": {
+    "diagnostic": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+    "plan": "a62a1f2e70c061b9b5c6b4be1825f3f81e148a0a3b6c37f36d12899fb8432d29"
+  },
+  "source_gate_status": "PASS",
+  "actual_manifest_hash_verified_by_runtime": true,
+  "source_manifest_sha256": "a5fcffaef27f4942af8a679370c30c247b8d872b4b6d711eccc0101ea7006dbd",
+  "diagnostic_seconds": 1.5741024640000205,
+  "pipeline_seconds": 2.815642294999975,
+  "runtime": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3"
+  },
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "regrouping_calls": 0,
+  "changed_predictions": 0,
+  "corrective_candidate_evaluated": false,
+  "official_submission_performed": false,
+  "paid_services": false,
+  "best_confirmed_official_s02_balanced_accuracy": 0.549,
+  "score_scope": "No new score. This run describes the existing available-component development proxy only.",
+  "log_sha256": "6f5113e6fc785e4fa1977dc478d2d1b46ba0b86ea4c7029b8782090c778ccc21",
+  "recovered_manifest_verified_files": [
+    "component_contributions.csv",
+    "confidence_bins.csv",
+    "folds.csv",
+    "other_class_false_entries.csv",
+    "pair_result.json",
+    "source_gate.json",
+    "text_features.csv"
+  ],
+  "immutable_kaggle_only_artifacts": [
+    "pair_diagnostics.npz",
+    "pair_rows.csv",
+    "prompts.csv"
+  ],
+  "screenshot_sha256": "1900f6102d6ac01dc510867571f1cfc79aa2c962e534a3f3256916d5ae14bf00",
+  "limits": [
+    "Local independent review can reconcile recovered aggregate artifacts; pair_diagnostics.npz, pair_rows.csv and prompts.csv remain on immutable Kaggle V4 output.",
+    "Runtime exact replay and internal numeric/readback checks passed; row-level membership and margins were not independently recomputed locally.",
+    "Pair and next hypothesis were chosen using reused development results. No untouched validation or official gain is claimed."
+  ]
+}
