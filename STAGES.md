@@ -2,7 +2,7 @@
 
 ## Competition goal
 
-Target first place in the final private evaluation. At the 17 October 2026 UK-time check, the public leader scored 0.584 versus S01's 0.354, a 23.0-percentage-point gap. This is a time-specific benchmark; the private result can differ. Choose experiments using development evidence rather than repeated public-score tuning.
+Target first place in the final private evaluation. At the latest 17 October 2026 check, the public leader scored 0.593 versus S01's 0.354, a 23.9-percentage-point gap (the earlier check was 0.584). This is a time-specific benchmark; the private result can differ. Choose experiments using development evidence rather than repeated public-score tuning. The user's request to adopt stronger public methods is tracked as one frozen external-baseline reproduction, not independent validation or a parameter search.
 
 | Stage | Status | Evidence / next decision |
 |---|---|---|
@@ -10,7 +10,7 @@ Target first place in the final private evaluation. At the 17 October 2026 UK-ti
 | 02 — word/character comparison | Complete | Word 26.26%, character 30.86%, combined 30.19%. Character lead remains uncertain; retain both references. |
 | 03 — error diagnosis and surface-style features | Complete and Kaggle-verified | Character + style: 35.41%; improved all folds; private offline version 2 succeeded. |
 | 04 — offline pretrained encoders / complementary models | Frozen MPNet trial complete; supervised trial queued | MPNet alone 14.59%; added to character/style 34.12%, below the 35.41% reference. Both rejected. Stage 04B private offline T4 version 1 is queued (359319680); GPU preflight and results pending. |
-| 05 — candidate freeze and competition submission | First official submission complete | S01 succeeded: public balanced accuracy 35.4%. Further candidates and final selection remain pending. |
+| 05 — candidate freeze and competition submission | S01 complete; public baseline reproduction running | S01 public balanced accuracy 35.4%. Exact Lucas Boesen V3 (reported source score 54.9%) privately forked unchanged and launched as V1 359332774. Actual GPU access confirmed; our new score and S02 remain pending. |
 | Publication assessment | Pending | Review related work and establish a contribution with stronger independent/nested evaluation. Ranking alone is insufficient. |
 
 ## How each experiment is tracked
@@ -28,3 +28,5 @@ Stage 03 report: `results/stage_03/REPORT.md`.
 Stage 04 plan: `plans/STAGE_04_FROZEN_ENCODER.md`.
 Stage 04 report: `results/stage_04/REPORT.md`.
 Next fixed protocol: `plans/STAGE_04B_SUPERVISED_ENCODER.md` (private GPU trial queued; results pending).
+
+Public reproduction protocol: `plans/STAGE_05_PUBLIC_REPRODUCTION.md` (private offline T4 V1 running; no new measured accuracy). Complete source review: `results/stage_05/SOURCE_REVIEW.md`. The separate 55.2% public recipe was excluded because its exact scored version requires a private checkpoint.
