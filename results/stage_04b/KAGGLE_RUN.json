@@ -1,8 +1,8 @@
 {
   "stage": "04B",
-  "status": "Kaggle_Save_and_Run_All_launched",
+  "status": "Queued",
   "trial_label": "trial_01",
-  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-04b-deberta",
+  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-04b-deberta?scriptVersionId=359319680",
   "notebook_version": 1,
   "internet_enabled": false,
   "accelerator": "GPU T4 x2; code restricts computation to cuda:0",
@@ -12,5 +12,6 @@
   "gpu_preflight_confirmed": false,
   "supervised_score": null,
   "official_submission_made": false,
-  "recorded_utc": "2026-10-17T10:16:38.563745+00:00"
+  "recorded_utc": "2026-10-17T10:16:38.563745+00:00",
+  "script_version_id": 359319680
 }
