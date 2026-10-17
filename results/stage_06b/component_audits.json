@@ -1,0 +1,72 @@
+[
+  {
+    "component": "tokattn_oof.npz",
+    "balanced_accuracy": 0.39378076062639816,
+    "sha256": "bdb4b20de1236edb3618464f464157468a81179d407d577d766c0941c5735077",
+    "fold_provenance": "source seed0 prompt-disjoint; numeric OOF verified, training not rerun"
+  },
+  {
+    "component": "tokattn_debl23_oof.npz",
+    "balanced_accuracy": 0.4108153119562516,
+    "sha256": "69b97d2e2693c7b646dbdb868c8803d0e4048ff3f62c874cd87be39d70395532",
+    "fold_provenance": "source seed0 prompt-disjoint; numeric OOF verified, training not rerun"
+  },
+  {
+    "component": "tokattn_q8l22_oof.npz",
+    "balanced_accuracy": 0.3700795426298782,
+    "sha256": "3efa2f6c7aa989fbb02a93d7e26fa50c9720d4d81923156297fe9d20d54c37c7",
+    "fold_provenance": "source seed0 prompt-disjoint; numeric OOF verified, training not rerun"
+  },
+  {
+    "component": "lora24_seed7_plain",
+    "balanced_accuracy": 0.4804424558786976,
+    "folds": [
+      {
+        "fold": 0,
+        "balanced_accuracy": 0.4759259259259259,
+        "reconstructed_accuracy": 0.4759259259259259,
+        "source_fp32_accuracy": 0.4759259259259259,
+        "difference_after_fp16_cache": 0,
+        "skipped_updates": 0,
+        "steps": 360
+      },
+      {
+        "fold": 1,
+        "balanced_accuracy": 0.46130268199233715,
+        "reconstructed_accuracy": 0.4619666048237477,
+        "source_fp32_accuracy": 0.4619666048237477,
+        "difference_after_fp16_cache": 0,
+        "skipped_updates": 0,
+        "steps": 360
+      },
+      {
+        "fold": 2,
+        "balanced_accuracy": 0.4666666666666667,
+        "reconstructed_accuracy": 0.4666666666666667,
+        "source_fp32_accuracy": 0.4666666666666667,
+        "difference_after_fp16_cache": 0,
+        "skipped_updates": 0,
+        "steps": 360
+      },
+      {
+        "fold": 3,
+        "balanced_accuracy": 0.5,
+        "reconstructed_accuracy": 0.5,
+        "source_fp32_accuracy": 0.5,
+        "difference_after_fp16_cache": 0,
+        "skipped_updates": 0,
+        "steps": 360
+      },
+      {
+        "fold": 4,
+        "balanced_accuracy": 0.4981481481481482,
+        "reconstructed_accuracy": 0.4981481481481482,
+        "source_fp32_accuracy": 0.4981481481481482,
+        "difference_after_fp16_cache": 0,
+        "skipped_updates": 0,
+        "steps": 360
+      }
+    ],
+    "limitation": "Saved features are float16; source completion accuracies used pre-serialization float32. COMPLETE has no file hashes."
+  }
+]
