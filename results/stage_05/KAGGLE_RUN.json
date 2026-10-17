@@ -19,7 +19,7 @@
   "accelerator": "GPU T4 x2",
   "gpu_preflight_confirmed": true,
   "preflight_log": "train (2699, 4) test (3, 2) gpus 2",
-  "latest_step_observed": "stylegram done (14s); style_lgb done (39s); glm9b extraction started",
+  "latest_step_observed": "Stylegram and LightGBM completed; GLM clustering pass completed; Qwen3-8B head completed (721s model timer); Qwen2.5-7B feature extraction started.",
   "requested_environment_ui": "Pin to original environment (2026-10-02)",
   "actual_environment_label": "Latest Container Image",
   "environment_note": "Kaggle Logs contradicts requested environment label. Preserve actual label; do not claim original container was reproduced. No model-code changes or restart made.",
@@ -88,5 +88,12 @@
   "source_archive_note": "Archive file adds one terminal newline; notebook preserves exact original cell. Both parse identically.",
   "warnings_observed": [
     "LightGBM/scikit-learn feature-name warnings; no failure observed at this check"
-  ]
+  ],
+  "last_checked_utc": "2026-10-17T11:17:55.175Z",
+  "last_ui_runtime_display": "- heading \"Running for 872.5s\" [level=5]",
+  "additional_log_evidence": {
+    "qwen3_completed_log": "759.4s q3_8b_cat7+22 done (721s)",
+    "qwen25_started_log": "759.5s q25_7b_cat6+20 /kaggle/input/models/qwen-lm/qwen2.5/transformers/7b/1 [6, 20] mean",
+    "model_load_reports": "Extra output-head and truncated-layer weights reported UNEXPECTED; consistent with intentionally shortened feature-extraction models, no exception observed."
+  }
 }
