@@ -1,0 +1,78 @@
+{
+  "status": "PASS_INDEPENDENT_SOURCE_INFERENCE_PATH_REPAIR_REVIEW",
+  "old_source_sha256": "b27925f978b0c87938c92adc36bcbb52e6536aa79fbe9330217daec7fecbae51",
+  "new_source_sha256": "c6005196a73100676141d18f67eb299c1bf686a547fbb077b91825d2bd2611b3",
+  "model_fits": 0,
+  "browser_actions": false,
+  "github_actions": false,
+  "algorithm_checks": {
+    "training_functions_equal_after_removing_readonly_snapshots": true,
+    "all_training_calls_partition_and_seeds_unchanged": true,
+    "grouping_and_plain_validation_preprocessing_unchanged": true,
+    "source_authoritative_evidence_and_argmax_unchanged": true,
+    "strict_twelve_array_and_score_gates_through_all_fusion_AST_exactly_unchanged": true,
+    "all_batch_diagnostic_variables_absent_from_fusion": true,
+    "previous_safe_classes_helper_and_balance_unchanged": true,
+    "diagnostics_saved_before_strict_reproduction_gate": true
+  },
+  "no_fit_fixtures": [
+    {
+      "name": "none",
+      "calls": 1,
+      "passed": true
+    },
+    {
+      "name": "all",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "name": "subset",
+      "calls": 2,
+      "passed": true
+    },
+    {
+      "name": "nonboolean_mask",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "wrong_mask_shape",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "nonfinite_all_rows",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "wrong_all_rows_shape",
+      "rejected": true,
+      "exception": "AssertionError"
+    },
+    {
+      "name": "nonfinite_active_rows",
+      "rejected": true,
+      "exception": "AssertionError"
+    }
+  ],
+  "limits": [
+    "The call-shape cause remains a hypothesis; successful source-path reproduction on Kaggle is required.",
+    "No new fits or actual head predictions were computed during review.",
+    "Local packaging is verified; immutable saved Kaggle source/input bindings remain a separate pre-execution check."
+  ],
+  "packaging_checks": {
+    "manifest": "results/stage_06d/SOURCE_PATH_REPAIR_PACKAGING.json",
+    "all_three_packaged_file_hashes_match": true,
+    "schema_valid": true,
+    "all_five_cells_compile": true,
+    "first_four_cell_hashes_match_V5": true,
+    "last_cell_contains_exact_new_module_once": true,
+    "notebook_linear_AST_exact_match": true,
+    "single_runner_contains_exact_new_module_once": true,
+    "combined_sha256": "9185a208679ea99c318bb11feb9abd773661886523621e268052ca037e613893",
+    "notebook_sha256": "9d9ebf83eadd0e9848721a18238614ce1d694cbe1e84cf38a2972ae843cf3d6c",
+    "last_cell_characters": 69909
+  }
+}

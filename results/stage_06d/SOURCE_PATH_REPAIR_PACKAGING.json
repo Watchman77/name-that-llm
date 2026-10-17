@@ -1,0 +1,48 @@
+{
+  "purpose": "Exact C eligible-only inference call and pre-gate diagnosis; no changed fit recipe or acceptance tolerance.",
+  "old_fusion_sha256": "b27925f978b0c87938c92adc36bcbb52e6536aa79fbe9330217daec7fecbae51",
+  "new_fusion_sha256": "c6005196a73100676141d18f67eb299c1bf686a547fbb077b91825d2bd2611b3",
+  "notebook_path": "notebooks/Stage_06D_Fixed_Ensemble.ipynb",
+  "notebook_sha256": "9d9ebf83eadd0e9848721a18238614ce1d694cbe1e84cf38a2972ae843cf3d6c",
+  "linear_runner_path": "scripts/kaggle_stage06d_multicell.py",
+  "linear_runner_sha256": "9185a208679ea99c318bb11feb9abd773661886523621e268052ca037e613893",
+  "single_runner_path": "scripts/kaggle_stage06d_runner.py",
+  "single_runner_sha256": "7edb496804ad08bb037f2b64206ad3b5838c0d5c030824ca5ec56fe073e4b973",
+  "cells": [
+    {
+      "index": 0,
+      "characters": 77806,
+      "sha256": "86e5a3d50cd1850e65139b3fc7c8c39a77bd8ab8508f3208d101fe194a357fda",
+      "unchanged_from_V5": true
+    },
+    {
+      "index": 1,
+      "characters": 156105,
+      "sha256": "bd765f02846b89e7537a6d92655cafa7f7664ba8199463048aca422ad9f04bac",
+      "unchanged_from_V5": true
+    },
+    {
+      "index": 2,
+      "characters": 156106,
+      "sha256": "e7f8d7e91ad9179852c6606710d490c30fa510175d9e0d99101c29b6f2847504",
+      "unchanged_from_V5": true
+    },
+    {
+      "index": 3,
+      "characters": 146225,
+      "sha256": "6c17db3c11cc0e1d4ad51710aa4874e16b1831701f608a3f54048b2cb2f06a29",
+      "unchanged_from_V5": true
+    },
+    {
+      "index": 4,
+      "characters": 69909,
+      "sha256": "54c8c957cd62d1fde1651603ed59241576ae1edbd219275632f2a2699f8caf0a",
+      "unchanged_from_V5": false
+    }
+  ],
+  "schema_valid": true,
+  "all_cells_compile": true,
+  "linear_source_equals_cell_concatenation": true,
+  "probability_payload_unchanged": true,
+  "model_fits": 0
+}

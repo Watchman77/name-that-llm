@@ -175,3 +175,17 @@ The notebook is kept private with the competition input attached and internet di
 - First four packaging cells remain exact V3 copies; final cell alone changed. New combined SHA256 8d2b999b78cccb48bbed5d223b7c30d1e4b3bc9369abed06c870ba499d6a3b27. Repaired packaging record: CLASS_METADATA_REPAIR_PACKAGING.json; independent review: SAFE_CLASSES_INDEPENDENT_REVIEW.json. Historical pre-V3 source manifest is preserved. No repaired execution or numerical result yet.
 
 - Repair current state: REPAIR_REVIEWED_PENDING_RETRY. Current source hashes are bound to CLASS_METADATA_REPAIR_PACKAGING.json; failed V3 remains tied to the original reviewed source and packaging commit 9db86f28cfd763ccbc3dcc048fb35fe649f6445f. Repaired last editor cell passed a complete 60,610-character roundtrip. Metadata-only QuickSave V4 requested but response/ID/saved source unconfirmed; no CPU retry called and zero new head fits. Frozen protocol and historical pre-V3 review/manifests remain unchanged.
+
+
+## Stage 06D repaired execution launch — observed 17 October 2026 at 21:55:14 UTC
+
+- Fourteen-file repair and failure-record freeze committed before retry Save & Run All: de19608a672015fdb84e7921ed2aa1482c495a18. Metadata-only QuickSave V4 scriptVersionId 359502142 passed complete repaired five-cell source matching (77,806 / 156,105 / 156,106 / 146,225 / 60,610 characters), empty outputs/null counts, exact seven IDs and CPU/internet-off metadata.
+- Actual Version 5 Save & Run All named `Fixed ensemble - safe class metadata`, with advanced CPU/no-accelerator selection, is Running with one active event at 2026-10-17T21:55:14Z. Numeric V5 scriptVersionId/logs are still being obtained; no new fitting count or result is inferred.
+- Prior V3 359500151 failure remains immutable: failure marker20.7s, log end27.7s; UI initially0s later28s. It passed frozen style transfer and component audits but fitted no new heads. The repaired run must still pass metadata/reproduction checks and the unchanged primary raw screen. No official submission or new score; S02 remains0.549.
+
+
+## Stage 06D V5 reproduction failure and source-path diagnostic revision
+
+- Actual V5 359502730 completed all five fixed DeBERTa folds/15 heads, then failed at164.0s `Frozen 06C argmax mismatch, control` (platformtotal175.5s). Class metadata repair passed actual cache; no ensemble result and primary raw screen NOT evaluated. Full4,864-byte log SHAe6f5896056004ee4c6f8a133f1835c9315f70a888e47a7ba858157050d4fde4e and V5_FAILURE.json preserve the run. Original sourceb27925.../preexeccommitde19608... retained.
+- Reviewed exact-C eligible-only inference override and pre-gate diagnostics sourceSHA c6005196a73100676141d18f67eb299c1bf686a547fbb077b91825d2bd2611b3. Call-shape hypothesis unproven; same fitted heads, no changed training/folds/seeds/groups/plain scaling/weights/gates. Old all-row path diagnostic only. All twelve exact argmax and score-atol1e-12 checks remain mandatory; no ensemble output if they fail. Full prediction/margin/runtime/15-head snapshots save before gate. Eight no-fit fixtures and independent AST review passed; new combinedSHA9185a208679ea99c318bb11feb9abd773661886523621e268052ca037e613893.
+- State SOURCE_PATH_REPAIR_REVIEWED_PENDING_ONE_RETRY: final69,909-character editor cell paste/copyback and metadata-only V6 gate pending at freeze; no V6 ID guessed and no CPU attempt called. Persist reviewed code before one evidence-based CPU retry. If mismatch remains, retain diagnostics and stop blind refits; no gate relaxation. Official S02 remains0.549.

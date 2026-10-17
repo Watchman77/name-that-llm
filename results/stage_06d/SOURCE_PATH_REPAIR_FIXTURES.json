@@ -1,0 +1,93 @@
+{
+  "status": "PASS_NO_FIT_SOURCE_PATH_REPAIR_FIXTURES",
+  "recorded_at_utc": "2026-10-17T22:01:33.335558+00:00",
+  "source_file": "scripts/stage06d_fixed_ensemble.py",
+  "old_source_sha256": "b27925f978b0c87938c92adc36bcbb52e6536aa79fbe9330217daec7fecbae51",
+  "old_source_bytes": 55538,
+  "new_source_sha256": "c6005196a73100676141d18f67eb299c1bf686a547fbb077b91825d2bd2611b3",
+  "new_source_bytes": 64837,
+  "reason_for_revision": "Deep comparison found a definite inference call-shape difference: C predicted centered logP on eligible rows only; prior D predicted on all rows then selected eligible rows. Its causal role in the failed hard-prediction gate is unproven.",
+  "repair": "Keep full finite all-row logP for complete arrays, independently preserve the old all-row path for diagnostics, then overwrite eligible rows with log_probability(head,residual[active]) exactly as C before reproduction and any subsequent fusion.",
+  "diagnostic_outputs_before_gate": [
+    "reproduction_diagnostics.npz: unique official IDs/classes/y/prompt/fold metadata, scenarios, batch IDs, inferred/oracle groups, eligibility masks.",
+    "All twelve source-path predictions, all twelve prior all-row predictions, and all twelve frozen C predictions.",
+    "Full source-path logP including plain head; old all-row centered logP; old/new top-two weighted component evidence margins.",
+    "All fifteen fitted head scaler mean/scale/variance/sample-count and classifier coefficients/intercepts/classes/iteration counts.",
+    "reproduction_diagnostics.json: per-key/scenario mismatch counts, component balanced accuracies, old/new changes, eligible logP maximum differences and mismatch margin statistics.",
+    "Per-fold/head/scenario inference differences, warnings, actual package versions and threadpool environment."
+  ],
+  "gates_unchanged": [
+    "All twelve source-path hard-prediction arrays must exactly equal frozen C arrays.",
+    "All source-path component scores must match C at rtol=0, atol=1e-12.",
+    "Training group realization and non-deprecation warning checks remain in force.",
+    "No fixed ensemble evidence, combined score or ENSEMBLE_RESULT is computed before the frozen reproduction gates pass.",
+    "The old all-row path is diagnostic only; no path selection, threshold change or tolerance relaxation."
+  ],
+  "unchanged_model_recipe": [
+    "Original folds and prompt exclusion",
+    "Seeds",
+    "Feature layer choice and dtype",
+    "Centering and scaler fitting",
+    "LogisticRegression hyperparameters and sample weights",
+    "Original ensemble weights",
+    "Primary endpoint and acceptance criteria"
+  ],
+  "fixtures": [
+    {
+      "fixture": "eligible-only callback receives exact residual[active] rows and overwrites those rows",
+      "status": "PASS",
+      "callback_row_counts": [
+        6,
+        3
+      ]
+    },
+    {
+      "fixture": "complete finite output shape (6,18), inactive rows unchanged",
+      "status": "PASS"
+    },
+    {
+      "fixture": "old all-row output independently preserved without memory aliasing",
+      "status": "PASS"
+    },
+    {
+      "fixture": "no eligible rows invokes no subset inference",
+      "status": "PASS",
+      "callback_row_counts": [
+        6
+      ]
+    },
+    {
+      "fixture": "all eligible rows retains the exact source subset call even when subset is full-size",
+      "status": "PASS",
+      "callback_row_counts": [
+        6,
+        6
+      ]
+    },
+    {
+      "fixture": "wrong-shape eligibility mask",
+      "status": "REJECTED"
+    },
+    {
+      "fixture": "nonboolean eligibility mask",
+      "status": "REJECTED"
+    },
+    {
+      "fixture": "static code order: diagnostic arrays saved before exact frozen-array and 1e-12 score gates; fusion occurs afterward",
+      "status": "PASS"
+    }
+  ],
+  "fixture_count": 8,
+  "compilation": "python -m py_compile scripts/stage06d_fixed_ensemble.py PASS",
+  "model_fits": 0,
+  "new_kaggle_execution_started": false,
+  "network_used": false,
+  "browser_actions": false,
+  "limits": [
+    "Fixtures use a fake deterministic callback with intentional batch-size-dependent output to verify call wiring, overwrite semantics and diagnostic separation; they do not fit any classifier.",
+    "Passing these fixtures does not establish that inference call shape caused the real frozen-prediction mismatch.",
+    "Actual immutable C caches remain unavailable locally for full reproduction.",
+    "Current-run head snapshots aid diagnosis; C did not save its coefficients/scalers for direct comparison.",
+    "One authorized CPU attempt may test the repaired source path; another frozen gate failure requires using saved diagnostics before any further fitting."
+  ]
+}

@@ -180,6 +180,25 @@ def stage06d_safe_classes(path, expected):
     assert np.array_equal(actual, expected), 'Class metadata alignment mismatch'
     return actual, mode
 
+
+def stage06d_source_path_log_probabilities(head, residual, active, log_probability):
+    """Keep complete logP but reproduce C's eligible-only inference batch.
+
+    The original all-row path is returned independently for diagnosis. No
+    fitting, gating or candidate selection is performed by this helper.
+    """
+    import numpy as np
+    active = np.asarray(active)
+    assert active.dtype.kind == 'b' and active.shape == (len(residual),)
+    all_batch_log = log_probability(head, residual)
+    assert all_batch_log.shape == (len(residual), 18) and np.isfinite(all_batch_log).all()
+    full_log = all_batch_log.copy()
+    if active.any():
+        source_active_log = log_probability(head, residual[active])
+        assert source_active_log.shape == (int(active.sum()), 18) and np.isfinite(source_active_log).all()
+        full_log[active] = source_active_log
+    return full_log, all_batch_log
+
 def run_fixed_ensemble(style_probabilities, style_classes, style_ids):
     """Run the fixed paired comparison with the caller-provided frozen style OOF.
 
@@ -228,6 +247,7 @@ def run_fixed_ensemble(style_probabilities, style_classes, style_ids):
     id_checks = []
     fold_proofs = []
     warning_records = []
+    diagnostic_head_arrays = {}
 
     def digest(path):
         hasher = hashlib.sha256()
@@ -600,6 +620,11 @@ def run_fixed_ensemble(style_probabilities, style_classes, style_ids):
                 classifier = LogisticRegression(C=.005, max_iter=5000).fit(scaler.transform(value), targets, sample_weight=sample_weights)
             warning_records.extend(dict(fold=fold, head=role, category=w.category.__name__, message=str(w.message)) for w in caught)
             assert np.array_equal(classifier.classes_, np.arange(18))
+            prefix = f'fold{fold}_{role}_'
+            for attribute in ('mean_', 'scale_', 'var_', 'n_samples_seen_'):
+                diagnostic_head_arrays[prefix + 'scaler_' + attribute.rstrip('_')] = np.asarray(getattr(scaler, attribute)).copy()
+            for attribute in ('coef_', 'intercept_', 'classes_', 'n_iter_'):
+                diagnostic_head_arrays[prefix + 'classifier_' + attribute.rstrip('_')] = np.asarray(getattr(classifier, attribute)).copy()
             return scaler, classifier
 
         def log_probability(head, value):
@@ -609,6 +634,11 @@ def run_fixed_ensemble(style_probabilities, style_classes, style_ids):
         status('REFITTING_FIXED_DEBERTA_HEADS')
         deb_log = {key: np.full((3, n, 18), np.nan) for key in ('plain', 'control', 'candidate', 'oracle_control', 'oracle_candidate')}
         reproduction = {key: np.full((3, n), -1, dtype=np.int64) for key in frozen_prediction}
+        all_batch_reproduction = {key: np.full((3, n), -1, dtype=np.int64) for key in frozen_prediction}
+        all_batch_deb_log = {key: np.full((3, n, 18), np.nan) for key in frozen_prediction}
+        reproduction_margins = {key: np.full((3, n), np.nan) for key in frozen_prediction}
+        all_batch_margins = {key: np.full((3, n), np.nan) for key in frozen_prediction}
+        inference_path_diagnostics = []
         batch_id = np.full((3, n), -1, dtype=np.int64)
         inferred_id = np.full((3, n), -1, dtype=np.int64)
         oracle_id = np.full((3, n), -1, dtype=np.int64)
@@ -649,18 +679,92 @@ def run_fixed_ensemble(style_probabilities, style_classes, style_ids):
                     residual = centered(features[valid], labels)
                     for label, head in [('control', control), ('candidate', candidate)]:
                         key = label if mode == 'inferred' else 'oracle_' + label
-                        # Full class log-probabilities are retained even on inactive
-                        # rows; exactly the original eligibility mask gates fusion.
-                        full_log = log_probability(head, residual)
+                        # Preserve all-row values for diagnosis, then overwrite
+                        # eligible rows using exactly C's residual[eligible] call.
+                        full_log, old_all_batch_log = stage06d_source_path_log_probabilities(head, residual, active, log_probability)
                         deb_log[key][scenario, valid] = full_log
+                        all_batch_deb_log[key][scenario, valid] = old_all_batch_log
                         evidence = .05 * plain_log.copy()
+                        old_evidence = .05 * plain_log.copy()
                         if active.any():
                             evidence[active] += .25 * full_log[active]
+                            old_evidence[active] += .25 * old_all_batch_log[active]
                         reproduction[key][scenario, valid] = evidence.argmax(1)
+                        all_batch_reproduction[key][scenario, valid] = old_evidence.argmax(1)
+                        ordered = np.sort(evidence, axis=1)
+                        old_ordered = np.sort(old_evidence, axis=1)
+                        reproduction_margins[key][scenario, valid] = ordered[:, -1] - ordered[:, -2]
+                        all_batch_margins[key][scenario, valid] = old_ordered[:, -1] - old_ordered[:, -2]
+                        delta = np.abs(full_log[active] - old_all_batch_log[active])
+                        inference_path_diagnostics.append(dict(fold=number, scenario=size, head=key,
+                                                               eligible_rows=int(active.sum()),
+                                                               maximum_eligible_log_probability_delta=float(delta.max()) if delta.size else 0.,
+                                                               changed_predictions_from_call_shape=int((evidence.argmax(1) != old_evidence.argmax(1)).sum())))
             print('STAGE06D_DEBERTA_FOLD_COMPLETE', number + 1, 'seconds', round(time.monotonic() - started, 1), flush=True)
             del plain, control, candidate
         assert (batch_id >= 0).all() and (inferred_id >= 0).all() and (oracle_id >= 0).all()
         assert all(np.isfinite(value).all() for value in deb_log.values())
+        assert all(np.isfinite(value).all() for value in all_batch_deb_log.values())
+        # Preserve diagnostics BEFORE every strict frozen-prediction gate. A
+        # failing run must keep evidence and must never reach ensemble fusion.
+        diagnostic_arrays = dict(ids=ids, classes=classes, y=y, prompt_ids=groups, fold=our_folds,
+                                 scenarios=np.asarray(scenarios, dtype=np.int64), batch_id=batch_id,
+                                 inferred_group_id=inferred_id, oracle_group_id=oracle_id,
+                                 eligible=eligible, oracle_eligible=oracle_eligible,
+                                 train_sha256=np.asarray(train_sha))
+        diagnostic_arrays.update({'source_path_prediction_' + key: value for key, value in reproduction.items()})
+        diagnostic_arrays.update({'all_batch_prediction_' + key: value for key, value in all_batch_reproduction.items()})
+        diagnostic_arrays.update({'frozen06c_prediction_' + key: value for key, value in frozen_prediction.items()})
+        diagnostic_arrays.update({'source_path_log_probability_' + key: value for key, value in deb_log.items()})
+        diagnostic_arrays.update({'all_batch_center_log_probability_' + key: value for key, value in all_batch_deb_log.items()})
+        diagnostic_arrays.update({'source_path_score_margin_' + key: value for key, value in reproduction_margins.items()})
+        diagnostic_arrays.update({'all_batch_score_margin_' + key: value for key, value in all_batch_margins.items()})
+        diagnostic_arrays.update(diagnostic_head_arrays)
+        assert all(not np.asarray(value).dtype.hasobject for value in diagnostic_arrays.values())
+        np.savez_compressed(output_root / 'reproduction_diagnostics.npz', **diagnostic_arrays)
+        with np.load(output_root / 'reproduction_diagnostics.npz', allow_pickle=False) as check:
+            for key, value in diagnostic_arrays.items():
+                assert np.array_equal(check[key], value), ('Saved diagnostic array mismatch', key)
+
+        def margin_stats(values):
+            if not len(values):
+                return dict(rows=0, minimum=None, median=None, maximum=None, at_most_1e_12=0, at_most_1e_9=0, at_most_1e_6=0)
+            return dict(rows=len(values), minimum=float(values.min()), median=float(np.median(values)), maximum=float(values.max()),
+                        at_most_1e_12=int((values <= 1e-12).sum()), at_most_1e_9=int((values <= 1e-9).sum()), at_most_1e_6=int((values <= 1e-6).sum()))
+
+        mismatch_summary = []
+        for key in frozen_prediction:
+            for scenario, size in enumerate(scenarios):
+                source_mismatch = reproduction[key][scenario] != frozen_prediction[key][scenario]
+                old_mismatch = all_batch_reproduction[key][scenario] != frozen_prediction[key][scenario]
+                active = eligible[scenario] if not key.startswith('oracle_') else oracle_eligible[scenario]
+                delta = np.abs(deb_log[key][scenario, active] - all_batch_deb_log[key][scenario, active])
+                mismatch_summary.append(dict(head=key, scenario=size,
+                                             source_path_mismatches=int(source_mismatch.sum()), all_batch_mismatches=int(old_mismatch.sum()),
+                                             changed_by_source_call_shape=int((reproduction[key][scenario] != all_batch_reproduction[key][scenario]).sum()),
+                                             source_path_balanced_accuracy=float(balanced_accuracy_score(y, reproduction[key][scenario])),
+                                             all_batch_balanced_accuracy=float(balanced_accuracy_score(y, all_batch_reproduction[key][scenario])),
+                                             frozen_balanced_accuracy=float(balanced_accuracy_score(y, frozen_prediction[key][scenario])),
+                                             maximum_eligible_log_probability_delta=float(delta.max()) if delta.size else 0.,
+                                             source_path_margin_on_mismatch=margin_stats(reproduction_margins[key][scenario, source_mismatch]),
+                                             all_batch_margin_on_mismatch=margin_stats(all_batch_margins[key][scenario, old_mismatch])))
+        from threadpoolctl import threadpool_info
+        diagnostic_report = dict(status='PRE_GATE_REPRODUCTION_DIAGNOSTICS', rows=n,
+                                 no_ensemble_scores_computed=True, strict_frozen_gates_retained=True,
+                                 source_path='C eligible-only centered predict_proba overwrites active rows; inactive all-row logs retained only for complete finite arrays.',
+                                 comparison='Original D all-row inference is diagnostic only, never a selectable candidate.',
+                                 mismatch_summary=mismatch_summary, per_fold_inference_differences=inference_path_diagnostics,
+                                 realised_training_groups_match=realised == frozen_result['realised_training_group_sizes'],
+                                 all_warning_records=warning_records,
+                                 environment=dict(python=platform.python_version(), platform=platform.platform(),
+                                                  packages={name: version(name) for name in ('numpy', 'pandas', 'scipy', 'scikit-learn', 'threadpoolctl')},
+                                                  threadpools=threadpool_info()),
+                                 diagnostic_npz_sha256=digest(output_root / 'reproduction_diagnostics.npz'),
+                                 limits=['Call-shape hypothesis is unproven until the source-path predictions pass all 12 frozen-array checks.',
+                                         'Current fitted coefficients/scalers are retained; C did not save those tensors for direct comparison.',
+                                         'No changed threshold, gate tolerance, fit recipe, component weights or candidate selection.'])
+        write_json('reproduction_diagnostics.json', diagnostic_report)
+        print('STAGE06D_REPRODUCTION_DIAGNOSTICS', json.dumps(diagnostic_report, allow_nan=False), flush=True)
         assert realised == frozen_result['realised_training_group_sizes']
         reproduction_scores = {}
         for key, value in reproduction.items():
