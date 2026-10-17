@@ -13,7 +13,7 @@ Use the exact public LoRA V1 358831649 already attached to S02 as the first audi
 2. Read training_spec.json and each outer COMPLETE.json. Verify file digests, disjoint row/prompt sets, exact once-only validation coverage, fixed epoch provenance. Never include final checkpoint training predictions.
 3. Recompute saved plain logits from validation_features and readouts and compare against lora24_oof.npz. Recompute declared source metrics before trusting diagnostics.
 4. Produce per-class recall, directed confusion counts/rates, fold scores and disagreements. Label every table with the precise component and scenario; never title LoRA-only diagnostics “54.9% ensemble errors.”
-5. Inventory equivalent artifacts for the second LoRA, token-attention, UltraBERT and frozen features. Record train prompts/fold definitions for every supervised component. Different outer fold schemes cannot simply be stacked as if all scoring labels were held out from every fitted member.
+5. Inventory equivalent artifacts for the second LoRA, token-attention, UltraBERT and frozen features. Record train prompts/fold definitions for every supervised component. For fixed, predeclared averaging, different fold schemes can be valid when every member prediction excludes that row's entire prompt. Learned stacking or weight tuning needs a shared outer split: its inner predictions must also exclude the outer scoring prompts from every fitted component. Alignment is required for that nested construction, not for all fixed OOF averaging.
 6. If complete S02 OOF cannot be reconstructed, report that gap explicitly. Evaluate the frozen-head change separately first. Do not use in-sample full-fit outputs as a substitute.
 
 Outputs: provenance.json, component_inventory.csv, fold_scores.csv, per_class_recall.csv, confusion_counts.csv, confusion_rates.csv and component_disagreement.csv. Exclude raw passage text. Exact missing files must be named before deciding whether additional GPU extraction/training is necessary.
@@ -39,3 +39,5 @@ Fit full-data candidate only after this screen. Check offline hidden-run budget 
 
 ## Resources and progress limits
 CPU audit first; no new GPU training justified by this document alone. Cached pretrained frozen embeddings can support cheap fold-local heads, but availability is not yet certified. No paid API, paid compute or synthetic data. 70% remains a stretch target; 56%, 58%, 60% are milestones to measure, not promised outcomes.
+
+Stage 06B narrows the first centering test to the available cached DeBERTa twin, uses safe static inspection for object-ID metadata, and records its lexical-only and fp16 approximation limits. See `plans/STAGE_06B_CACHED_CENTERING.md`.
