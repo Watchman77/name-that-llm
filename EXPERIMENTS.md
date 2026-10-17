@@ -92,3 +92,9 @@ The notebook is kept private with the competition input attached and internet di
 - One official S02 was accepted. The competition Submissions page shows Notebook Running for the exact private V1 and output file. No new public/private score yet; S01 remains 0.354. No parameter changes, repeated leaderboard tuning, paid services or manual final-selection changes.
 - Stage 04B remains queued with no GPU preflight/training logs. It was not restarted or changed.
 - Records: results/stage_05/OUTPUT_VERIFICATION.json, PREVIEW_OUTPUTS.json and results/submissions/S02.json / S02_REPORT.md.
+
+## Live progress — 2026-10-17T13:12:36.877Z
+
+- Official S02 still shows Notebook Running on the fresh competition Submissions page and detail panel. No public score or displayed execution error; S01 remains the only confirmed score (0.354).
+- Stage 04B has left the queue. Actual Tesla T4 preflight passed with Transformers 4.56.2, torch 2.11.0+cu128 and one visible GPU. Fold 1 final-epoch balanced accuracy is 0.231481481 versus Stage 03's 0.335185185 on the same fold; fold 2 is 0.218518519 versus 0.331481481. Fold 3 epoch 3 is in progress in the latest visible logs.
+- These are partial development results, not official scores or a complete OOF estimate. No exceptions were shown in the inspected logs and recorded completed epochs had zero AMP overflow steps. Preserve the fixed five-fold recipe without restarting or tuning on partial results. See results/stage_04b/PARTIAL_PROGRESS.json.
