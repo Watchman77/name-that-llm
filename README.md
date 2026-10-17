@@ -2,9 +2,11 @@
 
 Private competition workspace for reproducible LLM authorship attribution.
 
-The competitive goal is **first place in the final private evaluation**. The public leading score was 58.4% at the 17 October 2026 UK-time check; this is a benchmark, not a fixed winning threshold.
+The competitive goal is **first place in the final private evaluation**. The public leading score was 59.3% at the latest 17 October 2026 check (previously 58.4%); this is a benchmark, not a fixed winning threshold.
 
 ## Current stage
+
+Stage 05's [fixed public baseline reproduction](plans/STAGE_05_PUBLIC_REPRODUCTION.md) is **running** as [private Kaggle V1, 359332774](https://www.kaggle.com/code/watchman777/name-that-llm-stage-05-public-reproduction?scriptVersionId=359332774). It copies Lucas Boesen's exact scored V3 without model-code changes and has all 14 public input versions attached. Live logs confirm two GPUs and completed stylegram/LightGBM steps. The source's **0.549** is not our score; no S02 has been submitted. See [source review and limits](results/stage_05/SOURCE_REVIEW.md), [launch receipt](results/stage_05/KAGGLE_RUN.json) and [notebook archive](notebooks/Stage_05_Public_Reproduction.ipynb). No paid services are used. Stage 04B remains a separate queued trial.
 
 The best development reference remains the Stage 03 **character + 111 style features** candidate at **35.41% balanced accuracy**, versus 30.86% for character-only and 30.19% for the original combined baseline. It improved all five saved prompt-grouped folds. See [the Stage 03 report](results/stage_03/REPORT.md) for uncertainty and regressions.
 
