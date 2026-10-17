@@ -1,6 +1,6 @@
 {
   "stage": "04B",
-  "status": "Running",
+  "status": "Succeeded",
   "trial_label": "trial_01",
   "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-04b-deberta?scriptVersionId=359319680",
   "notebook_version": 1,
@@ -10,13 +10,13 @@
   "protocol_clarification_commit": "5563d45ef49311afa7ca0cacc184bb2ed46f3ba8",
   "runner_commit": "8603667afbe1d404aec4f9855ab09be5d3ef412e",
   "gpu_preflight_confirmed": true,
-  "supervised_score": null,
+  "supervised_score": 0.22763857817549094,
   "official_submission_made": false,
   "recorded_utc": "2026-10-17T10:16:38.563745+00:00",
   "script_version_id": 359319680,
-  "last_checked_utc": "2026-10-17T13:12:36.877Z",
+  "last_checked_utc": "2026-10-17T14:02:20.265Z",
   "last_ui_age_display": "1h ago",
-  "queue_note": "Previously queued; actual T4 preflight and training are now confirmed. No restart or parameter change.",
+  "queue_note": "Previously queued; actual T4 training and all five folds have now completed successfully. No restart or recipe change.",
   "preflight": {
     "python": "3.13.15",
     "packages": {
@@ -39,13 +39,49 @@
   "completed_fold_scores": [
     {
       "fold": 1,
-      "balanced_accuracy": 0.231481481
+      "balanced_accuracy": 0.2314814814814815
     },
     {
       "fold": 2,
-      "balanced_accuracy": 0.218518519
+      "balanced_accuracy": 0.2185185185185185
+    },
+    {
+      "fold": 3,
+      "balanced_accuracy": 0.22407407407407406
+    },
+    {
+      "fold": 4,
+      "balanced_accuracy": 0.2222222222222222
+    },
+    {
+      "fold": 5,
+      "balanced_accuracy": 0.24233716475095785
     }
   ],
-  "latest_progress": "Fold 3 epoch 3, update 300/405, latest visible training log",
-  "partial_progress_record": "results/stage_04b/PARTIAL_PROGRESS.json"
+  "latest_progress": "All five fixed three-epoch folds completed; full pooled OOF score recorded.",
+  "partial_progress_record": "results/stage_04b/PARTIAL_PROGRESS.json",
+  "completed_folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "reference_score": 0.35413124533929907,
+  "paired_difference": {
+    "candidate": "deberta_v3_base_final_epoch",
+    "reference": "character_plus_style",
+    "delta_balanced_accuracy": -0.12649266716380814,
+    "lower_95": -0.14692686819472536,
+    "upper_95": -0.1070370370370371,
+    "unit": "prompt_id",
+    "resamples": 2000,
+    "seed": 20261016,
+    "limitation": "Conditional development predictions; no refitting/selection uncertainty or multiplicity correction."
+  },
+  "platform_runtime_seconds": 3022.4,
+  "runner_runtime_seconds": 3002.0589715290002,
+  "decision": "Reject this fixed DeBERTa fine-tuning recipe: all five folds trail the Stage 03 development reference.",
+  "metrics_file": "results/stage_04b/metrics.json",
+  "report": "results/stage_04b/REPORT.md"
 }
