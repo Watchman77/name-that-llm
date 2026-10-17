@@ -1,0 +1,35 @@
+{
+  "status": "COMPLETE_PROVISIONAL_COMPONENT_GAIN",
+  "date": "2026-10-17",
+  "v1": {
+    "script_version_id": 359399756,
+    "runtime_seconds": 155.8,
+    "source_sha256": "ca4f693b451156bd72eb431c829a7af0529f45f3122af09ace6b189e323c1473",
+    "printed_screen_pass": false,
+    "flag_reason": "All warnings incorrectly treated as convergence failures; exact deprecation-only warnings reviewed and preserved."
+  },
+  "v2": {
+    "script_version_id": 359401219,
+    "runtime_seconds": 170.1,
+    "source_sha256": "05451435d19cf590ff76c306866a430a726a4ca0b152fa28b413bd3db17a9d4a",
+    "printed_screen_pass": true,
+    "convergence_warnings": [],
+    "changes": "Reporting, warning categories and V1 score consistency assertions; identical model recipe."
+  },
+  "accelerator": "None",
+  "internet_enabled": false,
+  "private": true,
+  "model_setting_changes_between_runs": false,
+  "all_control_candidate_scenario_scores_reproduced": true,
+  "per_row_npz_equality_independently_verified": false,
+  "primary_mean_gain_pp": 0.6798409147402429,
+  "paired_prompt_95_interval_pp": [
+    0.08602044438174214,
+    1.2962962962962956
+  ],
+  "official_submission_created": false,
+  "official_s02_score_unchanged": 0.549,
+  "paid_services_used": false,
+  "gpu_used": false,
+  "next": "Validate one DeBERTa centered twin with S02 mixed GLM/lexical grouping; no direct ensemble improvement established."
+}
