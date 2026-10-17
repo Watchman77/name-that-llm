@@ -11,7 +11,7 @@ Target first place in the final private evaluation. At the latest 17 October 202
 | 03 — error diagnosis and surface-style features | Complete and Kaggle-verified | Character + style: 35.41%; improved all folds; private offline version 2 succeeded. |
 | 04 — offline pretrained encoders / complementary models | Complete; both fixed experiments rejected | Frozen MPNet: 14.59% alone, 34.12% added. Supervised DeBERTa: 22.76% development BA, below the 35.41% reference in every fold; all five folds completed. |
 | 05 — candidate freeze and competition submission | S02 succeeded at 54.9% official public BA | S01 remains 35.4%. Unchanged public baseline V1 359332774 reproduced 0.549; rank 177/1204 at observation. Final private evaluation and further original improvements remain pending. |
-| 06 — OOF provenance and centering | Protocol prepared; not executed | Audit saved public held-out artifacts before diagnosing S02 errors. Test matched small-group centering only after feature provenance is verified; no new GPU run or submission. |
+| 06 — OOF provenance and centering | One public LoRA component audit complete | CPU V1 359394412 succeeded in 31.1s; all 2,699 held-out predictions reproduced. Plain/combined BA 48.16/53.90% with three-response context. Full S02 inventory and matched-context frozen-head experiment pending; no official submission. |
 | Publication assessment | Pending | Review related work and establish a contribution with stronger independent/nested evaluation. Ranking alone is insufficient. |
 
 ## How each experiment is tracked
