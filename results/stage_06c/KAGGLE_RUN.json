@@ -1,0 +1,51 @@
+{
+  "stage": "06C",
+  "purpose": "Fixed GLM feature cache and one paired mixed-grouping centering confirmation",
+  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06c-mixed-grouping?scriptVersionId=359405443",
+  "logs_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06c-mixed-grouping/log?scriptVersionId=359405443",
+  "script_version_id": 359405443,
+  "version": 1,
+  "visibility": "private",
+  "observed_at_utc": "2026-10-17T15:26:37.552297+00:00",
+  "observed_state": "Queued",
+  "actual_cuda_preflight_observed": false,
+  "output_bytes_observed": 0,
+  "requested_accelerator_ui": "GPU T4 x2",
+  "internet_enabled": false,
+  "included_gpu_hours_remaining_at_launch": 28,
+  "version_export": {
+    "accelerator": "nvidiaTeslaT4",
+    "isGpuEnabled": false,
+    "isInternetEnabled": false,
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358683059
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      }
+    ]
+  },
+  "gpu_export_inconsistency": "Save selected GPU for this session and logs page shows GPU T4 x2, but export says isGpuEnabled=false. Require actual CUDA preflight to establish execution.",
+  "source_sha256": {
+    "stage06c_glm_cache.py": "7a9c88bdd7abf6cc6bda61fb94732ae4c244e9d254dd0cf39c46fc8609ca168b",
+    "stage06c_mixed_confirmation.py": "5c27fcdffde2bcfd512d20fb4edec9bd7133430e79ccd71e31875151d235a23d",
+    "kaggle_stage06c_runner.py": "758535ab835c38c3e29a36195eddf0d2760c1c9b56f1113abd438462b38d73a7"
+  },
+  "glm_layers": [
+    8,
+    3,
+    24
+  ],
+  "new_neural_training": false,
+  "official_submission_created": false,
+  "final_selections_changed": false,
+  "paid_services_used": false,
+  "result": null
+}
