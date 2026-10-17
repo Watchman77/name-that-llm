@@ -2,15 +2,15 @@
 
 ## Competition goal
 
-Target first place in the final private evaluation. At the latest 17 October 2026 check, the public leader scored 0.593 versus S01's 0.354, a 23.9-percentage-point gap (the earlier check was 0.584). This is a time-specific benchmark; the private result can differ. Choose experiments using development evidence rather than repeated public-score tuning. The user's request to adopt stronger public methods is tracked as one frozen external-baseline reproduction, not independent validation or a parameter search.
+Target first place in the final private evaluation. At the latest 17 October 2026 check, S02 scores **0.549**, the public leader **0.593** (4.4 percentage points ahead), and tenth place **0.559** (1.0 point ahead). Current rank is **177 of 1,204 teams**. S01 remains frozen at 0.354. Public standings are time-specific; the final private result is unknown. The user's request to adopt stronger public methods was completed as one frozen external-baseline reproduction, not an original-method claim or parameter search.
 
 | Stage | Status | Evidence / next decision |
 |---|---|---|
 | 01 — data checks and fixed baseline | Complete | 30.19% balanced accuracy; private offline Kaggle version 1 ran successfully. |
 | 02 — word/character comparison | Complete | Word 26.26%, character 30.86%, combined 30.19%. Character lead remains uncertain; retain both references. |
 | 03 — error diagnosis and surface-style features | Complete and Kaggle-verified | Character + style: 35.41%; improved all folds; private offline version 2 succeeded. |
-| 04 — offline pretrained encoders / complementary models | Frozen MPNet rejected; supervised trial running | Actual T4 preflight passed. DeBERTa folds 1–2: 23.15%, 21.85%, below Stage 03 on matching folds. Fold 3 in progress; full pooled result pending. |
-| 05 — candidate freeze and competition submission | S01 complete; S02 hidden-test rerun running | S01 public score 35.4%. Public baseline reproduction V1 359332774 completed preview in 31m 25s, with all stages and anchor checks passed. S02 accepted and shows Notebook Running; its score is pending. |
+| 04 — offline pretrained encoders / complementary models | Complete; both fixed experiments rejected | Frozen MPNet: 14.59% alone, 34.12% added. Supervised DeBERTa: 22.76% development BA, below the 35.41% reference in every fold; all five folds completed. |
+| 05 — candidate freeze and competition submission | S02 succeeded at 54.9% official public BA | S01 remains 35.4%. Unchanged public baseline V1 359332774 reproduced 0.549; rank 177/1204 at observation. Final private evaluation and further original improvements remain pending. |
 | Publication assessment | Pending | Review related work and establish a contribution with stronger independent/nested evaluation. Ranking alone is insufficient. |
 
 ## How each experiment is tracked
@@ -27,6 +27,6 @@ Stage 03 report: `results/stage_03/REPORT.md`.
 
 Stage 04 plan: `plans/STAGE_04_FROZEN_ENCODER.md`.
 Stage 04 report: `results/stage_04/REPORT.md`.
-Next fixed protocol: `plans/STAGE_04B_SUPERVISED_ENCODER.md` (private GPU trial now running; two completed folds, final results pending).
+Completed supervised protocol: `plans/STAGE_04B_SUPERVISED_ENCODER.md`; results: `results/stage_04b/REPORT.md` (22.76%, rejected).
 
-Public reproduction protocol: `plans/STAGE_05_PUBLIC_REPRODUCTION.md` (private offline T4 V1 preview succeeded; official S02 hidden-test rerun running, no new measured accuracy). Complete source review: `results/stage_05/SOURCE_REVIEW.md`. The separate 55.2% public recipe was excluded because its exact scored version requires a private checkpoint.
+Completed public reproduction protocol: `plans/STAGE_05_PUBLIC_REPRODUCTION.md`; official S02 result: `results/submissions/S02_REPORT.md` (0.549). Full source review: `results/stage_05/SOURCE_REVIEW.md`. The separate 55.2% recipe was excluded because its scored version requires a private checkpoint.
