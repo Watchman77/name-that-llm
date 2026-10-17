@@ -4,7 +4,7 @@ Prepared 17 October 2026. Planned only; no execution or result is established by
 
 ## Decision and scope
 
-The next useful endpoint is marginal ensemble benefit. A centering component's balanced accuracy cannot be added to S02's official 54.9%. First inspect the fixed Stage 06C mixed-grouping confirmation. If that candidate fails its declared screen, drop the change. This protocol can still establish a reproducible available-component reference.
+The next useful endpoint is marginal ensemble benefit. A centering component's balanced accuracy cannot be added to S02's official 54.9%. The independent stylegram OOF prerequisite may run on CPU while Stage 06C is queued. Candidate ensemble fusion must wait for the fixed Stage 06C mixed-grouping confirmation. If that candidate fails its declared screen, drop the change. This protocol can still establish a reproducible available-component reference.
 
 Full S02 held-out reconstruction remains blocked by missing Qwen3-8B, Qwen2.5-7B, Qwen3-4B style and desklib passage caches, verified UltraBERT held-out outputs and common-context LoRA centered evidence. Do not label the available-component proxy as full S02.
 
@@ -26,4 +26,6 @@ Compare the same fixed proxy with full-prompt-centered versus size-2/3/6-mixture
 
 S02 weights were fitted using source OOF labels and these prompts have been used repeatedly. Even fixed reuse remains development evidence, not an untouched estimate. No new calibration, component selection or weight fitting is part of this comparison. Learned stacking would require a common nested outer evaluation excluding each scoring prompt from every supervised training step. No leaderboard score or 70% outcome is promised.
 
-No official submission, final-selection change, paid service or new neural training is authorized by this protocol. Commit implementation and provenance checks before execution.
+The first CPU prerequisite runs locally on the original official train.csv and archived baseline_oof.csv fold mapping, checking baseline_folds.csv aggregate counts. Record the local Python, NumPy, SciPy and scikit-learn versions; this is a recipe reproduction rather than a claim of bitwise Kaggle environment parity. Retain full float64 class probabilities in NPZ and a text CSV with round-trip precision, without passage text. Independently reconcile the saved confusion matrix and class recalls with the reported macro recall. The prerequisite's component score cannot select another recipe or establish ensemble gain.
+
+No official submission, final-selection change, paid service or new neural training is part of this protocol. Commit implementation and provenance checks before execution.
