@@ -1,0 +1,8 @@
+{
+  "model_id": "microsoft/deberta-v3-base",
+  "revision": "8ccc9b6f36199bec6961081d44eb72fb3f7353f3",
+  "resources_version_id": 359317729,
+  "original_weight_sha256": "691d48a2800b926a19e3051def466fc2cca4f59a15e42ce4a0cf7f1b380b5e33",
+  "reference_sha256": "15ca5d9d95fead2690a6c81559a3862f12143f83ad65684d1c584a2827e92ab3",
+  "source": "Read from the successful private resources notebook Logs and Output pages. Full resource manifest is preserved in that immutable notebook version."
+}
