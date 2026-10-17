@@ -5,3 +5,5 @@
 - Development validation and the public test use different passages, so the score gap alone does not identify a cause or establish a performance change. Hidden labels and per-class counts are unavailable; do not invent error bars or a per-class explanation for the public score.
 - Select future experiments from fixed-fold development evidence, and log every declared result. Do not tune repeatedly against the public leaderboard or treat its current rank as final placement.
 - A failed rerun is a technical outcome, not a valid model score. Inspect the stated error before any retry, and preserve the original candidate and failure record.
+- Stage 05 trial 01 is a user-requested reproduction of one frozen public baseline (Lucas Boesen V3 359126546), declared before our feedback. The source's 0.549 is not independent development evidence or our score. After technical verification, allow one S02 hidden-test rerun to measure reproduction; do not tune repeated variants against its score. Final-fit public checkpoints cannot be evaluated as untouched models on our training folds.
+
