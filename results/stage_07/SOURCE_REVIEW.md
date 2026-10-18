@@ -1,5 +1,7 @@
 # Stage 07 follow-up review — 18 October 2026
 
+Execution follow-up: the bounded direct-OpenAI subset was admitted for a private, undistributed SVM pilot and Stage 07A has now completed. Its [result](../stage_07a/REPORT.md) is +0.925926 development percentage points with a confidence interval spanning zero; the fixed improvement screen failed. The all-route admission remains unresolved. A fresh repository metadata check also found the repository public, correcting earlier private-repository descriptions; trained models and official row-level prediction artifacts are not published.
+
 **Decision: deprioritize bulk SpeechMap augmentation; prioritize the independently checked 4,068-row `new` subset of prvsiyan's extended V4 for the next admission review.** No model has been fitted and no accuracy gain has been demonstrated. The reason for changing priority is measured data suitability, not a failed training run. Source/use permissions and prompt independence are qualified below, rather than treated as automatically resolved by a dataset title.
 
 ## SpeechMap: provenance stronger, transfer suitability weaker

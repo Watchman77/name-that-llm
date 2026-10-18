@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETED_FIXED_SCREEN_FAILED",
+  "source_freeze_commit": "d903e688bd7accd86bc343b728451ec8ea258382",
+  "official_submission_created": false,
+  "trained_models_serialized_or_distributed": false,
+  "repository_visibility": "public",
+  "aggregate_only_publication": true,
+  "metrics_sha256": "22ba74711704700a24e938ebb7cddc1a55eef0b1795474c1c539fc93b52bff20",
+  "validation_sha256": "4018b11c2f9f781d680bd4a50df70d796c46b1c8a399c6a64fb9ad3f73f8886d",
+  "result": "Retain control; no automatic variant or official submission."
+}

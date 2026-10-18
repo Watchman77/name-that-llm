@@ -1,0 +1,160 @@
+{
+  "stage": "07A_private_openai_route_pilot",
+  "completed_utc": "2026-10-18T14:21:01.092757+00:00",
+  "metric": "official-training development balanced accuracy; not official public score",
+  "scores": {
+    "control": 0.35376087496892866,
+    "candidate": 0.3630201342281879
+  },
+  "delta_percentage_points": 0.9259259259259245,
+  "paired_prompt_bootstrap_95_delta_percentage_points": [
+    -0.0743226447924461,
+    1.9304859234409093
+  ],
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261018,
+  "corrected": 110,
+  "broken": 85,
+  "changed": 466,
+  "folds": [
+    {
+      "fold": 1,
+      "official_training_rows": 2159,
+      "validation_rows": 540,
+      "external_rows": 750,
+      "validation_prompts": 30,
+      "feature_seconds": 4.760431050002808,
+      "control_balanced_accuracy": 0.3351851851851852,
+      "control_fit_seconds": 3.051357978001761,
+      "control_max_iterations": 35,
+      "candidate_balanced_accuracy": 0.3444444444444444,
+      "candidate_fit_seconds": 4.0781919049986755,
+      "candidate_max_iterations": 35
+    },
+    {
+      "fold": 2,
+      "official_training_rows": 2159,
+      "validation_rows": 540,
+      "external_rows": 750,
+      "validation_prompts": 30,
+      "feature_seconds": 4.8998506990028545,
+      "control_balanced_accuracy": 0.33148148148148154,
+      "control_fit_seconds": 2.9500942480008234,
+      "control_max_iterations": 34,
+      "candidate_balanced_accuracy": 0.34259259259259256,
+      "candidate_fit_seconds": 4.333521116001066,
+      "candidate_max_iterations": 36
+    },
+    {
+      "fold": 3,
+      "official_training_rows": 2159,
+      "validation_rows": 540,
+      "external_rows": 750,
+      "validation_prompts": 30,
+      "feature_seconds": 4.400198729003023,
+      "control_balanced_accuracy": 0.37592592592592594,
+      "control_fit_seconds": 2.8469366270001046,
+      "control_max_iterations": 35,
+      "candidate_balanced_accuracy": 0.3962962962962963,
+      "candidate_fit_seconds": 4.054402221998316,
+      "candidate_max_iterations": 35
+    },
+    {
+      "fold": 4,
+      "official_training_rows": 2159,
+      "validation_rows": 540,
+      "external_rows": 750,
+      "validation_prompts": 30,
+      "feature_seconds": 4.501377617998514,
+      "control_balanced_accuracy": 0.3907407407407408,
+      "control_fit_seconds": 2.891808699001558,
+      "control_max_iterations": 35,
+      "candidate_balanced_accuracy": 0.38148148148148153,
+      "candidate_fit_seconds": 3.7412036169989733,
+      "candidate_max_iterations": 36
+    },
+    {
+      "fold": 5,
+      "official_training_rows": 2160,
+      "validation_rows": 539,
+      "external_rows": 750,
+      "validation_prompts": 30,
+      "feature_seconds": 4.848479587002657,
+      "control_balanced_accuracy": 0.33550446998722866,
+      "control_fit_seconds": 2.7811634040044737,
+      "control_max_iterations": 35,
+      "candidate_balanced_accuracy": 0.3503192848020434,
+      "candidate_fit_seconds": 3.85340591899876,
+      "candidate_max_iterations": 35
+    }
+  ],
+  "convergence_warnings": [],
+  "fixed_improvement_screen_passed": false,
+  "decision": "RETAIN_CONTROL_NO_AUTOMATIC_VARIANT",
+  "full_ensemble_tested": false,
+  "official_submission_created": false,
+  "models_serialized": false,
+  "total_seconds": 64.80543954399764,
+  "preflight": {
+    "stage": "07A_private_openai_route_pilot",
+    "seed": 20261018,
+    "official_train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+    "source_clean_sha256": "23f90b6ba4cc83137ce8d48b3b3787439b44867532d63e2fe52f8a5ea49cd1e6",
+    "source_prompts_sha256": "7cc4651b362ceadff4a1fd88dd1f82bad0c84d10b621a236be72c27f1b8f3a52",
+    "style_code_sha256": "8229a8fb4c0839cae8dec2ee50065b4e7863192b329faf0a463016a1055fccd4",
+    "candidate_rows_before_exclusions": 750,
+    "candidate_rows_after_exclusions": 750,
+    "candidate_prompts_after_exclusions": 150,
+    "excluded_external_prompt_ids": [],
+    "full_response_overlap_rows": {
+      "exact": 0,
+      "unicode": 0,
+      "punctuation": 0
+    },
+    "substring_overlap_rows": 0,
+    "shared_8gram_threshold_rows": 0,
+    "max_nearest_official_character_cosine": 0.2330925464630127,
+    "character_similarity_threshold_rows": 0,
+    "candidate_manifest_sha256": "4e3819ddd8a8ab658c9a85750f6da0a91891106220980518b4bf6fdd011787c7",
+    "source": "prvsiyan/prvsiyans-extended-name-that-llm-dataset V4; new clean; direct openai only",
+    "use_scope": "Private undistributed SVM classifier; no generative fine-tune, model serialization or test inference.",
+    "official_validation": "GroupKFold(5) on original prompt_id, all 18 classes",
+    "prompt_review": "150 selected named external topics inspected against 150 reconstructed official topics; no same named topic identified. Top-30 lexical pairs from full candidate corpus separately reviewed. Reconstructions are guesses; semantic independence not certified.",
+    "status": "PREFLIGHT_COMPLETE_NO_FITTING",
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "sklearn": "1.8.0"
+    }
+  },
+  "freeze": {
+    "source_freeze_commit": "d903e688bd7accd86bc343b728451ec8ea258382",
+    "runner_sha256": "bcc2c0a23b67143b8e16532001fc83c7df667829308e5a2579ceafb916ee038d",
+    "style_sha256": "8229a8fb4c0839cae8dec2ee50065b4e7863192b329faf0a463016a1055fccd4",
+    "candidate_manifest_sha256": "4e3819ddd8a8ab658c9a85750f6da0a91891106220980518b4bf6fdd011787c7",
+    "repository_visibility_observed": "public",
+    "trained_models_distributed": false
+  },
+  "artifacts_sha256": {
+    "PREFLIGHT_VALIDATION.json": "b0ddc83e98333ef0e38d584341e37fe965b035cc4a2e092e560884d31c07b5cb",
+    "PROTOCOL.md": "494e0460e9f9ea0189e693b21285c8789aa1e74bfcdf45c7001592689341bf16",
+    "SOURCE_FREEZE.json": "b1130e386fa038755b14d689bee077d094e654cbfccc8bb9777a728f396cba7a",
+    "admitted_ids.csv": "9fc7105808c11ca4d1a87e18a022d5f3ba6ae409525171c8a33d048db32b4be2",
+    "candidate_confusion.csv": "6f15444e196483eaad2b8f54ab0378c19141fe96895eb1b3dc77fd11adf7d3ea",
+    "candidate_manifest.csv": "4e3819ddd8a8ab658c9a85750f6da0a91891106220980518b4bf6fdd011787c7",
+    "control_confusion.csv": "11d896c055dc7ac2c55b4c79237da51873fb01ba0dbaa25895157c19934a617c",
+    "development_margins.npz": "e68bdbe6641988724038edb5a99e9fd88fd07cc8bce366026e186b0bbb1a27fe",
+    "folds.csv": "b589dbca056e03474a182a42f62be88c5d32fe59fc3ccd58fbc0d403f521b363",
+    "oof_predictions.csv": "edfd06e4ad6b4985e0a61c59dd7c0a7511ed56e4b3ccf587d838312cb4c753da",
+    "per_class_recall.csv": "65c5480303c8d262886e3aeae8ef38cad209d14d0810e7c3a8448620b24922ec",
+    "preflight.json": "1bfde1bfd84c487397728b3a1e230c7b5710d801c00cc1c5a966e67563543032"
+  },
+  "limits": [
+    "Conditional prompt bootstrap does not include all model-training uncertainty.",
+    "Official prompt wording is unavailable; reconstructed-topic screening cannot certify semantic independence.",
+    "Five GPT labels receive external data; all 18 classes are evaluated.",
+    "Private classifier use scope does not authorize distributing weights or a generative fine-tune."
+  ]
+}

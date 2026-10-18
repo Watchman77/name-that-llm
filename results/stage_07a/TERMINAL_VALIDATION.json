@@ -1,0 +1,23 @@
+{
+  "validation": "PASS",
+  "method": "separate count-based metric and bootstrap implementation; no refit",
+  "independent_agent_review": false,
+  "official_rows_aligned": 2699,
+  "official_prompt_groups": 150,
+  "fold_assignments_reconciled": true,
+  "all_artifact_hashes_match": true,
+  "scores_recalculated": {
+    "control": 0.35376087496892866,
+    "candidate": 0.3630201342281879
+  },
+  "delta_percentage_points": 0.9259259259259245,
+  "paired_prompt_bootstrap_95_delta_percentage_points": [
+    -0.07432264479244348,
+    1.9304859234409024
+  ],
+  "corrected": 110,
+  "broken": 85,
+  "trained_models_distributed": false,
+  "official_row_level_prediction_artifacts_published": false,
+  "limits": "Validates saved output arithmetic and source fold assignment; does not independently reproduce training or certify semantic prompt independence."
+}

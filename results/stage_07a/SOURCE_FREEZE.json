@@ -1,0 +1,8 @@
+{
+  "source_freeze_commit": "d903e688bd7accd86bc343b728451ec8ea258382",
+  "runner_sha256": "bcc2c0a23b67143b8e16532001fc83c7df667829308e5a2579ceafb916ee038d",
+  "style_sha256": "8229a8fb4c0839cae8dec2ee50065b4e7863192b329faf0a463016a1055fccd4",
+  "candidate_manifest_sha256": "4e3819ddd8a8ab658c9a85750f6da0a91891106220980518b4bf6fdd011787c7",
+  "repository_visibility_observed": "public",
+  "trained_models_distributed": false
+}
