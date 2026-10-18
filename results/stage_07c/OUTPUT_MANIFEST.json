@@ -1,0 +1,47 @@
+{
+  "stage": "07C",
+  "files": {
+    "PROTOCOL.md": {
+      "sha256": "630eddedde075446620989891eceb72eb4e14de9f37dc9bfe2ed9cd6cb834057",
+      "bytes": 4847
+    },
+    "SOURCE_FREEZE.json": {
+      "sha256": "a8d73cd0184072a0a4b3174d3414a14dbd65dbdc205dc083daa20afb8fb6c17a",
+      "bytes": 200
+    },
+    "PREPARATION_VALIDATION.json": {
+      "sha256": "dd308665f8995a1b9c68bb45c860a45e2f7b9e2d9a5424225cfd264d399edea7",
+      "bytes": 343
+    },
+    "result.json": {
+      "sha256": "98a4aa476ae80d90b01c25a4fb50b2ac8b5e7c35446b074958be6c13ed5f0d20",
+      "bytes": 2173
+    },
+    "per_class_recall.csv": {
+      "sha256": "991efba2e7496660c226f24c8efed54fb1b8e834bb363d19450007408d7b0f32",
+      "bytes": 3084
+    },
+    "paired_counts.csv": {
+      "sha256": "b34c5f6ee29b4f1661144d9f1b409f232414989563a0d413556552b342961af8",
+      "bytes": 146
+    },
+    "VALIDATION.json": {
+      "sha256": "16119a7feeac47023e7518fbc2e9d9277b5ce6a06685f2a2da925f1cd3fad829",
+      "bytes": 2429
+    },
+    "STATUS.json": {
+      "sha256": "d861e6e1e8fcb00b1cfb96099f27008b8fed6ab23df590e50f146276b2e9e0ac",
+      "bytes": 600
+    },
+    "REPORT.md": {
+      "sha256": "01007cfc03dbb2d8297c39aa563ba89745673d09491733476f84837b567107b2",
+      "bytes": 5344
+    }
+  },
+  "excluded_from_public_repository": [
+    "original row predictions",
+    "original response text",
+    "binary cache",
+    "trained models"
+  ]
+}

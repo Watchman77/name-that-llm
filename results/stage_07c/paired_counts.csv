@@ -1,0 +1,7 @@
+scenario,baseline,corrected,broken,changed
+1,base,50,55,169
+1,control,9,7,31
+3,base,28,35,111
+3,control,9,9,32
+6,base,30,41,110
+6,control,10,8,30
