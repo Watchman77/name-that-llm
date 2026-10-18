@@ -1,0 +1,46 @@
+{
+  "status": "PASS_INDEPENDENT_INERT_PACKAGE_REVIEW",
+  "observed_utc": "2026-10-18T00:09:18.418034+00:00",
+  "source_files_sha256": {
+    "scripts/build_stage06g_package.py": "fedc6b5cb8da073223457becc1c167c220cb01ad2d2fb50f07b2ecf86a199fc5",
+    "scripts/kaggle_stage06g_runner.py": "646e8d676fc970b1a0aad6a36a34d7c00057a586310b43a0948c82cce60e5e24",
+    "notebooks/Stage_06G_Pair_Complement.ipynb": "44df7de0aeb690a304ebaca2f8f1311c5b9f72f126795903fd45a68de5aaa9d6",
+    "results/stage_06g/EXECUTION_FREEZE.json": "03e1edba96c14ef38183b4de1aac01bbd26bd695e01bf723f9374c546565da62",
+    "results/stage_06g/PACKAGING.json": "f2feb3df530f31797354e6234c2658bdfb77b5133e0013d57ed5ca4f1bd4c0ad"
+  },
+  "module_sha256": {
+    "implementation": "69b0c3fe996759c6bb37589c64a1257cf5d7794dbbc7a73cf5421cf5e8020af4",
+    "source_gate": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+    "plan": "ece986eb6244bd322564cd7fd7a437239e5f74635a2cea2b9a39968bd891b927"
+  },
+  "cell_sha256": [
+    "bb0d1cb7e5b9e41d7eafdaaede17363d8e7aa73de4d6f6aae981ffe91928304e",
+    "2f4199ee0b8df4674dc8a9b101e9d1ec890767ccbd6c5fac6f01d5c17e70c5dc",
+    "a22259458c87ce9f3cab8c511fad0682286218e4e81889b4a14ad6d01e20d4d7",
+    "c5c752b547a88b42265569a6b2a82b0e7f5612604ca4df65671185aa5846d555",
+    "4af3a17e83f9ad457c549f441a2794babb927b9d956d9076c08aa88356d9c8d6"
+  ],
+  "cell_characters": [
+    362,
+    546,
+    770,
+    73437,
+    4454
+  ],
+  "checks": [
+    "Fivecodecells/nullcounts/emptyoutputs/schema and allcodecompile",
+    "Exactnotebookcellconcat equalslinearrunner",
+    "Allsource/plan/freeze literals andmaterializedhashes matchlocalfrozenbytes; manifestself-consistent",
+    "UnchangedFandprospectiveGplan bound; oneimplementation/sourcehash",
+    "Pin170484/359514801; CPU/noGPU/internetoff metadataprojected; actualsavedKagglemetadata stillrequires rootverification",
+    "Exactlyonerunpycall afterfreshroots/materialization readback andCPUthreadlimitpreflight",
+    "Prioroutputrootspreserved; completedcomparisonflagtruthful ifdownstreamdisplayfails",
+    "Figure/tabledisplay followsvalidcompletedcomparison and cannotmodify endpoint"
+  ],
+  "candidate_evaluations_during_review": 0,
+  "source_gate_executions_during_review": 0,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "production_edits_by_reviewer": false,
+  "remaining_gate": "Saved private Kaggle exactsource/input/settings verification and guarded immutable Git freeze before one CPU execution."
+}

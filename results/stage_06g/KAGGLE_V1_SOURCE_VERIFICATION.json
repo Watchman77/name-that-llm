@@ -1,0 +1,58 @@
+{
+  "status": "VERIFIED_SAVED_SOURCE_NOT_EXECUTED",
+  "observed_utc": "2026-10-18T00:11:09.205199+00:00",
+  "script_version_id": 359531282,
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06g-pair-complement?scriptVersionId=359531282",
+  "version_type": "Quick Save",
+  "private_visibility_observed": true,
+  "full_cell_sources_match_reviewed_package": true,
+  "kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceId": 170484,
+        "sourceType": "competition"
+      },
+      {
+        "sourceId": 359514801,
+        "sourceType": "kernelVersion"
+      }
+    ],
+    "isGpuEnabled": false,
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook"
+  },
+  "all_execution_counts_null": true,
+  "all_outputs_empty": true,
+  "cells": [
+    {
+      "index": 0,
+      "sha256": "bb0d1cb7e5b9e41d7eafdaaede17363d8e7aa73de4d6f6aae981ffe91928304e",
+      "characters": 362
+    },
+    {
+      "index": 1,
+      "sha256": "2f4199ee0b8df4674dc8a9b101e9d1ec890767ccbd6c5fac6f01d5c17e70c5dc",
+      "characters": 546
+    },
+    {
+      "index": 2,
+      "sha256": "a22259458c87ce9f3cab8c511fad0682286218e4e81889b4a14ad6d01e20d4d7",
+      "characters": 770
+    },
+    {
+      "index": 3,
+      "sha256": "c5c752b547a88b42265569a6b2a82b0e7f5612604ca4df65671185aa5846d555",
+      "characters": 73437
+    },
+    {
+      "index": 4,
+      "sha256": "4af3a17e83f9ad457c549f441a2794babb927b9d956d9076c08aa88356d9c8d6",
+      "characters": 4454
+    }
+  ],
+  "source_export_sha256": "5def50966a36c0a800ded456e2284c77abc954e4810fd8af7255f6457e08af9a",
+  "candidate_executions": 0,
+  "official_submission_performed": false
+}

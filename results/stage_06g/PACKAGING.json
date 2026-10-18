@@ -1,0 +1,103 @@
+{
+  "status": "PACKAGED_NOT_EXECUTED",
+  "package_schema": "stage06g-five-cell-package-v1",
+  "builder_path": "scripts/build_stage06g_package.py",
+  "builder_sha256": "fedc6b5cb8da073223457becc1c167c220cb01ad2d2fb50f07b2ecf86a199fc5",
+  "source_paths": {
+    "implementation": "scripts/stage06g_pair_complement.py",
+    "source_gate": "scripts/stage06f_pair_diagnostics.py",
+    "plan": "plans/STAGE_06G_PAIR_COMPLEMENT.md"
+  },
+  "source_sha256": {
+    "implementation": "69b0c3fe996759c6bb37589c64a1257cf5d7794dbbc7a73cf5421cf5e8020af4",
+    "source_gate": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+    "plan": "ece986eb6244bd322564cd7fd7a437239e5f74635a2cea2b9a39968bd891b927"
+  },
+  "execution_freeze_path": "results/stage_06g/EXECUTION_FREEZE.json",
+  "execution_freeze_sha256": "03e1edba96c14ef38183b4de1aac01bbd26bd695e01bf723f9374c546565da62",
+  "notebook_path": "notebooks/Stage_06G_Pair_Complement.ipynb",
+  "notebook_sha256": "44df7de0aeb690a304ebaca2f8f1311c5b9f72f126795903fd45a68de5aaa9d6",
+  "linear_runner_path": "scripts/kaggle_stage06g_runner.py",
+  "linear_runner_sha256": "646e8d676fc970b1a0aad6a36a34d7c00057a586310b43a0948c82cce60e5e24",
+  "materialized_files": {
+    "stage06g_pair_complement.py": "69b0c3fe996759c6bb37589c64a1257cf5d7794dbbc7a73cf5421cf5e8020af4",
+    "stage06f_pair_diagnostics.py": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+    "STAGE_06G_PAIR_COMPLEMENT.md": "ece986eb6244bd322564cd7fd7a437239e5f74635a2cea2b9a39968bd891b927",
+    "EXECUTION_FREEZE.json": "03e1edba96c14ef38183b4de1aac01bbd26bd695e01bf723f9374c546565da62"
+  },
+  "cells": [
+    {
+      "index": 0,
+      "characters": 362,
+      "utf8_bytes": 362,
+      "sha256": "bb0d1cb7e5b9e41d7eafdaaede17363d8e7aa73de4d6f6aae981ffe91928304e"
+    },
+    {
+      "index": 1,
+      "characters": 546,
+      "utf8_bytes": 546,
+      "sha256": "2f4199ee0b8df4674dc8a9b101e9d1ec890767ccbd6c5fac6f01d5c17e70c5dc"
+    },
+    {
+      "index": 2,
+      "characters": 770,
+      "utf8_bytes": 770,
+      "sha256": "a22259458c87ce9f3cab8c511fad0682286218e4e81889b4a14ad6d01e20d4d7"
+    },
+    {
+      "index": 3,
+      "characters": 73437,
+      "utf8_bytes": 73437,
+      "sha256": "c5c752b547a88b42265569a6b2a82b0e7f5612604ca4df65671185aa5846d555"
+    },
+    {
+      "index": 4,
+      "characters": 4454,
+      "utf8_bytes": 4454,
+      "sha256": "4af3a17e83f9ad457c549f441a2794babb927b9d956d9076c08aa88356d9c8d6"
+    }
+  ],
+  "validation": {
+    "nbformat_schema": true,
+    "all_five_cells_compile": true,
+    "both_module_sources_compile": true,
+    "linear_source_equals_exact_cell_concatenation": true,
+    "maximum_cell_characters": 190000,
+    "empty_outputs_and_null_execution_counts": true,
+    "exact_materialized_literal_hashes": true,
+    "unchanged_frozen_source_gate_and_plan": true,
+    "no_self_referential_freeze_hash": true
+  },
+  "prospective_kaggle_metadata": {
+    "accelerator": "none",
+    "isGpuEnabled": false,
+    "isInternetEnabled": false,
+    "dataSources": [
+      {
+        "sourceId": 170484,
+        "sourceType": "competition"
+      },
+      {
+        "sourceId": 359514801,
+        "sourceType": "kernelVersion"
+      }
+    ]
+  },
+  "input_version_ids": [
+    170484,
+    359514801
+  ],
+  "accelerator": "none",
+  "internet_enabled": false,
+  "candidate_evaluations_during_packaging": 0,
+  "source_gate_executions_during_packaging": 0,
+  "model_fits_during_packaging": 0,
+  "model_inference_calls_during_packaging": 0,
+  "browser_actions_performed": false,
+  "official_submission_performed": false,
+  "limitations": [
+    "Unexecuted package; no Stage 06G result exists yet.",
+    "Saved immutable source/settings and attached versions need independent pre-execution verification.",
+    "Regenerate after any implementation change; final manifest hashes define launchable source."
+  ]
+}

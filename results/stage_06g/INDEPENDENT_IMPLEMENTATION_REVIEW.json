@@ -1,0 +1,38 @@
+{
+  "status": "PASS_INDEPENDENT_FIXED_METHOD_AND_IMPLEMENTATION_REVIEW",
+  "observed_utc": "2026-10-18T00:08:50.317797+00:00",
+  "source_files_sha256": {
+    "scripts/stage06g_pair_complement.py": "69b0c3fe996759c6bb37589c64a1257cf5d7794dbbc7a73cf5421cf5e8020af4",
+    "scripts/stage06f_pair_diagnostics.py": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+    "plans/STAGE_06G_PAIR_COMPLEMENT.md": "ece986eb6244bd322564cd7fd7a437239e5f74635a2cea2b9a39968bd891b927",
+    "tests/test_stage06g_independent_contract.py": "a474b8ba0d4e477c185ecbb079090fb4733f3518c219a250f418848a5892ae2e"
+  },
+  "independent_fixture_count": 14,
+  "independent_fixture_result": "PASS: python -m unittest discover -s tests -p test_stage06g_independent_contract.py -v",
+  "checks": [
+    "Full prospective fixed plan read; source implements exactly one candidate without fitting,inference,search,calibration,regrouping or rebalance.",
+    "Unchanged F gate and G plan bound to immutable source hashes; input pins170484/359514801 and CPU/offline freeze are verified before source module load and immutable input read.",
+    "Candidate whole-matrix clip/log retains native saved probability dtype; exact ordered pair differences sum with equal coefficient1; no epsilon tie policy.",
+    "Stable descending original raw evidence top-two, original class-index ties; exact pair scope; outside scope/control exact-zero predictions retained.",
+    "Hand fixture confirms2 corrected,2 broken,2 changed-but-still-wrong nonpair destinations; pair-entry mask/nonpair correctness unchanged; source arrays byte-identical.",
+    "Nativefloat32 clipping and margin arithmetic, nonzero nearzero signs, equal-and-opposite exact zero, stable ties and malformed shapes independently tested.",
+    "Full18class generated fixture retains149Fable/150eachother supports, reconciles full confusion matrices and16 unaffected recalls; net+1/context equals1/2700 balanced accuracy rather than1/2699 row accuracy.",
+    "Production asserts scoped source sizes193/196/190, cross68/62/71, correct101/113/101, nonpair24/21/18 before accepting results.",
+    "Corrected/broken/changed-both-wrong reconcile all changes and correct-count/two affected diagonals; nonpair false-entry destinations are separately reported.",
+    "Whole18class score across3 contexts is primary; all class recalls, fold scores and per-prompt counts reported; class harms reported without invented veto.",
+    "Joint150prompt bootstrap has3000draws seed20261017; context mean can be formed before class-specific numerator aggregation because class support is shared across contexts. Opposite context effects cancel exactly in independent synthetic fixture.",
+    "Independent149/150-support bootstrap oracle matches interval exactly; supports are class-specific and jointly resampled across contexts, no row-accuracy shortcut.",
+    "Inherited fixed screen uses strict positive mean and CI lower bound, inclusive context floor>=-0.005, with integrity/numerical assertions completing before result return.",
+    "Fresh-output refusal preserves prior files; corrupt implementation freeze fails before source input read/candidate and records failure.",
+    "Numeric/Unicode NPZ separate candidate/source/scope hashes and exact allow_pickle=False readback enforced; original evidence/probability/source prediction preservation verified.",
+    "Figure is descriptive and downstream of frozen endpoint evaluation; no scores or routing depend on rendering.",
+    "Reused-development selection and conditional uncertainty limitations explicit; no official,fullS02,untouched-validation or70percent achievement claim."
+  ],
+  "real_probability_cache_loaded_during_review": false,
+  "real_candidate_evaluations_during_review": 0,
+  "synthetic_arrays_only": true,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "production_edits_by_reviewer": false,
+  "remaining_gate": "Final generated package literal/hash audit and saved private Kaggle source/settings plus pre-execution Git freeze remain required."
+}

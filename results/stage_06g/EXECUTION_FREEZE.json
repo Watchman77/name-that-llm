@@ -1,0 +1,52 @@
+{
+  "schema_version": "stage06g-execution-freeze-v1",
+  "status": "FROZEN_SOURCE_CANDIDATE_NOT_EXECUTED",
+  "implementation_source_sha256": "69b0c3fe996759c6bb37589c64a1257cf5d7794dbbc7a73cf5421cf5e8020af4",
+  "source_gate_source_sha256": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+  "plan_sha256": "ece986eb6244bd322564cd7fd7a437239e5f74635a2cea2b9a39968bd891b927",
+  "implementation_path": "/kaggle/working/stage06g_sources/stage06g_pair_complement.py",
+  "source_gate_path": "/kaggle/working/stage06g_sources/stage06f_pair_diagnostics.py",
+  "plan_path": "/kaggle/working/stage06g_sources/STAGE_06G_PAIR_COMPLEMENT.md",
+  "input_version_ids": [
+    170484,
+    359514801
+  ],
+  "stage06e_script_version_id": 359514801,
+  "expected_source_input_sha256": {
+    "ensemble_arrays.npz": "9348eeed149ad48bdd828d8055e945f57e384d8917c654125c2ebbe8d4b99519",
+    "ensemble_result.json": "9717bcb12f0c730b4af631067621969dcdbf239e6bed2f84304b470a38458018",
+    "train.csv": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+    "output_manifest.json": "a5fcffaef27f4942af8a679370c30c247b8d872b4b6d711eccc0101ea7006dbd",
+    "raw_control_scenario1_confusion.csv": "a48b61f2a7ffb50764d44bb060adb925e13122abd63fed4730c9ba097685c595",
+    "raw_control_scenario3_confusion.csv": "fae2720b0f34b0bb701bfdffaace99051f0add84d52c91e6973aa6f124299463",
+    "raw_control_scenario6_confusion.csv": "938f3bf5a1ea51fdda8b8a75512810c5c74002063e741feef0d8e5dd614c7513"
+  },
+  "pair": [
+    "gemini-3.7-flash",
+    "gemini-3.8-flash"
+  ],
+  "candidate_count": 1,
+  "member_coefficients": {
+    "tokattn": 1.0,
+    "tokattn_deb": 1.0
+  },
+  "contexts": [
+    1,
+    3,
+    6
+  ],
+  "bootstrap_draws": 3000,
+  "bootstrap_seed": 20261017,
+  "accelerator": "none",
+  "internet_enabled": false,
+  "expected_thread_limits": {
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "planned_model_fits": 0,
+  "planned_model_inference_calls": 0,
+  "planned_regrouping_calls": 0,
+  "official_submission_performed": false,
+  "limitation": "Preparation only. Saved private Kaggle source, pinned inputs, CPU/offline settings and independent review must be verified before execution."
+}
