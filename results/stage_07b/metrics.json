@@ -1,0 +1,168 @@
+{
+  "stage": "07B_matched_class_mass_pilot",
+  "completed_utc": "2026-10-18T14:51:36.293675+00:00",
+  "metric": "original-training held-out-prompt development balanced accuracy; not official public score",
+  "scores": {
+    "control": 0.35376087496892866,
+    "candidate": 0.36561521252796425
+  },
+  "delta_percentage_points": 1.1854337559035588,
+  "paired_prompt_bootstrap_95_delta_percentage_points": [
+    0.29654486701466976,
+    2.074571215510812
+  ],
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261018,
+  "corrected": 95,
+  "broken": 63,
+  "changed": 382,
+  "folds": [
+    {
+      "fold": 1,
+      "official_training_rows": 2159,
+      "validation_rows": 540,
+      "external_rows": 750,
+      "validation_prompts": 30,
+      "feature_seconds": 4.714395106006123,
+      "control_balanced_accuracy": 0.3351851851851852,
+      "control_fit_seconds": 3.0188608289972763,
+      "control_max_iterations": 35,
+      "candidate_balanced_accuracy": 0.35185185185185186,
+      "candidate_fit_seconds": 4.180024228000548,
+      "candidate_max_iterations": 34
+    },
+    {
+      "fold": 2,
+      "official_training_rows": 2159,
+      "validation_rows": 540,
+      "external_rows": 750,
+      "validation_prompts": 30,
+      "feature_seconds": 4.935259406003752,
+      "control_balanced_accuracy": 0.33148148148148154,
+      "control_fit_seconds": 3.2013757140011876,
+      "control_max_iterations": 34,
+      "candidate_balanced_accuracy": 0.3425925925925926,
+      "candidate_fit_seconds": 4.666552365000825,
+      "candidate_max_iterations": 35
+    },
+    {
+      "fold": 3,
+      "official_training_rows": 2159,
+      "validation_rows": 540,
+      "external_rows": 750,
+      "validation_prompts": 30,
+      "feature_seconds": 5.410974343001726,
+      "control_balanced_accuracy": 0.37592592592592594,
+      "control_fit_seconds": 3.12463418799598,
+      "control_max_iterations": 35,
+      "candidate_balanced_accuracy": 0.38703703703703707,
+      "candidate_fit_seconds": 4.634640995995142,
+      "candidate_max_iterations": 35
+    },
+    {
+      "fold": 4,
+      "official_training_rows": 2159,
+      "validation_rows": 540,
+      "external_rows": 750,
+      "validation_prompts": 30,
+      "feature_seconds": 5.564595436997479,
+      "control_balanced_accuracy": 0.3907407407407408,
+      "control_fit_seconds": 2.8435741720022634,
+      "control_max_iterations": 35,
+      "candidate_balanced_accuracy": 0.3944444444444445,
+      "candidate_fit_seconds": 4.201962325001659,
+      "candidate_max_iterations": 34
+    },
+    {
+      "fold": 5,
+      "official_training_rows": 2160,
+      "validation_rows": 539,
+      "external_rows": 750,
+      "validation_prompts": 30,
+      "feature_seconds": 5.0208691470033955,
+      "control_balanced_accuracy": 0.33550446998722866,
+      "control_fit_seconds": 2.583925677994557,
+      "control_max_iterations": 35,
+      "candidate_balanced_accuracy": 0.35217113665389527,
+      "candidate_fit_seconds": 3.5719978920024005,
+      "candidate_max_iterations": 36
+    }
+  ],
+  "convergence_warnings": [],
+  "fixed_improvement_screen_passed": true,
+  "decision": "PROVISIONAL_MATCHED_MASS_SIGNAL_REQUIRES_FRESH_VALIDATION",
+  "full_ensemble_tested": false,
+  "official_submission_created": false,
+  "models_serialized": false,
+  "total_seconds": 67.98744917300064,
+  "preflight": {
+    "stage": "07B_matched_class_mass_pilot",
+    "seed": 20261018,
+    "official_train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+    "source_clean_sha256": "23f90b6ba4cc83137ce8d48b3b3787439b44867532d63e2fe52f8a5ea49cd1e6",
+    "source_prompts_sha256": "7cc4651b362ceadff4a1fd88dd1f82bad0c84d10b621a236be72c27f1b8f3a52",
+    "style_code_sha256": "8229a8fb4c0839cae8dec2ee50065b4e7863192b329faf0a463016a1055fccd4",
+    "candidate_rows_before_exclusions": 750,
+    "candidate_rows_after_exclusions": 750,
+    "candidate_prompts_after_exclusions": 150,
+    "excluded_external_prompt_ids": [],
+    "full_response_overlap_rows": {
+      "exact": 0,
+      "unicode": 0,
+      "punctuation": 0
+    },
+    "substring_overlap_rows": 0,
+    "shared_8gram_threshold_rows": 0,
+    "max_nearest_official_character_cosine": 0.2330925464630127,
+    "character_similarity_threshold_rows": 0,
+    "candidate_manifest_sha256": "4e3819ddd8a8ab658c9a85750f6da0a91891106220980518b4bf6fdd011787c7",
+    "source": "prvsiyan/prvsiyans-extended-name-that-llm-dataset V4; new clean; direct openai only",
+    "use_scope": "Private undistributed SVM classifier; no generative fine-tune, model serialization or test inference.",
+    "official_validation": "GroupKFold(5) on original prompt_id, all 18 classes",
+    "prompt_review": "150 selected named external topics inspected against 150 reconstructed official topics; no same named topic identified. Top-30 lexical pairs from full candidate corpus separately reviewed. Reconstructions are guesses; semantic independence not certified.",
+    "status": "PREFLIGHT_COMPLETE_NO_FITTING",
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "sklearn": "1.8.0"
+    },
+    "weight_policy": "Per-class objective mass matched. Augmented classes: two-thirds official, one-third external. Other classes unchanged.",
+    "earlier_validation_reused": true,
+    "interpretation": "Follow-up diagnostic after observing 07A; not fresh independent validation."
+  },
+  "freeze": {
+    "source_freeze_commit": "5f36fc416b061b058372de5a2cf768cb99d927c7",
+    "runner_sha256": "191698b4fc4f1f818fc798297971e11e0ae5c683452648729bfb77dff9e8b99e",
+    "dependencies_sha256": {
+      "stage07_private_pilot.py": "bcc2c0a23b67143b8e16532001fc83c7df667829308e5a2579ceafb916ee038d",
+      "stage07_corpus_audit.py": "f646107c3522a0f3729e7695cc298dc17a38e2851247cd3624857c01bfe8bd95",
+      "style_features.py": "8229a8fb4c0839cae8dec2ee50065b4e7863192b329faf0a463016a1055fccd4"
+    },
+    "candidate_manifest_sha256": "4e3819ddd8a8ab658c9a85750f6da0a91891106220980518b4bf6fdd011787c7",
+    "prior_oof_sha256": "edfd06e4ad6b4985e0a61c59dd7c0a7511ed56e4b3ccf587d838312cb4c753da",
+    "trained_models_distributed": false
+  },
+  "artifacts_sha256": {
+    "PREFLIGHT_VALIDATION.json": "4e0b43ff0f5d90b80ff046344d8ab1080bc559a8c43a97c5661b2806e4b237ce",
+    "PROTOCOL.md": "4a68f6a98a6be5d80dc839372bfc45c0104f7b0e8725bee9449fef874e56b486",
+    "SOURCE_FREEZE.json": "7ae97d22a8bce77adbefa8e8c75650a9730cdf0334e455e0efb64e86cd9e15c1",
+    "candidate_confusion.csv": "5a8946fbb350c011267f6daae44a13860eabe61d6472792f02fd29cc6f708da2",
+    "candidate_manifest.csv": "4e3819ddd8a8ab658c9a85750f6da0a91891106220980518b4bf6fdd011787c7",
+    "control_confusion.csv": "11d896c055dc7ac2c55b4c79237da51873fb01ba0dbaa25895157c19934a617c",
+    "development_margins.npz": "4be0fdf027ce82348b0c3a9b8dbc45a1d8f800f8098f4bf00d1b7312c6a7cf41",
+    "folds.csv": "a0f147b2819671c2d163530e3582c25ac9420a2f21dbcca698780af838dc3f1e",
+    "oof_predictions.csv": "72d7d43119367ef100511d0f8174b9483ec86bf28bfc7b7e61d8fb599ee1209d",
+    "per_class_recall.csv": "ce26a3a5928fbf158ee060ef019309d220caafdb62827af0e169f9d419b22f7a",
+    "preflight.json": "0826898b4e2b0e86cdf3e0271b070491763034040d7a4d948fd88db0bdcc8b9b",
+    "weight_mass_audit.csv": "dcc86053c2841336c3a64274c86ee32791b15f6f025468752976a9dc8db646c4"
+  },
+  "limits": [
+    "Designed after observing 07A using the same official folds; not an independent confirmation.",
+    "Prompt bootstrap is conditional on fitted folds, not all training uncertainty.",
+    "Official prompt wording is unavailable; reconstruction screening cannot certify semantic independence.",
+    "Only the five GPT labels receive external data, with class mass now matched.",
+    "Undistributed-classifier use assessment does not authorize publishing weights or a generative fine-tune."
+  ]
+}

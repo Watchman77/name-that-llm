@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETED_PROVISIONAL_MATCHED_MASS_SIGNAL",
+  "fixed_development_screen": "PASS",
+  "source_freeze_commit": "5f36fc416b061b058372de5a2cf768cb99d927c7",
+  "independent_confirmation": false,
+  "full_S02_improvement_established": false,
+  "new_official_submission": false,
+  "trained_models_distributed": false,
+  "public_repository_publication": "code and aggregate results only",
+  "metrics_sha256": "57d0fa3b25d70ad12afeddb71ca934cde004831286d869f088b3f40f5b4bde90",
+  "validation_sha256": "1d38473bc13b394fde315da1953b1d2dd864313eec91e70ce11eda7f76898d63"
+}

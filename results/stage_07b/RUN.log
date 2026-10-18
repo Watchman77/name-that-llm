@@ -1,0 +1,38 @@
+{"fold": 1, "official_training_rows": 2159, "validation_rows": 540, "external_rows": 750, "validation_prompts": 30, "feature_seconds": 4.714395106006123, "control_balanced_accuracy": 0.3351851851851852, "control_fit_seconds": 3.0188608289972763, "control_max_iterations": 35, "candidate_balanced_accuracy": 0.35185185185185186, "candidate_fit_seconds": 4.180024228000548, "candidate_max_iterations": 34}
+{"fold": 2, "official_training_rows": 2159, "validation_rows": 540, "external_rows": 750, "validation_prompts": 30, "feature_seconds": 4.935259406003752, "control_balanced_accuracy": 0.33148148148148154, "control_fit_seconds": 3.2013757140011876, "control_max_iterations": 34, "candidate_balanced_accuracy": 0.3425925925925926, "candidate_fit_seconds": 4.666552365000825, "candidate_max_iterations": 35}
+{"fold": 3, "official_training_rows": 2159, "validation_rows": 540, "external_rows": 750, "validation_prompts": 30, "feature_seconds": 5.410974343001726, "control_balanced_accuracy": 0.37592592592592594, "control_fit_seconds": 3.12463418799598, "control_max_iterations": 35, "candidate_balanced_accuracy": 0.38703703703703707, "candidate_fit_seconds": 4.634640995995142, "candidate_max_iterations": 35}
+{"fold": 4, "official_training_rows": 2159, "validation_rows": 540, "external_rows": 750, "validation_prompts": 30, "feature_seconds": 5.564595436997479, "control_balanced_accuracy": 0.3907407407407408, "control_fit_seconds": 2.8435741720022634, "control_max_iterations": 35, "candidate_balanced_accuracy": 0.3944444444444445, "candidate_fit_seconds": 4.201962325001659, "candidate_max_iterations": 34}
+{"fold": 5, "official_training_rows": 2160, "validation_rows": 539, "external_rows": 750, "validation_prompts": 30, "feature_seconds": 5.0208691470033955, "control_balanced_accuracy": 0.33550446998722866, "control_fit_seconds": 2.583925677994557, "control_max_iterations": 35, "candidate_balanced_accuracy": 0.35217113665389527, "candidate_fit_seconds": 3.5719978920024005, "candidate_max_iterations": 36}
+{
+  "stage": "07B_matched_class_mass_pilot",
+  "completed_utc": "2026-10-18T14:51:36.293675+00:00",
+  "metric": "original-training held-out-prompt development balanced accuracy; not official public score",
+  "scores": {
+    "control": 0.35376087496892866,
+    "candidate": 0.36561521252796425
+  },
+  "delta_percentage_points": 1.1854337559035588,
+  "paired_prompt_bootstrap_95_delta_percentage_points": [
+    0.29654486701466976,
+    2.074571215510812
+  ],
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261018,
+  "corrected": 95,
+  "broken": 63,
+  "changed": 382,
+  "convergence_warnings": [],
+  "fixed_improvement_screen_passed": true,
+  "decision": "PROVISIONAL_MATCHED_MASS_SIGNAL_REQUIRES_FRESH_VALIDATION",
+  "full_ensemble_tested": false,
+  "official_submission_created": false,
+  "models_serialized": false,
+  "total_seconds": 67.98744917300064,
+  "limits": [
+    "Designed after observing 07A using the same official folds; not an independent confirmation.",
+    "Prompt bootstrap is conditional on fitted folds, not all training uncertainty.",
+    "Official prompt wording is unavailable; reconstruction screening cannot certify semantic independence.",
+    "Only the five GPT labels receive external data, with class mass now matched.",
+    "Undistributed-classifier use assessment does not authorize publishing weights or a generative fine-tune."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "validation": "PASS",
+  "method": "separate count-based metric and bootstrap implementation; no refit",
+  "independent_agent_review": false,
+  "official_rows_aligned": 2699,
+  "official_prompt_groups": 150,
+  "fold_assignments_reconciled": true,
+  "all_artifact_hashes_match": true,
+  "scores_recalculated": {
+    "control": 0.35376087496892866,
+    "candidate": 0.36561521252796425
+  },
+  "delta_percentage_points": 1.1854337559035588,
+  "paired_prompt_bootstrap_95_delta_percentage_points": [
+    0.2965448670146658,
+    2.074571215510813
+  ],
+  "corrected": 95,
+  "broken": 63,
+  "trained_models_distributed": false,
+  "official_row_level_prediction_artifacts_published": false,
+  "limits": "Validates saved output arithmetic and source fold assignment; does not independently reproduce training or certify semantic prompt independence.",
+  "stage": "07B",
+  "class_mass_audit_all_90_rows": "PASS",
+  "control_identical_to_07A_all_2699_predictions": true,
+  "prior_oof_hash_matches": true,
+  "GPT_prediction_count_control": 770,
+  "GPT_prediction_count_candidate": 831,
+  "earlier_validation_reused": true
+}

@@ -1,0 +1,12 @@
+{
+  "source_freeze_commit": "5f36fc416b061b058372de5a2cf768cb99d927c7",
+  "runner_sha256": "191698b4fc4f1f818fc798297971e11e0ae5c683452648729bfb77dff9e8b99e",
+  "dependencies_sha256": {
+    "stage07_private_pilot.py": "bcc2c0a23b67143b8e16532001fc83c7df667829308e5a2579ceafb916ee038d",
+    "stage07_corpus_audit.py": "f646107c3522a0f3729e7695cc298dc17a38e2851247cd3624857c01bfe8bd95",
+    "style_features.py": "8229a8fb4c0839cae8dec2ee50065b4e7863192b329faf0a463016a1055fccd4"
+  },
+  "candidate_manifest_sha256": "4e3819ddd8a8ab658c9a85750f6da0a91891106220980518b4bf6fdd011787c7",
+  "prior_oof_sha256": "edfd06e4ad6b4985e0a61c59dd7c0a7511ed56e4b3ccf587d838312cb4c753da",
+  "trained_models_distributed": false
+}

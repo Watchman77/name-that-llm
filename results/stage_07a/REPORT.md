@@ -1,5 +1,7 @@
 # Stage 07A completed: private GPT-data augmentation pilot
 
+Authorized follow-up: [Stage 07B](../stage_07b/REPORT.md) has now tested the same source addition with matched per-class mass and passed its prospective development screen. It is a diagnostic follow-up on reused folds, not an independent confirmation. The original 07A protocol, failed screen and result below remain unchanged.
+
 **Decision: retain the control.** The fixed candidate has a higher development point estimate, but failed the prospectively frozen uncertainty screen. No new official submission or full-ensemble result was produced.
 
 | Original held-out-prompt development result | Value |
