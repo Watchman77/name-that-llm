@@ -1,0 +1,11 @@
+{
+  "class_weight_mass": "PASS",
+  "paired_bootstrap_known_contrast": "PASS",
+  "altered_freeze_rejected_before_data_access": "PASS",
+  "runner_compile": "PASS",
+  "real_preflight_passed": true,
+  "model_fitting_started": false,
+  "independent_agent_review": false,
+  "candidate_manifest_bytes": 103296,
+  "candidate_manifest_sha256": "4e3819ddd8a8ab658c9a85750f6da0a91891106220980518b4bf6fdd011787c7"
+}
