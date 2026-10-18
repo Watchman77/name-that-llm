@@ -1,0 +1,8 @@
+{
+  "actual_corpus_audit_completed": true,
+  "publisher_aggregate_reconciliation": "PASS",
+  "tampered_asset_rejection_before_train_read": "PASS",
+  "primary_fable_source_cells_matched": 352,
+  "independent_agent_review": false,
+  "matched_training_executed": false
+}

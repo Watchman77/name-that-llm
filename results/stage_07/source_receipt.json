@@ -1,0 +1,60 @@
+{
+  "retrieved_utc_date": "2026-10-18",
+  "corpus_url": "https://www.kaggle.com/datasets/olegzholobov/name-that-llm-response-corpus",
+  "corpus_version": 1,
+  "corpus_license": "Other (specified in description); underlying sources not relicensed",
+  "reconstructed_prompts_url": "https://www.kaggle.com/datasets/pjmathematician/ntl-train-prompts-reconstructed",
+  "reconstructed_prompts_version": 1,
+  "reconstructed_prompts_are_ground_truth": false,
+  "speechmap_commit": "476ea8f0adf85b737bbb6e38e838448a8d4f2a9b",
+  "speechmap_license": "Apache-2.0 repository declaration independently read",
+  "speechmap_fable_primary_source_spot_check": {
+    "matched_cells": 352,
+    "checks": [
+      "response exact text",
+      "exact user prompt",
+      "returned model ID"
+    ],
+    "limits": "One model and one source file; not an all-model independent authentication."
+  },
+  "receipt_files": {
+    "README.txt": {
+      "bytes": 6198,
+      "sha256": "b9ebb20075b68db741693b306d86bfaffb92885dc371f9643a23e14188abd5bd"
+    },
+    "manifest.json": {
+      "bytes": 2428,
+      "sha256": "276d8f9442de9da2d4c55f8ba80f52ff59ae1a82dabdf942ae015139ee80276a"
+    },
+    "validation.json": {
+      "bytes": 5619,
+      "sha256": "fd0fbb3307a12fe47852e84086275f74a82744776bcc5912f0c219b1820da17e"
+    },
+    "data_dictionary.json": {
+      "bytes": 3182,
+      "sha256": "2faffbc7f2485fa20a3dcce6ae52ff9c12d1c3d99df644cf196c79dab8ddd60d"
+    },
+    "source_catalog.csv": {
+      "bytes": 7151,
+      "sha256": "c1033245fa80f8c0ca01104c8aeb2a76be0b823aec111f0c77d04345faec53d3"
+    },
+    "dataset-view.json": {
+      "bytes": 8987,
+      "sha256": "b0eed0821aa74e45e82a895a44e3e5f55c727e0c14935dcf998a8adc8f44f438"
+    },
+    "reconstructed-view.json": {
+      "bytes": 5231,
+      "sha256": "c2e4c6580a3b114f3d10ee1d555ea7daf95212393dc3c2471d0e85a82583ed15"
+    },
+    "train_prompts_reconstructed.csv": {
+      "bytes": 126042,
+      "sha256": "41357f850c4309528a59f92ecda5323e2b1c2a925eb69dfc87ea92a4f68d6d6e"
+    },
+    "speechmap-fable-source.jsonl": {
+      "bytes": 17119353,
+      "sha256": "8f44980fa97e0797790e279214f3e3d09e890bd70fcc8461b0a24328890ca1f2"
+    }
+  },
+  "raw_passages_persisted_to_repository": false,
+  "competition_full_rules_freshly_retrieved": false
+}

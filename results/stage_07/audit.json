@@ -1,0 +1,55 @@
+{
+  "stage": "07_external_corpus_audit",
+  "dataset": "olegzholobov/name-that-llm-response-corpus",
+  "dataset_version": 1,
+  "snapshot_date": "2026-10-15",
+  "sha256": {
+    "data_dictionary.json": "2faffbc7f2485fa20a3dcce6ae52ff9c12d1c3d99df644cf196c79dab8ddd60d",
+    "validation.json": "fd0fbb3307a12fe47852e84086275f74a82744776bcc5912f0c219b1820da17e",
+    "source_catalog.csv": "c1033245fa80f8c0ca01104c8aeb2a76be0b823aec111f0c77d04345faec53d3",
+    "external_short_wide.parquet": "15a67d022315b2508af8edd749a7c041d42cc37e266106028c73e405659c400f",
+    "external_cell_metadata.parquet": "397af75e5f2809107d0758a147646a68a0132479a6ea77432d86243e92ad9079",
+    "external_cell_provenance.parquet": "906345a4d1f418da63267bf686e1e6847c09f347ecf9eb939860d9aae32abdd6",
+    "external_row_metadata.parquet": "e2ee04939c33afecb9a5d8cbf25daca4e9bed9df354873c6ad054760cc6ce5d6"
+  },
+  "official_train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "wide_rows": 13642,
+  "answer_cells": 24025,
+  "unique_response_ids": 24015,
+  "prompt_groups": 12032,
+  "nonexact_prompt_cells": 22,
+  "response_ids_in_multiple_prompt_groups": 1,
+  "provenance_occurrences": 24110,
+  "observed_word_range": [
+    40,
+    250
+  ],
+  "official_full_response_overlap": {
+    "exact": 0,
+    "unicode_case_whitespace": 0,
+    "punctuation": 0
+  },
+  "normalized_texts_with_multiple_labels": 0,
+  "char_cosine_nearest_max": 0.3386298418045044,
+  "char_cosine_nearest_ge_0_9": 0,
+  "flag_pass_occurrences_NOT_approved": 4510,
+  "flag_pass_unique_responses_NOT_approved": 4446,
+  "flag_pass_model_count_NOT_approved": 10,
+  "speechmap_cells": 8658,
+  "speechmap_unique_responses": 8658,
+  "speechmap_output_terms_review_occurrences": 8658,
+  "license_unknown_short_occurrences": 9039,
+  "output_terms_review_short_occurrences": 10544,
+  "training_started": false,
+  "official_submission_created": false,
+  "decision": "HOLD_FOR_SOURCE_AND_VALIDATION_REVIEW",
+  "limitations": [
+    "Only short-view text and its sidecars independently audited; full corpus text not downloaded.",
+    "Publisher overlap checks are separate claims; our nearest-neighbor check is not semantic independence.",
+    "Official train lacks prompt wording. Reconstructed prompts are guesses, not exact overlap certification.",
+    "Repository Apache license verified for SpeechMap; provider-output terms flag remains unresolved.",
+    "Flag-pass candidates include weaker identity evidence and uneven class/source coverage; not approved data.",
+    "All/short views overlap and must never be concatenated as independent observations.",
+    "No Luna quarantine downloaded or admitted; no hidden-test data or labels used."
+  ]
+}
