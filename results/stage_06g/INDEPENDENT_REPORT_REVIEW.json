@@ -1,0 +1,44 @@
+{
+  "status": "PASS_INDEPENDENT_FINAL_REPORTS_AND_COVERAGE_REVIEW",
+  "observed_utc": "2026-10-18T00:17:37.693284+00:00",
+  "source_files_sha256": {
+    "results/stage_06g/REPORT.md": "f76c543add3258e5a5de6d80b505f335e612b8ad12fa8e09d6d769b2b42a2faa",
+    "results/stage_06g/FINDINGS.md": "6587037380d807f493eff53b2b7957d270167072b840cef2d2a3061b5b6962d4",
+    "results/stage_06g/REPRESENTATION_COVERAGE.md": "38b2282a8950d2f57b81c65794a033793374d1a8a8f0c69d1fd1305a82425f4b",
+    "results/stage_06g/KAGGLE_RUN.json": "c81134efd7dd2f78e75dcabf6098561cbf00bb46169b735adbc93f44dd37d75b",
+    "README.md": "7392ebeebe244e1d43df76796b02de97757f8acabab1f2493afbe6f2fe6c373c",
+    "STAGES.md": "7d93f411e77396e5a7918db234854c97e2f5e8a7401f20debe6a0ee55746cb15",
+    "EXPERIMENTS.md": "badf032f1f3271ab796415a31c7f3137ba35aae56128d247c1c38541e25053ee",
+    "results/stage_06g/INDEPENDENT_TERMINAL_VALIDATION.json": "1216789fab4b34662de8995d6174ccf0cf4288484ad7c80a4a4f6566f2cf793c"
+  },
+  "stage06g_run": 359531626,
+  "development_screen_pass": false,
+  "official_S02_balanced_accuracy_separate": 0.549,
+  "checks": [
+    "REPORT,FINDINGS,runreceipt,README,STAGES and finalEXPERIMENTS entry consistently record one completedCPU comparison, reject the exactfixedrule and preserve unchangedcontrol/official54.9.",
+    "All displayedscores/contextgains/conditionalinterval/fixbreakdestinationcounts/194changes/net12loss/classrecalltradeoffs match independentlyreconciled terminaltables.",
+    "Counts described as repeatedcontextobservations, not uniquepassages. Negativepointestimate and zero-containing conditionalinterval not misrepresented as populationharm.",
+    "Full18 endpoint/scope/nativearithmetic/tie/sourceimmutability preserved; no extraGweight,threshold,contextselection or variant executed.",
+    "Fourteen recoveredartifact bytehashes and exactaggregatepromptbootstrap reproduction accurately described; binaryNPZ,rowIDs,rawmargins remain independentlocal limits.",
+    "Savednotebooktable/chart visualinspection and22.5secondUI status clearly root-observed; originalchart/status/NPZ remain Kaggle-only and no independentbinarybyteclaim made.",
+    "Frozenprospectiveplan unchanged; reportdistinguishes privateQuickmetadata save from actualV2 execution and names the root-verified preexecutionGitfreeze.",
+    "Coverageaudit checked against vendorW/TWIN_W/TWIN_W_LORA/headdefinitions:10nonzero base+5frozen centered+1LoRAcentered=16active S02 evidencebranches; Ehas7.",
+    "Cextractor/GLMmanifestobservation/complete/Ecapture/checks support immutableGLMhash, layers8/3/24, dimensions8192classifier+4096grouping, pooling/tokenization/precision/alignment claims; no newcacheopened or inferred.",
+    "ELECTRA source L21mean+L24style andhistoricallylocated cache correctly distinguished from verified numericcache/headprovenance.",
+    "GLMlead is baselinecoverage reconstruction of an existingS02 member, not novelcompetitivegain. A genuinelynew complement remains unidentified; no newtraining/candidate/plan/paidservice/submission claimed.",
+    "No officialscore/rank/currentleaderboardimprovement claim based on this reused-developmentproxy; no70percent achievement or feasibilitypromise."
+  ],
+  "reported_root_observations_not_independently_browser_verified": [
+    "ActualV2source/settings match toV1",
+    "Privatevisibility",
+    "Kaggleterminal22.5seconds/355.49kB",
+    "Table/chartvisualinspection",
+    "PreexecutionGitfreeze guard/commit"
+  ],
+  "production_source_changed": false,
+  "new_candidate_or_model_executed_by_reviewer": false,
+  "real_probability_cache_loaded_by_reviewer": false,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "reviewer_files_now_frozen": true
+}

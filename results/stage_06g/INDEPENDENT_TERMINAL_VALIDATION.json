@@ -1,0 +1,161 @@
+{
+  "status": "PASS_INDEPENDENT_TERMINAL_AGGREGATE_VALIDATION_CANDIDATE_REJECTED",
+  "observed_utc": "2026-10-18T00:14:10.373241+00:00",
+  "kaggle_script_version_id": 359531626,
+  "kaggle_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06g-pair-complement?scriptVersionId=359531626",
+  "log_sha256": "48443474be97ef0a00325ae419d35cdfe278803a7ab2408fb05cb31cf4da6247",
+  "recovered_artifact_count": 14,
+  "recovered_artifact_sha256": {
+    "candidate_scenario1_confusion.csv": "92ada9441adf311e47b122129e7738330d44e4ab291726269b99b299c72beb14",
+    "candidate_scenario3_confusion.csv": "48350d0929d7e6fc59f0d863c80d08bf58a9daefc730423de7d7289d5509ed0d",
+    "candidate_scenario6_confusion.csv": "ca59fb10af733361212d49f6d633e186de015e285d976d40e1e055e81a527f8c",
+    "class_recall.csv": "741506e293d290fdba566c9569cda531c5d5dbee6c0c2cd1888a8a114c3c32ad",
+    "context_summary.csv": "f5e4e26fba71ceb6d8e22bfadebeeb4d8d3e26b9b0639b74c36952f02cadcce9",
+    "fold_scores.csv": "4e692dbe6a5ed9cc5b9d781f1cb0c187086813f83bb1e12d8bd6c7795134b942",
+    "other_class_false_entries.csv": "168a7d969f12d67298ada7187fe0573e0ce93dafcc6ff99c9c16eeafe47d252f",
+    "pair_complement_result.json": "39df663822687221451491bb95a0797ed4a63ffd18b875fdd54867f663ebf5ad",
+    "prompt_counts.csv": "66ee8b10db50c83b76f41cd737125a4477bf2f4c62accc9d243499600f578d57",
+    "scope_outcomes.csv": "a27cf10f6718d47380eddb820b50c4b596e33fa9e1badea4b7ffa36d6e99b216",
+    "source_gate.json": "9889c927d9f75a77451f25b8575c837b05539aca0a8ac796c7b9c0f31775140c",
+    "source_scenario1_confusion.csv": "331fc903e55c9d97c6ca660c449de822a65ddb7a23d734ebd5cf899a28ca7d45",
+    "source_scenario3_confusion.csv": "c8ba5987d08a74cf6a2c3211a3ad04222e12417efe37607b38572110b2081f62",
+    "source_scenario6_confusion.csv": "a1f262461b5d9ddd2dd25e57019a76fdf1f47d08e0ff1328a378bf44cd213a22"
+  },
+  "output_manifest_sha256": "42c334cd6fb841b1938bed435a029b3400a4289da675f7ba74d6e02c7028e4f4",
+  "source_raw_mean_balanced_accuracy": 0.54812246250725,
+  "candidate_raw_mean_balanced_accuracy": 0.5466409810257685,
+  "primary_mean_gain_pp": -0.14814814814814908,
+  "independent_joint_prompt_95_interval_pp": [
+    -0.6419753086419753,
+    0.3580246913580247
+  ],
+  "development_screen_pass": false,
+  "decision": "Reject this fixed candidate and retain the unchanged control. No variant tested or automatically selected.",
+  "screen_components": {
+    "positive_mean_gain": false,
+    "positive_conditional_lower_bound": false,
+    "all_context_gains_at_least_minus_0_005": true
+  },
+  "per_context": [
+    {
+      "scenario": 1,
+      "corrected": 26,
+      "broken": 30,
+      "changed_both_wrong": 7,
+      "net_correct": -4,
+      "gain_pp": -0.14814814814815
+    },
+    {
+      "scenario": 3,
+      "corrected": 27,
+      "broken": 36,
+      "changed_both_wrong": 6,
+      "net_correct": -9,
+      "gain_pp": -0.33333333333332
+    },
+    {
+      "scenario": 6,
+      "corrected": 29,
+      "broken": 28,
+      "changed_both_wrong": 5,
+      "net_correct": 1,
+      "gain_pp": 0.03703703703703
+    }
+  ],
+  "repeated_context_totals": {
+    "corrected": 82,
+    "broken": 94,
+    "changed_both_wrong_nonpair_destinations": 18,
+    "net_correct": -12
+  },
+  "target_class_mean_recall_change_pp": {
+    "gemini-3.7-flash": 6.8888888888888875,
+    "gemini-3.8-flash": -9.555555555555555
+  },
+  "target_class_reconciliation": [
+    {
+      "model": "gemini-3.7-flash",
+      "support": 150,
+      "source_correct": 57,
+      "candidate_correct": 65,
+      "recall_gain": 0.0533333333333333,
+      "corrected": 15,
+      "broken": 7,
+      "scenario": 1
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "support": 150,
+      "source_correct": 78,
+      "candidate_correct": 66,
+      "recall_gain": -0.08,
+      "corrected": 11,
+      "broken": 23,
+      "scenario": 1
+    },
+    {
+      "model": "gemini-3.7-flash",
+      "support": 150,
+      "source_correct": 60,
+      "candidate_correct": 69,
+      "recall_gain": 0.06,
+      "corrected": 16,
+      "broken": 7,
+      "scenario": 3
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "support": 150,
+      "source_correct": 86,
+      "candidate_correct": 68,
+      "recall_gain": -0.12,
+      "corrected": 11,
+      "broken": 29,
+      "scenario": 3
+    },
+    {
+      "model": "gemini-3.7-flash",
+      "support": 150,
+      "source_correct": 57,
+      "candidate_correct": 71,
+      "recall_gain": 0.0933333333333333,
+      "corrected": 19,
+      "broken": 5,
+      "scenario": 6
+    },
+    {
+      "model": "gemini-3.8-flash",
+      "support": 150,
+      "source_correct": 82,
+      "candidate_correct": 69,
+      "recall_gain": -0.0866666666666666,
+      "corrected": 10,
+      "broken": 23,
+      "scenario": 6
+    }
+  ],
+  "checks": [
+    "Raw live log has one sourcegate/result/manifest/completion, terminalpipelineCOMPLETE and no failedcomparison marker.",
+    "All14 locallyrecoverable runtime artifacts match originalmanifest bytecounts/SHA256; all12 aggregateCSVstrings exactlymatch fullrawlog payloads; result/sourcegate/manifest semanticpayloads match.",
+    "All6 full18 confusion matrices reconciled to exactclasssupports149Fable/150others; sourceconfusions identical to archivedE controls; candidate canchangeonly A/B destinationcolumns; all16 otherdiagonals/recalls unchanged.",
+    "Full18 meanbalancedaccuracy, everycontextgain, corrected/broken/bothwrong totals, class-specifictargetdiagonals, source/candidatepairentrycounts and truepairotherclasserrors independently reconciled.",
+    "False-entry destinationtable, scopepartitions, all15fold counts/gains and450prompt counts/rows reconcile context/classconfusions and originalprompt structure.",
+    "Originaltrain bytesverified; each targetclass occurs exactlyonce in each150prompts. This permits independent class-correct jointbootstrap reduction from aggregateperprompt netcounts.",
+    "Independent3000draw seed20261017 jointprompt bootstrap from recoveredpromptcounts reproduces conditional95interval; no productionbootstrap helper imported or called.",
+    "Fixedscreen fails mean>0 and lowerCI>0; contextfloor passes. Failure is a valid negative developmentresult, not an executionfailure or proof ofpopulationharm.",
+    "Runtime freeze binds exact reviewedG/F/plan sourcehashes and expectedpins/CPUoffline; sourceimmutability and numericUnicodeNPZ readback remain runtimeassertions of independentlyreviewed code.",
+    "No fitting/inference/regrouping/search/officialsubmission/finalselectionchange; officialS02 remains separately54.9."
+  ],
+  "limitations": [
+    "NPZ, row-levelIDs/scope/predictions/native pairmargins and their hashes were not independently reread locally; these remain frozen-runtime asserted and manifest-bound, not separately reproduced from binary.",
+    "context_gain.png and status.json are listed in runtime manifest but were not independently recovered as local artifact bytes.",
+    "Corrected/broken totals are repeated context observations of the same2699passages, not unique passages.",
+    "Pair/member/scope selection used prior reused-development diagnostics; this conditional interval omits refitting, selection and futuredata uncertainty; no official/fullS02/untouched validation improvement claim.",
+    "Browser terminal status22.5seconds and355.49kB output are root-observed; local numeric audit does not independently inspect browser UI."
+  ],
+  "real_candidate_reexecuted_during_independent_validation": false,
+  "candidate_variants_evaluated_during_independent_validation": 0,
+  "official_score_changed": false,
+  "model_fits": 0,
+  "model_inference_calls": 0
+}

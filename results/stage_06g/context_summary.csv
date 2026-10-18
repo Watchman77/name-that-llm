@@ -1,0 +1,4 @@
+scenario,rows,source_balanced_accuracy,candidate_balanced_accuracy,gain,source_correct,candidate_correct,corrected,broken,changed_both_wrong,changed,scope_rows,scope_fraction,scoped_true_pair,scoped_nonpair,exact_tie_scoped,scoped_d_positive,scoped_d_negative,pair_corrected,pair_broken,scoped_nonpair_destination_changes,source_pair_entries,candidate_pair_entries,true_pair_other_top_one_unchanged
+1,2699,0.526380810340542,0.5248993288590604,-0.001481481481481528,1421,1417,26,30,7,63,193,0.07150796591330122,169,24,0,100,93,26,30,7,294,294,71
+3,2699,0.553067362664678,0.5497340293313447,-0.0033333333333332993,1493,1484,27,36,6,69,196,0.07261948869951834,175,21,0,107,89,27,36,6,287,287,67
+6,2699,0.5649192145165299,0.5652895848869003,0.00037037037037035425,1525,1526,29,28,5,62,190,0.07039644312708411,172,18,0,104,86,29,28,5,282,282,67

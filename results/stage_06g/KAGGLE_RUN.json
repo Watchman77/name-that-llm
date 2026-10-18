@@ -1,0 +1,113 @@
+{
+  "status": "COMPLETE_FIXED_ATTENTION_PAIR_COMPLEMENT",
+  "decision": "REJECT_FIXED_CANDIDATE_RETAIN_CONTROL",
+  "observed_utc": "2026-10-18T00:15:51.375408+00:00",
+  "script_version_id": 359531626,
+  "version_ordinal": 2,
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06g-pair-complement?scriptVersionId=359531626",
+  "log_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06g-pair-complement/log?scriptVersionId=359531626",
+  "output_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06g-pair-complement/output?scriptVersionId=359531626",
+  "kaggle_terminal_seconds": 22.5,
+  "displayed_output": "355.49 kB",
+  "accelerator": "none",
+  "gpu_enabled": false,
+  "internet_enabled": false,
+  "private_visibility_observed": true,
+  "input_version_ids": [
+    170484,
+    359514801
+  ],
+  "preexecution_git_commit": "cbdd06c11bb62d72c04781bf7c75bceae08a59fb",
+  "saved_preexecution_quick_version_id": 359531282,
+  "actual_execution_source_all_five_cells_equal_saved_v1": true,
+  "source_sha256": {
+    "implementation": "69b0c3fe996759c6bb37589c64a1257cf5d7794dbbc7a73cf5421cf5e8020af4",
+    "source_gate": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+    "plan": "ece986eb6244bd322564cd7fd7a437239e5f74635a2cea2b9a39968bd891b927"
+  },
+  "source_gate_status": "PASS",
+  "comparison_integrity_gates": {
+    "status": "PASS",
+    "outside_scope_unchanged": true,
+    "changes_toggle_only_target_pair": true,
+    "pair_entry_masks_identical": true,
+    "all_16_nonpair_class_recalls_identical": true,
+    "true_pair_other_top_one_unchanged": true,
+    "counts_and_confusion_diagonals_reconciled": true,
+    "all_protected_source_arrays_unchanged": true,
+    "scope_unchanged": true,
+    "original_source_scope_counts_exact": true,
+    "exact_ties_keep_original": true,
+    "numeric_unicode_npz_allow_pickle_false_exact_readback": true
+  },
+  "source_raw_mean": 0.54812246250725,
+  "candidate_raw_mean": 0.5466409810257685,
+  "primary_mean_gain": -0.001481481481481491,
+  "conditional_prompt_95_interval": [
+    -0.006419753086419751,
+    0.0035802469135802453
+  ],
+  "primary_raw_screen_pass": false,
+  "repeated_context_counts": {
+    "corrected": 82,
+    "broken": 94,
+    "changed_both_wrong": 18,
+    "total_changed": 194,
+    "net_correct": -12
+  },
+  "candidate_count": 1,
+  "model_fits": 0,
+  "model_inference_calls": 0,
+  "regrouping_calls": 0,
+  "parameter_search": false,
+  "official_submission_performed": false,
+  "final_selection_changed": false,
+  "paid_services": false,
+  "best_confirmed_official_s02_balanced_accuracy": 0.549,
+  "score_scope": "Available-component reused-development proxy; no new official score.",
+  "runtime": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3"
+  },
+  "diagnostic_seconds": 1.3372512699999106,
+  "pipeline_seconds": 2.5387620200000356,
+  "log_sha256": "48443474be97ef0a00325ae419d35cdfe278803a7ab2408fb05cb31cf4da6247",
+  "recovered_manifest_verified_files": [
+    "candidate_scenario1_confusion.csv",
+    "candidate_scenario3_confusion.csv",
+    "candidate_scenario6_confusion.csv",
+    "class_recall.csv",
+    "context_summary.csv",
+    "fold_scores.csv",
+    "other_class_false_entries.csv",
+    "pair_complement_result.json",
+    "prompt_counts.csv",
+    "scope_outcomes.csv",
+    "source_gate.json",
+    "source_scenario1_confusion.csv",
+    "source_scenario3_confusion.csv",
+    "source_scenario6_confusion.csv"
+  ],
+  "immutable_kaggle_only_artifacts": [
+    "context_gain.png",
+    "pair_complement_arrays.npz",
+    "status.json"
+  ],
+  "notebook_presentation": {
+    "saved_summary_and_chart_displayed": true,
+    "visual_inspection_completed": true,
+    "chart_counts_and_signs_match_verified_tables": true,
+    "summary_table_additional_columns_require_horizontal_scroll": true
+  },
+  "screenshot_sha256": {
+    "terminal": "54940a49b6472ac2ca5fd28a5962d78c9f16bb6c0ca1c8b4a007675f2b4a3b0a",
+    "notebook_chart": "a2765c7418a79279a6c4400522f6b12a28247bb83550948a7d3353bc26e11914"
+  },
+  "limits": [
+    "Conditional prompt interval independently recomputed from aggregate prompt counts; underlying numeric source/candidate arrays and row margins were not independently reread locally.",
+    "Contexts repeat the same passages; corrected and broken totals are repeated-context observations.",
+    "Pair, members and routing were selected using reused development diagnostics. No full-S02, untouched-validation or official gain is claimed.",
+    "Chart visually inspected in saved notebook; original PNG and status JSON remain immutable Kaggle-only bytes."
+  ]
+}

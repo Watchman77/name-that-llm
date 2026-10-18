@@ -1,0 +1,70 @@
+{
+  "candidate_scenario1_confusion.csv": {
+    "bytes": 1234,
+    "sha256": "92ada9441adf311e47b122129e7738330d44e4ab291726269b99b299c72beb14"
+  },
+  "candidate_scenario3_confusion.csv": {
+    "bytes": 1233,
+    "sha256": "48350d0929d7e6fc59f0d863c80d08bf58a9daefc730423de7d7289d5509ed0d"
+  },
+  "candidate_scenario6_confusion.csv": {
+    "bytes": 1230,
+    "sha256": "ca59fb10af733361212d49f6d633e186de015e285d976d40e1e055e81a527f8c"
+  },
+  "class_recall.csv": {
+    "bytes": 3917,
+    "sha256": "741506e293d290fdba566c9569cda531c5d5dbee6c0c2cd1888a8a114c3c32ad"
+  },
+  "context_gain.png": {
+    "bytes": 58833,
+    "sha256": "b1c94217900192105e0eaf2fdd4e99ea244f85cf002f1c5be558911502a3021e"
+  },
+  "context_summary.csv": {
+    "bytes": 840,
+    "sha256": "f5e4e26fba71ceb6d8e22bfadebeeb4d8d3e26b9b0639b74c36952f02cadcce9"
+  },
+  "fold_scores.csv": {
+    "bytes": 1247,
+    "sha256": "4e692dbe6a5ed9cc5b9d781f1cb0c187086813f83bb1e12d8bd6c7795134b942"
+  },
+  "other_class_false_entries.csv": {
+    "bytes": 1995,
+    "sha256": "168a7d969f12d67298ada7187fe0573e0ce93dafcc6ff99c9c16eeafe47d252f"
+  },
+  "pair_complement_arrays.npz": {
+    "bytes": 131259,
+    "sha256": "590128e287ad4152a058ac50b4f3f7eef39e3109704c6b81418f2ceb780c258c"
+  },
+  "pair_complement_result.json": {
+    "bytes": 14159,
+    "sha256": "39df663822687221451491bb95a0797ed4a63ffd18b875fdd54867f663ebf5ad"
+  },
+  "prompt_counts.csv": {
+    "bytes": 11417,
+    "sha256": "66ee8b10db50c83b76f41cd737125a4477bf2f4c62accc9d243499600f578d57"
+  },
+  "scope_outcomes.csv": {
+    "bytes": 483,
+    "sha256": "a27cf10f6718d47380eddb820b50c4b596e33fa9e1badea4b7ffa36d6e99b216"
+  },
+  "source_gate.json": {
+    "bytes": 1917,
+    "sha256": "9889c927d9f75a77451f25b8575c837b05539aca0a8ac796c7b9c0f31775140c"
+  },
+  "source_scenario1_confusion.csv": {
+    "bytes": 1234,
+    "sha256": "331fc903e55c9d97c6ca660c449de822a65ddb7a23d734ebd5cf899a28ca7d45"
+  },
+  "source_scenario3_confusion.csv": {
+    "bytes": 1233,
+    "sha256": "c8ba5987d08a74cf6a2c3211a3ad04222e12417efe37607b38572110b2081f62"
+  },
+  "source_scenario6_confusion.csv": {
+    "bytes": 1230,
+    "sha256": "a1f262461b5d9ddd2dd25e57019a76fdf1f47d08e0ff1328a378bf44cd213a22"
+  },
+  "status.json": {
+    "bytes": 166,
+    "sha256": "578b0beb214b6c0a7da1d93dbefc46a9e544c71e49fdc19303a1e747f862904e"
+  }
+}

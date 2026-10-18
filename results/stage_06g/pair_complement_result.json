@@ -1,0 +1,411 @@
+{
+  "status": "COMPLETE_FIXED_ATTENTION_PAIR_COMPLEMENT",
+  "pair": [
+    "gemini-3.7-flash",
+    "gemini-3.8-flash"
+  ],
+  "contexts": [
+    1,
+    3,
+    6
+  ],
+  "rows": 2699,
+  "classes": [
+    "claude-fable-5",
+    "claude-opus-4-6",
+    "claude-opus-4-8",
+    "claude-opus-5",
+    "claude-sonnet-5",
+    "gemini-3.1-pro-preview",
+    "gemini-3.6-flash",
+    "gemini-3.7-flash",
+    "gemini-3.8-flash",
+    "glm-5.3",
+    "glm-5.3-flash",
+    "gpt-5.5",
+    "gpt-5.6-luna",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-6-astra",
+    "kimi-k3",
+    "qwen3.8-max"
+  ],
+  "class_supports": [
+    149,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150,
+    150
+  ],
+  "primary_endpoint": "Mean raw rowwise balanced accuracy across all 18 classes and three contexts",
+  "source_script_version_id": 359514801,
+  "diagnostic_selection_script_version_id": 359521305,
+  "fixed_rule": {
+    "members": [
+      "tokattn",
+      "tokattn_deb"
+    ],
+    "member_coefficients": [
+      1.0,
+      1.0
+    ],
+    "probability_clip": [
+      1e-09,
+      1
+    ],
+    "pair_margin_order": "(qwen[A]-qwen[B])+(deb[A]-deb[B])",
+    "top2": "Stable descending unchanged raw-control log evidence; class-index tie order",
+    "scope": "Ordered top two labels exactly the fixed pair",
+    "positive_margin": "A",
+    "negative_margin": "B",
+    "exact_zero": "Retain source prediction"
+  },
+  "source_raw_scores": [
+    0.526380810340542,
+    0.553067362664678,
+    0.5649192145165299
+  ],
+  "candidate_raw_scores": [
+    0.5248993288590604,
+    0.5497340293313447,
+    0.5652895848869003
+  ],
+  "source_raw_mean": 0.54812246250725,
+  "candidate_raw_mean": 0.5466409810257685,
+  "scenario_gains": [
+    -0.001481481481481528,
+    -0.0033333333333332993,
+    0.00037037037037035425
+  ],
+  "primary_mean_gain": -0.001481481481481491,
+  "paired_prompt_95_interval": [
+    -0.006419753086419751,
+    0.0035802469135802453
+  ],
+  "bootstrap": {
+    "mean_gain": -0.001481481481481491,
+    "conditional_prompt_95_interval": [
+      -0.006419753086419751,
+      0.0035802469135802453
+    ],
+    "bootstrap_draws": 3000,
+    "bootstrap_seed": 20261017,
+    "prompt_count": 150,
+    "resampling_unit": "Original prompt, jointly across contexts",
+    "interpretation": "Conditional on fixed reused-development fits, probabilities and routing. Omits refitting, scope selection and future-data uncertainty."
+  },
+  "primary_raw_screen_pass": false,
+  "primary_screen_rule": "Raw mean gain > 0; conditional prompt CI lower > 0; every context gain >= -0.005; all integrity and numerical gates passed. Class harms reported without a post-hoc veto.",
+  "context_summary": [
+    {
+      "scenario": 1,
+      "rows": 2699,
+      "source_balanced_accuracy": 0.526380810340542,
+      "candidate_balanced_accuracy": 0.5248993288590604,
+      "gain": -0.001481481481481528,
+      "source_correct": 1421,
+      "candidate_correct": 1417,
+      "corrected": 26,
+      "broken": 30,
+      "changed_both_wrong": 7,
+      "changed": 63,
+      "scope_rows": 193,
+      "scope_fraction": 0.07150796591330122,
+      "scoped_true_pair": 169,
+      "scoped_nonpair": 24,
+      "exact_tie_scoped": 0,
+      "scoped_d_positive": 100,
+      "scoped_d_negative": 93,
+      "pair_corrected": 26,
+      "pair_broken": 30,
+      "scoped_nonpair_destination_changes": 7,
+      "source_pair_entries": 294,
+      "candidate_pair_entries": 294,
+      "true_pair_other_top_one_unchanged": 71
+    },
+    {
+      "scenario": 3,
+      "rows": 2699,
+      "source_balanced_accuracy": 0.553067362664678,
+      "candidate_balanced_accuracy": 0.5497340293313447,
+      "gain": -0.0033333333333332993,
+      "source_correct": 1493,
+      "candidate_correct": 1484,
+      "corrected": 27,
+      "broken": 36,
+      "changed_both_wrong": 6,
+      "changed": 69,
+      "scope_rows": 196,
+      "scope_fraction": 0.07261948869951834,
+      "scoped_true_pair": 175,
+      "scoped_nonpair": 21,
+      "exact_tie_scoped": 0,
+      "scoped_d_positive": 107,
+      "scoped_d_negative": 89,
+      "pair_corrected": 27,
+      "pair_broken": 36,
+      "scoped_nonpair_destination_changes": 6,
+      "source_pair_entries": 287,
+      "candidate_pair_entries": 287,
+      "true_pair_other_top_one_unchanged": 67
+    },
+    {
+      "scenario": 6,
+      "rows": 2699,
+      "source_balanced_accuracy": 0.5649192145165299,
+      "candidate_balanced_accuracy": 0.5652895848869003,
+      "gain": 0.00037037037037035425,
+      "source_correct": 1525,
+      "candidate_correct": 1526,
+      "corrected": 29,
+      "broken": 28,
+      "changed_both_wrong": 5,
+      "changed": 62,
+      "scope_rows": 190,
+      "scope_fraction": 0.07039644312708411,
+      "scoped_true_pair": 172,
+      "scoped_nonpair": 18,
+      "exact_tie_scoped": 0,
+      "scoped_d_positive": 104,
+      "scoped_d_negative": 86,
+      "pair_corrected": 29,
+      "pair_broken": 28,
+      "scoped_nonpair_destination_changes": 5,
+      "source_pair_entries": 282,
+      "candidate_pair_entries": 282,
+      "true_pair_other_top_one_unchanged": 67
+    }
+  ],
+  "target_class_recalls": [
+    {
+      "scenario": 1,
+      "model": "gemini-3.7-flash",
+      "is_target_pair": true,
+      "support": 150,
+      "source_correct": 57,
+      "candidate_correct": 65,
+      "source_recall": 0.38,
+      "candidate_recall": 0.43333333333333335,
+      "recall_gain": 0.053333333333333344,
+      "corrected": 15,
+      "broken": 7,
+      "changed_both_wrong": 0
+    },
+    {
+      "scenario": 1,
+      "model": "gemini-3.8-flash",
+      "is_target_pair": true,
+      "support": 150,
+      "source_correct": 78,
+      "candidate_correct": 66,
+      "source_recall": 0.52,
+      "candidate_recall": 0.44,
+      "recall_gain": -0.08000000000000002,
+      "corrected": 11,
+      "broken": 23,
+      "changed_both_wrong": 0
+    },
+    {
+      "scenario": 3,
+      "model": "gemini-3.7-flash",
+      "is_target_pair": true,
+      "support": 150,
+      "source_correct": 60,
+      "candidate_correct": 69,
+      "source_recall": 0.4,
+      "candidate_recall": 0.46,
+      "recall_gain": 0.06,
+      "corrected": 16,
+      "broken": 7,
+      "changed_both_wrong": 0
+    },
+    {
+      "scenario": 3,
+      "model": "gemini-3.8-flash",
+      "is_target_pair": true,
+      "support": 150,
+      "source_correct": 86,
+      "candidate_correct": 68,
+      "source_recall": 0.5733333333333334,
+      "candidate_recall": 0.4533333333333333,
+      "recall_gain": -0.12000000000000005,
+      "corrected": 11,
+      "broken": 29,
+      "changed_both_wrong": 0
+    },
+    {
+      "scenario": 6,
+      "model": "gemini-3.7-flash",
+      "is_target_pair": true,
+      "support": 150,
+      "source_correct": 57,
+      "candidate_correct": 71,
+      "source_recall": 0.38,
+      "candidate_recall": 0.47333333333333333,
+      "recall_gain": 0.09333333333333332,
+      "corrected": 19,
+      "broken": 5,
+      "changed_both_wrong": 0
+    },
+    {
+      "scenario": 6,
+      "model": "gemini-3.8-flash",
+      "is_target_pair": true,
+      "support": 150,
+      "source_correct": 82,
+      "candidate_correct": 69,
+      "source_recall": 0.5466666666666666,
+      "candidate_recall": 0.46,
+      "recall_gain": -0.08666666666666661,
+      "corrected": 10,
+      "broken": 23,
+      "changed_both_wrong": 0
+    }
+  ],
+  "source_scope_counts": {
+    "scope_rows": [
+      193,
+      196,
+      190
+    ],
+    "scoped_cross": [
+      68,
+      62,
+      71
+    ],
+    "scoped_correct_pair": [
+      101,
+      113,
+      101
+    ],
+    "scoped_nonpair": [
+      24,
+      21,
+      18
+    ]
+  },
+  "exact_tie_passages_all_rows": 0,
+  "integrity_gates": {
+    "status": "PASS",
+    "outside_scope_unchanged": true,
+    "changes_toggle_only_target_pair": true,
+    "pair_entry_masks_identical": true,
+    "all_16_nonpair_class_recalls_identical": true,
+    "true_pair_other_top_one_unchanged": true,
+    "counts_and_confusion_diagonals_reconciled": true,
+    "all_protected_source_arrays_unchanged": true,
+    "scope_unchanged": true,
+    "original_source_scope_counts_exact": true,
+    "exact_ties_keep_original": true,
+    "numeric_unicode_npz_allow_pickle_false_exact_readback": true
+  },
+  "protected_source_array_sha256": {
+    "prediction_raw_control": "f9d3eaa06562c184cfb1a8beaa7a136fef204fa654d614d98246120c2d533db0",
+    "log_evidence_control": "12671ce9aed8957edc48b4f023432b5dc83ef7d96f7dda431e9f7fe6de9373bc",
+    "raw_probability_control": "6cd9566c2c2d665dfbd6d525b123048a948c441c8e01c56d52b4fee4cb1f8f4a",
+    "probability_tokattn": "c770380b8984257cf5a2bcfa6d41f3ad6df948b4feefa290a64339a90d749180",
+    "probability_tokattn_deb": "977181f409a557f62017fd2517cf25d462920784d350b57c248e94f617a2ca86"
+  },
+  "scope_sha256": "746274d6ba1d49dcb2faa11a55f8ba493910629a18d66742d1d2052b4b421f9b",
+  "saved_array_sha256": {
+    "ids": "fd9fc0e399511981ddf762d48e23fcb4c291382d2d1875f506c8aa83f87a9c04",
+    "classes": "2f6d7411bcab41fef2252ae52ba662699fda7bd70b38e5158d7abe1a6f0ea8c3",
+    "y": "fddc47b45e385efdebe93db48b87bc41eb7655219ba4d5b229c4523769e4f1f2",
+    "prompt_ids": "5f8ff7b3f2b809fe47261051641b57ed838ebbbb4c16f3d89c3bd0a6ff11773b",
+    "fold": "d4f80b66eedba0deb680d55024fe615c8158e563c72648b80fa6657452849c9e",
+    "scenarios": "fd2af1b92833e0746f0c72d1b6aa985174bd0c58e8ee7021682c582b13530cb1",
+    "pair_class_indices": "5e4fd34534d1d8d9bb932dc7c4f921b4c9deca3f1d0c0eb5db8054c9ee7d611c",
+    "source_prediction_raw_control": "f9d3eaa06562c184cfb1a8beaa7a136fef204fa654d614d98246120c2d533db0",
+    "candidate_prediction": "970c8f5cc562422bab9164da356ae83c43fdc738ad732a20b404f01eb38859d5",
+    "scope": "746274d6ba1d49dcb2faa11a55f8ba493910629a18d66742d1d2052b4b421f9b",
+    "ordered_top2": "76cba19b64ade76759115baae99cd1600ef821205d200f133707091da6764506",
+    "qwen_pair_margin": "8d0d77d27047f2fa2b0df540ebcecb8a3f6f5e571f634bdae115343458e2492d",
+    "deb_pair_margin": "8371c76d46f1bdc6f96f4bc7d1289b5482d615fec55249960bb9d5fbf79f555e",
+    "combined_pair_margin": "774dd196ab1111d85ac6f812d9da3caa9f81949f031f2a8990676c3900b2d4e4",
+    "true_pair_mask": "bc358ba7a486b838aaeb2adc4298012821687b28202f608bc54a989f8da2bb57",
+    "source_pair_entry": "ba2fc967612c514e0f648be0d67d1abf51f0f95f6eeda961268f9feca159533e",
+    "candidate_pair_entry": "ba2fc967612c514e0f648be0d67d1abf51f0f95f6eeda961268f9feca159533e",
+    "changed": "877f83d1daa4bf757bc8d13bbcfa4a1e1253488bf09ca099349a5a5002681a8c",
+    "corrected": "c1a8bb2bc1061893ca25f0ac9864c86a644c94651ea51d8fbbc949828e4ef8b7",
+    "broken": "661c9842b6ea3e21070e947eabbf64854a6f03428861585c787626d487eab4e0",
+    "changed_both_wrong": "e3698342697fab80fcd081e1540ad598e7e5107b6d532cafaa734d6a754161d2",
+    "source_confusion": "5b3e635cf06e33bfc003032797e00451d882a54e1108a7d19413495c8e5207b9",
+    "candidate_confusion": "b838cd458966b9fce46d33090b97f47c5ec875e99278f82243e0784a0674f57c"
+  },
+  "source_gate": {
+    "status": "PASS",
+    "immutable_input_hashes": {
+      "train.csv": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+      "ensemble_arrays.npz": "9348eeed149ad48bdd828d8055e945f57e384d8917c654125c2ebbe8d4b99519",
+      "ensemble_result.json": "9717bcb12f0c730b4af631067621969dcdbf239e6bed2f84304b470a38458018",
+      "output_manifest.json": "a5fcffaef27f4942af8a679370c30c247b8d872b4b6d711eccc0101ea7006dbd",
+      "raw_control_scenario1_confusion.csv": "a48b61f2a7ffb50764d44bb060adb925e13122abd63fed4730c9ba097685c595",
+      "raw_control_scenario3_confusion.csv": "fae2720b0f34b0bb701bfdffaace99051f0add84d52c91e6973aa6f124299463",
+      "raw_control_scenario6_confusion.csv": "938f3bf5a1ea51fdda8b8a75512810c5c74002063e741feef0d8e5dd614c7513"
+    },
+    "source_script_version_id": 359514801,
+    "source_canonical_cache_sha256": "2c6aa02a0bafd9389f436a25de70868b581d829bd8e39835b8e2f6a8354a3b2b",
+    "source_static_cache_sha256": "513a889477b8940d5f4a1df304b793361ff3860857e4e846e29e28429d9b3d08",
+    "ordered_ids_labels_prompts_and_folds_exact": true,
+    "exact_raw_evidence_and_predictions": true,
+    "source_confusions_exact": true,
+    "raw_control_scores": [
+      0.526380810340542,
+      0.553067362664678,
+      0.5649192145165299
+    ],
+    "source_raw_mean_balanced_accuracy": 0.54812246250725,
+    "weighted_pair_contribution_sum_atol": 1e-12,
+    "raw_probability_replay_atol": 2e-15,
+    "execution_freeze": {
+      "freeze_sha256": "03e1edba96c14ef38183b4de1aac01bbd26bd695e01bf723f9374c546565da62",
+      "implementation_source_sha256": "69b0c3fe996759c6bb37589c64a1257cf5d7794dbbc7a73cf5421cf5e8020af4",
+      "source_gate_source_sha256": "a8bb68181087640fb563539870840117531a4d57e529cbeaf69e73d4c0a05be7",
+      "plan_sha256": "ece986eb6244bd322564cd7fd7a437239e5f74635a2cea2b9a39968bd891b927",
+      "input_version_ids": [
+        170484,
+        359514801
+      ],
+      "accelerator": "none",
+      "internet_enabled": false
+    }
+  },
+  "fits": 0,
+  "model_inference_calls": 0,
+  "regrouping_calls": 0,
+  "optimization_or_threshold_search": false,
+  "probability_calibration": false,
+  "batch_balancing": false,
+  "single_candidate_evaluated": true,
+  "official_submission": false,
+  "final_selection_changed": false,
+  "paid_services": false,
+  "official_S02_public_balanced_accuracy_separate": 0.549,
+  "runtime": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3"
+  },
+  "seconds": 1.3372512699999106,
+  "limitations": [
+    "Available-component development proxy, not full S02 or an official public score.",
+    "Pair, members and scope selected after reused-development diagnostics; this is not untouched validation.",
+    "Contexts reuse the same passages and fitted members; repeated context counts are not independent passages.",
+    "Prompt interval conditions on fixed evidence and routing; omits refitting, scope-selection and future-data uncertainty.",
+    "A positive development screen supports matched full-system investigation only; no official score change is established.",
+    "Oracle correction of scoped mutual cross-errors is bounded by about 2.4815 proxy percentage points; this narrow rule cannot substantiate 70%."
+  ]
+}
