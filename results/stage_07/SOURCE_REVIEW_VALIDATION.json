@@ -1,0 +1,18 @@
+{
+  "actual_primary_files": 25,
+  "all_primary_fields_match_cells": 8658,
+  "unique_cell_ids": 8658,
+  "unique_response_ids": 8658,
+  "model_aggregate_reconciliation": "PASS",
+  "nonduplicated_selected_rows": "PASS",
+  "scripts_compile": "PASS",
+  "full_cell_table": {
+    "regenerable_not_committed": true,
+    "bytes": 3668373,
+    "sha256": "0598de3b0323d207329aecdfa67118cf205dc2d623b66abff218ed5d83eac1d6"
+  },
+  "independent_agent_review": false,
+  "training_executed": false,
+  "extended_v4_raw_field_matches": 4068,
+  "extended_v4_prompt_pairs_manually_reviewed": 30
+}

@@ -1,0 +1,139 @@
+[
+  {
+    "ref": "haileycheng/name-that-llm-same-prompt-passages",
+    "currentVersionNumber": 2,
+    "licenseName": "Attribution 4.0 International (CC BY 4.0)",
+    "files": [
+      {
+        "name": "passages.csv",
+        "bytes": 979273
+      },
+      {
+        "name": "prompts.csv",
+        "bytes": 23378
+      },
+      {
+        "name": "raw_responses.jsonl",
+        "bytes": 2340821
+      },
+      {
+        "name": "task_code/build_prompts.py",
+        "bytes": 3447
+      },
+      {
+        "name": "task_code/collect.py",
+        "bytes": 4323
+      },
+      {
+        "name": "task_code/fidelity.py",
+        "bytes": 1584
+      },
+      {
+        "name": "task_code/make_task.py",
+        "bytes": 3692
+      },
+      {
+        "name": "task_code/topics.py",
+        "bytes": 11305
+      },
+      {
+        "name": "task_code/train_word_percentiles.json",
+        "bytes": 658
+      }
+    ]
+  },
+  {
+    "ref": "prvsiyan/prvsiyans-extended-name-that-llm-dataset",
+    "currentVersionNumber": 4,
+    "licenseName": "Attribution 4.0 International (CC BY 4.0)",
+    "files": [
+      {
+        "name": "CHANGELOG.md",
+        "bytes": 3390
+      },
+      {
+        "name": "README.md",
+        "bytes": 30734
+      },
+      {
+        "name": "blocks.csv",
+        "bytes": 20814
+      },
+      {
+        "name": "cover_1200x675.png",
+        "bytes": 111668
+      },
+      {
+        "name": "label_summary.csv",
+        "bytes": 8263
+      },
+      {
+        "name": "make_cover.py",
+        "bytes": 4877
+      },
+      {
+        "name": "passages.csv",
+        "bytes": 9644146
+      },
+      {
+        "name": "passages_clean.csv",
+        "bytes": 6768554
+      },
+      {
+        "name": "prompts.csv",
+        "bytes": 242970
+      },
+      {
+        "name": "provenance.jsonl",
+        "bytes": 54242127
+      },
+      {
+        "name": "provenance_summary.json",
+        "bytes": 21962
+      },
+      {
+        "name": "starter_notebook.ipynb",
+        "bytes": 7947
+      },
+      {
+        "name": "train_vs_dataset_stats.csv",
+        "bytes": 4375
+      }
+    ]
+  },
+  {
+    "ref": "prvsiyan/ntl-own-prompt-generations-v1",
+    "currentVersionNumber": 1,
+    "licenseName": "CC BY-SA 4.0",
+    "files": [
+      {
+        "name": "README.md",
+        "bytes": 8030
+      },
+      {
+        "name": "audit_v1.csv",
+        "bytes": 2582
+      },
+      {
+        "name": "calls_v1.jsonl",
+        "bytes": 2799111
+      },
+      {
+        "name": "generated_v1.csv",
+        "bytes": 611637
+      },
+      {
+        "name": "generated_v1.parquet",
+        "bytes": 367639
+      },
+      {
+        "name": "prompt_bank_v1.csv",
+        "bytes": 13857
+      },
+      {
+        "name": "prompt_bank_v1_meta.csv",
+        "bytes": 9627
+      }
+    ]
+  }
+]

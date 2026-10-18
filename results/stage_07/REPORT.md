@@ -1,5 +1,7 @@
 # Stage 07 corpus audit — 18 October 2026
 
+Follow-up: [SOURCE_REVIEW.md](SOURCE_REVIEW.md) records the completed all-model SpeechMap source check, its refusal-heavy distribution, and the stronger extended V4 candidate. The initial audit below is preserved as its earlier checkpoint; it is not the latest candidate recommendation.
+
 The public external corpus is real and accessible without a paid API. Its short-answer view has been downloaded and independently audited. It is not yet an admitted training set. No augmented classifier has been fitted, and no new development or official score exists for this stage. Previously verified best official public balanced accuracy remains S02 0.549; this audit did not recheck the leaderboard.
 
 ## Verified findings

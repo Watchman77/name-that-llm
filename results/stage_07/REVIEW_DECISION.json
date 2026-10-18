@@ -1,0 +1,23 @@
+{
+  "review_date": "2026-10-18",
+  "speechmap": "DEPRIORITIZE_BULK_AUGMENTATION_DUE_TO_MEASURED_DOMAIN_MISMATCH",
+  "extended_v4_new_clean": "PREFERRED_CANDIDATE_ROUTE_ADMISSION_PENDING",
+  "private_classifier_vs_model_distribution": "different use scopes; no blanket all-route approval",
+  "next_experiment": "official-only vs official plus source/route-admitted external responses; original prompt-grouped validation",
+  "training_started": false,
+  "new_score": null,
+  "blocked_on": [
+    "Exact route-level admission and fixed candidate/exclusion manifest before fitting; underlying private Kaggle proxy agreements not established."
+  ],
+  "not_blocked_on": [
+    "Need to cover every label in external data",
+    "Need to reopen laptop",
+    "Need to purchase API access"
+  ],
+  "evidence_status": {
+    "speechmap_primary_cells_matched": 8658,
+    "extended_v4_published_raw_call_rows_matched": 4068,
+    "independent_provider_attestation": false,
+    "semantic_prompt_independence_certified": false
+  }
+}

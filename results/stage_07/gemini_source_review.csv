@@ -1,0 +1,9 @@
+model,source,license_unknown,output_terms_review,cells,marker_occurrences
+gemini-3.6-flash,artificialanalysis_microevals,True,False,2,0
+gemini-3.6-flash,petergpt/bullshit-benchmark,False,True,14,1
+gemini-3.6-flash,speechmap,False,True,67,67
+gemini-3.7-flash,artificialanalysis_microevals,True,False,11,1
+gemini-3.7-flash,petergpt/bullshit-benchmark,False,True,24,0
+gemini-3.7-flash,speechmap,False,True,42,42
+gemini-3.8-flash,artificialanalysis_microevals,True,False,24,0
+gemini-3.8-flash,speechmap,False,True,47,47

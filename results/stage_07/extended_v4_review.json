@@ -1,0 +1,83 @@
+{
+  "dataset": "prvsiyan/prvsiyans-extended-name-that-llm-dataset",
+  "version": 4,
+  "scope": "new split in passages_clean.csv only; proxy_v1 and all other splits excluded",
+  "rows": 4068,
+  "prompt_groups": 226,
+  "models": 18,
+  "per_class_rows": 226,
+  "all_rows_have_published_call_envelopes": true,
+  "raw_fields_matching_rows": 4068,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "raw_text_exact_rows": 4068,
+  "raw_text_comparison_policy": "Whitespace normalization only; no spelling, punctuation or content edits.",
+  "raw_call_evidence_limit": "Publisher-supplied logs; no independent provider attestation.",
+  "exact_duplicate_passages": 0,
+  "normalized_duplicate_passages": 0,
+  "official_full_response_overlap": {
+    "exact": 0,
+    "unicode_case_whitespace": 0,
+    "punctuation": 0
+  },
+  "opening_refusal_markers": 1,
+  "routes": {
+    "anthropic": 1130,
+    "openrouter": 944,
+    "openai": 750,
+    "google": 720,
+    "kaggle_proxy": 524
+  },
+  "gemini_37_routes": {
+    "google": 226
+  },
+  "gemini_37_raw_served_versions": {
+    "gemini-3.7-flash": 226
+  },
+  "files": {
+    "README.md": {
+      "bytes": 30734,
+      "sha256": "4d4468a6c1e9eb690f6054bf0bfb8c1382a342ee9bb78c9df9f28adf39e4637e"
+    },
+    "label_summary.csv": {
+      "bytes": 8263,
+      "sha256": "4b0e779f510c12f4a1438b782ae130619391fa18e6cfb70cd708b555eff410f4"
+    },
+    "passages_clean.csv": {
+      "bytes": 6768554,
+      "sha256": "23f90b6ba4cc83137ce8d48b3b3787439b44867532d63e2fe52f8a5ea49cd1e6"
+    },
+    "prompts.csv": {
+      "bytes": 242970,
+      "sha256": "7cc4651b362ceadff4a1fd88dd1f82bad0c84d10b621a236be72c27f1b8f3a52"
+    },
+    "provenance.jsonl": {
+      "bytes": 54242127,
+      "sha256": "ddc69f2c221d921f928bf7785b5971d9763eaa136815c5968a83760994e405f3"
+    },
+    "provenance_summary.json": {
+      "bytes": 21962,
+      "sha256": "db24677391fc5390dc70149c530d3fda7e2a4ef7cb3082771817fc8e2e3e2c6a"
+    },
+    "train_vs_dataset_stats.csv": {
+      "bytes": 4375,
+      "sha256": "cd7e9bfaaa61197dcb26d2eef4a3c8430594e6f21205cbbdd38163edad317610"
+    }
+  },
+  "decision": "BETTER_DOMAIN_CANDIDATE_REQUIRES_PROMPT_AND_ROUTE_REVIEW",
+  "training_performed": false,
+  "accuracy_improvement_demonstrated": false,
+  "limitations": [
+    "Prompt independence cannot be certified from guessed official instructions; separate lexical/manual review is recorded alongside this artifact.",
+    "Source CC BY 4.0 declaration does not resolve every underlying route/provider agreement.",
+    "No per-label typography normalization or automatic parameter tuning authorized by this review.",
+    "Measured Gemini em-dash distribution differs from official train; labels alone do not ensure matching generation settings."
+  ],
+  "additional_review": {
+    "lexical_prompt_groups_screened": 226,
+    "closest_prompt_pairs_manually_reviewed": 30,
+    "confirmed_same_prompt_pairs_in_reviewed_set": 0,
+    "max_lexical_prompt_cosine": 0.1021757406,
+    "single_refusal_regex_hit_manual_result": "False positive: learned-helplessness explanation, not a refusal"
+  }
+}

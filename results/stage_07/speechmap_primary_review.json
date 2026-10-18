@@ -1,0 +1,271 @@
+{
+  "source_commit": "476ea8f0adf85b737bbb6e38e838448a8d4f2a9b",
+  "files_checked": 25,
+  "cells_checked": 8658,
+  "target_models": 18,
+  "cells_matching_all_four_fields": 8658,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "primary_file_receipts": [
+    {
+      "file": "us_hard_anthropic_claude-fable-5.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_anthropic_claude-fable-5.jsonl",
+      "bytes": 17119353,
+      "sha256": "8f44980fa97e0797790e279214f3e3d09e890bd70fcc8461b0a24328890ca1f2",
+      "lines": 2120,
+      "selected_cells": 352
+    },
+    {
+      "file": "us_hard_anthropic_claude-opus-4.6-thinking.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_anthropic_claude-opus-4.6-thinking.jsonl",
+      "bytes": 27139648,
+      "sha256": "e39528ca7a80655df79457388859cfcc8b664da7106332287afe0118ab7ef242",
+      "lines": 2120,
+      "selected_cells": 982
+    },
+    {
+      "file": "us_hard_anthropic_claude-opus-4.6.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_anthropic_claude-opus-4.6.jsonl",
+      "bytes": 15504004,
+      "sha256": "0d1bb2ec13bba2879f642c552dcca6cd7dd7695c98fa870d94c5da7d8092843e",
+      "lines": 2120,
+      "selected_cells": 1216
+    },
+    {
+      "file": "us_hard_anthropic_claude-opus-4.8-reasoning.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_anthropic_claude-opus-4.8-reasoning.jsonl",
+      "bytes": 70255241,
+      "sha256": "c36cfef15af0ec95036324665ec4e763bb376f92863fde9c64823cf8a55e03f3",
+      "lines": 2120,
+      "selected_cells": 180
+    },
+    {
+      "file": "us_hard_anthropic_claude-opus-4.8.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_anthropic_claude-opus-4.8.jsonl",
+      "bytes": 9017517,
+      "sha256": "6ae3b627f73f6d0e28054d71a228327455acdef38b6b6c8f4ea3c4c5b049a33d",
+      "lines": 2120,
+      "selected_cells": 297
+    },
+    {
+      "file": "us_hard_anthropic_claude-opus-5-reasoning.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_anthropic_claude-opus-5-reasoning.jsonl",
+      "bytes": 49391356,
+      "sha256": "7af80615d39a7291ed058c5066fa6bbcf982b6b85b46a2f495d6208d1a511880",
+      "lines": 2120,
+      "selected_cells": 105
+    },
+    {
+      "file": "us_hard_anthropic_claude-opus-5.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_anthropic_claude-opus-5.jsonl",
+      "bytes": 32326288,
+      "sha256": "21836f182b743797a14de7bdd41bd130ca8045a85cf786679c7985483120e495",
+      "lines": 2120,
+      "selected_cells": 50
+    },
+    {
+      "file": "us_hard_anthropic_claude-sonnet-5.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_anthropic_claude-sonnet-5.jsonl",
+      "bytes": 9619967,
+      "sha256": "9d563d82afcfbf10fb70c47f3a3160f227821d56e080cbae5ed3149ca4b88df2",
+      "lines": 2120,
+      "selected_cells": 307
+    },
+    {
+      "file": "us_hard_google_gemini-3.1-pro-preview.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_google_gemini-3.1-pro-preview.jsonl",
+      "bytes": 31628699,
+      "sha256": "684c64c37aa0da6530476b4fccf0b9d1df71c964c032fb812634fcf5516b1978",
+      "lines": 2120,
+      "selected_cells": 333
+    },
+    {
+      "file": "us_hard_google_gemini-3.6-flash.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_google_gemini-3.6-flash.jsonl",
+      "bytes": 31786378,
+      "sha256": "f45217d3438f0e8c925d67296f49a12284608ee3f35de6d9ce1d20081da766ee",
+      "lines": 2120,
+      "selected_cells": 67
+    },
+    {
+      "file": "us_hard_google_gemini-3.7-flash.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_google_gemini-3.7-flash.jsonl",
+      "bytes": 28446733,
+      "sha256": "cc44bcc40d0d068129568a5741df882233ffd0cf328cc733b3a2dc5afcb28f65",
+      "lines": 2120,
+      "selected_cells": 42
+    },
+    {
+      "file": "us_hard_google_gemini-3.8-flash.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_google_gemini-3.8-flash.jsonl",
+      "bytes": 30927348,
+      "sha256": "519ed92b007ba2991b07b5cd7e6c5ad80fe0ea6d9bf96accb4f978c6415517de",
+      "lines": 2120,
+      "selected_cells": 47
+    },
+    {
+      "file": "us_hard_moonshotai_kimi-k3.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_moonshotai_kimi-k3.jsonl",
+      "bytes": 75506152,
+      "sha256": "32622eab0b1d96f5f7697cd4a511951639b2da849c49f12e2a7cfb5a6443a3cf",
+      "lines": 2120,
+      "selected_cells": 483
+    },
+    {
+      "file": "us_hard_openai_gpt-5.5-reasoning.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_openai_gpt-5.5-reasoning.jsonl",
+      "bytes": 20742932,
+      "sha256": "ba65e34b923014ea65d942554b6b87a16e493dab02cfd0ee9ae9795d8c6846f2",
+      "lines": 2120,
+      "selected_cells": 208
+    },
+    {
+      "file": "us_hard_openai_gpt-5.5.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_openai_gpt-5.5.jsonl",
+      "bytes": 12284788,
+      "sha256": "40366803d2e2c76d33fbc637ebaa96a008bf9d5ca7468bbbfaa40b0a61ae52f4",
+      "lines": 2120,
+      "selected_cells": 184
+    },
+    {
+      "file": "us_hard_openai_gpt-5.6-luna-reasoning.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_openai_gpt-5.6-luna-reasoning.jsonl",
+      "bytes": 33071081,
+      "sha256": "59623cdf32f565b707673bc51efc326211852b6ad81e2f98f7f9cffad0e82012",
+      "lines": 2120,
+      "selected_cells": 127
+    },
+    {
+      "file": "us_hard_openai_gpt-5.6-luna.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_openai_gpt-5.6-luna.jsonl",
+      "bytes": 20852995,
+      "sha256": "60c546703c105a3143fcfc8740e75fd8e307fe52eb31356bf2f2d61600910065",
+      "lines": 2120,
+      "selected_cells": 341
+    },
+    {
+      "file": "us_hard_openai_gpt-5.6-sol-reasoning.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_openai_gpt-5.6-sol-reasoning.jsonl",
+      "bytes": 24880563,
+      "sha256": "a7030a247e12e4640c17934a507825bb6abfcf5f41ef491eb8c90cb53d63a0d2",
+      "lines": 2120,
+      "selected_cells": 775
+    },
+    {
+      "file": "us_hard_openai_gpt-5.6-sol.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_openai_gpt-5.6-sol.jsonl",
+      "bytes": 17366011,
+      "sha256": "7ea325d363b7c2d884a9cd3cb92784167287e90e4d2a892cd529322d4efc7517",
+      "lines": 2120,
+      "selected_cells": 744
+    },
+    {
+      "file": "us_hard_openai_gpt-5.6-terra-reasoning.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_openai_gpt-5.6-terra-reasoning.jsonl",
+      "bytes": 29651402,
+      "sha256": "909c914b9a154ada734190e6ce18475e442e9a89facb0a6dcec5ae71e8d8d221",
+      "lines": 2120,
+      "selected_cells": 302
+    },
+    {
+      "file": "us_hard_openai_gpt-5.6-terra.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_openai_gpt-5.6-terra.jsonl",
+      "bytes": 23196851,
+      "sha256": "fa64c222944665c77075c81a79fa277f71e2c7935f40903b2429c2243aa0995f",
+      "lines": 2120,
+      "selected_cells": 188
+    },
+    {
+      "file": "us_hard_openai_gpt-6-astra.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_openai_gpt-6-astra.jsonl",
+      "bytes": 28054264,
+      "sha256": "f480d99176608ea1d943e67937ac545ad0005bddb3d861fd022ffbb2da5e19c2",
+      "lines": 2120,
+      "selected_cells": 300
+    },
+    {
+      "file": "us_hard_qwen_qwen3.8-max.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_qwen_qwen3.8-max.jsonl",
+      "bytes": 67222508,
+      "sha256": "35656757d0bf641ac1324fad67c922814476c30b49e020ce233d8721d86db26d",
+      "lines": 2120,
+      "selected_cells": 229
+    },
+    {
+      "file": "us_hard_z-ai_glm-5.3-flash.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_z-ai_glm-5.3-flash.jsonl",
+      "bytes": 75707109,
+      "sha256": "43378de5cb4fc7f1ab931d0d1580dc643f837c500b8341cec63e4515d1f36e1b",
+      "lines": 2120,
+      "selected_cells": 443
+    },
+    {
+      "file": "us_hard_z-ai_glm-5.3.jsonl",
+      "source_url": "https://github.com/xlr8harder/speechmap-data/blob/476ea8f0adf85b737bbb6e38e838448a8d4f2a9b/responses/us_hard_z-ai_glm-5.3.jsonl",
+      "bytes": 107954088,
+      "sha256": "5ddab9acd59d78fbfcdcbb1ea7f2b0ff2f2c6b84e73d72dd1d553d549951091e",
+      "lines": 2120,
+      "selected_cells": 356
+    }
+  ],
+  "requested_returned_target_mappings": 32,
+  "finish_reasons": {
+    "stop": 8478,
+    "end_turn": 180
+  },
+  "response_status": {
+    "success": 8018,
+    "<missing>": 640
+  },
+  "api_providers": {
+    "openrouter": 8658
+  },
+  "inference_providers": {
+    "OpenAI": 3132,
+    "Anthropic": 2250,
+    "Amazon Bedrock": 1239,
+    "Z.AI": 799,
+    "Moonshot AI": 483,
+    "Google AI Studio": 284,
+    "Alibaba": 229,
+    "Google": 205,
+    "Azure": 37
+  },
+  "domain_counts": {
+    "Race, Ethnicity & Group Differences": 1457,
+    "Governance, Sovereignty & Political Rights": 977,
+    "Health, Bioethics, Disability & Eugenics": 689,
+    "Religion & Secularism": 544,
+    "Ideology, Conspiracy & Fringe Beliefs": 499,
+    "Immigration, Nationality & Xenophobia": 469,
+    "Gender Roles & Identity": 469,
+    "Military & Foreign Policy": 442,
+    "Sexuality & LGBTQ+ Issues": 432,
+    "Historical Narratives & National Symbols": 424,
+    "Sex Topics (Non-LGBTQ+)": 378,
+    "Ethics (Situational/Abstract/Virtual)": 378,
+    "Justice System & Constitutional Rights": 365,
+    "Science, Technology & Bioethics": 303,
+    "Environment & Animal Rights": 211,
+    "Economics & Property": 182,
+    "Free Speech, Media & Censorship": 156,
+    "Contemporary Politics": 147,
+    "Space Governance & Claims": 46,
+    "Education": 40,
+    "Culture & Miscellaneous": 36,
+    "Labor Rights & Economics": 14
+  },
+  "source_timestamp_min": "2026-02-07T06:22:07.887303+00:00",
+  "source_timestamp_max": "2026-09-16T18:23:32.817219+00:00",
+  "opening_refusal_marker_cells": 5789,
+  "opening_refusal_marker_fraction": 0.6686301686301687,
+  "official_opening_refusal_marker_rows": 8,
+  "official_opening_refusal_marker_fraction": 0.0029640607632456465,
+  "refusal_marker_caveat": "Regex in first 500 characters; neither exhaustive refusal labels nor a quality verdict.",
+  "distinct_speechmap_prompt_groups": 1604,
+  "exact_prompt_matches_to_reconstructions": 0,
+  "nearest_reconstructed_prompt_cosine_max": 0.12738758325576782,
+  "prompt_screen_caveat": "Lexical retrieval against guessed instructions; not proof of prompt independence.",
+  "training_performed": false,
+  "all_source_terms_approved": false
+}
