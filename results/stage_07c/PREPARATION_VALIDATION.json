@@ -1,0 +1,9 @@
+{
+  "consumer_sha256": "5daac0ce119ddfcb777f9ebe717b3b98a120cda9a612d7e676fac6a0ffb459c7",
+  "fixed_vote_formula_fixture": "PASS",
+  "invalid_class_fixture": "PASS",
+  "joint_context_prompt_bootstrap_known_contrast": "PASS",
+  "compile": "PASS",
+  "actual_cache_validation": "NOT_RUN_ACCESS_UNAVAILABLE",
+  "independent_agent_review": false
+}
