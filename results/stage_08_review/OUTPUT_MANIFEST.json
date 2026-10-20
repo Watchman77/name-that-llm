@@ -1,0 +1,66 @@
+{
+  "files": {
+    "results/stage_08_review/AUTHOR_DESCRIPTION.txt": {
+      "sha256": "c8cdac224465bd4ff544810eaa14384fdb64e1ae6bc5994df79002f7051b6bd2",
+      "bytes": 9464
+    },
+    "results/stage_08_review/AUTHOR_PREVIEW_LOG.txt": {
+      "sha256": "92bc4d02e8654546ee3debc39411c348041d1c2ded0a658c7e2949e4a6a5fc91",
+      "bytes": 19622
+    },
+    "results/stage_08_review/DATA_REVIEW.md": {
+      "sha256": "aa35fdcbe425a43720c5007670abe1e1fde4919bcf0f45964111868a4941a0fe",
+      "bytes": 8376
+    },
+    "results/stage_08_review/KAGGLE_PREPARATION.json": {
+      "sha256": "2ffec2e7ac9ff4605c158307d7aaf77f152183b4f21caea7190ba39f76aadcda",
+      "bytes": 2424
+    },
+    "results/stage_08_review/LICENSE-APACHE-2.0.txt": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "results/stage_08_review/NOTICE.md": {
+      "sha256": "4e92d7faaa91fb94e744d5dab9e0ee93b8716c2d780ad6a6c37176acb61dc580",
+      "bytes": 1921
+    },
+    "results/stage_08_review/PREFLIGHT_SYNTHETIC_VALIDATION.json": {
+      "sha256": "e5eb907e4d9c112ce11f88b7b0d8d5e11e50a3eb93e88d8044e27cfb54527c0a",
+      "bytes": 750
+    },
+    "results/stage_08_review/REPORT.md": {
+      "sha256": "9b82463b097d4ab78e67cef4711bbac6fbfaf95395ac2e13a6c4cbdcc485d8bb",
+      "bytes": 7552
+    },
+    "results/stage_08_review/SOURCE_CODE_REVIEW.md": {
+      "sha256": "f4b493291086e125b9999f052f98e2c5d3dabf8b014c2d628d53edec95c33d70",
+      "bytes": 10919
+    },
+    "results/stage_08_review/STATUS.json": {
+      "sha256": "f48954944d61514124f58d2ab836f4b875461cdbe1e9434ab031c1b0212e8b08",
+      "bytes": 290
+    },
+    "results/stage_08_review/UI_VERSION_COMPARISON.json": {
+      "sha256": "239b04f09ab410d34f3bfe0edaba197d92696a5113fe22ab02159ad33c486710",
+      "bytes": 4839
+    },
+    "results/stage_08_review/prepared_notebook.png": {
+      "sha256": "ec62b025192a3f8ac9c8ca4f22886837ab51e5959614766eda000aa96cafb50e",
+      "bytes": 150733
+    },
+    "results/stage_08_review/public600_v20.py": {
+      "sha256": "456f6c023ce6f997c0c42a5489dda18ee3185142d31782184e1307e0a35f9dd7",
+      "bytes": 71642
+    },
+    "results/stage_08_review/public600_v20_embedded_stack.py": {
+      "sha256": "b3388879ecf798ad32e42b18b8be3a3157a6ed252e53df7a6c948b8374202d76",
+      "bytes": 48894
+    },
+    "scripts/stage08_input_preflight.py": {
+      "sha256": "a2f31d11b292b0846dd28662ec6c8b8764ffafd2848ff1239dd9c93f27477e2b",
+      "bytes": 23975
+    }
+  },
+  "model_source_executed": false,
+  "binary_model_or_dataset_bytes_redistributed": false
+}

@@ -1,0 +1,124 @@
+{
+  "source": [
+    {
+      "expected_name": "Name That LLM: Extra API Passages",
+      "metadata_identity_complete": true,
+      "updated_line": "  - paragraph: \"Last Updated: 4 days ago (Version 2)\"",
+      "url_line": "    - /url: /datasets/seyitkaangunes/ntl-extra-api-passages"
+    },
+    {
+      "expected_name": "Name That LLM: extra GPT and Gemini generations",
+      "metadata_identity_complete": false,
+      "updated_line": "  - paragraph: \"Last Updated: 4 days ago (Version 2)\"",
+      "url_line": "    - /url: /datasets/seyitkaangunes/ntl-extra-api-passages"
+    },
+    {
+      "expected_name": "Name That LLM: free-proxy generations",
+      "metadata_identity_complete": true,
+      "updated_line": "  - paragraph: \"Last Updated: 3 days ago (Version 1)\"",
+      "url_line": "    - /url: /datasets/dophuchung/ntl-proxy-generations"
+    },
+    {
+      "expected_name": "Name That LLM: Qwen3-8B LoRA + Claude Head",
+      "metadata_identity_complete": false,
+      "updated_line": null,
+      "url_line": null
+    },
+    {
+      "expected_name": "NTL free-proxy GPT and Gemini generations",
+      "metadata_identity_complete": false,
+      "updated_line": null,
+      "url_line": null
+    },
+    {
+      "expected_name": "NTL two-stage LoRA checkpoints and public pool",
+      "metadata_identity_complete": true,
+      "updated_line": "  - paragraph: \"Last Updated: 2 days ago (Version 1)\"",
+      "url_line": "    - /url: /datasets/nishantdahal/ntl-two-stage-lora"
+    },
+    {
+      "expected_name": "prvsiyan's Extended Name That LLM Dataset",
+      "metadata_identity_complete": true,
+      "updated_line": "  - paragraph: \"Last Updated: 3 days ago (Version 4)\"",
+      "url_line": "    - /url: /datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset"
+    },
+    {
+      "expected_name": "Qwen3.5-9B safetensors",
+      "metadata_identity_complete": true,
+      "updated_line": "  - paragraph: \"Last Updated: 2 months ago (Version 1)\"",
+      "url_line": "    - /url: /datasets/bbucxi/qwen35-9b-safetensors"
+    },
+    {
+      "expected_name": "UltraBERT-380M Name That LLM 5-fold",
+      "metadata_identity_complete": false,
+      "updated_line": null,
+      "url_line": null
+    }
+  ],
+  "copy_before_fix": [
+    {
+      "expected_name": "Name That LLM: Extra API Passages",
+      "metadata_identity_complete": true,
+      "updated_line": "  - paragraph: \"Last Updated: 4 days ago (Version 2)\"",
+      "url_line": "    - /url: /datasets/seyitkaangunes/ntl-extra-api-passages"
+    },
+    {
+      "expected_name": "Name That LLM: extra GPT and Gemini generations",
+      "metadata_identity_complete": false,
+      "updated_line": "  - paragraph: \"Last Updated: 4 days ago (Version 2)\"",
+      "url_line": "    - /url: /datasets/seyitkaangunes/ntl-extra-api-passages"
+    },
+    {
+      "expected_name": "Name That LLM: free-proxy generations",
+      "metadata_identity_complete": true,
+      "updated_line": "  - paragraph: \"Last Updated: 3 days ago (Version 1)\"",
+      "url_line": "    - /url: /datasets/dophuchung/ntl-proxy-generations"
+    },
+    {
+      "expected_name": "Name That LLM: Qwen3-8B LoRA + Claude Head",
+      "metadata_identity_complete": false,
+      "updated_line": null,
+      "url_line": null
+    },
+    {
+      "expected_name": "NTL free-proxy GPT and Gemini generations",
+      "metadata_identity_complete": false,
+      "updated_line": null,
+      "url_line": null
+    },
+    {
+      "expected_name": "NTL two-stage LoRA checkpoints and public pool",
+      "metadata_identity_complete": true,
+      "updated_line": "  - paragraph: \"Last Updated: 2 days ago (Version 1)\"",
+      "url_line": "    - /url: /datasets/nishantdahal/ntl-two-stage-lora"
+    },
+    {
+      "expected_name": "prvsiyan's Extended Name That LLM Dataset",
+      "metadata_identity_complete": true,
+      "updated_line": "  - paragraph: \"Last Updated: 17 hours ago (Version 5)\"",
+      "url_line": "    - /url: /datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset"
+    },
+    {
+      "expected_name": "Qwen3.5-9B safetensors",
+      "metadata_identity_complete": false,
+      "updated_line": null,
+      "url_line": null
+    },
+    {
+      "expected_name": "UltraBERT-380M Name That LLM 5-fold",
+      "metadata_identity_complete": false,
+      "updated_line": null,
+      "url_line": null
+    }
+  ],
+  "saved_V2_after_fix": {
+    "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-08-public-600-reproduction/input?scriptVersionId=360473569",
+    "dataset_version_line": "  - paragraph: \"Last Updated: 3 days ago (Version 4)\"",
+    "input_size": [
+      "Input (42.19 GB)"
+    ],
+    "private_confirmed": true,
+    "notebook_version": []
+  },
+  "limitation": "Incomplete/stale UI metadata does not establish attachment-version identity. No binary equality check performed."
+}

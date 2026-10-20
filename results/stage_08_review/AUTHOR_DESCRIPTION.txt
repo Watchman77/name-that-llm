@@ -1,0 +1,109 @@
+
+Two-stage LoRA + both Gaussian improvements¶This updates the existing main notebook whose V19 scored 0.594. The separate best notebook V4 scored 0.595 and remains unchanged. This combined version has no official score yet.
+Combine the two successful public-LB experiments: retain V19's 85% two-stage ensemble +15% original four-Gaussian feature stack, and add V4's shared-prompt Gaussian head on the new 8B LoRA features (residual PCA128, temperature3, log-probability weight0.10 on inferred groups of2–18). This head joins the new two-stage branch before the 85/15 probability mix. Keep original two-stage plain/centered heads, pool SVC and a single final full Sinkhorn. Parameters are unchanged from the individual tests; no additional tuning or local validation gain is claimed.
+Based on Nishant Dahal's two-stage LoRA notebook and prvsiyan's shared-prompt Gaussian notebook, with all upstream credits below. GPU T4x2, Internet off; submission.parquet.
+
+
+
+
+Two-stage LoRA + complementary Gaussian ensemble¶An experiment based on the supplied Two-stage LoRA on the public pool (author-reported source LB .592) and prvsiyan's The Prompt Is Not the Author (reader-reported source LB .569). Neither score is claimed for this new combination.
+Compute both full probability vectors, align IDs/classes explicitly, then mix 85% two-stage ensemble + 15% original four-Gaussian feature stack before a single final full Sinkhorn. The complementary stack keeps frozen encoders, old LoRAs, attention heads and Gaussian group evidence. Its final hard family gates are omitted: the new source reports no gain from adding gates. Our later Qwen2.5 centered .05 and fifth ELECTRA Gaussian are also omitted; the recent full variants scored .567/.568. This isolates diversity of the older feature stack rather than carrying every recent ablation forward.
+The mixing weight is a predeclared conservative hypothesis, not a cross-validated optimum. No test labels or fabricated confidence vectors from hard predictions. No new LoRA training. Runtime and attached inputs exceed the small source notebook because both stacks run.
+Credits: prvsiyan (Gaussian shared-prompt head), Travis Nguyen, Lucas Boesen, Obstacle Developer, Vladislav Lavrentev, Zbigniew Kirchner, kirilltym, pjmathematician, encoder/model and data authors credited in both source notebooks. GPU T4x2, Internet off; submission.parquet.
+Upstream notebook and attribution¶Two-stage LoRA on the public pool (LB 0.592)¶The problem in one line. Telling Claude from GPT is easy. Telling gemini 3.7 flash from gemini 3.8 flash is the whole game, and the host gives us only 150 passages per model to learn it from.
+The idea. Other Kagglers have published about 35,000 passages from these same 18 models, written to prompts in the competition's style. That is 13 times the training set. So we teach in two stages, the way you'd learn a language:
+
+Read a lot first. Train a LoRA classifier on the public passages only. It learns what each model sounds like.
+Then listen to the teacher. Fine tune it for 2 epochs on the host's 2,699 passages. It learns how each model sounded when the host asked: same settings, same formatting.
+
+Stage 1 alone already matches a LoRA trained on the host data. Stage 2 adds another 9 points.
+
+
+Model
+Local CV (5-fold, grouped by prompt)
+Public LB
+
+
+
+
+n-gram SVC on train + pool
+0.435
+
+
+
+Qwen3-8B LoRA, public passages only (stage 1)
+0.483
+
+
+
+Qwen3-8B LoRA, stage 1 + stage 2
+0.569
+
+
+
+Qwen3-14B LoRA, stage 1 + stage 2
+0.569
+
+
+
+This notebook: 8B + 14B + n-gram, centred twin, balancing
+0.593
+0.592
+
+
+
+The two LoRAs score the same alone but disagree on 22% of passages, which is why blending them helps.
+What runs here (inference only, about 1 h on 2x T4 for the full test):
+
+An n-gram model, fit here on train + pool.
+Two LoRA checkpoints (Qwen3-8B and Qwen3-14B), trained offline. The training recipe is at the end.
+A "centred twin" that compares passages answering the same question.
+A log-probability blend, then class balancing.
+
+1. The n gram model¶Each model has typing habits. In the training data claude and GLM never use curly quotes, while gpt uses a curly apostrophe in about half its passages. Gemini almost never uses an em dash, while Claude uses one in three passages out of four. Character n grams pick this up.
+We look at each passage four ways: raw characters +  words plus punctuation +  the shape of the text (Xxxx xx x) + function words only, with every content word replaced by CONTENT so the topic can't leak in. A linear SVM sits on top, trained on train + the public pool with balanced class weights.
+2. The LoRA classifiers¶Each checkpoint is a LoRA adapter on the first 24 layers of Qwen3 8B (or the first 27 of Qwen3 14B). We don't need the rest: style lives in the early and middle layers, while the last layers mostly encode the topic, which is useless here because test prompts are new.
+For each passage we:
+
+merge the adapter into the weights once (W <- W + B A * alpha / r), so no peft is needed
+run the passage and take the mean hidden state at 8 depths (layers 2, 4, 6, 8, 12, 16, 20, 24), each through its own LayerNorm;
+concatenate them (8 x 4096 numbers) and apply a linear layer to get 18 scores.
+
+The final RMSNorm is switched off (Identity) because the checkpoints were trained that way. On a T4 everything runs in fp16, a batch that overflows is redone in bf16.
+3. Compare answers to the same question¶Picture two test passages that answer the same prompt. Whatever they share, the topic, is noise for us. Subtract the pair's average and what's left is mostly how each one was written.
+So we cluster the test passages by topic (content word TFIDF, average linkage). In each cluster of 2 to 18 passages, we subtract the cluster mean from every passage's LoRA features and read them with a second head, which was trained during fine-tuning on exactly such differences. It adds a little evidence on top of the plain head.
+How much this helps depends on how many test passages share a prompt, which we don't know. In simulation it gives +0.5 points at 1-2 passages per prompt and more with larger groups. With no clusters it simply does nothing.
+4. Blend, then balance¶The members are combined by adding their weighted log-probabilities, which amounts to multiplying their probabilities.
+One last fix. Our models learned partly from the public pool, where some models have 2,700 passages and others 1,100, so they carry slightly wrong priors. The test set, like train, should hold roughly equal numbers of each model. Sinkhorn balancing rescales each class's column until every class gets about 1/18 of the probability mass, then renormalises each row, repeated 100 times. It uses no labels. Locally it is worth about +0.5 points, on a test set that is far from balanced it would hurt.
+How the checkpoints were trained¶Both checkpoints use the same recipe. It is the public "LoRA24" recipe with one change: a first stage on public data.
+
+Model: Qwen3-8B-Base (first 24 layers) or Qwen3-14B-Base (first 27 layers), LoRA rank 16, alpha 32, dropout 0.05 on every linear layer, 8 pooled layers with a LayerNorm each, two linear heads (plain and centred).
+Batches: triplets of passages that answer the same prompt, 6 triplets per step. The loss is the cross-entropy of the plain head plus the cross-entropy of the centred head on triplet-centred features, which teaches the model to tell apart answers to the same question.
+Stage 1: 1 epoch over the 34,940 public passages, class-weighted cross-entropy (the pool is unbalanced), AdamW lr 1e-4 (LoRA) / 1e-3 (heads), 10% warm-up then cosine.
+Stage 2: 2 epochs on the host's 2,699 passages, lr 5e-5 / 5e-4. More epochs over-fit, and mixing pool passages back in made it worse.
+Trained in bf16 on one RTX 5090: about 30 min (8B) and 90 min (14B) per checkpoint.
+
+The pool merges 14 public datasets, keeping single-paragraph passages of 30-300 words with no markdown. Exact duplicates and anything identical to a training passage are dropped. One more filter: if a model never shows a mark in the training data (an em dash for Gemini, curly quotes for Claude), its pool passages containing that mark are dropped. That leaves 34,940 passages for all 18 models (1,100-2,700 per model).
+What did not help, so you can skip it: a larger backbone on its own (14B = 8B at 0.569), seed averaging, extra family "gates" on top of the blend, Hungarian assignment inside topic clusters, and more epochs in stage 2.
+Credits¶Public passages (pool), all CC BY 4.0 except where noted:
+seyitkaangunes/ntl-extra-api-passages,
+willrice/name-that-llm-openrouter-harvest,
+lxdlxdlxd/ntl-synth-generations-v1,
+prvsiyan/prvsiyans-extended-name-that-llm-dataset,
+prvsiyan/ntl-own-prompt-generations-v1 (CC BY-SA 4.0),
+alperen5252525/ntl-vertex-gemini-proxy-gpt-generations,
+haileycheng/name-that-llm-same-prompt-passages,
+kaplinskiy/ntl-gpt-proxy-passages,
+lucasboesen/ntl-free-proxy-generations,
+abdullah1afify/ntl-generations,
+dophuchung/ntl-proxy-generations,
+ziyuzhou1207/ntl-zz-proxy-generations,
+keshavatearth/ntl-gpt-new-prompts-v1,
+michaelsemenoff/ntl-own-extra-v1.
+Ideas and recipes:
+the LoRA24 recipe from lightningv08/ntl-lora24-fivefold-training and lucasboesen/name-that-llm-train-lora24-s7;
+the style-aware n-grams from yangkuangou's notebook
+adaptive centering, the centred twin and Sinkhorn balancing from lucasboesen/lora-x-adaptive-centering.
+Models: Qwen3-8B-Base and Qwen3-14B-Base (Qwen team, Apache 2.0).
+
+

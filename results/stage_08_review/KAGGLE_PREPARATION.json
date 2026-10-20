@@ -1,0 +1,61 @@
+{
+  "stage": "08",
+  "status": "SOURCE_REVIEW_COMPLETE_PRIVATE_COPY_PREPARED_NOT_EXECUTED",
+  "source": {
+    "owner": "kirilltym",
+    "version": 20,
+    "script_version_id": 360088024,
+    "url": "https://www.kaggle.com/code/kirilltym/0-600-teach-the-model-remove-the-prompt?scriptVersionId=360088024",
+    "displayed_public_score": 0.6,
+    "score_owner": "source author, not watchman777",
+    "captured_source_sha256": "456f6c023ce6f997c0c42a5489dda18ee3185142d31782184e1307e0a35f9dd7",
+    "source_parse_passed": true,
+    "preview_runtime_seconds": 2739.1,
+    "preview_test_rows": 3,
+    "preview_accelerator": "GPU T4 x2"
+  },
+  "preparation": {
+    "owner": "watchman777",
+    "visibility": "Private",
+    "source_code_full_character_comparison": "PASS_EXACT_MATCH_71625_CHARACTERS",
+    "algorithm_modified": false,
+    "initial_quick_version": 360471311,
+    "pinned_quick_version": 360473569,
+    "current_version": 2,
+    "quick_save_completed": true,
+    "current_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-08-public-600-reproduction?scriptVersionId=360473569",
+    "draft_session_started": false,
+    "model_code_executed": false,
+    "own_preview_complete": false,
+    "own_official_submission": false,
+    "own_score": null
+  },
+  "input_version_change": {
+    "dataset": "prvsiyan/prvsiyans-extended-name-that-llm-dataset",
+    "source_version": 4,
+    "inherited_version": 5,
+    "corrected_draft_version": 4,
+    "pin_reopened_and_verified": true,
+    "source_input_size_gb_displayed": 42.19,
+    "initial_copy_input_size_gb_displayed": 42.22,
+    "full_byte_identity_established": false,
+    "other_version_metadata_captures_incomplete": true,
+    "saved_V2_version4_badge_verified": true,
+    "corrected_copy_input_size_gb_displayed": 42.19
+  },
+  "checks": {
+    "static_source_review": "COMPLETE_NO_OBVIOUS_REPAIR_BLOCKER",
+    "static_data_review": "COMPLETE_WITH_PROVENANCE_LIMITS",
+    "synthetic_preflight_tests": 12,
+    "synthetic_preflight_status": "PASS",
+    "real_input_preflight_executed": false,
+    "author_CV_independently_reproduced": false
+  },
+  "next_gate": "READ_ONLY_REAL_INPUT_AND_SOURCE_VERSION_RECONCILIATION_BEFORE_GPU_REPRODUCTION",
+  "official_S02_last_verified": 0.549,
+  "S02_freshly_checked": false,
+  "paid_services_used": false,
+  "provider_generation_performed": false,
+  "trained_models_published": false,
+  "final_selection_changed": false
+}

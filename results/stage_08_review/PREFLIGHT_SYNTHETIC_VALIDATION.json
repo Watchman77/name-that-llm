@@ -1,0 +1,21 @@
+{
+  "stage": "08_input_preflight_synthetic_tests",
+  "status": "PASS",
+  "tests": {
+    "missing_critical_file_rejected": true,
+    "ambiguous_critical_file_rejected": true,
+    "valid_pool_contract_passes": true,
+    "pool_row_count_rejected": true,
+    "pool_schema_rejected": true,
+    "unknown_pool_label_rejected": true,
+    "normalized_fullresponse_overlap_rejected": true,
+    "nonfinite_numeric_metadata_rejected": true,
+    "null_text_rejected": true,
+    "checkpoint_label_order_rejected": true,
+    "invalid_tensor_header_rejected": true,
+    "empty_input_manifest_fails_closed": true
+  },
+  "real_inputs_read": false,
+  "model_code_executed": false,
+  "script_sha256": "a2f31d11b292b0846dd28662ec6c8b8764ffafd2848ff1239dd9c93f27477e2b"
+}

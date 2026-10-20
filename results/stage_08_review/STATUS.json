@@ -1,0 +1,8 @@
+{
+  "stage": "08",
+  "status": "SOURCE_REVIEW_COMPLETE_PRIVATE_COPY_PREPARED_NOT_EXECUTED",
+  "real_input_preflight_executed": false,
+  "gpu_reproduction_started": false,
+  "own_score": null,
+  "next_gate": "READ_ONLY_REAL_INPUT_AND_SOURCE_VERSION_RECONCILIATION_BEFORE_GPU_REPRODUCTION"
+}
