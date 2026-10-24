@@ -299,3 +299,8 @@ The frozen 0.600 recipe failed the real-input gate: 150/151 checks pass, but the
 [Stage 08B](results/stage_08b/REPORT.md) reproduces Nishant V2 359887828 without model changes. Our private V1 361730151 completed its three-row preview in 397.7s; no official score.
 
 [Stage 08C](results/stage_08c/REPORT.md) freezes Nishant part-two V1 361311282 (author public 0.620), pins dataset V1, passes 85/85 real CPU input checks, and launches private GPU V2 361732127. The six model cells are unchanged; an independent validation-only final cell checks probabilities/IDs/parquet. Own preview and official score remain pending. Current public first is 0.700, tenth 0.660; our displayed current official best remains 0.549. No tuning, API purchases or final-selection changes.
+
+
+### S03 submitted — 24 October 2026
+
+Stage 08C private V2 completed in 739.2s; all 22 actual probability/ID/parquet checks passed. The exact version (361732127) was submitted as S03. The live official row displays Notebook Running, with no own score. S02 remains confirmed at 0.549. Final selections remain automatic at 0/2. The hourly read-only watch is enabled until S03 terminates. See results/stage_08c/EXECUTION_20261024.json and OUTPUT_VALIDATION.json. No model tuning or paid services.

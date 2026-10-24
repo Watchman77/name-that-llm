@@ -1,6 +1,6 @@
 # Stage 08C — two-stage part-two reproduction
 
-Prepared and checked live on 24 October 2026 in watchman777. **The real CPU input audit passed all 85 checks. The private GPU reproduction has started; no own preview result or official score is claimed yet.**
+Checked live on 24 October 2026 in watchman777. **Our private V2 completed its three-row preview in 739.2 seconds and passed all 22 output checks. Official submission S03 is now Notebook Running on the hidden test, with no displayed score yet.** The real CPU audit passed all 85 checks. Our freshly confirmed prior official best remains S02 at 0.549; the source author's 0.620 is not our score.
 
 ## Frozen source and inputs
 
@@ -8,7 +8,7 @@ Prepared and checked live on 24 October 2026 in watchman777. **The real CPU inpu
 - Our private GPU V2 **361732127**: https://www.kaggle.com/code/watchman777/name-that-llm-stage-08c-part-two-reproduction?scriptVersionId=361732127 .
 - Every one of the six model cells was compared with the complete rendered source. They match apart from one trailing newline per cell. No blend, feature, tokenizer, sampling or model parameter was changed.
 - Four inputs: competition; `nishantdahal/ntl-handwriting-blend` explicitly pinned to **V1**; Qwen3-14B-Base V1; Qwen2.5-14B V1. Source environment pin 2026-10-22, Internet off, two T4 GPUs.
-- CPU diagnostics were saved in a separate Quick V1, then removed from the GPU version. The CPU session was stopped. A separate validation-only final cell was appended, leaving all six model cells unchanged.
+- CPU diagnostics were saved in separate Quick V1 **361731577**, then removed from the GPU version. The CPU session was stopped. A separate validation-only final cell was appended, leaving all six model cells unchanged.
 
 ## What differs from the older baseline
 
@@ -32,3 +32,12 @@ After preview completion, inspect terminal logs and the guard's actual JSON befo
 
 No paid services, retraining, generated API data, public checkpoints, row-level predictions, or final-selection change occurred. The 70% target is an objective, not an experimental result.
 
+
+
+## Verified execution and official handoff
+
+The terminal preview logs show all members completed: SVC after 424s, Qwen3-14B after 567s, Qwen2.5-14B after 696s and DeBERTa after 710s (times relative to the source timer). Kaggle reports total preview runtime 739.2s and output 3.7 kB. The actual final guard passed all 22 checks, including finite logits/probabilities and real parquet readback. See `PREVIEW_LOG.txt`, `OUTPUT_VALIDATION.json` and `EXECUTION_20261024.json`. This three-row result does not measure hidden-test accuracy.
+
+S03 selected this exact private V2 and `submission.parquet`, with an explicit upstream-credit description. The competition page confirms **Notebook Running**. No own S03 score is available. Final selections remain automatic at 0/2; no selection checkbox was changed. The existing run watch is enabled for read-only hourly checks and will stop after reporting the terminal S03 result.
+
+The full source, aggregate audits, guards and results are saved in this repository. No weights, competition passage text or row predictions are published. `NEXT_EXPERIMENT.md` describes a possible matched two-stage pretraining pilot after this official evaluation; it has not run.

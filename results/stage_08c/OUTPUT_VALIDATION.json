@@ -1,0 +1,102 @@
+{
+  "algorithm_modified": false,
+  "checks": [
+    {
+      "name": "labels:exact_official_order",
+      "passed": true
+    },
+    {
+      "name": "test:id_column",
+      "passed": true
+    },
+    {
+      "name": "submission:exact_schema",
+      "passed": true
+    },
+    {
+      "name": "test:nonempty",
+      "passed": true
+    },
+    {
+      "name": "test:unique_nonnull_nonempty_ids",
+      "passed": true
+    },
+    {
+      "name": "submission:row_count",
+      "passed": true
+    },
+    {
+      "name": "submission:unique_nonnull_nonempty_ids",
+      "passed": true
+    },
+    {
+      "name": "submission:allowed_nonnull_labels",
+      "passed": true
+    },
+    {
+      "name": "submission:exact_test_id_order",
+      "passed": true
+    },
+    {
+      "name": "probabilities:real_numeric",
+      "passed": true
+    },
+    {
+      "name": "probabilities:shape_N_by_18",
+      "passed": true
+    },
+    {
+      "name": "probabilities:finite",
+      "passed": true
+    },
+    {
+      "name": "logits:real_numeric",
+      "passed": true
+    },
+    {
+      "name": "logits:shape_N_by_18",
+      "passed": true
+    },
+    {
+      "name": "logits:finite",
+      "passed": true
+    },
+    {
+      "name": "probabilities:bounds_0_to_1",
+      "passed": true
+    },
+    {
+      "name": "probabilities:row_sums_one",
+      "passed": true
+    },
+    {
+      "name": "submission:matches_probability_argmax",
+      "passed": true
+    },
+    {
+      "name": "parquet:readable_exact_schema",
+      "passed": true
+    },
+    {
+      "name": "parquet:row_count_parity",
+      "passed": true
+    },
+    {
+      "name": "parquet:id_order_parity",
+      "passed": true
+    },
+    {
+      "name": "parquet:model_label_parity",
+      "passed": true
+    }
+  ],
+  "individual_values_emitted": false,
+  "observed": {
+    "submission_rows": 3,
+    "test_rows": 3
+  },
+  "parquet_readback_requested": true,
+  "stage": "08c_output_validation",
+  "status": "PASS"
+}
+

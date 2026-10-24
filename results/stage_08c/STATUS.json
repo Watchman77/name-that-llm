@@ -1,17 +1,24 @@
 {
   "stage": "08C",
-  "status": "REAL_CPU_PREFLIGHT_PASS_PRIVATE_GPU_RUNNING",
+  "status": "PRIVATE_PREVIEW_VALIDATED_OFFICIAL_S03_NOTEBOOK_RUNNING",
   "source_version": 361311282,
   "script_version_id": 361732127,
   "real_input_checks": 85,
   "all_input_checks_pass": true,
-  "own_preview_complete": false,
-  "official_submission": false,
+  "own_preview_complete": true,
+  "official_submission": true,
   "own_public_score": null,
   "upstream_author_public_score": 0.62,
   "model_algorithm_modified": false,
   "validation_only_final_cell_added": true,
   "input_dataset_pinned_version": 1,
-  "paid_services_used": false
+  "paid_services_used": false,
+  "preview_runtime_seconds": 739.2,
+  "preview_test_rows": 3,
+  "output_validation_checks": 22,
+  "output_validation_status": "PASS",
+  "official_submission_label": "S03",
+  "official_status": "Notebook Running",
+  "monitoring": "hourly read-only watch enabled",
+  "cpu_quick_script_version_id": 361731577
 }
-

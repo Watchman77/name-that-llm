@@ -1,0 +1,60 @@
+{
+  "checked_date": "2026-10-24",
+  "account": "watchman777",
+  "stage": "08C",
+  "visibility": "Private",
+  "source": {
+    "owner": "nishantdahal",
+    "script_version_id": 361311282,
+    "displayed_author_public_balanced_accuracy": 0.62,
+    "model_cells_unchanged_except_terminal_newlines": true,
+    "validation_only_cell_added": true
+  },
+  "cpu_audit": {
+    "quick_script_version_id": 361731577,
+    "checks": 85,
+    "status": "PASS_INPUT_CONTRACT",
+    "neural_inference": false,
+    "rows_filtered": 0
+  },
+  "preview": {
+    "script_version_id": 361732127,
+    "status": "SUCCESS",
+    "runtime_seconds": 739.2,
+    "test_rows": 3,
+    "accelerator": "GPU T4 x2",
+    "output_displayed": "3.7 kB",
+    "output_validation_status": "PASS",
+    "output_checks": 22,
+    "saved_parquet_readback": "PASS",
+    "development_accuracy": null
+  },
+  "official": {
+    "description_prefix": "S03: Nishant Dahal two-stage LoRA part-two V1 (361311282)",
+    "status": "Notebook Running",
+    "public_balanced_accuracy": null,
+    "submission_description": "S03: Nishant Dahal two-stage LoRA part-two V1 (361311282), our private Stage 08C V2 (361732127). Six model cells unchanged apart from terminal newlines; output validation only added. Dataset ntl-handwriting-blend pinned V1; Qwen bases V1. Real CPU audit 85/85; preview 739.2s; probability/ID/parquet guard PASS. Apache-2.0; upstream credits retained. Source author public score 0.620 is not our measured score. No tuning or paid APIs.",
+    "url": "https://www.kaggle.com/competitions/name-that-llm/submissions",
+    "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-08c-part-two-reproduction?scriptVersionId=361732127"
+  },
+  "prior_official_best": {
+    "submission": "S02",
+    "public_balanced_accuracy": 0.549,
+    "freshly_confirmed_on": "2026-10-24"
+  },
+  "final_selection": {
+    "manually_changed": false,
+    "selected_display": "0/2",
+    "automatic_selection_remains": true
+  },
+  "monitoring": {
+    "enabled": true,
+    "cadence": "hourly",
+    "read_only": true,
+    "stop_after_S03_terminal": true
+  },
+  "paid_services_used": false,
+  "provider_generation": false,
+  "checkpoint_retraining": false,
+  "raw_text_or_row_predictions_published": false
+}
