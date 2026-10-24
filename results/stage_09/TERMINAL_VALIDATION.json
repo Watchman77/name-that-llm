@@ -1,0 +1,23 @@
+{
+  "status": "PASS_AGGREGATE_RECALCULATION",
+  "checks": {
+    "control_confusion_count": true,
+    "control_balanced_accuracy": true,
+    "control_per_class": true,
+    "control_correct": 159,
+    "candidate_confusion_count": true,
+    "candidate_balanced_accuracy": true,
+    "candidate_per_class": true,
+    "candidate_correct": 131,
+    "paired_net_reconciles": true,
+    "delta_reconciles": true,
+    "both_official_phases_405_updates": true,
+    "pretrain_94_updates": true,
+    "no_amp_overflow": true,
+    "negative_screen": true
+  },
+  "scope": "Independently recalculated macro recall, supports, paired net and update counts from live final aggregate; private-row probabilities and bootstrap draw distribution not independently reloaded.",
+  "source": "Kaggle V1 361761811 terminal STAGE09_COMPLETE log",
+  "not_model_refit": true,
+  "decision": "Reject this exact fixed candidate; official S03 remains0.620"
+}

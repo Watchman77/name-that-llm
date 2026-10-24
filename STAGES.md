@@ -1,6 +1,6 @@
 # Project stages and current state
 
-Current checkpoint, 24 October 2026: **S03 / Stage 08C V2 succeeded at 0.620 official public balanced accuracy**, +7.1 percentage points above S02. Rank at verification: 377. The S03 watch is complete and disabled. Stage 09 is the separately frozen development pretraining pilot; see `results/stage_09/PROTOCOL.md`. Historical observations below retain their original dates.
+Current checkpoint, 24 October 2026: **S03 / Stage 08C V2 succeeded at 0.620 official public balanced accuracy**, +7.1 percentage points above S02. Rank at verification: 377. The S03 watch is complete and disabled. Stage 09 completed and its fixed pretraining candidate was rejected: control29.4444% versus candidate24.2593% on one reused development fold (-5.1852points); no official submission. See `results/stage_09/REPORT.md`. Historical observations below retain their original dates.
 
 
 ## Competition goal

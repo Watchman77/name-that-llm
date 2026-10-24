@@ -1,9 +1,9 @@
 {
   "stage": "09",
-  "status": "GPU_RUNNING_CONTROL_OFFICIAL",
+  "status": "COMPLETE_REJECTED_FIXED_PILOT",
   "official_best_submission": "S03",
   "official_best_public_balanced_accuracy": 0.62,
-  "development_score": null,
+  "development_score": 0.24259259259259258,
   "external_rows": 750,
   "external_prompt_blocks": 150,
   "external_classes": 5,
@@ -29,11 +29,20 @@
   "script_version_id": 361761811,
   "kaggle_version": 1,
   "gpu_preflight": "PASS_GRAPH_NO_OPTIMIZER_STEP",
-  "last_verified_phase": "control_official",
-  "last_verified_epoch": 1,
-  "last_verified_optimizer_update": 25,
-  "phase_total_optimizer_updates": 405,
   "source_freeze_commit": "232587c3c1331e44c7e88cb02e71d64ad65e5148",
   "completed_pretraining_epochs": 2,
-  "last_verified_job_log_seconds": 248.6
+  "last_verified_job_log_seconds": 1442.2,
+  "execution_status": "Succeeded",
+  "training_complete": true,
+  "control_development_score": 0.29444444444444445,
+  "delta_percentage_points": -5.185185185185187,
+  "paired_conditional_95_interval_percentage_points": [
+    -8.703703703703706,
+    -1.8518518518518434
+  ],
+  "fixed_pilot_screen_pass": false,
+  "scientific_acceptance": false,
+  "completed_official_epochs_per_arm": 3,
+  "platform_runtime_seconds": 1453.1,
+  "final_result_verified_date": "2026-10-24"
 }

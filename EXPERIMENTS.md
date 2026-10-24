@@ -311,3 +311,8 @@ Stage 08C private V2 completed in 739.2s; all 22 actual probability/ID/parquet c
 S03 / private Stage 08C V2 361732127 displayed Succeeded and official public balanced accuracy 0.620 in the connected account, independently visible in submission details and the account leaderboard. Improvement versus S02: +7.1 percentage points; rank 377 at verification. The three-row preview remains an execution milestone. Final private score is unknown. The completed watch is disabled.
 
 User resumed work after this milestone. The next experiment is a bounded matched development pilot, declared in `results/stage_09/PROTOCOL.md`: untouched DeBERTa-base, masked-mean/linear head and separate learning rates in both arms; candidate-only two-epoch pretraining on the 750 source-traced direct-OpenAI V4 rows, followed by identical three-epoch official fold-1 training. CPU admission passed. Actual GPU execution status is recorded separately; no Stage 09 result or official submission is implied here.
+
+
+## 24 October 2026 — Stage 09 final result verified
+
+Private V1 361761811 succeeded in1453.1seconds. Both declared arms completed on the same540held-out official responses/30prompts: official-only control29.444444% development balanced accuracy, candidate24.259259%, difference -5.185185percentage points, conditional paired prompt95%interval[-8.703704,-1.851852]. Corrected37/broken65; all94external and405officialupdates perarm completed withzeroAMPoverflow. The fixed pilot screen failed. Reject this exact candidate; no automatic variants or official submission. S03remains0.620official public balanced accuracy. Aggregate recalculation and complete result saved underresults/stage_09.

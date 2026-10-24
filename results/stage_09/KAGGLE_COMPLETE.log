@@ -1,0 +1,312 @@
+Time
+	
+#
+	
+Log Message
+
+6.9s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+6.9s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+6.9s	3	0.00s - to python to disable frozen modules.
+
+6.9s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+7.5s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+
+7.5s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+
+7.5s	7	0.00s - to python to disable frozen modules.
+
+7.5s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+13.4s	9	Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/huggingface_hub-0.36.2-py3-none-any.whl
+
+13.5s	10	Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl
+
+13.5s	11	Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/sentencepiece-0.2.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+
+13.5s	12	Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+
+13.5s	13	Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/transformers-4.56.2-py3-none-any.whl
+
+13.6s	14	Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/huggingface_hub-0.36.2-py3-none-any.whl
+
+13.6s	15	Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl
+
+13.6s	16	Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/sentencepiece-0.2.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+
+13.6s	17	Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+
+13.6s	18	Processing /kaggle/input/notebooks/watchman777/name-that-llm-stage-04b-resources/wheels/transformers-4.56.2-py3-none-any.whl
+
+13.7s	19	Installing collected packages: transformers, tokenizers, sentencepiece, protobuf, huggingface-hub
+
+13.7s	20	  Attempting uninstall: transformers
+
+13.9s	21	Installing collected packages: transformers, tokenizers, sentencepiece, protobuf, huggingface-hub
+
+13.9s	22	  Attempting uninstall: transformers
+
+13.9s	23	    Found existing installation: transformers 5.16.1
+
+14.1s	24	    Found existing installation: transformers 5.16.1
+
+14.4s	25	    Uninstalling transformers-5.16.1:
+
+14.6s	26	    Uninstalling transformers-5.16.1:
+
+16.5s	27	      Successfully uninstalled transformers-5.16.1
+
+16.7s	28	      Successfully uninstalled transformers-5.16.1
+
+24.4s	29	  Attempting uninstall: tokenizers
+
+24.6s	30	  Attempting uninstall: tokenizers
+
+24.8s	31	    Found existing installation: tokenizers 0.23.1
+
+24.8s	32	    Uninstalling tokenizers-0.23.1:
+
+24.8s	33	      Successfully uninstalled tokenizers-0.23.1
+
+24.9s	34	  Attempting uninstall: sentencepiece
+
+25.0s	35	    Found existing installation: tokenizers 0.23.1
+
+25.0s	36	    Uninstalling tokenizers-0.23.1:
+
+25.0s	37	      Successfully uninstalled tokenizers-0.23.1
+
+25.0s	38	  Attempting uninstall: sentencepiece
+
+25.1s	39	    Found existing installation: sentencepiece 0.2.2
+
+25.1s	40	    Uninstalling sentencepiece-0.2.2:
+
+25.1s	41	      Successfully uninstalled sentencepiece-0.2.2
+
+25.2s	42	  Attempting uninstall: protobuf
+
+25.2s	43	    Found existing installation: protobuf 5.29.5
+
+25.2s	44	    Uninstalling protobuf-5.29.5:
+
+25.2s	45	      Successfully uninstalled protobuf-5.29.5
+
+25.3s	46	    Found existing installation: sentencepiece 0.2.2
+
+25.3s	47	    Uninstalling sentencepiece-0.2.2:
+
+25.3s	48	      Successfully uninstalled sentencepiece-0.2.2
+
+25.3s	49	  Attempting uninstall: protobuf
+
+25.3s	50	    Found existing installation: protobuf 5.29.5
+
+25.3s	51	    Uninstalling protobuf-5.29.5:
+
+25.3s	52	      Successfully uninstalled protobuf-5.29.5
+
+25.4s	53	  Attempting uninstall: huggingface-hub
+
+25.6s	54	  Attempting uninstall: huggingface-hub
+
+25.8s	55	    Found existing installation: huggingface_hub 1.29.0
+
+25.8s	56	    Uninstalling huggingface_hub-1.29.0:
+
+26.0s	57	      Successfully uninstalled huggingface_hub-1.29.0
+
+26.0s	58	    Found existing installation: huggingface_hub 1.29.0
+
+26.0s	59	    Uninstalling huggingface_hub-1.29.0:
+
+26.0s	60	      Successfully uninstalled huggingface_hub-1.29.0
+
+26.4s	61	Successfully installed huggingface-hub-0.36.2 protobuf-6.31.1 sentencepiece-0.2.1 tokenizers-0.22.2 transformers-4.56.2
+
+26.6s	62	Successfully installed huggingface-hub-0.36.2 protobuf-6.31.1 sentencepiece-0.2.1 tokenizers-0.22.2 transformers-4.56.2
+
+27.1s	63	Pinned offline dependencies and unique required input paths resolved; no test file opened.
+
+29.3s	64	{
+
+29.3s	65	  "status": "PASS",
+
+29.3s	66	  "checks": {
+
+29.3s	67	    "official_exact_update_count_405": true,
+
+29.3s	68	    "official_last_accumulation_group_15_rows": true,
+
+29.3s	69	    "pretrain_exact_update_count_94": true,
+
+29.3s	70	    "pretrain_last_accumulation_group_14_rows": true,
+
+29.3s	71	    "partial_group_sum_loss_normalization_matches_example_mean": true,
+
+29.3s	72	    "partial_group_analytic_gradient_matches_full_batch": true,
+
+29.3s	73	    "external_full_shuffle_exact_balanced_class_exposure": true,
+
+29.3s	74	    "external_full_shuffle_no_duplicate_or_omitted_rows": true,
+
+29.3s	75	    "external_imbalanced_subset_rejected": true,
+
+29.3s	76	    "official_weight_mass_balanced": true,
+
+29.3s	77	    "official_weights_mean_one": true,
+
+29.3s	78	    "truncation_incidence_uses_strict_boundary_including_specials": true,
+
+29.3s	79	    "finite_aligned_probability_table_accepted": true,
+
+29.3s	80	    "reordered_ids_rejected": true,
+
+29.3s	81	    "duplicate_ids_rejected": true,
+
+29.3s	82	    "nan_probability_rejected": true,
+
+29.3s	83	    "wrong_row_count_rejected": true,
+
+29.3s	84	    "unnormalized_probability_rejected": true,
+
+29.3s	85	    "saved_payload_validated_including_logits": true,
+
+29.3s	86	    "saved_payload_column_order_rejected": true,
+
+29.3s	87	    "saved_payload_nonfinite_logits_rejected": true,
+
+29.3s	88	    "saved_payload_probability_logit_mismatch_rejected": true,
+
+29.3s	89	    "paired_bootstrap_known_100_point_gain": true,
+
+29.3s	90	    "paired_corrected_broken_known_contrast": true
+
+29.3s	91	  },
+
+29.3s	92	  "passed": 24,
+
+29.3s	93	  "total": 24,
+
+29.3s	94	  "actual_gpu_training_executed": false,
+
+29.3s	95	  "limits": [
+
+29.3s	96	    "CPU algebra/schema checks only; no Torch import, autograd, model load, AMP, CUDA, or GPU training executed.",
+
+29.3s	97	    "Real corpus admission is separately mandatory; synthetic checks do not establish data independence."
+
+29.3s	98	  ]
+
+29.3s	99	}
+
+68.4s	100	GPU_PREFLIGHT_PASS {"status": "PASS_GRAPH_NO_OPTIMIZER_STEP", "fixture_rows": 2, "no_optimizer_step": true, "actual_model_fitting": false, "initial_head_sha256": "e8a26a7d201f088f1186919024c2888f8efa9bbadb340ccae8c1c18fb8ed99e9", "logit_shape": [2, 18], "logits_finite": true, "loss_finite": true, "used_gradient_tensors": 200, "all_used_gradients_finite": true, "head_after_sha256": "e8a26a7d201f088f1186919024c2888f8efa9bbadb340ccae8c1c18fb8ed99e9", "head_unchanged": true, "environment": {"python": "3.13.15", "packages": {"torch": "2.11.0+cu128", "transformers": "4.56.2", "sentencepiece": "0.2.1", "numpy": "2.1.3", "pandas": "2.3.3", "scikit-learn": "1.6.1", "safetensors": "0.8.0"}, "cuda": "12.8", "allocated_gpu_count": 2, "gpu_names": ["Tesla T4", "Tesla T4"], "training_device": "cuda:0", "all_allocated_devices_count_towards_budget": true, "determinism": "Seeded; deterministic algorithms warn-only; no bitwise GPU guarantee"}}
+
+105.4s	101	phase=candidate_pretrain epoch=1/2 update=25/94 gpu_seconds=193.6
+
+137.9s	102	EPOCH_COMPLETE {"phase": "candidate_pretrain", "epoch": 1, "rows": 750, "sampled_class_counts": {"gpt-5.5": 150, "gpt-5.6-luna": 150, "gpt-5.6-sol": 150, "gpt-5.6-terra": 150, "gpt-6-astra": 150}, "sample_order_sha256": "02765d95c717d2b50ed18452d34a8c7bef0add2000dc6b96acf3c29e2d9a2f2f", "mean_weighted_loss": 1.9730714867909749, "cumulative_updates": 47, "validation_performed": false}
+
+142.8s	103	phase=candidate_pretrain epoch=2/2 update=50/94 gpu_seconds=268.5
+
+181.1s	104	phase=candidate_pretrain epoch=2/2 update=75/94 gpu_seconds=345.1
+
+207.9s	105	EPOCH_COMPLETE {"phase": "candidate_pretrain", "epoch": 2, "rows": 750, "sampled_class_counts": {"gpt-5.5": 150, "gpt-5.6-luna": 150, "gpt-5.6-sol": 150, "gpt-5.6-terra": 150, "gpt-6-astra": 150}, "sample_order_sha256": "ba9642922c04b2dd40d9ac48f84972195d7b4ec474ac5a9570b73cb92ae42ee7", "mean_weighted_loss": 1.6008016007741293, "cumulative_updates": 94, "validation_performed": false}
+
+248.6s	106	phase=control_official epoch=1/3 update=25/405 gpu_seconds=480.0
+
+283.3s	107	phase=control_official epoch=1/3 update=50/405 gpu_seconds=549.3
+
+321.7s	108	phase=control_official epoch=1/3 update=75/405 gpu_seconds=626.1
+
+358.0s	109	phase=control_official epoch=1/3 update=100/405 gpu_seconds=698.9
+
+397.7s	110	phase=control_official epoch=1/3 update=125/405 gpu_seconds=778.2
+
+413.3s	111	EPOCH_COMPLETE {"phase": "control_official", "epoch": 1, "rows": 2159, "sampled_class_counts": {"claude-fable-5": 119, "claude-opus-4-6": 120, "claude-opus-4-8": 120, "claude-opus-5": 120, "claude-sonnet-5": 120, "gemini-3.1-pro-preview": 120, "gemini-3.6-flash": 120, "gemini-3.7-flash": 120, "gemini-3.8-flash": 120, "glm-5.3": 120, "glm-5.3-flash": 120, "gpt-5.5": 120, "gpt-5.6-luna": 120, "gpt-5.6-sol": 120, "gpt-5.6-terra": 120, "gpt-6-astra": 120, "kimi-k3": 120, "qwen3.8-max": 120}, "sample_order_sha256": "a001d7892719cabb77b677221d43ad7dd309e5168fd7b6e2b2d4f91c4782c3e1", "mean_weighted_loss": 2.594966680377432, "cumulative_updates": 135, "validation_performed": false}
+
+435.6s	112	phase=control_official epoch=2/3 update=150/405 gpu_seconds=854.0
+
+472.2s	113	phase=control_official epoch=2/3 update=175/405 gpu_seconds=927.2
+
+507.9s	114	phase=control_official epoch=2/3 update=200/405 gpu_seconds=998.5
+
+545.7s	115	phase=control_official epoch=2/3 update=225/405 gpu_seconds=1074.1
+
+583.2s	116	phase=control_official epoch=2/3 update=250/405 gpu_seconds=1149.2
+
+614.0s	117	EPOCH_COMPLETE {"phase": "control_official", "epoch": 2, "rows": 2159, "sampled_class_counts": {"claude-fable-5": 119, "claude-opus-4-6": 120, "claude-opus-4-8": 120, "claude-opus-5": 120, "claude-sonnet-5": 120, "gemini-3.1-pro-preview": 120, "gemini-3.6-flash": 120, "gemini-3.7-flash": 120, "gemini-3.8-flash": 120, "glm-5.3": 120, "glm-5.3-flash": 120, "gpt-5.5": 120, "gpt-5.6-luna": 120, "gpt-5.6-sol": 120, "gpt-5.6-terra": 120, "gpt-6-astra": 120, "kimi-k3": 120, "qwen3.8-max": 120}, "sample_order_sha256": "7a7497f9c0ab747299fd8e485350fe57df6eb3a91926f85fc3162e4e2343f84f", "mean_weighted_loss": 2.0113765323200727, "cumulative_updates": 270, "validation_performed": false}
+
+621.7s	118	phase=control_official epoch=3/3 update=275/405 gpu_seconds=1226.2
+
+658.8s	119	phase=control_official epoch=3/3 update=300/405 gpu_seconds=1300.5
+
+695.4s	120	phase=control_official epoch=3/3 update=325/405 gpu_seconds=1373.7
+
+733.3s	121	phase=control_official epoch=3/3 update=350/405 gpu_seconds=1449.3
+
+769.4s	122	phase=control_official epoch=3/3 update=375/405 gpu_seconds=1521.7
+
+806.6s	123	phase=control_official epoch=3/3 update=400/405 gpu_seconds=1596.0
+
+814.4s	124	EPOCH_COMPLETE {"phase": "control_official", "epoch": 3, "rows": 2159, "sampled_class_counts": {"claude-fable-5": 119, "claude-opus-4-6": 120, "claude-opus-4-8": 120, "claude-opus-5": 120, "claude-sonnet-5": 120, "gemini-3.1-pro-preview": 120, "gemini-3.6-flash": 120, "gemini-3.7-flash": 120, "gemini-3.8-flash": 120, "glm-5.3": 120, "glm-5.3-flash": 120, "gpt-5.5": 120, "gpt-5.6-luna": 120, "gpt-5.6-sol": 120, "gpt-5.6-terra": 120, "gpt-6-astra": 120, "kimi-k3": 120, "qwen3.8-max": 120}, "sample_order_sha256": "63c24923251178f11b567bc88a7bdd944e23abb47abff5362eaf3eaf05f5a5d6", "mean_weighted_loss": 1.723995369084735, "cumulative_updates": 405, "validation_performed": false}
+
+865.2s	125	phase=candidate_official epoch=1/3 update=25/405 gpu_seconds=1713.1
+
+899.8s	126	phase=candidate_official epoch=1/3 update=50/405 gpu_seconds=1782.3
+
+938.4s	127	phase=candidate_official epoch=1/3 update=75/405 gpu_seconds=1859.5
+
+974.8s	128	phase=candidate_official epoch=1/3 update=100/405 gpu_seconds=1932.4
+
+1014.6s	129	phase=candidate_official epoch=1/3 update=125/405 gpu_seconds=2012.0
+
+1030.2s	130	EPOCH_COMPLETE {"phase": "candidate_official", "epoch": 1, "rows": 2159, "sampled_class_counts": {"claude-fable-5": 119, "claude-opus-4-6": 120, "claude-opus-4-8": 120, "claude-opus-5": 120, "claude-sonnet-5": 120, "gemini-3.1-pro-preview": 120, "gemini-3.6-flash": 120, "gemini-3.7-flash": 120, "gemini-3.8-flash": 120, "glm-5.3": 120, "glm-5.3-flash": 120, "gpt-5.5": 120, "gpt-5.6-luna": 120, "gpt-5.6-sol": 120, "gpt-5.6-terra": 120, "gpt-6-astra": 120, "kimi-k3": 120, "qwen3.8-max": 120}, "sample_order_sha256": "a001d7892719cabb77b677221d43ad7dd309e5168fd7b6e2b2d4f91c4782c3e1", "mean_weighted_loss": 2.7582600696487747, "cumulative_updates": 135, "validation_performed": false}
+
+1052.7s	131	phase=candidate_official epoch=2/3 update=150/405 gpu_seconds=2088.1
+
+1089.3s	132	phase=candidate_official epoch=2/3 update=175/405 gpu_seconds=2161.4
+
+1125.0s	133	phase=candidate_official epoch=2/3 update=200/405 gpu_seconds=2232.8
+
+1162.6s	134	phase=candidate_official epoch=2/3 update=225/405 gpu_seconds=2308.1
+
+1200.2s	135	phase=candidate_official epoch=2/3 update=250/405 gpu_seconds=2383.2
+
+1231.0s	136	EPOCH_COMPLETE {"phase": "candidate_official", "epoch": 2, "rows": 2159, "sampled_class_counts": {"claude-fable-5": 119, "claude-opus-4-6": 120, "claude-opus-4-8": 120, "claude-opus-5": 120, "claude-sonnet-5": 120, "gemini-3.1-pro-preview": 120, "gemini-3.6-flash": 120, "gemini-3.7-flash": 120, "gemini-3.8-flash": 120, "glm-5.3": 120, "glm-5.3-flash": 120, "gpt-5.5": 120, "gpt-5.6-luna": 120, "gpt-5.6-sol": 120, "gpt-5.6-terra": 120, "gpt-6-astra": 120, "kimi-k3": 120, "qwen3.8-max": 120}, "sample_order_sha256": "7a7497f9c0ab747299fd8e485350fe57df6eb3a91926f85fc3162e4e2343f84f", "mean_weighted_loss": 2.2437463630510184, "cumulative_updates": 270, "validation_performed": false}
+
+1238.7s	137	phase=candidate_official epoch=3/3 update=275/405 gpu_seconds=2460.2
+
+1276.0s	138	phase=candidate_official epoch=3/3 update=300/405 gpu_seconds=2534.8
+
+1312.7s	139	phase=candidate_official epoch=3/3 update=325/405 gpu_seconds=2608.1
+
+1350.5s	140	phase=candidate_official epoch=3/3 update=350/405 gpu_seconds=2683.8
+
+1386.8s	141	phase=candidate_official epoch=3/3 update=375/405 gpu_seconds=2756.3
+
+1424.0s	142	phase=candidate_official epoch=3/3 update=400/405 gpu_seconds=2830.7
+
+1431.6s	143	EPOCH_COMPLETE {"phase": "candidate_official", "epoch": 3, "rows": 2159, "sampled_class_counts": {"claude-fable-5": 119, "claude-opus-4-6": 120, "claude-opus-4-8": 120, "claude-opus-5": 120, "claude-sonnet-5": 120, "gemini-3.1-pro-preview": 120, "gemini-3.6-flash": 120, "gemini-3.7-flash": 120, "gemini-3.8-flash": 120, "glm-5.3": 120, "glm-5.3-flash": 120, "gpt-5.5": 120, "gpt-5.6-luna": 120, "gpt-5.6-sol": 120, "gpt-5.6-terra": 120, "gpt-6-astra": 120, "kimi-k3": 120, "qwen3.8-max": 120}, "sample_order_sha256": "63c24923251178f11b567bc88a7bdd944e23abb47abff5362eaf3eaf05f5a5d6", "mean_weighted_loss": 1.9794123602333087, "cumulative_updates": 405, "validation_performed": false}
+
+1442.2s	144	STAGE09_COMPLETE {"control": {"development_balanced_accuracy": 0.29444444444444445, "confusion_matrix": [[8, 8, 1, 2, 0, 0, 0, 0, 0, 1, 7, 0, 1, 0, 0, 2, 0, 0], [1, 22, 2, 0, 0, 1, 1, 0, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0], [4, 16, 6, 0, 0, 2, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0], [6, 1, 1, 20, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0], [1, 18, 4, 1, 0, 0, 0, 0, 2, 0, 3, 0, 0, 0, 0, 0, 1, 0], [0, 1, 0, 0, 0, 16, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 6, 1, 0, 0, 5, 17, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 4, 14, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 0, 0, 0, 3, 17, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 1], [8, 6, 3, 4, 1, 0, 0, 0, 0, 1, 3, 0, 0, 0, 0, 3, 1, 0], [6, 7, 0, 5, 0, 0, 0, 0, 0, 1, 6, 0, 0, 0, 0, 4, 0, 1], [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 3, 10, 1, 2, 8, 2, 1], [1, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 17, 0, 1, 7, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0, 2, 0, 1, 12, 2, 2, 10, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 13, 0, 0, 12, 0, 1], [0, 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 22, 1, 0], [0, 2, 0, 1, 0, 0, 0, 0, 0, 1, 2, 5, 1, 0, 3, 7, 7, 1], [0, 3, 4, 0, 1, 0, 1, 0, 0, 0, 0, 0, 6, 4, 1, 4, 2, 4]], "per_class": [{"label": "claude-fable-5", "support": 30, "recall": 0.26666666666666666}, {"label": "claude-opus-4-6", "support": 30, "recall": 0.7333333333333333}, {"label": "claude-opus-4-8", "support": 30, "recall": 0.2}, {"label": "claude-opus-5", "support": 30, "recall": 0.6666666666666666}, {"label": "claude-sonnet-5", "support": 30, "recall": 0.0}, {"label": "gemini-3.1-pro-preview", "support": 30, "recall": 0.5333333333333333}, {"label": "gemini-3.6-flash", "support": 30, "recall": 0.5666666666666667}, {"label": "gemini-3.7-flash", "support": 30, "recall": 0.16666666666666666}, {"label": "gemini-3.8-flash", "support": 30, "recall": 0.1}, {"label": "glm-5.3", "support": 30, "recall": 0.03333333333333333}, {"label": "glm-5.3-flash", "support": 30, "recall": 0.2}, {"label": "gpt-5.5", "support": 30, "recall": 0.1}, {"label": "gpt-5.6-luna", "support": 30, "recall": 0.5666666666666667}, {"label": "gpt-5.6-sol", "support": 30, "recall": 0.06666666666666667}, {"label": "gpt-5.6-terra", "support": 30, "recall": 0.0}, {"label": "gpt-6-astra", "support": 30, "recall": 0.7333333333333333}, {"label": "kimi-k3", "support": 30, "recall": 0.23333333333333334}, {"label": "qwen3.8-max", "support": 30, "recall": 0.13333333333333333}]}, "candidate": {"development_balanced_accuracy": 0.24259259259259258, "confusion_matrix": [[2, 7, 7, 2, 1, 0, 0, 0, 0, 1, 2, 0, 2, 0, 1, 5, 0, 0], [1, 17, 8, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 13, 7, 0, 1, 0, 0, 0, 1, 2, 2, 0, 1, 0, 0, 2, 0, 0], [3, 1, 3, 14, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 7, 0, 0], [0, 13, 5, 1, 2, 0, 3, 0, 1, 0, 1, 0, 2, 0, 0, 1, 0, 1], [0, 1, 0, 0, 0, 7, 21, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 1, 0, 0, 2, 24, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 3, 0, 0, 0, 0, 17, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 3, 1, 0, 0, 0, 20, 1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 6, 9, 4, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 5, 1, 0], [2, 7, 6, 2, 1, 0, 0, 0, 0, 1, 2, 0, 2, 0, 1, 5, 1, 0], [0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 1, 0, 13, 0, 0, 9, 4, 1], [0, 1, 2, 1, 0, 0, 0, 0, 0, 1, 0, 0, 12, 0, 2, 11, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 11, 0, 0, 15, 2, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 10, 0, 0, 17, 1, 0], [0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 23, 1, 0], [0, 2, 1, 4, 1, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 7, 10, 0], [0, 5, 6, 0, 1, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 6, 1, 1]], "per_class": [{"label": "claude-fable-5", "support": 30, "recall": 0.06666666666666667}, {"label": "claude-opus-4-6", "support": 30, "recall": 0.5666666666666667}, {"label": "claude-opus-4-8", "support": 30, "recall": 0.23333333333333334}, {"label": "claude-opus-5", "support": 30, "recall": 0.4666666666666667}, {"label": "claude-sonnet-5", "support": 30, "recall": 0.06666666666666667}, {"label": "gemini-3.1-pro-preview", "support": 30, "recall": 0.23333333333333334}, {"label": "gemini-3.6-flash", "support": 30, "recall": 0.8}, {"label": "gemini-3.7-flash", "support": 30, "recall": 0.16666666666666666}, {"label": "gemini-3.8-flash", "support": 30, "recall": 0.16666666666666666}, {"label": "glm-5.3", "support": 30, "recall": 0.0}, {"label": "glm-5.3-flash", "support": 30, "recall": 0.06666666666666667}, {"label": "gpt-5.5", "support": 30, "recall": 0.0}, {"label": "gpt-5.6-luna", "support": 30, "recall": 0.4}, {"label": "gpt-5.6-sol", "support": 30, "recall": 0.0}, {"label": "gpt-5.6-terra", "support": 30, "recall": 0.0}, {"label": "gpt-6-astra", "support": 30, "recall": 0.7666666666666667}, {"label": "kimi-k3", "support": 30, "recall": 0.3333333333333333}, {"label": "qwen3.8-max", "support": 30, "recall": 0.03333333333333333}]}, "labels": ["claude-fable-5", "claude-opus-4-6", "claude-opus-4-8", "claude-opus-5", "claude-sonnet-5", "gemini-3.1-pro-preview", "gemini-3.6-flash", "gemini-3.7-flash", "gemini-3.8-flash", "glm-5.3", "glm-5.3-flash", "gpt-5.5", "gpt-5.6-luna", "gpt-5.6-sol", "gpt-5.6-terra", "gpt-6-astra", "kimi-k3", "qwen3.8-max"], "validation_rows": 540, "validation_prompts": 30, "delta_percentage_points": -5.185185185185187, "paired_conditional_95_interval_percentage_points": [-8.703703703703706, -1.8518518518518434], "bootstrap_resamples": 10000, "bootstrap_seed": 20261024, "corrected": 37, "broken": 65, "changed_predictions": 250, "interpretation": "Reused fixed development fold, conditional on fitted models. No refitting/selection uncertainty. No automatic promotion, S03 ensemble gain, or official score claim.", "comparison_scope": "whole staged procedure including extra pretraining compute; not compute-matched data effect or S03 ensemble gain", "per_class_delta_percentage_points": [{"label": "claude-fable-5", "delta": -20.0}, {"label": "claude-opus-4-6", "delta": -16.666666666666664}, {"label": "claude-opus-4-8", "delta": 3.3333333333333326}, {"label": "claude-opus-5", "delta": -19.999999999999996}, {"label": "claude-sonnet-5", "delta": 6.666666666666667}, {"label": "gemini-3.1-pro-preview", "delta": -30.0}, {"label": "gemini-3.6-flash", "delta": 23.33333333333334}, {"label": "gemini-3.7-flash", "delta": 0.0}, {"label": "gemini-3.8-flash", "delta": 6.666666666666665}, {"label": "glm-5.3", "delta": -3.3333333333333335}, {"label": "glm-5.3-flash", "delta": -13.333333333333336}, {"label": "gpt-5.5", "delta": -10.0}, {"label": "gpt-5.6-luna", "delta": -16.666666666666664}, {"label": "gpt-5.6-sol", "delta": -6.666666666666667}, {"label": "gpt-5.6-terra", "delta": 0.0}, {"label": "gpt-6-astra", "delta": 3.3333333333333437}, {"label": "kimi-k3", "delta": 9.999999999999998}, {"label": "qwen3.8-max", "delta": -10.0}], "fixed_pilot_screen_pass": false, "pilot_screen_scope": "Positive development BA difference and conditional paired 95% lower endpoint above zero earns broader grouped evaluation only. All class regressions retained; no automatic submission or ensemble claim.", "status": "COMPLETE_FIXED_FOLD_PILOT", "completed_utc": "2026-10-24T10:38:05.038252+00:00", "protocol": {"stage": "09", "seed": 20261024, "fold": 1, "model_id": "microsoft/deberta-v3-base", "revision": "8ccc9b6f36199bec6961081d44eb72fb3f7353f3", "architecture": "AutoModel attention-mask mean of last hidden state + single Linear(hidden,18); no added dropout", "max_length": 384, "batch_size": 4, "gradient_accumulation": 4, "pretrain_epochs": 2, "official_epochs": 3, "pretrain_encoder_lr": 1.5e-05, "pretrain_head_lr": 0.001, "official_encoder_lr": 1e-05, "official_head_lr": 0.0005, "official_train_rows": 2159, "official_validation_rows": 540, "external_rows": 750, "external_classes": 5, "pretrain_sampler": "all 750 admitted rows shuffled without replacement each epoch; exact 150 examples per each of five GPT classes", "official_loss": "inverse-class-support weights normalized to mean one; sum weighted CE / accumulation-group actual rows", "head_reset": "identical initial linear head in both official arms", "optimizer": "fresh AdamW each phase; betas=(0.9,0.999), eps=1e-8, weight_decay=0.01 except biases/LayerNorm", "scheduler": "linear decay, ceil(10% updates) warmup; new scheduler each phase", "amp": "float32 parameters with fp16 autocast and GradScaler; any overflow fails phase", "gradient_clip_norm": 1.0, "validation": "once, after fixed final official epoch; no early stopping", "bootstrap": {"resamples": 10000, "unit": "official prompt_id", "seed": 20261024}, "gpu_budget_seconds": 10800, "required_allocated_gpus": 2, "budget_unit": "allocated CUDA device count times wall seconds; cumulative across resumes", "scope": "reused-development-fold pilot; narrow V4 direct-OpenAI five-GPT subset; not 83k upstream reproduction", "comparison": "whole staged procedure including extra pretraining compute; not compute-matched data effect or S03 ensemble gain"}, "freeze_sha256": "1cbef2139dcff260f60c82faadbe3f4db07448337c8390efcee2b4d69609e61a", "phase_records": {"candidate_pretrain": {"epochs": 2, "optimizer_steps": 94, "warmup_steps": 10, "seconds": 139.56833735100003, "training_rows_per_epoch": 750, "encoder_lr": 1.5e-05, "head_lr": 0.001, "amp_overflow_steps": 0}, "control_official": {"epochs": 3, "optimizer_steps": 405, "warmup_steps": 41, "seconds": 601.916698023, "training_rows_per_epoch": 2159, "encoder_lr": 1e-05, "head_lr": 0.0005, "amp_overflow_steps": 0}, "candidate_official": {"epochs": 3, "optimizer_steps": 405, "warmup_steps": 41, "seconds": 602.9520442639998, "training_rows_per_epoch": 2159, "encoder_lr": 1e-05, "head_lr": 0.0005, "amp_overflow_steps": 0}}, "gpu_seconds_consumed": 2867.145828758, "official_submission_made": false, "test_file_accessed": false, "actual_gpu_training": true, "tokenization": {"max_length": 384, "use_fast": false, "truncation_side": "right", "padding": "dynamic to multiple of 8", "special_tokens_included": true, "official_training": {"rows": 2159, "truncated_rows": 0, "truncated_fraction": 0.0, "untruncated_token_length_quantiles": {"0": 44.0, "0.5": 126.0, "0.9": 247.20000000000005, "0.95": 270.0, "1": 351.0}, "maximum_encoded_length": 351}, "official_validation": {"rows": 540, "truncated_rows": 0, "truncated_fraction": 0.0, "untruncated_token_length_quantiles": {"0": 50.0, "0.5": 122.0, "0.9": 250.0, "0.95": 271.0, "1": 321.0}, "maximum_encoded_length": 321}, "external_pretraining": {"rows": 750, "truncated_rows": 0, "truncated_fraction": 0.0, "untruncated_token_length_quantiles": {"0": 47.0, "0.5": 124.0, "0.9": 252.0, "0.95": 272.0, "1": 308.0}, "maximum_encoded_length": 308}}}
+
+1442.6s	145	Fixed-fold development comparison completed; inspect aggregate/RESULT.json.
+
+1448.0s	146	/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+
+1448.0s	147	  cells[i][c] = re.sub('\\\\\|', '|', cell)
+
+1448.1s	148	/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+
+1448.1s	149	  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+
+1449.0s	150	[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+
+1449.1s	151	[NbConvertApp] Writing 117376 bytes to __notebook__.ipynb
+
+1451.9s	152	[NbConvertApp] Converting notebook __notebook__.ipynb to html
+
+1452.4s	153	[NbConvertApp] Writing 457459 bytes to __results__.html
+
