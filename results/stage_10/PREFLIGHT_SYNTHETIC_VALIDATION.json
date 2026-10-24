@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": {
+    "path_traversal_0": true,
+    "path_traversal_1": true,
+    "path_traversal_2": true,
+    "label_set_mismatch": true,
+    "label_order_mismatch": true,
+    "missing_recovery_archive": true,
+    "ambiguous_recovery_archive": true,
+    "recovery_actual_hash_mismatch": true,
+    "recovery_relative_path_escape": true,
+    "truncated_safetensors_header": true,
+    "object_npz_pickle_rejected": true,
+    "nonfinite_numeric_npz_rejected": true,
+    "missing_required_readout_key_rejected": true
+  },
+  "passed": 13,
+  "total": 13,
+  "source_or_model_executed": false
+}

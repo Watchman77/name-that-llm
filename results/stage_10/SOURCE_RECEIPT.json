@@ -1,0 +1,21 @@
+{
+  "stage": "10",
+  "source_author": "Kirill Tymchyshyn (kirilltym)",
+  "source_script_version_id": 361634630,
+  "source_kaggle_version": 1,
+  "source_displayed_public_balanced_accuracy": 0.639,
+  "source_url": "https://www.kaggle.com/code/kirilltym/0-639-teach-more-keep-the-signature?scriptVersionId=361634630",
+  "captured_python_cells": 14,
+  "captured_python_sha256": "1d302075c9b5f620db265a147cc11138e786a11ea754c262a33b9223879905de",
+  "licence_ui": "Apache 2.0",
+  "input_ui": "33 sources / 46.91 GB; no private-source placeholder displayed",
+  "source_preview_runtime_seconds": 19.3,
+  "source_preview_mode": "Exact public fixture shortcut; no model weights loaded",
+  "our_official_public_balanced_accuracy": null,
+  "prior_official_s03": 0.62,
+  "cpu_audit_script_sha256": "cece257d40cfbfbf2911ebc10c303a85df9e9caa854175f9852326828c5eb970",
+  "state": "PRIVATE_CPU_PREPARATION_NOT_YET_EXECUTED",
+  "paid_services_used": false,
+  "verification_date": "2026-10-24",
+  "cpu_contract_synthetic_checks": 13
+}
