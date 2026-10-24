@@ -1,0 +1,137 @@
+{
+  "components": {
+    "atlas_rlcd": {
+      "adapter_loading": "Safetensors; exact expected parameter keys/shapes and finite tensors checked before copying.",
+      "additional_unpreflighted_runtime_assets_found": false,
+      "direct_network_subprocess_secret_environment_or_file_write_calls_found": false,
+      "model_paths": "Passed by outer frozen notebook; from_pretrained omits local_files_only and relies on the outer notebook offline environment.",
+      "revision_qualification": "ATLAS bundle declares Qwen3-8B-Base revision 49e3418fbbbca6ecbdf9608b4d22e5a407081db4; load_model does not itself prove supplied local weight equality to that Hugging Face revision.",
+      "training_reader": "read_training performs caller-path CSV read/hash validation, but importing LABELS does not invoke it."
+    },
+    "night24_readouts": {
+      "direct_network_subprocess_secret_environment_or_file_write_calls_found": false,
+      "expected_fitted_estimator_classes": [
+        "sklearn.random_projection.SparseRandomProjection",
+        "sklearn.decomposition.PCA",
+        "sklearn.kernel_approximation.RBFSampler",
+        "sklearn.kernel_approximation.Nystroem",
+        "sklearn.linear_model.LogisticRegression",
+        "sklearn.preprocessing.StandardScaler",
+        "sklearn.discriminant_analysis.LinearDiscriminantAnalysis",
+        "sklearn.neighbors.KNeighborsClassifier",
+        "sklearn.svm.SVC"
+      ],
+      "fit_functions_present_but_not_invoked_on_import": true,
+      "module_defined_custom_estimator_classes": false,
+      "qualification": "Expected classes follow from reviewed fit_bank/predict_bank source; the joblib payload was not deserialized or independently inventoried for embedded globals or reducers.",
+      "quality_selected_pool_indirectly_opened_by_predict_bank": false,
+      "runtime_dependencies": "Supplied fitted bank, feature arrays and texts; no additional runtime dataset or quality-pool file read in reviewed source."
+    },
+    "ultrabert": {
+      "auto_map": "Local exported configuration/model modules; standard GPT2Tokenizer, without custom tokenizer mapping.",
+      "dimensions": "24 layers; hidden size 1024; 8 attention heads x 128; 18 canonical sorted labels with inverse label maps.",
+      "direct_network_subprocess_secret_environment_file_write_deserialization_or_dynamic_execution_calls_found": false,
+      "fold_scope": "The actual capture contains five folds whose reviewed configuration/model/tokenizer bytes deduplicate to these same hashes.",
+      "hub_kernel_qualification": "Standard Transformers Hub-kernel decorators are present. The frozen outer notebook sets HF offline flags and USE_HUB_KERNELS=NO; decorator implementation was not runtime verified.",
+      "runtime_gate": "Configuration declares transformers_version 5.16.1 and model source imports version-sensitive Transformers internals. Verify actual Kaggle import and SDPA compatibility before inference; do not apply old 4.56 pins."
+    }
+  },
+  "conclusion": {
+    "assessment": "No concrete blocker identified in the captured custom source. This is a static source review, not verification of the complete serialized execution boundary or runtime compatibility.",
+    "concrete_static_blocker_found": false,
+    "runtime_success_verified": false
+  },
+  "receipt_corrections": [
+    {
+      "actual_utf8_bytes": 30581,
+      "explanation": "The review index byte field contains the Unicode character count; actual UTF-8 bytes match the CPU export record and captured SHA-256.",
+      "file": "3_modeling_ultrabert.py",
+      "index_bytes_field": 30293,
+      "sha256_matches": true,
+      "unicode_characters": 30293
+    }
+  ],
+  "receipts": {
+    "file_receipt_encoding": "SHA-256 of index-ordered list reduced to file,bytes,sha256 using json.dumps(sort_keys=True,separators=(comma,colon)).encode(UTF-8).",
+    "file_receipt_sha256": "f3dc56895f18c1f597aac5928c5a6b5b3c6c114f8f0451903260c41fb1767021",
+    "files": [
+      {
+        "bytes": 7295,
+        "file": "0_readouts.py",
+        "sha256": "2f420e8dd1da0e08d34fd503d912402a9043788946bf287925dbf69a26a43bf4"
+      },
+      {
+        "bytes": 2739,
+        "file": "1_config.json",
+        "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+      },
+      {
+        "bytes": 2209,
+        "file": "2_configuration_ultrabert.py",
+        "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+      },
+      {
+        "bytes": 30581,
+        "file": "3_modeling_ultrabert.py",
+        "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+      },
+      {
+        "bytes": 814,
+        "file": "4_tokenizer_config.json",
+        "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+      },
+      {
+        "bytes": 3011,
+        "file": "21_atlas_bundle.json",
+        "sha256": "48f8d7e82bf0b12f9414a314f695216e31b5f4854b5091248d1015b98d9743de"
+      },
+      {
+        "bytes": 72,
+        "file": "22___init__.py",
+        "sha256": "b2bff8348b93ca7375c523e83965e24b6af5df06fe3dc2a0940f73332ce1ad87"
+      },
+      {
+        "bytes": 1505,
+        "file": "23_inference.py",
+        "sha256": "8f57242c27e13572a8c5a2fbb8136dce462fb7cd175a52092a5a8c86797e91c7"
+      },
+      {
+        "bytes": 8502,
+        "file": "24_model.py",
+        "sha256": "3fb9394bf8f8535523ba6da4b66b2d24c3fa80a37767219b076422c3adc226fb"
+      },
+      {
+        "bytes": 83,
+        "file": "25___init__.py",
+        "sha256": "b53b2efa3d0e4884c17dbbfc51514d8f5b37205ae6d58e354f02e1fbbe78c4bc"
+      },
+      {
+        "bytes": 1873,
+        "file": "26_data.py",
+        "sha256": "871778752ddde445efc33d310fb96961f87507c3b59a18aff3ea472f3d86972a"
+      }
+    ],
+    "matches_cpu_v1_export_sha256": true,
+    "private_code_export_sha256": "543be2bdafb87a7f558f397669c91c7ed2e31d303849d7b696cbb3a337633c6c"
+  },
+  "remaining_boundaries": [
+    "The joblib bank and Torch token-attention checkpoints remain serialized execution boundaries. Their hashes were captured by CPU audit, but neither this review nor that audit deserialized or inspected embedded pickle globals/reducers.",
+    "Static source review does not verify actual model inference, numeric activations, GPU memory, run duration, SDPA imports, or hidden-test completion.",
+    "Quality-selected data is used elsewhere by the frozen complement pipeline and was audited there; absence of a readouts.py quality-pool read does not assert that the whole ensemble avoids that dataset."
+  ],
+  "review_date_utc": "2026-10-24",
+  "scope": {
+    "capture": "Actual Kaggle CPU-audit custom-code export; read-only text, AST and JSON inspection",
+    "custom_code_imported_or_executed": false,
+    "deduplicated_files": 11,
+    "export_records": 27,
+    "large_weight_bytes_reviewed": false,
+    "models_or_checkpoints_loaded": false,
+    "pickle_globals_or_reducers_inspected": false,
+    "reviewed_utf8_bytes": 58684,
+    "source_code_included_in_this_report": false
+  },
+  "stage": "10",
+  "status": "STATIC_REVIEW_COMPLETE_RUNTIME_UNVERIFIED",
+  "upstream_version": 361634630
+}

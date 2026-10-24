@@ -10,5 +10,94 @@
     "actual_cpu_input_execution_performed_by_build": false,
     "rendered_inspection": "pending Kaggle UI"
   },
-  "gpu_reproduction_notebook": "PENDING_ORIGINAL_CELL_ARRAY"
+  "gpu_reproduction_notebook": {
+    "path": "notebooks/Stage_10_Public_639_Reproduction.ipynb",
+    "sha256": "32d52a080d1dcd9e4a863643ff323fc5b3421f2dee0184a74e3ce7892e10bf62",
+    "source_script_version_id": 361634630,
+    "source_captured_python_sha256": "1d302075c9b5f620db265a147cc11138e786a11ea754c262a33b9223879905de",
+    "original_cell_array_sha256": "6b3acf9a2dc9200408bba68096c13c7296d23019de7eee4bc852d7bf1cd564a7",
+    "upstream_code_cells": 14,
+    "all_upstream_cells_byte_exact": true,
+    "upstream_cells": [
+      {
+        "cell": 1,
+        "sha256": "430a9e6c5fdc06bb9b87267777f04751468668e88563ee5ceb9979098c38665f",
+        "utf8_bytes": 1446
+      },
+      {
+        "cell": 2,
+        "sha256": "1d5985d8f5ce213cee61e3ad65293578c6b5a6001a319cbb74578d410238c090",
+        "utf8_bytes": 1711
+      },
+      {
+        "cell": 3,
+        "sha256": "e551a10efeffc0329e0fe388893e7bc16a5ab0c927798980d62bcf7725e57429",
+        "utf8_bytes": 12686
+      },
+      {
+        "cell": 4,
+        "sha256": "f149947398e90951c259fd198541b180dc27e2b043e3251f9c2947cf01d4db8c",
+        "utf8_bytes": 8475
+      },
+      {
+        "cell": 5,
+        "sha256": "8152deedd7a2dadf7aab3ec4d6770dbcc5aa385747a9fa45c7834f65e967093a",
+        "utf8_bytes": 54748
+      },
+      {
+        "cell": 6,
+        "sha256": "405a57509517f689fe3aa498b8da4d2657f67a74d9a618390f2cb8434933a3a5",
+        "utf8_bytes": 6254
+      },
+      {
+        "cell": 7,
+        "sha256": "d785a8dc49e93887382904b58e36f5853abf19be5536f10c437f19c298407820",
+        "utf8_bytes": 4454
+      },
+      {
+        "cell": 8,
+        "sha256": "006103921b9a7e0a6feaa966ec1974036ce94a3a07eea759e017f13877aaa4ec",
+        "utf8_bytes": 3176
+      },
+      {
+        "cell": 9,
+        "sha256": "5d3b5798de9853332f12d387aa2fd18d67ee217222ff08a2b0fc591eb06ca43d",
+        "utf8_bytes": 2537
+      },
+      {
+        "cell": 10,
+        "sha256": "8653bc69543cd40b342c7362ee8f78d3905d56144e76c1f61d6f465deca8d372",
+        "utf8_bytes": 5906
+      },
+      {
+        "cell": 11,
+        "sha256": "8b480790e2e245ae16197a8b393de0b3ee3f50d9a2a8da4cd4cbaaed8ecdf116",
+        "utf8_bytes": 1484
+      },
+      {
+        "cell": 12,
+        "sha256": "ce5037d44e3b3789f82e8dad84688e57b38c621b09e9298147e0c79921fe2a45",
+        "utf8_bytes": 1461
+      },
+      {
+        "cell": 13,
+        "sha256": "fd659e469c163e63158a25c3c049ecc0b7873c4ad79a1726d738019eceea845d",
+        "utf8_bytes": 1890
+      },
+      {
+        "cell": 14,
+        "sha256": "9e4b450c72ca00f6277a55a0f9f64bb274feb722edb2b908c38908138ca0c6cf",
+        "utf8_bytes": 6646
+      }
+    ],
+    "captured_python_transport_parity": "Marker-prefixed exact array reconstruction matches captured Python after removing one final transport separator newline only; no cell bytes altered.",
+    "appended_validation_code_cell": 15,
+    "validation_module_sha256": "36aac2277069247f10f2759f8a0c487ade96c44d363762ad4825e0f4b2714b7c",
+    "embedded_validation_module_byte_exact": true,
+    "validation_cell_sha256": "5aa8c458e140400941c59bc5ba1bcda7fbcb8826268935c83247ce0b0357a038",
+    "nbformat_readback_and_all_code_cells_compile": "PASS",
+    "actual_gpu_or_model_execution_by_build": false,
+    "rendered_inspection": "pending Kaggle UI",
+    "preview_caveat": "Original exact-three-row fixture branch emits constants without loading weights; preview is format-only."
+  }
 }

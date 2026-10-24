@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checks": 15,
+  "passed": [
+    "valid_three_row_actual_inference",
+    "valid_large_balanced_inference",
+    "valid_zero_atlas_rows",
+    "valid_subset_atlas_rows",
+    "valid_subset_atlas_with_float32_helper",
+    "wrong_probability_dimensions_rejected",
+    "reordered_ids_rejected",
+    "nonfinite_probability_rejected",
+    "missing_mandatory_member_rejected",
+    "bad_saved_parquet_label_rejected",
+    "helper_label_order_rejected",
+    "wrong_blend_reconstruction_rejected",
+    "nonfinite_component_logits_rejected",
+    "reordered_parquet_ids_rejected",
+    "stub_is_format_only_not_inference_verified"
+  ],
+  "actual_model_inference_executed": false,
+  "actual_parquet_engine_executed": false,
+  "parquet_boundary": "Explicit injected DataFrame reader; real parquet readback remains mandatory on Kaggle.",
+  "limitations": [
+    "Synthetic artifact contracts and published-mixture arithmetic only; no model, custom code or pickle execution.",
+    "The upstream exact-public-fixture fast path remains format-only."
+  ]
+}
