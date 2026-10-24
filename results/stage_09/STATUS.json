@@ -1,6 +1,6 @@
 {
   "stage": "09",
-  "status": "GPU_RUNNING_CANDIDATE_PRETRAIN",
+  "status": "GPU_RUNNING_CONTROL_OFFICIAL",
   "official_best_submission": "S03",
   "official_best_public_balanced_accuracy": 0.62,
   "development_score": null,
@@ -29,11 +29,11 @@
   "script_version_id": 361761811,
   "kaggle_version": 1,
   "gpu_preflight": "PASS_GRAPH_NO_OPTIMIZER_STEP",
-  "last_verified_phase": "candidate_pretrain",
-  "last_verified_epoch": 2,
-  "last_verified_optimizer_update": 94,
-  "phase_total_optimizer_updates": 94,
+  "last_verified_phase": "control_official",
+  "last_verified_epoch": 1,
+  "last_verified_optimizer_update": 25,
+  "phase_total_optimizer_updates": 405,
   "source_freeze_commit": "232587c3c1331e44c7e88cb02e71d64ad65e5148",
   "completed_pretraining_epochs": 2,
-  "last_verified_job_log_seconds": 207.9
+  "last_verified_job_log_seconds": 248.6
 }

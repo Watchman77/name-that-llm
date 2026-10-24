@@ -4,7 +4,7 @@
   "kaggle_version": 1,
   "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-09-pretraining-pilot?scriptVersionId=361761811",
   "status": "Running",
-  "observed_log_stage": "GPU preflight passed; both candidate pretraining epochs completed with 750 rows each and 94 total optimizer updates; official-arm evaluation pending",
+  "observed_log_stage": "Both external pretraining epochs complete; control_official epoch1/3 update25/405 running",
   "actual_fitting_start_verified": true,
   "saved_source_verified": "All three code cells copied through visible editor clipboard and matched committed notebook exactly",
   "source_freeze_commit": "232587c3c1331e44c7e88cb02e71d64ad65e5148",
@@ -24,6 +24,6 @@
   "official_submission_made": false,
   "paid_services_used": false,
   "gpu_preflight_pass": true,
-  "latest_verified_job_log_seconds": 207.9,
+  "latest_verified_job_log_seconds": 248.6,
   "recorded_date": "2026-10-24"
 }
