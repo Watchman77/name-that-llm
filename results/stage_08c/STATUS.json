@@ -1,13 +1,13 @@
 {
   "stage": "08C",
-  "status": "PRIVATE_PREVIEW_VALIDATED_OFFICIAL_S03_NOTEBOOK_RUNNING",
+  "status": "OFFICIAL_S03_SUCCEEDED_PUBLIC_0620",
   "source_version": 361311282,
   "script_version_id": 361732127,
   "real_input_checks": 85,
   "all_input_checks_pass": true,
   "own_preview_complete": true,
   "official_submission": true,
-  "own_public_score": null,
+  "own_public_score": 0.62,
   "upstream_author_public_score": 0.62,
   "model_algorithm_modified": false,
   "validation_only_final_cell_added": true,
@@ -18,7 +18,12 @@
   "output_validation_checks": 22,
   "output_validation_status": "PASS",
   "official_submission_label": "S03",
-  "official_status": "Notebook Running",
-  "monitoring": "hourly read-only watch enabled",
-  "cpu_quick_script_version_id": 361731577
+  "official_status": "Succeeded",
+  "monitoring": "complete; watch disabled",
+  "cpu_quick_script_version_id": 361731577,
+  "official_score_verified_date": "2026-10-24",
+  "official_score_kind": "official public balanced accuracy",
+  "prior_s02_score": 0.549,
+  "improvement_over_s02_percentage_points": 7.1,
+  "rank_at_verification": 377
 }

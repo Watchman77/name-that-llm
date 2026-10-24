@@ -304,3 +304,10 @@ The frozen 0.600 recipe failed the real-input gate: 150/151 checks pass, but the
 ### S03 submitted — 24 October 2026
 
 Stage 08C private V2 completed in 739.2s; all 22 actual probability/ID/parquet checks passed. The exact version (361732127) was submitted as S03. The live official row displays Notebook Running, with no own score. S02 remains confirmed at 0.549. Final selections remain automatic at 0/2. The hourly read-only watch is enabled until S03 terminates. See results/stage_08c/EXECUTION_20261024.json and OUTPUT_VALIDATION.json. No model tuning or paid services.
+
+
+## 24 October 2026 — S03 official completion and Stage 09 resumption
+
+S03 / private Stage 08C V2 361732127 displayed Succeeded and official public balanced accuracy 0.620 in the connected account, independently visible in submission details and the account leaderboard. Improvement versus S02: +7.1 percentage points; rank 377 at verification. The three-row preview remains an execution milestone. Final private score is unknown. The completed watch is disabled.
+
+User resumed work after this milestone. The next experiment is a bounded matched development pilot, declared in `results/stage_09/PROTOCOL.md`: untouched DeBERTa-base, masked-mean/linear head and separate learning rates in both arms; candidate-only two-epoch pretraining on the 750 source-traced direct-OpenAI V4 rows, followed by identical three-epoch official fold-1 training. CPU admission passed. Actual GPU execution status is recorded separately; no Stage 09 result or official submission is implied here.

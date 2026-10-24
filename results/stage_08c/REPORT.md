@@ -1,6 +1,6 @@
 # Stage 08C — two-stage part-two reproduction
 
-Checked live on 24 October 2026 in watchman777. **Our private V2 completed its three-row preview in 739.2 seconds and passed all 22 output checks. Official submission S03 is now Notebook Running on the hidden test, with no displayed score yet.** The real CPU audit passed all 85 checks. Our freshly confirmed prior official best remains S02 at 0.549; the source author's 0.620 is not our score.
+Verified in the connected watchman777 Kaggle session on 24 October 2026: **official S03 SUCCEEDED with displayed public balanced accuracy 0.620 (62.0%)**, an improvement of **7.1 percentage points** over S02 at 0.549. Rank at the check was 377. Submission details and the account leaderboard both displayed our score. This is separate from the earlier three-row preview and the source author's score. The completed S03 watch is disabled.
 
 ## Frozen source and inputs
 
@@ -38,6 +38,6 @@ No paid services, retraining, generated API data, public checkpoints, row-level 
 
 The terminal preview logs show all members completed: SVC after 424s, Qwen3-14B after 567s, Qwen2.5-14B after 696s and DeBERTa after 710s (times relative to the source timer). Kaggle reports total preview runtime 739.2s and output 3.7 kB. The actual final guard passed all 22 checks, including finite logits/probabilities and real parquet readback. See `PREVIEW_LOG.txt`, `OUTPUT_VALIDATION.json` and `EXECUTION_20261024.json`. This three-row result does not measure hidden-test accuracy.
 
-S03 selected this exact private V2 and `submission.parquet`, with an explicit upstream-credit description. The competition page confirms **Notebook Running**. No own S03 score is available. Final selections remain automatic at 0/2; no selection checkbox was changed. The existing run watch is enabled for read-only hourly checks and will stop after reporting the terminal S03 result.
+S03 selected this exact private V2 and `submission.parquet`, with an explicit upstream-credit description. The competition page subsequently confirmed **Succeeded / 0.620**, and the account leaderboard confirmed a new personal best above 0.549. Final selections remained automatic at 0/2; no selection checkbox was changed. The S03 watch is complete and disabled. The public leaderboard uses approximately 40% of test data; the final private score remains unknown.
 
-The full source, aggregate audits, guards and results are saved in this repository. No weights, competition passage text or row predictions are published. `NEXT_EXPERIMENT.md` describes a possible matched two-stage pretraining pilot after this official evaluation; it has not run.
+The full source, aggregate audits, guards and results are saved in this repository. No weights, competition passage text or row predictions are published. `NEXT_EXPERIMENT.md` records the follow-up hypothesis. Stage 09 now specifies its bounded implementation in `results/stage_09/PROTOCOL.md`; the original author checkpoints remain frozen.

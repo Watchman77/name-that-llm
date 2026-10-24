@@ -1,0 +1,19 @@
+{
+  "submission": "S03",
+  "notebook_script_version_id": 361732127,
+  "source_script_version_id": 361311282,
+  "status": "Succeeded",
+  "official_public_balanced_accuracy": 0.62,
+  "verified_date": "2026-10-24",
+  "verification": "Connected watchman777 Chrome session; exact submission row, submission-details Score, account leaderboard new-personal-best message",
+  "prior_s02": 0.549,
+  "improvement_percentage_points": 7.1,
+  "rank_at_verification": 377,
+  "author_score_is_separate": true,
+  "preview_is_separate": true,
+  "final_private_score": null,
+  "final_selection_changed": false,
+  "monitoring": "complete; watch disabled",
+  "submission_url": "https://www.kaggle.com/competitions/name-that-llm/submissions",
+  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-08c-part-two-reproduction?scriptVersionId=361732127"
+}

@@ -1,0 +1,36 @@
+{
+  "actual_gpu_training_executed": false,
+  "checks": {
+    "duplicate_ids_rejected": true,
+    "external_full_shuffle_exact_balanced_class_exposure": true,
+    "external_full_shuffle_no_duplicate_or_omitted_rows": true,
+    "external_imbalanced_subset_rejected": true,
+    "finite_aligned_probability_table_accepted": true,
+    "nan_probability_rejected": true,
+    "official_exact_update_count_405": true,
+    "official_last_accumulation_group_15_rows": true,
+    "official_weight_mass_balanced": true,
+    "official_weights_mean_one": true,
+    "paired_bootstrap_known_100_point_gain": true,
+    "paired_corrected_broken_known_contrast": true,
+    "partial_group_analytic_gradient_matches_full_batch": true,
+    "partial_group_sum_loss_normalization_matches_example_mean": true,
+    "pretrain_exact_update_count_94": true,
+    "pretrain_last_accumulation_group_14_rows": true,
+    "reordered_ids_rejected": true,
+    "saved_payload_column_order_rejected": true,
+    "saved_payload_nonfinite_logits_rejected": true,
+    "saved_payload_probability_logit_mismatch_rejected": true,
+    "saved_payload_validated_including_logits": true,
+    "truncation_incidence_uses_strict_boundary_including_specials": true,
+    "unnormalized_probability_rejected": true,
+    "wrong_row_count_rejected": true
+  },
+  "limits": [
+    "CPU algebra/schema checks only; no Torch import, autograd, model load, AMP, CUDA, or GPU training executed.",
+    "Real corpus admission is separately mandatory; synthetic checks do not establish data independence."
+  ],
+  "passed": 24,
+  "status": "PASS",
+  "total": 24
+}

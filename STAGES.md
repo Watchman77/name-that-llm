@@ -1,5 +1,8 @@
 # Project stages and current state
 
+Current checkpoint, 24 October 2026: **S03 / Stage 08C V2 succeeded at 0.620 official public balanced accuracy**, +7.1 percentage points above S02. Rank at verification: 377. The S03 watch is complete and disabled. Stage 09 is the separately frozen development pretraining pilot; see `results/stage_09/PROTOCOL.md`. Historical observations below retain their original dates.
+
+
 ## Competition goal
 
 Target first place in the final private evaluation. At an earlier recorded 17 October 2026 check, S02 scored **0.549**, the public leader **0.600** (5.1 percentage points ahead), and tenth place **0.559** (1.0 point ahead). Our rank was **181 of 1,212 teams**. No fresh leaderboard check accompanies this update. S01 remains frozen at 0.354. Public standings are time-specific; the final private result is unknown. The user's request to adopt stronger public methods was completed as one frozen external-baseline reproduction, not an original-method claim or parameter search.
@@ -89,3 +92,4 @@ The frozen 0.600 recipe failed the real-input gate: 150/151 checks pass, but the
 [Stage 08B](results/stage_08b/REPORT.md) reproduces Nishant V2 359887828 without model changes. Our private V1 361730151 completed its three-row preview in 397.7s; no official score.
 
 [Stage 08C](results/stage_08c/REPORT.md) freezes Nishant part-two V1 361311282 (author public 0.620), pins dataset V1, passes 85/85 real CPU input checks, and completed private GPU V2 361732127 in 739.2s. The six model cells are unchanged; an independent validation-only final cell checks probabilities/IDs/parquet. All 22 actual output checks passed. Official S03 is Notebook Running on hidden data, with no score yet; hourly read-only monitoring is enabled. Current public first is 0.700, tenth 0.660; our displayed current official best remains 0.549. No tuning, API purchases or final-selection changes.
+
