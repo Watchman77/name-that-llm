@@ -27,6 +27,31 @@ LABELS = ['gpt-5.5', 'gpt-5.6-luna', 'gpt-5.6-sol', 'gpt-5.6-terra', 'gpt-6-astr
           'claude-opus-4-6', 'claude-opus-4-8', 'claude-opus-5', 'claude-sonnet-5', 'claude-fable-5',
           'qwen3.8-max', 'glm-5.3', 'glm-5.3-flash', 'kimi-k3']
 SORTED_LABELS = sorted(LABELS)
+# Reviewed after real CPU V1 361877495 recorded only these two ambiguities.
+# This pins the original source's existing first-sorted choice; it selects no
+# new model and does not change upstream inference or delete any attachment.
+REVIEWED_SOURCE_FIRST = {
+    'comp_qwen3_8b': {
+        'matching_paths_sorted': [
+            'models/qwen-lm/qwen-3/transformers/8b-base/1/config.json',
+            'models/qwen-lm/qwen-3/transformers/8b/1/config.json',
+        ],
+        'selected_path': 'models/qwen-lm/qwen-3/transformers/8b-base/1/config.json',
+        'selected_config_sha256': '3bd01d7ad7a2e203ecbbe84e24087a51c6d2a108ee4bcc42d0016bf49564983a',
+        'selector_spec': {'model_type': 'qwen3', 'hidden_size': 4096},
+        'review_evidence': 'Real CPU V1 atlas_qwen3_8b_base independently resolved and audited this identical base path/config.',
+    },
+    'main_qwen3_14b': {
+        'matching_paths_sorted': [
+            'models/qwen-lm/qwen-3/transformers/14b-base/1/config.json',
+            'models/qwen-lm/qwen-3/transformers/14b/1/config.json',
+        ],
+        'selected_path': 'models/qwen-lm/qwen-3/transformers/14b-base/1/config.json',
+        'selected_config_sha256': 'eb65771c8f108f88e4d87f771e1c9d40b7e35bc8070be8c97246c9446ccdf179',
+        'selector_spec': {'model_type': 'qwen3', 'hidden_size': 5120, 'num_hidden_layers': 40},
+        'review_evidence': 'Real CPU V1 sorted source resolution plus the verified prior S03 Qwen3-14B-Base configuration hash.',
+    },
+}
 EXTRA_SOURCES = [('**/ntl_extra_passages_claude.csv', 'model', None), ('**/gen_passages.csv', 'model', None),
                  ('**/ntl_generations.csv', 'label', 'finish_reason'), ('**/ntl_proxy_generations.csv', 'label', None),
                  ('**/ntl_generated*.csv', 'model', 'finish'), ('**/passages_clean.csv', 'model', None)]
@@ -62,6 +87,27 @@ def checked_labels(value, ordered=None):
     if ordered is not None and value != ordered:
         raise ValueError('Checkpoint label order differs from its frozen source head')
     return value
+
+
+def reviewed_source_first(name, matching_paths, selected_path, selected_config_sha, selector_spec):
+    """Accept only the explicitly reviewed complete candidate list and first choice."""
+    if name not in REVIEWED_SOURCE_FIRST:
+        raise ValueError('Unreviewed ambiguous source-first base selector')
+    pin = REVIEWED_SOURCE_FIRST[name]
+    if list(matching_paths) != pin['matching_paths_sorted']:
+        raise ValueError('Reviewed source-first complete candidate list/order changed')
+    if not matching_paths or selected_path != matching_paths[0] or selected_path != pin['selected_path']:
+        raise ValueError('Reviewed source-first selected path changed')
+    if selected_config_sha != pin['selected_config_sha256']:
+        raise ValueError('Reviewed source-first selected config SHA changed')
+    if selector_spec != pin['selector_spec']:
+        raise ValueError('Reviewed source-first selector specification changed')
+    return {'review_status': 'EXPLICITLY_REVIEWED_ORIGINAL_SOURCE_FIRST_MATCH',
+            'matching_paths_sorted': list(matching_paths), 'selected_path': selected_path,
+            'selected_config_sha256': selected_config_sha, 'selector_spec': selector_spec,
+            'review_evidence': pin['review_evidence'],
+            'reviewed_after_cpu_script_version': 361877495,
+            'upstream_model_choice_or_algorithm_changed': False}
 
 
 def safetensor_header(path):
@@ -241,10 +287,20 @@ class Audit:
                       'source_resolution': 'first sorted match (ATLAS explicit selector requires exactly one)',
                       'source_would_choose': str(matches[0].relative_to(self.root)) if matches else None}
         self.details[name + '_resolution'] = resolution
-        if len(matches) != 1:
+        review = None
+        if name in REVIEWED_SOURCE_FIRST:
+            # Enforce the reviewed list even when a later attachment deletion
+            # would leave only one otherwise-unambiguous candidate.
+            selected = str(matches[0].relative_to(self.root)) if matches else None
+            review = reviewed_source_first(name, resolution['matching_paths_sorted'], selected,
+                                           sha(matches[0]) if matches else None, spec)
+            resolution['explicit_source_first_review'] = review
+        elif len(matches) != 1:
             raise ValueError(f'{name}: missing/ambiguous base selector; {len(matches)} candidates; source first-match resolution recorded for review')
         result = self.model_inventory(matches[0].parent)
         result['tokenizer_assets'] = self.tokenizer_inventory(matches[0].parent)
+        if review is not None:
+            result['reviewed_source_first_resolution'] = review
         return result
 
     def main_lora(self, name, hidden, keep):
@@ -493,7 +549,7 @@ class Audit:
                                  'Safetensors headers prove tensor layout only, not finite tensor values.',
                                  'The Night24 joblib internals are not deserialized; adapter/label/layer compatibility must pass the original runtime assertions.',
                                  'The source normal preview emits constants without loading weights; never report it as a real inference preview.',
-                                 'Multiple source-first base matches are recorded and blocked for explicit resolution, rather than silently choosing different bytes.',
+                                 'Unreviewed multiple source-first base matches are blocked. Two explicitly reviewed candidate lists/first paths/config hashes are pinned without changing upstream model choices.',
                                  'The original recipe fits final heads on official rows; its in-sample checks and fitted bank are not honest OOF accuracy.']}
         (self.out / 'INPUT_AUDIT.json').write_text(json.dumps(report, indent=2, allow_nan=False) + '\n', encoding='utf-8')
         print('STAGE10_CPU_AUDIT_SUMMARY', json.dumps({k: report[k] for k in ['status','passed','total','private_code_export_files','model_or_custom_code_executed']}), flush=True)
@@ -513,6 +569,23 @@ def self_test():
         rejects('path_traversal_' + str(len(checks)), lambda value=value: safe_relative(value))
     rejects('label_set_mismatch', lambda: checked_labels(['wrong'] * 18))
     rejects('label_order_mismatch', lambda: checked_labels(SORTED_LABELS, LABELS))
+    pin = REVIEWED_SOURCE_FIRST['comp_qwen3_8b']
+    accepted = reviewed_source_first('comp_qwen3_8b', pin['matching_paths_sorted'], pin['selected_path'],
+                                     pin['selected_config_sha256'], pin['selector_spec'])
+    checks['reviewed_original_source_first_resolution_accepted'] = accepted['upstream_model_choice_or_algorithm_changed'] is False
+    rejects('unreviewed_base_selector_rejected', lambda: reviewed_source_first('unreviewed', [], None, None, None))
+    rejects('reviewed_base_extra_candidate_rejected', lambda: reviewed_source_first('comp_qwen3_8b',
+        pin['matching_paths_sorted'] + ['models/unreviewed/config.json'], pin['selected_path'], pin['selected_config_sha256'], pin['selector_spec']))
+    rejects('reviewed_base_deleted_candidate_rejected', lambda: reviewed_source_first('comp_qwen3_8b',
+        pin['matching_paths_sorted'][:1], pin['selected_path'], pin['selected_config_sha256'], pin['selector_spec']))
+    rejects('reviewed_base_changed_order_rejected', lambda: reviewed_source_first('comp_qwen3_8b',
+        pin['matching_paths_sorted'][::-1], pin['selected_path'], pin['selected_config_sha256'], pin['selector_spec']))
+    rejects('reviewed_base_changed_config_hash_rejected', lambda: reviewed_source_first('comp_qwen3_8b',
+        pin['matching_paths_sorted'], pin['selected_path'], '0' * 64, pin['selector_spec']))
+    rejects('reviewed_base_disallowed_selection_rejected', lambda: reviewed_source_first('comp_qwen3_8b',
+        pin['matching_paths_sorted'], pin['matching_paths_sorted'][1], pin['selected_config_sha256'], pin['selector_spec']))
+    rejects('reviewed_base_changed_selector_rejected', lambda: reviewed_source_first('comp_qwen3_8b',
+        pin['matching_paths_sorted'], pin['selected_path'], pin['selected_config_sha256'], {'model_type': 'qwen3'}))
     with tempfile.TemporaryDirectory() as td:
         root = Path(td); a = Audit(root, root / 'out')
         rejects('missing_recovery_archive', lambda: a.unique('**/legacy_recovery_manifest.json'))

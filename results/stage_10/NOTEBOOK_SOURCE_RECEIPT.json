@@ -1,0 +1,14 @@
+{
+  "stage": "10",
+  "cpu_notebook": {
+    "path": "notebooks/Stage_10_CPU_Input_Audit.ipynb",
+    "sha256": "1155976e03f01d54e3b69777074c9a7b4d66c5600dd5fabbe4ab9304d2ac6fd6",
+    "audit_script_sha256": "b87992384cfce174469b0365f547effc6dd37423f5b224d087cf1a2e5128aa84",
+    "embedded_audit_exact_bytes": true,
+    "prior_transport_export_wrapper_preserved": true,
+    "nbformat_readback_and_code_compilation": "PASS",
+    "actual_cpu_input_execution_performed_by_build": false,
+    "rendered_inspection": "pending Kaggle UI"
+  },
+  "gpu_reproduction_notebook": "PENDING_ORIGINAL_CELL_ARRAY"
+}

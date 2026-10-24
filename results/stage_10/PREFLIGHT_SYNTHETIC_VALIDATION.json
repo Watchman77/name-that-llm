@@ -6,6 +6,14 @@
     "path_traversal_2": true,
     "label_set_mismatch": true,
     "label_order_mismatch": true,
+    "reviewed_original_source_first_resolution_accepted": true,
+    "unreviewed_base_selector_rejected": true,
+    "reviewed_base_extra_candidate_rejected": true,
+    "reviewed_base_deleted_candidate_rejected": true,
+    "reviewed_base_changed_order_rejected": true,
+    "reviewed_base_changed_config_hash_rejected": true,
+    "reviewed_base_disallowed_selection_rejected": true,
+    "reviewed_base_changed_selector_rejected": true,
     "missing_recovery_archive": true,
     "ambiguous_recovery_archive": true,
     "recovery_actual_hash_mismatch": true,
@@ -15,7 +23,7 @@
     "nonfinite_numeric_npz_rejected": true,
     "missing_required_readout_key_rejected": true
   },
-  "passed": 13,
-  "total": 13,
+  "passed": 21,
+  "total": 21,
   "source_or_model_executed": false
 }
