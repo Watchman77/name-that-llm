@@ -1,0 +1,16 @@
+{
+  "stage": 10,
+  "audit_notebook_version_id": 361879824,
+  "cpu_run_status": "SUCCEEDED",
+  "runtime_seconds": 120.3,
+  "input_contract": "PASS_CPU_INPUT_CONTRACT_ONLY",
+  "passed": 25,
+  "total": 25,
+  "audit_script_sha256": "b87992384cfce174469b0365f547effc6dd37423f5b224d087cf1a2e5128aa84",
+  "private_code_export_sha256": "543be2bdafb87a7f558f397669c91c7ed2e31d303849d7b696cbb3a337633c6c",
+  "audit_result_sha256": "2541bb0938744042edd886640b94179b23d1160e6dd1f8ed105e37319d12f193",
+  "actual_model_inference": false,
+  "official_public_balanced_accuracy": null,
+  "date_verified": "2026-10-24",
+  "source": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-10-public-639-reproduction/log?scriptVersionId=361879824"
+}

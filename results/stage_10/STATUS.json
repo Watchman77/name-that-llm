@@ -1,0 +1,32 @@
+{
+  "stage": 10,
+  "candidate": "Kirill public 0.639 source V1 361634630 frozen reproduction",
+  "own_candidate_version_id": 361881189,
+  "own_candidate_version": 3,
+  "official_submission": "S04",
+  "official_state": "Notebook Running",
+  "official_public_balanced_accuracy": null,
+  "own_best_official_submission": "S03",
+  "own_best_official_public_balanced_accuracy": 0.62,
+  "source_author_official_public_balanced_accuracy": 0.639,
+  "cpu_input_audit": {
+    "version_id": 361879824,
+    "checks_passed": 25,
+    "checks_total": 25,
+    "runtime_seconds": 120.3
+  },
+  "preview": {
+    "kind": "FORMAT_ONLY_PREVIEW",
+    "runtime_seconds": 18.6,
+    "checks_passed": 20,
+    "checks_total": 20,
+    "model_weights_loaded": false,
+    "hidden_runtime_verified": false
+  },
+  "date_verified": "2026-10-24",
+  "official_source": "https://www.kaggle.com/competitions/name-that-llm/submissions",
+  "candidate_source": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-10-public-639-reproduction?scriptVersionId=361881189",
+  "final_selections": "automatic0of2",
+  "paid_services_used": false,
+  "monitoring_automation_created_or_enabled": false
+}

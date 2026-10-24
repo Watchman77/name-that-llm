@@ -1,0 +1,20 @@
+{
+  "stage": 10,
+  "official_submission": "S04",
+  "private_version_id": 361881189,
+  "state": "Notebook Running",
+  "official_public_balanced_accuracy": null,
+  "description": "S04: Kirill Teach More, Keep the Signature V1 (361634630), our private Stage 10 V3 (361881189). All 14 model code cells unchanged; only output validation added. Actual CPU input audit 25/25. Three-row preview is FORMAT ONLY: constant labels, no weights loaded or GPU/runtime verification. Hidden test must run full ensemble. Source author 0.639 is not our score. Apache-2.0; upstream credits retained. No tuning or paid APIs.",
+  "verified_date": "2026-10-24",
+  "source": "https://www.kaggle.com/competitions/name-that-llm/submissions",
+  "frozen_model_source_commit": "04a26ae5bc7d2dc0d7b6b1038c8f7ff36b189b52",
+  "preview": {
+    "status": "FORMAT_ONLY_PREVIEW",
+    "runtime_seconds": 18.6,
+    "checks": 20,
+    "model_weights_loaded": false,
+    "hidden_runtime_verified": false
+  },
+  "final_selection": "automatic 0/2",
+  "proof_file": "S04_SUBMISSION_RUNNING.png"
+}

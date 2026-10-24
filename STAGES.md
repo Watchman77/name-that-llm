@@ -93,3 +93,13 @@ The frozen 0.600 recipe failed the real-input gate: 150/151 checks pass, but the
 
 [Stage 08C](results/stage_08c/REPORT.md) freezes Nishant part-two V1 361311282 (author public 0.620), pins dataset V1, passes 85/85 real CPU input checks, and completed private GPU V2 361732127 in 739.2s. The six model cells are unchanged; an independent validation-only final cell checks probabilities/IDs/parquet. All 22 actual output checks passed. Official S03 is Notebook Running on hidden data, with no score yet; hourly read-only monitoring is enabled. Current public first is 0.700, tenth 0.660; our displayed current official best remains 0.549. No tuning, API purchases or final-selection changes.
 
+
+
+## Stage 10 — frozen public 0.639 candidate (24 October 2026)
+
+Kirill V1 361634630 displays source-author official public balanced accuracy 0.639; our best remains S03 at 0.620. CPU V1 361877495 completed with 23/25 input checks and conservatively blocked two Base/chat selectors. Explicit review pinned the original source-first Base paths/configuration hashes without changing the recipe. CPU V2 361879824 passed 25/25 in 120.3 seconds. Attached custom code was statically reviewed; serialized payload behavior and GPU runtime remain unverified. Private candidate V3 361881189 preserves all fourteen source code cells exactly and adds only a separate output guard; all fifteen editor cells passed byte-for-byte readback. Its three-example shortcut emits constant labels and is FORMAT ONLY, never real model inference or a score. Own official evaluation remains pending. No paid services or final-selection changes. See [Stage 10 report](results/stage_10/REPORT.md).
+
+
+### S04 accepted — 24 October 2026
+
+Private Stage 10 V3 361881189 completed in 18.6 seconds with all 20 FORMAT ONLY checks passing. No model weights loaded; this does not prove GPU/runtime validity or accuracy. Submitted this exact version as S04; the live official row displays Notebook Running and no score. Its hidden rerun will exercise the complete ensemble. Our S03 remains officially 0.620; author 0.639 is not ours. Final selections remain automatic 0/2. Code, aggregate audit receipts and evidence are saved under results/stage_10.

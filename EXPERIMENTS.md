@@ -316,3 +316,13 @@ User resumed work after this milestone. The next experiment is a bounded matched
 ## 24 October 2026 — Stage 09 final result verified
 
 Private V1 361761811 succeeded in1453.1seconds. Both declared arms completed on the same540held-out official responses/30prompts: official-only control29.444444% development balanced accuracy, candidate24.259259%, difference -5.185185percentage points, conditional paired prompt95%interval[-8.703704,-1.851852]. Corrected37/broken65; all94external and405officialupdates perarm completed withzeroAMPoverflow. The fixed pilot screen failed. Reject this exact candidate; no automatic variants or official submission. S03remains0.620official public balanced accuracy. Aggregate recalculation and complete result saved underresults/stage_09.
+
+
+## Stage 10 — frozen public 0.639 candidate (24 October 2026)
+
+Kirill V1 361634630 displays source-author official public balanced accuracy 0.639; our best remains S03 at 0.620. CPU V1 361877495 completed with 23/25 input checks and conservatively blocked two Base/chat selectors. Explicit review pinned the original source-first Base paths/configuration hashes without changing the recipe. CPU V2 361879824 passed 25/25 in 120.3 seconds. Attached custom code was statically reviewed; serialized payload behavior and GPU runtime remain unverified. Private candidate V3 361881189 preserves all fourteen source code cells exactly and adds only a separate output guard; all fifteen editor cells passed byte-for-byte readback. Its three-example shortcut emits constant labels and is FORMAT ONLY, never real model inference or a score. Own official evaluation remains pending. No paid services or final-selection changes. See [Stage 10 report](results/stage_10/REPORT.md).
+
+
+### S04 accepted — 24 October 2026
+
+Private Stage 10 V3 361881189 completed in 18.6 seconds with all 20 FORMAT ONLY checks passing. No model weights loaded; this does not prove GPU/runtime validity or accuracy. Submitted this exact version as S04; the live official row displays Notebook Running and no score. Its hidden rerun will exercise the complete ensemble. Our S03 remains officially 0.620; author 0.639 is not ours. Final selections remain automatic 0/2. Code, aggregate audit receipts and evidence are saved under results/stage_10.

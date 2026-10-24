@@ -1,0 +1,12 @@
+{
+  "method": "actual15editorsCtrlACtrlCclipboardreadback",
+  "code_cells": 15,
+  "exact_code_cell_matches": 15,
+  "unchanged_upstream_cells": 14,
+  "unchanged_output_guard_cells": 1,
+  "pinned_commit": "04a26ae5bc7d2dc0d7b6b1038c8f7ff36b189b52",
+  "accelerator": "GPU T4 x2",
+  "internet": "off",
+  "date_verified": "2026-10-24",
+  "model_inference_not_exercised_by_editor_check": true
+}

@@ -1,0 +1,101 @@
+{
+  "report": {
+    "accuracy_validation": false,
+    "all_checks_pass": true,
+    "check_count": 20,
+    "checks": [
+      {
+        "name": "official_test:exists",
+        "pass": true
+      },
+      {
+        "name": "official_test:columns",
+        "pass": true
+      },
+      {
+        "name": "official_test:unique_nonempty_ids",
+        "pass": true
+      },
+      {
+        "name": "preview_mode:known_boolean",
+        "pass": true
+      },
+      {
+        "name": "submission:exists",
+        "pass": true
+      },
+      {
+        "name": "submission:dataframe",
+        "pass": true
+      },
+      {
+        "name": "submission:columns",
+        "pass": true
+      },
+      {
+        "name": "submission:no_nulls",
+        "pass": true
+      },
+      {
+        "name": "submission:string_ids",
+        "pass": true
+      },
+      {
+        "name": "submission:string_labels",
+        "pass": true
+      },
+      {
+        "name": "submission:safe_string_ids",
+        "pass": true
+      },
+      {
+        "name": "submission:unique_complete_ids",
+        "pass": true
+      },
+      {
+        "name": "submission:exact_id_order",
+        "pass": true
+      },
+      {
+        "name": "submission:allowed_labels",
+        "pass": true
+      },
+      {
+        "name": "format_only_preview:three_rows",
+        "pass": true
+      },
+      {
+        "name": "format_only_preview:published_stub_labels",
+        "pass": true
+      },
+      {
+        "name": "submission.mode.json:exists",
+        "pass": true
+      },
+      {
+        "name": "submission.mode.json:object",
+        "pass": true
+      },
+      {
+        "name": "format_only_preview:mode_receipt",
+        "pass": true
+      },
+      {
+        "name": "format_only_preview:no_model_inference_claim",
+        "pass": true
+      }
+    ],
+    "full_actual_model_inference_verified": false,
+    "hidden_runtime_verified": false,
+    "inference_verification": "NOT_PERFORMED_PUBLIC_FIXTURE_STUB",
+    "original_ids_text_or_probability_rows_exported": false,
+    "parquet_readback": "real pandas reader",
+    "rows": 3,
+    "source_public_preview_flag": true,
+    "stage": "10",
+    "status": "FORMAT_ONLY_PREVIEW",
+    "submission_sha256": "cc49ddf4d7c542d06e410ed96af807fcdd06e10771a720da07435da3c901a5a9",
+    "test_sha256": "4545aa3a3459f4c0724f97ad5bd06c4caa3506bdfea5fab905e8203184fc0c57"
+  },
+  "status": "Successfully ran in 18.6s"
+}
