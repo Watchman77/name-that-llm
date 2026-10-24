@@ -1,8 +1,8 @@
 {
   "stage": "09",
-  "status": "PREPARED_CPU_AUDIT_PASS_GPU_NOT_STARTED",
+  "status": "GPU_RUNNING_CANDIDATE_PRETRAIN",
   "official_best_submission": "S03",
-  "official_best_public_balanced_accuracy": 0.620,
+  "official_best_public_balanced_accuracy": 0.62,
   "development_score": null,
   "external_rows": 750,
   "external_prompt_blocks": 150,
@@ -14,8 +14,8 @@
   "data_audit_status": "PASS_FROZEN_PILOT",
   "data_audit_contract_checks": 13,
   "runner_cpu_contract_checks": 24,
-  "gpu_execution_verified": false,
-  "training_started": false,
+  "gpu_execution_verified": true,
+  "training_started": true,
   "official_submission_made": false,
   "paid_services_used": false,
   "notebook_visibility_required": "private",
@@ -25,5 +25,15 @@
   "internet_ui": "Internet off",
   "dataset_pinned_version": 4,
   "vendor_resources_version": 359317729,
-  "preparation_date": "2026-10-24"
+  "preparation_date": "2026-10-24",
+  "script_version_id": 361761811,
+  "kaggle_version": 1,
+  "gpu_preflight": "PASS_GRAPH_NO_OPTIMIZER_STEP",
+  "last_verified_phase": "candidate_pretrain",
+  "last_verified_epoch": 2,
+  "last_verified_optimizer_update": 94,
+  "phase_total_optimizer_updates": 94,
+  "source_freeze_commit": "232587c3c1331e44c7e88cb02e71d64ad65e5148",
+  "completed_pretraining_epochs": 2,
+  "last_verified_job_log_seconds": 207.9
 }
