@@ -1,0 +1,1917 @@
+{
+  "input_audit": {
+    "stage": "08_input_preflight",
+    "public_source_version": 360088024,
+    "status": "FAIL_INPUT_CONTRACT",
+    "read_only": true,
+    "new_fitting": false,
+    "new_inference": false,
+    "network_used": false,
+    "public_source_executed": false,
+    "checks": [
+      {
+        "name": "official:one_competition_train",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "official_train:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "official:train_hash",
+        "passed": true
+      },
+      {
+        "name": "official:schema",
+        "passed": true
+      },
+      {
+        "name": "official:rows_classes_prompts",
+        "passed": true
+      },
+      {
+        "name": "official:unique_ids",
+        "passed": true
+      },
+      {
+        "name": "official_test:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "pool:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "pool_file:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "pool:row_count",
+        "passed": true,
+        "rows": 34940,
+        "expected_rows": 34940
+      },
+      {
+        "name": "pool:required_columns",
+        "passed": true
+      },
+      {
+        "name": "pool:nonempty_string_text_and_string_labels",
+        "passed": true
+      },
+      {
+        "name": "pool:required_values_nonnull",
+        "passed": true,
+        "null_values": 0
+      },
+      {
+        "name": "pool:exact_18_class_set",
+        "passed": true,
+        "classes": 18,
+        "unknown_classes": 0
+      },
+      {
+        "name": "pool:numeric_metadata_finite",
+        "passed": true,
+        "numeric_columns": 1
+      },
+      {
+        "name": "pool:no_exact_official_fullresponse_overlap",
+        "passed": true,
+        "overlapping_rows": 0
+      },
+      {
+        "name": "pool:no_normalized_official_fullresponse_overlap",
+        "passed": true,
+        "overlapping_rows": 0
+      },
+      {
+        "name": "lora8b_v1:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "lora8b_v1:meta:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora8b_v1:label_order",
+        "passed": true
+      },
+      {
+        "name": "lora8b_v1:cfg_object",
+        "passed": true
+      },
+      {
+        "name": "lora8b_v1:kept_depth",
+        "passed": true
+      },
+      {
+        "name": "lora8b_v1:pooled_layers_schema",
+        "passed": true
+      },
+      {
+        "name": "lora8b_v1:token_limit_schema",
+        "passed": true
+      },
+      {
+        "name": "lora8b_v1:adapter_config:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora8b_v1:adapter_weights:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora8b_v1:adapter_weights:header_bounds",
+        "passed": true,
+        "tensor_count": 336
+      },
+      {
+        "name": "lora8b_v1:heads:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora8b_v1:heads:header_bounds",
+        "passed": true,
+        "tensor_count": 20
+      },
+      {
+        "name": "lora8b_v1:adapter_rank_and_scale",
+        "passed": true
+      },
+      {
+        "name": "lora8b_v1:adapter_pair_shapes",
+        "passed": true,
+        "pairs": 168
+      },
+      {
+        "name": "lora8b_v1:head_shapes",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "lora14b_v1:meta:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:label_order",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:cfg_object",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:kept_depth",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:pooled_layers_schema",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:token_limit_schema",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:adapter_config:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:adapter_weights:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:adapter_weights:header_bounds",
+        "passed": true,
+        "tensor_count": 378
+      },
+      {
+        "name": "lora14b_v1:heads:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:heads:header_bounds",
+        "passed": true,
+        "tensor_count": 20
+      },
+      {
+        "name": "lora14b_v1:adapter_rank_and_scale",
+        "passed": true
+      },
+      {
+        "name": "lora14b_v1:adapter_pair_shapes",
+        "passed": true,
+        "pairs": 189
+      },
+      {
+        "name": "lora14b_v1:head_shapes",
+        "passed": true
+      },
+      {
+        "name": "base_new8b:one_matching_config",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "base_new8b:model.safetensors.index.json:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "base_new8b:index_weight_map",
+        "passed": true
+      },
+      {
+        "name": "base_new8b:index_safe_filenames",
+        "passed": true
+      },
+      {
+        "name": "base_new8b:all_index_shards_present",
+        "passed": true,
+        "required_shards": 5
+      },
+      {
+        "name": "base_new8b:weight_files_present",
+        "passed": true,
+        "shard_count": 5
+      },
+      {
+        "name": "base_new8b:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "base_new14b:one_matching_config",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "base_new14b:model.safetensors.index.json:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "base_new14b:index_weight_map",
+        "passed": true
+      },
+      {
+        "name": "base_new14b:index_safe_filenames",
+        "passed": true
+      },
+      {
+        "name": "base_new14b:all_index_shards_present",
+        "passed": true,
+        "required_shards": 8
+      },
+      {
+        "name": "base_new14b:weight_files_present",
+        "passed": true,
+        "shard_count": 8
+      },
+      {
+        "name": "base_new14b:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen8b:one_matching_config",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "base_old_qwen8b:model.safetensors.index.json:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen8b:index_weight_map",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen8b:index_safe_filenames",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen8b:all_index_shards_present",
+        "passed": true,
+        "required_shards": 5
+      },
+      {
+        "name": "base_old_qwen8b:weight_files_present",
+        "passed": true,
+        "shard_count": 5
+      },
+      {
+        "name": "base_old_qwen8b:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen25_7b:one_matching_config",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "base_old_qwen25_7b:model.safetensors.index.json:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen25_7b:index_weight_map",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen25_7b:index_safe_filenames",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen25_7b:all_index_shards_present",
+        "passed": true,
+        "required_shards": 4
+      },
+      {
+        "name": "base_old_qwen25_7b:weight_files_present",
+        "passed": true,
+        "shard_count": 4
+      },
+      {
+        "name": "base_old_qwen25_7b:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen4b:one_matching_config",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "base_old_qwen4b:model.safetensors.index.json:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen4b:index_weight_map",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen4b:index_safe_filenames",
+        "passed": true
+      },
+      {
+        "name": "base_old_qwen4b:all_index_shards_present",
+        "passed": true,
+        "required_shards": 3
+      },
+      {
+        "name": "base_old_qwen4b:weight_files_present",
+        "passed": true,
+        "shard_count": 3
+      },
+      {
+        "name": "base_old_qwen4b:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "base_glm:one_matching_config",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "base_glm:weight_files_present",
+        "passed": true,
+        "shard_count": 1
+      },
+      {
+        "name": "base_glm:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "base_qwen35:one_matching_config",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "base_qwen35:model.safetensors.index.json:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "base_qwen35:index_weight_map",
+        "passed": true
+      },
+      {
+        "name": "base_qwen35:index_safe_filenames",
+        "passed": true
+      },
+      {
+        "name": "base_qwen35:all_index_shards_present",
+        "passed": true,
+        "required_shards": 4
+      },
+      {
+        "name": "base_qwen35:weight_files_present",
+        "passed": true,
+        "shard_count": 4
+      },
+      {
+        "name": "base_qwen35:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "deberta-v3-large:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "deberta-v3-large:config:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "deberta-v3-large:weight_files_present",
+        "passed": true,
+        "shard_count": 1
+      },
+      {
+        "name": "deberta-v3-large:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "electra-large-discriminator:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "electra-large-discriminator:config:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "electra-large-discriminator:weight_files_present",
+        "passed": true,
+        "shard_count": 1
+      },
+      {
+        "name": "electra-large-discriminator:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "desklib-detector:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "desklib-detector:config:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "desklib-detector:weight_files_present",
+        "passed": true,
+        "shard_count": 1
+      },
+      {
+        "name": "desklib-detector:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "lora24_public:one_file",
+        "passed": false,
+        "count": 0
+      },
+      {
+        "name": "lora24_seed7:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "lora24_seed7:completion:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora24_seed7:adapter_config:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora24_seed7:adapter_weights:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora24_seed7:norms:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora24_seed7:norms:header_bounds",
+        "passed": true,
+        "tensor_count": 16
+      },
+      {
+        "name": "lora24_seed7:tokenizer_directory",
+        "passed": true
+      },
+      {
+        "name": "lora24_seed7:tokenizer_assets",
+        "passed": true
+      },
+      {
+        "name": "lora24_seed7:readouts:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora24_seed7:readout_columns_and_layers",
+        "passed": true
+      },
+      {
+        "name": "lora24_seed7:readout_numeric_finite",
+        "passed": true
+      },
+      {
+        "name": "lora24_claude:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "lora24_claude:completion:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora24_claude:adapter_config:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora24_claude:adapter_weights:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora24_claude:norms:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora24_claude:norms:header_bounds",
+        "passed": true,
+        "tensor_count": 16
+      },
+      {
+        "name": "lora24_claude:tokenizer_directory",
+        "passed": true
+      },
+      {
+        "name": "lora24_claude:tokenizer_assets",
+        "passed": true
+      },
+      {
+        "name": "lora24_claude:readouts:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora24_claude:readout_columns_and_layers",
+        "passed": true
+      },
+      {
+        "name": "lora24_claude:readout_numeric_finite",
+        "passed": true
+      },
+      {
+        "name": "lora20_q25_instyle:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "lora20_q25_instyle:completion:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora20_q25_instyle:adapter_config:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora20_q25_instyle:adapter_weights:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora20_q25_instyle:norms:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora20_q25_instyle:norms:header_bounds",
+        "passed": true,
+        "tensor_count": 16
+      },
+      {
+        "name": "lora20_q25_instyle:tokenizer_directory",
+        "passed": true
+      },
+      {
+        "name": "lora20_q25_instyle:tokenizer_assets",
+        "passed": true
+      },
+      {
+        "name": "lora20_q25_instyle:readouts:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "lora20_q25_instyle:readout_columns_and_layers",
+        "passed": true
+      },
+      {
+        "name": "lora20_q25_instyle:readout_numeric_finite",
+        "passed": true
+      },
+      {
+        "name": "tokattn_final.pt:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "tokattn_final.pt:checkpoint:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "tokattn_debl23_final.pt:one_file",
+        "passed": true,
+        "count": 1
+      },
+      {
+        "name": "tokattn_debl23_final.pt:checkpoint:exists_nonempty",
+        "passed": true
+      },
+      {
+        "name": "ultrabert:one_root_exactly_five_folds",
+        "passed": true,
+        "roots": 1,
+        "folds": 5
+      },
+      {
+        "name": "ultrabert:fold0:weight_files_present",
+        "passed": true,
+        "shard_count": 1
+      },
+      {
+        "name": "ultrabert:fold0:tokenizer_files_present",
+        "passed": true
+      },
+      {
+        "name": "ultrabert:fold1:weight_files_present",
+        "passed": true,
+        "shard_count": 1
+      },
+      {
+        "name": "ultrabert:fold2:weight_files_present",
+        "passed": true,
+        "shard_count": 1
+      },
+      {
+        "name": "ultrabert:fold3:weight_files_present",
+        "passed": true,
+        "shard_count": 1
+      },
+      {
+        "name": "ultrabert:fold4:weight_files_present",
+        "passed": true,
+        "shard_count": 1
+      },
+      {
+        "name": "ultrabert:custom_code_present",
+        "passed": true
+      },
+      {
+        "name": "old_extra_csvs:present",
+        "passed": true,
+        "files": 5
+      }
+    ],
+    "inventory": {
+      "official_train": {
+        "path": "name-that-llm/train.csv",
+        "bytes": 2139418,
+        "sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707"
+      },
+      "official_test": {
+        "path": "name-that-llm/test.csv",
+        "bytes": 2218,
+        "sha256": "4545aa3a3459f4c0724f97ad5bd06c4caa3506bdfea5fab905e8203184fc0c57"
+      },
+      "pool": {
+        "pattern": "**/pool_v1.parquet",
+        "matches": [
+          {
+            "path": "datasets/nishantdahal/ntl-two-stage-lora/pool_v1.parquet",
+            "bytes": 16611425
+          }
+        ]
+      },
+      "pool_file": {
+        "path": "datasets/nishantdahal/ntl-two-stage-lora/pool_v1.parquet",
+        "bytes": 16611425,
+        "sha256": "a24588c1d78660077d53b93af4829206ac8e6d5362639d0f2dfcb0d5177e425d"
+      },
+      "pool_aggregates": {
+        "rows": 34940,
+        "columns": [
+          "id",
+          "prompt_id",
+          "text",
+          "model",
+          "source",
+          "setting",
+          "batch",
+          "n_words",
+          "prompt_key"
+        ],
+        "class_counts": {
+          "gpt-5.5": 2401,
+          "gpt-5.6-luna": 2494,
+          "gpt-5.6-sol": 2380,
+          "gpt-5.6-terra": 2444,
+          "gpt-6-astra": 2112,
+          "gemini-3.1-pro-preview": 1155,
+          "gemini-3.6-flash": 2534,
+          "gemini-3.7-flash": 1964,
+          "gemini-3.8-flash": 2713,
+          "claude-opus-4-6": 1673,
+          "claude-opus-4-8": 1688,
+          "claude-opus-5": 1537,
+          "claude-sonnet-5": 1674,
+          "claude-fable-5": 1505,
+          "qwen3.8-max": 1197,
+          "glm-5.3": 1830,
+          "glm-5.3-flash": 1859,
+          "kimi-k3": 1780
+        },
+        "duplicate_exact_text_rows_after_first": 0,
+        "duplicate_normalized_text_rows_after_first": 0,
+        "duplicate_model_exact_text_rows_after_first": 0,
+        "duplicate_model_normalized_text_rows_after_first": 0,
+        "exact_text_values_shared_by_multiple_labels": 0,
+        "normalized_text_values_shared_by_multiple_labels": 0,
+        "duplicate_counts_are_report_only": true
+      },
+      "lora8b_v1": {
+        "pattern": "**/lora8b_v1/meta.json",
+        "matches": [
+          {
+            "path": "datasets/nishantdahal/ntl-two-stage-lora/lora8b_v1/meta.json",
+            "bytes": 958
+          }
+        ]
+      },
+      "lora8b_v1:meta": {
+        "path": "datasets/nishantdahal/ntl-two-stage-lora/lora8b_v1/meta.json",
+        "bytes": 958,
+        "sha256": "d84edb29b2c1c3b555a366dcb43df5661faed3a5b12abaf0f18e96cdf8aa5cda"
+      },
+      "lora8b_v1:cfg_contract": {
+        "keep": 24,
+        "layers": [
+          2,
+          4,
+          6,
+          8,
+          12,
+          16,
+          20,
+          24
+        ],
+        "max_len": 447
+      },
+      "lora8b_v1:adapter_config": {
+        "path": "datasets/nishantdahal/ntl-two-stage-lora/lora8b_v1/adapter/adapter_config.json",
+        "bytes": 1393,
+        "sha256": "cd1f40e92124ea643f934c4c3431385b11f37681f5de30a437b8022124c23043"
+      },
+      "lora8b_v1:adapter_weights": {
+        "path": "datasets/nishantdahal/ntl-two-stage-lora/lora8b_v1/adapter/adapter_model.safetensors",
+        "bytes": 116434760,
+        "sha256": "25d56499c7888dd1e274a92f35efd6acadf06349c928944c8cbee6eb56aabc4d"
+      },
+      "lora8b_v1:heads": {
+        "path": "datasets/nishantdahal/ntl-two-stage-lora/lora8b_v1/heads.safetensors",
+        "bytes": 4982480,
+        "sha256": "aedeb224fe743f2a9f1e2f3344208d27e3fdc9f99df5a084f3280baee383a8b4"
+      },
+      "lora14b_v1": {
+        "pattern": "**/lora14b_v1/meta.json",
+        "matches": [
+          {
+            "path": "datasets/nishantdahal/ntl-two-stage-lora/lora14b_v1/meta.json",
+            "bytes": 931
+          }
+        ]
+      },
+      "lora14b_v1:meta": {
+        "path": "datasets/nishantdahal/ntl-two-stage-lora/lora14b_v1/meta.json",
+        "bytes": 931,
+        "sha256": "ef274e94503adb1c5a4910dc3002a4595d63c525dac11d37a973ec2343de0c5e"
+      },
+      "lora14b_v1:cfg_contract": {
+        "keep": 27,
+        "layers": [
+          2,
+          4,
+          6,
+          9,
+          13,
+          17,
+          22,
+          27
+        ],
+        "max_len": 447
+      },
+      "lora14b_v1:adapter_config": {
+        "path": "datasets/nishantdahal/ntl-two-stage-lora/lora14b_v1/adapter/adapter_config.json",
+        "bytes": 1394,
+        "sha256": "28574e93c9fe2fda535f59f5b4723185ad418d39d59a48650c0cd48b7404fce5"
+      },
+      "lora14b_v1:adapter_weights": {
+        "path": "datasets/nishantdahal/ntl-two-stage-lora/lora14b_v1/adapter/adapter_model.safetensors",
+        "bytes": 173456688,
+        "sha256": "79952085c422373803acc7339544e6775c1d55eaca5ccd82492edd90a975eec1"
+      },
+      "lora14b_v1:heads": {
+        "path": "datasets/nishantdahal/ntl-two-stage-lora/lora14b_v1/heads.safetensors",
+        "bytes": 6227664,
+        "sha256": "43edc4e808b9d0114fbdbfe2fdaae307f0f99e07896b1d45e8548aeec310d089"
+      },
+      "base_new8b:config_matches": [
+        {
+          "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json",
+          "bytes": 729,
+          "sha256": "3bd01d7ad7a2e203ecbbe84e24087a51c6d2a108ee4bcc42d0016bf49564983a"
+        }
+      ],
+      "base_new8b:model.safetensors.index.json": {
+        "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model.safetensors.index.json",
+        "bytes": 32878,
+        "sha256": "cd39d5e44c5aadfd1954b598883aea1c4a98822a2f7723d214ef2278b7fec2e4"
+      },
+      "base_new8b:model_files": {
+        "small_configs": [
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json",
+            "bytes": 729,
+            "sha256": "3bd01d7ad7a2e203ecbbe84e24087a51c6d2a108ee4bcc42d0016bf49564983a"
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/tokenizer_config.json",
+            "bytes": 9675,
+            "sha256": "5a7303fcb1a27ede63134a2cbd61d5282c247ca6d769ce4746d4ffa124aedd63"
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/generation_config.json",
+            "bytes": 138,
+            "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model-00001-of-00005.safetensors",
+            "bytes": 3996250744
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model-00002-of-00005.safetensors",
+            "bytes": 3993160032
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model-00003-of-00005.safetensors",
+            "bytes": 3959604768
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model-00004-of-00005.safetensors",
+            "bytes": 3187841392
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model-00005-of-00005.safetensors",
+            "bytes": 1244659840
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "base_new14b:config_matches": [
+        {
+          "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/config.json",
+          "bytes": 729,
+          "sha256": "eb65771c8f108f88e4d87f771e1c9d40b7e35bc8070be8c97246c9446ccdf179"
+        }
+      ],
+      "base_new14b:model.safetensors.index.json": {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model.safetensors.index.json",
+        "bytes": 36514,
+        "sha256": "8bb45057e5de5b87096da94fab4492dfa0d7b9fc1b7fe9bc0d91cb9cd6c19bcb"
+      },
+      "base_new14b:model_files": {
+        "small_configs": [
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/config.json",
+            "bytes": 729,
+            "sha256": "eb65771c8f108f88e4d87f771e1c9d40b7e35bc8070be8c97246c9446ccdf179"
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/tokenizer_config.json",
+            "bytes": 9675,
+            "sha256": "5a7303fcb1a27ede63134a2cbd61d5282c247ca6d769ce4746d4ffa124aedd63"
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/generation_config.json",
+            "bytes": 138,
+            "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00001-of-00008.safetensors",
+            "bytes": 3841788544
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00002-of-00008.safetensors",
+            "bytes": 3963750816
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00003-of-00008.safetensors",
+            "bytes": 3963750880
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00004-of-00008.safetensors",
+            "bytes": 3963750880
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00005-of-00008.safetensors",
+            "bytes": 3963750880
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00006-of-00008.safetensors",
+            "bytes": 3963750880
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00007-of-00008.safetensors",
+            "bytes": 3963750880
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00008-of-00008.safetensors",
+            "bytes": 1912371880
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "base_old_qwen8b:config_matches": [
+        {
+          "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json",
+          "bytes": 729,
+          "sha256": "3bd01d7ad7a2e203ecbbe84e24087a51c6d2a108ee4bcc42d0016bf49564983a"
+        }
+      ],
+      "base_old_qwen8b:model.safetensors.index.json": {
+        "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model.safetensors.index.json",
+        "bytes": 32878,
+        "sha256": "cd39d5e44c5aadfd1954b598883aea1c4a98822a2f7723d214ef2278b7fec2e4"
+      },
+      "base_old_qwen8b:model_files": {
+        "small_configs": [
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json",
+            "bytes": 729,
+            "sha256": "3bd01d7ad7a2e203ecbbe84e24087a51c6d2a108ee4bcc42d0016bf49564983a"
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/tokenizer_config.json",
+            "bytes": 9675,
+            "sha256": "5a7303fcb1a27ede63134a2cbd61d5282c247ca6d769ce4746d4ffa124aedd63"
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/generation_config.json",
+            "bytes": 138,
+            "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model-00001-of-00005.safetensors",
+            "bytes": 3996250744
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model-00002-of-00005.safetensors",
+            "bytes": 3993160032
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model-00003-of-00005.safetensors",
+            "bytes": 3959604768
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model-00004-of-00005.safetensors",
+            "bytes": 3187841392
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/model-00005-of-00005.safetensors",
+            "bytes": 1244659840
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "base_old_qwen25_7b:config_matches": [
+        {
+          "path": "models/qwen-lm/qwen2.5/transformers/7b/1/config.json",
+          "bytes": 686,
+          "sha256": "267ce68584c5f24c3b267d934db2de68dd21d1ca677fb78ed809eb60067f7642"
+        }
+      ],
+      "base_old_qwen25_7b:model.safetensors.index.json": {
+        "path": "models/qwen-lm/qwen2.5/transformers/7b/1/model.safetensors.index.json",
+        "bytes": 27752,
+        "sha256": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028"
+      },
+      "base_old_qwen25_7b:model_files": {
+        "small_configs": [
+          {
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/config.json",
+            "bytes": 686,
+            "sha256": "267ce68584c5f24c3b267d934db2de68dd21d1ca677fb78ed809eb60067f7642"
+          },
+          {
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/tokenizer_config.json",
+            "bytes": 7228,
+            "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9"
+          },
+          {
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/generation_config.json",
+            "bytes": 138,
+            "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/model-00001-of-00004.safetensors",
+            "bytes": 3945441440
+          },
+          {
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/model-00002-of-00004.safetensors",
+            "bytes": 3864726352
+          },
+          {
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/model-00003-of-00004.safetensors",
+            "bytes": 3864726424
+          },
+          {
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/model-00004-of-00004.safetensors",
+            "bytes": 3556377672
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "base_old_qwen4b:config_matches": [
+        {
+          "path": "models/qwen-lm/qwen-3/transformers/4b-base/1/config.json",
+          "bytes": 727,
+          "sha256": "304b2545a258d35620f1d4bf46940c0471d9baa00715ff8e77f84c2fca5057c1"
+        }
+      ],
+      "base_old_qwen4b:model.safetensors.index.json": {
+        "path": "models/qwen-lm/qwen-3/transformers/4b-base/1/model.safetensors.index.json",
+        "bytes": 32819,
+        "sha256": "d6c42883a895dfef5b0080ed2116a1bcd764f558406b98923d675978a1abf29c"
+      },
+      "base_old_qwen4b:model_files": {
+        "small_configs": [
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/4b-base/1/config.json",
+            "bytes": 727,
+            "sha256": "304b2545a258d35620f1d4bf46940c0471d9baa00715ff8e77f84c2fca5057c1"
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/4b-base/1/tokenizer_config.json",
+            "bytes": 9675,
+            "sha256": "5a7303fcb1a27ede63134a2cbd61d5282c247ca6d769ce4746d4ffa124aedd63"
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/4b-base/1/generation_config.json",
+            "bytes": 138,
+            "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/4b-base/1/model-00001-of-00003.safetensors",
+            "bytes": 3957900840
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/4b-base/1/model-00002-of-00003.safetensors",
+            "bytes": 3987450520
+          },
+          {
+            "path": "models/qwen-lm/qwen-3/transformers/4b-base/1/model-00003-of-00003.safetensors",
+            "bytes": 99630640
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "base_glm:config_matches": [
+        {
+          "path": "notebooks/lucasboesen/name-that-llm-glm4-9b-trunc25/glm4_9b_trunc25/config.json",
+          "bytes": 786,
+          "sha256": "22b5515c8520e7aa3463b0fc07e601e99a11119c736efb754035ea59637fa3ed"
+        }
+      ],
+      "base_glm:model_files": {
+        "small_configs": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-glm4-9b-trunc25/glm4_9b_trunc25/config.json",
+            "bytes": 786,
+            "sha256": "22b5515c8520e7aa3463b0fc07e601e99a11119c736efb754035ea59637fa3ed"
+          },
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-glm4-9b-trunc25/glm4_9b_trunc25/tokenizer_config.json",
+            "bytes": 396,
+            "sha256": "de548df866322721bf61112987f91e3de68bd9525df6eb1c558985ea79c43269"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-glm4-9b-trunc25/glm4_9b_trunc25/model.safetensors",
+            "bytes": 11440008912
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "base_qwen35:config_matches": [
+        {
+          "path": "qwen35-9b-safetensors/config.json",
+          "bytes": 3126,
+          "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05"
+        }
+      ],
+      "base_qwen35:model.safetensors.index.json": {
+        "path": "qwen35-9b-safetensors/model.safetensors.index.json",
+        "bytes": 79657,
+        "sha256": "26d3539b516be613f39563617cb9d33b3f83d401298125be392c80cefb8f7fe5"
+      },
+      "base_qwen35:model_files": {
+        "small_configs": [
+          {
+            "path": "qwen35-9b-safetensors/config.json",
+            "bytes": 3126,
+            "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05"
+          },
+          {
+            "path": "qwen35-9b-safetensors/tokenizer_config.json",
+            "bytes": 16710,
+            "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "qwen35-9b-safetensors/model.safetensors-00001-of-00004.safetensors",
+            "bytes": 5276436216
+          },
+          {
+            "path": "qwen35-9b-safetensors/model.safetensors-00002-of-00004.safetensors",
+            "bytes": 5335161512
+          },
+          {
+            "path": "qwen35-9b-safetensors/model.safetensors-00003-of-00004.safetensors",
+            "bytes": 5368717440
+          },
+          {
+            "path": "qwen35-9b-safetensors/model.safetensors-00004-of-00004.safetensors",
+            "bytes": 3325995712
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "deberta-v3-large": {
+        "pattern": "**/deberta-v3-large/config.json",
+        "matches": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/deberta-v3-large/config.json",
+            "bytes": 907
+          }
+        ]
+      },
+      "deberta-v3-large:config": {
+        "path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/deberta-v3-large/config.json",
+        "bytes": 907,
+        "sha256": "9125207e9fc1f5913ca71c99936e671ab44280317133d02f909726a8af0b231f"
+      },
+      "deberta-v3-large:model_files": {
+        "small_configs": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/deberta-v3-large/config.json",
+            "bytes": 907,
+            "sha256": "9125207e9fc1f5913ca71c99936e671ab44280317133d02f909726a8af0b231f"
+          },
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/deberta-v3-large/tokenizer_config.json",
+            "bytes": 538,
+            "sha256": "0dbe41323167ba5f2e1e876ccd05068318dd2378b922bdfd924a389dba3bcc7a"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/deberta-v3-large/model.safetensors",
+            "bytes": 1736094384
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "electra-large-discriminator": {
+        "pattern": "**/electra-large-discriminator/config.json",
+        "matches": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-electra-large-weights/electra-large-discriminator/config.json",
+            "bytes": 862
+          }
+        ]
+      },
+      "electra-large-discriminator:config": {
+        "path": "notebooks/lucasboesen/name-that-llm-electra-large-weights/electra-large-discriminator/config.json",
+        "bytes": 862,
+        "sha256": "01244920f29102fda67359ad1ec89d09c8076378d46acd4517f656debd1e4303"
+      },
+      "electra-large-discriminator:model_files": {
+        "small_configs": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-electra-large-weights/electra-large-discriminator/config.json",
+            "bytes": 862,
+            "sha256": "01244920f29102fda67359ad1ec89d09c8076378d46acd4517f656debd1e4303"
+          },
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-electra-large-weights/electra-large-discriminator/tokenizer_config.json",
+            "bytes": 351,
+            "sha256": "e1c2a61a99bda00f6c55303a210b30e2f92dcf8b555e215812e2eb583e177ffd"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-electra-large-weights/electra-large-discriminator/model.safetensors",
+            "bytes": 1336413848
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "desklib-detector": {
+        "pattern": "**/desklib-detector/config.json",
+        "matches": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-desklib-weights/desklib-detector/config.json",
+            "bytes": 905
+          }
+        ]
+      },
+      "desklib-detector:config": {
+        "path": "notebooks/lucasboesen/name-that-llm-desklib-weights/desklib-detector/config.json",
+        "bytes": 905,
+        "sha256": "fd728d4c20ca32f0cd98851c8dc1a1c1ba68740dc33a7a6f93b99f053e378833"
+      },
+      "desklib-detector:model_files": {
+        "small_configs": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-desklib-weights/desklib-detector/config.json",
+            "bytes": 905,
+            "sha256": "fd728d4c20ca32f0cd98851c8dc1a1c1ba68740dc33a7a6f93b99f053e378833"
+          },
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-desklib-weights/desklib-detector/tokenizer_config.json",
+            "bytes": 532,
+            "sha256": "d8089020d294f20cb21eca751b5f7f68a0b62ea2716a78576cbd587605382432"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-desklib-weights/desklib-detector/model.safetensors",
+            "bytes": 1736094384
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "lora24_public": {
+        "pattern": "**/lora24/final/COMPLETE.json",
+        "matches": []
+      },
+      "lora24_seed7": {
+        "pattern": "**/name-that-llm-train-lora24-s7/lora_out/job_final/COMPLETE.json",
+        "matches": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/COMPLETE.json",
+            "bytes": 104
+          }
+        ]
+      },
+      "lora24_seed7:completion": {
+        "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/COMPLETE.json",
+        "bytes": 104,
+        "sha256": "e92a525842d44c1d4a7f3c55bbcdfdc46ed96a545b90b80717fc86f6cb22c2d5"
+      },
+      "lora24_seed7:adapter_config": {
+        "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/adapter/adapter_config.json",
+        "bytes": 1288,
+        "sha256": "3b786d83737e6890ccb19a2cddbaee5c8b1aae1bc2c13840161970909165711c"
+      },
+      "lora24_seed7:adapter_weights": {
+        "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/adapter/adapter_model.safetensors",
+        "bytes": 116434760
+      },
+      "lora24_seed7:norms": {
+        "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/norms.safetensors",
+        "bytes": 263384
+      },
+      "lora24_seed7:tokenizer_configs": [
+        {
+          "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/tokenizer/tokenizer_config.json",
+          "bytes": 693,
+          "sha256": "2e3bd3cb5055f7a903a54e7062b2fd14d21b70f4174c3ffcd9fc81ec50a25631"
+        }
+      ],
+      "lora24_seed7:readouts": {
+        "path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final/readouts.npz",
+        "bytes": 4378243
+      },
+      "lora24_claude": {
+        "pattern": "**/ntl-qwen3-8b-lora-claude-head/**/final/COMPLETE.json",
+        "matches": [
+          {
+            "path": "datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final/COMPLETE.json",
+            "bytes": 44
+          }
+        ]
+      },
+      "lora24_claude:completion": {
+        "path": "datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final/COMPLETE.json",
+        "bytes": 44,
+        "sha256": "4a9f1ee827240c221c2e83bc0686df644aa3d16c2cef08e0b5e1e71c463b2a54"
+      },
+      "lora24_claude:adapter_config": {
+        "path": "datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final/adapter/adapter_config.json",
+        "bytes": 1288,
+        "sha256": "e37c54313ad1d0886f0f4562e82e7934cea51b9433f7465fca9df9f765fe6176"
+      },
+      "lora24_claude:adapter_weights": {
+        "path": "datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final/adapter/adapter_model.safetensors",
+        "bytes": 116434760
+      },
+      "lora24_claude:norms": {
+        "path": "datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final/heads.safetensors",
+        "bytes": 263384
+      },
+      "lora24_claude:tokenizer_configs": [
+        {
+          "path": "datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final/tokenizer/tokenizer_config.json",
+          "bytes": 693,
+          "sha256": "2e3bd3cb5055f7a903a54e7062b2fd14d21b70f4174c3ffcd9fc81ec50a25631"
+        }
+      ],
+      "lora24_claude:readouts": {
+        "path": "datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final/readouts.npz",
+        "bytes": 4985102
+      },
+      "lora20_q25_instyle": {
+        "pattern": "**/ntl-train-lora-qwen25-instyle/lora_out/job_final/COMPLETE.json",
+        "matches": [
+          {
+            "path": "notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final/COMPLETE.json",
+            "bytes": 88
+          }
+        ]
+      },
+      "lora20_q25_instyle:completion": {
+        "path": "notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final/COMPLETE.json",
+        "bytes": 88,
+        "sha256": "ed24f3ec9e73878b99ee97730591ad17ebdff69e4f59e3f3dee90ea29d8ded8d"
+      },
+      "lora20_q25_instyle:adapter_config": {
+        "path": "notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final/adapter/adapter_config.json",
+        "bytes": 1284,
+        "sha256": "01f4767094380c58a8092eae287325c7b97f47905132076776d60afbe8e6af8e"
+      },
+      "lora20_q25_instyle:adapter_weights": {
+        "path": "notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final/adapter/adapter_model.safetensors",
+        "bytes": 115378992
+      },
+      "lora20_q25_instyle:norms": {
+        "path": "notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final/norms.safetensors",
+        "bytes": 230616
+      },
+      "lora20_q25_instyle:tokenizer_configs": [
+        {
+          "path": "notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final/tokenizer/tokenizer_config.json",
+          "bytes": 696,
+          "sha256": "5f007d04324afa93876e2a484190e868136c69dfe0e1a29a1063eae583df9d32"
+        }
+      ],
+      "lora20_q25_instyle:readouts": {
+        "path": "notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final/readouts.npz",
+        "bytes": 3829777
+      },
+      "tokattn_final.pt": {
+        "pattern": "**/tokattn_final.pt",
+        "matches": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-train-tokattn/tokattn_final.pt",
+            "bytes": 1095265
+          }
+        ]
+      },
+      "tokattn_final.pt:checkpoint": {
+        "path": "notebooks/lucasboesen/name-that-llm-train-tokattn/tokattn_final.pt",
+        "bytes": 1095265
+      },
+      "tokattn_debl23_final.pt": {
+        "pattern": "**/tokattn_debl23_final.pt",
+        "matches": [
+          {
+            "path": "notebooks/lucasboesen/name-that-llm-train-tokattn2/tokattn_debl23_final.pt",
+            "bytes": 284355
+          }
+        ]
+      },
+      "tokattn_debl23_final.pt:checkpoint": {
+        "path": "notebooks/lucasboesen/name-that-llm-train-tokattn2/tokattn_debl23_final.pt",
+        "bytes": 284355
+      },
+      "ultrabert:fold0:model_files": {
+        "small_configs": [
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/config.json",
+            "bytes": 2739,
+            "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+          },
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/tokenizer_config.json",
+            "bytes": 814,
+            "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/model.safetensors",
+            "bytes": 755137636
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "ultrabert:fold1:model_files": {
+        "small_configs": [
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/config.json",
+            "bytes": 2739,
+            "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+          },
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/tokenizer_config.json",
+            "bytes": 814,
+            "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/model.safetensors",
+            "bytes": 755137636
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "ultrabert:fold2:model_files": {
+        "small_configs": [
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/config.json",
+            "bytes": 2739,
+            "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+          },
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/tokenizer_config.json",
+            "bytes": 814,
+            "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/model.safetensors",
+            "bytes": 755137636
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "ultrabert:fold3:model_files": {
+        "small_configs": [
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/config.json",
+            "bytes": 2739,
+            "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+          },
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/tokenizer_config.json",
+            "bytes": 814,
+            "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/model.safetensors",
+            "bytes": 755137636
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "ultrabert:fold4:model_files": {
+        "small_configs": [
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/config.json",
+            "bytes": 2739,
+            "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+          },
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/tokenizer_config.json",
+            "bytes": 814,
+            "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+          }
+        ],
+        "weight_shards": [
+          {
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/model.safetensors",
+            "bytes": 755137636
+          }
+        ],
+        "weight_shards_hashed": false
+      },
+      "ultrabert_custom_code": [
+        {
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/configuration_ultrabert.py",
+          "bytes": 2209,
+          "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+        },
+        {
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/modeling_ultrabert.py",
+          "bytes": 30581,
+          "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+        },
+        {
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/configuration_ultrabert.py",
+          "bytes": 2209,
+          "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+        },
+        {
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/modeling_ultrabert.py",
+          "bytes": 30581,
+          "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+        },
+        {
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/configuration_ultrabert.py",
+          "bytes": 2209,
+          "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+        },
+        {
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/modeling_ultrabert.py",
+          "bytes": 30581,
+          "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+        },
+        {
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/configuration_ultrabert.py",
+          "bytes": 2209,
+          "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+        },
+        {
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/modeling_ultrabert.py",
+          "bytes": 30581,
+          "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+        },
+        {
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/configuration_ultrabert.py",
+          "bytes": 2209,
+          "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+        },
+        {
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/modeling_ultrabert.py",
+          "bytes": 30581,
+          "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+        }
+      ],
+      "old_extra_csvs": [
+        {
+          "path": "datasets/abdullah1afify/ntl-generations/ntl_generations.csv",
+          "bytes": 870886,
+          "sha256": "83003454e3cc0368cae8b05bca243daf036b64a42a792c3f7bfd5fd91b3db378"
+        },
+        {
+          "path": "datasets/dophuchung/ntl-proxy-generations/ntl_proxy_generations.csv",
+          "bytes": 889391,
+          "sha256": "593708f7fd55636bd270824c0e129447b2a5808b1e224bb3dbf43bf2383fdf9c"
+        },
+        {
+          "path": "datasets/lucasboesen/ntl-free-proxy-generations/gen_passages.csv",
+          "bytes": 3835894,
+          "sha256": "d037d212e17a7e98465f9c606f4437225fb221939a5f51b0f8150d15c07c68a5"
+        },
+        {
+          "path": "datasets/seyitkaangunes/ntl-extra-api-passages/ntl_extra_passages_claude.csv",
+          "bytes": 4387162,
+          "sha256": "710dbe484fda23f0dee9b67c20e5bef9376bf754af05584ad142bc17845cd4b9"
+        },
+        {
+          "path": "prvsiyans-extended-name-that-llm-dataset/passages_clean.csv",
+          "bytes": 6768554,
+          "sha256": "23f90b6ba4cc83137ce8d48b3b3787439b44867532d63e2fe52f8a5ea49cd1e6"
+        }
+      ]
+    },
+    "limits": [
+      "A pass inventories present bytes; it does not prove that these are the author's exact scored input versions until receipts are compared with a source-version manifest.",
+      "No adapter training-data provenance, provider identity, usage-terms admission, semantic prompt independence or claimed CV result is independently established here.",
+      "Base/encoder weight shards are listed by size/path, not read or hashed; Torch checkpoint contents and model/custom Python code are not executed.",
+      "The known pool count is author-described, not an independent provenance guarantee. Duplicate counts are descriptive; any official full-response overlap fails.",
+      "Extra CSV membership affects the old style branch; presence alone does not establish the author's exact 7644-row merge, prompt-bank compatibility or versions.",
+      "This does not establish GPU compatibility, prediction parity, a completed preview/hidden run, or an official score."
+    ]
+  },
+  "extra_merge": {
+    "stage": "08_extra_merge_audit",
+    "public_source_version": 360088024,
+    "read_only": true,
+    "model_code_executed": false,
+    "new_fitting": false,
+    "new_inference": false,
+    "network_used": false,
+    "membership": [
+      {
+        "path": "datasets/seyitkaangunes/ntl-extra-api-passages/ntl_extra_passages_claude.csv",
+        "bytes": 4387162,
+        "sha256": "710dbe484fda23f0dee9b67c20e5bef9376bf754af05584ad142bc17845cd4b9",
+        "pattern": "**/ntl_extra_passages_claude.csv",
+        "raw_rows": 4998,
+        "columns": [
+          "id",
+          "prompt_id",
+          "model",
+          "text",
+          "n_words",
+          "target_words",
+          "domain",
+          "task_type",
+          "topic"
+        ],
+        "label_column": "model",
+        "finish_column": null,
+        "finish_filter_applied": false,
+        "rows_after_finish_filter": 4998
+      },
+      {
+        "path": "datasets/lucasboesen/ntl-free-proxy-generations/gen_passages.csv",
+        "bytes": 3835894,
+        "sha256": "d037d212e17a7e98465f9c606f4437225fb221939a5f51b0f8150d15c07c68a5",
+        "pattern": "**/gen_passages.csv",
+        "raw_rows": 4255,
+        "columns": [
+          "prompt_id",
+          "model",
+          "model_slug",
+          "target_words",
+          "n_words",
+          "setting",
+          "batch",
+          "text",
+          "prompt_source",
+          "prompt"
+        ],
+        "label_column": "model",
+        "finish_column": null,
+        "finish_filter_applied": false,
+        "rows_after_finish_filter": 4255
+      },
+      {
+        "path": "datasets/abdullah1afify/ntl-generations/ntl_generations.csv",
+        "bytes": 870886,
+        "sha256": "83003454e3cc0368cae8b05bca243daf036b64a42a792c3f7bfd5fd91b3db378",
+        "pattern": "**/ntl_generations.csv",
+        "raw_rows": 1033,
+        "columns": [
+          "label",
+          "prompt_id",
+          "setting",
+          "target_words",
+          "text",
+          "model_seen",
+          "finish_reason",
+          "cost_usd",
+          "batch"
+        ],
+        "label_column": "label",
+        "finish_column": "finish_reason",
+        "finish_filter_applied": true,
+        "rows_after_finish_filter": 736
+      },
+      {
+        "path": "datasets/dophuchung/ntl-proxy-generations/ntl_proxy_generations.csv",
+        "bytes": 889391,
+        "sha256": "593708f7fd55636bd270824c0e129447b2a5808b1e224bb3dbf43bf2383fdf9c",
+        "pattern": "**/ntl_proxy_generations.csv",
+        "raw_rows": 1029,
+        "columns": [
+          "label",
+          "prompt_id",
+          "setting",
+          "target_words",
+          "n_words",
+          "text",
+          "model_seen",
+          "reasoning_tokens",
+          "cost_usd",
+          "batch"
+        ],
+        "label_column": "label",
+        "finish_column": null,
+        "finish_filter_applied": false,
+        "rows_after_finish_filter": 1029
+      },
+      {
+        "path": "prvsiyans-extended-name-that-llm-dataset/passages_clean.csv",
+        "bytes": 6768554,
+        "sha256": "23f90b6ba4cc83137ce8d48b3b3787439b44867532d63e2fe52f8a5ea49cd1e6",
+        "pattern": "**/passages_clean.csv",
+        "raw_rows": 4584,
+        "columns": [
+          "id",
+          "dataset_version_added",
+          "attempt",
+          "prompt_id",
+          "model",
+          "text",
+          "n_words",
+          "word_min",
+          "word_max",
+          "target_words",
+          "prompt_sent",
+          "domain",
+          "task_type",
+          "topic",
+          "style",
+          "opening_phrase",
+          "split",
+          "provider_route",
+          "requested_model_id",
+          "served_model_id",
+          "served_provider",
+          "generated_at_utc",
+          "reasoning_setting",
+          "finish_reason",
+          "finish_reason_norm",
+          "input_tokens",
+          "output_tokens",
+          "reasoning_tokens",
+          "cost_usd",
+          "call_id",
+          "response_id",
+          "n_calls_for_cell",
+          "source_prompt_id",
+          "is_refusal",
+          "is_truncated",
+          "is_empty",
+          "has_markdown",
+          "in_word_range",
+          "passes_funnel",
+          "passes_funnel_regen",
+          "funnel_fail_step",
+          "max_shared_8grams_comp"
+        ],
+        "label_column": "model",
+        "finish_column": null,
+        "finish_filter_applied": false,
+        "rows_after_finish_filter": 4584
+      }
+    ],
+    "status": "FAIL_EXTRA_MERGE_COUNTS",
+    "checks": {
+      "source_files_present": true,
+      "author_row_count_matches": false,
+      "author_prompt_count_matches": false
+    },
+    "observed": {
+      "rows": 9983,
+      "prompts": 689,
+      "class_counts": {
+        "claude-fable-5": 645,
+        "claude-opus-4-6": 689,
+        "claude-opus-4-8": 689,
+        "claude-opus-5": 689,
+        "claude-sonnet-5": 689,
+        "gemini-3.1-pro-preview": 629,
+        "gemini-3.6-flash": 689,
+        "gemini-3.7-flash": 226,
+        "gemini-3.8-flash": 689,
+        "glm-5.3": 226,
+        "glm-5.3-flash": 226,
+        "gpt-5.5": 689,
+        "gpt-5.6-luna": 689,
+        "gpt-5.6-sol": 689,
+        "gpt-5.6-terra": 689,
+        "gpt-6-astra": 689,
+        "kimi-k3": 226,
+        "qwen3.8-max": 226
+      },
+      "labels_per_prompt_counts": {
+        "12": 104,
+        "13": 359,
+        "18": 226
+      }
+    },
+    "expected": {
+      "rows": 7644,
+      "prompts": 509
+    },
+    "new_checkpoint_metadata": {
+      "lora8b_v1": {
+        "matching_meta_files": 1,
+        "records": [
+          {
+            "meta": {
+              "path": "datasets/nishantdahal/ntl-two-stage-lora/lora8b_v1/meta.json",
+              "bytes": 958,
+              "sha256": "d84edb29b2c1c3b555a366dcb43df5661faed3a5b12abaf0f18e96cdf8aa5cda"
+            },
+            "cfg": {
+              "keep": 24,
+              "layers": [
+                2,
+                4,
+                6,
+                8,
+                12,
+                16,
+                20,
+                24
+              ],
+              "max_len": 447
+            },
+            "label_order_matches_outer_source": true,
+            "adapter_config": {
+              "path": "datasets/nishantdahal/ntl-two-stage-lora/lora8b_v1/adapter/adapter_config.json",
+              "bytes": 1393,
+              "sha256": "cd1f40e92124ea643f934c4c3431385b11f37681f5de30a437b8022124c23043"
+            },
+            "adapter_fields": {
+              "r": 16,
+              "lora_alpha": 32,
+              "lora_dropout": 0.05,
+              "bias": "none",
+              "task_type": null,
+              "target_modules": [
+                "down_proj",
+                "gate_proj",
+                "o_proj",
+                "v_proj",
+                "q_proj",
+                "k_proj",
+                "up_proj"
+              ],
+              "fan_in_fan_out": false
+            }
+          }
+        ]
+      },
+      "lora14b_v1": {
+        "matching_meta_files": 1,
+        "records": [
+          {
+            "meta": {
+              "path": "datasets/nishantdahal/ntl-two-stage-lora/lora14b_v1/meta.json",
+              "bytes": 931,
+              "sha256": "ef274e94503adb1c5a4910dc3002a4595d63c525dac11d37a973ec2343de0c5e"
+            },
+            "cfg": {
+              "keep": 27,
+              "layers": [
+                2,
+                4,
+                6,
+                9,
+                13,
+                17,
+                22,
+                27
+              ],
+              "max_len": 447
+            },
+            "label_order_matches_outer_source": true,
+            "adapter_config": {
+              "path": "datasets/nishantdahal/ntl-two-stage-lora/lora14b_v1/adapter/adapter_config.json",
+              "bytes": 1394,
+              "sha256": "28574e93c9fe2fda535f59f5b4723185ad418d39d59a48650c0cd48b7404fce5"
+            },
+            "adapter_fields": {
+              "r": 16,
+              "lora_alpha": 32,
+              "lora_dropout": 0.05,
+              "bias": "none",
+              "task_type": null,
+              "target_modules": [
+                "q_proj",
+                "down_proj",
+                "o_proj",
+                "k_proj",
+                "gate_proj",
+                "v_proj",
+                "up_proj"
+              ],
+              "fan_in_fan_out": false
+            }
+          }
+        ]
+      }
+    },
+    "limits": [
+      "Matching 7644 rows and 509 prompts does not prove identical merged text, source versions, provider identity, or training provenance.",
+      "The copied source assumes prompt-bank identity except for passages_clean.csv; this audit preserves that assumption rather than repairing it.",
+      "Official response overlap and the separate 34940-row pool are handled by the separate input checker, not this merge audit.",
+      "No passage text, individual prompt ID, model tensor, or row-level prediction is emitted."
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "checked_date": "2026-10-24",
+  "source": "https://www.kaggle.com/competitions/name-that-llm/leaderboard",
+  "public_test_fraction_displayed": 0.4,
+  "private_test_fraction_displayed": 0.6,
+  "first": {
+    "team": "Hod Carriers",
+    "score": 0.7
+  },
+  "tenth": {
+    "team": "mutesa cedric",
+    "score": 0.66
+  },
+  "watchman777": {
+    "rank": 1246,
+    "score": 0.549,
+    "entries": 2
+  },
+  "warning": "Point-in-time public leaderboard; not final private standings."
+}
+

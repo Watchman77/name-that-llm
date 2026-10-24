@@ -1,0 +1,20 @@
+{
+  "stage": "08_extra_merge_synthetic_tests",
+  "status": "PASS",
+  "tests": {
+    "valid_12_label_prompt_passes": true,
+    "file_hash_receipt_recorded": true,
+    "wrong_expected_counts_fail": true,
+    "missing_inputs_fail_closed": true,
+    "under_12_labels_removed": true,
+    "keep_first_prompt_model_and_model_text": true,
+    "bold_whitespace_and_unknown_label_protocol": true,
+    "word_limits_30_and_300_inclusive": true,
+    "passages_clean_uses_separate_pv_bank": true,
+    "finish_reason_stop_and_label_rename": true,
+    "absent_optional_finish_column_preserves_source_behavior": true,
+    "missing_required_column_fails_closed": true
+  },
+  "real_inputs_read": false,
+  "model_code_executed": false
+}

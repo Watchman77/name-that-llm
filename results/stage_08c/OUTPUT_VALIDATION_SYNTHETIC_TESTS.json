@@ -1,0 +1,16 @@
+{
+  "stage": "08c_output_validation_synthetic_tests",
+  "status": "PASS",
+  "tests": {
+    "valid_probabilities_and_mocked_readback_parity": true,
+    "nonfinite_probabilities_and_logits_rejected": true,
+    "wrong_order_and_duplicate_ids_rejected": true,
+    "invalid_label_and_argmax_mismatch_rejected": true,
+    "shape_bounds_and_normalization_rejected": true,
+    "changed_mocked_saved_parquet_rejected": true
+  },
+  "real_inputs_read": false,
+  "model_code_executed": false,
+  "parquet_serialization_tested": false,
+  "readback_boundary_mocked": true
+}

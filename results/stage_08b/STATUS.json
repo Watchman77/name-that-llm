@@ -1,0 +1,13 @@
+{
+  "stage": "08B",
+  "status": "PRIVATE_THREE_ROW_PREVIEW_SUCCESS",
+  "script_version_id": 361730151,
+  "runtime_seconds": 397.7,
+  "preview_rows": 3,
+  "official_submission": false,
+  "own_public_score": null,
+  "upstream_author_public_score": 0.592,
+  "source_cells_exact_match": true,
+  "algorithm_modified": false
+}
+

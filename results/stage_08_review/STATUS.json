@@ -1,8 +1,13 @@
 {
   "stage": "08",
-  "status": "SOURCE_REVIEW_COMPLETE_PRIVATE_COPY_PREPARED_NOT_EXECUTED",
+  "status": "REAL_INPUT_GATE_FAILED_MISSING_PUBLIC_LORA24_AND_CHANGED_OLD_MERGE",
   "real_input_preflight_executed": false,
   "gpu_reproduction_started": false,
   "own_score": null,
-  "next_gate": "READ_ONLY_REAL_INPUT_AND_SOURCE_VERSION_RECONCILIATION_BEFORE_GPU_REPRODUCTION"
+  "next_gate": "READ_ONLY_REAL_INPUT_AND_SOURCE_VERSION_RECONCILIATION_BEFORE_GPU_REPRODUCTION",
+  "last_checked": "2026-10-24",
+  "model_code_executed": false,
+  "real_input_checks": 151,
+  "real_input_failed_checks": 1,
+  "next_candidate": "Stage 08C"
 }

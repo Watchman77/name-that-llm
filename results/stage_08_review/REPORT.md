@@ -1,4 +1,5 @@
 # Stage 08 — review and preparation of the public 0.600 recipe
+**24 October update:** The real-input audit is complete and the unchanged recipe is blocked by a missing private LoRA24 checkpoint and changed old-merge counts. See [UPDATE_20261024.md](UPDATE_20261024.md). The earlier preparation notes below are retained as the 20 October record.
 
 Reviewed on 20 October 2026. **V20 is a technically plausible reproduction target, with a real author public score displayed as 0.600. Our reproduction has not executed model code and has no score.** Source review is complete; exact input receipts and the real-input preflight remain prerequisites to GPU execution. Our last verified official S02 score is still 0.549; it was not freshly rechecked here.
 

@@ -1,0 +1,25 @@
+{
+  "stage": "08c_input_preflight_synthetic_tests",
+  "status": "PASS",
+  "tests": {
+    "missing_input_rejected": true,
+    "ambiguous_input_rejected": true,
+    "valid_18_class_pool": true,
+    "wrong_pool_count_rejected": true,
+    "unknown_class_rejected": true,
+    "null_text_rejected": true,
+    "normalized_train_overlap_reported_separately": true,
+    "exact_train_overlap_reported": true,
+    "valid_metadata": true,
+    "reversed_head_labels_rejected": true,
+    "wrong_chat_eos_rejected": true,
+    "pool_depth_beyond_trunk_rejected": true,
+    "valid_safe_header": true,
+    "truncated_safe_header_rejected": true,
+    "valid_adapter_pair": true,
+    "wrong_adapter_width_rejected": true,
+    "missing_index_shard_rejected": true
+  },
+  "real_inputs_read": false,
+  "model_code_executed": false
+}

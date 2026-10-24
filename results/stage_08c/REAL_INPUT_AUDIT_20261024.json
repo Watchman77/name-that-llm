@@ -1,0 +1,779 @@
+{
+  "stage": "08c_input_preflight",
+  "public_source_version": 361311282,
+  "status": "PASS_INPUT_CONTRACT",
+  "read_only": true,
+  "new_fitting": false,
+  "new_inference": false,
+  "network_used": false,
+  "pickle_used": false,
+  "public_source_executed": false,
+  "checks": [
+    {
+      "name": "official_train:one_file",
+      "passed": true,
+      "count": 1
+    },
+    {
+      "name": "official_test:one_file",
+      "passed": true,
+      "count": 1
+    },
+    {
+      "name": "official_train_receipt:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "official:known_train_hash",
+      "passed": true
+    },
+    {
+      "name": "official:train_schema",
+      "passed": true
+    },
+    {
+      "name": "official:2699_rows_150_prompts_18_labels",
+      "passed": true
+    },
+    {
+      "name": "official:unique_train_ids",
+      "passed": true
+    },
+    {
+      "name": "official_test_receipt:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "official:test_schema",
+      "passed": true
+    },
+    {
+      "name": "official:test_ids_unique_nonempty",
+      "passed": true
+    },
+    {
+      "name": "pool:one_file",
+      "passed": true,
+      "count": 1
+    },
+    {
+      "name": "pool_receipt:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "pool:row_count",
+      "passed": true,
+      "observed": 75783,
+      "expected": 75783
+    },
+    {
+      "name": "pool:required_columns",
+      "passed": true
+    },
+    {
+      "name": "pool:nonnull_required_values",
+      "passed": true
+    },
+    {
+      "name": "pool:nonempty_string_text",
+      "passed": true
+    },
+    {
+      "name": "pool:exact_18_labels",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:one_base_model",
+      "passed": true,
+      "count": 1
+    },
+    {
+      "name": "lora_qwen3_14b:base:tokenizer_config:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:base:tokenizer_assets",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:base:index:model.safetensors.index.json:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:base:index_weight_map",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:base:safe_shard_names",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:base:all_index_shards_present",
+      "passed": true,
+      "required": 8
+    },
+    {
+      "name": "lora_qwen3_14b:base:weights_present",
+      "passed": true,
+      "shards": 8
+    },
+    {
+      "name": "lora_qwen3_14b:base:multi_shard_index_present",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:meta:one_file",
+      "passed": true,
+      "count": 1
+    },
+    {
+      "name": "lora_qwen3_14b:meta_receipt:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:label_order",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:cfg_object",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:author_kept_depth",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:pooled_layers_valid",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:max_len_positive",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:training_eos_151643",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:heads:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:heads:safe_header",
+      "passed": true,
+      "tensor_count": 20
+    },
+    {
+      "name": "lora_qwen3_14b:adapter_config:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:adapter_weights:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:adapter_weights:safe_header",
+      "passed": true,
+      "tensor_count": 378
+    },
+    {
+      "name": "lora_qwen3_14b:rank_scale",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:manual_merge_compatible",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:adapter_layer_pair_dimensions",
+      "passed": true,
+      "pairs": 189
+    },
+    {
+      "name": "lora_qwen3_14b:all_head_shapes",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen3_14b:eos_in_base_vocab",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:one_base_model",
+      "passed": true,
+      "count": 1
+    },
+    {
+      "name": "lora_qwen25_14b:base:tokenizer_config:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:base:tokenizer_assets",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:base:index:model.safetensors.index.json:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:base:index_weight_map",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:base:safe_shard_names",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:base:all_index_shards_present",
+      "passed": true,
+      "required": 8
+    },
+    {
+      "name": "lora_qwen25_14b:base:weights_present",
+      "passed": true,
+      "shards": 8
+    },
+    {
+      "name": "lora_qwen25_14b:base:multi_shard_index_present",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:meta:one_file",
+      "passed": true,
+      "count": 1
+    },
+    {
+      "name": "lora_qwen25_14b:meta_receipt:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:label_order",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:cfg_object",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:author_kept_depth",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:pooled_layers_valid",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:author_q25_pool_depths",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:max_len_positive",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:training_eos_151643",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:heads:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:heads:safe_header",
+      "passed": true,
+      "tensor_count": 20
+    },
+    {
+      "name": "lora_qwen25_14b:adapter_config:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:adapter_weights:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:adapter_weights:safe_header",
+      "passed": true,
+      "tensor_count": 448
+    },
+    {
+      "name": "lora_qwen25_14b:rank_scale",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:manual_merge_compatible",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:adapter_layer_pair_dimensions",
+      "passed": true,
+      "pairs": 224
+    },
+    {
+      "name": "lora_qwen25_14b:all_head_shapes",
+      "passed": true
+    },
+    {
+      "name": "lora_qwen25_14b:eos_in_base_vocab",
+      "passed": true
+    },
+    {
+      "name": "deberta_meta:one_file",
+      "passed": true,
+      "count": 1
+    },
+    {
+      "name": "deberta_meta_receipt:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "deberta_encoder_config:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "deberta_encoder:tokenizer_config:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "deberta_encoder:tokenizer_assets",
+      "passed": true
+    },
+    {
+      "name": "deberta_encoder:weights_present",
+      "passed": true,
+      "shards": 1
+    },
+    {
+      "name": "deberta_encoder:multi_shard_index_present",
+      "passed": true
+    },
+    {
+      "name": "deberta_head:nonempty_file",
+      "passed": true
+    },
+    {
+      "name": "deberta_head:safe_header",
+      "passed": true,
+      "tensor_count": 2
+    },
+    {
+      "name": "deberta:label_order",
+      "passed": true
+    },
+    {
+      "name": "deberta:author_max_len_384",
+      "passed": true
+    },
+    {
+      "name": "deberta:large_encoder_identity",
+      "passed": true
+    },
+    {
+      "name": "deberta:head_shapes",
+      "passed": true
+    }
+  ],
+  "inventory": {
+    "official_train:matches": [
+      {
+        "path": "competitions/name-that-llm/train.csv",
+        "bytes": 2139418
+      }
+    ],
+    "official_test:matches": [
+      {
+        "path": "competitions/name-that-llm/test.csv",
+        "bytes": 2218
+      }
+    ],
+    "official_train_receipt": {
+      "path": "competitions/name-that-llm/train.csv",
+      "bytes": 2139418,
+      "sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707"
+    },
+    "official_test_receipt": {
+      "path": "competitions/name-that-llm/test.csv",
+      "bytes": 2218,
+      "sha256": "4545aa3a3459f4c0724f97ad5bd06c4caa3506bdfea5fab905e8203184fc0c57"
+    },
+    "official_test_aggregates": {
+      "rows": 3,
+      "columns": [
+        "id",
+        "text"
+      ]
+    },
+    "pool:matches": [
+      {
+        "path": "datasets/nishantdahal/ntl-handwriting-blend/pool_v4.parquet",
+        "bytes": 35403026
+      }
+    ],
+    "pool_receipt": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/pool_v4.parquet",
+      "bytes": 35403026,
+      "sha256": "37750e899ff6634c147daa7888bfed048e92d3fb1381fe5d21f93bf72a84e8ec"
+    },
+    "pool_aggregates": {
+      "rows": 75783,
+      "columns": [
+        "id",
+        "prompt_id",
+        "text",
+        "model",
+        "source",
+        "setting",
+        "n_words",
+        "prompt_key"
+      ],
+      "class_counts": {
+        "gpt-5.5": 5280,
+        "gpt-5.6-luna": 6736,
+        "gpt-5.6-sol": 5716,
+        "gpt-5.6-terra": 6031,
+        "gpt-6-astra": 4357,
+        "gemini-3.1-pro-preview": 2365,
+        "gemini-3.6-flash": 3716,
+        "gemini-3.7-flash": 2359,
+        "gemini-3.8-flash": 4767,
+        "claude-opus-4-6": 3013,
+        "claude-opus-4-8": 3458,
+        "claude-opus-5": 2338,
+        "claude-sonnet-5": 3578,
+        "claude-fable-5": 3933,
+        "qwen3.8-max": 2945,
+        "glm-5.3": 5084,
+        "glm-5.3-flash": 6089,
+        "kimi-k3": 4018
+      }
+    },
+    "pool_overlap_admission": {
+      "exact_official_training_response_rows": 0,
+      "normalized_official_training_response_rows": 0,
+      "duplicate_exact_text_rows_after_first": 0,
+      "duplicate_normalized_text_rows_after_first": 0,
+      "status": "NO_FULL_RESPONSE_OVERLAP_FOUND",
+      "rows_silently_removed": 0,
+      "overlap_is_not_an_inference_contract_failure": true,
+      "overlap_alone_does_not_establish_hidden_test_leakage": true
+    },
+    "lora_qwen3_14b:base_config_matches": [
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/config.json",
+        "bytes": 729,
+        "sha256": "eb65771c8f108f88e4d87f771e1c9d40b7e35bc8070be8c97246c9446ccdf179"
+      }
+    ],
+    "lora_qwen3_14b:base:tokenizer_config": {
+      "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/tokenizer_config.json",
+      "bytes": 9675,
+      "sha256": "5a7303fcb1a27ede63134a2cbd61d5282c247ca6d769ce4746d4ffa124aedd63"
+    },
+    "lora_qwen3_14b:base:small_configs": [
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/config.json",
+        "bytes": 729,
+        "sha256": "eb65771c8f108f88e4d87f771e1c9d40b7e35bc8070be8c97246c9446ccdf179"
+      },
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/tokenizer_config.json",
+        "bytes": 9675,
+        "sha256": "5a7303fcb1a27ede63134a2cbd61d5282c247ca6d769ce4746d4ffa124aedd63"
+      },
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/generation_config.json",
+        "bytes": 138,
+        "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+      }
+    ],
+    "lora_qwen3_14b:base:index:model.safetensors.index.json": {
+      "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model.safetensors.index.json",
+      "bytes": 36514,
+      "sha256": "8bb45057e5de5b87096da94fab4492dfa0d7b9fc1b7fe9bc0d91cb9cd6c19bcb"
+    },
+    "lora_qwen3_14b:base:weight_shards": [
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00001-of-00008.safetensors",
+        "bytes": 3841788544
+      },
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00002-of-00008.safetensors",
+        "bytes": 3963750816
+      },
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00003-of-00008.safetensors",
+        "bytes": 3963750880
+      },
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00004-of-00008.safetensors",
+        "bytes": 3963750880
+      },
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00005-of-00008.safetensors",
+        "bytes": 3963750880
+      },
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00006-of-00008.safetensors",
+        "bytes": 3963750880
+      },
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00007-of-00008.safetensors",
+        "bytes": 3963750880
+      },
+      {
+        "path": "models/qwen-lm/qwen-3/transformers/14b-base/1/model-00008-of-00008.safetensors",
+        "bytes": 1912371880
+      }
+    ],
+    "lora_qwen3_14b:meta:matches": [
+      {
+        "path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen3_14b/meta.json",
+        "bytes": 1015
+      }
+    ],
+    "lora_qwen3_14b:meta_receipt": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen3_14b/meta.json",
+      "bytes": 1015,
+      "sha256": "293119872ff3f170ec85e8be02c80916e39048213de31cb45f8b84a2cf74d775"
+    },
+    "lora_qwen3_14b:cfg_values": {
+      "keep": 27,
+      "layers": [
+        2,
+        4,
+        6,
+        9,
+        13,
+        17,
+        22,
+        27
+      ],
+      "max_len": 447,
+      "eos_id": 151643
+    },
+    "lora_qwen3_14b:heads": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen3_14b/heads.safetensors",
+      "bytes": 6227664,
+      "sha256": "e1d9c1ac833a1cc780f1423341bb5299826271f5aeed2c40d3ec193633d45faf"
+    },
+    "lora_qwen3_14b:adapter_config": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen3_14b/adapter/adapter_config.json",
+      "bytes": 1380,
+      "sha256": "185ac62fa6bb0ba6b14801d663ee70b3ec3ab2133a57857ff4cae1774dc60047"
+    },
+    "lora_qwen3_14b:adapter_weights": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen3_14b/adapter/adapter_model.safetensors",
+      "bytes": 173456688,
+      "sha256": "ecd39f9d551b8fe54558957edac0cdc4d216565a5ab738eb8e276283b8e28d03"
+    },
+    "lora_qwen3_14b:adapter_values": {
+      "r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "up_proj",
+        "in_proj_z",
+        "in_proj_qkv",
+        "o_proj",
+        "gate_proj",
+        "k_proj",
+        "v_proj",
+        "q_proj",
+        "down_proj",
+        "out_proj"
+      ],
+      "bias": "none",
+      "peft_type": "LORA"
+    },
+    "lora_qwen3_14b:end_token_note": {
+      "training_eos_id": 151643,
+      "base_config_eos_token_id": 151643,
+      "source_uses_training_eos_override": true,
+      "tokenizer_base_eos_mismatch_is_expected_for_qwen3": true
+    },
+    "lora_qwen25_14b:base_config_matches": [
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/config.json",
+        "bytes": 664,
+        "sha256": "fdb89460be9a6383451437cdf632a3e087522efa682265461f33507e7069f026"
+      }
+    ],
+    "lora_qwen25_14b:base:tokenizer_config": {
+      "path": "models/qwen-lm/qwen2.5/transformers/14b/1/tokenizer_config.json",
+      "bytes": 7228,
+      "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9"
+    },
+    "lora_qwen25_14b:base:small_configs": [
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/config.json",
+        "bytes": 664,
+        "sha256": "fdb89460be9a6383451437cdf632a3e087522efa682265461f33507e7069f026"
+      },
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/tokenizer_config.json",
+        "bytes": 7228,
+        "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9"
+      },
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/generation_config.json",
+        "bytes": 138,
+        "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+      }
+    ],
+    "lora_qwen25_14b:base:index:model.safetensors.index.json": {
+      "path": "models/qwen-lm/qwen2.5/transformers/14b/1/model.safetensors.index.json",
+      "bytes": 47472,
+      "sha256": "7b4b616a213f09ae889be05d1b135198589496e817d793e2605d5c5b1fe3ae5d"
+    },
+    "lora_qwen25_14b:base:weight_shards": [
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/model-00001-of-00008.safetensors",
+        "bytes": 3885134104
+      },
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/model-00002-of-00008.safetensors",
+        "bytes": 3995327992
+      },
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/model-00003-of-00008.safetensors",
+        "bytes": 3995328064
+      },
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/model-00004-of-00008.safetensors",
+        "bytes": 3995348776
+      },
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/model-00005-of-00008.safetensors",
+        "bytes": 3979614448
+      },
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/model-00006-of-00008.safetensors",
+        "bytes": 3995328064
+      },
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/model-00007-of-00008.safetensors",
+        "bytes": 3995328064
+      },
+      {
+        "path": "models/qwen-lm/qwen2.5/transformers/14b/1/model-00008-of-00008.safetensors",
+        "bytes": 1698724408
+      }
+    ],
+    "lora_qwen25_14b:meta:matches": [
+      {
+        "path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen25_14b/meta.json",
+        "bytes": 1000
+      }
+    ],
+    "lora_qwen25_14b:meta_receipt": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen25_14b/meta.json",
+      "bytes": 1000,
+      "sha256": "1d04028b7fe22beda04f7125d09dd5bc9bee9c8524f721c0aa7bc61379fad6fc"
+    },
+    "lora_qwen25_14b:cfg_values": {
+      "keep": 32,
+      "layers": [
+        3,
+        5,
+        8,
+        11,
+        16,
+        21,
+        27,
+        32
+      ],
+      "max_len": 447,
+      "eos_id": 151643
+    },
+    "lora_qwen25_14b:heads": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen25_14b/heads.safetensors",
+      "bytes": 6227664,
+      "sha256": "73762ab515ed984efc9189063ee4efddd1a0b0b2620aab6420b3e56e1a1c752e"
+    },
+    "lora_qwen25_14b:adapter_config": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen25_14b/adapter/adapter_config.json",
+      "bytes": 1322,
+      "sha256": "2519871702d5d5668a2a86084188754e4b07893b9aaf9c6c0b1f114ae7e82925"
+    },
+    "lora_qwen25_14b:adapter_weights": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen25_14b/adapter/adapter_model.safetensors",
+      "bytes": 183558248,
+      "sha256": "f35b5565ee5fef62a3ef274a3def1e7d83453951c6ce6747f40c46243a668e7c"
+    },
+    "lora_qwen25_14b:adapter_values": {
+      "r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "o_proj",
+        "down_proj",
+        "v_proj",
+        "k_proj",
+        "up_proj",
+        "gate_proj",
+        "q_proj"
+      ],
+      "bias": "none",
+      "peft_type": "LORA"
+    },
+    "lora_qwen25_14b:end_token_note": {
+      "training_eos_id": 151643,
+      "base_config_eos_token_id": 151643,
+      "source_uses_training_eos_override": true,
+      "tokenizer_base_eos_mismatch_is_expected_for_qwen3": true
+    },
+    "deberta_meta:matches": [
+      {
+        "path": "datasets/nishantdahal/ntl-handwriting-blend/deberta_v3_large/meta.json",
+        "bytes": 529
+      }
+    ],
+    "deberta_meta_receipt": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/deberta_v3_large/meta.json",
+      "bytes": 529,
+      "sha256": "deb3c891d6172018ec06b7b3de33f9a13ac6c44d6bf8a9725b53ce8c7c93a546"
+    },
+    "deberta_encoder_config": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/deberta_v3_large/encoder/config.json",
+      "bytes": 945,
+      "sha256": "4395706a61da43a4da4d29045ab75101cee662547aa4b34c894420922decf22f"
+    },
+    "deberta_encoder:tokenizer_config": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/deberta_v3_large/encoder/tokenizer_config.json",
+      "bytes": 561,
+      "sha256": "4f753d8c53959b665e2002e56c5bac6533883a79b95a8164b00db7f23c1cd8a3"
+    },
+    "deberta_encoder:small_configs": [
+      {
+        "path": "datasets/nishantdahal/ntl-handwriting-blend/deberta_v3_large/encoder/config.json",
+        "bytes": 945,
+        "sha256": "4395706a61da43a4da4d29045ab75101cee662547aa4b34c894420922decf22f"
+      },
+      {
+        "path": "datasets/nishantdahal/ntl-handwriting-blend/deberta_v3_large/encoder/tokenizer_config.json",
+        "bytes": 561,
+        "sha256": "4f753d8c53959b665e2002e56c5bac6533883a79b95a8164b00db7f23c1cd8a3"
+      }
+    ],
+    "deberta_encoder:weight_shards": [
+      {
+        "path": "datasets/nishantdahal/ntl-handwriting-blend/deberta_v3_large/encoder/model.safetensors",
+        "bytes": 868069608
+      }
+    ],
+    "deberta_head": {
+      "path": "datasets/nishantdahal/ntl-handwriting-blend/deberta_v3_large/head.safetensors",
+      "bytes": 73936,
+      "sha256": "43db1fbe725abfc2299e6618f2f6b3e7cb7a63e3981cb4325dd6961e6e1afb06"
+    },
+    "deberta_meta_values": {
+      "max_len": 384
+    }
+  },
+  "limits": [
+    "A pass verifies present contracts and records hashes; exact upstream attachment/version identity still requires matching immutable version receipts.",
+    "Large base/encoder weights are inventoried by name/size and index completeness, not hashed, deserialized, or executed.",
+    "Train-response overlap is separately reported for admission review; no rows are filtered and overlap alone does not establish hidden-test leakage.",
+    "The 75783-row shipped SVC pool is distinct from the author-described 83827-row adapter-training pool; checkpoint training provenance/CV is not reproduced.",
+    "No GPU compatibility, numerical feature parity, independent development accuracy, preview completion or official public score is established."
+  ]
+}

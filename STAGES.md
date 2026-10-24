@@ -80,3 +80,12 @@ Pre-execution freeze `92ba57ed4f4d617b178e71533db14d9073ddb94a`. Correct cloud s
 ## Stage 08 — public 0.600 recipe reviewed; private copy prepared (2026-10-20)
 
 Verified the author's exact V20 360088024 displays official public score 0.600; the earlier V14 359708344 is 0.557 despite the current title. Captured and independently reviewed its two-stage 8B/14B LoRA + shared-prompt Gaussian/full-stack recipe; no obvious static code blocker. Private watchman777 Quick V1 360471311 preserves exact complete V20 code, with no model execution. Copy inherited latest data: prvsiyan extended V5 instead of source V4, with input size 42.22GB vs 42.19GB. Restored explicit V4 and saved private Quick V2 360473569, source diff +0/-0; no model code run. Read-only CPU input-preflight implemented and all 12 synthetic gates pass, but real mounted inputs/byte identities and pool provenance remain unverified. Next gate is actual aggregate input/overlap/manifest reconciliation, then one frozen private GPU reproduction; no honest OOF claim can use final adapters reportedly fit on all official labels. No model inference, paid APIs, new generation, trained-model publication, submission or final-selection change. S02 remains last verified 0.549, not rechecked. See [review](results/stage_08_review/REPORT.md), [preparation receipt](results/stage_08_review/KAGGLE_PREPARATION.json), [source review](results/stage_08_review/SOURCE_CODE_REVIEW.md), [data review](results/stage_08_review/DATA_REVIEW.md).
+
+
+## Stage 08 continuation — 24 October 2026
+
+The frozen 0.600 recipe failed the real-input gate: 150/151 checks pass, but the original LoRA24 checkpoint is now private/unavailable; the old extra-data merge also differs (9,983 rows / 689 prompts versus 7,644 / 509). No model execution for that incomplete recipe. See [dated update](results/stage_08_review/UPDATE_20261024.md).
+
+[Stage 08B](results/stage_08b/REPORT.md) reproduces Nishant V2 359887828 without model changes. Our private V1 361730151 completed its three-row preview in 397.7s; no official score.
+
+[Stage 08C](results/stage_08c/REPORT.md) freezes Nishant part-two V1 361311282 (author public 0.620), pins dataset V1, passes 85/85 real CPU input checks, and launches private GPU V2 361732127. The six model cells are unchanged; an independent validation-only final cell checks probabilities/IDs/parquet. Own preview and official score remain pending. Current public first is 0.700, tenth 0.660; our displayed current official best remains 0.549. No tuning, API purchases or final-selection changes.
