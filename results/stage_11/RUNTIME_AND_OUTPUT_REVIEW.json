@@ -1,0 +1,173 @@
+{
+  "stage": 11,
+  "scope": "static runtime and saved-output review only",
+  "source_version": 362014737,
+  "source_cells": 33,
+  "capture_json_sha256": "143351168ff87d0cd0f2712c29778dfad8acd34c1527088a19d4b42141869413",
+  "source_author_public_score": 0.642,
+  "own_best_official_public_score": 0.639,
+  "verdict": "CPU asset audit required; no GPU or inference admission based on static review alone",
+  "performed": {
+    "source_imported_or_executed": false,
+    "model_loaded": false,
+    "gpu_probe": false,
+    "hidden_runtime_logs_read": false
+  },
+  "runtime": {
+    "internal_deadlines_enforced": false,
+    "evidence": [
+      "RuntimeBudget.remaining returns float infinity",
+      "RuntimeBudget.require returns None",
+      "run_parallel ignores max_seconds and uses unbounded proc.wait",
+      "ATLAS parses --seconds but never applies it"
+    ],
+    "platform_limit_still_applies": true,
+    "hidden_complete_runtime_available_in_local_capture": false,
+    "preview_seconds": 22.7,
+    "preview_is_full_inference": false,
+    "qwen_visible_gpu_count_exact": 2,
+    "qwen_portable_dtype": "float16",
+    "qwen_resident": true,
+    "qwen_full_decoder_layers": 64,
+    "qwen_batch_size": 3,
+    "qwen_oom_retry": "each failed batch retried one row at a time after traceback scope exits",
+    "qwen_fixed_truncation": false,
+    "qwen_context_overflow_behavior": "raises ValueError; does not truncate",
+    "nf4_staged_files": 17,
+    "nf4_staged_bytes": 19447911132,
+    "nf4_minimum_extra_free_bytes": 2147483648,
+    "required_tmp_free_strictly_greater_than_bytes": 21595394780,
+    "temp_stage_cleanup": "contextmanager finally removes staged directory after subprocess completion or failure",
+    "source_environment": "Root live UI reports source original environment pinned to 2026-10-02; this observation was not independently browsed here"
+  },
+  "asset_gate": {
+    "mandatory_check_count": 160,
+    "literal_hub_check_count": 112,
+    "literal_hub": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/",
+    "source_root_alias_or_discovery_fallback": false,
+    "blanket_historical_assets_still_required": true,
+    "examples": [
+      "legacy OLMo assets",
+      "legacy Smol assets",
+      "legacy Llama assets",
+      "legacy main_lora8"
+    ],
+    "source_manifest_PROVEN_status_is_not_our_mount_or_hash_verification": true,
+    "serialization_boundaries": [
+      "joblib spectral bank",
+      "Torch token-attention heads",
+      "UltraBERT custom code",
+      "inlined model modules",
+      "offline package wheels"
+    ]
+  },
+  "probe_protocol": {
+    "status": "proposal only; not implemented or run by this review",
+    "prerequisite": "Actual CPU audit passes every mandatory check and verifies new checkpoint/NF4/local wheels",
+    "minimal_target": "new full-text Qwen branch only",
+    "keep_production_source": "All 33 scored source cells remain byte exact in a separate immutable production artifact",
+    "diagnostic_artifact": "A separate private diagnostic notebook can materialize the same source workers, then append a diagnostic-only wrapper; never submit this notebook",
+    "query": "Fixed 12\u201318 official training texts selected without labels across token-length strata, including longest tail; save IDs/text privately, aggregate timings only publicly",
+    "worker": "Unchanged own_qwen_worker.py with a distinct --query CSV, --paths JSON and --out file",
+    "staging": "Same explicit NF4_FILES staging and same offline wheel set; two visible T4 GPUs",
+    "timeout": "Use an explicit parent subprocess timeout, e.g. 1200 seconds, because source RuntimeBudget is untimed; terminate and record timeout without omitting models or submitting output",
+    "measure": [
+      "NF4 staging elapsed time",
+      "model load elapsed time",
+      "actual token lengths",
+      "per-batch seconds",
+      "OOM fallback occurrence",
+      "both GPU peak reserved memory",
+      "row/class/finite logit checks",
+      "Qwen metadata truncation=false/layers=64/adapters=56..63"
+    ],
+    "accuracy_reported": false,
+    "why_no_accuracy": "Final adapter metadata says all 2699 official rows fitted, zero holdout rows, update300",
+    "limitations": [
+      "Qwen-only timing does not establish complete ensemble runtime",
+      "Official text-length distribution is only a proxy for hidden text lengths",
+      "Small-sample linear extrapolation ignores model load, branch scheduling and long-sequence scaling",
+      "CPU resource availability cannot establish CUDA memory or throughput"
+    ],
+    "full_stack_query_caveat": "Changing PATHS.test_csv alone does not route complement: comp_cached reads fixed EXPLICIT_PATHS test_csv and asset_path requires /kaggle/input. A workdir query would fail or create row-axis mismatch. Any diagnostic routing patch must be separate and explicit."
+  },
+  "output_validation": {
+    "working_root": "/kaggle/working",
+    "temporary_work_root": "/kaggle/temp/ntl636-fulltext-qwen-query",
+    "final_parquet": "/kaggle/working/submission.parquet",
+    "main_log": "/kaggle/working/fulltext-inference-main.log",
+    "stage_log_root": "/kaggle/working/inference-logs",
+    "required_temporary_files": [
+      "groups.npy",
+      "decoders.npz",
+      "deberta.npz",
+      "comp.npy",
+      "comp.npy.json",
+      "night24-helper.npz",
+      "before_atlas.npz",
+      "night24-blend-evidence.npz",
+      "reference_logits.npz",
+      "qwen.npz",
+      "qwen.npz.json",
+      "qwen_blend_probabilities.npz"
+    ],
+    "conditional_files": [
+      "atlas.npz for positive selected-row count",
+      "atlas-query.csv for positive selected-row count"
+    ],
+    "private_query_files": [
+      "query.csv",
+      "atlas-query.csv",
+      "qwen-query.csv"
+    ],
+    "canonical_labels": [
+      "gpt-5.5",
+      "gpt-5.6-luna",
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-6-astra",
+      "gemini-3.1-pro-preview",
+      "gemini-3.6-flash",
+      "gemini-3.7-flash",
+      "gemini-3.8-flash",
+      "claude-opus-4-6",
+      "claude-opus-4-8",
+      "claude-opus-5",
+      "claude-sonnet-5",
+      "claude-fable-5",
+      "qwen3.8-max",
+      "glm-5.3",
+      "glm-5.3-flash",
+      "kimi-k3"
+    ],
+    "required_checks": [
+      "No-pickle array reads",
+      "unique exact complete IDs and label-axis alignment",
+      "finite real N-by18 logits/probabilities",
+      "bounded normalized probability rows",
+      "ATLAS selected IDs equal margin<0.3 rows when N>=50, otherwise all rows",
+      "ATLAS 90/10 selected-row blend from before_atlas",
+      "Night24 90/10 helper blend",
+      "reference_logits softmax equals post-helper reference",
+      "all-row Qwen coverage and Qwen10% probability blend",
+      "same 300-iteration Sinkhorn for N>=50, row normalization only below50",
+      "real saved-parquet readback, exact id order, allowed classes, reconstructed argmax labels",
+      "own_qwen metadata agrees on row count, no truncation,64 layers,last8adapters"
+    ],
+    "mixture_nominal": {
+      "reference_after_atlas": 0.81,
+      "night24_helper": 0.09,
+      "qwen": 0.1
+    },
+    "final_balanced_probability_file_saved_by_source": false,
+    "reconstruction": "Reconstruct final probabilities from qwen_blend_probabilities.npz and source Sinkhorn; compare parquet labels",
+    "base_mixture_reconstruction_limit": "Source does not separately save raw SVC logits. Without additional observational evidence or a separate CPU recomputation, the complete SVC+decoder+DeBERTa pre-ATLAS sum cannot be independently reconstructed solely from saved artifacts. Do not claim it is checked.",
+    "validator_does_not_prove": [
+      "all internal activations finite",
+      "honest OOF performance",
+      "private leaderboard score",
+      "full model parity solely from artifact finiteness"
+    ],
+    "public_export": "Only aggregate counts, hashes and check results; no raw text, test IDs or row-level probabilities in public Git"
+  }
+}

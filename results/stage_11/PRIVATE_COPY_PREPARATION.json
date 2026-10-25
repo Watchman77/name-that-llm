@@ -1,0 +1,16 @@
+{
+  "stage": 11,
+  "source_script_version_id": 362014737,
+  "private_copy_owner": "watchman777",
+  "private_copy_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit/edit",
+  "private_confirmed": true,
+  "inherited_asset_hub_ui_copy_path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets",
+  "actual_file_contents_verified": false,
+  "accelerator": "None",
+  "internet": "off",
+  "environment": "Pin to original environment (2026-10-02)",
+  "cpu_audit_run_started": false,
+  "gpu_inference_or_training_started": false,
+  "own_new_score": null,
+  "verified_date": "2026-10-25"
+}

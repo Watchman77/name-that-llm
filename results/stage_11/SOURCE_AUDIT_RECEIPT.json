@@ -1,0 +1,22 @@
+{
+  "stage": 11,
+  "source_version": 362014737,
+  "source_capture_json_sha256": "143351168ff87d0cd0f2712c29778dfad8acd34c1527088a19d4b42141869413",
+  "manifest_sha256": "f1496ecaeead9dae775d6a308b24a5a2382e6f8adaad9c677175f3b1e911a945",
+  "audit_script_sha256": "d4322d840b9697d19d36e83415e84dd1bc8a95dffb659510e489779c6863a8d5",
+  "audit_script_bytes": 101187,
+  "cpu_notebook_sha256": "f2840b96018031207c5ce4f141d605191be305c97c06b3c0323d81f941229ce7",
+  "cpu_notebook_bytes": 116284,
+  "mandatory_source_checks": 160,
+  "source_byte_pins": 94,
+  "code_cells": 1,
+  "embedded_script_byte_exact": true,
+  "nbformat_readback_pass": true,
+  "all_code_compiles": true,
+  "synthetic_tests": {
+    "passed": 29,
+    "total": 29
+  },
+  "actual_input_audit_executed_by_build": false,
+  "model_or_upstream_source_executed": false
+}

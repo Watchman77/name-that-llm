@@ -1,0 +1,2290 @@
+{
+  "source_version": 362014737,
+  "capture_json_sha256": "143351168ff87d0cd0f2712c29778dfad8acd34c1527088a19d4b42141869413",
+  "scope": "Static AST/literal extraction only; source not imported or executed. Source evidence labels PROVEN are author assertions, not own mount verification.",
+  "required_input_checks": [
+    {
+      "source": "legacy.paths.train_csv",
+      "path": "/kaggle/input/competitions/name-that-llm/train.csv",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.test_csv",
+      "path": "/kaggle/input/competitions/name-that-llm/test.csv",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.pool",
+      "path": "/kaggle/input/datasets/nishantdahal/ntl-two-stage-lora/pool_v1.parquet",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.main_lora8",
+      "path": "/kaggle/input/datasets/nishantdahal/ntl-two-stage-lora/lora8b_v1",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.main_lora14",
+      "path": "/kaggle/input/datasets/nishantdahal/ntl-two-stage-lora/lora14b_v1",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.qwen3_8b_base",
+      "path": "/kaggle/input/models/qwen-lm/qwen-3/transformers/8b-base/1",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.qwen3_14b_base",
+      "path": "/kaggle/input/models/qwen-lm/qwen-3/transformers/14b-base/1",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.qwen2_7b_base",
+      "path": "/kaggle/input/models/qwen-lm/qwen2.5/transformers/7b/1",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.qwen3_4b_base",
+      "path": "/kaggle/input/models/qwen-lm/qwen-3/transformers/4b-base/1",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.glm_base",
+      "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-glm4-9b-trunc25/glm4_9b_trunc25",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.deberta_base",
+      "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-extract-encoders2/deberta-v3-large",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.electra_base",
+      "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-electra-large-weights/electra-large-discriminator",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.desklib_base",
+      "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-desklib-weights/desklib-detector",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.lora24_seed7",
+      "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.lora24_claude",
+      "path": "/kaggle/input/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.lora20_q25_instyle",
+      "path": "/kaggle/input/notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.tokattn_q35_head",
+      "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-train-tokattn/tokattn_final.pt",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.tokattn_deb_head",
+      "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-train-tokattn2/tokattn_debl23_final.pt",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.q35_base",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.hub_root",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.hub_manifest",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/QWEN38_ADDITION_MANIFEST.json",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.lora24_public",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/ntl-lora24-fivefold-training/lora24/final",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.olmo_manifest",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/ntl-olmo2-native24-final-inference-assets/asset_manifest.json",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.olmo_base",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/olmo2-7b-fp16-offline-weights/olmo2-fp16-base",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.smol_manifest",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/ntl-smollm3-two-stage-final-inference-assets/final_inference_manifest.json",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.smol_base_marker",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3_staging_complete.json",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.smol_base",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.paths.mixed_manifest",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/manifest.json",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.qwen_adapter",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-27b-lora-tail8/final.safetensors",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.atlas_manifest",
+      "path": "/kaggle/input/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/atlas_adapter/atlas_adapter/atlas_bundle.json",
+      "kind": "file"
+    },
+    {
+      "source": "legacy.paths.main_adapters",
+      "path": "/kaggle/input/nlm-l24-adapters"
+    },
+    {
+      "source": "legacy.paths.llama31_8b_base",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/llama31-prefix24"
+    },
+    {
+      "source": "legacy.paths.prefit",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl611-prefit"
+    },
+    {
+      "source": "legacy.lists.qwen_wheels[0]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/accelerate-1.15.0-py3-none-any.whl"
+    },
+    {
+      "source": "legacy.lists.qwen_wheels[1]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl"
+    },
+    {
+      "source": "legacy.lists.qwen_wheels[2]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/huggingface_hub-1.32.0-py3-none-any.whl"
+    },
+    {
+      "source": "legacy.lists.qwen_wheels[3]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+    },
+    {
+      "source": "legacy.lists.qwen_wheels[4]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+    },
+    {
+      "source": "legacy.lists.qwen_wheels[5]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/transformers-5.14.1-py3-none-any.whl"
+    },
+    {
+      "source": "legacy.lists.ultrabert_folds[0]",
+      "path": "/kaggle/input/datasets/pjmathematician/ultrabert-380m-ntl/fold0"
+    },
+    {
+      "source": "legacy.lists.ultrabert_folds[1]",
+      "path": "/kaggle/input/datasets/pjmathematician/ultrabert-380m-ntl/fold1"
+    },
+    {
+      "source": "legacy.lists.ultrabert_folds[2]",
+      "path": "/kaggle/input/datasets/pjmathematician/ultrabert-380m-ntl/fold2"
+    },
+    {
+      "source": "legacy.lists.ultrabert_folds[3]",
+      "path": "/kaggle/input/datasets/pjmathematician/ultrabert-380m-ntl/fold3"
+    },
+    {
+      "source": "legacy.lists.ultrabert_folds[4]",
+      "path": "/kaggle/input/datasets/pjmathematician/ultrabert-380m-ntl/fold4"
+    },
+    {
+      "source": "legacy.lists.extra_claude[0]",
+      "path": "/kaggle/input/datasets/seyitkaangunes/ntl-extra-api-passages/ntl_extra_passages_claude.csv"
+    },
+    {
+      "source": "legacy.lists.extra_gen[0]",
+      "path": "/kaggle/input/datasets/lucasboesen/ntl-free-proxy-generations/gen_passages.csv"
+    },
+    {
+      "source": "legacy.lists.extra_generations[0]",
+      "path": "/kaggle/input/datasets/abdullah1afify/ntl-generations/ntl_generations.csv"
+    },
+    {
+      "source": "legacy.lists.extra_proxy[0]",
+      "path": "/kaggle/input/datasets/dophuchung/ntl-proxy-generations/ntl_proxy_generations.csv"
+    },
+    {
+      "source": "legacy.lists.extra_clean[0]",
+      "path": "/kaggle/input/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset/passages_clean.csv"
+    },
+    {
+      "source": "legacy.staging.root",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors/config.json",
+      "kind": "file",
+      "expected_bytes": 3126
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors/merges.txt",
+      "kind": "file",
+      "expected_bytes": 3353259
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors/model.safetensors-00001-of-00004.safetensors",
+      "kind": "file",
+      "expected_bytes": 5276436216
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors/model.safetensors-00002-of-00004.safetensors",
+      "kind": "file",
+      "expected_bytes": 5335161512
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors/model.safetensors-00003-of-00004.safetensors",
+      "kind": "file",
+      "expected_bytes": 5368717440
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors/model.safetensors-00004-of-00004.safetensors",
+      "kind": "file",
+      "expected_bytes": 3325995712
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors/model.safetensors.index.json",
+      "kind": "file",
+      "expected_bytes": 79657
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors/tokenizer.json",
+      "kind": "file",
+      "expected_bytes": 12807982
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors/tokenizer_config.json",
+      "kind": "file",
+      "expected_bytes": 16710
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors/vocab.json",
+      "kind": "file",
+      "expected_bytes": 6722759
+    },
+    {
+      "source": "legacy.staging.root",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/LICENSE",
+      "kind": "file",
+      "expected_bytes": 11544
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/README.md",
+      "kind": "file",
+      "expected_bytes": 65249
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/chat_template.jinja",
+      "kind": "file",
+      "expected_bytes": 8952
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/config.json",
+      "kind": "file",
+      "expected_bytes": 51350
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/generation_config.json",
+      "kind": "file",
+      "expected_bytes": 202
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-0.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865448
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-1.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865448
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-10.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-11.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-12.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-13.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-14.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-15.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-16.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-17.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-18.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-19.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-2.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865448
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-20.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-21.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-22.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-23.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-24.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-25.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-26.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-27.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-28.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-29.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-3.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313744
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-30.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-31.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-32.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-33.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-34.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-35.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-36.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-37.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-38.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-39.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-4.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865448
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-40.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-41.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-42.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-43.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-44.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-45.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-46.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-47.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-48.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-49.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-5.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865448
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-50.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-51.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-52.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-53.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-54.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865472
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-55.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313760
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-6.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865448
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-7.safetensors",
+      "kind": "file",
+      "expected_bytes": 372313744
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-8.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865448
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/layers-9.safetensors",
+      "kind": "file",
+      "expected_bytes": 383865448
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/manifest.json",
+      "kind": "file",
+      "expected_bytes": 151231
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/merges.txt",
+      "kind": "file",
+      "expected_bytes": 3353259
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/model-00016-of-00018.safetensors",
+      "kind": "file",
+      "expected_bytes": 3979564040
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/model-00017-of-00018.safetensors",
+      "kind": "file",
+      "expected_bytes": 2108759344
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/model.safetensors.index.json",
+      "kind": "file",
+      "expected_bytes": 110564
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/text-outside.receipt.json",
+      "kind": "file",
+      "expected_bytes": 707
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/text-outside.safetensors",
+      "kind": "file",
+      "expected_bytes": 2542797120
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/tokenizer.json",
+      "kind": "file",
+      "expected_bytes": 12809320
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/tokenizer_config.json",
+      "kind": "file",
+      "expected_bytes": 17928
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/vocab.json",
+      "kind": "file",
+      "expected_bytes": 6722759
+    },
+    {
+      "source": "legacy.staging.root",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base",
+      "kind": "directory"
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base/README.md",
+      "kind": "file",
+      "expected_bytes": 12340
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base/config.json",
+      "kind": "file",
+      "expected_bytes": 943
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base/generation_config.json",
+      "kind": "file",
+      "expected_bytes": 126
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base/model-00001-of-00002.safetensors",
+      "kind": "file",
+      "expected_bytes": 4966315264
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base/model-00002-of-00002.safetensors",
+      "kind": "file",
+      "expected_bytes": 1183919744
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base/model.safetensors.index.json",
+      "kind": "file",
+      "expected_bytes": 26899
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base/special_tokens_map.json",
+      "kind": "file",
+      "expected_bytes": 151
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base/tokenizer.json",
+      "kind": "file",
+      "expected_bytes": 17208861
+    },
+    {
+      "source": "legacy.staging.file",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base/tokenizer_config.json",
+      "kind": "file",
+      "expected_bytes": 50405
+    },
+    {
+      "source": "v17.paths.test_csv",
+      "path": "/kaggle/input/competitions/name-that-llm/test.csv"
+    },
+    {
+      "source": "v17.paths.new_two_stage_root",
+      "path": "/kaggle/input/datasets/nishantdahal/ntl-handwriting-blend"
+    },
+    {
+      "source": "v17.paths.qwen3_14b",
+      "path": "/kaggle/input/models/qwen-lm/qwen-3/transformers/14b-base/1"
+    },
+    {
+      "source": "v17.paths.qwen25_14b",
+      "path": "/kaggle/input/models/qwen-lm/qwen2.5/transformers/14b/1"
+    },
+    {
+      "source": "v17.paths.svc_prefit",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl627-svc-prefit"
+    },
+    {
+      "source": "v17.paths.qwen_wheels[0]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/accelerate-1.15.0-py3-none-any.whl"
+    },
+    {
+      "source": "v17.paths.qwen_wheels[1]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl"
+    },
+    {
+      "source": "v17.paths.qwen_wheels[2]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/huggingface_hub-1.32.0-py3-none-any.whl"
+    },
+    {
+      "source": "v17.paths.qwen_wheels[3]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+    },
+    {
+      "source": "v17.paths.qwen_wheels[4]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+    },
+    {
+      "source": "v17.paths.qwen_wheels[5]",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/transformers-5.14.1-py3-none-any.whl"
+    },
+    {
+      "source": "v17.paths.legacy_prefit",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl611-prefit"
+    },
+    {
+      "source": "v17.paths.complement_style",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl636-updated-style"
+    },
+    {
+      "source": "v17.paths.own_nf4_base",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-27b-nf4"
+    },
+    {
+      "source": "production.final.adapter",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl627-own-fulltext/ntl627-own-fulltext/final.safetensors",
+      "kind": "file",
+      "expected_bytes": 64605840
+    },
+    {
+      "source": "production.final.metadata",
+      "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl627-own-fulltext/ntl627-own-fulltext/final.json",
+      "kind": "file",
+      "expected_bytes": 1377
+    },
+    {
+      "source": "night24.synthetic_bank",
+      "path": "/kaggle/input/datasets/kirilltym/ntl-spectral-style-heads-paired-4404/night24_readout_banks/synthetic4404.joblib",
+      "kind": "file",
+      "expected_bytes": 22110733
+    },
+    {
+      "source": "night24.complete_metadata",
+      "path": "/kaggle/input/datasets/kirilltym/ntl-spectral-style-heads-paired-4404/night24_readout_banks/COMPLETE.json",
+      "kind": "file",
+      "expected_bytes": 4243
+    }
+  ],
+  "mandatory_check_count": 160,
+  "mandatory_hub_path_count": 112,
+  "required_kind_counts": {
+    "file": 106,
+    "directory": 21,
+    "source_did_not_specify": 33
+  },
+  "paths": {
+    "test_csv": "/kaggle/input/competitions/name-that-llm/test.csv",
+    "new_two_stage_root": "/kaggle/input/datasets/nishantdahal/ntl-handwriting-blend",
+    "qwen3_14b": "/kaggle/input/models/qwen-lm/qwen-3/transformers/14b-base/1",
+    "qwen25_14b": "/kaggle/input/models/qwen-lm/qwen2.5/transformers/14b/1",
+    "svc_prefit": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl627-svc-prefit",
+    "qwen_wheels": [
+      "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/accelerate-1.15.0-py3-none-any.whl",
+      "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl",
+      "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/huggingface_hub-1.32.0-py3-none-any.whl",
+      "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/transformers-5.14.1-py3-none-any.whl"
+    ],
+    "legacy_runtime": "/kaggle/temp/ntl636-fulltext-qwen-external3200-runtime/legacy",
+    "legacy_prefit": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl611-prefit",
+    "complement_style": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl636-updated-style",
+    "own_nf4_base": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-27b-nf4",
+    "own_fulltext_adapter": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl627-own-fulltext/ntl627-own-fulltext/final.safetensors",
+    "night24_bank": "/kaggle/input/datasets/kirilltym/ntl-spectral-style-heads-paired-4404/night24_readout_banks/synthetic4404.joblib",
+    "night24_metadata": "/kaggle/input/datasets/kirilltym/ntl-spectral-style-heads-paired-4404/night24_readout_banks/COMPLETE.json"
+  },
+  "recipe": {
+    "status": "FROZEN_ALLROWS_QWEN10_KIRILL10_CANDIDATE",
+    "reference": "fleongg/ntl-part-two-complement",
+    "reference_scriptVersionId": 361351359,
+    "reference_family": "part_two_complement_atlas_0636",
+    "reference_score": 0.636,
+    "qwen_probability_share": 0.1,
+    "qwen_query_fraction": 1.0,
+    "complement_cache_source_audited": true,
+    "complement_share": 0.15,
+    "ATLAS": true,
+    "ATLAS_share": 0.1,
+    "checkpoint_stage": "final",
+    "checkpoint_source_stage": "official",
+    "checkpoint_source_update": 300,
+    "official_fit_rows": 2699,
+    "official_holdout_rows": 0,
+    "note": "New unscored combination: published Kirill10% augmented readouts after ATLAS, then own final full-text Qwen10% on all rows before unchanged single Sinkhorn; ready readouts, no additional training.",
+    "helper_probability_share": 0.1,
+    "helper_reference": "kirilltym/0-639-teach-more-keep-the-signature",
+    "helper_reference_script_version": 361634630,
+    "helper_dataset": "kirilltym/ntl-spectral-style-heads-paired-4404/1"
+  },
+  "explicit_paths": {
+    "status": "ALL_FIXED_BINDINGS_PROVEN",
+    "source_v11_saved_cells_proof": "research/large-qwen-20oct/candidate-v11-source-proof.json",
+    "paths": {
+      "train_csv": {
+        "path": "/kaggle/input/competitions/name-that-llm/train.csv",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json"
+      },
+      "test_csv": {
+        "path": "/kaggle/input/competitions/name-that-llm/test.csv",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json"
+      },
+      "pool": {
+        "path": "/kaggle/input/datasets/nishantdahal/ntl-two-stage-lora/pool_v1.parquet",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "main_lora8": {
+        "path": "/kaggle/input/datasets/nishantdahal/ntl-two-stage-lora/lora8b_v1",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "main_lora14": {
+        "path": "/kaggle/input/datasets/nishantdahal/ntl-two-stage-lora/lora14b_v1",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "qwen3_8b_base": {
+        "path": "/kaggle/input/models/qwen-lm/qwen-3/transformers/8b-base/1",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "qwen3_14b_base": {
+        "path": "/kaggle/input/models/qwen-lm/qwen-3/transformers/14b-base/1",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "qwen2_7b_base": {
+        "path": "/kaggle/input/models/qwen-lm/qwen2.5/transformers/7b/1",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "qwen3_4b_base": {
+        "path": "/kaggle/input/models/qwen-lm/qwen-3/transformers/4b-base/1",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "glm_base": {
+        "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-glm4-9b-trunc25/glm4_9b_trunc25",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "deberta_base": {
+        "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-extract-encoders2/deberta-v3-large",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "electra_base": {
+        "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-electra-large-weights/electra-large-discriminator",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "desklib_base": {
+        "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-desklib-weights/desklib-detector",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "lora24_seed7": {
+        "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "lora24_claude": {
+        "path": "/kaggle/input/datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "lora20_q25_instyle": {
+        "path": "/kaggle/input/notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "tokattn_q35_head": {
+        "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-train-tokattn/tokattn_final.pt",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "tokattn_deb_head": {
+        "path": "/kaggle/input/notebooks/lucasboesen/name-that-llm-train-tokattn2/tokattn_debl23_final.pt",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": "research/external-volume-20oct/diag-v2-reports/mount-preflight.json"
+      },
+      "q35_base": {
+        "path": "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": "research/large-qwen-20oct/q35-private-gpu-diagnostic/actual-v6-report.json"
+      },
+      "hub_root": {
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json current production editor exact flat hub Copy path",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+        ]
+      },
+      "hub_manifest": {
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/QWEN38_ADDITION_MANIFEST.json",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json current production editor exact flat hub Copy path",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+        ]
+      },
+      "lora24_public": {
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/ntl-lora24-fivefold-training/lora24/final",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json current production editor exact flat hub Copy path",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+        ]
+      },
+      "olmo_manifest": {
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/ntl-olmo2-native24-final-inference-assets/asset_manifest.json",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json current production editor exact flat hub Copy path",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+        ]
+      },
+      "olmo_base": {
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/olmo2-7b-fp16-offline-weights/olmo2-fp16-base",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json current production editor exact flat hub Copy path",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+        ]
+      },
+      "smol_manifest": {
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/ntl-smollm3-two-stage-final-inference-assets/final_inference_manifest.json",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json current production editor exact flat hub Copy path",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+        ]
+      },
+      "smol_base_marker": {
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3_staging_complete.json",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json current production editor exact flat hub Copy path",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+        ]
+      },
+      "smol_base": {
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base",
+        "kind": "directory",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json current production editor exact flat hub Copy path",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+        ]
+      },
+      "mixed_manifest": {
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text/manifest.json",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json current production editor exact flat hub Copy path",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+        ]
+      },
+      "qwen_adapter": {
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-27b-lora-tail8/final.safetensors",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json current production editor exact flat hub Copy path",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+        ]
+      },
+      "atlas_manifest": {
+        "path": "/kaggle/input/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/atlas_adapter/atlas_adapter/atlas_bundle.json",
+        "kind": "file",
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @ATLAS/3"
+        ]
+      },
+      "main_adapters": {
+        "status": "PROVEN",
+        "path": "/kaggle/input/nlm-l24-adapters",
+        "evidence": "Own private diagnostic editor Copy path verified 23Oct; dataset pinned version 6"
+      },
+      "llama31_8b_base": {
+        "status": "PROVEN",
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/llama31-prefix24",
+        "evidence": "Fixed new archive name llama31-prefix24.zip; CPU mount verification required before candidate dispatch"
+      },
+      "prefit": {
+        "status": "PROVEN",
+        "path": "/kaggle/input/ntl-olmo2-native24-final-inference-assets/ntl611-prefit",
+        "evidence": "Hub v9 CPU audit v17 verified all 73 listed files and numeric states"
+      }
+    },
+    "lists": {
+      "qwen_wheels": {
+        "paths": [
+          "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/accelerate-1.15.0-py3-none-any.whl",
+          "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl",
+          "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/huggingface_hub-1.32.0-py3-none-any.whl",
+          "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "/kaggle/input/ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/transformers-5.14.1-py3-none-any.whl"
+        ],
+        "status": "PROVEN",
+        "evidence": "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7"
+      },
+      "ultrabert_folds": {
+        "paths": [
+          "/kaggle/input/datasets/pjmathematician/ultrabert-380m-ntl/fold0",
+          "/kaggle/input/datasets/pjmathematician/ultrabert-380m-ntl/fold1",
+          "/kaggle/input/datasets/pjmathematician/ultrabert-380m-ntl/fold2",
+          "/kaggle/input/datasets/pjmathematician/ultrabert-380m-ntl/fold3",
+          "/kaggle/input/datasets/pjmathematician/ultrabert-380m-ntl/fold4"
+        ],
+        "status": "PROVEN",
+        "evidence": [
+          "research/large-qwen-20oct/explicit-paths-editor-root-copy-proof.json",
+          "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json"
+        ]
+      },
+      "extra_claude": {
+        "paths": [
+          "/kaggle/input/datasets/seyitkaangunes/ntl-extra-api-passages/ntl_extra_passages_claude.csv"
+        ],
+        "status": "PROVEN",
+        "evidence": "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json + canonical dataset attachment root"
+      },
+      "extra_gen": {
+        "paths": [
+          "/kaggle/input/datasets/lucasboesen/ntl-free-proxy-generations/gen_passages.csv"
+        ],
+        "status": "PROVEN",
+        "evidence": "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json + canonical dataset attachment root"
+      },
+      "extra_generations": {
+        "paths": [
+          "/kaggle/input/datasets/abdullah1afify/ntl-generations/ntl_generations.csv"
+        ],
+        "status": "PROVEN",
+        "evidence": "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json + canonical dataset attachment root"
+      },
+      "extra_proxy": {
+        "paths": [
+          "/kaggle/input/datasets/dophuchung/ntl-proxy-generations/ntl_proxy_generations.csv"
+        ],
+        "status": "PROVEN",
+        "evidence": "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json + canonical dataset attachment root"
+      },
+      "extra_clean": {
+        "paths": [
+          "/kaggle/input/datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset/passages_clean.csv"
+        ],
+        "status": "PROVEN",
+        "evidence": "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json + canonical dataset attachment root"
+      },
+      "extra_generated": {
+        "paths": [],
+        "status": "PROVEN",
+        "evidence": "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json proves original wildcard contributes no files"
+      }
+    },
+    "staging": {
+      "/kaggle/input/datasets/bbucxi/qwen35-9b-safetensors": {
+        "status": "PROVEN",
+        "evidence": "research/prvs-preflight-v2-real-layout/q35-pinned1-file-list.json",
+        "files": [
+          {
+            "name": "config.json",
+            "bytes": 3126
+          },
+          {
+            "name": "merges.txt",
+            "bytes": 3353259
+          },
+          {
+            "name": "model.safetensors-00001-of-00004.safetensors",
+            "bytes": 5276436216
+          },
+          {
+            "name": "model.safetensors-00002-of-00004.safetensors",
+            "bytes": 5335161512
+          },
+          {
+            "name": "model.safetensors-00003-of-00004.safetensors",
+            "bytes": 5368717440
+          },
+          {
+            "name": "model.safetensors-00004-of-00004.safetensors",
+            "bytes": 3325995712
+          },
+          {
+            "name": "model.safetensors.index.json",
+            "bytes": 79657
+          },
+          {
+            "name": "tokenizer.json",
+            "bytes": 12807982
+          },
+          {
+            "name": "tokenizer_config.json",
+            "bytes": 16710
+          },
+          {
+            "name": "vocab.json",
+            "bytes": 6722759
+          }
+        ]
+      },
+      "/kaggle/input/ntl-olmo2-native24-final-inference-assets/qwen38-mixed-tail8/name-that-llm-artifacts/qwen38-27b-mixed-tail8-text": {
+        "status": "PROVEN",
+        "evidence": "research\\large-qwen-20oct\\explicit-paths-live-dataset-file-inventory.json @hub/7",
+        "files": [
+          {
+            "name": "LICENSE",
+            "bytes": 11544
+          },
+          {
+            "name": "README.md",
+            "bytes": 65249
+          },
+          {
+            "name": "chat_template.jinja",
+            "bytes": 8952
+          },
+          {
+            "name": "config.json",
+            "bytes": 51350
+          },
+          {
+            "name": "generation_config.json",
+            "bytes": 202
+          },
+          {
+            "name": "layers-0.safetensors",
+            "bytes": 383865448
+          },
+          {
+            "name": "layers-1.safetensors",
+            "bytes": 383865448
+          },
+          {
+            "name": "layers-10.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-11.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-12.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-13.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-14.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-15.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-16.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-17.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-18.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-19.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-2.safetensors",
+            "bytes": 383865448
+          },
+          {
+            "name": "layers-20.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-21.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-22.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-23.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-24.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-25.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-26.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-27.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-28.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-29.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-3.safetensors",
+            "bytes": 372313744
+          },
+          {
+            "name": "layers-30.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-31.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-32.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-33.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-34.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-35.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-36.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-37.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-38.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-39.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-4.safetensors",
+            "bytes": 383865448
+          },
+          {
+            "name": "layers-40.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-41.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-42.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-43.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-44.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-45.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-46.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-47.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-48.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-49.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-5.safetensors",
+            "bytes": 383865448
+          },
+          {
+            "name": "layers-50.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-51.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-52.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-53.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-54.safetensors",
+            "bytes": 383865472
+          },
+          {
+            "name": "layers-55.safetensors",
+            "bytes": 372313760
+          },
+          {
+            "name": "layers-6.safetensors",
+            "bytes": 383865448
+          },
+          {
+            "name": "layers-7.safetensors",
+            "bytes": 372313744
+          },
+          {
+            "name": "layers-8.safetensors",
+            "bytes": 383865448
+          },
+          {
+            "name": "layers-9.safetensors",
+            "bytes": 383865448
+          },
+          {
+            "name": "manifest.json",
+            "bytes": 151231
+          },
+          {
+            "name": "merges.txt",
+            "bytes": 3353259
+          },
+          {
+            "name": "model-00016-of-00018.safetensors",
+            "bytes": 3979564040
+          },
+          {
+            "name": "model-00017-of-00018.safetensors",
+            "bytes": 2108759344
+          },
+          {
+            "name": "model.safetensors.index.json",
+            "bytes": 110564
+          },
+          {
+            "name": "text-outside.receipt.json",
+            "bytes": 707
+          },
+          {
+            "name": "text-outside.safetensors",
+            "bytes": 2542797120
+          },
+          {
+            "name": "tokenizer.json",
+            "bytes": 12809320
+          },
+          {
+            "name": "tokenizer_config.json",
+            "bytes": 17928
+          },
+          {
+            "name": "vocab.json",
+            "bytes": 6722759
+          }
+        ]
+      },
+      "/kaggle/input/ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/smollm3-3b-base-offline-weights/smollm3-base": {
+        "status": "PROVEN",
+        "files": [
+          {
+            "name": "README.md",
+            "bytes": 12340
+          },
+          {
+            "name": "config.json",
+            "bytes": 943
+          },
+          {
+            "name": "generation_config.json",
+            "bytes": 126
+          },
+          {
+            "name": "model-00001-of-00002.safetensors",
+            "bytes": 4966315264
+          },
+          {
+            "name": "model-00002-of-00002.safetensors",
+            "bytes": 1183919744
+          },
+          {
+            "name": "model.safetensors.index.json",
+            "bytes": 26899
+          },
+          {
+            "name": "special_tokens_map.json",
+            "bytes": 151
+          },
+          {
+            "name": "tokenizer.json",
+            "bytes": 17208861
+          },
+          {
+            "name": "tokenizer_config.json",
+            "bytes": 50405
+          }
+        ]
+      }
+    },
+    "hub_alias_discrepancy": "Current production editor Copy gives /kaggle/input/ntl-olmo2-native24-final-inference-assets. CPU utility v7 proved the different mixed-utility canonical hub root absent. This draft uses the exact current editor flat root only, no alias fallback; all foreign canonical paths are retained.",
+    "foreign_version_policy": "Original v11 attachment metadata is retained. Fresh MCP filename inventories with version=None establish names, not a different pinned version; no latest-version upgrade is performed by this source patch."
+  },
+  "module_literal_constants": {
+    "fulltext_pooling.py": {},
+    "legacy/asset_paths.py": {},
+    "legacy/atlas_worker.py": {},
+    "legacy/comp_cached.py": {
+      "STYLE_GROUP_THRESH": 0.9,
+      "W": {
+        "stylegram": 1.516,
+        "stylometry_lgb": 0.063,
+        "ultrabert": 0.095,
+        "q3_8b": 0.0,
+        "q25_7b": 0.0,
+        "q3_4b": 0.0,
+        "glm9b": 0.0,
+        "debv3l": 0.05,
+        "electl": 0.032,
+        "desk": 0.132,
+        "lora24_public": 0.177,
+        "lora24_seed7": 0.113,
+        "lora24_claude": 0.177,
+        "lora20_q25_instyle": 0.17,
+        "tokattn_q35": 0.153,
+        "tokattn_deb": 0.185
+      },
+      "LORA_TWIN_W": {
+        "lora24_public": 0.15,
+        "lora24_claude": 0.15
+      },
+      "GATE_LAM": {
+        "claude_style": 1.5,
+        "claude_lora": 1.0,
+        "family": 0.25
+      },
+      "BALANCE_ALPHA": 0.5,
+      "ENC_HEADS": [
+        [
+          "debv3l",
+          "deberta-v3-large",
+          [
+            [
+              24,
+              "mean"
+            ],
+            [
+              6,
+              "mean"
+            ]
+          ],
+          0.005
+        ],
+        [
+          "electl",
+          "electra-large-discriminator",
+          [
+            [
+              21,
+              "mean"
+            ],
+            [
+              24,
+              "style"
+            ]
+          ],
+          0.005
+        ],
+        [
+          "desk",
+          "desklib-detector",
+          [
+            [
+              23,
+              "mean"
+            ],
+            [
+              23,
+              "style"
+            ]
+          ],
+          0.005
+        ]
+      ],
+      "LORA_RUNS": [
+        [
+          [
+            "qwen3",
+            4096,
+            24
+          ],
+          [
+            2,
+            4,
+            6,
+            8,
+            12,
+            16,
+            20,
+            24
+          ],
+          [
+            [
+              "lora24_public",
+              null,
+              "heads.safetensors",
+              null
+            ],
+            [
+              "lora24_seed7",
+              null,
+              "norms.safetensors",
+              null
+            ],
+            [
+              "lora24_claude",
+              null,
+              "heads.safetensors",
+              null
+            ]
+          ]
+        ],
+        [
+          [
+            "qwen2",
+            3584,
+            20
+          ],
+          [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            16,
+            20
+          ],
+          [
+            [
+              "lora20_q25_instyle",
+              null,
+              "norms.safetensors",
+              null
+            ]
+          ]
+        ]
+      ],
+      "TOKATTN_HEADS": [
+        [
+          "tokattn_q35",
+          "tokattn_final.pt",
+          "qwen3_5"
+        ],
+        [
+          "tokattn_deb",
+          "tokattn_debl23_final.pt",
+          "deberta"
+        ]
+      ],
+      "GATES": {},
+      "K": 18,
+      "DEFAULT": {
+        "red": "wpca",
+        "d": 256,
+        "se_shrink": "lw",
+        "sp_shrink": "lw",
+        "lam_floor": 0.0001,
+        "n_exact": 3,
+        "inj": true,
+        "iters": 5,
+        "repel": true,
+        "sp_scale": 1.0
+      },
+      "_MASK": {},
+      "LAM_DIFF": 1000000.0,
+      "CACHED_PARTS": {}
+    },
+    "legacy/inline_support/ntl_atlas/__init__.py": {},
+    "legacy/inline_support/ntl_atlas/inference.py": {},
+    "legacy/inline_support/ntl_atlas/model.py": {},
+    "legacy/inline_support/ntl_rlcd/__init__.py": {},
+    "legacy/inline_support/ntl_rlcd/data.py": {
+      "TRAIN_SHA256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+      "SUFFIX": "\nAuthor:"
+    },
+    "legacy/inline_support/ultra/configuration_ultrabert.py": {},
+    "legacy/inline_support/ultra/modeling_ultrabert.py": {},
+    "legacy/night24_cpu_worker.py": {},
+    "legacy/portable.py": {
+      "VIEWS": [
+        [
+          "char",
+          3,
+          5,
+          250000,
+          1.0
+        ],
+        [
+          "word",
+          1,
+          3,
+          180000,
+          0.7
+        ],
+        [
+          "shape",
+          2,
+          6,
+          60000,
+          0.5
+        ],
+        [
+          "function",
+          1,
+          3,
+          50000,
+          0.5
+        ]
+      ]
+    },
+    "legacy/readouts.py": {
+      "LAYERS": [
+        2,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20,
+        24
+      ]
+    },
+    "legacy/reference_gauss.py": {
+      "K": 18,
+      "DEFAULT": {
+        "red": "wpca",
+        "d": 256,
+        "se_shrink": "lw",
+        "sp_shrink": "lw",
+        "lam_floor": 0.0001,
+        "n_exact": 3,
+        "inj": true,
+        "iters": 5,
+        "repel": true,
+        "sp_scale": 1.0
+      },
+      "_MASK": {},
+      "LAM_DIFF": 1000000.0
+    },
+    "legacy/reference_helpers.py": {
+      "STYLE_GROUP_THRESH": 0.9,
+      "W": {
+        "stylegram": 1.516,
+        "stylometry_lgb": 0.063,
+        "ultrabert": 0.095,
+        "q3_8b": 0.0,
+        "q25_7b": 0.0,
+        "q3_4b": 0.0,
+        "glm9b": 0.0,
+        "debv3l": 0.05,
+        "electl": 0.032,
+        "desk": 0.132,
+        "lora24_public": 0.177,
+        "lora24_seed7": 0.113,
+        "lora24_claude": 0.177,
+        "lora20_q25_instyle": 0.17,
+        "tokattn_q35": 0.153,
+        "tokattn_deb": 0.185
+      },
+      "K": 18
+    },
+    "legacy/runtime_support.py": {},
+    "legacy/stage_dataset_weights.py": {
+      "NF4_FILES": {
+        "LICENSE": 11544,
+        "README.md": 27108,
+        "chat_template.jinja": 8952,
+        "config.json": 4222,
+        "generation_config.json": 202,
+        "merges.txt": 3353259,
+        "model-00001-of-00007.safetensors": 2542796928,
+        "model-00002-of-00007.safetensors": 3967729339,
+        "model-00003-of-00007.safetensors": 3973498949,
+        "model-00004-of-00007.safetensors": 3992447326,
+        "model-00005-of-00007.safetensors": 4000148996,
+        "model-00006-of-00007.safetensors": 98537568,
+        "model-00007-of-00007.safetensors": 849400424,
+        "model.safetensors.index.json": 396308,
+        "tokenizer.json": 12809320,
+        "tokenizer_config.json": 17928,
+        "vocab.json": 6722759
+      },
+      "ULTRA_FOLD_FILES": {
+        "0": {
+          "config.json": 2739,
+          "configuration_ultrabert.py": 2209,
+          "model.safetensors": 755137636,
+          "modeling_ultrabert.py": 30581,
+          "tokenizer.json": 3523731,
+          "tokenizer_config.json": 814
+        },
+        "1": {
+          "config.json": 2739,
+          "configuration_ultrabert.py": 2209,
+          "model.safetensors": 755137636,
+          "modeling_ultrabert.py": 30581,
+          "tokenizer.json": 3523731,
+          "tokenizer_config.json": 814
+        },
+        "2": {
+          "config.json": 2739,
+          "configuration_ultrabert.py": 2209,
+          "model.safetensors": 755137636,
+          "modeling_ultrabert.py": 30581,
+          "tokenizer.json": 3523731,
+          "tokenizer_config.json": 814
+        },
+        "3": {
+          "config.json": 2739,
+          "configuration_ultrabert.py": 2209,
+          "model.safetensors": 755137636,
+          "modeling_ultrabert.py": 30581,
+          "tokenizer.json": 3523731,
+          "tokenizer_config.json": 814
+        },
+        "4": {
+          "config.json": 2739,
+          "configuration_ultrabert.py": 2209,
+          "model.safetensors": 755137636,
+          "modeling_ultrabert.py": 30581,
+          "tokenizer.json": 3523731,
+          "tokenizer_config.json": 814
+        }
+      }
+    },
+    "own_qwen_worker.py": {},
+    "query_allocation.py": {},
+    "qwen_fulltext_inference.py": {},
+    "qwen_nf4_loader.py": {},
+    "reference627_common.py": {
+      "LABELS": [
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-6-astra",
+        "gemini-3.1-pro-preview",
+        "gemini-3.6-flash",
+        "gemini-3.7-flash",
+        "gemini-3.8-flash",
+        "claude-opus-4-6",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-5",
+        "claude-fable-5",
+        "qwen3.8-max",
+        "glm-5.3",
+        "glm-5.3-flash",
+        "kimi-k3"
+      ],
+      "VIEWS": [
+        [
+          "char",
+          3,
+          5,
+          250000,
+          1.0
+        ],
+        [
+          "word",
+          1,
+          3,
+          180000,
+          0.7
+        ],
+        [
+          "shape",
+          2,
+          6,
+          60000,
+          0.5
+        ],
+        [
+          "small",
+          1,
+          3,
+          50000,
+          0.5
+        ]
+      ]
+    },
+    "reference627_decoders.py": {},
+    "reference627_encoders.py": {},
+    "run_fulltext_selected_ensemble.py": {},
+    "runtime_budget.py": {},
+    "stage_dataset_weights.py": {
+      "NF4_FILES": {
+        "LICENSE": 11544,
+        "README.md": 27108,
+        "chat_template.jinja": 8952,
+        "config.json": 4222,
+        "generation_config.json": 202,
+        "merges.txt": 3353259,
+        "model-00001-of-00007.safetensors": 2542796928,
+        "model-00002-of-00007.safetensors": 3967729339,
+        "model-00003-of-00007.safetensors": 3973498949,
+        "model-00004-of-00007.safetensors": 3992447326,
+        "model-00005-of-00007.safetensors": 4000148996,
+        "model-00006-of-00007.safetensors": 98537568,
+        "model-00007-of-00007.safetensors": 849400424,
+        "model.safetensors.index.json": 396308,
+        "tokenizer.json": 12809320,
+        "tokenizer_config.json": 17928,
+        "vocab.json": 6722759
+      },
+      "ULTRA_FOLD_FILES": {
+        "0": {
+          "config.json": 2739,
+          "configuration_ultrabert.py": 2209,
+          "model.safetensors": 755137636,
+          "modeling_ultrabert.py": 30581,
+          "tokenizer.json": 3523731,
+          "tokenizer_config.json": 814
+        },
+        "1": {
+          "config.json": 2739,
+          "configuration_ultrabert.py": 2209,
+          "model.safetensors": 755137636,
+          "modeling_ultrabert.py": 30581,
+          "tokenizer.json": 3523731,
+          "tokenizer_config.json": 814
+        },
+        "2": {
+          "config.json": 2739,
+          "configuration_ultrabert.py": 2209,
+          "model.safetensors": 755137636,
+          "modeling_ultrabert.py": 30581,
+          "tokenizer.json": 3523731,
+          "tokenizer_config.json": 814
+        },
+        "3": {
+          "config.json": 2739,
+          "configuration_ultrabert.py": 2209,
+          "model.safetensors": 755137636,
+          "modeling_ultrabert.py": 30581,
+          "tokenizer.json": 3523731,
+          "tokenizer_config.json": 814
+        },
+        "4": {
+          "config.json": 2739,
+          "configuration_ultrabert.py": 2209,
+          "model.safetensors": 755137636,
+          "modeling_ultrabert.py": 30581,
+          "tokenizer.json": 3523731,
+          "tokenizer_config.json": 814
+        }
+      }
+    }
+  },
+  "contracts": {
+    "official_train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+    "qwen_final_metadata": {
+      "stage": "official",
+      "update": 300,
+      "official_fit_rows": 2699,
+      "official_holdout_rows": 0,
+      "native_decoder_layers": 64,
+      "executed_decoder_layers": 64,
+      "lora_target_layer_indices": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "source_revision": "26157380225e427827263c34df23018a1e28dff5",
+      "text_truncation": false,
+      "inference_max_length": null
+    },
+    "qwen_config": {
+      "text_config.num_hidden_layers": 64,
+      "text_config.hidden_size": 5120
+    },
+    "qwen_head_shapes": {
+      "plain.weight": [
+        18,
+        40960
+      ],
+      "plain.bias": [
+        18
+      ],
+      "centered.weight": [
+        18,
+        40960
+      ],
+      "centered.bias": [
+        18
+      ],
+      "norms.i.weight": [
+        5120
+      ],
+      "norms.i.bias": [
+        5120
+      ],
+      "norm_count": 8
+    },
+    "qwen_lora_rank": 16,
+    "qwen_lora_parameter_key_rule": "backbone.layers.{layer}.{submodule}.lora_A|lora_B for every nn.Linear in layers56..63; exact submodules derive from config/adapter metadata, not guessed by this extraction",
+    "labels": [
+      "gpt-5.5",
+      "gpt-5.6-luna",
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-6-astra",
+      "gemini-3.1-pro-preview",
+      "gemini-3.6-flash",
+      "gemini-3.7-flash",
+      "gemini-3.8-flash",
+      "claude-opus-4-6",
+      "claude-opus-4-8",
+      "claude-opus-5",
+      "claude-sonnet-5",
+      "claude-fable-5",
+      "qwen3.8-max",
+      "glm-5.3",
+      "glm-5.3-flash",
+      "kimi-k3"
+    ],
+    "literal_path_policy": "Every required /kaggle/input path preserved verbatim; no aliases/discovery/fallback"
+  },
+  "source_hash_literals": [
+    {
+      "cell": 15,
+      "sha256": "2176ade29e6eb97bd3a6c204f944959f9757a80c6f1ff475898c23bce60ecd96"
+    },
+    {
+      "cell": 15,
+      "sha256": "a6aff409ae2df897717875373d038635fe5012fbf93557c90aea3457fda0e7f8"
+    },
+    {
+      "cell": 21,
+      "sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707"
+    }
+  ],
+  "extracted_modules": [
+    {
+      "relative_runtime_file": "fulltext_pooling.py",
+      "sha256": "78a8b4dcc231d707dc9b614a9c8c9f86ac3ab774aa8fb4ef69b537d779dc18f7",
+      "utf8_bytes": 1501
+    },
+    {
+      "relative_runtime_file": "legacy/asset_paths.py",
+      "sha256": "eda1cc61eeec0f279d2acaea5427f3313b58a1ef0e62820a93cc873d029b476f",
+      "utf8_bytes": 1453
+    },
+    {
+      "relative_runtime_file": "legacy/atlas_worker.py",
+      "sha256": "d3ad39696f18d1340de2c865917e3f959e88bc4592543ff6cf48cb7e28f5deb1",
+      "utf8_bytes": 2313
+    },
+    {
+      "relative_runtime_file": "legacy/comp_cached.py",
+      "sha256": "8190c3cc6ca4bfd25f99719c5910330eb830eb514e6f8070894ace4459310998",
+      "utf8_bytes": 33278
+    },
+    {
+      "relative_runtime_file": "legacy/inline_support/ntl_atlas/__init__.py",
+      "sha256": "b2bff8348b93ca7375c523e83965e24b6af5df06fe3dc2a0940f73332ce1ad87",
+      "utf8_bytes": 72
+    },
+    {
+      "relative_runtime_file": "legacy/inline_support/ntl_atlas/inference.py",
+      "sha256": "8f57242c27e13572a8c5a2fbb8136dce462fb7cd175a52092a5a8c86797e91c7",
+      "utf8_bytes": 1505
+    },
+    {
+      "relative_runtime_file": "legacy/inline_support/ntl_atlas/model.py",
+      "sha256": "3fb9394bf8f8535523ba6da4b66b2d24c3fa80a37767219b076422c3adc226fb",
+      "utf8_bytes": 8502
+    },
+    {
+      "relative_runtime_file": "legacy/inline_support/ntl_rlcd/__init__.py",
+      "sha256": "2eba9c0aa11078d7ceffec8d19594061ceac349620d20e68a1a343770f0e9e61",
+      "utf8_bytes": 82
+    },
+    {
+      "relative_runtime_file": "legacy/inline_support/ntl_rlcd/data.py",
+      "sha256": "38d4a837b9da31b2cc9c85e2b495ed24423df74aae803bc15bdd58f82bd88cc9",
+      "utf8_bytes": 1872
+    },
+    {
+      "relative_runtime_file": "legacy/inline_support/ultra/configuration_ultrabert.py",
+      "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9",
+      "utf8_bytes": 2209
+    },
+    {
+      "relative_runtime_file": "legacy/inline_support/ultra/modeling_ultrabert.py",
+      "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333",
+      "utf8_bytes": 30581
+    },
+    {
+      "relative_runtime_file": "legacy/night24_cpu_worker.py",
+      "sha256": "70c7da45884f847262920e09bde908d3a7250c067050e088aa12f922669adc49",
+      "utf8_bytes": 3037
+    },
+    {
+      "relative_runtime_file": "legacy/portable.py",
+      "sha256": "419143cfb928065b4ae2537faa6f6de7a100fdd970d7eed969bdec3dd65bfce4",
+      "utf8_bytes": 3729
+    },
+    {
+      "relative_runtime_file": "legacy/readouts.py",
+      "sha256": "2c7af7a7415e23d9dfc9cc8095c2df0802c4e54530c1cbe00a3497efba542472",
+      "utf8_bytes": 7993
+    },
+    {
+      "relative_runtime_file": "legacy/reference_gauss.py",
+      "sha256": "4baab9fa6fa141bfc0e1c9d02d39ccff6cfeb93fea728b5f2c2b096bd4ba195e",
+      "utf8_bytes": 5032
+    },
+    {
+      "relative_runtime_file": "legacy/reference_helpers.py",
+      "sha256": "2a0a1a237a5726cd96db0b766341e79202afd9441352630b5d3a6b1843ba163b",
+      "utf8_bytes": 6184
+    },
+    {
+      "relative_runtime_file": "legacy/runtime_support.py",
+      "sha256": "a183b0320988e55f4dbb0d2eee606dd0f643cfe815f7d3df92819491fbe1c20d",
+      "utf8_bytes": 2264
+    },
+    {
+      "relative_runtime_file": "legacy/stage_dataset_weights.py",
+      "sha256": "6694833b30ced8c2d18966164fa4152e03224634c027121edbb7736f80a6f2bd",
+      "utf8_bytes": 3463
+    },
+    {
+      "relative_runtime_file": "own_qwen_worker.py",
+      "sha256": "a3e89bd76581983097b1be6630ddca06ac60ec99e3d9decdae9814e28b00ec89",
+      "utf8_bytes": 1389
+    },
+    {
+      "relative_runtime_file": "query_allocation.py",
+      "sha256": "b5cfa9d78197cb83d1683635651d390caa97f49243aa43b570d3e1a6dfe0d941",
+      "utf8_bytes": 2058
+    },
+    {
+      "relative_runtime_file": "qwen_fulltext_inference.py",
+      "sha256": "3f7624cd33a72f9816fe463ef17ddf5fd42639f03d5e9dfba7ede6835c72557d",
+      "utf8_bytes": 3833
+    },
+    {
+      "relative_runtime_file": "qwen_nf4_loader.py",
+      "sha256": "06313ca9a045bd63eed437e93e597b956aa1f6c9d21473f2815669dfef4159be",
+      "utf8_bytes": 7781
+    },
+    {
+      "relative_runtime_file": "reference627_common.py",
+      "sha256": "7775a24e23b80fbe549848cc029f9919d0baca9ae7b98d4f759db75b7d991721",
+      "utf8_bytes": 4913
+    },
+    {
+      "relative_runtime_file": "reference627_decoders.py",
+      "sha256": "52ebdbfadd5b9028b7262193956b6a6ef287998f9d046bdfed8e777516974ef3",
+      "utf8_bytes": 7157
+    },
+    {
+      "relative_runtime_file": "reference627_encoders.py",
+      "sha256": "b85f8d76bd7cbe6dbe0f6b9ae315291322635e34b02ea33c5608dd7be31b04c5",
+      "utf8_bytes": 3610
+    },
+    {
+      "relative_runtime_file": "run_fulltext_selected_ensemble.py",
+      "sha256": "eff5252f954dcb8132bd883de7ba23dc00803217a43334f0a9c991aefc72e91e",
+      "utf8_bytes": 10567
+    },
+    {
+      "relative_runtime_file": "runtime_budget.py",
+      "sha256": "ce90fe317e569b542d7cc050dad3875b3f09c51e1dcffb63333f00115db42cd9",
+      "utf8_bytes": 2393
+    },
+    {
+      "relative_runtime_file": "stage_dataset_weights.py",
+      "sha256": "6694833b30ced8c2d18966164fa4152e03224634c027121edbb7736f80a6f2bd",
+      "utf8_bytes": 3463
+    }
+  ]
+}
