@@ -1,6 +1,20 @@
-# Stage 11 — CPU input contract passed; bounded GPU probe admitted
+# Stage 11 — S05 submitted; official score pending
 
-## Current actual outcome — 25 October 2026
+## Current verified outcome — 25 October 2026
+
+Official **S05 is accepted and displays Notebook Running**, with **no displayed S05 score**. It uses our private **V6 362129392**, preserving all 33 source code cells of Lightning V28 **362014737** and adding only an independent output-validation cell. All 34 saved code-cell strings were read back from Kaggle's actual saved version and match the committed notebook. All 28 pinned input versions remain unchanged. The author's **0.642** is a lead, not our result; our confirmed best remains **S04 0.639 official public balanced accuracy**.
+
+The real CPU audit passed **175/175 checks** in **686.1 seconds**. The separate real **Qwen-only GPU probe V3 362125549 succeeded in 418.9 seconds** on two Tesla T4 GPUs: 12 passages spanning token-length ranks, finite ordered 12-by-18 logits, correct native-to-canonical class alignment, and no timeout. Its whole child process group exited normally within the 900-second deadline. The 19.448 GB NF4 copy used `/tmp`; model loading took 111.8 seconds, and the four inference batches took 18.35 seconds. Peak reserved memory was about 7.18 GB per GPU. The probe evaluates execution only: the adapter saw all official labels, so no accuracy was computed. Complete reference/complement/ATLAS and hidden-test runtime remain unverified. See [actual probe](ACTUAL_QWEN_RUNTIME_PROBE.json) and [independent admission review](ACTUAL_QWEN_PROBE_INDEPENDENT_REVIEW.json).
+
+Private production **V5 362128776** and final **V6 362129392** each succeeded in **21.7 seconds**, with **25/25 FORMAT ONLY checks**. The unchanged source recognizes the public three-row fixture and emits constant labels without loading the full models. These previews are not accuracy results or proof of hidden-test completion. The actual V6 log Accelerator heading shows the **GPU T4 x2 allocation profile** (direct two-device CUDA observation comes from the separate V3 probe), and the save dialog explicitly selected **Run with GPU for all sessions**. The notebook document's `isGpuEnabled` field remained false; that field is retained separately rather than presented as hardware evidence. See [final preview receipt](FORMAT_PREVIEW_V6.json).
+
+S05 was submitted from that exact frozen V6. The official submissions row independently confirms **Notebook Running**. Its final result is pending, so no gain over S04 is claimed. The official page shows final selections **2/2**; this work did not change them. Only free Kaggle resources were used. No monitoring watch was created or enabled for S05.
+
+[Official submissions](https://www.kaggle.com/competitions/name-that-llm/submissions) · [exact private candidate](https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit?scriptVersionId=362129392) · [submission receipt](S05_SUBMISSION_RECEIPT.json) · [notebook/version index](NOTEBOOK_INDEX.md).
+
+![Official S05 Notebook Running](S05_SUBMISSION_RUNNING_20261025.png)
+
+## Earlier CPU completion and probe admission checkpoint — 25 October 2026
 
 Private CPU **V2 362119531 succeeded in 686.1 seconds**, with **175/175 audit checks passing**, including **160/160 mandatory source paths**. It verified 333 actual file hashes. All 17 active NF4 files, including seven large weight shards, were checked against the published QWEN38 addition manifest. The final adapter contains 144 tensors and 62 complete LoRA pairs; its native alphabetic label order is transported to the canonical ensemble order by the unchanged source's named permutation. No head, weight, metadata or source inference code was changed.
 

@@ -1,0 +1,138 @@
+{
+  "stage": 11,
+  "kind": "PRIVATE_QUICK_SOURCE_SNAPSHOT_ONLY",
+  "notebook_version": 4,
+  "script_version_id": 362127385,
+  "source": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit?scriptVersionId=362127385",
+  "upstream_script_version_id": 362014737,
+  "source_code_cells": 33,
+  "validation_code_cells": 1,
+  "total_code_cells": 34,
+  "exact_saved_code_cell_matches": 34,
+  "verification_method": "Read the actual saved version JSON displayed in Kaggle Show Versions; compare all code-cell strings with the immutable committed notebook",
+  "pinned_git_commit": "1a701b5d7e709621cb9c4b51a1f55ef229f67d83",
+  "kaggle_metadata": {
+    "accelerator": "nvidiaTeslaT4",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 18975315
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20736096
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20819121
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20831302
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20847146
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20934027
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21008519
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21011978
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21062729
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21097171
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21116786
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21119693
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21155896
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21156661
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358683059
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358758062
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358770408
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358911769
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358928013
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358948428
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 359652568
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166254
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166265
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363135
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363140
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363153
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "model_execution_in_snapshot": false,
+  "official_submission": false,
+  "date_verified": "2026-10-25"
+}

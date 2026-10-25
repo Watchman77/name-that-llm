@@ -1,0 +1,228 @@
+{
+  "stage": 11,
+  "mode": "QWEN_BRANCH_RUNTIME_DIAGNOSTIC_ONLY",
+  "source_version": 362014737,
+  "source_capture_sha256": "143351168ff87d0cd0f2712c29778dfad8acd34c1527088a19d4b42141869413",
+  "admission": {
+    "source_version_id": 362014737,
+    "cpu_audit_version_id": 362119531,
+    "cpu_audit_report_sha256": "aa39a49d561a11c4954de2fa7b0728b61d431a07332e5d28fc5fb8f29d2e9601",
+    "cpu_audit_status": "PASS_CPU_INPUT_CONTRACT_ONLY",
+    "mandatory_source_checks_passed": 160,
+    "mandatory_source_checks_total": 160
+  },
+  "accuracy_evaluated": false,
+  "official_public_score": null,
+  "whole_ensemble_runtime_verified": false,
+  "hidden_runtime_verified": false,
+  "production_source_cells_modified": false,
+  "source_module_sha256": {
+    "stage_dataset_weights.py": "6694833b30ced8c2d18966164fa4152e03224634c027121edbb7736f80a6f2bd",
+    "qwen_nf4_loader.py": "06313ca9a045bd63eed437e93e597b956aa1f6c9d21473f2815669dfef4159be",
+    "fulltext_pooling.py": "78a8b4dcc231d707dc9b614a9c8c9f86ac3ab774aa8fb4ef69b537d779dc18f7",
+    "qwen_fulltext_inference.py": "3f7624cd33a72f9816fe463ef17ddf5fd42639f03d5e9dfba7ede6835c72557d",
+    "own_qwen_worker.py": "a3e89bd76581983097b1be6630ddca06ac60ec99e3d9decdae9814e28b00ec89"
+  },
+  "timeout_seconds": 900,
+  "nf4_expected_copy_bytes": 19447911132,
+  "sample_rows": 12,
+  "runtime_directory_parent": "/tmp",
+  "runtime_filesystem_free_bytes_at_start": 1126141353984,
+  "labels_loaded_for_selection": false,
+  "original_ids_text_or_row_outputs_in_public_report": false,
+  "limitations": [
+    "Qwen branch only; complete reference/complement/ATLAS runtime is unmeasured.",
+    "Official-text timing does not establish hidden-text throughput or context limits.",
+    "The length-stratified sample intentionally stresses the tail and is not an unbiased hidden average.",
+    "Final adapter fitted all official labels; in-sample accuracy is not validation.",
+    "No OOM-retry counter is observable in the unchanged worker."
+  ],
+  "parent_package_distribution_versions": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "transformers": "5.16.1",
+    "accelerate": "1.14.0",
+    "bitsandbytes": null,
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.1"
+  },
+  "nvidia_smi_devices": [
+    "0, Tesla T4, 15360",
+    "1, Tesla T4, 15360"
+  ],
+  "watchdog": {
+    "returncode": 0,
+    "timed_out": false,
+    "elapsed_seconds": 402.523594473
+  },
+  "metrics": {
+    "offline_wheel_install_seconds": 12.490637142999987,
+    "CPU_token_length_selection_seconds": 25.891764214000005,
+    "sample_token_length_quantiles": [
+      45,
+      85.75,
+      130.5,
+      200.75,
+      379
+    ],
+    "sample_total_tokens_including_end": 1864,
+    "population_token_length_quantiles": [
+      45,
+      86,
+      131,
+      199,
+      260,
+      283.0999999999999,
+      316.02,
+      379
+    ],
+    "population_rows": 2699,
+    "selection": "12 evenly spaced stable token-length ranks including minimum and maximum; labels excluded",
+    "labels_loaded": false,
+    "nf4_stage_filesystem": {
+      "scoped_runtime_parent": "/tmp",
+      "free_bytes_before_copy": 1125844561920,
+      "total_bytes": 8758385086464,
+      "expected_copy_bytes": 19447911132,
+      "required_extra_free_bytes": 2147483648
+    },
+    "nf4_staging_seconds": 209.211666931,
+    "Qwen_worker_wall_seconds": 154.11197307499998,
+    "nf4_copy_inference_cleanup_wall_seconds": 363.577223754,
+    "output_checks": {
+      "rows": 12,
+      "classes": 18,
+      "exact_id_order": true,
+      "known_unique_label_set": true,
+      "saved_worker_label_order": [
+        "claude-fable-5",
+        "claude-opus-4-6",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-5",
+        "gemini-3.1-pro-preview",
+        "gemini-3.6-flash",
+        "gemini-3.7-flash",
+        "gemini-3.8-flash",
+        "glm-5.3",
+        "glm-5.3-flash",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-6-astra",
+        "kimi-k3",
+        "qwen3.8-max"
+      ],
+      "canonical_label_order": [
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-6-astra",
+        "gemini-3.1-pro-preview",
+        "gemini-3.6-flash",
+        "gemini-3.7-flash",
+        "gemini-3.8-flash",
+        "claude-opus-4-6",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-5",
+        "claude-fable-5",
+        "qwen3.8-max",
+        "glm-5.3",
+        "glm-5.3-flash",
+        "kimi-k3"
+      ],
+      "canonical_permutation_from_saved": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        5,
+        6,
+        7,
+        8,
+        1,
+        2,
+        3,
+        4,
+        0,
+        17,
+        9,
+        10,
+        16
+      ],
+      "saved_worker_array_rewritten": false,
+      "finite_logits": true,
+      "normalized_diagnostic_softmax": true,
+      "worker_seconds": 130.13919430499993,
+      "decoder_layers": 64,
+      "adapter_layers": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "truncation": false,
+      "peak_reserved_bytes": [
+        7178551296,
+        7165968384
+      ],
+      "npz_sha256": "49b16a5f23caca5b9754c5f5478c60b78f60bf03357d55f43835a36e0def1b0d",
+      "metadata_sha256": "a764fb9e3a4623c7ac13f32144fbc229fd5f89af9e98a0b7c85c2fa198aa333c",
+      "original_ids_text_or_row_outputs_in_public_report": false
+    },
+    "model_load_seconds": 111.77271843699998,
+    "model_linear_count": 496,
+    "batches": [
+      {
+        "done": 3,
+        "total": 12,
+        "seconds": 4.776212430999976,
+        "max_text_tokens": 75,
+        "truncated": false
+      },
+      {
+        "done": 6,
+        "total": 12,
+        "seconds": 2.9413809799999626,
+        "max_text_tokens": 119,
+        "truncated": false
+      },
+      {
+        "done": 9,
+        "total": 12,
+        "seconds": 4.536202767000077,
+        "max_text_tokens": 192,
+        "truncated": false
+      },
+      {
+        "done": 12,
+        "total": 12,
+        "seconds": 6.094694376000007,
+        "max_text_tokens": 378,
+        "truncated": false
+      }
+    ],
+    "batch_inference_total_seconds": 18.348490554000023,
+    "sample_rows_per_inference_second": 0.6540047512182938,
+    "sample_actual_tokens_per_inference_second": 101.58873802257499,
+    "oom_retry_count": null,
+    "oom_retry_observability": "Unknown: the unchanged frozen worker retries OOM batches but does not emit a retry counter",
+    "elapsed_inner_seconds": 401.97939422099995
+  },
+  "status": "PASS_QWEN_BRANCH_PROBE_ONLY",
+  "last_phase": {
+    "phase": "COMPLETE_QWEN_BRANCH_ONLY",
+    "monotonic": 560.804476816
+  },
+  "scoped_runtime_and_nf4_stage_removed": true,
+  "elapsed_watchdog_wall_seconds": 402.721753949
+}

@@ -1,0 +1,272 @@
+{
+  "script_version_id": 362129392,
+  "notebook_version": 6,
+  "run_status": "Succeeded",
+  "runtime_seconds": 21.7,
+  "accelerator_observed_in_actual_logs": "GPU T4 x2",
+  "save_option_observed": "Run with GPU for all sessions",
+  "notebook_document_isGpuEnabled": false,
+  "hardware_evidence_scope": "The actual V6 log Accelerator heading shows the GPU T4 x2 allocation profile; direct two-device CUDA observation is in the separate real V3 probe. The legacy notebook document GPU boolean is recorded separately.",
+  "all34saved_code_cells_exact": true,
+  "data_sources_unchanged_from_V4": true,
+  "kaggle_metadata": {
+    "accelerator": "nvidiaTeslaT4",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 18975315
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20736096
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20819121
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20831302
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20847146
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20934027
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21008519
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21011978
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21062729
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21097171
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21116786
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21119693
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21155896
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21156661
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358683059
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358758062
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358770408
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358911769
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358928013
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358948428
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 359652568
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166254
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166265
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363135
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363140
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363153
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "report": {
+    "stage": 11,
+    "source_version": 362014737,
+    "status": "FORMAT_ONLY_PREVIEW",
+    "checks": [
+      {
+        "name": "official_test:exists",
+        "pass": true
+      },
+      {
+        "name": "official_test:columns",
+        "pass": true
+      },
+      {
+        "name": "official_test:unique_nonempty_ids",
+        "pass": true
+      },
+      {
+        "name": "official_test:nonempty",
+        "pass": true
+      },
+      {
+        "name": "preview_mode:known_boolean",
+        "pass": true
+      },
+      {
+        "name": "preview_mode:matches_exact_source_fixture",
+        "pass": true
+      },
+      {
+        "name": "submission.parquet:exists",
+        "pass": true
+      },
+      {
+        "name": "submission:dataframe",
+        "pass": true
+      },
+      {
+        "name": "submission:columns",
+        "pass": true
+      },
+      {
+        "name": "submission:no_nulls",
+        "pass": true
+      },
+      {
+        "name": "submission:string_ids",
+        "pass": true
+      },
+      {
+        "name": "submission:string_models",
+        "pass": true
+      },
+      {
+        "name": "submission:unique_complete_ids",
+        "pass": true
+      },
+      {
+        "name": "submission:exact_id_order",
+        "pass": true
+      },
+      {
+        "name": "submission:allowed_classes",
+        "pass": true
+      },
+      {
+        "name": "format_preview:three_rows",
+        "pass": true
+      },
+      {
+        "name": "format_preview:published_constant_labels",
+        "pass": true
+      },
+      {
+        "name": "submission.mode.json:exists",
+        "pass": true
+      },
+      {
+        "name": "submission.mode.json:bounded_json",
+        "pass": true
+      },
+      {
+        "name": "submission.mode.json:object",
+        "pass": true
+      },
+      {
+        "name": "format_preview:mode",
+        "pass": true
+      },
+      {
+        "name": "format_preview:row_count",
+        "pass": true
+      },
+      {
+        "name": "format_preview:no_models_loaded",
+        "pass": true
+      },
+      {
+        "name": "format_preview:no_hidden_runtime_verified",
+        "pass": true
+      },
+      {
+        "name": "format_preview:other_inputs_use_full_inference",
+        "pass": true
+      }
+    ],
+    "files": {
+      "submission.parquet": {
+        "sha256": "cc49ddf4d7c542d06e410ed96af807fcdd06e10771a720da07435da3c901a5a9",
+        "bytes": 1717
+      },
+      "submission.mode.json": {
+        "sha256": "5f0dc19fa49a57dfc68529cd2a0aec56474956e163a98b414c8a4b699fed8021",
+        "bytes": 162
+      }
+    },
+    "accuracy_validation": false,
+    "original_ids_text_or_probability_rows_exported": false,
+    "full_pre_ATLAS_internal_reconstruction_verified": false,
+    "all_internal_activations_finite_verified": false,
+    "parquet_readback": "real pandas reader",
+    "limitations": [
+      "Saved SVC logits are unavailable, so the complete pre-ATLAS SVC/decoder/DeBERTa sum is not reconstructed.",
+      "Finite saved artifacts do not prove every internal model activation is finite.",
+      "These are execution/output checks, not honest OOF accuracy or private leaderboard evidence.",
+      "The eight helper probability members are checked, but their fitted internal joblib weights are not deserialized."
+    ],
+    "test_sha256": "4545aa3a3459f4c0724f97ad5bd06c4caa3506bdfea5fab905e8203184fc0c57",
+    "rows": 3,
+    "source_preview_flag": true,
+    "full_saved_model_inference_evidence_verified": false,
+    "hidden_runtime_verified": false,
+    "inference_verification": "NOT_PERFORMED_PUBLIC_FIXTURE_STUB",
+    "check_count": 25,
+    "all_checks_pass": true
+  },
+  "official_submission": false,
+  "saved_code_verification_method": "Read all 34 code-cell strings from the actual V6 JSON rendered in Kaggle Show Versions, and compare with the immutable committed production notebook; independently compare all 28 input source versions with V4.",
+  "date_verified": "2026-10-25"
+}

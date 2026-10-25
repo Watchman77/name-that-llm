@@ -4,7 +4,7 @@
   "script_version_id": 362125549,
   "source": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit?scriptVersionId=362125549",
   "kind": "QWEN_BRANCH_RUNTIME_DIAGNOSTIC_ONLY",
-  "status": "Running",
+  "status": "Succeeded",
   "accelerator_observed": "GPU T4 x2",
   "environment_label_observed": "Latest Container Image",
   "helper_sha256": "3326f7b3b58a9177c82cb767b2aeef7d419a7c93afaf18d9a3e3d7ce65b00872",
@@ -15,5 +15,15 @@
   "accuracy_evaluation": false,
   "complete_ensemble_execution": false,
   "official_submission": false,
-  "date_verified": "2026-10-25"
+  "date_verified": "2026-10-25",
+  "runtime_seconds": 418.9,
+  "result_status": "PASS_QWEN_BRANCH_PROBE_ONLY",
+  "actual_report": "ACTUAL_QWEN_RUNTIME_PROBE.json",
+  "rows_executed": 12,
+  "finite_ordered_12_by_18_outputs": true,
+  "watchdog_timed_out": false,
+  "watchdog_returncode": 0,
+  "watchdog_elapsed_seconds": 402.523594473,
+  "whole_ensemble_runtime_verified": false,
+  "hidden_runtime_verified": false
 }

@@ -1,0 +1,46 @@
+{
+  "stage": 11,
+  "official_submission": "S05",
+  "official_state": "Notebook Running",
+  "own_notebook_version": 6,
+  "own_script_version_id": 362129392,
+  "source_script_version_id": 362014737,
+  "official_public_balanced_accuracy": null,
+  "own_best_official_public_balanced_accuracy": 0.639,
+  "description": "S05: Lightning V28 (362014737), our private Stage 11 V6 (362129392). All 33 source code cells unchanged; output guard only. CPU audit 175/175 with active NF4 hashes verified. Qwen-only probe: 12 rows, 418.9s on T4x2, finite outputs; not accuracy or full-runtime proof. Three-row preview is FORMAT ONLY, 25 checks. Author 0.642 is not our score. Apache-2.0; credits retained. No tuning or paid APIs.",
+  "candidate_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit?scriptVersionId=362129392",
+  "official_source": "https://www.kaggle.com/competitions/name-that-llm/submissions",
+  "source_code_cells_unchanged": 33,
+  "validation_code_cell": 34,
+  "actual_saved_code_matches": 34,
+  "format_preview": {
+    "kind": "FORMAT_ONLY_PREVIEW",
+    "runtime_seconds": 21.7,
+    "checks": 25,
+    "all_passed": true,
+    "full_model_inference": false
+  },
+  "real_qwen_probe": {
+    "script_version_id": 362125549,
+    "runtime_seconds": 418.9,
+    "rows": 12,
+    "status": "PASS_QWEN_BRANCH_PROBE_ONLY",
+    "whole_ensemble_runtime_verified": false,
+    "accuracy_evaluated": false
+  },
+  "actual_cpu_audit": {
+    "script_version_id": 362119531,
+    "checks_passed": 175,
+    "checks_total": 175,
+    "mandatory_source_checks_passed": 160,
+    "mandatory_source_checks_total": 160,
+    "raw_report_sha256": "aa39a49d561a11c4954de2fa7b0728b61d431a07332e5d28fc5fb8f29d2e9601"
+  },
+  "source_code_commit": "1a701b5d7e709621cb9c4b51a1f55ef229f67d83",
+  "proof_file": "S05_SUBMISSION_RUNNING_20261025.png",
+  "date_verified": "2026-10-25",
+  "final_selections_observed": "2/2; not changed by this work",
+  "paid_services_used": false,
+  "watch_created_or_enabled": false,
+  "proof_sha256": "2d4908182627d5d711c71ee91dbcb7909c92b4e98fdf0126129bbd79650f8062"
+}

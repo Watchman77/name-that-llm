@@ -1,0 +1,80 @@
+{
+  "status": "ADMIT_ONE_FROZEN_FULL_OFFICIAL_REPRODUCTION",
+  "date_verified": "2026-10-25",
+  "actual_probe_version_id": 362125549,
+  "actual_probe_result_file": "ACTUAL_QWEN_RUNTIME_PROBE.json",
+  "actual_probe_result_sha256": "c0b726aa0a0b375b866bc7639e5fcbc668394f124a7e0e576cd782a4c51d869e",
+  "actual_CPU_result_file": "REAL_INPUT_AUDIT_V2.json",
+  "actual_CPU_result_sha256": "aa39a49d561a11c4954de2fa7b0728b61d431a07332e5d28fc5fb8f29d2e9601",
+  "checks": {
+    "correct_source_version": true,
+    "probe_reports_branch_only": true,
+    "admission_matches_actual_CPU_report": true,
+    "actual_CPU_all175_checks_and160_source_checks_pass": true,
+    "all_five_source_worker_hashes_match_reviewed_probe": true,
+    "two_Tesla_T4s_observed": true,
+    "normal_worker_exit_without_timeout": true,
+    "staged_exact_NF4_inventory_bytes": true,
+    "tmp_capacity_measured_and_sufficient": true,
+    "twelve_unlabeled_real_training_responses": true,
+    "observed_training_token_extremes_included": true,
+    "ordered_finite_twelve_by18_outputs": true,
+    "named_class_permutation_matches_CPU_source_transport": true,
+    "full64_layers_tail8_adapters_without_crop": true,
+    "four_complete_finite_timed_batches": true,
+    "inference_times_reconcile": true,
+    "both_positive_memory_peaks_below_physical_memory": true,
+    "scoped_temp_cleanup_confirmed": true,
+    "no_accuracy_or_new_score_claim": true,
+    "OOM_retry_count_remains_unknown": true,
+    "production_cells_not_modified_by_probe": true
+  },
+  "passed": 21,
+  "total": 21,
+  "observed_timings_seconds": {
+    "Kaggle_total_runtime_root_UI_observation": 418.9,
+    "watchdog_total": 402.523594473,
+    "NF4_copy": 209.211666931,
+    "Qwen_model_load": 111.77271843699998,
+    "four_batch_inference": 18.348490554000023
+  },
+  "observed_hardware": {
+    "devices": [
+      "0, Tesla T4, 15360",
+      "1, Tesla T4, 15360"
+    ],
+    "peak_torch_reserved_bytes": [
+      7178551296,
+      7165968384
+    ],
+    "parent_torch": "2.11.0+cu128",
+    "parent_transformers": "5.16.1",
+    "Qwen_child_offline_transformers": "5.14.1 from frozen six-wheel set; parent version is separate"
+  },
+  "practical_admission_reason": "Actual copied-input contracts and active hashes passed; the new full64 Qwen branch ran on the intended two T4s with finite ordered outputs and substantial observed memory headroom. Root has separately verified the source-author0.642 official result for the same33frozen source cells under the competition9hour limit, and actual saved-code parity for the prepared production copy. No concrete execution block remains requiring another training or benchmark variant before one bounded frozen reproduction.",
+  "full_runtime_boundary": {
+    "complete_reference_complement_ATLAS_runtime_measured_by_probe": false,
+    "complete_hidden_runtime_guaranteed_below9hours": false,
+    "competition_limit_hours": 9,
+    "free_GPU_quota_hours_last_root_UI_observation": 29,
+    "source_internal_deadlines_enforced": false,
+    "small_sample_extrapolation_is_not_a_bound": true,
+    "hidden_text_token_extremes_not_known_from_training_max": true
+  },
+  "allowed_next_steps": [
+    "Save and run the unchanged production33cells plus reviewed output guard34; its exact-three-row preview remains FORMAT ONLY",
+    "After a passing real-format output guard, submit this exact immutable candidate once asS05",
+    "Preserve S04 and current final-selection state; no weight tuning, training, paid services or automatic variants",
+    "Report the actual displayed own official score or execution failure; source-author0.642 is not our score"
+  ],
+  "additional_duplicate_training_or_full_stack_benchmark_required_by_this_review": false,
+  "root_live_evidence_not_independently_browsed_by_this_agent": {
+    "source_author_official_score": 0.642,
+    "source_version_id": 362014737,
+    "prepared_production_quick_save_version_id": 362127385,
+    "saved_code_parity": "34of34exact via rootShowVersionscodeJSON",
+    "original_model_cells": 33,
+    "input_source_count": 28
+  },
+  "source_or_model_executed_by_this_review_agent": false
+}
