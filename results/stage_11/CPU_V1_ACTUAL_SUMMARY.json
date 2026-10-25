@@ -1,0 +1,22 @@
+{
+  "stage": 11,
+  "own_cpu_notebook_version": "V1",
+  "own_cpu_script_version_id": 362118178,
+  "execution_state": "Succeeded",
+  "execution_seconds": 680.2,
+  "contract_status": "BLOCKED_INPUT_CONTRACT",
+  "passed": 174,
+  "total": 175,
+  "mandatory_source_checks_passed": 160,
+  "mandatory_source_checks_total": 160,
+  "audit_script_sha256": "d4322d840b9697d19d36e83415e84dd1bc8a95dffb659510e489779c6863a8d5",
+  "manifest_actual_hashes_check": "PASS",
+  "cpu_resources_check": "PASS",
+  "gpu_or_training_executed": false,
+  "official_score": null,
+  "verified_date": "2026-10-25",
+  "source": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit?scriptVersionId=362118178",
+  "evidence": "authoritative live logs summary and completed-job runtime; full JSON collection pending",
+  "full_report_collected": false,
+  "sole_failed_check": "fulltext_final_adapter: auditor overstrict native label-order assumption; source-aligned checker fixed in V2"
+}

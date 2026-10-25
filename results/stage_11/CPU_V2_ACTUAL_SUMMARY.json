@@ -1,0 +1,21 @@
+{
+  "stage": 11,
+  "own_cpu_notebook_version": "V2",
+  "own_cpu_script_version_id": 362119531,
+  "execution_state": "Succeeded",
+  "execution_seconds": 686.1,
+  "contract_status": "PASS_CPU_INPUT_CONTRACT_ONLY",
+  "passed": 175,
+  "total": 175,
+  "mandatory_source_checks_passed": 160,
+  "mandatory_source_checks_total": 160,
+  "audit_script_sha256": "07d5f69ec0c0002f8679aa1599428b5b2989721e0523cb234040651015898802",
+  "manifest_actual_hashes_check": "PASS",
+  "cpu_resources_check": "PASS",
+  "gpu_or_training_executed": false,
+  "official_score": null,
+  "verified_date": "2026-10-25",
+  "source": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit?scriptVersionId=362119531",
+  "evidence": "authoritative live logs summary and completed-job runtime; full JSON collection pending",
+  "full_report_collected": false
+}
