@@ -1,0 +1,281 @@
+{
+  "status": "PASS",
+  "checks_passed": 45,
+  "checks_total": 45,
+  "fixture_scope": "synthetic rows only; actual pandas/pyarrow parquet write and readback",
+  "production_reader_mocked": false,
+  "models_or_original_data_loaded": false,
+  "helper_sha256": "614386c7c6ef3aa90c5bb44629c34e2d2979a6977ed496191954d069ae2873c4",
+  "checks": [
+    {
+      "name": "actual_parquet_full_contract_no_quality_claim",
+      "passed": true,
+      "expected_failure": null,
+      "observed_failure": null
+    },
+    {
+      "name": "three_rows_still_require_real_comp_artifacts_no_shortcut",
+      "passed": true,
+      "expected_failure": null,
+      "observed_failure": null
+    },
+    {
+      "name": "all_18_labels_and_larger_row_axis",
+      "passed": true,
+      "expected_failure": null,
+      "observed_failure": null
+    },
+    {
+      "name": "wrong_submission_count",
+      "passed": true,
+      "expected_failure": "submission_row_count_matches_test",
+      "observed_failure": "submission_row_count_matches_test"
+    },
+    {
+      "name": "reordered_submission_ids",
+      "passed": true,
+      "expected_failure": "submission_exact_test_id_order",
+      "observed_failure": "submission_exact_test_id_order"
+    },
+    {
+      "name": "duplicate_submission_ids",
+      "passed": true,
+      "expected_failure": "submission_ids_unique",
+      "observed_failure": "submission_ids_unique"
+    },
+    {
+      "name": "unknown_prediction",
+      "passed": true,
+      "expected_failure": "submission_allowed_18_labels",
+      "observed_failure": "submission_allowed_18_labels"
+    },
+    {
+      "name": "null_prediction",
+      "passed": true,
+      "expected_failure": "submission_no_nulls",
+      "observed_failure": "submission_no_nulls"
+    },
+    {
+      "name": "numeric_prediction",
+      "passed": true,
+      "expected_failure": "submission_string_models",
+      "observed_failure": "submission_string_models"
+    },
+    {
+      "name": "numeric_output_ids",
+      "passed": true,
+      "expected_failure": "submission_string_ids",
+      "observed_failure": "submission_string_ids"
+    },
+    {
+      "name": "extra_submission_column",
+      "passed": true,
+      "expected_failure": "submission_exact_column_order",
+      "observed_failure": "submission_exact_column_order"
+    },
+    {
+      "name": "wrong_submission_column_order",
+      "passed": true,
+      "expected_failure": "submission_exact_column_order",
+      "observed_failure": "submission_exact_column_order"
+    },
+    {
+      "name": "duplicate_test_ids",
+      "passed": true,
+      "expected_failure": "test_ids_unique",
+      "observed_failure": "test_ids_unique"
+    },
+    {
+      "name": "null_test_id",
+      "passed": true,
+      "expected_failure": "test_ids_nonnull",
+      "observed_failure": "test_ids_nonnull"
+    },
+    {
+      "name": "extra_test_column",
+      "passed": true,
+      "expected_failure": "test_exact_column_order",
+      "observed_failure": "test_exact_column_order"
+    },
+    {
+      "name": "metadata_wrong_ids",
+      "passed": true,
+      "expected_failure": "comp_exact_test_id_order",
+      "observed_failure": "comp_exact_test_id_order"
+    },
+    {
+      "name": "metadata_duplicate_label",
+      "passed": true,
+      "expected_failure": "comp_named_class_axis_matches_frozen_sorted_order",
+      "observed_failure": "comp_named_class_axis_matches_frozen_sorted_order"
+    },
+    {
+      "name": "metadata_reordered_class_axis_drift",
+      "passed": true,
+      "expected_failure": "comp_named_class_axis_matches_frozen_sorted_order",
+      "observed_failure": "comp_named_class_axis_matches_frozen_sorted_order"
+    },
+    {
+      "name": "metadata_unknown_label",
+      "passed": true,
+      "expected_failure": "comp_named_class_axis_matches_frozen_sorted_order",
+      "observed_failure": "comp_named_class_axis_matches_frozen_sorted_order"
+    },
+    {
+      "name": "metadata_extra_schema_field",
+      "passed": true,
+      "expected_failure": "comp_metadata_exact_schema",
+      "observed_failure": "comp_metadata_exact_schema"
+    },
+    {
+      "name": "invalid_worker_seconds_boolean",
+      "passed": true,
+      "expected_failure": "comp_worker_seconds_positive_finite",
+      "observed_failure": "comp_worker_seconds_positive_finite"
+    },
+    {
+      "name": "invalid_worker_seconds_negative",
+      "passed": true,
+      "expected_failure": "comp_worker_seconds_positive_finite",
+      "observed_failure": "comp_worker_seconds_positive_finite"
+    },
+    {
+      "name": "invalid_worker_seconds_nan",
+      "passed": true,
+      "expected_failure": "comp_worker_seconds_positive_finite",
+      "observed_failure": "comp_worker_seconds_positive_finite"
+    },
+    {
+      "name": "invalid_worker_seconds_infinite",
+      "passed": true,
+      "expected_failure": "comp_worker_seconds_positive_finite",
+      "observed_failure": "comp_worker_seconds_positive_finite"
+    },
+    {
+      "name": "worker_time_exceeds_notebook_wall",
+      "passed": true,
+      "expected_failure": "comp_worker_seconds_within_notebook_wall_time",
+      "observed_failure": "comp_worker_seconds_within_notebook_wall_time"
+    },
+    {
+      "name": "wrong_logit_shape",
+      "passed": true,
+      "expected_failure": "comp_exact_n_by_18_shape",
+      "observed_failure": "comp_exact_n_by_18_shape"
+    },
+    {
+      "name": "integer_logits",
+      "passed": true,
+      "expected_failure": "comp_logits_real_floating_dtype",
+      "observed_failure": "comp_logits_real_floating_dtype"
+    },
+    {
+      "name": "complex_logits",
+      "passed": true,
+      "expected_failure": "comp_logits_real_floating_dtype",
+      "observed_failure": "comp_logits_real_floating_dtype"
+    },
+    {
+      "name": "nonfinite_logit_nan",
+      "passed": true,
+      "expected_failure": "comp_all_saved_logits_finite",
+      "observed_failure": "comp_all_saved_logits_finite"
+    },
+    {
+      "name": "nonfinite_logit_positive_inf",
+      "passed": true,
+      "expected_failure": "comp_all_saved_logits_finite",
+      "observed_failure": "comp_all_saved_logits_finite"
+    },
+    {
+      "name": "nonfinite_logit_negative_inf",
+      "passed": true,
+      "expected_failure": "comp_all_saved_logits_finite",
+      "observed_failure": "comp_all_saved_logits_finite"
+    },
+    {
+      "name": "object_pickle_array_rejected",
+      "passed": true,
+      "expected_failure": "reader_or_io_failure",
+      "observed_failure": "reader_or_io_failure"
+    },
+    {
+      "name": "missing_comp_file",
+      "passed": true,
+      "expected_failure": "comp_logit_present_nonempty",
+      "observed_failure": "comp_logit_present_nonempty"
+    },
+    {
+      "name": "three_row_missing_comp_still_fails",
+      "passed": true,
+      "expected_failure": "comp_logit_present_nonempty",
+      "observed_failure": "comp_logit_present_nonempty"
+    },
+    {
+      "name": "corrupted_parquet_rejected",
+      "passed": true,
+      "expected_failure": "reader_or_io_failure",
+      "observed_failure": "reader_or_io_failure"
+    },
+    {
+      "name": "stale_comp_file_rejected",
+      "passed": true,
+      "expected_failure": "comp_logit_fresh_for_this_execution",
+      "observed_failure": "comp_logit_fresh_for_this_execution"
+    },
+    {
+      "name": "stale_submission_rejected",
+      "passed": true,
+      "expected_failure": "submission_fresh_for_this_execution",
+      "observed_failure": "submission_fresh_for_this_execution"
+    },
+    {
+      "name": "future_source_start",
+      "passed": true,
+      "expected_failure": "source_start_not_in_future",
+      "observed_failure": "source_start_not_in_future"
+    },
+    {
+      "name": "missing_notebook_walltime",
+      "passed": true,
+      "expected_failure": "source_complement_wall_seconds_valid",
+      "observed_failure": "source_complement_wall_seconds_valid"
+    },
+    {
+      "name": "altered_atlas_budget",
+      "passed": true,
+      "expected_failure": "source_atlas_budget_matches_frozen_formula",
+      "observed_failure": "source_atlas_budget_matches_frozen_formula"
+    },
+    {
+      "name": "missing_main_group",
+      "passed": true,
+      "expected_failure": "source_six_main_group_names",
+      "observed_failure": "source_six_main_group_names"
+    },
+    {
+      "name": "reject_NTL_SMOKE",
+      "passed": true,
+      "expected_failure": "diagnostic_override_absent_NTL_SMOKE",
+      "observed_failure": "diagnostic_override_absent_NTL_SMOKE"
+    },
+    {
+      "name": "reject_NTL_FAKE_TEST",
+      "passed": true,
+      "expected_failure": "diagnostic_override_absent_NTL_FAKE_TEST",
+      "observed_failure": "diagnostic_override_absent_NTL_FAKE_TEST"
+    },
+    {
+      "name": "reject_NTL_TINY",
+      "passed": true,
+      "expected_failure": "diagnostic_override_absent_NTL_TINY",
+      "observed_failure": "diagnostic_override_absent_NTL_TINY"
+    },
+    {
+      "name": "intentional_q35_omission_missing",
+      "passed": true,
+      "expected_failure": "frozen_intentional_q35_omission",
+      "observed_failure": "frozen_intentional_q35_omission"
+    }
+  ]
+}

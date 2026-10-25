@@ -1,0 +1,105 @@
+{
+  "stage": "12A",
+  "status": "COMPLETED_COMPONENT_SCREEN",
+  "decision": "ADMIT_TO_FURTHER_ENSEMBLE_VALIDATION",
+  "freeze_commit": "4f08c924c05636b6b06eada719f1a1f517816de6",
+  "runner_sha256": "3eec88f4d49e28f554ef72a8347401ff400a8ce4094c64b37570b5f587120be2",
+  "input_sha256": {
+    "train": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+    "canonical_splits": "72d7d43119367ef100511d0f8174b9483ec86bf28bfc7b7e61d8fb599ee1209d"
+  },
+  "config": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "min_df": 2,
+    "max_iter": 10000,
+    "tol": 0.0001,
+    "random_state": 42,
+    "topic_threshold": 0.85,
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 12012,
+    "hard_deadline_seconds": 900,
+    "screen_minimum_gain_percentage_points": 0.5,
+    "screen_maximum_class_loss_percentage_points": 5.0
+  },
+  "views": [
+    [
+      "char",
+      3,
+      5,
+      250000,
+      1.0
+    ],
+    [
+      "word",
+      1,
+      3,
+      180000,
+      0.7
+    ],
+    [
+      "shape",
+      2,
+      6,
+      60000,
+      0.5
+    ],
+    [
+      "small",
+      1,
+      3,
+      50000,
+      0.5
+    ]
+  ],
+  "rows": 2699,
+  "prompts": 150,
+  "classes": 18,
+  "folds": 5,
+  "control_development_balanced_accuracy": 0.3789311459110117,
+  "candidate_development_balanced_accuracy": 0.40042505592841166,
+  "difference_percentage_points": 2.1493910017399975,
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 12012,
+    "resampling_unit": "known prompt, jointly across all classes and both arms",
+    "confidence_percent": 95,
+    "difference_percentage_points_interval": [
+      1.0380253592861455,
+      3.2592592592592595
+    ],
+    "interpretation": "Conditional paired prompt percentile interval on reused development folds; not independent confirmation."
+  },
+  "screen_gates": {
+    "gain_at_least_half_percentage_point": true,
+    "paired_prompt_interval_lower_above_zero": true,
+    "maximum_class_recall_loss_at_most_five_points": true,
+    "no_convergence_warnings": true
+  },
+  "corrected_rows": 146,
+  "broken_rows": 88,
+  "largest_class_recall_loss_percentage_points": 3.9999999999999982,
+  "convergence_warnings": 0,
+  "fit_scope": "Outer prompt-disjoint official training folds; one SVC fit shared across arms; inferred validation topics use only validation text",
+  "C_and_min_df_scope": "Fixed diagnostic C=1 and min_df=2; original S05 SVC fit hyperparameters not verified. This is source-style, not an exact S05 SVC reproduction.",
+  "official_public_score": null,
+  "full_S05_oof": false,
+  "GPU_used": false,
+  "external_training_rows": 0,
+  "paid_services_used": false,
+  "row_level_outputs_published": false,
+  "fitted_states_serialized": false,
+  "elapsed_worker_seconds": 57.39619408600265,
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "limitations": [
+    "Component-only screen, not a measured gain to full S05 or a public leaderboard score.",
+    "Canonical development folds have been reused; prospective settings do not make this independent confirmation.",
+    "Other S05 members already use centering, so any isolated gain may not complement the full ensemble.",
+    "No test-time class balancing, external pool, full-fit supervised checkpoint or hyperparameter search is included."
+  ]
+}

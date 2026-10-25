@@ -1,0 +1,8 @@
+{
+  "file_bytes": 448138,
+  "file_sha256": "696f25fe7d92682600258c66774e317c45756cdc11e3dfd9b7566997981da979",
+  "gzip_bytes": 32100,
+  "gzip_sha256": "3b0391e4843f88b67c6262df4a6ffcdd701b725153c7ae2376b166415ad932a2",
+  "chunks": 11,
+  "encoding": "base64(gzip(exact-file-bytes,mtime=0))"
+}

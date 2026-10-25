@@ -1,0 +1,152 @@
+{
+  "stage": 12,
+  "date_reviewed": "2026-10-25",
+  "scope": "Independent local examination of the exact real CPU V3 report and gzip, prior custom-code parity records and parent-supplied live run observations; no fresh browser access by reviewer",
+  "status": "CONFIRMED_BLOCKED_ONLY_REQUIRED_LLAMA_ACCESS",
+  "real_report_sha256": "696f25fe7d92682600258c66774e317c45756cdc11e3dfd9b7566997981da979",
+  "compressed_report_sha256": "3b0391e4843f88b67c6262df4a6ffcdd701b725153c7ae2376b166415ad932a2",
+  "audit_script_sha256": "76555790b3b4a3761c27b7a48fee34343e43d6a08e39ee98a12e68b1940d6837",
+  "script_version_id": 362258945,
+  "kaggle_technical_state_supplied_by_parent": "Succeeded",
+  "kaggle_runtime_seconds_supplied_by_parent": 373.9,
+  "accelerator_supplied_by_parent": "None",
+  "environment_supplied_by_parent": "Latest Container Image",
+  "checks_passed": 22,
+  "checks_total": 22,
+  "checks": {
+    "exact_raw_report_hash": true,
+    "exact_gzip_transport_and_readback": true,
+    "final_auditor_revision_bound": true,
+    "contract_is_70_of_71_and_still_blocked": true,
+    "sole_failure_is_required_Llama_BL": true,
+    "BL_has_no_mounted_candidate": true,
+    "correct_source_string_order_Base_then_Chat": true,
+    "selected_Base_matches_our_B8_configuration": true,
+    "comp_lora24_seed7_source_contract_passed": true,
+    "comp_lora24_seed7_only_unused_anchor_ids_object_header_excluded": true,
+    "comp_lora24_seed7_required_numeric_readouts_loaded_finite": true,
+    "comp_lora24_claude_source_contract_passed": true,
+    "comp_lora24_claude_only_unused_anchor_ids_object_header_excluded": true,
+    "comp_lora24_claude_required_numeric_readouts_loaded_finite": true,
+    "comp_lora20_q25_instyle_source_contract_passed": true,
+    "comp_lora20_q25_instyle_only_unused_anchor_ids_object_header_excluded": true,
+    "comp_lora20_q25_instyle_required_numeric_readouts_loaded_finite": true,
+    "all37_Torch_heads_static_schema_inspected": true,
+    "actual_V3_custom_export_unchanged_from_V2_exact_bytes": true,
+    "15_custom_exports_match_Stage11": true,
+    "no_framework_unpickling_or_model_execution_claimed": true,
+    "source_allowed_public_LoRA_skip_preserved": true
+  },
+  "real_contract_passed": 70,
+  "real_contract_total": 71,
+  "remaining_failed_checks": [
+    {
+      "name": "main_BL",
+      "status": "FAIL",
+      "error_type": "ValueError",
+      "error": "Required source selector found no match: BL"
+    }
+  ],
+  "resolved_auditor_failures": [
+    "comp_q3_8b: source-faithful complete-string sorting now selects the audited Qwen3-8B Base config",
+    "comp_lora24_seed7: unused anchor ids object metadata excluded without loading; required features/readouts pass",
+    "comp_lora24_claude: same bounded unused anchor ids exclusion; required features/readouts pass",
+    "comp_lora20_q25_instyle: same bounded unused anchor ids exclusion; required features/readouts pass"
+  ],
+  "anchor_object_metadata_evidence": [
+    {
+      "member": "comp_lora24_seed7",
+      "excluded_object_member": "ids",
+      "object_shape": [
+        3
+      ],
+      "object_payload_loaded": false,
+      "source_consumed": false,
+      "features_shape": [
+        3,
+        32768
+      ],
+      "features_dtype": "float16",
+      "features_finite_numeric": true,
+      "source_consumed_readout_members": [
+        "classes",
+        "plain_coef",
+        "plain_intercept",
+        "pool_layers"
+      ]
+    },
+    {
+      "member": "comp_lora24_claude",
+      "excluded_object_member": "ids",
+      "object_shape": [
+        3
+      ],
+      "object_payload_loaded": false,
+      "source_consumed": false,
+      "features_shape": [
+        3,
+        32768
+      ],
+      "features_dtype": "float32",
+      "features_finite_numeric": true,
+      "source_consumed_readout_members": [
+        "center_coef",
+        "center_intercept",
+        "classes",
+        "claude_coef",
+        "claude_intercept",
+        "plain_coef",
+        "plain_intercept",
+        "pool_layers"
+      ]
+    },
+    {
+      "member": "comp_lora20_q25_instyle",
+      "excluded_object_member": "ids",
+      "object_shape": [
+        3
+      ],
+      "object_payload_loaded": false,
+      "source_consumed": false,
+      "features_shape": [
+        3,
+        28672
+      ],
+      "features_dtype": "float16",
+      "features_finite_numeric": true,
+      "source_consumed_readout_members": [
+        "classes",
+        "plain_coef",
+        "plain_intercept",
+        "pool_layers"
+      ]
+    }
+  ],
+  "custom_code_export_sha256": "c6eca92470af2afbadad47b91576fbd3b9c9c167356caa9fd25f0f9bddc4ba3b",
+  "custom_files_unchanged_from_V2_and_Stage11": 15,
+  "unique_custom_hashes": 7,
+  "author_preview_membership_observation_supplied_by_parent": {
+    "source_version": 362013743,
+    "lora24_public": "Explicit SKIP because checkpoint not attached; matches own CPU absence",
+    "complement_stack_seconds": 2238,
+    "active_legacy_LoRA_members": [
+      "lora24_seed7",
+      "lora24_claude",
+      "lora20_q25_instyle"
+    ],
+    "independent_browser_read_by_this_reviewer": false
+  },
+  "own_official_score_for_this_public651_candidate": null,
+  "source_author_public_balanced_accuracy": 0.651,
+  "confirmed_own_best_official_public_balanced_accuracy": 0.642,
+  "GPU_model_run_or_new_submission_performed_by_reviewer": false,
+  "legal_access_request_or_agreement_accepted_by_reviewer": false,
+  "upstream_model_code_changed": false,
+  "limitations": [
+    "Required Llama3.1 BL config and weights are absent; this prevents this exact 0.651 candidate from admission to GPU execution.",
+    "CPU schema checks do not prove GPU adapter loading, numerical payload finiteness, model behavior or nine-hour hidden runtime.",
+    "Static Torch shape inspection does not execute a deserializer or certify every runtime behavior.",
+    "Own 31 saved input IDs are frozen; independent original-author input-version parity is not claimed.",
+    "No source-author score is reported as our own. The separate Stage12B work reuses S05 assets and is outside this public651 input contract."
+  ]
+}

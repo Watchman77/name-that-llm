@@ -14,7 +14,10 @@
   "unchanged_recipe_can_run": false,
   "source_author_score": 0.651,
   "own_best_official_score": 0.642,
-  "other_V2_failures": "Four auditor-conservative failures are being reviewed separately: string-versus-Path ordering and object-typed NPZ metadata. They are not confirmed corrupt model inputs.",
+  "other_V2_failures": "All four conservative auditor failures resolved on actual V3 mounts, with independent review. The V3 contract is70/71; only Llama access remains blocked.",
   "source_pipeline_changed": false,
-  "GPU_started": false
+  "GPU_started": false,
+  "actual_V3_id": 362258945,
+  "actual_V3_passed": 70,
+  "actual_V3_total": 71
 }

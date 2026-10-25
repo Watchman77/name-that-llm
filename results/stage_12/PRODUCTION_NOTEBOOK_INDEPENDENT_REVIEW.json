@@ -1,0 +1,123 @@
+{
+  "stage": 12,
+  "reviewed_at_utc": "2026-10-25T20:36:24.132560+00:00",
+  "status": "PASS",
+  "review_scope": "independent static source/guard/notebook review plus rerun of synthetic tests using actual local parquet; no upstream cells or models executed",
+  "checks_passed": 24,
+  "checks_total": 24,
+  "source_version_id": 362013743,
+  "source_capture_sha256": "0a65325bd0d001195522cf4a55d1a907465d285403fa180f46760ffd995cda6a",
+  "helper_sha256": "614386c7c6ef3aa90c5bb44629c34e2d2979a6977ed496191954d069ae2873c4",
+  "notebook_sha256": "8bcfc67bc04a41fa883097a284a262519da65802ed7a52026cace1c66124855b",
+  "synthetic_test_script_sha256": "0369a4e7a04d8fa01525dfa831834231fc562a4ad3b38a91f2225e0b59cc769f",
+  "independent_synthetic_checks_passed": 45,
+  "independent_synthetic_checks_total": 45,
+  "synthetic_reader_mocked": false,
+  "source_or_model_pipeline_executed": false,
+  "browser_or_github_used": false,
+  "critical_issues": [],
+  "remaining_execution_gap": "Requires authoritative own Kaggle execution and full final logs; guard cannot prove unsaved main mixture/argmax/coverage or official score.",
+  "checks": [
+    {
+      "name": "nbformat_valid",
+      "passed": true
+    },
+    {
+      "name": "exactly_six_frozen_source_plus_one_guard_cells",
+      "passed": true
+    },
+    {
+      "name": "all_six_capture_strings_byte_exact",
+      "passed": true
+    },
+    {
+      "name": "split_source_files_byte_exact",
+      "passed": true
+    },
+    {
+      "name": "capture_hash_matches_reviewed_source",
+      "passed": true
+    },
+    {
+      "name": "helper_hash_matches_frozen_handoff",
+      "passed": true
+    },
+    {
+      "name": "notebook_hash_matches_frozen_handoff",
+      "passed": true
+    },
+    {
+      "name": "all_code_cells_outputs_empty_unexecuted",
+      "passed": true
+    },
+    {
+      "name": "all_seven_code_cells_compile_after_ipython_transform",
+      "passed": true
+    },
+    {
+      "name": "embedded_helper_exact_utf8",
+      "passed": true
+    },
+    {
+      "name": "embedded_helper_hash_assertion",
+      "passed": true
+    },
+    {
+      "name": "helper_compiled_into_separate_non_main_namespace",
+      "passed": true
+    },
+    {
+      "name": "source_data_path_correct_and_source_globals_passed",
+      "passed": true
+    },
+    {
+      "name": "no_model_or_unsafe_serializer_imports",
+      "passed": true
+    },
+    {
+      "name": "numpy_load_explicitly_disables_pickle",
+      "passed": true
+    },
+    {
+      "name": "actual_saved_parquet_reader_no_injection",
+      "passed": true
+    },
+    {
+      "name": "schema_axis_finite_and_freshness_checks_present",
+      "passed": true
+    },
+    {
+      "name": "real_source_namespace_variables_and_formula_match",
+      "passed": true
+    },
+    {
+      "name": "intentional_q35_omission_kept",
+      "passed": true
+    },
+    {
+      "name": "no_false_preview_full_main_mixture_coverage_score_runtime_claims",
+      "passed": true
+    },
+    {
+      "name": "manual_complete_log_review_explicit",
+      "passed": true
+    },
+    {
+      "name": "no_original_id_text_row_probability_export_code",
+      "passed": true
+    },
+    {
+      "name": "independent_real_parquet_synthetic_rerun",
+      "passed": true,
+      "details": {
+        "passed": 45,
+        "total": 45,
+        "fixture_scope": "synthetic rows only; actual pandas/pyarrow parquet write and readback"
+      }
+    },
+    {
+      "name": "source_optional_main_scores_unset_and_limitations_honest",
+      "passed": true
+    }
+  ]
+}

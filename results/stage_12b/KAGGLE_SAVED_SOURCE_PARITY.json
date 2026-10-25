@@ -1,0 +1,144 @@
+{
+  "stage": "12B",
+  "date_verified": "2026-10-25",
+  "pre_execution_git_commit": "2c778522775d6b34e2efa387bee42fd420775c42",
+  "local_notebook_sha256": "aed7a64c69667670eb6933305c2ddf824bd7e252d342c9b9d07b5b3ee5ddbc66",
+  "parent_official_submission": "S05",
+  "parent_official_public_balanced_accuracy": 0.642,
+  "parent_script_version_id": 362129392,
+  "source_only_snapshot_version": 3,
+  "source_only_snapshot_id": 362262557,
+  "final_preview_version": 4,
+  "final_preview_id": 362263151,
+  "all_35_actual_saved_code_cells_exact": true,
+  "all_28_parent_input_version_IDs_exact": true,
+  "modified_original_code_cells": [
+    30
+  ],
+  "unchanged_original_code_cells": 32,
+  "parent_guard34_unchanged": true,
+  "new_intervention_guard_cell": 35,
+  "saved_metadata": {
+    "accelerator": "nvidiaTeslaT4",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 18975315
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20736096
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20819121
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20831302
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20847146
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20934027
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21008519
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21011978
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21062729
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21097171
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21116786
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21119693
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21155896
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21156661
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358683059
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358758062
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358770408
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358911769
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358928013
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358948428
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 359652568
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166254
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166265
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363135
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363140
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363153
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "verification_method": "Read actual saved-version JSON rendered by Kaggle Show Versions; compare all35 code-cell strings against the reviewed committed notebook and compare input-version sets with actual S05V6 metadata.",
+  "draft_history_scope": "V1/V2 were preliminary unexecuted Quick drafts, not official candidates. A misplaced blank/editor cell was repaired before complete V3 parity and any preview execution. Final V3 and V4 match every reviewed code cell."
+}

@@ -1,0 +1,11 @@
+{
+  "stage": "12A",
+  "freeze_commit": "4f08c924c05636b6b06eada719f1a1f517816de6",
+  "runner_sha256": "3eec88f4d49e28f554ef72a8347401ff400a8ce4094c64b37570b5f587120be2",
+  "hard_deadline_seconds": 900,
+  "elapsed_parent_seconds": 58.99123410599714,
+  "timed_out": false,
+  "returncode": 0,
+  "process_group_terminated": false,
+  "status": "SUCCEEDED"
+}

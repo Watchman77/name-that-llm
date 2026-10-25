@@ -1,0 +1,62 @@
+{
+  "stage": "12B",
+  "review_kind": "Final preparation and accepted-submission record consistency; not a terminal modelling result",
+  "status": "PASS_LOCAL_PREPARATION_RECORD_CONSISTENCY",
+  "checks_passed": 22,
+  "checks_total": 22,
+  "checks": {
+    "submission_exact_S06_V4_362263151": true,
+    "official_running_no_displayed_score": true,
+    "own_best_remains_S05_0_642": true,
+    "preview_succeeded_20_3_seconds": true,
+    "25_parent_format_checks_all_pass": true,
+    "16_intervention_format_checks_all_pass": true,
+    "preview_explicitly_no_model_or_intervention_execution": true,
+    "no_hidden_completion_or_public_score_in_preview": true,
+    "actual_saved_source_parity_claim_matches_reviewed35": true,
+    "all28_parent_input_version_records_match": true,
+    "only_original_cell30_changes_oldguard34_preserved": true,
+    "runtime_source_hashes_match_final_build": true,
+    "GPU_allocation_profile_separate_from_document_boolean": true,
+    "saved_internet_off": true,
+    "single_same_preexecution_freeze_recorded": true,
+    "component_development_gain_consistent_exploratory": true,
+    "review_and_synthetic_counts_consistent": true,
+    "proof_file_exists_and_hash_matches": true,
+    "watch_records_readonly_terminal_policy": true,
+    "no_automatic_candidate_variants_or_final_selection_change": true,
+    "no_paid_service_claim": true,
+    "narrative_keeps_preview_pending_score_and_other_route_separate": true
+  },
+  "reviewed_sha256": {
+    "KAGGLE_SAVED_SOURCE_PARITY.json": "a5c2e6ffa2441c5cd36ea17e3204608ee402e153c6beef033f6e658f1ada979f",
+    "FORMAT_PREVIEW_V4.json": "95366f6f00877b20661ae9b0765a4a183d7abbc62cfce0dc240a12bd11a54829",
+    "S06_SUBMISSION_RECEIPT.json": "40568d4b43b86e97d89d5dfaa272546e76e5af2429baf417432300d16038e5a5",
+    "WATCH_STATE.json": "ec0480866738be5bbec8659090c4bb3ed212e2f889fb7e555cba4fd7be2bd0dd",
+    "STATUS.json": "e61f4453c887ff86058677e9bd07bf896ed10defd0d2b4d8c999d48e023ae39c",
+    "REPORT.md": "d7042455eb9043ef27e6932864b1bf77abee96c906c0096a829f6b6362df3513"
+  },
+  "candidate_notebook_sha256": "aed7a64c69667670eb6933305c2ddf824bd7e252d342c9b9d07b5b3ee5ddbc66",
+  "official_submission": "S06",
+  "own_script_version_id": 362263151,
+  "recorded_official_state": "Notebook Running",
+  "recorded_official_public_score": null,
+  "verified_parent_best_official_public_balanced_accuracy": 0.642,
+  "observation_origin": "Parent agent supplied fresh connected-account official S06 row, actual saved-version JSON and preview log observations. This reviewer checked local receipts and hashes only.",
+  "independent_live_browser_access": false,
+  "independent_Git_or_automation_service_access": false,
+  "models_or_upstream_cells_executed": false,
+  "new_fitting_or_submission_performed_by_reviewer": false,
+  "proof_scope": "Screenshot file hash verified against receipt; no independent live-page or pixel interpretation claimed.",
+  "remaining_evidence": [
+    "Official S06 hidden evaluation and displayed official public balanced accuracy are pending.",
+    "Actual full-run intervention replay, eligibility and downstream-model output checks are pending; the public preview skips them.",
+    "Watcher enablement and Git publication are parent-provided live observations, not independently checked with service APIs by this reviewer."
+  ],
+  "scope_clarifications": [
+    "25 parent plus16 intervention checks are real format-preview checks. They do not demonstrate GPU model inference or correction execution.",
+    "The T4x2 entry is an allocation profile; the legacy document GPU boolean is false and is separately recorded.",
+    "The Stage12A +2.1494-point standalone development gain is exploratory and is not added to the official S05 score.",
+    "The separate0.651 author-reproduction access block is not an S06 model blocker."
+  ]
+}

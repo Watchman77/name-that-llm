@@ -1,18 +1,10 @@
 {
   "stage": "12A",
-  "phase": "PREPARED_LOCKED_PENDING_GIT_FREEZE",
-  "hypothesis": "Dormant fixed SVC topic-bias correction improves a source-style four-view SVC in prompt-disjoint development evaluation",
-  "official_best_public_balanced_accuracy": 0.642,
-  "real_fit_started": false,
-  "input_preflight": "PASS_INPUT_PREFLIGHT_ONLY; 2699 rows, 150 prompts, all five canonical folds 1-5",
-  "synthetic_validation": "18/18 passed without fitting a real or toy classifier",
-  "component_result": null,
-  "full_S05_oof": false,
-  "GPU_used": false,
-  "paid_services_used": false,
+  "phase": "COMPLETED_COMPONENT_SCREEN",
+  "decision": "ADMIT_TO_FURTHER_ENSEMBLE_VALIDATION",
+  "development_result": "RESULT.json",
   "official_submission": false,
-  "final_selections_changed": false,
-  "row_level_outputs_published": false,
-  "hard_process_group_deadline_seconds": 900,
-  "required_before_real_execution": "Independent review and actual pre-execution Git freeze commit"
+  "GPU_used": false,
+  "full_S05_oof": false,
+  "row_level_outputs_published": false
 }

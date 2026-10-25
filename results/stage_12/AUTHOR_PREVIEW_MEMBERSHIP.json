@@ -1,0 +1,24 @@
+{
+  "source_version_id": 362013743,
+  "date_verified": "2026-10-25",
+  "source": "https://www.kaggle.com/code/dhruvtibarewal/nlm-v27?scriptVersionId=362013743",
+  "method": "Read explicit contribution/SKIP lines from the original rendered V1 complementary-stack output, not from model inference performed here",
+  "selected_lines": [
+    "  + stylegram            weight 1.516 on 3 rows  (271s)",
+    "  + stylometry_lgb       weight 0.063 on 3 rows  (389s)",
+    "  + debv3l               weight 0.050 on 3 rows  (1683s)",
+    "  + electl               weight 0.032 on 3 rows  (1850s)",
+    "  + desk                 weight 0.132 on 3 rows  (2019s)",
+    "  SKIP lora24_public: checkpoint not attached (**/lora24/final/COMPLETE.json)",
+    "  + lora24_seed7         weight 0.113 on 3 rows  (2048s)",
+    "  + lora24_claude        weight 0.177 on 3 rows  (2054s)",
+    "  + lora20_q25_instyle   weight 0.170 on 3 rows  (2078s)",
+    "  + tokattn_deb          weight 0.185 on 3 rows  (2099s)",
+    "  + ultrabert            weight 0.095 on 3 rows  (2238s)"
+  ],
+  "source_allowed_lora24_public_skip_matches_actual_cpu": true,
+  "scope": "Selected explicit contribution and skip records, not a claim of exhaustive hidden-run internal coverage",
+  "author_complement_preview_seconds": 2238,
+  "author_full_preview_seconds": 5251.1,
+  "own_model_inference_executed": false
+}

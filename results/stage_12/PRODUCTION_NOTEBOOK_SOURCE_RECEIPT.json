@@ -1,0 +1,64 @@
+{
+  "stage": 12,
+  "source_script_version_id": 362013743,
+  "source_capture_sha256": "0a65325bd0d001195522cf4a55d1a907465d285403fa180f46760ffd995cda6a",
+  "source_code_cells_byte_exact": true,
+  "original_code_cell_count": 6,
+  "final_code_cell_count": 7,
+  "all_code_cells_ipython_transformed_compile": true,
+  "nbformat_saved_readback_valid": true,
+  "source_cells": [
+    {
+      "index": 1,
+      "utf8_bytes": 3131,
+      "sha256": "4fc27dca93a92adfb2759ca65260e5285898d73fc8ccd1acd401982e5f98ed37"
+    },
+    {
+      "index": 2,
+      "utf8_bytes": 8240,
+      "sha256": "b53e305fd7a755d138f931c55ac5f3762ed3978d73a65594b5ce2523fdf165ff"
+    },
+    {
+      "index": 3,
+      "utf8_bytes": 38125,
+      "sha256": "219900bdc7d087f734a6a152b65b3ed515249afab1d82cad7915c0a41fd02adf"
+    },
+    {
+      "index": 4,
+      "utf8_bytes": 50157,
+      "sha256": "f1bb8c65e926f0fde39e384cd500aa98162527492251dd63651e3f78b29232bf"
+    },
+    {
+      "index": 5,
+      "utf8_bytes": 332,
+      "sha256": "16f3076335718c090271e42a36fcd4efdf3cefdb5197f83a4be75947dc75ace3"
+    },
+    {
+      "index": 6,
+      "utf8_bytes": 1636,
+      "sha256": "03a93a666c99d8d2129083be5383cc6c3b532356a67556c9c6fbe5e20e6d9f0e"
+    }
+  ],
+  "helper_sha256": "614386c7c6ef3aa90c5bb44629c34e2d2979a6977ed496191954d069ae2873c4",
+  "helper_bytes": 10209,
+  "embedded_helper_byte_exact": true,
+  "guard_uses_own_namespace": true,
+  "guard_receives_source_globals": true,
+  "notebook_sha256": "8bcfc67bc04a41fa883097a284a262519da65802ed7a52026cace1c66124855b",
+  "notebook_bytes": 133189,
+  "builder_sha256": "5dd2846b799f8005fc81023404853579c7c22546f87048b82259b72fdc81ff42",
+  "synthetic_test_script_sha256": "0369a4e7a04d8fa01525dfa831834231fc562a4ad3b38a91f2225e0b59cc769f",
+  "synthetic_checks_passed": 45,
+  "synthetic_checks_total": 45,
+  "synthetic_parquet_io": "actual pandas/pyarrow, not mocked",
+  "source_or_model_execution_performed": false,
+  "model_training_or_original_data_used": false,
+  "notebook_executed_top_to_bottom": false,
+  "execution_gap": "Requires actual Kaggle mounts, audited executable assets and free T4 x2; no upstream source cells executed locally.",
+  "output_evidence_limitations": [
+    "Only saved parquet and complementary logit evidence are checked.",
+    "No saved main score arrays: no full-main finite, mixture or final-argmax proof.",
+    "Complete own logs are required for member/main-group/COMP/ATLAS coverage and fallbacks.",
+    "No development, official score or complete hidden-runtime claim."
+  ]
+}

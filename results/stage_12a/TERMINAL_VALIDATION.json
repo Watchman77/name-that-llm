@@ -1,0 +1,147 @@
+{
+  "stage": "12A",
+  "validation_date": "2026-10-25",
+  "status": "PASS_INDEPENDENT_TERMINAL_VALIDATION",
+  "checks_passed": 37,
+  "checks_total": 37,
+  "checks": {
+    "train_hash_pinned": true,
+    "canonical_split_hash_pinned": true,
+    "canonical_ID_order_exact": true,
+    "canonical_prompt_IDs_exact": true,
+    "canonical_model_labels_exact": true,
+    "canonical_folds_exact": true,
+    "rows_prompts_classes_contract": true,
+    "all_folds_prompt_disjoint": true,
+    "private_array_ID_order_exact": true,
+    "private_array_fold_axis_exact": true,
+    "control_array_shape_and_finite": true,
+    "candidate_array_shape_and_finite": true,
+    "control_array_argmax_matches_predictions": true,
+    "candidate_array_argmax_matches_predictions": true,
+    "control_confusion_exact": true,
+    "candidate_confusion_exact": true,
+    "perclass_model_axis_and_support_exact": true,
+    "perclass_control_recalls_match": true,
+    "perclass_candidate_recalls_match": true,
+    "perclass_differences_match": true,
+    "pooled_control_BA_matches": true,
+    "pooled_candidate_BA_matches": true,
+    "pooled_gain_matches": true,
+    "all_five_fold_scores_match": true,
+    "paired_prompt_bootstrap_interval_matches": true,
+    "corrected_broken_counts_match": true,
+    "largest_class_loss_matches": true,
+    "recorded_convergence_warnings_consistent": true,
+    "all_four_fixed_screens_match": true,
+    "decision_matches_fixed_screen": true,
+    "execution_finished_normally_within_deadline": true,
+    "freeze_identity_consistent": true,
+    "runner_hash_matches_review_freeze_execution_and_current": true,
+    "all_four_frozen_reviewed_file_hashes_unchanged": true,
+    "private_row_outputs_outside_repo": true,
+    "result_scope_does_not_claim_official_or_full_S05": true,
+    "group_diagnostics_aggregate_consistency": true
+  },
+  "fit_rerun": false,
+  "new_variant_launched": false,
+  "private_row_outputs_published": false,
+  "method": "Count-based recalculation from private saved OOF rows/score arrays; independent bootstrap uses sampled-prompt multiplicity weights and recomputes18class recall denominators for each of10000draws. No classifier or vectorizer refitted.",
+  "freeze_commit": "4f08c924c05636b6b06eada719f1a1f517816de6",
+  "freeze_verification_scope": "Local reviewed/frozen byte hashes match the parent-supplied published freeze receipt. Reviewer did not independently access GitHub or liveGit objects.",
+  "frozen_file_hash_checks": {
+    "scripts/stage12_topic_correction_pilot.py": true,
+    "results/stage_12a/PROTOCOL.md": true,
+    "results/stage_12a/PREFLIGHT_PREPARATION.json": true,
+    "results/stage_12a/SYNTHETIC_VALIDATION.json": true
+  },
+  "validated_metrics": {
+    "control_development_balanced_accuracy": 0.3789311459110117,
+    "candidate_development_balanced_accuracy": 0.40042505592841166,
+    "difference_percentage_points": 2.1493910017399975,
+    "paired_prompt_95_interval_percentage_points": [
+      1.0380253592861457,
+      3.2592592592592595
+    ],
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 12012,
+    "corrected_rows": 146,
+    "broken_rows": 88,
+    "net_additional_correct_rows": 58,
+    "control_correct_rows": 1023,
+    "candidate_correct_rows": 1081,
+    "largest_class_recall_loss_percentage_points": 4.0,
+    "classes_improved": 11,
+    "classes_worse": 5,
+    "classes_tied": 2,
+    "eligible_correction_rows_reported": 2121,
+    "eligible_correction_fraction_reported": 0.785846609855502,
+    "all_five_fold_gains_positive": true,
+    "folds": [
+      {
+        "fold": 1,
+        "control_development_balanced_accuracy": 0.35740740740740745,
+        "candidate_development_balanced_accuracy": 0.3944444444444445,
+        "difference_percentage_points": 3.7037037037037033
+      },
+      {
+        "fold": 2,
+        "control_development_balanced_accuracy": 0.35,
+        "candidate_development_balanced_accuracy": 0.36851851851851847,
+        "difference_percentage_points": 1.851851851851852
+      },
+      {
+        "fold": 3,
+        "control_development_balanced_accuracy": 0.3851851851851852,
+        "candidate_development_balanced_accuracy": 0.39814814814814814,
+        "difference_percentage_points": 1.296296296296296
+      },
+      {
+        "fold": 4,
+        "control_development_balanced_accuracy": 0.4055555555555556,
+        "candidate_development_balanced_accuracy": 0.4296296296296297,
+        "difference_percentage_points": 2.4074074074074074
+      },
+      {
+        "fold": 5,
+        "control_development_balanced_accuracy": 0.39655172413793105,
+        "candidate_development_balanced_accuracy": 0.4114942528735632,
+        "difference_percentage_points": 1.4942528735632183
+      }
+    ]
+  },
+  "screen_gates_recalculated": {
+    "gain_at_least_half_percentage_point": true,
+    "paired_prompt_interval_lower_above_zero": true,
+    "maximum_class_recall_loss_at_most_five_points": true,
+    "no_convergence_warnings": true
+  },
+  "decision": "ADMIT_TO_FURTHER_ENSEMBLE_VALIDATION",
+  "execution_seconds": {
+    "parent": 58.99123410599714,
+    "worker_reported": 57.39619408600265,
+    "deadline": 900
+  },
+  "public_artifact_hashes": {
+    "RESULT.json": "42cfadbaead3a6626f1fe42962055bb897a829776dcb4fb7faf0b8f36a120153",
+    "EXECUTION.json": "72e5ed73f2157a2e5d4949c1b9b43ff8cb8a57f40591fbdf03ebfd832a6bccbf",
+    "FOLDS.json": "a562dee1f622b75cb6304e74162aa74b5fc7e8ddd826c3e5cd83dca4cb825bf6",
+    "GROUP_DIAGNOSTICS.json": "dcce4f1df5532046628f710516ce95bb09475290319f837357f3a7ab9d318dcc",
+    "per_class_recall.csv": "b28b06c2b8152a40c7587675b1add08e346d625c5374d728440d5f02e4e24f4a",
+    "control_confusion.csv": "8dd822661dc8ee9603bacab210c1f1ed470317985e6f5b0cfe4395ade27d3b8e",
+    "candidate_confusion.csv": "2d922b9b523c00a6fabfac9a7578476bfec6d85630a8aeb6d576413264a87faa",
+    "SOURCE_FREEZE.json": "b102712858e921efe1b8be5e0714705598bb7fab8b0b85ec1336083a26240a0c"
+  },
+  "private_artifact_hashes_only": {
+    "OOF_predictions.csv": "e848f519f4f17c619581dc877e2672ee4ff4ec51a0d302e97518bee3fc07ce74",
+    "OOF_component_scores.npz": "e92ca1a0de290041758f7e8e0259874837087e56c8994735f62e5fc949735bb3"
+  },
+  "limitations": [
+    "Development folds reused; this is exploratory component evidence, not independent confirmation.",
+    "Bootstrap is conditional on saved predictions and inferred groups; it does not refit or recluster in each draw.",
+    "Clustering diagnostics were checked for aggregate consistency but were not independently regenerated from text in this terminal review.",
+    "No fullS05cross-fitted ensemble score, marginal ensemble gain, official submission or private leaderboard result is established.",
+    "No full-fit supervised checkpoint was used in this component pilot; the source-style SVC hyperparameters are declared and not claimed exactS05SVCparity."
+  ],
+  "second_reviewer": "Independent25check count audit confirms canonical rows/folds,confusions,perclassrecalls,foldscores and count screens; no fit or edits."
+}

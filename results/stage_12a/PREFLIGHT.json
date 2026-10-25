@@ -1,0 +1,57 @@
+{
+  "status": "PASS_INPUT_PREFLIGHT_ONLY",
+  "train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+  "split_sha256": "72d7d43119367ef100511d0f8174b9483ec86bf28bfc7b7e61d8fb599ee1209d",
+  "rows": 2699,
+  "prompts": 150,
+  "classes": 18,
+  "folds": [
+    {
+      "fold": 1,
+      "train_rows": 2159,
+      "validation_rows": 540,
+      "validation_prompts": 30
+    },
+    {
+      "fold": 2,
+      "train_rows": 2159,
+      "validation_rows": 540,
+      "validation_prompts": 30
+    },
+    {
+      "fold": 3,
+      "train_rows": 2159,
+      "validation_rows": 540,
+      "validation_prompts": 30
+    },
+    {
+      "fold": 4,
+      "train_rows": 2159,
+      "validation_rows": 540,
+      "validation_prompts": 30
+    },
+    {
+      "fold": 5,
+      "train_rows": 2160,
+      "validation_rows": 539,
+      "validation_prompts": 30
+    }
+  ],
+  "split_prediction_columns_read": false,
+  "training_or_inference_started": false,
+  "source_parity": {
+    "source_version": 362014737,
+    "source_code_cell": 5,
+    "function_ast_matches": {
+      "shape_text": true,
+      "small_words_text": true,
+      "topic_groups": true,
+      "clipped_logp": true,
+      "adaptive_svc_topic_correction": true
+    },
+    "view_and_function_word_constants_match": {
+      "VIEWS": true,
+      "SMALL_WORDS": true
+    }
+  }
+}

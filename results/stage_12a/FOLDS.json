@@ -1,0 +1,97 @@
+[
+  {
+    "fold": 1,
+    "training_rows": 2159,
+    "validation_rows": 540,
+    "validation_prompts": 30,
+    "feature_dimensions": {
+      "char": 116582,
+      "word": 71419,
+      "shape": 3209,
+      "small": 9561
+    },
+    "feature_seconds": 5.557505405995471,
+    "fit_and_score_seconds": 4.407608542998787,
+    "control_balanced_accuracy": 0.35740740740740745,
+    "candidate_balanced_accuracy": 0.3944444444444445,
+    "convergence_warnings": 0,
+    "iterations": 25,
+    "one_shared_fit_for_both_arms": true
+  },
+  {
+    "fold": 2,
+    "training_rows": 2159,
+    "validation_rows": 540,
+    "validation_prompts": 30,
+    "feature_dimensions": {
+      "char": 117287,
+      "word": 71082,
+      "shape": 3245,
+      "small": 9661
+    },
+    "feature_seconds": 6.56992039099714,
+    "fit_and_score_seconds": 5.433600233998732,
+    "control_balanced_accuracy": 0.35,
+    "candidate_balanced_accuracy": 0.36851851851851847,
+    "convergence_warnings": 0,
+    "iterations": 24,
+    "one_shared_fit_for_both_arms": true
+  },
+  {
+    "fold": 3,
+    "training_rows": 2159,
+    "validation_rows": 540,
+    "validation_prompts": 30,
+    "feature_dimensions": {
+      "char": 116356,
+      "word": 71113,
+      "shape": 3096,
+      "small": 9745
+    },
+    "feature_seconds": 6.173841675998119,
+    "fit_and_score_seconds": 5.272993054000835,
+    "control_balanced_accuracy": 0.3851851851851852,
+    "candidate_balanced_accuracy": 0.39814814814814814,
+    "convergence_warnings": 0,
+    "iterations": 24,
+    "one_shared_fit_for_both_arms": true
+  },
+  {
+    "fold": 4,
+    "training_rows": 2159,
+    "validation_rows": 540,
+    "validation_prompts": 30,
+    "feature_dimensions": {
+      "char": 115497,
+      "word": 71486,
+      "shape": 2775,
+      "small": 9220
+    },
+    "feature_seconds": 6.51326083400636,
+    "fit_and_score_seconds": 4.772869710999657,
+    "control_balanced_accuracy": 0.4055555555555556,
+    "candidate_balanced_accuracy": 0.4296296296296297,
+    "convergence_warnings": 0,
+    "iterations": 24,
+    "one_shared_fit_for_both_arms": true
+  },
+  {
+    "fold": 5,
+    "training_rows": 2160,
+    "validation_rows": 539,
+    "validation_prompts": 30,
+    "feature_dimensions": {
+      "char": 117145,
+      "word": 71389,
+      "shape": 3153,
+      "small": 9686
+    },
+    "feature_seconds": 6.261151033002534,
+    "fit_and_score_seconds": 6.028575447999174,
+    "control_balanced_accuracy": 0.39655172413793105,
+    "candidate_balanced_accuracy": 0.4114942528735632,
+    "convergence_warnings": 0,
+    "iterations": 25,
+    "one_shared_fit_for_both_arms": true
+  }
+]
