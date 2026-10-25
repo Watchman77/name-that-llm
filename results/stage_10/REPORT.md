@@ -1,4 +1,16 @@
-# Stage 10 — frozen public 0.639 reproduction preparation
+# Stage 10 — frozen public 0.639 reproduction
+
+## Current verified outcome — 25 October 2026
+
+Our official **S04**, exact private Stage 10 V3 **361881189**, displays **Succeeded** and **0.639 official public balanced accuracy (63.9%)** on the live connected-account Kaggle submissions page. This is our own hidden-test evaluation result, distinct from the author's 0.639 and from the earlier constant-label format preview.
+
+Against the displayed official scores, S04 improves on **S03 0.620 by 1.9 percentage points** and on **S02 0.549 by 9.0 points**. It is **6.1 points below 70%**. These differences were checked using decimal arithmetic. The private leaderboard score and current rank are unknown. This reproduces the author's displayed public score; it does not establish an original modelling contribution or guarantee further gains.
+
+The official submission-details modal separately confirms **Score: 0.639**, **Succeeded**, and the exact private V3 link. It exposes no hidden-runtime log link. Final hidden-run runtime, model-member logs and detailed output-guard results remain unverified; the 18.6-second preview and its 20 format checks are not substituted for them. Final selections remain automatic **0/2**, with selection boxes unchecked; no watch was created or enabled. See [official result receipt](OFFICIAL_RESULT_20261025.json), [current status](STATUS.json), and the [official score screenshot](S04_OFFICIAL_SCORE_20261025.png).
+
+The checkpoints below retain their original preparation and pending-state evidence as of 24 October 2026.
+
+## Preparation checkpoint — 24 October 2026
 
 The next candidate is Kirill Tymchyshyn's **0.639 | Teach More, Keep the Signature**, exact scored V1 **361634630**, verified live on 24 October 2026. Its displayed official public balanced accuracy is **0.639**; our verified official best remains **S03 at 0.620**. No own Stage 10 score exists.
 
