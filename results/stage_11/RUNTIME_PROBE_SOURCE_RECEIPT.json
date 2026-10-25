@@ -1,0 +1,56 @@
+{
+  "source_version": 362014737,
+  "capture_sha256": "143351168ff87d0cd0f2712c29778dfad8acd34c1527088a19d4b42141869413",
+  "source_cells_retained_separately": 33,
+  "extracted_modules": [
+    {
+      "source_cell": 3,
+      "file": "stage_dataset_weights.py",
+      "source_module_sha256": "6694833b30ced8c2d18966164fa4152e03224634c027121edbb7736f80a6f2bd",
+      "byte_exact_after_magic_line_removed": true
+    },
+    {
+      "source_cell": 25,
+      "file": "qwen_nf4_loader.py",
+      "source_module_sha256": "06313ca9a045bd63eed437e93e597b956aa1f6c9d21473f2815669dfef4159be",
+      "byte_exact_after_magic_line_removed": true
+    },
+    {
+      "source_cell": 26,
+      "file": "fulltext_pooling.py",
+      "source_module_sha256": "78a8b4dcc231d707dc9b614a9c8c9f86ac3ab774aa8fb4ef69b537d779dc18f7",
+      "byte_exact_after_magic_line_removed": true
+    },
+    {
+      "source_cell": 27,
+      "file": "qwen_fulltext_inference.py",
+      "source_module_sha256": "3f7624cd33a72f9816fe463ef17ddf5fd42639f03d5e9dfba7ede6835c72557d",
+      "byte_exact_after_magic_line_removed": true
+    },
+    {
+      "source_cell": 28,
+      "file": "own_qwen_worker.py",
+      "source_module_sha256": "a3e89bd76581983097b1be6630ddca06ac60ec99e3d9decdae9814e28b00ec89",
+      "byte_exact_after_magic_line_removed": true
+    }
+  ],
+  "probe_script_sha256": "2a193331330e55752cc77d96cc38d7cdc53d5ff04b28ad7ca753adabe96155a0",
+  "notebook_sha256": "5cc83261fc5e0b74de2a2097c3c90dd21405295b74c9ed7054a08b5a6f05042d",
+  "nbformat_and_compile": "PASS",
+  "source_modules_imported_or_executed_locally": false,
+  "model_or_gpu_run": false,
+  "default_admission_locked": true,
+  "whole_ensemble_runtime_verified": false,
+  "known_observability_limit": "Unchanged worker does not expose an OOM-retry counter; report remains unknown.",
+  "label_axis_handling": "Accept exactly18 unique known names in worker-saved order; compute explicit name-based permutation to canonical order for diagnostic softmax only; never rewrite worker arrays",
+  "synthetic_tests_passed": 25,
+  "synthetic_tests_total": 25,
+  "admission_required_fields": [
+    "source_version_id",
+    "cpu_audit_version_id",
+    "cpu_audit_report_sha256",
+    "cpu_audit_status",
+    "mandatory_source_checks_passed",
+    "mandatory_source_checks_total"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "stage": 11,
+  "phase": "CPU_INPUT_AUDIT_RUNNING",
+  "own_best_official_public_balanced_accuracy": 0.639,
+  "source_author_public_score": 0.642,
+  "source_script_version_id": 362014737,
+  "private_notebook": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit",
+  "cpu_runs": {
+    "V1": {
+      "script_version_id": 362118178,
+      "state": "Running",
+      "source_sha256": "d4322d840b9697d19d36e83415e84dd1bc8a95dffb659510e489779c6863a8d5",
+      "mandatory_paths_observed_passed": 160,
+      "known_contract_block": "Overstrict Qwen native label-order assumption, confirmed auditor false block; inference source unchanged"
+    },
+    "V2": {
+      "script_version_id": 362119531,
+      "state": "Running",
+      "source_sha256": "07d5f69ec0c0002f8679aa1599428b5b2989721e0523cb234040651015898802",
+      "mandatory_paths_observed_passed": 160,
+      "final_adapter_observed": "PASS",
+      "label_alignment": "source-faithful named column permutation"
+    }
+  },
+  "remaining_cpu_stage": "manifest SHA256 reconciliation and final resource/report output",
+  "gpu_probe": "prepared and independently reviewed; locked until actual CPU V2 pass",
+  "gpu_probe_deadline_seconds": 900,
+  "gpu_model_executed": false,
+  "new_official_submission": false,
+  "paid_service_used": false,
+  "final_selections_changed_by_this_work": false,
+  "verified_date": "2026-10-25"
+}

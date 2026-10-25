@@ -1,0 +1,44 @@
+{
+  "status": "PASS_FOR_CPU_EXECUTION_ONLY",
+  "revision": "V2",
+  "source_version": 362014737,
+  "audit_script_sha256": "07d5f69ec0c0002f8679aa1599428b5b2989721e0523cb234040651015898802",
+  "notebook_sha256": "282d5c47956aa90ef06a889be6904cc15a43ce671a1204bfdc9d34e1da3c963d",
+  "checks": {
+    "source_paths_exact": true,
+    "source_recipe_exact": true,
+    "source_required_input_checks_exact": true,
+    "source_explicit_paths_exact": true,
+    "NF4_FILES_pins_exact": true,
+    "ULTRA_FOLD_FILES_pins_exact": true,
+    "nbformat_schema": true,
+    "all_code_cells_compile": true,
+    "embedded_script_byte_exact": true,
+    "all_160_literal_paths_preserved": true,
+    "class_order_rule_matches_source_named_alignment": true,
+    "complete_tail8_LoRA_pairs_required": true,
+    "safetensors_dtype_span_overlap_validated": true,
+    "active_style_and_prefit_files_required": true,
+    "no_upstream_model_or_serializer_execution": true,
+    "private_custom_text_export_separate": true,
+    "runtime_feasibility_not_claimed": true,
+    "official_test_rows_not_opened": true,
+    "37_synthetic_checks_pass": true
+  },
+  "passed": 19,
+  "total": 19,
+  "independent_synthetic_result": {
+    "passed": 37,
+    "total": 37
+  },
+  "source_label_alignment_evidence": "LABEL_ALIGNMENT_SOURCE_REVIEW.json",
+  "previous_review_preserved": "CPU_AUDIT_INDEPENDENT_REVIEW_V1.json",
+  "v1_actual_conservative_block_resolution": "The initial audit required main canonical raw Qwen label order, but the scored source preserves component metadata order and names-aligns downstream. V2 admits a validated bijective named permutation and records it without changing model/head/metadata bytes.",
+  "limitations": [
+    "Code review is not actual mounted-input success",
+    "Safetensors payload finiteness and complete model construction remain runtime checks",
+    "Joblib/Torch payload internals and runtime API compatibility remain unexecuted",
+    "Large model payloads are not all SHA-hashed; source pins/headers and versioned attachments are separate evidence",
+    "Minor malformed-metadata cases including NaN JSON temperatures or unpaired mean/scale remain outside current checks; no actual malformed input is alleged"
+  ]
+}

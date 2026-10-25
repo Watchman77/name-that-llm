@@ -169,5 +169,20 @@
       "full model parity solely from artifact finiteness"
     ],
     "public_export": "Only aggregate counts, hashes and check results; no raw text, test IDs or row-level probabilities in public Git"
+  },
+  "authoritative_competition_execution_limit": {
+    "cpu_hours": 9,
+    "gpu_hours": 9,
+    "internet": "disabled",
+    "source": "https://www.kaggle.com/competitions/name-that-llm/overview",
+    "section": "Code Requirements",
+    "verified_date": "2026-10-25",
+    "general_notebook_limits_do_not_override_competition_limit": true
+  },
+  "account_gpu_quota_observation": {
+    "ui_text": "Availability is limited to 30 hours per week. You have 29 hours remaining.",
+    "surface": "Kaggle editor Turn on GPU T4 x2 confirmation dialog; cancelled after reading",
+    "verified_date": "2026-10-25",
+    "paid_service": false
   }
 }

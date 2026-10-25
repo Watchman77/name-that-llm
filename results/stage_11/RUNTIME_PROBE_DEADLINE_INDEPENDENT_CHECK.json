@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "tested_script_sha256": "c043ba59c5b7475409ce3720937fe6ba45487548d7586b1573e93c5feaacbd7b",
+  "watchdog_function_sha256": "5835eef45a1f1dd9c282a3aca28a52c4697ff4870473f75b216ee9e020736663",
+  "hard_watchdog_timed_out": true,
+  "elapsed_seconds": 0.5026893109998127,
+  "parent_exit_code": -15,
+  "descendant_ignored_sigterm": true,
+  "descendant_running_after_watchdog": false,
+  "descendant_terminal_or_reaped_state": null,
+  "model_or_gpu_run": false,
+  "source_worker_modules_executed": false,
+  "scope": "Independent real dummy-process-tree check of process-group termination; no models",
+  "current_script_sha256": "2a193331330e55752cc77d96cc38d7cdc53d5ff04b28ad7ca753adabe96155a0",
+  "watchdog_function_unchanged_since_live_dummy_test": true
+}

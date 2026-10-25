@@ -23,3 +23,8 @@ Saved member and mixture arrays live below `/kaggle/temp/ntl636-fulltext-qwen-qu
 The full pre-ATLAS SVC+decoder+DeBERTa sum cannot be reconstructed solely from the saved files because raw SVC logits are not separately saved. A guard must state that limit instead of claiming complete internal reconstruction. Final finiteness also does not prove every internal activation is finite.
 
 Detailed file names, exact fields, static evidence and limitations are recorded in `RUNTIME_AND_OUTPUT_REVIEW.json`. Export aggregate checks/hashes only to public Git.
+
+
+## Live competition limit and available quota — 25 October 2026
+
+The authoritative competition Overview, Code Requirements section, states **CPU and GPU notebooks each have a 9-hour runtime limit**, with Internet disabled. A general Kaggle notebook allowance does not override this competition limit. The connected-account GPU enable dialog separately reported **29 hours remaining** out of the weekly 30-hour allocation; the dialog was cancelled after reading, leaving the CPU audit on None. Neither observation measures the candidate's runtime.
