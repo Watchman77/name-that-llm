@@ -1,6 +1,6 @@
 {
   "stage": 11,
-  "phase": "CPU_AUDIT_PASSED_GPU_PROBE_ADMITTED_NOT_LAUNCHED",
+  "phase": "BOUNDED_QWEN_GPU_PROBE_RUNNING",
   "own_best_official_public_balanced_accuracy": 0.639,
   "source_author_public_score": 0.642,
   "source_script_version_id": 362014737,
@@ -32,7 +32,7 @@
     }
   },
   "remaining_cpu_stage": null,
-  "gpu_probe": "admitted after full actual report review; not launched yet",
+  "gpu_probe": "Running; private V3 362125549, GPU T4 x2, 900-second hard subprocess deadline",
   "gpu_probe_deadline_seconds": 900,
   "gpu_model_executed": false,
   "new_official_submission": false,
@@ -40,5 +40,7 @@
   "final_selections_changed_by_this_work": false,
   "verified_date": "2026-10-25",
   "full_report": "REAL_INPUT_AUDIT_V2.json.gz",
-  "full_report_summary": "REAL_INPUT_AUDIT_V2_SUMMARY.json"
+  "full_report_summary": "REAL_INPUT_AUDIT_V2_SUMMARY.json",
+  "gpu_probe_script_version_id": 362125549,
+  "gpu_model_execution_requested": true
 }

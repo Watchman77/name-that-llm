@@ -1,0 +1,47 @@
+{
+  "status": "PASS_ARTIFACT_REVIEW_ONLY",
+  "source_version": 362014737,
+  "guard_script_sha256": "6566ab1d5511205b78a4e7d50a6a824ac02737205e3375899dc4fecd4d66b61c",
+  "production_notebook_sha256": "d7e89eb58cb78b71a4b1a55ebbfbdeeba1c5558bfb02886cd3fa247ec69270ef",
+  "checks": {
+    "code_cell_count34": true,
+    "all33_source_cells_byte_exact": true,
+    "nbformat_schema": true,
+    "all_IPython_transformed_code_compiles": true,
+    "helper_embedded_byte_exact": true,
+    "production_uses_real_parquet_reader": true,
+    "production_exact_call": true,
+    "own_namespace_not_main": true,
+    "preview_fingerprint_literal_exact": true,
+    "named_component_class_alignment_reviewed": true,
+    "saved_ATLAS_helper_Qwen_chain_reviewed": true,
+    "final_Sinkhorn_arithmetic_matches_source": true,
+    "unsaved_raw_SVC_reconstruction_not_claimed": true,
+    "helper_joblib_weights_not_deserialized": true,
+    "no_internal_activation_finiteness_claim": true,
+    "no_accuracy_or_private_score_claim": true,
+    "preview_never_claims_full_model_inference": true,
+    "final_saved_parquet_argmax_reconstruction_reviewed": true,
+    "positive_two_GPU_Qwen_metadata_required": true,
+    "synthetic23_of23_pass": true,
+    "separate_analytic_Sinkhorn_checks_pass": true
+  },
+  "passed": 21,
+  "total": 21,
+  "synthetic_tests": {
+    "passed": 23,
+    "total": 23,
+    "parquet_reader_boundary": "synthetic; real production reader still requires actual Kaggle execution"
+  },
+  "source_or_model_executed": false,
+  "actual_GPU_or_production_notebook_execution": false,
+  "known_limits": [
+    "Complete pre-ATLAS raw SVC/decoder/DeBERTa internal sum is not reconstructible from saved artifacts alone",
+    "Saved probability finiteness does not prove every internal activation is finite",
+    "Uniform Sinkhorn is the unchanged source heuristic, not known true class counts",
+    "This code review does not supply a new official public score or private-score evidence"
+  ],
+  "no_critical_falsepass_or_falseblock_found_in_review": true,
+  "production_guard_call": "validation_namespace['validate_output']('/kaggle/working', DATA, temporary_dir='/kaggle/temp/ntl636-fulltext-qwen-query', namespace=globals(), final_metadata_path=FINAL_ADAPTER.with_suffix('.json'))",
+  "review_check_note": "Initial call-string matcher omitted explicitly supplied temporary_dir and final_metadata_path. AST argument verification confirmed both match the source paths; no production-code change was needed."
+}

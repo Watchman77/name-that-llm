@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "helper_sha256": "6566ab1d5511205b78a4e7d50a6a824ac02737205e3375899dc4fecd4d66b61c",
+  "checks": {
+    "homogeneous_60_rows_balance_to_analytic_uniform": true,
+    "below50_preserves_peaks_and_positive_floor_then_row_normalizes": true
+  },
+  "passed": 2,
+  "total": 2,
+  "model_or_upstream_source_executed": false,
+  "independent_expectations": "Analytic homogeneous-column scaling and explicit sub50 normalization, not fixture argmax from the same function."
+}

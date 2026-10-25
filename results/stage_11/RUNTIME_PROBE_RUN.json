@@ -1,0 +1,19 @@
+{
+  "stage": 11,
+  "notebook_version": 3,
+  "script_version_id": 362125549,
+  "source": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit?scriptVersionId=362125549",
+  "kind": "QWEN_BRANCH_RUNTIME_DIAGNOSTIC_ONLY",
+  "status": "Running",
+  "accelerator_observed": "GPU T4 x2",
+  "environment_label_observed": "Latest Container Image",
+  "helper_sha256": "3326f7b3b58a9177c82cb767b2aeef7d419a7c93afaf18d9a3e3d7ce65b00872",
+  "admitted_notebook_sha256": "40e8520017fe1dca97682a9faf2c0c6afb124e2a3932673fd4890d528c4e7364",
+  "actual_editor_code_match": true,
+  "hard_process_group_timeout_seconds": 900,
+  "rows_planned": 12,
+  "accuracy_evaluation": false,
+  "complete_ensemble_execution": false,
+  "official_submission": false,
+  "date_verified": "2026-10-25"
+}

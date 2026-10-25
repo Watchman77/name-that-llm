@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "passed": 23,
+  "total": 23,
+  "checks": {
+    "full_hidden_artifact_chain_and_native_permutation": true,
+    "empty_ATLAS_selection_valid": true,
+    "all_ATLAS_selection_valid": true,
+    "below50_all_ATLAS_and_row_normalization": true,
+    "float32_helper_arithmetic_valid": true,
+    "reject_missing_member_file": true,
+    "reject_wrong_submission_ids": true,
+    "reject_wrong_submission_predictions": true,
+    "reject_unknown_worker_label": true,
+    "reject_duplicate_worker_ids": true,
+    "reject_reordered_worker_ids": true,
+    "reject_nonfinite_member_logits": true,
+    "reject_wrong_probability_shape": true,
+    "reject_wrong_ATLAS_selection": true,
+    "reject_wrong_helper_mixture": true,
+    "reject_wrong_Qwen_mixture": true,
+    "reject_partial_Qwen_coverage": true,
+    "reject_metadata_truncation": true,
+    "reject_metadata_single_GPU": true,
+    "reject_unknown_preview_flag": true,
+    "reject_false_preview_claim_on_full_rows": true,
+    "format_only_preview_no_model_or_accuracy_claim": true,
+    "reject_preview_model_loaded_claim": true
+  },
+  "source_or_model_executed": false,
+  "parquet_boundary_in_local_fixtures": "synthetic reader; production notebook always uses real pandas.read_parquet",
+  "synthetic_public_fixture_substitution_for_preview_test_only": true
+}
