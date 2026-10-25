@@ -75,6 +75,20 @@ def expect_shape(header, name, shape):
     if name not in header or header[name]['shape'] != list(shape):
         raise ValueError('Safetensors shape mismatch: '+name)
 
+def qwen_label_alignment(native_labels):
+    """Mirror the frozen worker-to-ensemble label-name transport, without reordering weights."""
+    if not isinstance(native_labels,list) or not all(isinstance(label,str) for label in native_labels):
+        raise ValueError('Qwen native labels must be a string list')
+    checked_labels(native_labels)
+    permutation=[native_labels.index(label) for label in LABELS]
+    if sorted(permutation)!=list(range(18)) or [native_labels[i] for i in permutation]!=LABELS:
+        raise ValueError('Qwen native-to-canonical class permutation invalid')
+    return {'native_head_label_order':list(native_labels),'canonical_ensemble_label_order':list(LABELS),
+            'source_column_permutation_to_canonical':permutation,
+            'source_alignment_rule':'value[:, [labels.index(label) for label in LABELS]]',
+            'native_head_or_metadata_reordered':False,
+            'source_proof':'NF4 reload preserves metadata.labels; own worker saves native labels; orchestrator aligned() reorders by label names before Qwen blending.'}
+
 def required_tail8_lora_keys(index):
     suffix='.weight.quant_state.bitsandbytes__nf4'
     names=[]
@@ -244,7 +258,7 @@ class Audit:
         p=self.local(CONTRACT['paths']['own_fulltext_adapter']);meta=read_json(p.with_suffix('.json'))
         for key,value in CONTRACT['contracts']['qwen_final_metadata'].items():
             if key not in meta or type(meta[key]) is not type(value) or meta[key]!=value:raise ValueError('Final adapter metadata differs: '+key)
-        checked_labels(meta.get('labels'),LABELS);header=self.header(p)
+        alignment=qwen_label_alignment(meta.get('labels'));header=self.header(p)
         expected={}
         for name,shape in [('plain.weight',[18,40960]),('plain.bias',[18]),('centered.weight',[18,40960]),('centered.bias',[18])]:expected[name]=shape
         for i in range(8):
@@ -276,7 +290,7 @@ class Audit:
             qstate=json.loads(raw.decode('utf-8'));shape=qstate['shape']
             if item['shape']!=[16,shape[1]] or lora[key[:-1]+'B']['shape']!=[shape[0],16]:raise ValueError('LoRA/NF4 linear dimensions differ: '+weight)
             matched+=1
-        return {'path':self.rel(p),'bytes':p.stat().st_size,'sha256':self.hashed_file(p),'metadata_sha256':self.hashed_file(p.with_suffix('.json')),'metadata_contract':CONTRACT['contracts']['qwen_final_metadata'],'labels':meta['labels'],'tensors':len(header),'lora_pairs_matched_to_nf4_metadata':matched,'adapter_payload_values_loaded':False,'finite_adapter_values_verified':False,'honest_oof_checkpoint':False}
+        return {'path':self.rel(p),'bytes':p.stat().st_size,'sha256':self.hashed_file(p),'metadata_sha256':self.hashed_file(p.with_suffix('.json')),'metadata_contract':CONTRACT['contracts']['qwen_final_metadata'],'labels':meta['labels'],'label_alignment':alignment,'tensors':len(header),'lora_pairs_matched_to_nf4_metadata':matched,'adapter_payload_values_loaded':False,'finite_adapter_values_verified':False,'honest_oof_checkpoint':False}
     def svc(self):
         p=self.local(CONTRACT['paths']['svc_prefit']);meta=read_json(p/'metadata.json');checked_labels(meta['labels'],LABELS)
         if not isinstance(meta.get('views'),list) or len(meta['views'])!=4:raise ValueError('SVC four-view metadata differs')
@@ -492,6 +506,19 @@ def self_test():
         rejects('unsafe_path_'+str(len(checks)),lambda value=value:safe_relative(value))
     rejects('wrong_label_set',lambda:checked_labels(['wrong']*18))
     rejects('wrong_label_order',lambda:checked_labels(SORTED_LABELS,LABELS))
+    accepts('qwen_canonical_native_order',lambda:qwen_label_alignment(list(LABELS)))
+    accepts('qwen_sorted_native_order',lambda:qwen_label_alignment(list(SORTED_LABELS)))
+    accepts('qwen_reversed_native_order',lambda:qwen_label_alignment(list(reversed(LABELS))))
+    rejects('qwen_duplicate_native_label',lambda:qwen_label_alignment(LABELS[:-1]+[LABELS[0]]))
+    rejects('qwen_missing_native_label',lambda:qwen_label_alignment(LABELS[:-1]))
+    rejects('qwen_unknown_native_label',lambda:qwen_label_alignment(LABELS[:-1]+['unknown']))
+    rejects('qwen_nonstring_native_label',lambda:qwen_label_alignment(LABELS[:-1]+[None]))
+    def permutation_roundtrip():
+        native=list(reversed(SORTED_LABELS));alignment=qwen_label_alignment(native)
+        native_columns=np.asarray([[LABELS.index(label) for label in native]]*2)
+        if not np.array_equal(native_columns[:,alignment['source_column_permutation_to_canonical']],np.asarray([list(range(18))]*2)):
+            raise ValueError('Label-name column alignment roundtrip differs')
+    accepts('qwen_label_name_numeric_column_roundtrip',permutation_roundtrip)
     with tempfile.TemporaryDirectory() as d:
         root=Path(d);a=Audit(root,root/'out')
         rejects('literal_missing_path',lambda:a.required({'path':'/kaggle/input/missing','source':'fixture','kind':'file'}))

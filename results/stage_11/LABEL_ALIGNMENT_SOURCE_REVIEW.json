@@ -1,0 +1,28 @@
+{
+  "source_version": 362014737,
+  "capture_json_sha256": "143351168ff87d0cd0f2712c29778dfad8acd34c1527088a19d4b42141869413",
+  "scope": "static label-axis control-flow review prompted by actual CPU V1 conservative label-order block",
+  "source_flow": [
+    {
+      "cell": 25,
+      "module": "qwen_nf4_loader.py",
+      "behavior": "reload preserves metadata labels as self.labels and requires 18 unique labels; it does not require canonical main order"
+    },
+    {
+      "cell": 28,
+      "module": "own_qwen_worker.py",
+      "behavior": "NPZ stores raw logits with the saved metadata label order"
+    },
+    {
+      "cell": 30,
+      "module": "run_fulltext_selected_ensemble.py",
+      "function": "aligned",
+      "behavior": "Validates unique same-set 18 labels and explicitly reorders columns using [labels.index(l) for l in LABELS]"
+    }
+  ],
+  "required_audit_behavior": "Accept an exact 18-label set with any raw order; retain raw order and metadata hash, derive a bijective named permutation into canonical order, and reject missing, duplicate or unexpected labels. Do not alter saved adapter/head arrays or metadata.",
+  "required_probe_behavior": "Apply the same validation and named alignment only for diagnostic probability checks; retain original saved NPZ unchanged.",
+  "actual_metadata_order_in_this_review": null,
+  "source_or_model_executed": false,
+  "reason_previous_exact_raw_order_is_wrong": "The scored source deliberately accepts noncanonical component label order and aligns by names downstream. Requiring raw main order rejects a supported input without detecting an algorithm error."
+}

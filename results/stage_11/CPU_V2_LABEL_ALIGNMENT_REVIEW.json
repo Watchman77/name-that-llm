@@ -1,0 +1,52 @@
+{
+  "stage": 11,
+  "review": "CPU V2 full-text Qwen native-label alignment correction",
+  "source_version": 362014737,
+  "source_capture_json_sha256": "143351168ff87d0cd0f2712c29778dfad8acd34c1527088a19d4b42141869413",
+  "actual_cpu_v1_version": 362118178,
+  "v1_report_modified": false,
+  "v1_original_constraint": "checked_labels(metadata.labels, canonical LABELS) required identical native head order",
+  "v1_false_block_error": "Checkpoint label order differs from its frozen source head",
+  "source_control_flow": [
+    "NF4BackboneClassifier.reload preserves metadata.labels; requires18unique labels, does not impose canonical order.",
+    "own_qwen_worker saves native model.labels next to native head logits in qwen.npz.",
+    "orchestrator aligned() requires the canonical18-label set and permutes probability/logit columns by label name.",
+    "qwen_logits=aligned(work/qwen.npz,selected_ids) is called before blend_selected."
+  ],
+  "v2_constraint": "Native labels must be a list of18strings with exactly the canonical unique label set. Record permutation [native_labels.index(label) for label in LABELS], verify it covers0..17 exactly and reconstructs canonical LABELS.",
+  "v2_does_not_modify_model_source_weights_labels_or_metadata": true,
+  "source_proof": [
+    {
+      "module": "qwen_nf4_loader.py",
+      "module_sha256": "06313ca9a045bd63eed437e93e597b956aa1f6c9d21473f2815669dfef4159be",
+      "function": "reload",
+      "function_start_line": 118,
+      "function_source_sha256": "c40e85dd176b6fde1dfbccab8d8988ba072ac84b722d3f78dbc3f2dbd2273af3"
+    },
+    {
+      "module": "own_qwen_worker.py",
+      "module_sha256": "a3e89bd76581983097b1be6630ddca06ac60ec99e3d9decdae9814e28b00ec89",
+      "function": "main",
+      "function_start_line": 11,
+      "function_source_sha256": "cd0d37161ba7e81d1c3044d5fb5a3ecf4b19180d101b8e3252fcef871e3f04bf"
+    },
+    {
+      "module": "run_fulltext_selected_ensemble.py",
+      "module_sha256": "eff5252f954dcb8132bd883de7ba23dc00803217a43334f0a9c991aefc72e91e",
+      "function": "aligned",
+      "function_start_line": 19,
+      "function_source_sha256": "a478e6f1e8760d0edf6c74c10585a7e762a59ba5fcd5df17c646f267a3b249fa"
+    }
+  ],
+  "v2_audit_script_sha256": "07d5f69ec0c0002f8679aa1599428b5b2989721e0523cb234040651015898802",
+  "v2_notebook_sha256": "282d5c47956aa90ef06a889be6904cc15a43ce671a1204bfdc9d34e1da3c963d",
+  "synthetic_checks": {
+    "passed": 37,
+    "total": 37,
+    "new_alignment_checks": 8
+  },
+  "independent_source_review": "stage11_runtime_review separately confirmed the same loader/worker/aligned control flow",
+  "real_cpu_v2_still_required": true,
+  "v1_final_adapter_tensor_checks_completed": false,
+  "no_gpu_or_model_inference_executed_by_amendment": true
+}

@@ -1,0 +1,42 @@
+{
+  "status": "PASS_FOR_CPU_EXECUTION_ONLY",
+  "source_version": 362014737,
+  "audit_script_sha256": "d4322d840b9697d19d36e83415e84dd1bc8a95dffb659510e489779c6863a8d5",
+  "notebook_sha256": "f2840b96018031207c5ce4f141d605191be305c97c06b3c0323d81f941229ce7",
+  "checks": {
+    "nbformat_schema": true,
+    "all_code_cells_compile": true,
+    "audit_script_sha_recorded": true,
+    "embedded_script_byte_exact": true,
+    "all_160_required_records_exact": true,
+    "all_source_paths_exact": true,
+    "recipe_exact": true,
+    "explicit_ledger_exact": true,
+    "NF4_file_pins_exact": true,
+    "UltraBERT_file_pins_exact": true,
+    "literal_missing_hub_blocks": true,
+    "no_alias_fallback": true,
+    "complete_tail8_LoRA_pairs_required": true,
+    "safetensors_dtype_span_overlap_validated": true,
+    "active_style_and_prefit_artifacts_required": true,
+    "no_upstream_source_or_model_execution": true,
+    "private_code_export_separate": true,
+    "runtime_feasibility_not_claimed": true,
+    "official_test_rows_not_opened": true
+  },
+  "passed": 19,
+  "total": 19,
+  "initial_findings_resolved": [
+    "Missing whole LoRA A/B pair previously accepted if layer still represented; exact NF4tail8keyset nowrequired",
+    "Any finite prefit state previously sufficient; active linear/twin/Gaussian/style/booster/mask files nowrequired",
+    "Safetensors span/dtype/overlap validation added"
+  ],
+  "limitations": [
+    "This is code/schema review, not actual mounted-input success",
+    "Safetensors payload finiteness and complete model construction remain runtime checks",
+    "Joblib/Torch payloads and runtime package compatibility remain unexecuted",
+    "Large base-weight payloads are not all SHA-hashed; source pins/headers and versioned attachments are separate identity evidence",
+    "Minor malformed-metadata cases remain outside currently declared checks, including NaN JSON temperatures or unpaired mean/scale; no actual malformed input is alleged"
+  ],
+  "reviewer": "independent stage11 runtime review agent"
+}
