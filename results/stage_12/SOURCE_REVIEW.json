@@ -1,0 +1,230 @@
+{
+  "stage": 12,
+  "review_date": "2026-10-25",
+  "source_version_id": 362013743,
+  "source_author": "Dhruv Tibarewal",
+  "source_url": "https://www.kaggle.com/code/dhruvtibarewal/nlm-v27?scriptVersionId=362013743",
+  "source_author_public_balanced_accuracy": 0.651,
+  "source_observation_origin": "Parent live Kaggle capture; reviewer independently inspected local six source cell strings only.",
+  "independent_live_page_access": false,
+  "license_supplied_by_parent": "Apache-2.0",
+  "source_author_preview_seconds_supplied_by_parent": 5251.1,
+  "source_author_accelerator_supplied_by_parent": "GPU T4 x2",
+  "capture_sha256": "0a65325bd0d001195522cf4a55d1a907465d285403fa180f46760ffd995cda6a",
+  "cell_hashes": [
+    {
+      "cell": 1,
+      "file": "source_cell_1.py",
+      "utf8_bytes": 3131,
+      "sha256": "4fc27dca93a92adfb2759ca65260e5285898d73fc8ccd1acd401982e5f98ed37",
+      "capture_string_matches_file": true,
+      "static_ast_parse_after_omitting_IPython_command_lines": "PASS"
+    },
+    {
+      "cell": 2,
+      "file": "source_cell_2.py",
+      "utf8_bytes": 8240,
+      "sha256": "b53e305fd7a755d138f931c55ac5f3762ed3978d73a65594b5ce2523fdf165ff",
+      "capture_string_matches_file": true,
+      "static_ast_parse_after_omitting_IPython_command_lines": "PASS"
+    },
+    {
+      "cell": 3,
+      "file": "source_cell_3.py",
+      "utf8_bytes": 38125,
+      "sha256": "219900bdc7d087f734a6a152b65b3ed515249afab1d82cad7915c0a41fd02adf",
+      "capture_string_matches_file": true,
+      "static_ast_parse_after_omitting_IPython_command_lines": "PASS"
+    },
+    {
+      "cell": 4,
+      "file": "source_cell_4.py",
+      "utf8_bytes": 50157,
+      "sha256": "f1bb8c65e926f0fde39e384cd500aa98162527492251dd63651e3f78b29232bf",
+      "capture_string_matches_file": true,
+      "static_ast_parse_after_omitting_IPython_command_lines": "PASS"
+    },
+    {
+      "cell": 5,
+      "file": "source_cell_5.py",
+      "utf8_bytes": 332,
+      "sha256": "16f3076335718c090271e42a36fcd4efdf3cefdb5197f83a4be75947dc75ace3",
+      "capture_string_matches_file": true,
+      "static_ast_parse_after_omitting_IPython_command_lines": "PASS"
+    },
+    {
+      "cell": 6,
+      "file": "source_cell_6.py",
+      "utf8_bytes": 1636,
+      "sha256": "03a93a666c99d8d2129083be5383cc6c3b532356a67556c9c6fbe5e20e6d9f0e",
+      "capture_string_matches_file": true,
+      "static_ast_parse_after_omitting_IPython_command_lines": "PASS"
+    }
+  ],
+  "execution_policy": {
+    "source_executed": false,
+    "models_loaded": false,
+    "serialized_payloads_unpickled": false,
+    "browser_or_GitHub_used": false
+  },
+  "verdict": "STATIC_SOURCE_REVIEW_COMPLETE; GPU_ADMISSION_PENDING_REAL_INPUT_AND_EXECUTABLE_ASSET_RECONCILIATION",
+  "main_recipe": {
+    "fold_averaged_groups": [
+      "q14v5",
+      "q8v5",
+      "ll8v5"
+    ],
+    "adapters_per_fold_averaged_group": 6,
+    "other_main_groups": [
+      "Nishant qwen3_14b",
+      "Nishant qwen25_14b",
+      "DeBERTa_v3_large"
+    ],
+    "additional_members": [
+      "four-view SVC on official train+pool",
+      "adaptive centered twins",
+      "two full-data Gaussian heads"
+    ],
+    "main_probability_normalization": "sum log-evidence divided by count of nonzero LP blocks, not sum of coefficient magnitudes",
+    "complement_probability_weight": 0.15,
+    "atlas_selected_row_weight": 0.1,
+    "atlas_margin_threshold": 0.3,
+    "sinkhorn_iterations": 100,
+    "postprocessing": [
+      "typography exclusions",
+      "Hungarian assignment for inferred groups of12-18 rows"
+    ],
+    "S05_fulltext_27B_Qwen_branch_present": false,
+    "complement_qwen3_5_token_attention_intentionally_excluded": true,
+    "complement_fixed_train_and_test_feature_backbone_families": 7,
+    "computed_but_unapplied_complement_family_gates": true
+  },
+  "main_eager_discovery_counts": {
+    "heads_pt_adapter_selectors": 37,
+    "legacy_unused_adapter_selectors": 19,
+    "active_v5_adapter_selectors": 18,
+    "nmeta_selectors": 4,
+    "mdir_config_selectors": 7
+  },
+  "visible_source_test_label_leakage_observed": false,
+  "visible_source_outward_data_transmission_observed": false,
+  "new_unbiased_CV_established": false,
+  "visible_source_leakage_limit": "No direct production test-model use found; absence of leakage in pretrained checkpoints, mounted external pools and imported custom code is not established by visible-source review.",
+  "findings": [
+    {
+      "id": "S12-01",
+      "kind": "pre_gpu_gate",
+      "severity": "high",
+      "title": "Eager glob selection is part of the exact recipe",
+      "source": [
+        "cell1:5-43",
+        "cell4:536-545,733-735,812-814,866-872"
+      ],
+      "detail": "Main cell1 eagerly resolves 37 heads.pt adapter directories (19 legacy and 18 active v5), four meta.json checkpoints and seven model config selectors, plus fixed filename selectors. Legacy unused globals still fail before the run when missing. mdir sorts all config paths; adir/nmeta select unsorted first matches. Complement config selection is by model_type/hidden size or directory name and can select a different Base/chat checkpoint. Missing complement LoRA markers are explicitly skipped.",
+      "required_action": "Reproduce exact discovery on pinned mounted inputs, enumerate every candidate and chosen path/config hash, reconcile intended author-selected Base/chat/fold versions and expected complement member set. Do not silently remove legacy requirements or substitute newer files."
+    },
+    {
+      "id": "S12-02",
+      "kind": "execution_integrity",
+      "severity": "high",
+      "title": "Successful parquet can conceal missing complement or ATLAS",
+      "source": [
+        "cell5:5",
+        "cell6:13",
+        "cell3:467-476,489-493",
+        "cell4:734-735"
+      ],
+      "detail": "IPython shell commands do not assert child return codes; complement shell pipeline ends in grep. infer.py catches missing/bad/nonfinite/misaligned complement and all ATLAS exceptions, prints SKIPPED and proceeds. Complement also skips missing LoRA markers. Main final check validates output labels/IDs/count, not numerical internals or expert inclusion. Cell5 sets NTL_DROP_Q35=1; the complement intentionally excludes Qwen3.5 token-attention, which must not be mistaken for an accidental missing expert. Family gate classifiers are computed but never consumed by saved LOGIT.",
+      "required_action": "Before claiming unchanged reproduction, reconcile author and own resolved member set and inspect complete run logs for COMP STACK DONE, complement loaded, expected ATLAS mixed and skipped experts. Add a separate final output validation cell for actual parquet readback and saved complement shape/finiteness/IDs/labels; state that unsaved main internal probabilities cannot be independently reconstructed from existing files."
+    },
+    {
+      "id": "S12-03",
+      "kind": "runtime",
+      "severity": "high",
+      "title": "ATLAS projection is advisory; no whole-process deadline",
+      "source": [
+        "cell3:37,445-460,489-493",
+        "cell5:1-7",
+        "cell6:12-13"
+      ],
+      "detail": "ATLAS_BUDGET is int(8.3*3600-COMP_SEC-600). infer T0 starts after complement. ATLAS budget checks a projected finish only at batches 4,104,... and only enforces after more than50 rows; model loading and earlier experts have no hard watchdog. A budget exception skips ATLAS rather than terminating the notebook. Main and complement have no OOM batch-backoff or enforced whole-process timeout. Complement extracts both all official train and test features for seven backbone families, creating substantial fixed preview work.",
+      "required_action": "Apply the verified competition 9-hour GPU execution cap, read free GPU quota and actual T4x2 allocation, retain actual stage durations and fallback logs. The source-author preview5251.1s supplied by parent is not a measured hidden runtime or ETA. Do not claim CPU audit proves GPU throughput."
+    },
+    {
+      "id": "S12-04",
+      "kind": "correctness_scope",
+      "severity": "medium",
+      "title": "Fold average is a prediction ensemble, not OOF validation",
+      "source": [
+        "cell1:40-43",
+        "cell3:299-340,354-367",
+        "cell6:3-9",
+        "cell4:33-49,75-94,890-897"
+      ],
+      "detail": "Active q14v5, q8v5 and ll8v5 each use five fold adapters plus a full-data adapter; their log probabilities are averaged, not their probabilities. Gaussian train features are extracted only under the final adapter and Gaussian parameters are fitted on all current official train rows. Tiny-preview checks use40 training rows already seen by fitted components. infer --sim splits prompt groups for newly fitted heads but does not reselect/retrain fixed adapters or imported readouts. Comments citing earlier grouped OOF weights are provenance claims, not verified new CV.",
+      "required_action": "Describe this as fixed hidden-test inference/reproduction. Do not report in-sample checks, fold averaging or smoke/sim output as unbiased development balanced accuracy without independent checkpoint training provenance and exclusion evidence."
+    },
+    {
+      "id": "S12-05",
+      "kind": "security_boundary",
+      "severity": "medium",
+      "title": "Mounted executable code and deserializers remain a separate trust boundary",
+      "source": [
+        "cell1:5-6",
+        "cell3:310,438-447",
+        "cell4:717-722,742,814,873-878"
+      ],
+      "detail": "Visible cells contain no explicit paid API client, requests/socket/download command, hidden-test label lookup or outward data transmission. Runtime nevertheless installs every matching bitsandbytes wheel offline (only prints returncode), imports mounted ntl_atlas/ntl_rlcd code, loads Torch heads and PEFT adapters and runs UltraBERT trust_remote_code=True. This source-only review has not opened those payloads or custom modules. Torch load safety depends on actual installed version/defaults; no unconditional arbitrary-code safety claim is made.",
+      "required_action": "Pin and hash offline wheel selection, custom ATLAS/UltraBERT source and serializer payloads; statically inspect imported code before GPU. Verify local assets complete under Internet-off and record actual package versions. Clear NTL_SMOKE/NTL_TINY/NTL_FAKE_TEST and related diagnostic overrides for production. Do not execute or unpickle data during CPU static audit."
+    },
+    {
+      "id": "S12-06",
+      "kind": "numeric_and_heuristic_risk",
+      "severity": "medium",
+      "title": "Frozen numeric fallbacks and postprocessing have limitations",
+      "source": [
+        "cell3:294-297,307-331,480-511",
+        "cell4:583-595,852"
+      ],
+      "detail": "LoRA merge then subtract is done in fp16 and need not restore original base weights bit-exactly; BF16 retries are not followed by a second finite assertion. Complement pools replace nonfinite values with nan_to_num, and main output argmax can still yield a valid label when unsaved internals are nonfinite. Main normalizes log-evidence by the count of nonzero LP blocks, then mixes15% complement and selected-row10% ATLAS, balances100 times, applies typography exclusions and Hungarian for inferred12-18-row groups. Uniform balancing and injective grouping are heuristics, not proven test label counts.",
+      "required_action": "Preserve these operations for exact reproduction; do not tune or repair them silently. Record fallback counts/skip messages and test available numeric artifacts. State unsaved internal-finiteness and hidden-runtime limitations."
+    }
+  ],
+  "required_pre_gpu_gates": [
+    "Pin all31 parent-reported inputs and reproduce every eager main and complement discovery, including all candidate matches and selected hashes.",
+    "Audit active and source-mandatory legacy schemas, adapter/head pairs, model/tokenizer identity and label permutations without pickle execution.",
+    "Reconcile source-author versus own optional complement members and review mounted executable ATLAS/UltraBERT code and offline wheels.",
+    "Record Internet-off, actual environment, free GPU quota and T4x2 allocation against9h competition cap.",
+    "Freeze six source cells byte-exactly; add separate output guard and establish own full-preview/fallback outcome before one official submission."
+  ],
+  "output_guard_scope": {
+    "saved_source_artifacts": [
+      "/kaggle/working/comp_logit.npy",
+      "/kaggle/working/comp_meta.json",
+      "/kaggle/working/submission.parquet"
+    ],
+    "must_check": [
+      "real saved parquet readback; exact test IDs/order/unique/count; only known18labels; expected columns/noindex",
+      "complement array n-by18 finite, metadata IDs equal real test IDs and18unique canonical label names",
+      "runtime logs and actual expected complement/ATLAS member inclusion; no silent expert-loss claim"
+    ],
+    "not_established_by_saved_artifacts": [
+      "full unsaved main-member probability tensors",
+      "exact full-blend/postprocessing reconstruction",
+      "unbiased CV or private leaderboard score",
+      "hidden full-runtime guarantee"
+    ]
+  },
+  "practical_recommendation": "No definitive visible-source fatal algorithm or explicit network/test-label violation found. Finish the bounded real-input and executable-asset gates; if they pass and actual free quota permits, one exact free-Kaggle reproduction is reasonable. Do not demand duplicate training, promise0.651 as own score, or extrapolate70%.",
+  "independent_second_reviewer": {
+    "scope": "Local source cells4-6, static only; no execution/unpickle/browser",
+    "confirmed": [
+      "unchecked shell/complement/ATLAS failure paths",
+      "intentional Qwen3.5 token-attention exclusion",
+      "all-train+test feature work in seven complementary backbone families",
+      "computed but unused family gates",
+      "no production hidden-test labels found",
+      "finite-output repairs do not prove healthy intermediate activations"
+    ]
+  }
+}

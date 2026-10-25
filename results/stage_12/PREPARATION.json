@@ -1,0 +1,174 @@
+{
+  "stage": 12,
+  "date_verified": "2026-10-25",
+  "source_author": "Dhruv Tibarewal",
+  "source_version": 362013743,
+  "source_public_balanced_accuracy": 0.651,
+  "own_best_official_public_balanced_accuracy": 0.642,
+  "own_score": null,
+  "source_url": "https://www.kaggle.com/code/dhruvtibarewal/nlm-v27?scriptVersionId=362013743",
+  "own_private_notebook": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=362254770",
+  "own_quick_version": 1,
+  "own_script_version_id": 362254770,
+  "source_code_cells": 6,
+  "saved_code_cells_exact_matches": 6,
+  "saved_code_verification": "Actual saved V1 JSON displayed in Show Versions compared with six visible upstream rendered input-cell strings; all equal. Quick Version +0/-0.",
+  "privacy": "Private confirmed in Share dialog; only owner listed",
+  "model_code_execution_requested": false,
+  "cpu_or_gpu_model_executed": false,
+  "paid_services_used": false,
+  "official_submission": false,
+  "final_selections_changed": false,
+  "source_capture_sha256": "0a65325bd0d001195522cf4a55d1a907465d285403fa180f46760ffd995cda6a",
+  "cell_sha256": [
+    "4fc27dca93a92adfb2759ca65260e5285898d73fc8ccd1acd401982e5f98ed37",
+    "b53e305fd7a755d138f931c55ac5f3762ed3978d73a65594b5ce2523fdf165ff",
+    "219900bdc7d087f734a6a152b65b3ed515249afab1d82cad7915c0a41fd02adf",
+    "f1bb8c65e926f0fde39e384cd500aa98162527492251dd63651e3f78b29232bf",
+    "16f3076335718c090271e42a36fcd4efdf3cefdb5197f83a4be75947dc75ace3",
+    "03a93a666c99d8d2129083be5383cc6c3b532356a67556c9c6fbe5e20e6d9f0e"
+  ],
+  "local_source_notebook_sha256": "adbd6994b545546f137a1d284f79515f9e8e6e5005820bb671859f0abecce2d5",
+  "saved_kaggle_metadata": {
+    "accelerator": "nvidiaTeslaT4",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20736096
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20819121
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20831302
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20847146
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20858502
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20934027
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21008519
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21011978
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21062729
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21097171
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21116786
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21119693
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21145399
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21203279
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358683059
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358758062
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358770408
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358911769
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358928013
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358948428
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 359652568
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 104433
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166254
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166265
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363135
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363139
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363140
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363149
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363153
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "source_inputs_frozen": 31,
+  "input_pinning_scope": "These are the exact copied V1 saved input IDs. Author original input IDs have not been independently exported; mounted paths and identities must be checked against source selectors and displayed author logs.",
+  "actual_free_gpu_quota_dialog": "29 hours remaining out of 30 weekly; observed Enable GPU dialog, then Cancel. Sidebar 00:51 is not interpreted as remaining time.",
+  "draft_accelerator_after_inspection": "None",
+  "internet": "Off",
+  "source_author_preview_seconds": 5251.1,
+  "source_author_preview_accelerator": "GPU T4 x2",
+  "source_preview_scope": "Real three-row model execution with all-train feature work; not a hidden-test duration or own result",
+  "llama_access_warning": "Editor displays attached-model warning for Llama3.1; virtual file tree lists four weight shards. Actual CPU mount audit pending; no new licence acceptance performed."
+}

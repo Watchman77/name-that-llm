@@ -1,0 +1,1502 @@
+{
+  "source_version": 362013743,
+  "source_author": "Dhruv (nlm-v27)",
+  "source_author_public_score": 0.651,
+  "capture_json_sha256": "0a65325bd0d001195522cf4a55d1a907465d285403fa180f46760ffd995cda6a",
+  "scope": "Read-only static AST/literal extraction; source never imported or executed. Runtime metadata/hashes still require actual mounted input audit.",
+  "source_cells": [
+    {
+      "cell": 1,
+      "sha256": "4fc27dca93a92adfb2759ca65260e5285898d73fc8ccd1acd401982e5f98ed37",
+      "bytes": 3131
+    },
+    {
+      "cell": 2,
+      "sha256": "b53e305fd7a755d138f931c55ac5f3762ed3978d73a65594b5ce2523fdf165ff",
+      "bytes": 8240
+    },
+    {
+      "cell": 3,
+      "sha256": "219900bdc7d087f734a6a152b65b3ed515249afab1d82cad7915c0a41fd02adf",
+      "bytes": 38125
+    },
+    {
+      "cell": 4,
+      "sha256": "f1bb8c65e926f0fde39e384cd500aa98162527492251dd63651e3f78b29232bf",
+      "bytes": 50157
+    },
+    {
+      "cell": 5,
+      "sha256": "16f3076335718c090271e42a36fcd4efdf3cefdb5197f83a4be75947dc75ace3",
+      "bytes": 332
+    },
+    {
+      "cell": 6,
+      "sha256": "03a93a666c99d8d2129083be5383cc6c3b532356a67556c9c6fbe5e20e6d9f0e",
+      "bytes": 1636
+    }
+  ],
+  "inlined_modules": [
+    {
+      "source_cell": 2,
+      "file": "gauss.py",
+      "sha256": "908b57113f1a7b8ebdbf204c6be87cbc385f765ba50ac07b4e270c64b7cf1000",
+      "bytes": 8219
+    },
+    {
+      "source_cell": 3,
+      "file": "infer.py",
+      "sha256": "4c93832f1615f50f5382afd4e94c841a9c1ed9cd1ac555cfc06d02b840d8c1f1",
+      "bytes": 38104
+    },
+    {
+      "source_cell": 4,
+      "file": "comp_stack.py",
+      "sha256": "91f107b4fd3477da75720d8c3cedbb2e739fcd014ba19014f00cc2ab238ef06b",
+      "bytes": 50131
+    }
+  ],
+  "main_selectors": [
+    {
+      "name": "B8",
+      "glob": "/kaggle/input/**/config.json",
+      "substring_filters_lower": [
+        "/qwen-3/",
+        "/8b-base/"
+      ],
+      "ordering": "sorted paths; first matching all substrings",
+      "kind": "model_directory",
+      "required": true
+    },
+    {
+      "name": "B14",
+      "glob": "/kaggle/input/**/config.json",
+      "substring_filters_lower": [
+        "/qwen-3/",
+        "/14b-base/"
+      ],
+      "ordering": "sorted paths; first matching all substrings",
+      "kind": "model_directory",
+      "required": true
+    },
+    {
+      "name": "B25",
+      "glob": "/kaggle/input/**/config.json",
+      "substring_filters_lower": [
+        "/qwen2.5/",
+        "/7b/"
+      ],
+      "ordering": "sorted paths; first matching all substrings",
+      "kind": "model_directory",
+      "required": true
+    },
+    {
+      "name": "I8",
+      "glob": "/kaggle/input/**/config.json",
+      "substring_filters_lower": [
+        "/qwen-3/",
+        "/8b/"
+      ],
+      "ordering": "sorted paths; first matching all substrings",
+      "kind": "model_directory",
+      "required": true
+    },
+    {
+      "name": "I14",
+      "glob": "/kaggle/input/**/config.json",
+      "substring_filters_lower": [
+        "/qwen-3/",
+        "/14b/"
+      ],
+      "ordering": "sorted paths; first matching all substrings",
+      "kind": "model_directory",
+      "required": true
+    },
+    {
+      "name": "BL",
+      "glob": "/kaggle/input/**/config.json",
+      "substring_filters_lower": [
+        "/llama-3.1/",
+        "/8b/"
+      ],
+      "ordering": "sorted paths; first matching all substrings",
+      "kind": "model_directory",
+      "required": true
+    },
+    {
+      "name": "B25_14",
+      "glob": "/kaggle/input/**/config.json",
+      "substring_filters_lower": [
+        "/qwen2.5/",
+        "/14b/"
+      ],
+      "ordering": "sorted paths; first matching all substrings",
+      "kind": "model_directory",
+      "required": true
+    },
+    {
+      "name": "ts_q3b8_f0",
+      "family": "A8",
+      "glob": "/kaggle/input/**/ts_q3b8_f0/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_q3b8_f1",
+      "family": "A8",
+      "glob": "/kaggle/input/**/ts_q3b8_f1/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_q3b8_f2",
+      "family": "A8",
+      "glob": "/kaggle/input/**/ts_q3b8_f2/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_q3b8_f3",
+      "family": "A8",
+      "glob": "/kaggle/input/**/ts_q3b8_f3/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_q3b8_f4",
+      "family": "A8",
+      "glob": "/kaggle/input/**/ts_q3b8_f4/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_q3b8",
+      "family": "A8",
+      "glob": "/kaggle/input/**/ts_q3b8/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_q3b14_f0",
+      "family": "A14",
+      "glob": "/kaggle/input/**/ts_q3b14_f0/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_q3b14_f2",
+      "family": "A14",
+      "glob": "/kaggle/input/**/ts_q3b14_f2/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_q3b14_f4",
+      "family": "A14",
+      "glob": "/kaggle/input/**/ts_q3b14_f4/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_q3b14",
+      "family": "A14",
+      "glob": "/kaggle/input/**/ts_q3b14/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_q25_7b",
+      "family": "A25",
+      "glob": "/kaggle/input/**/ts_q25_7b/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_llama8_f0",
+      "family": "AL",
+      "glob": "/kaggle/input/**/ts_llama8_f0/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_llama8_f2",
+      "family": "AL",
+      "glob": "/kaggle/input/**/ts_llama8_f2/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_llama8_f4",
+      "family": "AL",
+      "glob": "/kaggle/input/**/ts_llama8_f4/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts_llama8",
+      "family": "AL",
+      "glob": "/kaggle/input/**/ts_llama8/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts8_s7_f0",
+      "family": "A8S7",
+      "glob": "/kaggle/input/**/ts8_s7_f0/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts8_s7_f2",
+      "family": "A8S7",
+      "glob": "/kaggle/input/**/ts8_s7_f2/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts8_s7_f4",
+      "family": "A8S7",
+      "glob": "/kaggle/input/**/ts8_s7_f4/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "ts8_s7",
+      "family": "A8S7",
+      "glob": "/kaggle/input/**/ts8_s7/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": false
+    },
+    {
+      "name": "q8v5_f0",
+      "family": "AQ8V5",
+      "glob": "/kaggle/input/**/q8v5_f0/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q8v5_f1",
+      "family": "AQ8V5",
+      "glob": "/kaggle/input/**/q8v5_f1/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q8v5_f2",
+      "family": "AQ8V5",
+      "glob": "/kaggle/input/**/q8v5_f2/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q8v5_f3",
+      "family": "AQ8V5",
+      "glob": "/kaggle/input/**/q8v5_f3/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q8v5_f4",
+      "family": "AQ8V5",
+      "glob": "/kaggle/input/**/q8v5_f4/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q8v5",
+      "family": "AQ8V5",
+      "glob": "/kaggle/input/**/q8v5/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q14v5_f0",
+      "family": "AQ14V5",
+      "glob": "/kaggle/input/**/q14v5_f0/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q14v5_f1",
+      "family": "AQ14V5",
+      "glob": "/kaggle/input/**/q14v5_f1/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q14v5_f2",
+      "family": "AQ14V5",
+      "glob": "/kaggle/input/**/q14v5_f2/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q14v5_f3",
+      "family": "AQ14V5",
+      "glob": "/kaggle/input/**/q14v5_f3/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q14v5_f4",
+      "family": "AQ14V5",
+      "glob": "/kaggle/input/**/q14v5_f4/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "q14v5",
+      "family": "AQ14V5",
+      "glob": "/kaggle/input/**/q14v5/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "ll8v5_f0",
+      "family": "ALL8V5",
+      "glob": "/kaggle/input/**/ll8v5_f0/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "ll8v5_f1",
+      "family": "ALL8V5",
+      "glob": "/kaggle/input/**/ll8v5_f1/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "ll8v5_f2",
+      "family": "ALL8V5",
+      "glob": "/kaggle/input/**/ll8v5_f2/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "ll8v5_f3",
+      "family": "ALL8V5",
+      "glob": "/kaggle/input/**/ll8v5_f3/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "ll8v5_f4",
+      "family": "ALL8V5",
+      "glob": "/kaggle/input/**/ll8v5_f4/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "ll8v5",
+      "family": "ALL8V5",
+      "glob": "/kaggle/input/**/ll8v5/heads.pt",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "main_adapter_directory_from_head_parent",
+      "required": true,
+      "active_main_family": true
+    },
+    {
+      "name": "lora8b_v1",
+      "glob": "/kaggle/input/**/lora8b_v1/meta.json",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "metadata_parent",
+      "required": true,
+      "metadata_cfg_required": true
+    },
+    {
+      "name": "lora14b_v1",
+      "glob": "/kaggle/input/**/lora14b_v1/meta.json",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "metadata_parent",
+      "required": true,
+      "metadata_cfg_required": true
+    },
+    {
+      "name": "lora_qwen3_14b",
+      "glob": "/kaggle/input/**/lora_qwen3_14b/meta.json",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "metadata_parent",
+      "required": true,
+      "metadata_cfg_required": true
+    },
+    {
+      "name": "lora_qwen25_14b",
+      "glob": "/kaggle/input/**/lora_qwen25_14b/meta.json",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "metadata_parent",
+      "required": true,
+      "metadata_cfg_required": true
+    },
+    {
+      "name": "HEADS",
+      "glob": "/kaggle/input/**/heads/q3_8bx.npz",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "file_or_parent",
+      "required": true
+    },
+    {
+      "name": "EXTRA",
+      "glob": "/kaggle/input/**/nlm_matched_clean.parquet",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "file_or_parent",
+      "required": true
+    },
+    {
+      "name": "POOL",
+      "glob": "/kaggle/input/**/nlm_pool_v5.parquet",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "file_or_parent",
+      "required": true
+    },
+    {
+      "name": "ATLAS",
+      "glob": "/kaggle/input/**/atlas_bundle.json",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "file_or_parent",
+      "required": true
+    },
+    {
+      "name": "DEB",
+      "glob": "/kaggle/input/**/deberta_v3_large/meta.json",
+      "ordering": "glob-native first, UNSORTED",
+      "kind": "file_or_parent",
+      "required": true
+    }
+  ],
+  "main_adapter_families": {
+    "A8": [
+      "ts_q3b8_f0",
+      "ts_q3b8_f1",
+      "ts_q3b8_f2",
+      "ts_q3b8_f3",
+      "ts_q3b8_f4",
+      "ts_q3b8"
+    ],
+    "A14": [
+      "ts_q3b14_f0",
+      "ts_q3b14_f2",
+      "ts_q3b14_f4",
+      "ts_q3b14"
+    ],
+    "A25": [
+      "ts_q25_7b"
+    ],
+    "AL": [
+      "ts_llama8_f0",
+      "ts_llama8_f2",
+      "ts_llama8_f4",
+      "ts_llama8"
+    ],
+    "A8S7": [
+      "ts8_s7_f0",
+      "ts8_s7_f2",
+      "ts8_s7_f4",
+      "ts8_s7"
+    ],
+    "AQ8V5": [
+      "q8v5_f0",
+      "q8v5_f1",
+      "q8v5_f2",
+      "q8v5_f3",
+      "q8v5_f4",
+      "q8v5"
+    ],
+    "AQ14V5": [
+      "q14v5_f0",
+      "q14v5_f1",
+      "q14v5_f2",
+      "q14v5_f3",
+      "q14v5_f4",
+      "q14v5"
+    ],
+    "ALL8V5": [
+      "ll8v5_f0",
+      "ll8v5_f1",
+      "ll8v5_f2",
+      "ll8v5_f3",
+      "ll8v5_f4",
+      "ll8v5"
+    ]
+  },
+  "main_adapter_selector_count": 37,
+  "complement_selectors": [
+    {
+      "name": "glm9b",
+      "glob": "/kaggle/input/**/config.json",
+      "model_type": "glm4",
+      "hidden_size": 4096,
+      "ordering": "sorted paths, first matching config json; no source weight-existence filter",
+      "required": true
+    },
+    {
+      "name": "q3_8b",
+      "glob": "/kaggle/input/**/config.json",
+      "model_type": "qwen3",
+      "hidden_size": 4096,
+      "ordering": "sorted paths, first matching config json; no source weight-existence filter",
+      "required": true
+    },
+    {
+      "name": "q25_7b",
+      "glob": "/kaggle/input/**/config.json",
+      "model_type": "qwen2",
+      "hidden_size": 3584,
+      "ordering": "sorted paths, first matching config json; no source weight-existence filter",
+      "required": true
+    },
+    {
+      "name": "q3_4b",
+      "glob": "/kaggle/input/**/config.json",
+      "model_type": "qwen3",
+      "hidden_size": 2560,
+      "ordering": "sorted paths, first matching config json; no source weight-existence filter",
+      "required": true
+    },
+    {
+      "name": "debv3l",
+      "glob": "/kaggle/input/**/deberta-v3-large/config.json",
+      "directory_name": "deberta-v3-large",
+      "ordering": "sorted paths, first parseable config; source does not check model_type when directory_name supplied",
+      "required": true
+    },
+    {
+      "name": "electl",
+      "glob": "/kaggle/input/**/electra-large-discriminator/config.json",
+      "directory_name": "electra-large-discriminator",
+      "ordering": "sorted paths, first parseable config; source does not check model_type when directory_name supplied",
+      "required": true
+    },
+    {
+      "name": "desk",
+      "glob": "/kaggle/input/**/desklib-detector/config.json",
+      "directory_name": "desklib-detector",
+      "ordering": "sorted paths, first parseable config; source does not check model_type when directory_name supplied",
+      "required": true
+    },
+    {
+      "name": "lora24_public",
+      "glob": "/kaggle/input/**/lora24/final/COMPLETE.json",
+      "ordering": "sorted paths, first",
+      "source_allows_missing_member_skip": true,
+      "trunk_spec": [
+        "qwen3",
+        4096,
+        24
+      ],
+      "pool_layers": [
+        2,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "norms_file": "heads.safetensors",
+      "anchor_file": "anchor_features.npz",
+      "relative_assets": [
+        "adapter/adapter_config.json",
+        "adapter/adapter_model.safetensors",
+        "heads.safetensors",
+        "readouts.npz",
+        "tokenizer"
+      ]
+    },
+    {
+      "name": "lora24_seed7",
+      "glob": "/kaggle/input/**/name-that-llm-train-lora24-s7/lora_out/job_final/COMPLETE.json",
+      "ordering": "sorted paths, first",
+      "source_allows_missing_member_skip": true,
+      "trunk_spec": [
+        "qwen3",
+        4096,
+        24
+      ],
+      "pool_layers": [
+        2,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "norms_file": "norms.safetensors",
+      "anchor_file": "valid_features.npz",
+      "relative_assets": [
+        "adapter/adapter_config.json",
+        "adapter/adapter_model.safetensors",
+        "norms.safetensors",
+        "readouts.npz",
+        "tokenizer"
+      ]
+    },
+    {
+      "name": "lora24_claude",
+      "glob": "/kaggle/input/**/ntl-qwen3-8b-lora-claude-head/**/final/COMPLETE.json",
+      "ordering": "sorted paths, first",
+      "source_allows_missing_member_skip": true,
+      "trunk_spec": [
+        "qwen3",
+        4096,
+        24
+      ],
+      "pool_layers": [
+        2,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "norms_file": "heads.safetensors",
+      "anchor_file": "anchor_features.npz",
+      "relative_assets": [
+        "adapter/adapter_config.json",
+        "adapter/adapter_model.safetensors",
+        "heads.safetensors",
+        "readouts.npz",
+        "tokenizer"
+      ]
+    },
+    {
+      "name": "lora20_q25_instyle",
+      "glob": "/kaggle/input/**/ntl-train-lora-qwen25-instyle/lora_out/job_final/COMPLETE.json",
+      "ordering": "sorted paths, first",
+      "source_allows_missing_member_skip": true,
+      "trunk_spec": [
+        "qwen2",
+        3584,
+        20
+      ],
+      "pool_layers": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        16,
+        20
+      ],
+      "norms_file": "norms.safetensors",
+      "anchor_file": "valid_features.npz",
+      "relative_assets": [
+        "adapter/adapter_config.json",
+        "adapter/adapter_model.safetensors",
+        "norms.safetensors",
+        "readouts.npz",
+        "tokenizer"
+      ]
+    },
+    {
+      "name": "tokattn_deb",
+      "glob": "/kaggle/input/**/tokattn_debl23_final.pt",
+      "ordering": "sorted paths, first",
+      "required": true,
+      "serialized_torch_state": true
+    },
+    {
+      "name": "tokattn_q35",
+      "glob": "/kaggle/input/**/tokattn_final.pt",
+      "required": false,
+      "reason": "source cell5 sets NTL_DROP_Q35=1; not active in this frozen run"
+    },
+    {
+      "name": "ultrabert",
+      "glob": "/kaggle/input/**/ultrabert-380m-ntl",
+      "ordering": "glob-native first root with ==5 sorted fold* dirs whose config model_type=ultrabert",
+      "required": true,
+      "trust_remote_code": true
+    }
+  ],
+  "literal_constants_by_source_cell": {
+    "1": {
+      "DEB": "/kaggle/working/deberta_v3_large"
+    },
+    "2": {
+      "K": 18,
+      "DEFAULT": {
+        "red": "wpca",
+        "d": 256,
+        "se_shrink": "lw",
+        "sp_shrink": "lw",
+        "lam_floor": 0.0001,
+        "n_exact": 3,
+        "inj": true,
+        "iters": 5,
+        "repel": true,
+        "sp_scale": 1.0
+      },
+      "_MASK": {},
+      "LAM_DIFF": 1000000.0
+    },
+    "3": {
+      "LABELS": [
+        "claude-fable-5",
+        "claude-opus-4-6",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-5",
+        "gemini-3.1-pro-preview",
+        "gemini-3.6-flash",
+        "gemini-3.7-flash",
+        "gemini-3.8-flash",
+        "glm-5.3",
+        "glm-5.3-flash",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-6-astra",
+        "kimi-k3",
+        "qwen3.8-max"
+      ],
+      "LP": {},
+      "mats_tr": [],
+      "mats_te": [],
+      "TPL": "Identify which AI language model wrote the following passage, based only on its writing style.\n\nPassage:\n{}\n\nThe author model is:",
+      "COMP_P": null
+    },
+    "4": {
+      "LABELS": [
+        "claude-fable-5",
+        "claude-opus-4-6",
+        "claude-opus-4-8",
+        "claude-opus-5",
+        "claude-sonnet-5",
+        "gemini-3.1-pro-preview",
+        "gemini-3.6-flash",
+        "gemini-3.7-flash",
+        "gemini-3.8-flash",
+        "glm-5.3",
+        "glm-5.3-flash",
+        "gpt-5.5",
+        "gpt-5.6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-6-astra",
+        "kimi-k3",
+        "qwen3.8-max"
+      ],
+      "GROUP_THRESH": 0.6,
+      "GROUP_LAYER": 24,
+      "GROUP_MIN": 2,
+      "GROUP_MAX": 18,
+      "STYLE_GROUP_THRESH": 0.9,
+      "W": {
+        "stylegram": 1.516,
+        "stylometry_lgb": 0.063,
+        "ultrabert": 0.095,
+        "q3_8b": 0.0,
+        "q25_7b": 0.0,
+        "q3_4b": 0.0,
+        "glm9b": 0.0,
+        "debv3l": 0.05,
+        "electl": 0.032,
+        "desk": 0.132,
+        "lora24_public": 0.177,
+        "lora24_seed7": 0.113,
+        "lora24_claude": 0.177,
+        "lora20_q25_instyle": 0.17,
+        "tokattn_q35": 0.153,
+        "tokattn_deb": 0.185
+      },
+      "TWIN_W": {
+        "q3_8b": 0.3285,
+        "q25_7b": 0.21149999999999997,
+        "q3_4b": 0.1245,
+        "glm9b": 0.165,
+        "debv3l": 0.25
+      },
+      "LORA_TWIN_W": {
+        "lora24_public": 0.15,
+        "lora24_claude": 0.15
+      },
+      "GATE_LAM": {
+        "claude_style": 1.5,
+        "claude_lora": 1.0,
+        "family": 0.25
+      },
+      "BALANCE_ALPHA": 0.5,
+      "EXTRA_MIN_LABELS": 12,
+      "EXTRA_SHARE": 0.5,
+      "GAUSS_HEADS": {
+        "gauss_q3_8b_L22": {
+          "src": "q3_8b",
+          "part": "L22_mean",
+          "d": 384,
+          "T1": 2.351,
+          "Tg": 2.306,
+          "w": 0.3285
+        },
+        "gauss_glm9b_L8": {
+          "src": "glm9b",
+          "part": "L8_mean",
+          "d": 384,
+          "T1": 2.722,
+          "Tg": 2.596,
+          "w": 0.165
+        },
+        "gauss_q3_4b_L4": {
+          "src": "q3_4b",
+          "part": "L4_mean",
+          "d": 384,
+          "T1": 2.725,
+          "Tg": 2.578,
+          "w": 0.1245
+        },
+        "gauss_debv3l_L24": {
+          "src": "debv3l",
+          "part": "L24_mean",
+          "d": 384,
+          "T1": 3.112,
+          "Tg": 3.069,
+          "w": 0.25
+        }
+      },
+      "GAUSS_SETTING": {
+        "red": "wpca",
+        "se_shrink": "lw",
+        "sp_shrink": "lw",
+        "lam_floor": 0.0001,
+        "n_exact": 3,
+        "inj": true,
+        "iters": 5,
+        "repel": true,
+        "sp_scale": 1.0
+      },
+      "LM_HEADS": [
+        [
+          "glm9b",
+          "glm4",
+          4096,
+          [
+            [
+              8,
+              "mean"
+            ],
+            [
+              3,
+              "mean"
+            ]
+          ],
+          [
+            [
+              24,
+              "mean"
+            ]
+          ],
+          0.0025
+        ],
+        [
+          "q3_8b",
+          "qwen3",
+          4096,
+          [
+            [
+              7,
+              "mean"
+            ],
+            [
+              22,
+              "mean"
+            ]
+          ],
+          [],
+          0.0025
+        ],
+        [
+          "q25_7b",
+          "qwen2",
+          3584,
+          [
+            [
+              6,
+              "mean"
+            ],
+            [
+              20,
+              "mean"
+            ]
+          ],
+          [],
+          0.0025
+        ],
+        [
+          "q3_4b",
+          "qwen3",
+          2560,
+          [
+            [
+              4,
+              "style"
+            ],
+            [
+              7,
+              "style"
+            ]
+          ],
+          [
+            [
+              4,
+              "mean"
+            ]
+          ],
+          0.0025
+        ]
+      ],
+      "ENC_HEADS": [
+        [
+          "debv3l",
+          "deberta-v3-large",
+          [
+            [
+              24,
+              "mean"
+            ],
+            [
+              6,
+              "mean"
+            ]
+          ],
+          0.005
+        ],
+        [
+          "electl",
+          "electra-large-discriminator",
+          [
+            [
+              21,
+              "mean"
+            ],
+            [
+              24,
+              "style"
+            ]
+          ],
+          0.005
+        ],
+        [
+          "desk",
+          "desklib-detector",
+          [
+            [
+              23,
+              "mean"
+            ],
+            [
+              23,
+              "style"
+            ]
+          ],
+          0.005
+        ]
+      ],
+      "LORA_RUNS": [
+        [
+          [
+            "qwen3",
+            4096,
+            24
+          ],
+          [
+            2,
+            4,
+            6,
+            8,
+            12,
+            16,
+            20,
+            24
+          ],
+          [
+            [
+              "lora24_public",
+              "**/lora24/final/COMPLETE.json",
+              "heads.safetensors",
+              "anchor_features.npz"
+            ],
+            [
+              "lora24_seed7",
+              "**/name-that-llm-train-lora24-s7/lora_out/job_final/COMPLETE.json",
+              "norms.safetensors",
+              "valid_features.npz"
+            ],
+            [
+              "lora24_claude",
+              "**/ntl-qwen3-8b-lora-claude-head/**/final/COMPLETE.json",
+              "heads.safetensors",
+              "anchor_features.npz"
+            ]
+          ]
+        ],
+        [
+          [
+            "qwen2",
+            3584,
+            20
+          ],
+          [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            16,
+            20
+          ],
+          [
+            [
+              "lora20_q25_instyle",
+              "**/ntl-train-lora-qwen25-instyle/lora_out/job_final/COMPLETE.json",
+              "norms.safetensors",
+              "valid_features.npz"
+            ]
+          ]
+        ]
+      ],
+      "LORA_MAX_LEN": 447,
+      "LORA_BS": 8,
+      "TOKATTN_HEADS": [
+        [
+          "tokattn_q35",
+          "tokattn_final.pt",
+          "qwen3_5"
+        ],
+        [
+          "tokattn_deb",
+          "tokattn_debl23_final.pt",
+          "deberta"
+        ]
+      ],
+      "G_TE": null,
+      "GROUP_ROWS": null,
+      "GATES": {},
+      "K": 18,
+      "DEFAULT": {
+        "red": "wpca",
+        "d": 256,
+        "se_shrink": "lw",
+        "sp_shrink": "lw",
+        "lam_floor": 0.0001,
+        "n_exact": 3,
+        "inj": true,
+        "iters": 5,
+        "repel": true,
+        "sp_scale": 1.0
+      },
+      "_MASK": {},
+      "LAM_DIFF": 1000000.0,
+      "CACHED_PARTS": {}
+    },
+    "5": {},
+    "6": {
+      "W_N14": 1.0,
+      "W_N8": 0.5,
+      "L": [
+        2,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20,
+        24
+      ]
+    }
+  },
+  "all_source_glob_calls": [
+    {
+      "cell": 1,
+      "line": 5,
+      "expression": "glob.glob('/kaggle/input/**/bitsandbytes-*.whl', recursive=True)",
+      "literal_arg": "/kaggle/input/**/bitsandbytes-*.whl"
+    },
+    {
+      "cell": 1,
+      "line": 7,
+      "expression": "glob.glob('/kaggle/input/**/config.json', recursive=True)",
+      "literal_arg": "/kaggle/input/**/config.json"
+    },
+    {
+      "cell": 1,
+      "line": 12,
+      "expression": "glob.glob(f'/kaggle/input/**/{name}/heads.pt', recursive=True)",
+      "literal_arg": null
+    },
+    {
+      "cell": 1,
+      "line": 24,
+      "expression": "glob.glob(f'/kaggle/input/**/{name}/meta.json', recursive=True)",
+      "literal_arg": null
+    },
+    {
+      "cell": 1,
+      "line": 15,
+      "expression": "glob.glob('/kaggle/input/**/nlm_matched_clean.parquet', recursive=True)",
+      "literal_arg": "/kaggle/input/**/nlm_matched_clean.parquet"
+    },
+    {
+      "cell": 1,
+      "line": 16,
+      "expression": "glob.glob('/kaggle/input/**/nlm_pool_v5.parquet', recursive=True)",
+      "literal_arg": "/kaggle/input/**/nlm_pool_v5.parquet"
+    },
+    {
+      "cell": 1,
+      "line": 37,
+      "expression": "glob.glob('/kaggle/input/**/deberta_v3_large/meta.json', recursive=True)",
+      "literal_arg": "/kaggle/input/**/deberta_v3_large/meta.json"
+    },
+    {
+      "cell": 1,
+      "line": 14,
+      "expression": "glob.glob('/kaggle/input/**/heads/q3_8bx.npz', recursive=True)",
+      "literal_arg": "/kaggle/input/**/heads/q3_8bx.npz"
+    },
+    {
+      "cell": 1,
+      "line": 28,
+      "expression": "glob.glob('/kaggle/input/**/atlas_bundle.json', recursive=True)",
+      "literal_arg": "/kaggle/input/**/atlas_bundle.json"
+    },
+    {
+      "cell": 4,
+      "line": 323,
+      "expression": "glob.glob('/kaggle/input/**/ntl_extra_passages_claude.csv', recursive=True)",
+      "literal_arg": "/kaggle/input/**/ntl_extra_passages_claude.csv"
+    },
+    {
+      "cell": 4,
+      "line": 865,
+      "expression": "glob.glob('/kaggle/input/**/ultrabert-380m-ntl', recursive=True)",
+      "literal_arg": "/kaggle/input/**/ultrabert-380m-ntl"
+    },
+    {
+      "cell": 4,
+      "line": 538,
+      "expression": "glob.glob(pattern, recursive=True)",
+      "literal_arg": null
+    },
+    {
+      "cell": 4,
+      "line": 811,
+      "expression": "glob.glob('/kaggle/input/**/' + head_file, recursive=True)",
+      "literal_arg": null
+    },
+    {
+      "cell": 4,
+      "line": 247,
+      "expression": "glob.glob('/kaggle/input/' + pattern, recursive=True)",
+      "literal_arg": null
+    },
+    {
+      "cell": 4,
+      "line": 732,
+      "expression": "glob.glob('/kaggle/input/' + marker, recursive=True)",
+      "literal_arg": null
+    },
+    {
+      "cell": 4,
+      "line": 866,
+      "expression": "glob.glob(os.path.join(root, 'fold*'))",
+      "literal_arg": null
+    }
+  ],
+  "complete_sha256_literals": [],
+  "active_main_members": {
+    "q14v5": {
+      "base": "B14",
+      "adapters": "AQ14V5",
+      "keep": 27,
+      "layers": [
+        2,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "hidden_size": 5120,
+      "head_feature_dimension": 40960,
+      "weight": 3.0,
+      "bs": 8,
+      "max_len": 384,
+      "twin": 0.35,
+      "gauss": 0.7
+    },
+    "q8v5": {
+      "base": "B8",
+      "adapters": "AQ8V5",
+      "keep": 24,
+      "layers": [
+        2,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "hidden_size": 4096,
+      "head_feature_dimension": 32768,
+      "weight": 2.0,
+      "bs": 16,
+      "max_len": 384,
+      "twin": 0.35,
+      "gauss": 0.44
+    },
+    "ll8v5": {
+      "base": "BL",
+      "adapters": "ALL8V5",
+      "keep": 24,
+      "layers": [
+        2,
+        4,
+        6,
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "hidden_size": 4096,
+      "head_feature_dimension": 32768,
+      "weight": 1.0,
+      "bs": 16,
+      "max_len": 384,
+      "twin": 0.35
+    },
+    "n14b": {
+      "base": "B14",
+      "meta_selector": "lora_qwen3_14b",
+      "weight": 2.5,
+      "twin": 0.35,
+      "no_final_norm": true,
+      "keep_layers_max_len_eos": "from cfg in actual metadata"
+    },
+    "q25_14": {
+      "base": "B25_14",
+      "meta_selector": "lora_qwen25_14b",
+      "weight": 1.0,
+      "twin": 0.35,
+      "no_final_norm": true,
+      "keep_layers_max_len_eos": "from cfg in actual metadata"
+    },
+    "deb": {
+      "meta_selector": "DEB",
+      "weight": 1.0,
+      "encoder_relative_dir": "encoder",
+      "head_relative_file": "head.safetensors"
+    }
+  },
+  "contracts": {
+    "labels_main_infer": [
+      "claude-fable-5",
+      "claude-opus-4-6",
+      "claude-opus-4-8",
+      "claude-opus-5",
+      "claude-sonnet-5",
+      "gemini-3.1-pro-preview",
+      "gemini-3.6-flash",
+      "gemini-3.7-flash",
+      "gemini-3.8-flash",
+      "glm-5.3",
+      "glm-5.3-flash",
+      "gpt-5.5",
+      "gpt-5.6-luna",
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-6-astra",
+      "kimi-k3",
+      "qwen3.8-max"
+    ],
+    "labels_complement": [
+      "claude-fable-5",
+      "claude-opus-4-6",
+      "claude-opus-4-8",
+      "claude-opus-5",
+      "claude-sonnet-5",
+      "gemini-3.1-pro-preview",
+      "gemini-3.6-flash",
+      "gemini-3.7-flash",
+      "gemini-3.8-flash",
+      "glm-5.3",
+      "glm-5.3-flash",
+      "gpt-5.5",
+      "gpt-5.6-luna",
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-6-astra",
+      "kimi-k3",
+      "qwen3.8-max"
+    ],
+    "all_main_head_rows": 18,
+    "l24_heads_expected_keys": [
+      "plain.weight",
+      "plain.bias",
+      "centered.weight",
+      "centered.bias",
+      "norms.0.weight",
+      "norms.0.bias",
+      "norms.1.weight",
+      "norms.1.bias",
+      "norms.2.weight",
+      "norms.2.bias",
+      "norms.3.weight",
+      "norms.3.bias",
+      "norms.4.weight",
+      "norms.4.bias",
+      "norms.5.weight",
+      "norms.5.bias",
+      "norms.6.weight",
+      "norms.6.bias",
+      "norms.7.weight",
+      "norms.7.bias"
+    ],
+    "l24_heads_loader": "heads.pt preferred; heads.safetensors fallback only when heads.pt absent. adir selector itself mandates heads.pt. Optional meta.json labels remap to sorted18; absent metadata leaves source-assumed axis unverifiable on CPU without static serialized-state inspection.",
+    "l24_adapter_relative": "adapter/adapter_config.json and adapter/adapter_model.safetensors if adapter subdir config exists; otherwise root files",
+    "l24_adapter_rank_scale": "r >0; scale=lora_alpha/r; paired lora_A/lora_B matrices; shapes must match target hidden/model submodule and kept layers",
+    "complement_readouts_required": [
+      "classes",
+      "pool_layers",
+      "plain_coef",
+      "plain_intercept",
+      "center_coef",
+      "center_intercept"
+    ],
+    "complement_readout_axis": "classes exact sorted18; pool_layers exact source LORA_RUNS layers; coef [18,hidden*layers],intercept[18]; optional claude_coef[5,D]/claude_intercept[5]",
+    "deberta_head_shapes": "weight[18,encoder.hidden_size],bias[18]; metadata labels remapped by name; max_len frommeta",
+    "ATLAS": "atlas_bundle.json, adapters.safetensors, ntl_atlas/model.py and ntl_rlcd/data.py imported from bundle root; label permutation to sorted18",
+    "parquet_schema": {
+      "nlm_matched_clean.parquet": [
+        "text",
+        "model"
+      ],
+      "nlm_pool_v5.parquet": [
+        "text",
+        "model"
+      ]
+    },
+    "extra_csv_sources": [
+      [
+        "**/ntl_extra_passages_claude.csv",
+        "model",
+        null
+      ],
+      [
+        "**/gen_passages.csv",
+        "model",
+        null
+      ],
+      [
+        "**/ntl_generations.csv",
+        "label",
+        "finish_reason"
+      ],
+      [
+        "**/ntl_proxy_generations.csv",
+        "label",
+        null
+      ],
+      [
+        "**/ntl_generated*.csv",
+        "model",
+        "finish"
+      ],
+      [
+        "**/passages_clean.csv",
+        "model",
+        null
+      ]
+    ],
+    "runtime_flags": {
+      "NTL_DROP_Q35": "1",
+      "NTL_SMOKE": "mustnot1",
+      "NTL_FAKE_TEST": "mustabsentforofficial"
+    },
+    "ATLAS_budget_formula": "int(8.3*3600-COMP_SEC-600); actual complement wall time subtracted",
+    "source_hardcoded_file_sha256s_present": false
+  }
+}

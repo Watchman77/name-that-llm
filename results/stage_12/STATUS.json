@@ -1,0 +1,18 @@
+{
+  "stage": 12,
+  "date": "2026-10-25",
+  "phase": "PRIVATE_SOURCE_FROZEN_CPU_AUDIT_PREPARING",
+  "own_best_official_public_balanced_accuracy": 0.642,
+  "source_author_public_score": 0.651,
+  "source_version_id": 362013743,
+  "private_quick_script_version_id": 362254770,
+  "source_code_cells_unchanged": 6,
+  "copied_input_versions_frozen": 31,
+  "real_input_audit_started": false,
+  "gpu_model_executed": false,
+  "official_submission": false,
+  "paid_services_used": false,
+  "final_selections_changed": false,
+  "parallel_component_screen": "Stage12A prospective CPU-only correction screen; no fit at this checkpoint",
+  "free_gpu_remaining_observed_hours": 29
+}

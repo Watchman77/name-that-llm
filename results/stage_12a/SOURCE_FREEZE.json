@@ -1,0 +1,16 @@
+{
+  "freeze_commit": "4f08c924c05636b6b06eada719f1a1f517816de6",
+  "freeze_tree": "3f1235cf4f90c29892feff79ccd7e96ed32dcfd5",
+  "before_real_fitting": true,
+  "published_ref_and_commit_verified": true,
+  "all_five_local_frozen_file_contents_equal_published_tree_entries": true,
+  "verification_scope": "Orchestrator compared local text with exact tree entries used to publish the verified commit; CLI SHA guard is syntactic only.",
+  "sha256": {
+    "scripts/stage12_topic_correction_pilot.py": "3eec88f4d49e28f554ef72a8347401ff400a8ce4094c64b37570b5f587120be2",
+    "results/stage_12a/PROTOCOL.md": "2448b9e76efb61cc998f0a5d8deea38dcb1c28a0a8a5850b59d9aaf6b211c58e",
+    "results/stage_12a/PREFLIGHT_PREPARATION.json": "abf925f19fed11fd93b6ff7ff45cceddea7807f595ca86518d5ee1b53fc5ad7f",
+    "results/stage_12a/SYNTHETIC_VALIDATION.json": "06ca0ea5ba19f39a9787c73b48ac0166acf07dcd34d32c2150e1a06efd30dfcb"
+  },
+  "independent_review": "INDEPENDENT_REVIEW.json",
+  "independent_review_checks_passed": 14
+}

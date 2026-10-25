@@ -1,0 +1,45 @@
+{
+  "stage": "12A",
+  "review_date": "2026-10-25",
+  "status": "PASS_INDEPENDENT_REVIEW_PENDING_EXTERNAL_PUBLISHED_FREEZE",
+  "reviewed_file_sha256": {
+    "scripts/stage12_topic_correction_pilot.py": "3eec88f4d49e28f554ef72a8347401ff400a8ce4094c64b37570b5f587120be2",
+    "results/stage_12a/PROTOCOL.md": "2448b9e76efb61cc998f0a5d8deea38dcb1c28a0a8a5850b59d9aaf6b211c58e",
+    "results/stage_12a/PREFLIGHT_PREPARATION.json": "abf925f19fed11fd93b6ff7ff45cceddea7807f595ca86518d5ee1b53fc5ad7f",
+    "results/stage_12a/SYNTHETIC_VALIDATION.json": "06ca0ea5ba19f39a9787c73b48ac0166acf07dcd34d32c2150e1a06efd30dfcb"
+  },
+  "checks_passed": 14,
+  "checks_total": 14,
+  "checks": {
+    "original_source_code_cell5_byte_identity": "PASS: committed Stage11 notebook source matches original upstream captured code cell5, SHA256 a388d17f3581d4ea7a245b331c67e44e0ae15d3bc999c98b5ecb1ea8c7c5e48c.",
+    "source_function_and_constant_parity": "PASS: five mathematical function ASTs plus VIEWS and SMALL_WORDS constants match.",
+    "real_train_and_split_preflight": "PASS independently rerun without fit: pinned train/split hashes,2699rows,150prompts,18classes; heldout folds540,540,540,540,539.",
+    "canonical_prediction_columns_excluded": "PASS static: read_csv usecols limited to id,prompt_id,model,fold.",
+    "outer_fold_feature_fit": "PASS static: vocabulary/IDF and one SVC fit use outer training texts/labels only; validation receives transform.",
+    "inferred_groups_no_true_labels_or_prompts": "PASS static: topic_groups receives only heldout text; known prompt IDs enter splitting/evaluation diagnostics/bootstrap.",
+    "matched_arms": "PASS static: both arms share one fitted SVC and identical raw heldout margins; only fixed correction differs.",
+    "independent_boundary_correction_formula": "PASS synthetic numeric calculation: heterogeneous clusters sizes7,8,18,19,1; maximum discrepancy3.552713678800501e-15.",
+    "independent_asymmetric_prompt_bootstrap": "PASS synthetic unequal-support fixture: literal resampled rows/per-class recall interval matches implementation [7.4074074074074066,14.394179894179892] percentage points within floating tolerance.",
+    "fixed_screen": "PASS static and second reviewer: gain>=0.5pp,lower95CI>0,classloss<=5pp,zero convergence warnings; no automatic variant.",
+    "privacy_boundary": "PASS static: resolved private row output path rejected inside repository; default row artifacts outside repo; public outputs aggregate; no raw-text write or model serialization.",
+    "deadline_and_threads": "PASS static: thread limits set before numeric imports;900s parent wait; new process session and SIGTERM/SIGKILL group termination on timeout.",
+    "declared_scope_and_prior_reuse": "PASS protocol/result fields explicitly component-only,reused development folds,source-style SVC hyperparameters,not fullS05OOF or official score.",
+    "prepared_synthetic_receipt": "PASS recorded18/18 tests; this review additionally recomputed independent correction/bootstrap and real preflight, without fitting any classifier."
+  },
+  "material_leakage_or_math_bug_found": false,
+  "real_or_toy_classifier_fitted_by_reviewer": false,
+  "upstream_pipeline_executed": false,
+  "pre_run_gate": {
+    "status": "REQUIRED_BEFORE_REAL_FIT",
+    "requirement": "Root must publish the actual pre-execution Git commit and verify its runner,protocol and check bytes against the reviewed SHA256 values before invoking --run.",
+    "CLI_lock_scope": "--freeze-commit checks40hex syntax and matching parent-provided environment value only; it does not independently verify Git object existence/content. External published freeze is enforced by the orchestrator.",
+    "parent_commit_verified_by_this_reviewer": false
+  },
+  "nonblocking_limitations": [
+    "Bootstrap conditions on fixed inferred groups and corrected predictions; it does not recluster or recompute group means in each resample.",
+    "These reused development folds do not provide independent confirmation or a measured improvement to fullS05.",
+    "terminate_group self-test covers direct child; robust cleanup of a grandchild that ignoresSIGTERM after leader exit is not established. Current worker has no explicit subprocess spawn, so this is not a concrete blocker to the declared serialCPUfit."
+  ],
+  "practical_verdict": "Proceed once root verifies the actual published pre-fit freeze. No additional model fitting or variant is needed for admission. Preserve the declared four-gate screen and interpret any result only as a component development diagnostic.",
+  "second_reviewer_scope": "Static review of canonical folds,group diagnostics,bootstrap and fixed-screen arithmetic; no fit or execution of worker."
+}
