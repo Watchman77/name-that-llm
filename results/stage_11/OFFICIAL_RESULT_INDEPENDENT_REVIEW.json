@@ -1,0 +1,50 @@
+{
+  "stage": 11,
+  "verified_date": "2026-10-25",
+  "review_scope": "Independent local arithmetic and cross-file consistency review of parent-supplied fresh authoritative Kaggle row and modal observations; no independent live-page access by this reviewer.",
+  "independent_live_page_access": false,
+  "observation_origin": "Parent agent checked the connected signed-in account watchman777 official submissions row after reload and the separate Submission Details modal.",
+  "official_result_receipt": "OFFICIAL_RESULT_20261025.json",
+  "official_result_receipt_sha256": "33b11502f2322c5ccdf622a783eea75d5fa66dc7da50296fab7880ae6596a2a8",
+  "original_submission_receipt_sha256": "5edd891218c7d3dee5e3b829e74817d5abff5331c8cf448c8256876f6d8a7699",
+  "status": "PASS_LOCAL_RESULT_CONSISTENCY_AND_DECIMAL_ARITHMETIC",
+  "checks_passed": 14,
+  "checks_total": 14,
+  "checks": {
+    "official_receipt_state_succeeded": true,
+    "official_receipt_exact_S05_V6": true,
+    "supplied_fresh_row_and_modal_observations_recorded": true,
+    "own_public_score_decimal_0_642": true,
+    "S04_gain_decimal_0_3_percentage_points": true,
+    "target_gap_decimal_5_8_percentage_points": true,
+    "hidden_evaluation_completed_separate_from_timing": true,
+    "detailed_hidden_guard_not_claimed": true,
+    "private_score_not_claimed": true,
+    "final_selections_unchanged_S03_S04": true,
+    "proof_file_sha_matches_receipt": true,
+    "source_reproduction_scope_preserved": true,
+    "original_submission_receipt_preserved": true,
+    "status_and_official_receipt_match": true
+  },
+  "decimal_arithmetic": {
+    "score": "0.642",
+    "score_percent": "64.200",
+    "S04": "0.639",
+    "gain_percentage_points": "0.300",
+    "target": "0.700",
+    "remaining_percentage_points": "5.800"
+  },
+  "limitations": [
+    "No independent live Kaggle access by this reviewer.",
+    "Official result is public balanced accuracy; private leaderboard performance remains unknown.",
+    "Successful source reproduction is not proof of an original modelling contribution.",
+    "Official hidden evaluation completed; exact hidden duration and detailed hidden output-guard checks were not exposed on the inspected surface."
+  ],
+  "files_updated": [
+    "results/stage_11/STATUS.json",
+    "results/stage_11/REPORT.md",
+    "results/stage_11/NOTEBOOK_INDEX.md",
+    "STAGES.md",
+    "EXPERIMENTS.md"
+  ]
+}

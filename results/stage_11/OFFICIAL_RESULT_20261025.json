@@ -1,0 +1,66 @@
+{
+  "stage": 11,
+  "official_submission": "S05",
+  "verified_date": "2026-10-25",
+  "date_timezone": "Europe/London",
+  "account": "watchman777",
+  "official_state": "Succeeded",
+  "metric": "official public balanced accuracy",
+  "official_public_balanced_accuracy": 0.642,
+  "official_public_balanced_accuracy_percent": 64.2,
+  "own_notebook_version": 6,
+  "own_script_version_id": 362129392,
+  "source_author": "Lightning / Vladislav Lavrentev",
+  "source_script_version_id": 362014737,
+  "source_author_public_score": 0.642,
+  "official_source": "https://www.kaggle.com/competitions/name-that-llm/submissions",
+  "candidate_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit?scriptVersionId=362129392",
+  "verification": [
+    "Freshly reloaded official signed-in submissions row: Succeeded and public score 0.642, exact S05 description and V6 link",
+    "Submission Details modal independently displays Succeeded, Score: 0.642 and exact private V6 link"
+  ],
+  "previous_official_scores": {
+    "S04": 0.639,
+    "S03": 0.62,
+    "S02": 0.549,
+    "S01": 0.354
+  },
+  "improvement_percentage_points": {
+    "S04": 0.3,
+    "S03": 2.2,
+    "S02": 9.3,
+    "S01": 28.8
+  },
+  "target": 0.7,
+  "target_gap_percentage_points": 5.8,
+  "source_code_cells_unchanged": 33,
+  "output_guard_cells_added": 1,
+  "result_scope": "Own official hidden-test evaluation displaying a public balanced accuracy; distinct from source-author score, Qwen probe and constant-label format preview",
+  "hidden_evaluation_completed": true,
+  "exact_hidden_runtime_seconds": null,
+  "detailed_hidden_logs_available_in_inspected_modal": false,
+  "detailed_hidden_output_guard_results_verified": false,
+  "hidden_log_access_limitation": "The inspected official Submission Details surface exposes only the saved candidate link, not a hidden-runtime log or duration. Preview logs are not substituted.",
+  "displayed_submission_age": "7 hours ago; age is not execution duration",
+  "private_leaderboard_score": null,
+  "rank_not_checked": true,
+  "final_selections_observed": {
+    "count": "2/2",
+    "selected": [
+      "S03",
+      "S04"
+    ],
+    "S05_selected": false,
+    "changed_by_this_work": false
+  },
+  "paid_services_used": false,
+  "new_submission_or_training_launched_in_result_check": false,
+  "watch_created_or_enabled": false,
+  "proof_file": "S05_OFFICIAL_SCORE_20261025.png",
+  "proof_sha256": "053c8312c35760b3c2fe1154db3e76806aeee1c5e3f9bbd1b0c1cea5a73ec79b",
+  "limitations": [
+    "Reproduces an existing public method; this is not evidence of an original modelling contribution.",
+    "Public balanced accuracy does not establish private leaderboard performance.",
+    "No claim of reaching 70%; verified gap is 5.8 percentage points."
+  ]
+}
