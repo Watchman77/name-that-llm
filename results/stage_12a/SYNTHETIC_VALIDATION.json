@@ -1,0 +1,44 @@
+{
+  "stage": "12A",
+  "status": "PASS",
+  "passed": 18,
+  "total": 18,
+  "checks": {
+    "five_source_function_mathematical_AST_matches": true,
+    "ineligible_seven_row_cluster_unchanged": true,
+    "eligible_eight_row_correction_matches_independent_formula": true,
+    "nineteen_row_cluster_unchanged": true,
+    "singleton_group_unchanged": true,
+    "finite_probability_floor_for_extreme_logits": true,
+    "paired_bootstrap_identical_arms_zero_interval": true,
+    "paired_bootstrap_perfect_lift_hundred_points": true,
+    "grouping_pure_pairwise_and_coverage": true,
+    "grouping_impurity_is_diagnostic_not_hidden": true,
+    "reject_incomplete_canonical_frame": true,
+    "accept_complete_synthetic_prompt_disjoint_canonical_frame": true,
+    "reject_prompt_crossing_outer_folds": true,
+    "reject_mismatched_canonical_label": true,
+    "reject_duplicate_canonical_id": true,
+    "real_run_locked_without_freeze_commit": true,
+    "thread_limits_one": true,
+    "watchdog_process_group_is_terminated": true
+  },
+  "real_data_fitted": false,
+  "toy_classifier_fitted": false,
+  "upstream_pipeline_executed": false,
+  "source_parity": {
+    "source_version": 362014737,
+    "source_code_cell": 5,
+    "function_ast_matches": {
+      "shape_text": true,
+      "small_words_text": true,
+      "topic_groups": true,
+      "clipped_logp": true,
+      "adaptive_svc_topic_correction": true
+    },
+    "view_and_function_word_constants_match": {
+      "VIEWS": true,
+      "SMALL_WORDS": true
+    }
+  }
+}
