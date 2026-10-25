@@ -1,0 +1,28 @@
+{
+  "stage": "12B",
+  "status": "PASS",
+  "passed": 16,
+  "total": 16,
+  "checks": {
+    "source_AST_one_call_and_exact_placement": true,
+    "reject_source_double_application": true,
+    "analytic_golden_ensemble_gate_and_strength": true,
+    "analytic_golden_changes_prediction": true,
+    "golden_second_application_is_distinct": true,
+    "real_NPZ_readback_and_full_chain_replay": true,
+    "reject_second_application_arrays": true,
+    "reject_wrong_ID_axis": true,
+    "reject_wrong_class_axis": true,
+    "reject_NaN_evidence": true,
+    "reject_unbounded_group_index": true,
+    "reject_modified_ineligible_row": true,
+    "reject_wrong_before_ensemble_sum": true,
+    "reject_intervention_not_used_by_prior": true,
+    "reject_unknown_preview_flag": true,
+    "preview_declares_intervention_not_executed": true
+  },
+  "upstream_models_executed": false,
+  "classifier_fitted": false,
+  "actual_hidden_evaluation_run": false,
+  "synthetic_public_fixture_substitution_for_test_only": true
+}

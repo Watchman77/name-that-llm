@@ -1,0 +1,71 @@
+{
+  "stage": "12B",
+  "status": "PASS_FIXED_COUNTERFACTUAL_STATIC_AND_SYNTHETIC_REVIEW",
+  "checks_passed": 23,
+  "checks_total": 23,
+  "checks": {
+    "parent_has_34_candidate_has_35_code_cells": true,
+    "only_original_orchestrator_cell30_modified": true,
+    "all_32_other_original_code_cells_byte_identical": true,
+    "old_output_guard34_byte_identical": true,
+    "all_35_cells_compile_without_running": true,
+    "source_callsite_contract_pass": true,
+    "independent_gate_margin_0.4": true,
+    "independent_gate_margin_1.2": true,
+    "independent_gate_margin_4.0": true,
+    "independent_cluster_boundary_7": true,
+    "independent_cluster_boundary_8": true,
+    "independent_cluster_boundary_18": true,
+    "independent_cluster_boundary_19": true,
+    "exact_28_input_version_records_preserved": true,
+    "internet_off_intended": true,
+    "GPU_boolean_only_intended": true,
+    "embedded_helper_equals_reviewed_file_bytes": true,
+    "orchestrator_hash_pinned": true,
+    "unchanged_common_hash_pinned": true,
+    "no_model_or_unsafe_loader_imports": true,
+    "reexecuted_16_real_NPZ_and_preview_fixtures": true,
+    "ineligible_exact_numeric_identity_7": true,
+    "ineligible_exact_numeric_identity_19": true
+  },
+  "reviewed_sha256": {
+    "notebooks/Stage_12B_SVC_Topic_Correction.ipynb": "aed7a64c69667670eb6933305c2ddf824bd7e252d342c9b9d07b5b3ee5ddbc66",
+    "scripts/stage12b_intervention_validation.py": "38940a4e3a21e01e5275a5fcb24221335be5170f78e07b2e596987a009eb07ca",
+    "scripts/build_stage12b_notebook.py": "75c19a55f242b3069aa83c0052d7b9a59fe3136a99f6d19b5f84c05cc88e08a1",
+    "results/stage_12b/SOURCE_PATCH.diff": "00b3703275750fcbf79c7857d68689ce49d8e445cb6dea6ab9a0d4bac4f31f13",
+    "results/stage_12b/PROTOCOL.md": "c769e2f631a882ae6bb0fe4c2ca0767ac664c4a56ede2b2cacd0302eec11c8d6",
+    "results/stage_12b/BUILD_RECEIPT.json": "248d40a988835954290f0274a42cbaa779586b5ea98d10a53b12bfc5d0120327"
+  },
+  "synthetic_fixtures_rerun": {
+    "passed": 16,
+    "total": 16
+  },
+  "independent_analytic_basis": "For identical SVC vectors within an eligible cluster, class0-class1 correction is -0.62 times the original SVC margin times the gate computed from the complete ensemble margin. Tested gate values1,.5,.15 and exact7/8/18/19 boundaries.",
+  "source_patch_scope": "Only original codecell30 changes; 32other sourcecells and originalguard34 remain byte-identical. Guard35 saves/replays fixed intervention evidence and links corrected totals to actual pre-ATLAS mixture.",
+  "models_or_upstream_cells_executed": false,
+  "classifier_fitted": false,
+  "actual_Kaggle_execution_verified": false,
+  "actual_saved_Kaggle_source_or_input_parity_verified": false,
+  "real_intervention_activation_verified": false,
+  "actual_official_score": null,
+  "admission": "Suitable for prospective source freeze, private saved-code/input verification and format preview, then at most the one predeclared blind official test. This is not actual runtime or score admission.",
+  "limitations": [
+    "Standalone component gate differs from full-reference ensemble gate; no linear transfer of the2.1494-point component gain is supported.",
+    "The3-row public preview skips the intervention and must say activation unverified.",
+    "No honest full-S05 OOF or independent/private leaderboard performance is established.",
+    "Inherited guard34 retains its historical unavailable-SVC limitation; guard35 independently reconstructs the now-saved before/after reference evidence, as clarified in Stage12B reporting.",
+    "Only intended document GPU settings were reviewed; actual T4x2 allocation remains an external gate."
+  ],
+  "cosmetic_final_rebuild": {
+    "old_notebook_sha256": "aca45467e78ace8f4e3ec387c9745758ec1e08e260a1596644507fcd16516bee",
+    "new_notebook_sha256": "aed7a64c69667670eb6933305c2ddf824bd7e252d342c9b9d07b5b3ee5ddbc66",
+    "old_helper_sha256": "91966d6170ea4c31cad51c9f3926d0df6799a5ff2a42b8d2a3f698f4d14493bc",
+    "new_helper_sha256": "38940a4e3a21e01e5275a5fcb24221335be5170f78e07b2e596987a009eb07ca",
+    "helper_reverse_rename_reproduces_old_SHA": true,
+    "notebook_reverse_rename_and_embedded_helper_SHA_reproduces_old_notebook_SHA": true,
+    "single_check_name_change": "ineligible_rows_bitwise_unchanged -> ineligible_rows_exactly_unchanged",
+    "source_orchestrator_and_patch_unchanged": true,
+    "arithmetic_changed": false,
+    "final_16_fixtures_rerun_passed": true
+  }
+}

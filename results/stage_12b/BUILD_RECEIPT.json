@@ -1,0 +1,149 @@
+{
+  "stage": "12B",
+  "parent_notebook": "notebooks/Stage_11_Public_642_Reproduction.ipynb",
+  "parent_notebook_sha256": "d7e89eb58cb78b71a4b1a55ebbfbdeeba1c5558bfb02886cd3fa247ec69270ef",
+  "parent_own_script_version_id": 362129392,
+  "parent_own_official_score": 0.642,
+  "source_version_id": 362014737,
+  "new_notebook": "notebooks/Stage_12B_SVC_Topic_Correction.ipynb",
+  "new_notebook_sha256": "aed7a64c69667670eb6933305c2ddf824bd7e252d342c9b9d07b5b3ee5ddbc66",
+  "code_cells": 35,
+  "original_source_code_cells": 33,
+  "unchanged_original_source_code_cells": 32,
+  "modified_original_code_cells": [
+    30
+  ],
+  "original_output_guard_unchanged": true,
+  "original_output_guard_code_sha256": "01745d9d7dd195685fc4a73d4dfd56a39f02a920f61ac7d5285b0d6ec236d7fb",
+  "original_orchestrator_code_sha256": "7281b1a293173b1099a9f18821cc6af884e530cdf193aa96d365342e373c7e22",
+  "new_orchestrator_code_sha256": "3d53c05cd21e6be5fedccd7f9c473653ae37bcc01cfbbb8a3b361cf53a20dd86",
+  "new_orchestrator_canonical_file_sha256": "6c5cc9d153763729a716fb503726d99cc76ae31db3acc42a84d2991d119a096d",
+  "unchanged_common_canonical_file_sha256": "7775a24e23b80fbe549848cc029f9919d0baca9ae7b98d4f759db75b7d991721",
+  "intervention_validation_module_sha256": "38940a4e3a21e01e5275a5fcb24221335be5170f78e07b2e596987a009eb07ca",
+  "all_35_code_cells_static_compile_passed": true,
+  "notebook_format_validated": true,
+  "input_versions_unchanged": true,
+  "input_source_count": 28,
+  "input_source_versions": [
+    {
+      "sourceType": "competition",
+      "sourceId": 170484
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 18975315
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 20736096
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 20819121
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 20831302
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 20847146
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 20934027
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 21008519
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 21011978
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 21062729
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 21097171
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 21116786
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 21119693
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 21155896
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 21156661
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358683059
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358745836
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358758062
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358770408
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358911769
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358928013
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 358948428
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 359652568
+    },
+    {
+      "sourceType": "modelInstanceVersion",
+      "sourceId": 166254
+    },
+    {
+      "sourceType": "modelInstanceVersion",
+      "sourceId": 166265
+    },
+    {
+      "sourceType": "modelInstanceVersion",
+      "sourceId": 363135
+    },
+    {
+      "sourceType": "modelInstanceVersion",
+      "sourceId": 363140
+    },
+    {
+      "sourceType": "modelInstanceVersion",
+      "sourceId": 363153
+    }
+  ],
+  "intended_candidate_gpu_boolean": true,
+  "parent_document_gpu_boolean": false,
+  "actual_gpu_allocation_verified_by_build": false,
+  "models_executed": false,
+  "classifier_fitted": false,
+  "source_patch_sha256": "00b3703275750fcbf79c7857d68689ce49d8e445cb6dea6ab9a0d4bac4f31f13",
+  "visibility": "private",
+  "blind_official_tests_declared": 1
+}

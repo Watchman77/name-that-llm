@@ -1,0 +1,17 @@
+--- S05_code_cell30
++++ Stage12B_code_cell30
+@@ -78,6 +78,14 @@
+             budget.run_parallel([deberta_job,complement])
+             budget.run_parallel([job('night24-helper-cpu',str(Path(paths['legacy_runtime'])/'night24_cpu_worker.py'),['--features',raw_features,'--feature-metadata',raw_features.with_suffix('.json'),'--query',query_path,'--bank',paths['night24_bank'],'--bank-metadata',paths['night24_metadata'],'--out',work/'night24-helper.npz'],'')])
+         total+=.25*clipped_logp(aligned(work/'deberta.npz',ids))
++    # Stage12B: one fixed counterfactual; preserve every model and blend weight.
++    svc_topic_before_total = total.copy()
++    total = adaptive_svc_topic_correction(total, svc_scores, groups)
++    if not (np.isfinite(svc_scores).all() and np.isfinite(svc_topic_before_total).all() and np.isfinite(total).all()):
++        raise FloatingPointError('Stage12B nonfinite topic-correction evidence')
++    np.savez_compressed(work/'svc-topic-correction-evidence.npz', ids=np.asarray(ids), labels=np.asarray(LABELS),
++                        groups=np.asarray(groups,dtype=np.int64), svc_scores=np.asarray(svc_scores,dtype=np.float64),
++                        before_total=svc_topic_before_total, after_total=total)
+     if family=='part_two_complement_atlas_0636':
+         meta=json.loads((work/'comp.npy.json').read_text())
+         comp_ids=meta['ids'];comp_labels=meta['labels']
