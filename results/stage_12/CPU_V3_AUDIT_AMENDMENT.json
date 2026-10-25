@@ -1,0 +1,73 @@
+{
+  "stage": 12,
+  "amendment": "CPU V3 source-faithful string sorting and unused object metadata boundaries",
+  "source_version": 362013743,
+  "actual_cpu_v2_version": 362256363,
+  "actual_cpu_v2_report_sha256": "ff253886b35737c31a86119d82de3e9df1fe532cf60da158d445c6fe6974c6a2",
+  "actual_cpu_v2_report_bytes": 429529,
+  "actual_cpu_v2_report_not_modified": true,
+  "actual_cpu_v2_contract": {
+    "passed": 66,
+    "total": 71
+  },
+  "source_model_weights_and_original_six_cells_changed": false,
+  "sorting_correction": {
+    "v2_bug": "Path object component sorting after glob converted strings to Paths",
+    "frozen_source": "sorted(glob.glob(...)) sorts full path strings",
+    "v2_recorded_candidates": [
+      "models/qwen-lm/qwen-3/transformers/8b/1/config.json",
+      "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json"
+    ],
+    "actual_source_string_order": [
+      "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json",
+      "models/qwen-lm/qwen-3/transformers/8b/1/config.json"
+    ],
+    "actual_source_first": "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json",
+    "correct_base_config_sha256_from_actual_main_B8": "3bd01d7ad7a2e203ecbbe84e24087a51c6d2a108ee4bcc42d0016bf49564983a",
+    "base_choice_uses_existing_prior_vendor_pin": true,
+    "v2_source_would_choose_field_was_an_auditor_error_not_source_execution_evidence": true
+  },
+  "npz_correction": {
+    "new_behavior": "Read bounded NPY member headers before array access. Record dtype/shape for allmembers; permit skipping object payloads only when the frozen source never reads that member.",
+    "required_readout_members": [
+      "classes",
+      "pool_layers",
+      "plain_coef",
+      "plain_intercept"
+    ],
+    "centered_members_required_for": [
+      "lora24_public",
+      "lora24_claude"
+    ],
+    "optional_claude_pair_required_if_coef_exists": [
+      "claude_coef",
+      "claude_intercept"
+    ],
+    "anchor_source_consumes_only": [
+      "features"
+    ],
+    "object_required_member_behavior": "Still blocks; no pickle loading or numeric certification",
+    "unused_object_member_behavior": "Header-only inventory, payload_loaded=false, source_consumed=false",
+    "numeric_array_policy": "Existing finite checks retained; consumed coefficients and features must have exactsourceaxes and real numeric dtype",
+    "actual_object_member_names_known_before_V3": false
+  },
+  "source_function_proof": [
+    {
+      "function": "find_checkpoint",
+      "line_after_writefile_strip": 535,
+      "source_sha256": "acbce426ff2ed44825dc8b5a45a8a2c997684032e3c6e8b6db544f24c4ec1b37"
+    },
+    {
+      "function": "score_lora_checkpoints",
+      "line_after_writefile_strip": 713,
+      "source_sha256": "6dd77e5f1c1b8602c415e9f9701ecde4f6c5451bd97959a454a2b8200d66c668"
+    }
+  ],
+  "unchanged_genuine_blocker": "main_BL missing; Meta access/licence acceptance is a user step; no access acceptance or bypass performed",
+  "synthetic_checks_passed": 27,
+  "synthetic_checks_total": 27,
+  "new_audit_script_sha256": "76555790b3b4a3761c27b7a48fee34343e43d6a08e39ee98a12e68b1940d6837",
+  "new_notebook_sha256": "b124aefe3769616603315d1e169c77866f50eaae86464abde2ae8488e2c78165",
+  "actual_cpu_v3_run_performed_by_amendment": false,
+  "gpu_model_or_upstream_inference_executed": false
+}

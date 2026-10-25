@@ -1,0 +1,173 @@
+{
+  "stage": 12,
+  "date_reviewed": "2026-10-25",
+  "scope": "Independent local diagnosis of actual CPU V2 report, source selector semantics, numeric NPZ consumption and custom-code text parity; no model code execution",
+  "actual_cpu_report_sha256": "ff253886b35737c31a86119d82de3e9df1fe532cf60da158d445c6fe6974c6a2",
+  "actual_cpu_state": "BLOCKED_INPUT_CONTRACT",
+  "actual_checks_passed": 66,
+  "actual_checks_total": 71,
+  "failed_checks": [
+    {
+      "name": "main_BL",
+      "status": "FAIL",
+      "error_type": "ValueError",
+      "error": "Required source selector found no match: BL"
+    },
+    {
+      "name": "comp_q3_8b",
+      "status": "FAIL",
+      "error_type": "ValueError",
+      "error": "Ambiguous source first-match selector requires explicit review: q3_8b"
+    },
+    {
+      "name": "comp_lora24_seed7",
+      "status": "FAIL",
+      "error_type": "ValueError",
+      "error": "Object arrays cannot be loaded when allow_pickle=False"
+    },
+    {
+      "name": "comp_lora24_claude",
+      "status": "FAIL",
+      "error_type": "ValueError",
+      "error": "Object arrays cannot be loaded when allow_pickle=False"
+    },
+    {
+      "name": "comp_lora20_q25_instyle",
+      "status": "FAIL",
+      "error_type": "ValueError",
+      "error": "Object arrays cannot be loaded when allow_pickle=False"
+    }
+  ],
+  "genuine_blocker": {
+    "selector": "BL",
+    "observed_candidate_paths": [],
+    "status": "Required Llama3.1 base is not mounted; legal/account access action remains with root/user",
+    "no_substitution_or_access_bypass_performed": true
+  },
+  "source_sort_diagnosis": {
+    "selector": "comp_q3_8b",
+    "source_semantics": "sorted(glob.glob(...)) over complete string paths, then first config matching qwen3/4096",
+    "actual_candidates": [
+      "models/qwen-lm/qwen-3/transformers/8b/1/config.json",
+      "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json"
+    ],
+    "source_correct_string_order": [
+      "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json",
+      "models/qwen-lm/qwen-3/transformers/8b/1/config.json"
+    ],
+    "auditor_v2_Path_component_order": [
+      "models/qwen-lm/qwen-3/transformers/8b/1/config.json",
+      "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json"
+    ],
+    "v2_reported_choice": "models/qwen-lm/qwen-3/transformers/8b/1/config.json",
+    "correct_source_choice": "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json",
+    "required_auditor_correction": "Sort Path candidates with key=str wherever mirroring source sorted glob string paths; retain complete candidates and explicit reviewed prior vendor pin",
+    "upstream_inference_source_changed": false
+  },
+  "NPZ_exclusion_bounds": {
+    "status": "V3 actual member-header evidence still required before classifying individual object arrays as unused metadata",
+    "anchors_source_reads_only": [
+      "features"
+    ],
+    "readout_source_consumed_keys": [
+      "classes",
+      "pool_layers",
+      "plain_coef",
+      "plain_intercept",
+      "claude_coef when present",
+      "claude_intercept when claude_coef is present",
+      "center_coef for active centered twin",
+      "center_intercept for active centered twin"
+    ],
+    "safe_method": "Inventory each NPY header within NPZ without touching object payloads; only numeric/source-consumed arrays are loaded with allow_pickle=False. Explicitly name and exclude unused object metadata members.",
+    "must_remain_blocked": "Any required/source-consumed array with object dtype, missing numeric data, nonfinite numeric values or incorrect shape/axes",
+    "individual_V2_object_member_names_known": false,
+    "pickle_unpickling_or_allow_pickle_true_permitted": false
+  },
+  "private_custom_code_export_sha256": "c6eca92470af2afbadad47b91576fbd3b9c9c167356caa9fd25f0f9bddc4ba3b",
+  "custom_export_files_matched": 15,
+  "unique_custom_code_hashes_matched": 7,
+  "custom_code_parity": [
+    {
+      "path": "datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/atlas_adapter/atlas_adapter/ntl_atlas/__init__.py",
+      "sha256": "b2bff8348b93ca7375c523e83965e24b6af5df06fe3dc2a0940f73332ce1ad87",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/atlas_adapter/atlas_adapter/ntl_atlas/inference.py",
+      "sha256": "8f57242c27e13572a8c5a2fbb8136dce462fb7cd175a52092a5a8c86797e91c7",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/atlas_adapter/atlas_adapter/ntl_atlas/model.py",
+      "sha256": "3fb9394bf8f8535523ba6da4b66b2d24c3fa80a37767219b076422c3adc226fb",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/atlas_adapter/atlas_adapter/ntl_rlcd/__init__.py",
+      "sha256": "b53b2efa3d0e4884c17dbbfc51514d8f5b37205ae6d58e354f02e1fbbe78c4bc",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/atlas_adapter/atlas_adapter/ntl_rlcd/data.py",
+      "sha256": "871778752ddde445efc33d310fb96961f87507c3b59a18aff3ea472f3d86972a",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/configuration_ultrabert.py",
+      "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/modeling_ultrabert.py",
+      "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/configuration_ultrabert.py",
+      "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/modeling_ultrabert.py",
+      "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/configuration_ultrabert.py",
+      "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/modeling_ultrabert.py",
+      "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/configuration_ultrabert.py",
+      "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/modeling_ultrabert.py",
+      "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/configuration_ultrabert.py",
+      "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9",
+      "matches_stage11_actual_export": true
+    },
+    {
+      "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/modeling_ultrabert.py",
+      "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333",
+      "matches_stage11_actual_export": true
+    }
+  ],
+  "custom_code_text_delta_from_actual_stage11": false,
+  "custom_code_imported_or_executed": false,
+  "new_material_custom_code_text_blocker_found": false,
+  "additional_membership_limit": "Actual V2 source allows and reports lora24_public missing-member skip. Match this membership with author execution evidence before claiming full recipe/input parity.",
+  "training_inference_or_new_submission": false,
+  "legal_agreement_or_access_form_submitted_by_reviewer": false
+}

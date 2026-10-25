@@ -1,0 +1,100 @@
+{
+  "rawLogChars": 67885,
+  "truncated": false,
+  "summary": {
+    "stage": 12,
+    "source_version": 362013743,
+    "status": "BLOCKED_INPUT_CONTRACT",
+    "passed": 66,
+    "total": 71,
+    "main_selectors_total": 53,
+    "main_serialized_head_selectors_total": 37,
+    "serialized_head_archives_inspected": 37,
+    "serialized_head_static_tensor_schemas_inspected": 37,
+    "audit_script_sha256": "68708ff297b23d823a6f2b424b67e4c907dfe3782decb033304f68ecdd9cfe29",
+    "hash_elapsed_seconds": 175.93196224000002,
+    "private_code_export_sha256": "c6eca92470af2afbadad47b91576fbd3b9c9c167356caa9fd25f0f9bddc4ba3b",
+    "Torch_custom_code_or_upstream_imported": false,
+    "pickle_joblib_Torch_load_called": false,
+    "training_or_inference_started": false,
+    "hidden_runtime_verified": false,
+    "failed_checks": [
+      {
+        "name": "main_BL",
+        "status": "FAIL",
+        "error_type": "ValueError",
+        "error": "Required source selector found no match: BL"
+      },
+      {
+        "name": "comp_q3_8b",
+        "status": "FAIL",
+        "error_type": "ValueError",
+        "error": "Ambiguous source first-match selector requires explicit review: q3_8b"
+      },
+      {
+        "name": "comp_lora24_seed7",
+        "status": "FAIL",
+        "error_type": "ValueError",
+        "error": "Object arrays cannot be loaded when allow_pickle=False"
+      },
+      {
+        "name": "comp_lora24_claude",
+        "status": "FAIL",
+        "error_type": "ValueError",
+        "error": "Object arrays cannot be loaded when allow_pickle=False"
+      },
+      {
+        "name": "comp_lora20_q25_instyle",
+        "status": "FAIL",
+        "error_type": "ValueError",
+        "error": "Object arrays cannot be loaded when allow_pickle=False"
+      }
+    ],
+    "warnings": [
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q3b8_f0",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q3b8_f1",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q3b8_f2",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q3b8_f3",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q3b8_f4",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q3b8",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q3b14_f0",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q3b14_f2",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q3b14_f4",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q3b14",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_q25_7b",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_llama8_f0",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_llama8_f2",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_llama8_f4",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts_llama8",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts8_s7_f0",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts8_s7_f2",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts8_s7_f4",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters/ts8_s7",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5_f0",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5_f1",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5_f2",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5_f3",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5_f4",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5_f0",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5_f1",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5_f2",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5_f3",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5_f4",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5_f0",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5_f1",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5_f2",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5_f3",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5_f4",
+      "Source assumes canonical label rows without named meta.json: datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5",
+      "Source permits/declares inactive missing member: lora24_public"
+    ]
+  },
+  "transportMarkers": [
+    "STAGE12_INPUT_AUDIT_JSON_GZIP_B64_BEGIN {\"file_bytes\":429529,\"file_sha256\":\"ff253886b35737c31a86119d82de3e9df1fe532cf60da158d445c6fe6974c6a2\",\"gzip_bytes\":29661,\"gzip_sha256\":\"d3b2035b837ddebf3a2a4fbb6e43a02b6c96f8797f6e2aa0f6c915ad8bbfcd25\",\"chunks\":10,\"encoding\":\"base64(gzip(exact-file-bytes,mtime=0))\"}",
+    "STAGE12_INPUT_AUDIT_JSON_GZIP_B64_END ff253886b35737c31a86119d82de3e9df1fe532cf60da158d445c6fe6974c6a2",
+    "STAGE12_PRIVATE_CODE_EXPORT_GZIP_B64_BEGIN {\"file_bytes\":52107,\"file_sha256\":\"c6eca92470af2afbadad47b91576fbd3b9c9c167356caa9fd25f0f9bddc4ba3b\",\"gzip_bytes\":12184,\"gzip_sha256\":\"4581bc3ecfceea0957c2ee58e0c1894bab0824d2b68a0664ea630fe6caf601af\",\"chunks\":5,\"encoding\":\"base64(gzip(exact-file-bytes,mtime=0))\"}",
+    "STAGE12_PRIVATE_CODE_EXPORT_GZIP_B64_END c6eca92470af2afbadad47b91576fbd3b9c9c167356caa9fd25f0f9bddc4ba3b"
+  ]
+}

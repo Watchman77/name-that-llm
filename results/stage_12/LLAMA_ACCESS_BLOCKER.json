@@ -1,0 +1,20 @@
+{
+  "stage": 12,
+  "verified_date": "2026-10-25",
+  "required_component": "Meta Llama3.1 Transformers8b V2",
+  "copied_model_instance_version_id": 104433,
+  "source_symbol": "BL",
+  "mount_result": "No config.json matching /llama-3.1/ and /8b/ exists in the actual CPU mount",
+  "live_account_gate": "The connected Kaggle model page says access must first be granted by Meta after accepting its acceptable use policy and licence, using the Kaggle account email, then verified through Kaggle Submit Form.",
+  "model_page": "https://www.kaggle.com/models/metaresearch/llama-3.1/Transformers/8b/2",
+  "meta_access_request": "https://ai.meta.com/resources/models-and-libraries/llama-downloads/",
+  "acceptance_or_form_submission_performed": false,
+  "personal_account_email_published": false,
+  "no_bypass_or_mirror_used": true,
+  "unchanged_recipe_can_run": false,
+  "source_author_score": 0.651,
+  "own_best_official_score": 0.642,
+  "other_V2_failures": "Four auditor-conservative failures are being reviewed separately: string-versus-Path ordering and object-typed NPZ metadata. They are not confirmed corrupt model inputs.",
+  "source_pipeline_changed": false,
+  "GPU_started": false
+}

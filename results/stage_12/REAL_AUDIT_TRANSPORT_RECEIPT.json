@@ -1,0 +1,16 @@
+[
+  {
+    "label": "STAGE12_INPUT_AUDIT_JSON_GZIP_B64",
+    "chunks": 10,
+    "raw_bytes": 429529,
+    "sha256": "ff253886b35737c31a86119d82de3e9df1fe532cf60da158d445c6fe6974c6a2",
+    "hash_verified": true
+  },
+  {
+    "label": "STAGE12_PRIVATE_CODE_EXPORT_GZIP_B64",
+    "chunks": 5,
+    "raw_bytes": 52107,
+    "sha256": "c6eca92470af2afbadad47b91576fbd3b9c9c167356caa9fd25f0f9bddc4ba3b",
+    "hash_verified": true
+  }
+]

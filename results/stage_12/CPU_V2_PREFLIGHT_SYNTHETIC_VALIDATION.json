@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "passed": 22,
+  "total": 22,
+  "checks": {
+    "unsafe_path_0": true,
+    "unsafe_path_1": true,
+    "unsafe_path_2": true,
+    "canonical_label_order": true,
+    "reversed_native_label_order": true,
+    "duplicate_label": true,
+    "unknown_label": true,
+    "missing_required_selector": true,
+    "allowed_missing_complement_skip": true,
+    "ambiguous_unreviewed_selector": true,
+    "truncated_safetensors": true,
+    "npz_pickle_object": true,
+    "npz_nonfinite": true,
+    "static_primitive_pickle_metadata": true,
+    "unsupported_reducer_not_executed": true,
+    "torch_zip_integrity_metadata_only": true,
+    "torch_tensor_shape_without_unpickle": true,
+    "torch_storage_extent_mismatch": true,
+    "torch_zip_path_escape": true,
+    "ultrabert_six_fold_root_skipped_for_valid_five_fold_root": true,
+    "ultrabert_requires_exactly_five_not_at_least_five": true,
+    "critical_hash_budget_is_bounded": true
+  },
+  "upstream_or_model_executed": false,
+  "pickle_or_Torch_loader_called": false
+}

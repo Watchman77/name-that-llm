@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "passed": 22,
-  "total": 22,
+  "passed": 27,
+  "total": 27,
   "checks": {
     "unsafe_path_0": true,
     "unsafe_path_1": true,
@@ -16,6 +16,11 @@
     "truncated_safetensors": true,
     "npz_pickle_object": true,
     "npz_nonfinite": true,
+    "unused_object_metadata_header_inventory_without_payload": true,
+    "source_consumed_object_member_still_blocks": true,
+    "missing_source_consumed_npz_member_still_blocks": true,
+    "nonfinite_consumed_numeric_member_still_blocks": true,
+    "source_string_sort_selects_8b_base_before_8b": true,
     "static_primitive_pickle_metadata": true,
     "unsupported_reducer_not_executed": true,
     "torch_zip_integrity_metadata_only": true,

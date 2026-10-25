@@ -58,20 +58,51 @@ def read_json(path, maximum=32*1024*1024):
     if p.stat().st_size>maximum: raise ValueError('Bounded JSON reader exceeded: '+p.name)
     return json.loads(p.read_text(encoding='utf-8'))
 
-def state_inventory(path):
-    """Read safe numeric arrays only; forbid object arrays and oversized decompression."""
+def npz_header_inventory(path):
+    """Inspect bounded NPY headers inside ZIP; never interpret object payloads."""
+    result={}
+    with zipfile.ZipFile(path) as archive:
+        names=[info.filename for info in archive.infolist()]
+        if len(names)!=len(set(names)):raise ValueError('Duplicate NPZ archive member names')
+        for info in archive.infolist():
+            safe_relative(info.filename)
+            if not info.filename.endswith('.npy'):raise ValueError('Unexpected non-NPY NPZ member')
+            if info.file_size>512*1024*1024:raise ValueError('NPZ member exceeds bounded numeric reader')
+            with archive.open(info) as stream:
+                if stream.read(6)!=b'\x93NUMPY':raise ValueError('Malformed NPY member magic')
+                version=tuple(stream.read(2))
+                if version not in [(1,0),(2,0),(3,0)]:raise ValueError('Unsupported NPY member version')
+                prefix_bytes=2 if version==(1,0) else 4;raw_length=stream.read(prefix_bytes)
+                if len(raw_length)!=prefix_bytes:raise ValueError('Truncated NPY header length')
+                size=struct.unpack('<H' if prefix_bytes==2 else '<I',raw_length)[0]
+                if size<2 or size>65536 or size+8+prefix_bytes>info.file_size:raise ValueError('NPY header length exceeds bound')
+                raw=stream.read(size)
+                if len(raw)!=size:raise ValueError('Truncated NPY header')
+                header=ast.literal_eval(raw.decode('utf-8' if version==(3,0) else 'latin1'))
+                if not isinstance(header,dict) or set(header)!={'descr','fortran_order','shape'}:raise ValueError('NPY header schema differs')
+                shape=header['shape'];dtype=np.dtype(header['descr'])
+                if not isinstance(shape,tuple) or not all(isinstance(x,int) and not isinstance(x,bool) and x>=0 for x in shape) or not isinstance(header['fortran_order'],bool):raise ValueError('NPY shape/order metadata invalid')
+                if not dtype.hasobject and math.prod(shape)*dtype.itemsize!=info.file_size-(size+8+prefix_bytes):raise ValueError('NPY numeric shape/payload extent differs')
+                result[info.filename[:-4]]={'shape':list(shape),'dtype':str(dtype),'hasobject':bool(dtype.hasobject),'fortran_order':header['fortran_order'],'uncompressed_bytes':info.file_size}
+    return result
+
+def state_inventory(path,required_members=(),allow_unused_object_metadata=False):
+    """Read safe numeric members; optionally inventory unconsumed object metadata headers only."""
     p=Path(path); result={}
     if p.suffix=='.npz':
-        with zipfile.ZipFile(p) as archive:
-            if any(info.file_size>512*1024*1024 for info in archive.infolist()):
-                raise ValueError('NPZ member exceeds bounded numeric reader')
+        headers=npz_header_inventory(p);required_members=set(required_members)
+        if not required_members.issubset(headers):raise ValueError('Source-consumed NPZ member missing: '+str(sorted(required_members-set(headers))))
         context=np.load(p,allow_pickle=False)
         try:
             for key in context.files:
+                if headers[key]['hasobject']:
+                    if key in required_members or not allow_unused_object_metadata:raise ValueError('Object NPZ member is required or not admitted: '+key)
+                    result[key]={**headers[key],'finite_numeric':False,'payload_loaded':False,'source_consumed':False,'inspection':'HEADER_ONLY_UNUSED_OBJECT_METADATA'}
+                    continue
                 a=context[key]
                 if a.dtype.hasobject:raise ValueError('Object numeric state is not admitted')
                 if a.dtype.kind in 'fciu' and not np.isfinite(a).all():raise ValueError('Nonfinite state: '+key)
-                result[key]={'shape':list(a.shape),'dtype':str(a.dtype),'finite_numeric':a.dtype.kind in 'fciu'}
+                result[key]={'shape':list(a.shape),'dtype':str(a.dtype),'finite_numeric':a.dtype.kind in 'fciu','payload_loaded':True,'source_consumed':key in required_members}
                 if key in ['classes','labels','pool_layers','layers'] and a.size<=1000:
                     result[key]['small_axis_values']=a.tolist()
         finally:context.close()
@@ -222,8 +253,11 @@ class Audit:
         return self.heads[p]
     def matches(self,pattern,ordered=False):
         if not pattern.startswith('/kaggle/input/'):raise ValueError('Source pattern is outside input root')
-        hits=[Path(p) for p in glob.glob(str(self.root/pattern[len('/kaggle/input/'):]),recursive=True)]
-        return sorted(hits) if ordered else hits
+        hits=glob.glob(str(self.root/pattern[len('/kaggle/input/'):]),recursive=True)
+        # The frozen source sorts glob STRINGS. Path component sorting changes
+        # prefix cases such as 8b-base/ versus 8b/ and selects a different model.
+        if ordered:hits=sorted(hits)
+        return [Path(p) for p in hits]
     def resolve(self,spec,complement=False):
         ordered='sorted' in spec.get('ordering','') and 'UNSORTED' not in spec.get('ordering','')
         hits=self.matches(spec['glob'],ordered)
@@ -404,18 +438,30 @@ class Audit:
         if p is None:return {'status':'SOURCE_ALLOWED_MISSING_MEMBER_SKIP','member':spec['name'],'emitted_in_our_source_stack':False}
         if p.name=='config.json':return self.model(p)
         if p.name=='COMPLETE.json':
-            ck=p.parent;hidden=spec['trunk_spec'][1];layers=spec['pool_layers'];state=state_inventory(ck/'readouts.npz')
+            ck=p.parent;hidden=spec['trunk_spec'][1];layers=spec['pool_layers']
+            header_inventory=npz_header_inventory(ck/'readouts.npz')
+            required={'classes','pool_layers','plain_coef','plain_intercept'}
+            if spec['name'] in ['lora24_public','lora24_claude']:required.update(['center_coef','center_intercept'])
+            if 'claude_coef' in header_inventory:required.update(['claude_coef','claude_intercept'])
+            state=state_inventory(ck/'readouts.npz',required,allow_unused_object_metadata=True)
             with np.load(ck/'readouts.npz',allow_pickle=False) as z:
                 if z['classes'].tolist()!=LABELS or z['pool_layers'].tolist()!=layers:raise ValueError('Complement class/layer axes differ')
             width=hidden*len(layers)
-            for key,shape in [('plain_coef',[18,width]),('plain_intercept',[18]),('center_coef',[18,width]),('center_intercept',[18])]:
+            shapes=[('plain_coef',[18,width]),('plain_intercept',[18])]
+            if spec['name'] in ['lora24_public','lora24_claude']:shapes.extend([('center_coef',[18,width]),('center_intercept',[18])])
+            if 'claude_coef' in header_inventory:shapes.extend([('claude_coef',[5,width]),('claude_intercept',[5])])
+            for key,shape in shapes:
                 if state.get(key,{}).get('shape')!=shape:raise ValueError('Complement readout dimensions differ')
+                if np.dtype(state[key]['dtype']).kind not in 'fiu':raise ValueError('Source-consumed readout must be real numeric: '+key)
             norms=self.header(ck/spec['norms_file']);self.tokenizer(ck/'tokenizer')
             for i in range(len(layers)):
                 for field in ['weight','bias']:
                     if norms.get(f'norms.{i}.{field}',{}).get('shape')!=[hidden] and norms.get(f'{i}.{field}',{}).get('shape')!=[hidden]:raise ValueError('Complement norm shape missing/different')
-            if (ck/spec['anchor_file']).is_file():state_inventory(ck/spec['anchor_file'])
-            return {'path':self.rel(ck),'complete_sha256':self.hash(p),'readouts_sha256':self.hash(ck/'readouts.npz'),'norms_sha256':self.hash(ck/spec['norms_file']),'adapter':self.adapter_pairs(ck/'adapter',hidden,spec['trunk_spec'][2]),'state':state,'anchor_present':(ck/spec['anchor_file']).is_file()}
+            anchor=None
+            if (ck/spec['anchor_file']).is_file():
+                anchor=state_inventory(ck/spec['anchor_file'],['features'],allow_unused_object_metadata=True)
+                if anchor['features']['shape']!=[3,width] or np.dtype(anchor['features']['dtype']).kind not in 'fiu':raise ValueError('Source-consumed parity anchor features dimensions/dtype differ')
+            return {'path':self.rel(ck),'complete_sha256':self.hash(p),'readouts_sha256':self.hash(ck/'readouts.npz'),'norms_sha256':self.hash(ck/spec['norms_file']),'adapter':self.adapter_pairs(ck/'adapter',hidden,spec['trunk_spec'][2]),'state':state,'source_consumed_readout_members':sorted(required),'unused_object_metadata_members':[key for key,value in state.items() if value.get('inspection')=='HEADER_ONLY_UNUSED_OBJECT_METADATA'],'anchor_state':anchor,'anchor_present':anchor is not None,'object_payloads_loaded':False}
         if p.suffix=='.pt':return {'path':self.rel(p),'sha256':self.hash(p),'archive':torch_zip_inventory(p),'serialized_checkpoint_loaded':False}
         raise ValueError('Unrecognised complement asset selector')
     def ultrabert(self,spec):
@@ -494,6 +540,22 @@ def self_test():
         bad=root/'bad.safetensors';bad.write_bytes(struct.pack('<Q',1000)+b'{}');rejects('truncated_safetensors',lambda:safetensor_header(bad))
         np.savez(root/'object.npz',x=np.asarray([{'bad':True}],dtype=object));rejects('npz_pickle_object',lambda:state_inventory(root/'object.npz'))
         np.savez(root/'nan.npz',x=np.asarray([np.nan]));rejects('npz_nonfinite',lambda:state_inventory(root/'nan.npz'))
+        np.savez(root/'unused_metadata.npz',features=np.ones((3,8)),ids=np.asarray(['one','two','three'],dtype=object))
+        def unused_object_header_only():
+            record=state_inventory(root/'unused_metadata.npz',['features'],allow_unused_object_metadata=True)
+            if record['ids']['inspection']!='HEADER_ONLY_UNUSED_OBJECT_METADATA' or record['ids']['payload_loaded'] is not False or record['features']['shape']!=[3,8]:raise ValueError('Unused object metadata was not safely excluded')
+        accepts('unused_object_metadata_header_inventory_without_payload',unused_object_header_only)
+        rejects('source_consumed_object_member_still_blocks',lambda:state_inventory(root/'unused_metadata.npz',['ids'],allow_unused_object_metadata=True))
+        rejects('missing_source_consumed_npz_member_still_blocks',lambda:state_inventory(root/'unused_metadata.npz',['absent'],allow_unused_object_metadata=True))
+        np.savez(root/'bad_features.npz',features=np.full((3,8),np.nan),ids=np.asarray(['one'],dtype=object))
+        rejects('nonfinite_consumed_numeric_member_still_blocks',lambda:state_inventory(root/'bad_features.npz',['features'],allow_unused_object_metadata=True))
+        for model_name in ['8b','8b-base']:
+            folder=root/'models/qwen-3'/model_name/'1';folder.mkdir(parents=True);(folder/'config.json').write_text('{}')
+        def source_string_sort_precedes_Path_conversion():
+            hits=a.matches('/kaggle/input/models/qwen-3/**/config.json',ordered=True)
+            expected=sorted([str(root/'models/qwen-3'/name/'1/config.json') for name in ['8b','8b-base']])
+            if [str(p) for p in hits]!=expected or '/8b-base/' not in str(hits[0]):raise ValueError('Source string sorting differs from audited selection')
+        accepts('source_string_sort_selects_8b_base_before_8b',source_string_sort_precedes_Path_conversion)
         # Primitive mapping opcode fixture, parsed without a pickle loader.
         accepts('static_primitive_pickle_metadata',lambda:static_torch_metadata(b'\x80\x02}q\x00X\x01\x00\x00\x00xq\x01K\x03s.',{}))
         rejects('unsupported_reducer_not_executed',lambda:static_torch_metadata(b'\x80\x02cos\nsystem\nX\x04\x00\x00\x00oops\x85R.',{}))
