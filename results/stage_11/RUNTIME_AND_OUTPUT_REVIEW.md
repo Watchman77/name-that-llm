@@ -4,7 +4,7 @@ Static review of the 33 captured cells from source V28 **362014737**. No source,
 
 ## Runtime gate
 
-The internal budget is genuinely untimed: remaining time is infinity, required-duration checks do nothing, the parallel runner ignores `max_seconds`, and ATLAS never uses its `--seconds` argument. Kaggle's platform execution limit still applies. The local capture contains no verified hidden full-run runtime; its 22.7-second preview skips inference.
+The internal budget is genuinely untimed: remaining time is infinity, required-duration checks do nothing, the parallel runner ignores `max_seconds`, and ATLAS never uses its `--seconds` argument. The competition-specific limit is **9 hours for CPU and GPU notebooks**, with Internet off. Root verified this in the live competition Overview Code Requirements on **25 October 2026**; generic Kaggle duration limits do not override it. Root also read **29 free GPU hours remaining** in the GPU turn-on modal and cancelled without enabling GPUs. The local capture contains no verified hidden full-run runtime; its 22.7-second preview skips inference.
 
 The new Qwen worker requires exactly two GPUs and runs the portable fp16 path across all 64 decoder layers. Batch size is three with a single-row OOM retry. It never truncates to a fixed length; native-context overflow fails. The explicit NF4 copy totals **19,447,911,132 bytes** and requires free temporary space strictly above **21,595,394,780 bytes**, before other simultaneous temporary data is considered.
 
@@ -28,3 +28,8 @@ Detailed file names, exact fields, static evidence and limitations are recorded 
 ## Live competition limit and available quota — 25 October 2026
 
 The authoritative competition Overview, Code Requirements section, states **CPU and GPU notebooks each have a 9-hour runtime limit**, with Internet disabled. A general Kaggle notebook allowance does not override this competition limit. The connected-account GPU enable dialog separately reported **29 hours remaining** out of the weekly 30-hour allocation; the dialog was cancelled after reading, leaving the CPU audit on None. Neither observation measures the candidate's runtime.
+
+
+## Verified competition boundary — 25 October 2026
+
+The live competition Overview also states 40–250-word train/test passages, unequal model counts, and different public/private model mixtures. Uniform Sinkhorn balancing remains the frozen source heuristic; it is not a known true class-count constraint. This observation does not change the production recipe.

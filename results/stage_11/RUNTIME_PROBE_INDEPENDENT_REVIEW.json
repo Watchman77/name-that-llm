@@ -1,7 +1,7 @@
 {
   "status": "PASS_ARTIFACT_REVIEW_ONLY",
-  "script_sha256": "2a193331330e55752cc77d96cc38d7cdc53d5ff04b28ad7ca753adabe96155a0",
-  "notebook_sha256": "5cc83261fc5e0b74de2a2097c3c90dd21405295b74c9ed7054a08b5a6f05042d",
+  "script_sha256": "3326f7b3b58a9177c82cb767b2aeef7d419a7c93afaf18d9a3e3d7ce65b00872",
+  "notebook_sha256": "f10ef461659d906cc2ed81bdf0f879a8b14a2e80be99a91dee86f4726cca68db",
   "checks": {
     "exact_source_stage_dataset_weights.py": true,
     "exact_source_qwen_nf4_loader.py": true,
@@ -21,10 +21,12 @@
     "OOM_retry_count_unknown_honestly": true,
     "no_accuracy_or_full_runtime_claim": true,
     "official_test_not_used_for_sample": true,
-    "private_query_rows_not_exported_in_aggregate": true
+    "private_query_rows_not_exported_in_aggregate": true,
+    "probe_scope_and_NF4_stage_on_source_tmp_filesystem": true,
+    "actual_stage_filesystem_capacity_recorded": true
   },
-  "passed": 19,
-  "total": 19,
+  "passed": 21,
+  "total": 21,
   "synthetic_result": {
     "passed": 25,
     "total": 25,
@@ -34,5 +36,6 @@
   "actual_GPU_probe_run": false,
   "whole_ensemble_runtime_verified": false,
   "production_33_cells_modified": false,
-  "post_review_admission_note": "Root must inject actual passing CPU version/report SHA and all160-path-pass evidence. This changes the diagnostic notebook admission literal only; helper/module bytes remain pinned."
+  "post_review_admission_note": "Root must inject actual passing CPU version/report SHA and all160-path-pass evidence. This changes the diagnostic notebook admission literal only; helper/module bytes remain pinned.",
+  "filesystem_correction": "Scoped runtime and NF4 staging use /tmp, matching the production staging filesystem and the CPU-observed free-space mount. /kaggle/temp free space is not inferred from /tmp."
 }

@@ -16,6 +16,8 @@
   "official_score": null,
   "verified_date": "2026-10-25",
   "source": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-public-642-audit?scriptVersionId=362119531",
-  "evidence": "authoritative live logs summary and completed-job runtime; full JSON collection pending",
-  "full_report_collected": false
+  "evidence": "actual completed job plus exact saved report, gzip transport and SHA256 verified",
+  "full_report_collected": true,
+  "full_report_sha256": "aa39a49d561a11c4954de2fa7b0728b61d431a07332e5d28fc5fb8f29d2e9601",
+  "collection_version_id": 362123509
 }

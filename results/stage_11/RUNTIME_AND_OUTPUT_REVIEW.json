@@ -38,7 +38,19 @@
     "nf4_minimum_extra_free_bytes": 2147483648,
     "required_tmp_free_strictly_greater_than_bytes": 21595394780,
     "temp_stage_cleanup": "contextmanager finally removes staged directory after subprocess completion or failure",
-    "source_environment": "Root live UI reports source original environment pinned to 2026-10-02; this observation was not independently browsed here"
+    "source_environment": "Source UI original-image pin was observed, but actual CPU distributions are Python3.13.15/Torch2.11.0+cpu/Transformers5.16.1; GPU image and CUDA stack remain unverified until probe.",
+    "competition_runtime_limit_seconds": 32400,
+    "competition_runtime_limit_hours": 9,
+    "competition_runtime_limit_applies_to": [
+      "CPU notebooks",
+      "GPU notebooks"
+    ],
+    "competition_limit_source": "https://www.kaggle.com/competitions/name-that-llm/overview",
+    "competition_limit_verified_by": "Root agent, live competition Overview Code Requirements, 25 October 2026",
+    "competition_internet_required_off": true,
+    "free_gpu_quota_remaining_hours_observed": 29,
+    "free_gpu_quota_observation": "Root read GPU turn-on modal, 25 October 2026; cancelled without enabling GPUs",
+    "generic_notebook_limit_cannot_override_competition_limit": true
   },
   "asset_gate": {
     "mandatory_check_count": 160,
@@ -168,7 +180,8 @@
       "private leaderboard score",
       "full model parity solely from artifact finiteness"
     ],
-    "public_export": "Only aggregate counts, hashes and check results; no raw text, test IDs or row-level probabilities in public Git"
+    "public_export": "Only aggregate counts, hashes and check results; no raw text, test IDs or row-level probabilities in public Git",
+    "uniform_balancing_boundary": "Frozen heuristic, not a verified model-count prior. Live competition Overview states unequal model counts and different public/private mixtures; root verified 25 October 2026."
   },
   "authoritative_competition_execution_limit": {
     "cpu_hours": 9,
@@ -184,5 +197,6 @@
     "surface": "Kaggle editor Turn on GPU T4 x2 confirmation dialog; cancelled after reading",
     "verified_date": "2026-10-25",
     "paid_service": false
-  }
+  },
+  "actual_CPU_V2_admission_review": "CPU_V2_ADMISSION_REVIEW.json"
 }

@@ -34,8 +34,8 @@
       "byte_exact_after_magic_line_removed": true
     }
   ],
-  "probe_script_sha256": "2a193331330e55752cc77d96cc38d7cdc53d5ff04b28ad7ca753adabe96155a0",
-  "notebook_sha256": "5cc83261fc5e0b74de2a2097c3c90dd21405295b74c9ed7054a08b5a6f05042d",
+  "probe_script_sha256": "3326f7b3b58a9177c82cb767b2aeef7d419a7c93afaf18d9a3e3d7ce65b00872",
+  "notebook_sha256": "f10ef461659d906cc2ed81bdf0f879a8b14a2e80be99a91dee86f4726cca68db",
   "nbformat_and_compile": "PASS",
   "source_modules_imported_or_executed_locally": false,
   "model_or_gpu_run": false,
@@ -52,5 +52,7 @@
     "cpu_audit_status",
     "mandatory_source_checks_passed",
     "mandatory_source_checks_total"
-  ]
+  ],
+  "runtime_and_nf4_staging_filesystem": "/tmp, matching production staged_dataset_tree default; scoped directory removed in finally",
+  "actual_free_space_recorded_before_copy": true
 }

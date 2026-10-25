@@ -1,6 +1,18 @@
-# Stage 11 — actual CPU audit in progress
+# Stage 11 — CPU input contract passed; bounded GPU probe admitted
 
-## Current checkpoint — 25 October 2026
+## Current actual outcome — 25 October 2026
+
+Private CPU **V2 362119531 succeeded in 686.1 seconds**, with **175/175 audit checks passing**, including **160/160 mandatory source paths**. It verified 333 actual file hashes. All 17 active NF4 files, including seven large weight shards, were checked against the published QWEN38 addition manifest. The final adapter contains 144 tensors and 62 complete LoRA pairs; its native alphabetic label order is transported to the canonical ensemble order by the unchanged source's named permutation. No head, weight, metadata or source inference code was changed.
+
+The complete saved report was 924,007 bytes, exceeding Kaggle's log and JSON-preview display limits. A separate CPU collector **362123509 succeeded in 57.7 seconds** and transported the exact saved bytes as gzip/base64. All 20 chunks, gzip SHA256 and raw-report SHA256 were verified. The full report's SHA256 is `aa39a49d561a11c4954de2fa7b0728b61d431a07332e5d28fc5fb8f29d2e9601`. See [readable aggregate summary](REAL_INPUT_AUDIT_V2_SUMMARY.json), [exact compressed report](REAL_INPUT_AUDIT_V2.json.gz), and [collection receipt](REPORT_COLLECTION_ACTUAL.json).
+
+Independent review of the actual report admits the **bounded Qwen-only runtime probe**. The sole unresolved historical manifest entry refers to a tensor name in an unused mixed-FP8 asset tree; it is explicitly not counted as a verified file and does not affect the active NF4 root. Source byte pins, active schemas and actual NF4 payload checks remain separately verified. CPU `/tmp` had about 1.126 TB available, comfortably above the 19.448 GB staging copy plus 2 GiB reserve. This is CPU evidence; the GPU instance will measure its own space and environment.
+
+The probe uses the five original worker modules unchanged, a real **900-second process-group deadline**, and 12 unlabeled token-length ranks. Only its admission literal has been populated from this verified CPU report. It has not launched at this checkpoint. CPU checks do not prove GPU execution or the complete hidden-test runtime. Our official best remains **S04 0.639**; no Stage 11 score exists.
+
+The snapshots below retain earlier evidence and the corrected audit block.
+
+## Earlier running checkpoint — 25 October 2026
 
 The exact source V28 **362014737** (author public **0.642**) has been copied privately to watchman777. Our confirmed official best remains **S04 at 0.639**. The copy's UI mount for Name That LLM Artifacts is exactly `/kaggle/input/ntl-olmo2-native24-final-inference-assets/`.
 

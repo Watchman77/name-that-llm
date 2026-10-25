@@ -204,6 +204,8 @@ def _run_inner(runtime,out):
     staging=importlib.util.module_from_spec(spec);spec.loader.exec_module(staging)
     if staging.NF4_FILES!=NF4_FILES:raise ValueError('NF4 staging inventory differs')
     stage_root=runtime/'staging';stage_root.mkdir()
+    stage_disk=shutil.disk_usage(stage_root)
+    metrics['nf4_stage_filesystem']={'scoped_runtime_parent':str(runtime.parent),'free_bytes_before_copy':stage_disk.free,'total_bytes':stage_disk.total,'expected_copy_bytes':sum(NF4_FILES.values()),'required_extra_free_bytes':2*2**30}
     copy_started=time.monotonic()
     with staging.staged_dataset_tree(paths['own_nf4_base'],NF4_FILES,label='own-nf4',temp_root=str(stage_root)) as local_base:
         metrics['nf4_staging_seconds']=time.monotonic()-copy_started
@@ -250,14 +252,14 @@ def run_probe(admission=None,*,output_root='/kaggle/working/stage11_qwen_probe',
     if type(timeout_seconds)is not int or not 1<=timeout_seconds<=TIMEOUT_SECONDS:raise ValueError('Deadline must be at most 900 seconds')
     if not Path('/kaggle/input').is_dir():raise ValueError('Actual Kaggle inputs are required; local model execution is forbidden')
     out=Path(output_root);out.mkdir(parents=True,exist_ok=False)
-    Path('/kaggle/temp').mkdir(parents=True,exist_ok=True)
-    runtime=Path(tempfile.mkdtemp(prefix='stage11-qwen-probe-',dir='/kaggle/temp'))
+    runtime=Path(tempfile.mkdtemp(prefix='stage11-qwen-probe-',dir='/tmp'))
     report={'stage':11,'mode':'QWEN_BRANCH_RUNTIME_DIAGNOSTIC_ONLY','source_version':SOURCE_VERSION,
             'source_capture_sha256':SOURCE_CAPTURE_SHA256,'admission':admitted,
             'accuracy_evaluated':False,'official_public_score':None,'whole_ensemble_runtime_verified':False,
             'hidden_runtime_verified':False,'production_source_cells_modified':False,
             'source_module_sha256':FROZEN_MODULE_SHA256,'timeout_seconds':timeout_seconds,
             'nf4_expected_copy_bytes':sum(NF4_FILES.values()),'sample_rows':SAMPLE_ROWS,
+            'runtime_directory_parent':str(runtime.parent),'runtime_filesystem_free_bytes_at_start':shutil.disk_usage(runtime).free,
             'labels_loaded_for_selection':False,'original_ids_text_or_row_outputs_in_public_report':False,
             'limitations':['Qwen branch only; complete reference/complement/ATLAS runtime is unmeasured.',
                            'Official-text timing does not establish hidden-text throughput or context limits.',

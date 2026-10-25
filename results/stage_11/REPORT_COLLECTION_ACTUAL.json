@@ -1,0 +1,22 @@
+{
+  "collector_script_version_id": 362123509,
+  "runtime_seconds": 57.7,
+  "execution": "Succeeded",
+  "transport": {
+    "path": "/kaggle/input/notebooks/watchman777/name-that-llm-stage-11-public-642-audit/stage11_preflight/INPUT_AUDIT.json",
+    "file_bytes": 924007,
+    "file_sha256": "aa39a49d561a11c4954de2fa7b0728b61d431a07332e5d28fc5fb8f29d2e9601",
+    "gzip_bytes": 58614,
+    "gzip_sha256": "2d9eee3d22155a4e510002884dc0eca56c0871eed2e2119274ec95051efa8efd",
+    "base64_characters": 78152,
+    "chunks": 20,
+    "chunk_characters": 4000,
+    "transport": "base64(gzip(exact input file bytes,mtime=0))"
+  },
+  "gzip_file": "REAL_INPUT_AUDIT_V2.json.gz",
+  "raw_file_sha256_verified": true,
+  "gzip_sha256_verified": true,
+  "all20chunks_complete": true,
+  "code_or_model_executed": false,
+  "source": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-11-audit-report-collector?scriptVersionId=362123509"
+}

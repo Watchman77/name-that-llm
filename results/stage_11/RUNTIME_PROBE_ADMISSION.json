@@ -1,0 +1,17 @@
+{
+  "admission": {
+    "source_version_id": 362014737,
+    "cpu_audit_version_id": 362119531,
+    "cpu_audit_report_sha256": "aa39a49d561a11c4954de2fa7b0728b61d431a07332e5d28fc5fb8f29d2e9601",
+    "cpu_audit_status": "PASS_CPU_INPUT_CONTRACT_ONLY",
+    "mandatory_source_checks_passed": 160,
+    "mandatory_source_checks_total": 160
+  },
+  "helper_sha256": "3326f7b3b58a9177c82cb767b2aeef7d419a7c93afaf18d9a3e3d7ce65b00872",
+  "locked_notebook_sha256": "f10ef461659d906cc2ed81bdf0f879a8b14a2e80be99a91dee86f4726cca68db",
+  "admitted_notebook_sha256": "40e8520017fe1dca97682a9faf2c0c6afb124e2a3932673fd4890d528c4e7364",
+  "only_code_change": "ADMISSION literal; helper and5upstreammodules unchanged",
+  "schema_compile_readback": "PASS",
+  "runtime_seconds_max": 900,
+  "gpu_model_execution_started": false
+}
