@@ -1,0 +1,43 @@
+{
+  "verified_date": "2026-10-26",
+  "account": "watchman777",
+  "submission": "S06",
+  "stage": "12B",
+  "script_version_id": 362263151,
+  "official_state": "Succeeded",
+  "official_public_balanced_accuracy": "0.641",
+  "official_percent": "64.1",
+  "reference_submission": "S05",
+  "reference_script_version_id": 362129392,
+  "reference_official_public_balanced_accuracy": "0.642",
+  "difference_percentage_points": "-0.1",
+  "difference_method": "(Decimal('0.641') - Decimal('0.642')) * Decimal('100')",
+  "confirmed_best_submission": "S05",
+  "confirmed_best_official_public_balanced_accuracy": "0.642",
+  "points_to_70": "5.8",
+  "evidence": {
+    "surface": "Connected Chrome, signed-in Kaggle submissions row and Submission Details modal",
+    "submissions_url": "https://www.kaggle.com/competitions/name-that-llm/submissions",
+    "candidate_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12b-svc-topic-correction?scriptVersionId=362263151",
+    "separate_hidden_run_log_link_exposed": false,
+    "hidden_runtime_verified": false,
+    "hidden_guard_counts_verified": false,
+    "preview_logs_used_as_hidden_logs": false
+  },
+  "decision": "Retain S05 as benchmark; retire exact S06 intervention; no automatic variants",
+  "statistical_significance_claimed": false,
+  "private_leaderboard_result_known": false,
+  "final_selection": {
+    "observed_mode": "automatic",
+    "observed_count": "0/2",
+    "controls_changed": false,
+    "earlier_observation": "2/2; reason for different current observation not established"
+  },
+  "watch": {
+    "enabled": false,
+    "terminal_notification_delivered": true
+  },
+  "new_jobs_started": false,
+  "new_submissions": false,
+  "paid_services": false
+}

@@ -1,6 +1,16 @@
-# Stage 12B — S06 accepted; official score pending
+# Stage 12B — S06 completed at 0.641; retain S05 at 0.642
 
-## Current verified outcome — 25 October 2026
+## S06 official completion verified — 26 October 2026
+
+Our S06 / Stage12B V4 **362263151** displays **Succeeded** and **0.641 official public balanced accuracy (64.1%)** on the connected-account Kaggle submissions page. Submission Details separately confirms the exact version and Score: 0.641. The same page displays S05 at **0.642 (64.2%)**. Exact decimal arithmetic gives **-0.1 percentage points** for S06 versus S05; S05 remains the benchmark, with **5.8 points** to the 70% stretch goal.
+
+The fixed SVC correction did not improve the official public score. Retire this exact intervention under its declared one-test policy; no automatic coefficient, placement or blend variants. The small difference alone does not establish statistically certain harm or private-leaderboard performance. Stage12A's +2.1494-point standalone development gain did not establish value in the complete ensemble.
+
+Submission Details exposes no separate hidden-run log link. Hidden runtime, detailed guard counts and replay artifacts remain unavailable; the 20.3-second format preview is not substituted for those logs. The watch is completed and disabled, with the terminal outcome reported. The fresh page shows automatic final selection **0/2**, unlike an earlier recorded 2/2 observation; no selection controls were changed in this check.
+
+The next admitted route is the already frozen Stage12 public-source recipe after resolving Meta Llama access and repeating CPU admission. The model page still displays the Meta access/licence prerequisite on 26 October; no acceptance, access request, GPU run or new submission occurred. Author 0.651 is not our score. See [official receipt](OFFICIAL_RESULT_20261026.json) and [next-step decision](../../plans/NEXT_AFTER_S06_20261026.md).
+
+## Historical accepted-state checkpoint — 25 October 2026
 
 Official **S06 is accepted and displays Notebook Running**, with no displayed S06 score. Exact private **V4 362263151** activates one existing SVC topic correction on our successful **S05 0.642** parent. Only original source cell30 changes; the other 32 original cells and parent guard34 remain exact, with a separate replay guard35 added. All 35 saved code cells and all 28 parent input versions match the reviewed pre-execution Git freeze **2c778522775d6b34e2efa387bee42fd420775c42**. No model, blend weight, grouping setting or final-selection change was made.
 

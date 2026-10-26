@@ -1,6 +1,6 @@
 # Project stages and current state
 
-Current checkpoint, 24 October 2026: **S03 / Stage 08C V2 succeeded at 0.620 official public balanced accuracy**, +7.1 percentage points above S02. Rank at verification: 377. The S03 watch is complete and disabled. Stage 09 completed and its fixed pretraining candidate was rejected: control29.4444% versus candidate24.2593% on one reused development fold (-5.1852points); no official submission. See `results/stage_09/REPORT.md`. Historical observations below retain their original dates.
+Current checkpoint, 26 October 2026: **S05 remains best at 0.642 official public balanced accuracy. S06 completed at 0.641 (-0.1 percentage points), and its watch is completed/disabled.** Retire the exact correction. The existing Stage12 public-source 0.651 recipe remains blocked solely on required Meta Llama access; the author score is not ours. See `plans/NEXT_AFTER_S06_20261026.md`. Earlier observations below are historical checkpoints.
 
 
 ## Competition goal
@@ -142,3 +142,14 @@ Actual Stage12 CPU V3 **362258945** succeeded in **373.9s** with **70/71** input
 Using the established S05 assets, froze one counterfactual before evaluation at **2c778522775d6b34e2efa387bee42fd420775c42**: activate the published 0.62 SVC topic correction once after the decoder/DeBERTa sum and before complement/ATLAS. Other 32 original cells and parent guard34 remain exact; a new guard35 replays the private runtime evidence, reconstructs the uncorrected sum and links the correction into the actual pre-ATLAS mixture. Independent build review passes 23/23; 16 synthetic fixtures pass. Actual saved V3 and V4 each match all 35 reviewed code cells and all 28 parent input-version IDs.
 
 Final private **V4 362263151** succeeded in **20.3s** with actual T4x2 allocation profile and persistent GPU save policy. All 25 parent and 16 new format checks pass, explicitly **FORMAT_ONLY_PREVIEW_INTERVENTION_NOT_EXECUTED**. Submitted this exact V4 as **S06**, now **Notebook Running with no displayed score**. The component gain does not estimate a full-ensemble gain; one blind official experiment is declared, with no automatic variants. Our confirmed best remains **S05 0.642 official public balanced accuracy**. A read-only hourly terminal-result watch is enabled. Final selections remain S03/S04 at 2/2, unchanged; no paid service. See [Stage12B report](results/stage_12b/REPORT.md) and [submission receipt](results/stage_12b/S06_SUBMISSION_RECEIPT.json).
+
+
+## S06 official completion verified — 26 October 2026
+
+Our S06 / Stage12B V4 **362263151** displays **Succeeded** and **0.641 official public balanced accuracy (64.1%)** on the connected-account Kaggle submissions page. Submission Details separately confirms the exact version and Score: 0.641. The same page displays S05 at **0.642 (64.2%)**. Exact decimal arithmetic gives **-0.1 percentage points** for S06 versus S05; S05 remains the benchmark, with **5.8 points** to the 70% stretch goal.
+
+The fixed SVC correction did not improve the official public score. Retire this exact intervention under its declared one-test policy; no automatic coefficient, placement or blend variants. The small difference alone does not establish statistically certain harm or private-leaderboard performance. Stage12A's +2.1494-point standalone development gain did not establish value in the complete ensemble.
+
+Submission Details exposes no separate hidden-run log link. Hidden runtime, detailed guard counts and replay artifacts remain unavailable; the 20.3-second format preview is not substituted for those logs. The watch is completed and disabled, with the terminal outcome reported. The fresh page shows automatic final selection **0/2**, unlike an earlier recorded 2/2 observation; no selection controls were changed in this check.
+
+The next admitted route is the already frozen Stage12 public-source recipe after resolving Meta Llama access and repeating CPU admission. The model page still displays the Meta access/licence prerequisite on 26 October; no acceptance, access request, GPU run or new submission occurred. Author 0.651 is not our score. See [official receipt](results/stage_12b/OFFICIAL_RESULT_20261026.json) and [next-step decision](plans/NEXT_AFTER_S06_20261026.md).

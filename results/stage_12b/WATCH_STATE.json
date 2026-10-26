@@ -2,13 +2,17 @@
   "stage": "12B",
   "submission": "S06",
   "script_version_id": 362263151,
-  "enabled": true,
+  "enabled": false,
   "cadence": "hourly condition watch",
-  "last_verified_date": "2026-10-25",
-  "last_verified_official_state": "Notebook Running",
-  "displayed_official_score": null,
-  "terminal_notification_delivered": false,
+  "last_verified_date": "2026-10-26",
+  "last_verified_official_state": "Succeeded",
+  "displayed_official_score": "0.641",
+  "terminal_notification_delivered": true,
   "unchanged_running_alerts_suppressed": true,
   "disable_when_terminal": true,
-  "read_only": true
+  "read_only": true,
+  "completed": true,
+  "reference_submission": "S05",
+  "reference_score": "0.642",
+  "difference_percentage_points": "-0.1"
 }
