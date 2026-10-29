@@ -1,0 +1,329 @@
+{
+  "stage": 12,
+  "date_verified": "2026-10-29",
+  "status": "EXPLICIT_DATASET_PINS_VERIFIED_RUNTIME_RECHECK_PENDING",
+  "production_quick_version": 7,
+  "script_version_id": 363602111,
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363602111",
+  "source_only": true,
+  "all_seven_production_code_cells_exact": true,
+  "dataset_count": 14,
+  "all_pins_verified_after_full_editor_reload": true,
+  "pin_verification": [
+    {
+      "name": "prvsiyan's Extended Name That LLM Dataset",
+      "selected": {
+        "checked": true,
+        "label": "Version 6 - Licence clarification: dataset CC BY 4.0 as a whole; only the 150 reproduced train_regen prompt texts in prompts.csv stay CC BY-SA 4.0 (pjmathematician). README/changelog updated.\n7 days ago",
+        "value": "22269045"
+      },
+      "expectedVersionId": "22269045",
+      "exact": true
+    },
+    {
+      "name": "NTL free-proxy GPT and Gemini generations",
+      "selected": {
+        "checked": true,
+        "label": "Version 8 - Add prompt-bank-v2 batches v2b06-v2b10 (1,197 passages; now 5,452 passages on 1,344 prompts)\n4 days ago",
+        "value": "22401889"
+      },
+      "expectedVersionId": "22401889",
+      "exact": true
+    },
+    {
+      "name": "Name That LLM: extra GPT and Gemini generations",
+      "selected": {
+        "checked": true,
+        "label": "Version 2 - batch 3: Gemini 3.1 Pro + GPT-6 Astra\n9 days ago",
+        "value": "22177031"
+      },
+      "expectedVersionId": "22177031",
+      "exact": true
+    },
+    {
+      "name": "Name That LLM: free-proxy generations",
+      "selected": {
+        "checked": true,
+        "label": "Version 1 - Initial release\n13 days ago",
+        "value": "22010600"
+      },
+      "expectedVersionId": "22010600",
+      "exact": true
+    },
+    {
+      "name": "Name That LLM: Qwen3-8B LoRA + Claude Head",
+      "selected": {
+        "checked": true,
+        "label": "Version 1 - Initial release\n13 days ago",
+        "value": "21994138"
+      },
+      "expectedVersionId": "21994138",
+      "exact": true
+    },
+    {
+      "name": "NTL two-stage LoRA checkpoints and public pool",
+      "selected": {
+        "checked": true,
+        "label": "Version 1 - Initial release\n11 days ago",
+        "value": "22100594"
+      },
+      "expectedVersionId": "22100594",
+      "exact": true
+    },
+    {
+      "name": "NTL two-stage LoRA part two",
+      "selected": {
+        "checked": true,
+        "label": "Version 1 - Initial release\n7 days ago",
+        "value": "22292189"
+      },
+      "expectedVersionId": "22292189",
+      "exact": true
+    },
+    {
+      "name": "NTL Two-Stage LoRA24 Adapters (120k pool)",
+      "selected": {
+        "checked": true,
+        "label": "Version 1 - Initial release\n5 days ago",
+        "value": "22377778"
+      },
+      "expectedVersionId": "22377778",
+      "exact": true
+    },
+    {
+      "name": "UltraBERT-380M Name That LLM 5-fold",
+      "selected": {
+        "checked": true,
+        "label": "Version 1 - Initial release\n15 days ago",
+        "value": "21895589"
+      },
+      "expectedVersionId": "21895589",
+      "exact": true
+    },
+    {
+      "name": "Name That LLM: Extra API Passages",
+      "selected": {
+        "checked": true,
+        "label": "Version 2 - v1.1: same data; README.md synced with the corrected description (fixes broken characters and a cut-off description); file and column descriptions\n13 days ago",
+        "value": "21981458"
+      },
+      "expectedVersionId": "21981458",
+      "exact": true
+    },
+    {
+      "name": "nlm-offline-wheels",
+      "selected": {
+        "checked": true,
+        "label": "Version 2 - add peft\n12 days ago · +1 new",
+        "value": "22022378"
+      },
+      "expectedVersionId": "22022378",
+      "exact": true
+    },
+    {
+      "name": "nlm-matched-clean",
+      "selected": {
+        "checked": true,
+        "label": "Version 3 - add pool_v5: 120k public passages (122k clean pool + own generations, mark + train-leak filters)\n6 days ago · +1 new",
+        "value": "22318518"
+      },
+      "expectedVersionId": "22318518",
+      "exact": true
+    },
+    {
+      "name": "NTL ATLAS Qwen3 8B v1",
+      "selected": {
+        "checked": true,
+        "label": "Version 3 - Add CC BY-SA 4.0 license for adapter weights and package documentation, Apache 2.0 license for bundled Python code, and credits. Model weights, inference code and original files are unchanged.\n9 days ago · +4 new",
+        "value": "22180590"
+      },
+      "expectedVersionId": "22180590",
+      "exact": true
+    },
+    {
+      "name": "Identify the model behind text",
+      "selected": {
+        "checked": true,
+        "label": "Version 7 - add seed-7 Qwen3-8B two-stage adapters (max_len 512; 5 folds + full)\n8 days ago · +3 new",
+        "value": "22233098"
+      },
+      "expectedVersionId": "22233098",
+      "exact": true
+    }
+  ],
+  "restored_csv_versions": [
+    {
+      "dataset": "prvsiyan's Extended Name That LLM Dataset",
+      "version": 6,
+      "ui_version_value": 22269045
+    },
+    {
+      "dataset": "NTL free-proxy GPT and Gemini generations",
+      "version": 8,
+      "ui_version_value": 22401889
+    },
+    {
+      "dataset": "Name That LLM: extra GPT and Gemini generations",
+      "version": 2,
+      "ui_version_value": 22177031
+    }
+  ],
+  "expected_prior_csv_content": [
+    {
+      "path": "datasets/abdullah1afify/ntl-generations/ntl_generations.csv",
+      "expected_rows": 1033,
+      "expected_sha256": "83003454e3cc0368cae8b05bca243daf036b64a42a792c3f7bfd5fd91b3db378"
+    },
+    {
+      "path": "datasets/lucasboesen/ntl-free-proxy-generations/gen_passages.csv",
+      "expected_rows": 5452,
+      "expected_sha256": "322d4cf73734993c4070379f3fc8ce7aae8527bdae336a4e03221bde9f150694"
+    },
+    {
+      "path": "datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset/passages_clean.csv",
+      "expected_rows": 4926,
+      "expected_sha256": "6ec42c0bb360d6eaf7ed657b943881bd988358eee49b06abca88b0e6c101d567"
+    }
+  ],
+  "saved_source_metadata": {
+    "accelerator": "nvidiaTeslaT4",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20736096
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20819121
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20831302
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20847146
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20858502
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20934027
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21008519
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21011978
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21062729
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21097171
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21119693
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21145399
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21203279
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21226478
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358683059
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358758062
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358770408
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358911769
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358928013
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358948428
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 359652568
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 104433
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166254
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166265
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363135
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363139
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363140
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363149
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363153
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "old_freeze_claim_correction": "Identical saved metadata source IDs did not prove effective version pins. All14dataset dialogs showed Pin to latest version checked before correction; public data changed at three consumed CSV paths. UI version selections plus actual runtime hashes are required.",
+  "prior_ID_parity_is_not_content_parity": true,
+  "original_author_input_version_parity_verified": false,
+  "model_and_kernel_source_identifiers_preserved": true,
+  "notebook_output_menu_has_no_dataset_pin_control": true,
+  "inference_launched": false,
+  "admission": "HOLD until a fresh CPU run using these bindings passes71/71 and the three expectedV3CSVhashes/rows are restored.",
+  "auditor_legacy_metadata_constant_caveat": "The unchanged auditor embeds the old copied metadata-ID snapshot. Treat that field as historical; this UI pin manifest and actual runtime hashes control effective version reconciliation."
+}

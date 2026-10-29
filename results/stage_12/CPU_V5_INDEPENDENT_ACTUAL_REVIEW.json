@@ -1,0 +1,156 @@
+{
+  "stage": 12,
+  "review_date": "2026-10-29",
+  "script_version_id": 363597773,
+  "status": "CPU_STRUCTURAL_CONTRACT_PASS_BUT_FROZEN_CONTENT_PARITY_UNRESOLVED",
+  "actual_report_sha256": "28663a7393799b53af03bedc97769e050944df64b35bd0eaf8b8db797f40686d",
+  "contract": {
+    "status": "PASS_CPU_INPUT_CONTRACT_ONLY",
+    "passed": 71,
+    "total": 71,
+    "all_rows_pass": true,
+    "hash_budget_seconds": 1800,
+    "audit_elapsed_seconds": 648.621901674,
+    "auditor_sha256": "76555790b3b4a3761c27b7a48fee34343e43d6a08e39ee98a12e68b1940d6837",
+    "main_selectors": 53,
+    "static_torch_head_schemas": 37
+  },
+  "custom_sources": {
+    "V3_files": 15,
+    "V5_files": 15,
+    "unique_hashes": 7,
+    "path_and_hash_exact": true,
+    "new_paths": [],
+    "missing_paths": [],
+    "changed_paths": []
+  },
+  "llama": {
+    "configuration": {
+      "path": "models/metaresearch/llama-3.1/transformers/8b/2",
+      "model_type": "llama",
+      "hidden_size": 4096,
+      "num_hidden_layers": 32,
+      "large_weight_payloads_hashed": false,
+      "model_or_custom_code_loaded": false
+    },
+    "shard_count": 4,
+    "adapter_checks": {
+      "main_ts_llama8_f0": {
+        "pairs": 168,
+        "base_projection_checks": 168,
+        "unresolved": []
+      },
+      "main_ts_llama8_f2": {
+        "pairs": 168,
+        "base_projection_checks": 168,
+        "unresolved": []
+      },
+      "main_ts_llama8_f4": {
+        "pairs": 168,
+        "base_projection_checks": 168,
+        "unresolved": []
+      },
+      "main_ts_llama8": {
+        "pairs": 168,
+        "base_projection_checks": 168,
+        "unresolved": []
+      },
+      "main_ll8v5_f0": {
+        "pairs": 168,
+        "base_projection_checks": 168,
+        "unresolved": []
+      },
+      "main_ll8v5_f1": {
+        "pairs": 168,
+        "base_projection_checks": 168,
+        "unresolved": []
+      },
+      "main_ll8v5_f2": {
+        "pairs": 168,
+        "base_projection_checks": 168,
+        "unresolved": []
+      },
+      "main_ll8v5_f3": {
+        "pairs": 168,
+        "base_projection_checks": 168,
+        "unresolved": []
+      },
+      "main_ll8v5_f4": {
+        "pairs": 168,
+        "base_projection_checks": 168,
+        "unresolved": []
+      },
+      "main_ll8v5": {
+        "pairs": 168,
+        "base_projection_checks": 168,
+        "unresolved": []
+      }
+    },
+    "total_base_projection_checks": 1680
+  },
+  "critical_content_comparison": {
+    "baseline": "CPU V3 362258945",
+    "V3_hash_paths": 250,
+    "V5_hash_paths": 255,
+    "shared": 250,
+    "unchanged_shared": 247,
+    "changed_shared": 3,
+    "missing_paths": [],
+    "new_llama_paths": [
+      "models/metaresearch/llama-3.1/transformers/8b/2/config.json",
+      "models/metaresearch/llama-3.1/transformers/8b/2/model.safetensors.index.json",
+      "models/metaresearch/llama-3.1/transformers/8b/2/special_tokens_map.json",
+      "models/metaresearch/llama-3.1/transformers/8b/2/tokenizer.json",
+      "models/metaresearch/llama-3.1/transformers/8b/2/tokenizer_config.json"
+    ],
+    "changed_csvs": [
+      {
+        "path": "datasets/abdullah1afify/ntl-generations/ntl_generations.csv",
+        "V3_rows": 1033,
+        "V5_rows": 2503,
+        "V3_sha256": "83003454e3cc0368cae8b05bca243daf036b64a42a792c3f7bfd5fd91b3db378",
+        "V5_sha256": "8e7a66eb4dda074ab80d47f11ce3002f4dccc19fe363ed252c6cfb5ef834b19e",
+        "file_bytes_recorded": false
+      },
+      {
+        "path": "datasets/lucasboesen/ntl-free-proxy-generations/gen_passages.csv",
+        "V3_rows": 5452,
+        "V5_rows": 7714,
+        "V3_sha256": "322d4cf73734993c4070379f3fc8ce7aae8527bdae336a4e03221bde9f150694",
+        "V5_sha256": "a6da05c3ac20876bddc61b0eaa24cf84b4164ed9cd36fe62fc076f7238991912",
+        "file_bytes_recorded": false
+      },
+      {
+        "path": "datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset/passages_clean.csv",
+        "V3_rows": 4926,
+        "V5_rows": 5070,
+        "V3_sha256": "6ec42c0bb360d6eaf7ed657b943881bd988358eee49b06abca88b0e6c101d567",
+        "V5_sha256": "502653b8cc053bc1ef08920d0ddda892e8b656f14229e38e0755d8a2f079eaf9",
+        "file_bytes_recorded": false
+      }
+    ],
+    "full_content_parity_with_V3": false,
+    "actual_mount_dataset_version_identity_reconciliation_required": true
+  },
+  "source_allowed_skip_retained": true,
+  "warnings": {
+    "V3_count": 38,
+    "V5_count": 38,
+    "new": []
+  },
+  "unchanged_reproduction_admitted": false,
+  "reason_for_hold": "Three actual external CSV files have different deterministic full-file SHA256 values and larger row counts than V3. Identical saved input IDs alone do not reconcile actual content provenance. Hold unchanged-input reproduction admission pending actual dataset version/binding reconciliation.",
+  "source_consumption": "Production load_extra_passages reads these three files, filters finish/nonempty labels/word length30-300 and deduplicates. Effective filtered corpus differences and score/runtime effects are unmeasured.",
+  "limits": [
+    "CPU file/metadata checks are not GPU model inference or a new official score.",
+    "Torch ZIP checks never call an unpickler or reducer. Unsupported serialized syntax is archive-only evidence and explicitly reported, not certified tensor behavior.",
+    "Safetensors headers do not verify finite payload values. Vendor model payloads are not fully hashed; prior configuration/index/inventory matches are recorded as such.",
+    "The source has no complete expectedSHA256 input pins. Actual critical-file hashes are receipts, not proof of equality to an unpublished author hash.",
+    "A missing legacy complement member may be an allowed sourceSKIP; actual membership is explicitly reported and must be compared with source execution evidence.",
+    "Source fullpreview costs about1.46hours; a CPU pass cannot establish the full hidden test fits the9hour execution limit.",
+    "Final/fold weights may include official labels; assigningfoldsafterwarddoesnotcreatehonestOOF."
+  ],
+  "no_raw_passages_or_predictions_exported": true,
+  "gpu_or_model_executed_by_review": false,
+  "external_state_modified": false
+}

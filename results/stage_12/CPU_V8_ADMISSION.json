@@ -1,0 +1,40 @@
+{
+  "stage": 12,
+  "date": "2026-10-29",
+  "intended_version": 8,
+  "script_version_id": null,
+  "phase": "PREPARED_BEFORE_RUN",
+  "code_scope": "same one-cell CPU auditor with1800seconds, not production inference",
+  "auditor_sha256": "76555790b3b4a3761c27b7a48fee34343e43d6a08e39ee98a12e68b1940d6837",
+  "code_cell_sha256": "31944b95cf0da553dfe458429a89e7fb7c25796409a75f10e998623d54f50327",
+  "required_accelerator": "None",
+  "internet": "off",
+  "pin_manifest": "DATASET_PIN_RECONCILIATION_20261029.json",
+  "required_gate": {
+    "contract": "PASS_CPU_INPUT_CONTRACT_ONLY",
+    "passed": 71,
+    "total": 71,
+    "static_torch_schemas": 37,
+    "custom_sources_exact_to_V3": 15,
+    "new_llama_metadata_hash_paths": 5,
+    "all250_shared_V3_critical_hash_paths_equal": true
+  },
+  "csv_hash_expectations": [
+    {
+      "path": "datasets/abdullah1afify/ntl-generations/ntl_generations.csv",
+      "expected_rows": 1033,
+      "expected_sha256": "83003454e3cc0368cae8b05bca243daf036b64a42a792c3f7bfd5fd91b3db378"
+    },
+    {
+      "path": "datasets/lucasboesen/ntl-free-proxy-generations/gen_passages.csv",
+      "expected_rows": 5452,
+      "expected_sha256": "322d4cf73734993c4070379f3fc8ce7aae8527bdae336a4e03221bde9f150694"
+    },
+    {
+      "path": "datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset/passages_clean.csv",
+      "expected_rows": 4926,
+      "expected_sha256": "6ec42c0bb360d6eaf7ed657b943881bd988358eee49b06abca88b0e6c101d567"
+    }
+  ],
+  "gpu_execution_permitted_before_gate": false
+}

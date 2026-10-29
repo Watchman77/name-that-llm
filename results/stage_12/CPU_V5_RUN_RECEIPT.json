@@ -4,7 +4,7 @@
   "notebook_version": 5,
   "script_version_id": 363597773,
   "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363597773",
-  "state": "Running",
+  "state": "Succeeded",
   "audit_budget_seconds": 1800,
   "audit_script_sha256": "76555790b3b4a3761c27b7a48fee34343e43d6a08e39ee98a12e68b1940d6837",
   "saved_code_cell_sha256": "31944b95cf0da553dfe458429a89e7fb7c25796409a75f10e998623d54f50327",
@@ -146,5 +146,18 @@
   "copied_input_ids_frozen_parity": true,
   "pre_execution_git_commit": "f58c07cf754fa2a57dc260cc4971b49b01ab71dd",
   "training_or_inference_started": false,
-  "result_available": false
+  "result_available": true,
+  "runtime_seconds": 670.9,
+  "contract_status": "PASS_CPU_INPUT_CONTRACT_ONLY",
+  "passed": 71,
+  "total": 71,
+  "failed_checks": [],
+  "serialized_head_static_tensor_schemas_inspected": 37,
+  "raw_report_bytes": 450604,
+  "raw_report_sha256": "28663a7393799b53af03bedc97769e050944df64b35bd0eaf8b8db797f40686d",
+  "gzip_report_bytes": 32655,
+  "gzip_report_sha256": "d4f2627590b7167715247c23ea549b6d6a851d9658258a201531a6df7cb9ed7a",
+  "transport_chunks": 11,
+  "source_export_files": 15,
+  "large_weight_payloads_hashed": false
 }
