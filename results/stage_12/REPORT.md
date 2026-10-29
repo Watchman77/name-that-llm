@@ -1,6 +1,12 @@
 # Stage 12 — unchanged private GPU V10 running
 
-## Current checkpoint — 29 October 2026
+## Progress check — 29 October 2026
+
+V10 remains **Running at 3466.1 seconds (about 58 minutes)** on T4 x2. Actual worker logs at 464.0s confirm **`gpus 2` and `smoke False`**. Nine component completion markers have appeared: stylegram, stylometry_lgb, debv3l, electl, desk, lora24_seed7, lora24_claude, lora20_q25_instyle and tokattn_deb. Later weight-loader progress reached 220/220; this does not identify or prove completion of the remaining model groups. No inspected traceback/error/failure or COMP/ATLAS skip marker appeared. The viewer still shows 0 B; no final guard, saved submission or readback is verified. Full ensemble completion remains pending.
+
+The 54-row self-tests explicitly use seen training data. Their displayed 1.00 values are **not validation results or an accuracy gain**. No official submission was made, and no new official score exists; our best confirmed public balanced accuracy remains **S05 0.642**. The recorded container-label discrepancy remains unresolved.
+
+## Historical launch checkpoint — 29 October 2026
 
 The unchanged private GPU execution **V10 363626171** has been launched once from the restored production notebook, using **Save & Run All (Commit)** with **Run with GPU for all sessions** explicitly selected. The authoritative committed viewer reports **Running**, **GPU T4x2**, **Latest Container Image**, and **0 B output** at the first 17.9-second observation. At the latest **95.9-second** observation the job was still Running with the same committed profile and 0 B output. Logs contained initial debugger messages and a later line containing `0`; neither worker `gpus 2` nor `smoke False` had appeared. The saved V10 source was independently read back: all seven code strings/hashes match the canonical notebook and V9, all 31 data-source entries match V9 exactly, and Internet is disabled. Its legacy `isGpuEnabled=false` document field was retained as observed and is not authoritative for actual allocation. This proves that the committed GPU job started; actual worker device counts and model-group execution still require live log confirmation. It is a private notebook preview, not an official submission or an accuracy result.
 

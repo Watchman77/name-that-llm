@@ -1,7 +1,7 @@
 {
   "stage": 12,
   "date": "2026-10-29",
-  "status": "RUNNING_INITIAL_COMMITTED_GPU_PROFILE_VERIFIED",
+  "status": "RUNNING_REAL_GPU_DEVICES_AND_COMPONENT_EXECUTION_VERIFIED",
   "notebook": "watchman777/name-that-llm-stage-12-public-651-audit",
   "version": 10,
   "script_version_id": 363626171,
@@ -55,8 +55,8 @@
     "resolved": false,
     "impact": "Unknown; do not claim exact environment reproduction."
   },
-  "gpu_worker_gpus_2_verified": false,
-  "worker_smoke_false_verified": false,
+  "gpu_worker_gpus_2_verified": true,
+  "worker_smoke_false_verified": true,
   "model_group_execution_verified": false,
   "final_output_guard_verified": false,
   "saved_parquet_readback_verified": false,
@@ -111,13 +111,67 @@
   ],
   "latest_observation": {
     "state": "Running",
-    "elapsed_seconds": 136.9,
+    "elapsed_seconds": 3466.1,
     "accelerator": "GPU T4 x2",
     "container_image": "Latest Container Image",
     "output_bytes": 0,
-    "last_log": "28.9s: 0",
-    "worker_gpus_2_verified": false,
-    "worker_smoke_false_verified": false,
-    "model_group_execution_verified": false
-  }
+    "last_weight_load_log_timestamp_seconds": 3398.3,
+    "last_weight_load_display": "100% 220/220",
+    "inspected_failure_marker_matches": [],
+    "final_output_guard_seen": false,
+    "saved_submission_parquet_seen": false
+  },
+  "any_component_execution_verified": true,
+  "worker_device_log": {
+    "timestamp_seconds": 464,
+    "message": "train (2699, 4) test (3, 2) gpus 2 smoke False"
+  },
+  "completed_component_markers": [
+    {
+      "component": "stylegram",
+      "timestamp_seconds": 763.1,
+      "rows": 3
+    },
+    {
+      "component": "stylometry_lgb",
+      "timestamp_seconds": 878.7,
+      "rows": 3
+    },
+    {
+      "component": "debv3l",
+      "timestamp_seconds": 2153.6,
+      "rows": 3
+    },
+    {
+      "component": "electl",
+      "timestamp_seconds": 2334.2,
+      "rows": 3
+    },
+    {
+      "component": "desk",
+      "timestamp_seconds": 2502.4,
+      "rows": 3
+    },
+    {
+      "component": "lora24_seed7",
+      "timestamp_seconds": 2553.6,
+      "rows": 3
+    },
+    {
+      "component": "lora24_claude",
+      "timestamp_seconds": 2577.9,
+      "rows": 3
+    },
+    {
+      "component": "lora20_q25_instyle",
+      "timestamp_seconds": 2611.3,
+      "rows": 3
+    },
+    {
+      "component": "tokattn_deb",
+      "timestamp_seconds": 2641.4,
+      "rows": 3
+    }
+  ],
+  "seen_training_self_tests": "The 54-row self-tests use seen training data and are not validation, development or competition accuracy."
 }
