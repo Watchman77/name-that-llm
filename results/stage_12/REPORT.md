@@ -1,6 +1,22 @@
-# Stage 12 — explicit dataset pins under runtime verification
+# Stage 12 — CPU input/content admission complete; GPU launch pending
 
 ## Current checkpoint — 29 October 2026
+
+The Llama access and dataset-binding issues are resolved at the CPU input/content gate. **CPU V8 363603066 succeeded in 297.9 seconds with 71/71 checks and 20/20 independent review checks.** All 15 custom source paths/seven unique hashes, all 37 static Torch head schemas, and 1,680 Llama adapter/base projection checks pass.
+
+All **250** critical content hashes previously recorded in our V3 audit match after one explicitly reviewed mount relocation: Lucas `gen_passages.csv` moved from `datasets/lucasboesen/ntl-free-proxy-generations/` to `ntl-free-proxy-generations/`. Its full SHA256 and 5,452 rows are identical; the unchanged source recursively selects that filename and there is exactly one match. No broad path normalization or hash exception was used. The only five additional hashes are newly available Llama metadata. All five CSV inventory records match after that mapping.
+
+All 14 dataset bindings were explicitly pinned and verified after reloading. The three grown CSV sources were restored to Abdullah V2 (1,033 rows), Lucas V8 (5,452), and Prvsiyan V6 (4,926). **Earlier matching saved metadata IDs did not establish effective version pins**: the dialogs had selected Pin to latest version. That earlier freeze claim is corrected. The auditor's embedded old UI-ID snapshot is historical; explicit pin controls and actual runtime hashes establish current reconciliation.
+
+Private source-only **Quick V7 363602111** preserves the six reviewed upstream code cells plus the separate output guard. The seven-cell notebook was restored again after V8; the three critical dataset pins still persisted. A final source-only QuickSave was requested with intended Version 9, but browser commands subsequently stalled. Its immutable identity and final source/configuration readback remain **unverified**. **No GPU Save & Run launch was requested and no model inference has started.** Inspect existing versions first; do not create a duplicate snapshot or confuse a QuickSave with inference.
+
+Next: confirm the latest saved production snapshot has seven exact code cells and the explicit pin bindings; select T4 x2, Internet off and **Run with GPU for all sessions** at Save & Run. Verify the committed accelerator profile and worker `gpus 2`, `smoke False` startup. Free quota was last freshly displayed as 29 hours and the competition specifies a 9-hour runtime limit; recheck if the session changes. CPU admission does not prove full vendor payload finiteness, GPU behavior, hidden runtime or accuracy. Original-author input-version/content parity remains unverified. Our best official public balanced accuracy remains **S05 0.642**; upstream 0.651 is external.
+
+[CPU V8 result](CPU_V8_RUN_RECEIPT.json) · [independent review](CPU_V8_INDEPENDENT_ACTUAL_REVIEW.json) · [verified pin manifest](DATASET_PIN_RECONCILIATION_20261029.json) · [full compressed audit](REAL_INPUT_AUDIT_V8.json.gz)
+
+## Historical checkpoints — superseded by the current result
+
+### Earlier verification checkpoint
 
 Llama access and the actual mounted model are resolved. CPU **V5 363597773** completed in **670.9 seconds** with **71/71 structural checks**, all 37 static Torch head schemas, all 15 custom source paths matching V3, and 1,680 Llama adapter/base projection checks. This is input inspection, not model inference or an accuracy score.
 

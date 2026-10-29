@@ -1,7 +1,7 @@
 {
   "stage": 12,
   "date_verified": "2026-10-29",
-  "status": "EXPLICIT_DATASET_PINS_VERIFIED_RUNTIME_RECHECK_PENDING",
+  "status": "EXPLICIT_PINS_AND_RUNTIME_CRITICAL_CONTENT_VERIFIED",
   "production_quick_version": 7,
   "script_version_id": 363602111,
   "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363602111",
@@ -325,5 +325,17 @@
   "notebook_output_menu_has_no_dataset_pin_control": true,
   "inference_launched": false,
   "admission": "HOLD until a fresh CPU run using these bindings passes71/71 and the three expectedV3CSVhashes/rows are restored.",
-  "auditor_legacy_metadata_constant_caveat": "The unchanged auditor embeds the old copied metadata-ID snapshot. Treat that field as historical; this UI pin manifest and actual runtime hashes control effective version reconciliation."
+  "auditor_legacy_metadata_constant_caveat": "The unchanged auditor embeds the old copied metadata-ID snapshot. Treat that field as historical; this UI pin manifest and actual runtime hashes control effective version reconciliation.",
+  "verification_cpu_version": 8,
+  "verification_script_version_id": 363603066,
+  "all250_previous_critical_content_hashes_restored_after_one_reviewed_path_alias": true,
+  "all_three_csv_rows_and_hashes_restored": true,
+  "reviewed_lucas_mount_relocation": {
+    "old": "datasets/lucasboesen/ntl-free-proxy-generations/gen_passages.csv",
+    "new": "ntl-free-proxy-generations/gen_passages.csv",
+    "rows": 5452,
+    "sha256": "322d4cf73734993c4070379f3fc8ce7aae8527bdae336a4e03221bde9f150694",
+    "source_glob_unchanged": true,
+    "unique_match": true
+  }
 }
