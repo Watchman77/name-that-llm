@@ -1,0 +1,198 @@
+{
+  "stage": 12,
+  "date_verified": "2026-10-29",
+  "notebook_version": 6,
+  "script_version_id": 363598812,
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363598812",
+  "version_type": "Quick Save",
+  "scope": "source/settings snapshot only; no model inference",
+  "source_git_freeze": "55cf8622c592690c98f67b65c3e9b6381a726b32",
+  "source_script_version_id": 362013743,
+  "source_code_cells_unchanged": 6,
+  "output_guard_code_cell": 7,
+  "all_seven_code_cells_exact": true,
+  "code_cells": [
+    {
+      "index": 1,
+      "chars": 3131,
+      "sha256": "4fc27dca93a92adfb2759ca65260e5285898d73fc8ccd1acd401982e5f98ed37"
+    },
+    {
+      "index": 2,
+      "chars": 8240,
+      "sha256": "b53e305fd7a755d138f931c55ac5f3762ed3978d73a65594b5ce2523fdf165ff"
+    },
+    {
+      "index": 3,
+      "chars": 38123,
+      "sha256": "219900bdc7d087f734a6a152b65b3ed515249afab1d82cad7915c0a41fd02adf"
+    },
+    {
+      "index": 4,
+      "chars": 50141,
+      "sha256": "f1bb8c65e926f0fde39e384cd500aa98162527492251dd63651e3f78b29232bf"
+    },
+    {
+      "index": 5,
+      "chars": 332,
+      "sha256": "16f3076335718c090271e42a36fcd4efdf3cefdb5197f83a4be75947dc75ace3"
+    },
+    {
+      "index": 6,
+      "chars": 1636,
+      "sha256": "03a93a666c99d8d2129083be5383cc6c3b532356a67556c9c6fbe5e20e6d9f0e"
+    },
+    {
+      "index": 7,
+      "chars": 11254,
+      "sha256": "3d05232ed45adf30921b997d7d7b19fe62cc4b6f4d97f8686dccec2fd30a34ef"
+    }
+  ],
+  "saved_metadata": {
+    "accelerator": "nvidiaTeslaT4",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20736096
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20819121
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20831302
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20847146
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20858502
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20934027
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21008519
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21011978
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21062729
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21097171
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21116786
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21119693
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21145399
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21203279
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358683059
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358758062
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358770408
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358911769
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358928013
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358948428
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 359652568
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 104433
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166254
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166265
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363135
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363139
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363140
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363149
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363153
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "copied_input_count": 31,
+  "copied_input_ids_frozen_parity": true,
+  "original_author_input_id_parity_independently_exported": false,
+  "free_gpu_quota_display": "29 hours remaining out of30 weekly; sidebar00:51 /30hrs used",
+  "quota_verified_date": "2026-10-29",
+  "competition_runtime_limit_hours_freshly_verified": 9,
+  "competition_requirements_url": "https://www.kaggle.com/competitions/name-that-llm/overview",
+  "internet_disabled": true,
+  "draft_session_off": true,
+  "gpu_allocation_verified": false,
+  "models_executed": false,
+  "requires_cpu_v5_complete_pass": true,
+  "save_time_gpu_policy_required": "Run with GPU for all sessions",
+  "metadata_boolean_caveat": "isGpuEnabled=false is retained as observed. It is historically non-authoritative even on successful GPU versions. Confirm actual committed GPU T4x2 profile and worker gpus2/smokeFalse rather than force-editing metadata."
+}

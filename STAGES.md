@@ -1,6 +1,6 @@
 # Project stages and current state
 
-Current checkpoint, 29 October 2026: **S05 remains best at 0.642 official public balanced accuracy.** Stage12 account/UI Llama access is now unlocked. The unchanged CPU repeat Save & Run request was made, but saved V4 identity and execution status remain unverified after a connected-browser timeout. Last actual CPU result remains V3 70/71. No GPU model run or new official submission has started. See `results/stage_12/CPU_V4_ATTEMPT_20261029.json`. Earlier observations below are historical checkpoints.
+Current checkpoint,29October2026: **S05 remains best at0.642 official public balanced accuracy.** Stage12 Llama access and the actual runtime mount are resolved. CPUV4completed62/71because nine late checks hit its900-second deadline. CPUV5isrunning with the same checks and1800seconds. ProductionQuickV6contains seven exact reviewed code cells and31frozeninputs, but noGPUmodel has run. Require71/71beforeGPU. Earlier observations below are historical checkpoints.
 
 
 ## Competition goal
@@ -161,3 +161,15 @@ The next admitted route is the already frozen Stage12 public-source recipe after
 The unchanged one-cell CPU auditor was verified against Git, with code-cell SHA256 `413925bdeea88678d22fb0c5c4c868678e28664e221aef9171acbafb2c95b0b2` (96,131 characters), CPU None and Internet off. Save & Run All was requested with intended label **V4: repeat CPU audit after Llama access**. The save dialog closed and Active Events expanded, but the subsequent connected-browser status read timed out. **No immutable V4 ID, queued/running state or new result has been verified.** Last verified actual audit remains V3 70/71.
 
 Recover by inspecting existing saved Versions/Active Events before considering any retry; do not launch a duplicate. Require the new actual complete CPU contract pass, reverify the saved 31 input versions, inspect the Llama configuration and recheck free GPU quota/runtime before admitting the already-reviewed seven-cell private production notebook. No GPU execution, new official submission, final-selection change, paid service or model substitution occurred. S05 remains our best official public balanced accuracy at 0.642; author 0.651 is external.
+
+## Stage12 actual Llama mount and CPU V5 — 29 October 2026
+
+The actual Llama mount is now verified: V4 selected `models/metaresearch/llama-3.1/transformers/8b/2`, with `model_type=llama`, hidden size4096,32layers, four safetensors shards, tokenizer/index checks and compatible Llama adapter projections. Large weight payloads were not fully hashed or executed.
+
+CPU **V4 363518868** completed in **1012.9seconds**, technically Succeeded, but its contract was **62/71**. Every one of the nine failed late checks was an audit-deadline `TimeoutError`; all53mainselectors and37staticTorchschemas passed. This is an incomplete inspection, not nine invalid assets or an accuracy result.
+
+The only change for CPU **V5 363597773**, now **Running**, is the outer wrapper's inspection deadline argument from900 to1800seconds. The embedded auditor SHA, checks, selectors and31inputversions remain unchanged. The frozen auditor's legacy timeout text still says900; its report records the actual budget. The source was committed before execution in `f58c07cf754fa2a57dc260cc4971b49b01ab71dd`. V5 has no final contract result yet.
+
+Private **Quick V6 363598812** is the prepared production source/settings snapshot: six exact upstream cells plus the separate output guard, all seven byte-exact and all31copiedinputversions unchanged. It has not executed the models. T4x2 is selected with Internet off; free quota was freshly displayed as29hours remaining, and the competition overview still specifies a9-hour maximum. The saved document's historical `isGpuEnabled=false` field is retained as observed; realGPUadmission requires the save-time **Run with GPU for all sessions** setting and actual committed T4x2/device logs.
+
+Require a fresh actual **71/71** complete CPU contract pass before starting the unchanged production run. Inspect all model-group/COMP/ATLAS logs, guard output and real saved-file readback. Source-allowed `lora24_public` absence remains allowed. No GPU inference, new official submission or final-selection change has occurred. Our best official public balanced accuracy remains **S05 0.642**; upstream0.651 is external, and no development or hidden-runtime gain has been established.
