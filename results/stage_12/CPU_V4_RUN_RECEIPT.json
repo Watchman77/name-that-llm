@@ -1,0 +1,226 @@
+{
+  "stage": 12,
+  "date_verified": "2026-10-29",
+  "notebook_version": 4,
+  "script_version_id": 363518868,
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363518868",
+  "execution_state": "Succeeded",
+  "runtime_seconds": 1012.9,
+  "contract_status": "BLOCKED_INPUT_CONTRACT",
+  "passed": 62,
+  "total": 71,
+  "main_BL_status": "PASS",
+  "main_BL_configuration": {
+    "path": "models/metaresearch/llama-3.1/transformers/8b/2",
+    "model_type": "llama",
+    "hidden_size": 4096,
+    "num_hidden_layers": 32,
+    "shard_count": 4,
+    "large_weight_payloads_hashed": false
+  },
+  "all_main_selectors_passed": true,
+  "serialized_head_static_tensor_schemas_inspected": 37,
+  "all_failed_checks_are_timeout": true,
+  "failed_checks": [
+    {
+      "name": "comp_electl",
+      "status": "FAIL",
+      "error_type": "TimeoutError",
+      "error": "Bounded900-second critical-file hash audit budget exhausted"
+    },
+    {
+      "name": "comp_desk",
+      "status": "FAIL",
+      "error_type": "TimeoutError",
+      "error": "Bounded900-second critical-file hash audit budget exhausted"
+    },
+    {
+      "name": "comp_lora24_seed7",
+      "status": "FAIL",
+      "error_type": "TimeoutError",
+      "error": "Bounded900-second critical-file hash audit budget exhausted"
+    },
+    {
+      "name": "comp_lora24_claude",
+      "status": "FAIL",
+      "error_type": "TimeoutError",
+      "error": "Bounded900-second critical-file hash audit budget exhausted"
+    },
+    {
+      "name": "comp_lora20_q25_instyle",
+      "status": "FAIL",
+      "error_type": "TimeoutError",
+      "error": "Bounded900-second critical-file hash audit budget exhausted"
+    },
+    {
+      "name": "comp_tokattn_deb",
+      "status": "FAIL",
+      "error_type": "TimeoutError",
+      "error": "Bounded900-second critical-file hash audit budget exhausted"
+    },
+    {
+      "name": "comp_ultrabert",
+      "status": "FAIL",
+      "error_type": "TimeoutError",
+      "error": "Bounded900-second critical-file hash audit budget exhausted"
+    },
+    {
+      "name": "complement_extra_csv_inventory",
+      "status": "FAIL",
+      "error_type": "TimeoutError",
+      "error": "Bounded900-second critical-file hash audit budget exhausted"
+    },
+    {
+      "name": "offline_bitsandbytes_wheels",
+      "status": "FAIL",
+      "error_type": "TimeoutError",
+      "error": "Bounded900-second critical-file hash audit budget exhausted"
+    }
+  ],
+  "audit_budget_seconds": 900,
+  "audit_elapsed_seconds": 982.1640836800001,
+  "saved_code_cell_sha256": "413925bdeea88678d22fb0c5c4c868678e28664e221aef9171acbafb2c95b0b2",
+  "saved_code_cell_exact": true,
+  "saved_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20736096
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20819121
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20831302
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20847146
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20858502
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 20934027
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21008519
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21011978
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21062729
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21097171
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21119693
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21145399
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21203279
+      },
+      {
+        "sourceType": "datasetVersion",
+        "sourceId": 21116786
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358683059
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358758062
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358770408
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358911769
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358928013
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358948428
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 359652568
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 104433
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166254
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 166265
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363135
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363139
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363140
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363149
+      },
+      {
+        "sourceType": "modelInstanceVersion",
+        "sourceId": 363153
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "copied_input_ids_frozen_parity": true,
+  "copied_input_count": 31,
+  "raw_report_sha256": "e2a866b7cc001ba269c5f5e4d2a07473f0e7a7973c03c799a32d28b87178731c",
+  "gzip_report_sha256": "75e6d5948da101d83b360d7199a9f2ca23fc1296f23b90ea9aa25980025cea30",
+  "transport_chunks": 9,
+  "training_or_inference_started": false,
+  "hidden_runtime_verified": false,
+  "gpu_run_started": false,
+  "interpretation": "Llama account access and actual runtime mount are resolved. Nine late checks are unverified due to the bounded audit deadline; this is not nine corrupt assets and is not a complete admission pass."
+}
