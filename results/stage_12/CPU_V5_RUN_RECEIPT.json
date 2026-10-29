@@ -143,7 +143,6 @@
     "isGpuEnabled": false
   },
   "copied_input_count": 31,
-  "copied_input_ids_frozen_parity": true,
   "pre_execution_git_commit": "f58c07cf754fa2a57dc260cc4971b49b01ab71dd",
   "training_or_inference_started": false,
   "result_available": true,
@@ -159,5 +158,12 @@
   "gzip_report_sha256": "d4f2627590b7167715247c23ea549b6d6a851d9658258a201531a6df7cb9ed7a",
   "transport_chunks": 11,
   "source_export_files": 15,
-  "large_weight_payloads_hashed": false
+  "large_weight_payloads_hashed": false,
+  "saved_metadata_ID_set_matches_preparation": true,
+  "effective_dataset_pin_state_verified_before_run": false,
+  "input_content_freeze_verified": false,
+  "critical_csv_drift_count": 3,
+  "gpu_admission": false,
+  "independent_review": "CPU_V5_INDEPENDENT_ACTUAL_REVIEW.json",
+  "correction": "Identicalmetadata IDs alone did not lock actual dataset versions. UI later confirmed Pin to latest version on all14datasets; three consumedCSVfiles grew."
 }

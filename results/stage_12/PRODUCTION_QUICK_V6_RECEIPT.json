@@ -182,7 +182,6 @@
     "isGpuEnabled": false
   },
   "copied_input_count": 31,
-  "copied_input_ids_frozen_parity": true,
   "original_author_input_id_parity_independently_exported": false,
   "free_gpu_quota_display": "29 hours remaining out of30 weekly; sidebar00:51 /30hrs used",
   "quota_verified_date": "2026-10-29",
@@ -194,5 +193,11 @@
   "models_executed": false,
   "requires_cpu_v5_complete_pass": true,
   "save_time_gpu_policy_required": "Run with GPU for all sessions",
-  "metadata_boolean_caveat": "isGpuEnabled=false is retained as observed. It is historically non-authoritative even on successful GPU versions. Confirm actual committed GPU T4x2 profile and worker gpus2/smokeFalse rather than force-editing metadata."
+  "metadata_boolean_caveat": "isGpuEnabled=false is retained as observed. It is historically non-authoritative even on successful GPU versions. Confirm actual committed GPU T4x2 profile and worker gpus2/smokeFalse rather than force-editing metadata.",
+  "legacy_metadata_ID_set_matches_preparation": true,
+  "effective_dataset_versions_pinned": false,
+  "input_content_freeze_verified": false,
+  "superseded_by_production_quick_version": 7,
+  "superseding_script_version_id": 363602111,
+  "correction": "Seven code cells were exact, but matchingmetadata IDs did notprove actual dataset pinning or unchanged content. Use verifiedPinmanifest and nextactualCPUhashcomparison."
 }

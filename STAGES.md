@@ -1,6 +1,6 @@
 # Project stages and current state
 
-Current checkpoint,29October2026: **S05 remains best at0.642 official public balanced accuracy.** Stage12 Llama access and the actual runtime mount are resolved. CPUV4completed62/71because nine late checks hit its900-second deadline. CPUV5isrunning with the same checks and1800seconds. ProductionQuickV6contains seven exact reviewed code cells and31frozeninputs, but noGPUmodel has run. Require71/71beforeGPU. Earlier observations below are historical checkpoints.
+Current checkpoint, 29 October 2026: **S05 remains best at 0.642 official public balanced accuracy.** Llama is mounted and CPU V5 passed 71/71, but three CSV contents changed because dataset bindings followed latest versions. Matching metadata IDs did not establish a content freeze. All 14 dataset pins are now explicit and verified after reload. CPU V8 is running to confirm restored hashes; GPU inference remains on hold. Earlier observations below are historical checkpoints.
 
 
 ## Competition goal
@@ -173,3 +173,15 @@ The only change for CPU **V5 363597773**, now **Running**, is the outer wrapper'
 Private **Quick V6 363598812** is the prepared production source/settings snapshot: six exact upstream cells plus the separate output guard, all seven byte-exact and all31copiedinputversions unchanged. It has not executed the models. T4x2 is selected with Internet off; free quota was freshly displayed as29hours remaining, and the competition overview still specifies a9-hour maximum. The saved document's historical `isGpuEnabled=false` field is retained as observed; realGPUadmission requires the save-time **Run with GPU for all sessions** setting and actual committed T4x2/device logs.
 
 Require a fresh actual **71/71** complete CPU contract pass before starting the unchanged production run. Inspect all model-group/COMP/ATLAS logs, guard output and real saved-file readback. Source-allowed `lora24_public` absence remains allowed. No GPU inference, new official submission or final-selection change has occurred. Our best official public balanced accuracy remains **S05 0.642**; upstream0.651 is external, and no development or hidden-runtime gain has been established.
+
+## Stage 12 version-pin correction and CPU V8 — 29 October 2026
+
+Llama access and the actual mounted model are resolved. CPU **V5 363597773** completed in **670.9 seconds** with **71/71 structural checks**, all 37 static Torch head schemas, all 15 custom source paths matching V3, and 1,680 Llama adapter/base projection checks. This is input inspection, not model inference or an accuracy score.
+
+An independent content comparison found three consumed CSVs had grown since CPU V3: Abdullah 1,033→2,503 rows, Lucas 5,452→7,714, and Prvsiyan 4,926→5,070. Their deterministic full-file hashes changed; the other 247 shared critical-file hashes matched. **The earlier claim that matching saved input IDs established frozen versions was too strong.** All 14 dataset dialogs actually had **Pin to latest version** selected. The V5 structural pass therefore did not admit an unchanged-input reproduction.
+
+All 14 datasets now have explicit version selections verified after reloading the editor. The three changed sources were set to Abdullah V2, Lucas V8 and Prvsiyan V6, selected to recover the V3 corpora. The remaining 11 were pinned to the current versions whose critical content matched V3. Private source-only **Quick V7 363602111** preserves all seven reviewed production code cells. These UI bindings still require actual runtime hash verification.
+
+CPU **V8 363603066 is Running** on accelerator **None**, Internet off, using the same 1,800-second auditor wrapper. Its source and all three critical pins were rechecked after notebook import. Require **71/71 plus equality of all 250 shared V3 critical hashes**, including the restored CSV row counts, before any GPU launch. The auditor embeds the old metadata-ID snapshot; the explicit UI pin manifest and real content hashes control current version reconciliation.
+
+The unchanged GPU recipe remains prepared. Free GPU quota was freshly displayed as 29 hours, and the competition still specifies a 9-hour runtime limit. Actual GPU execution must use T4 x2 and the save-time **Run with GPU for all sessions** policy; then verify the committed accelerator profile and worker `gpus 2`, `smoke False` logs. **No GPU model execution or new official submission has started.** S05 remains our best official public balanced accuracy at **0.642**. The source author's 0.651 is external; original-author input-version parity is unverified.
