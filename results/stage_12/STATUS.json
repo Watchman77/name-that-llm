@@ -1,7 +1,7 @@
 {
   "stage": 12,
-  "date": "2026-10-25",
-  "phase": "CPU_V3_COMPLETE_ONLY_META_LLAMA_ACCESS_BLOCKED",
+  "date": "2026-10-29",
+  "phase": "ACCESS_UI_UNLOCKED_CPU_REPEAT_REQUESTED_STATUS_UNVERIFIED",
   "own_best_official_public_balanced_accuracy": 0.642,
   "source_author_public_score": 0.651,
   "source_version_id": 362013743,
@@ -21,7 +21,13 @@
   "cpu_contract_status": "BLOCKED_INPUT_CONTRACT",
   "cpu_passed": 70,
   "cpu_total": 71,
-  "confirmed_external_blocker": "Required Meta Llama3.1 access grant absent; licence/AUP acceptance and Kaggle verification not performed",
+  "confirmed_external_blocker": "Account/UI access is now cleared; actual repeated mount/audit outcome and saved V4 identity remain unverified after a browser status timeout.",
   "auditor_only_corrections_pending": 0,
-  "model_execution_started": false
+  "model_execution_started": false,
+  "free_gpu_remaining_observed_hours_date": "2026-10-25 (historical; must recheck)",
+  "cpu_repeat_intended_version": 4,
+  "cpu_repeat_script_version_id": null,
+  "cpu_repeat_state": "SAVE_AND_RUN_REQUESTED_STATUS_UNVERIFIED",
+  "access_verification_receipt": "ACCESS_VERIFICATION_20261029.json",
+  "cpu_repeat_attempt_receipt": "CPU_V4_ATTEMPT_20261029.json"
 }

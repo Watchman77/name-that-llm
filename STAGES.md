@@ -1,6 +1,6 @@
 # Project stages and current state
 
-Current checkpoint, 26 October 2026: **S05 remains best at 0.642 official public balanced accuracy. S06 completed at 0.641 (-0.1 percentage points), and its watch is completed/disabled.** Retire the exact correction. The existing Stage12 public-source 0.651 recipe remains blocked solely on required Meta Llama access; the author score is not ours. See `plans/NEXT_AFTER_S06_20261026.md`. Earlier observations below are historical checkpoints.
+Current checkpoint, 29 October 2026: **S05 remains best at 0.642 official public balanced accuracy.** Stage12 account/UI Llama access is now unlocked. The unchanged CPU repeat Save & Run request was made, but saved V4 identity and execution status remain unverified after a connected-browser timeout. Last actual CPU result remains V3 70/71. No GPU model run or new official submission has started. See `results/stage_12/CPU_V4_ATTEMPT_20261029.json`. Earlier observations below are historical checkpoints.
 
 
 ## Competition goal
@@ -153,3 +153,11 @@ The fixed SVC correction did not improve the official public score. Retire this 
 Submission Details exposes no separate hidden-run log link. Hidden runtime, detailed guard counts and replay artifacts remain unavailable; the 20.3-second format preview is not substituted for those logs. The watch is completed and disabled, with the terminal outcome reported. The fresh page shows automatic final selection **0/2**, unlike an earlier recorded 2/2 observation; no selection controls were changed in this check.
 
 The next admitted route is the already frozen Stage12 public-source recipe after resolving Meta Llama access and repeating CPU admission. The model page still displays the Meta access/licence prerequisite on 26 October; no acceptance, access request, GPU run or new submission occurred. Author 0.651 is not our score. See [official receipt](results/stage_12b/OFFICIAL_RESULT_20261026.json) and [next-step decision](plans/NEXT_AFTER_S06_20261026.md).
+
+## Stage12 access and CPU repeat — 29 October 2026
+
+29 October 2026: Hugging Face explicitly displays model access granted. The exact Kaggle Transformers/8b/2 page, signed in as Watchman 777, no longer shows the pending-review warning and enables Download and Code. This clears the account/UI access gate; runtime mounting is not yet established.
+
+The unchanged one-cell CPU auditor was verified against Git, with code-cell SHA256 `413925bdeea88678d22fb0c5c4c868678e28664e221aef9171acbafb2c95b0b2` (96,131 characters), CPU None and Internet off. Save & Run All was requested with intended label **V4: repeat CPU audit after Llama access**. The save dialog closed and Active Events expanded, but the subsequent connected-browser status read timed out. **No immutable V4 ID, queued/running state or new result has been verified.** Last verified actual audit remains V3 70/71.
+
+Recover by inspecting existing saved Versions/Active Events before considering any retry; do not launch a duplicate. Require the new actual complete CPU contract pass, reverify the saved 31 input versions, inspect the Llama configuration and recheck free GPU quota/runtime before admitting the already-reviewed seven-cell private production notebook. No GPU execution, new official submission, final-selection change, paid service or model substitution occurred. S05 remains our best official public balanced accuracy at 0.642; author 0.651 is external.

@@ -1,0 +1,24 @@
+{
+  "stage": 12,
+  "date_verified": "2026-10-29",
+  "account_access_status": "UI_ACCESS_GATE_CLEARED",
+  "hugging_face": {
+    "url": "https://huggingface.co/meta-llama/Llama-3.1-8B",
+    "displayed_status": "You have been granted access to this model"
+  },
+  "kaggle": {
+    "url": "https://www.kaggle.com/models/metaresearch/llama-3.1/Transformers/8b/2",
+    "signed_in_display_name": "Watchman 777",
+    "pending_review_warning_present": false,
+    "download_buttons_enabled": true,
+    "code_button_enabled": true,
+    "selected_framework": "Transformers",
+    "selected_variation": "8b",
+    "selected_version": 2
+  },
+  "limits": [
+    "These are live account/UI access observations, not a successful runtime mount or CPU input-contract result.",
+    "No new GPU inference, official submission, development score or official score follows from this approval."
+  ],
+  "account_email_published": false
+}

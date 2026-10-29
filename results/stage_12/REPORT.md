@@ -1,4 +1,16 @@
-# Stage 12 — public 0.651 candidate blocked by Llama access
+# Stage 12 — access unlocked; repeated CPU audit status unverified
+
+## Current checkpoint — 29 October 2026
+
+29 October 2026: Hugging Face explicitly displays model access granted. The exact Kaggle Transformers/8b/2 page, signed in as Watchman 777, no longer shows the pending-review warning and enables Download and Code. This clears the account/UI access gate; runtime mounting is not yet established.
+
+The unchanged one-cell CPU auditor was verified against Git, with code-cell SHA256 `413925bdeea88678d22fb0c5c4c868678e28664e221aef9171acbafb2c95b0b2` (96,131 characters), CPU None and Internet off. Save & Run All was requested with intended label **V4: repeat CPU audit after Llama access**. The save dialog closed and Active Events expanded, but the subsequent connected-browser status read timed out. **No immutable V4 ID, queued/running state or new result has been verified.** Last verified actual audit remains V3 70/71.
+
+Recover by inspecting existing saved Versions/Active Events before considering any retry; do not launch a duplicate. Require the new actual complete CPU contract pass, reverify the saved 31 input versions, inspect the Llama configuration and recheck free GPU quota/runtime before admitting the already-reviewed seven-cell private production notebook. No GPU execution, new official submission, final-selection change, paid service or model substitution occurred. S05 remains our best official public balanced accuracy at 0.642; author 0.651 is external.
+
+[Access verification](ACCESS_VERIFICATION_20261029.json) · [CPU repeat attempt](CPU_V4_ATTEMPT_20261029.json)
+
+## Historical CPU V3 checkpoint — 25 October 2026
 
 The exact Dhruv Tibarewal V1 **362013743** candidate remains blocked before GPU execution. Its author displays **0.651 public balanced accuracy**; our confirmed best remains **S05 0.642**. We have no official score for this candidate.
 
