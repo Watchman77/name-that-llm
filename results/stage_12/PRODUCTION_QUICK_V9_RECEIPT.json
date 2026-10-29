@@ -1,0 +1,40 @@
+{
+  "stage": 12,
+  "date": "2026-10-29",
+  "version": 9,
+  "script_version_id": 363604858,
+  "save_type": "Quick Save",
+  "runtime_seconds": 0,
+  "status": "VERIFIED_SOURCE_ONLY_SNAPSHOT",
+  "source_freeze": "55cf8622c592690c98f67b65c3e9b6381a726b32",
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363604858",
+  "all_seven_code_strings_and_sha256_exact": true,
+  "upstream_six_code_cells_unchanged": true,
+  "separate_output_guard": true,
+  "resource_count": 31,
+  "data_sources_arrays_exact_pinned_v7": true,
+  "internet_enabled": false,
+  "accelerator_metadata": "nvidiaTeslaT4",
+  "snapshot_is_gpu_execution": false,
+  "model_inference_started_by_quick_save": false,
+  "code_cell_sha256": [
+    "4fc27dca93a92adfb2759ca65260e5285898d73fc8ccd1acd401982e5f98ed37",
+    "b53e305fd7a755d138f931c55ac5f3762ed3978d73a65594b5ce2523fdf165ff",
+    "219900bdc7d087f734a6a152b65b3ed515249afab1d82cad7915c0a41fd02adf",
+    "f1bb8c65e926f0fde39e384cd500aa98162527492251dd63651e3f78b29232bf",
+    "16f3076335718c090271e42a36fcd4efdf3cefdb5197f83a4be75947dc75ace3",
+    "03a93a666c99d8d2129083be5383cc6c3b532356a67556c9c6fbe5e20e6d9f0e",
+    "3d05232ed45adf30921b997d7d7b19fe62cc4b6f4d97f8686dccec2fd30a34ef"
+  ],
+  "provenance": "Recovered saved Kaggle Versions panel readback in the connected browser; earlier timeout did not mean the source-only save failed.",
+  "subsequent_execution": {
+    "version": 10,
+    "script_version_id": 363626171,
+    "receipt": "GPU_V10_RUN_RECEIPT.json"
+  },
+  "limits": [
+    "Resource metadata equality alone is not proof of effective pinning or content identity; the explicit pin manifest and CPU V8 actual content audit provide that separate evidence.",
+    "Original-author input-version/content parity remains unverified."
+  ]
+}
+

@@ -1,20 +1,25 @@
 {
   "stage": 12,
   "date": "2026-10-29",
-  "status": "SOURCE_ONLY_QUICK_SAVE_REQUESTED_FINAL_ID_UNVERIFIED",
+  "status": "RESOLVED_VERIFIED_QUICK_V9_AND_GPU_V10_LAUNCHED",
   "intended_version": 9,
-  "script_version_id": null,
+  "script_version_id": 363604858,
   "version_name": "Frozen GPU recipe + verified explicit input pins",
   "last_confirmed_production_snapshot": {
-    "version": 7,
-    "script_version_id": 363602111,
+    "version": 9,
+    "script_version_id": 363604858,
     "all_seven_code_cells_exact": true
   },
   "production_import_git_ref": "55cf8622c592690c98f67b65c3e9b6381a726b32",
   "three_critical_pins_rechecked_after_production_import": true,
   "last_confirmed_free_gpu_remaining_hours": 29,
   "save_time_gpu_policy_required": "Run with GPU for all sessions",
-  "gpu_execution_save_and_run_requested": false,
-  "models_executed": false,
-  "browser_status": "Subsequent browser calls stalled; source-only save outcome and final identity unverified. Inspect Versions before retrying."
+  "gpu_execution_save_and_run_requested": true,
+  "models_executed": null,
+  "browser_status": "Connection recovered; actual saved Quick V9 source verified; exactly one unchanged private GPU V10 launched. Worker/model proof still pending; see GPU_V10_RUN_RECEIPT.json.",
+  "source_snapshot_verified": true,
+  "resolved_gpu_execution_version": 10,
+  "resolved_gpu_execution_script_version_id": 363626171,
+  "prior_unverified_state_preserved": "Source-only save had previously been requested with unverified ID after browser timeout; later Versions inspection recovered and verified the already-existing V9 without a duplicate."
 }
+

@@ -1,0 +1,123 @@
+{
+  "stage": 12,
+  "date": "2026-10-29",
+  "status": "RUNNING_INITIAL_COMMITTED_GPU_PROFILE_VERIFIED",
+  "notebook": "watchman777/name-that-llm-stage-12-public-651-audit",
+  "version": 10,
+  "script_version_id": 363626171,
+  "version_name": "Frozen GPU inference after CPU V8 admission",
+  "url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363626171",
+  "logs_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit/log?scriptVersionId=363626171",
+  "evidence_provenance": "Authoritative connected-browser editor and committed Kaggle viewer observations supplied by root; private run.",
+  "one_unchanged_private_gpu_launch_requested": true,
+  "save_type": "Save & Run All (Commit)",
+  "save_time_gpu_policy": "Run with GPU for all sessions",
+  "draft_session_before_launch": "off",
+  "editor_accelerator": "GPU T4 x2",
+  "internet_enabled": false,
+  "initial_actual_viewer": {
+    "state": "Running",
+    "elapsed_seconds": 17.9,
+    "accelerator": "GPU T4x2",
+    "container_image": "Latest Container Image",
+    "output_bytes": 0,
+    "logs": "Initial debugger messages only."
+  },
+  "source_snapshot": {
+    "version": 9,
+    "script_version_id": 363604858,
+    "save_type": "Quick Save",
+    "all_seven_code_strings_and_sha256_exact": true,
+    "six_upstream_code_cells_unchanged": true,
+    "separate_output_guard": true,
+    "resource_metadata_entries": 31,
+    "resource_metadata_matches_pinned_quick_v7": true,
+    "internet_enabled": false,
+    "accelerator_metadata": "nvidiaTeslaT4",
+    "source_freeze": "55cf8622c592690c98f67b65c3e9b6381a726b32",
+    "quick_save_is_model_execution": false
+  },
+  "cpu_admission": {
+    "version": 8,
+    "script_version_id": 363603066,
+    "state": "Succeeded",
+    "runtime_seconds": 297.9,
+    "passed": 71,
+    "total": 71,
+    "independent_review_passed": 20,
+    "independent_review_total": 20,
+    "explicit_dataset_pins": 14,
+    "recorded_v3_critical_content_hashes_matching_after_one_reviewed_alias": 250
+  },
+  "container_environment_discrepancy": {
+    "editor_display": "Original: 2026-10-22",
+    "actual_committed_viewer": "Latest Container Image",
+    "resolved": false,
+    "impact": "Unknown; do not claim exact environment reproduction."
+  },
+  "gpu_worker_gpus_2_verified": false,
+  "worker_smoke_false_verified": false,
+  "model_group_execution_verified": false,
+  "final_output_guard_verified": false,
+  "saved_parquet_readback_verified": false,
+  "gpu_quota_before_launch": "00:51 / 30 hrs used; prior whole-hour display 29 hours remaining",
+  "source_allowed_missing_member": "lora24_public",
+  "expected_model_groups": [
+    "q14v5",
+    "q8v5",
+    "ll8v5",
+    "n14b",
+    "q25_14",
+    "deb"
+  ],
+  "require_complement_and_atlas_logs": true,
+  "official_submission": false,
+  "official_public_balanced_accuracy": null,
+  "own_best_official_public_balanced_accuracy": 0.642,
+  "source_author_public_balanced_accuracy": 0.651,
+  "source_author_score_is_ours": false,
+  "paid_services_used": false,
+  "final_selections_changed": false,
+  "limits": [
+    "Private preview, not hidden-test completion or an official score.",
+    "Actual GPU worker/device and complete model coverage proof pending.",
+    "CPU audit does not prove full vendor payload finiteness or execution.",
+    "Original-author input-version/content parity unverified.",
+    "Recorded competition GPU maximum nine hours; no completion-time prediction."
+  ],
+  "latest_actual_viewer": {
+    "state": "Running",
+    "elapsed_seconds": 95.9,
+    "accelerator": "GPU T4x2",
+    "container_image": "Latest Container Image",
+    "output_bytes": 0,
+    "logs": "Initial debugger messages plus log line at 28.9s index 8 containing '0'; no gpus 2 or smoke False yet."
+  },
+  "saved_v10_source_and_settings": {
+    "all_seven_code_strings_and_sha256_exact_to_canonical_and_v9": true,
+    "data_sources_count": 31,
+    "data_sources_arrays_exact_v9": true,
+    "isInternetEnabled": false,
+    "legacy_isGpuEnabled": false,
+    "legacy_isGpuEnabled_authoritative": false
+  },
+  "intermediate_observations": [
+    {
+      "elapsed_seconds": 56.5,
+      "state": "Running",
+      "output_bytes": 0,
+      "worker_device_and_model_proof_observed": false
+    }
+  ],
+  "latest_observation": {
+    "state": "Running",
+    "elapsed_seconds": 136.9,
+    "accelerator": "GPU T4 x2",
+    "container_image": "Latest Container Image",
+    "output_bytes": 0,
+    "last_log": "28.9s: 0",
+    "worker_gpus_2_verified": false,
+    "worker_smoke_false_verified": false,
+    "model_group_execution_verified": false
+  }
+}

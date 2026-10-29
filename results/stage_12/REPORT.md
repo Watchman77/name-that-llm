@@ -1,6 +1,20 @@
-# Stage 12 — CPU input/content admission complete; GPU launch pending
+# Stage 12 — unchanged private GPU V10 running
 
 ## Current checkpoint — 29 October 2026
+
+The unchanged private GPU execution **V10 363626171** has been launched once from the restored production notebook, using **Save & Run All (Commit)** with **Run with GPU for all sessions** explicitly selected. The authoritative committed viewer reports **Running**, **GPU T4x2**, **Latest Container Image**, and **0 B output** at the first 17.9-second observation. At the latest **95.9-second** observation the job was still Running with the same committed profile and 0 B output. Logs contained initial debugger messages and a later line containing `0`; neither worker `gpus 2` nor `smoke False` had appeared. The saved V10 source was independently read back: all seven code strings/hashes match the canonical notebook and V9, all 31 data-source entries match V9 exactly, and Internet is disabled. Its legacy `isGpuEnabled=false` document field was retained as observed and is not authoritative for actual allocation. This proves that the committed GPU job started; actual worker device counts and model-group execution still require live log confirmation. It is a private notebook preview, not an official submission or an accuracy result.
+
+Browser recovery first established that the earlier source-only save did succeed: **Quick V9 363604858** contains all seven exact reviewed production code cells. Its 31 saved resource metadata entries match pinned Quick V7, with Internet disabled and accelerator configuration `nvidiaTeslaT4`. No duplicate source snapshot was created. CPU **V8 363603066** remains the admitted input/content result: **71/71** checks and **20/20** independent review checks, with all 14 dataset pins verified and all 250 recorded V3 critical hashes matching after the one explicitly reviewed byte-identical mount relocation. Source metadata parity does not itself establish content pinning; the earlier actual pin controls and V8 runtime hashes supply that evidence.
+
+One environment discrepancy is unresolved: the editor displayed the original **2026-10-22** container setting, whereas the actual V10 viewer reports **Latest Container Image**. Record this as observed environment drift; do not describe V10 as an exact environment reproduction. No conclusion about its numerical effect is available.
+
+Next: inspect V10 actual logs for worker `gpus 2` and `smoke False`, each expected model group (`q14v5`, `q8v5`, `ll8v5`, `n14b`, `q25_14`, `deb`), complement/ATLAS loading, failures, final output guard and real saved-parquet readback. Preserve the source-allowed `lora24_public` skip. Free quota before launch displayed **00:51 / 30 hrs** used; the prior whole-hour display was 29 hours remaining. Do not promise a completion time. The competition's recorded GPU limit is nine hours.
+
+**No new official submission or score exists. S05 remains our best official public balanced accuracy at 0.642.** The source author's 0.651 is external. CPU checks and configured/allocated hardware do not establish completed model coverage, full vendor-payload finiteness, hidden-test runtime or accuracy; original-author input-version/content parity remains unverified. No paid service or final-selection change was used.
+
+[V10 live logs](https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit/log?scriptVersionId=363626171) · [verified Quick V9](https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363604858) · [GPU run receipt](GPU_V10_RUN_RECEIPT.json)
+
+## Historical checkpoint — before browser recovery on 29 October 2026
 
 The Llama access and dataset-binding issues are resolved at the CPU input/content gate. **CPU V8 363603066 succeeded in 297.9 seconds with 71/71 checks and 20/20 independent review checks.** All 15 custom source paths/seven unique hashes, all 37 static Torch head schemas, and 1,680 Llama adapter/base projection checks pass.
 
@@ -73,3 +87,4 @@ The complete V3 report is **448,138 bytes**, verified through **11 compressed tr
 [Exact CPU V3](https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=362258945) · [pinned author source](https://www.kaggle.com/code/dhruvtibarewal/nlm-v27?scriptVersionId=362013743) · [exact compressed report](REAL_INPUT_AUDIT_V3.json.gz) · [independent actual review](CPU_V3_ACTUAL_REVIEW.json) · [V2 diagnosis](CPU_V2_DIAGNOSIS_REVIEW.json) · [V3 auditor admission](CPU_V3_CORRECTION_REVIEW.json).
 
 The separately prepared Stage12B experiment reuses the established S05 assets; it does not use this blocked 31-input/Llama recipe. Its status and results belong to its own records.
+
