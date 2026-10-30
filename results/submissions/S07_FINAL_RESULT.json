@@ -1,0 +1,78 @@
+{
+  "submission": "S07",
+  "verified_date": "2026-10-30",
+  "account": "watchman777",
+  "competition": "name-that-llm",
+  "notebook_version": 10,
+  "script_version_id": 363626171,
+  "description_prefix": "S07: Stage12 V10 (363626171)",
+  "row_links_to_exact_private_version": true,
+  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363626171",
+  "submissions_url": "https://www.kaggle.com/competitions/name-that-llm/submissions",
+  "execution_state": "Succeeded",
+  "official_public_balanced_accuracy": "0.651",
+  "official_public_balanced_accuracy_percent": "65.1",
+  "official_private_score": null,
+  "evidence": "Root freshly reloaded the authoritative connected-browser Kaggle submissions page. The exact S07 row displayed Succeeded and a separate Public Score of 0.651; its notebook link uses scriptVersionId=363626171.",
+  "source_author_public_score": "0.651 (separate external result; matching values are not the evidence for our score)",
+  "previous_best": {
+    "submission": "S05",
+    "official_public_balanced_accuracy": "0.642"
+  },
+  "exact_decimal_comparison": {
+    "gain_vs_s05_percentage_points": "0.900",
+    "target_public_balanced_accuracy": "0.700",
+    "gap_to_target_percentage_points": "4.900",
+    "method": "Python decimal.Decimal arithmetic on displayed decimal strings"
+  },
+  "official_hidden_test_completion_verified": true,
+  "actual_hidden_runtime_seconds": null,
+  "actual_hidden_guard_count": null,
+  "actual_hidden_final_logs_exposed": false,
+  "preview_evidence_kept_separate": {
+    "runtime_seconds": 12224.2,
+    "rows": 3,
+    "saved_output_checks_passed": 40,
+    "saved_output_checks_total": 40,
+    "scope": "Private preview only; not hidden-run duration or guard evidence"
+  },
+  "final_selection_display": "automatic 0/2",
+  "final_selection_controls_changed": false,
+  "paid_services_used": false,
+  "new_job_or_submission_started_by_this_result_check": false,
+  "automation_created_or_reenabled": false,
+  "terminal_result_notification_recorded": true,
+  "remaining_limits": [
+    "Final private evaluation and final rank are unknown.",
+    "No actual hidden-run duration, guard count or full hidden-run model-coverage evidence was exposed in the inspected UI.",
+    "Known preview numerical/environment/input-parity limits remain recorded; a displayed public score does not independently reconstruct internal predictions."
+  ],
+  "live_leaderboard_snapshot": {
+    "verified_date": "2026-10-30",
+    "timezone": "Africa/Lagos",
+    "leaderboard_url": "https://www.kaggle.com/competitions/name-that-llm/leaderboard",
+    "evidence": "Root read the authoritative live leaderboard in the connected Kaggle browser.",
+    "own_row": {
+      "display_name": "Watchman 777",
+      "rank": 713,
+      "rank_denominator_displayed": 3967,
+      "score": "0.651",
+      "entries": 7
+    },
+    "leader": {
+      "display_name": "Lian Matsuo",
+      "score": "0.736"
+    },
+    "tenth": {
+      "display_name": "Wilmer E. Henao",
+      "score": "0.692"
+    },
+    "exact_decimal_gaps_percentage_points": {
+      "to_leader": "8.500",
+      "to_tenth": "4.100",
+      "to_70_percent": "4.900"
+    },
+    "interpretation": "A 70.0% public score would still be below this snapshot's 73.6% leader. This is not a final rank or a future cutoff guarantee."
+  }
+}
+

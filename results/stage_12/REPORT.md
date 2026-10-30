@@ -1,6 +1,19 @@
-# Stage 12 — official S07 running; private V10 preview succeeded
+# Stage 12 — official S07 succeeded at 0.651
 
-## Current official submission — 30 October 2026
+## Current verified official result — 30 October 2026
+
+**S07 succeeded with our own official public balanced accuracy of 0.651 (65.1%)**, freshly verified on 30 October 2026 from the exact submissions row for private Stage12 **V10 363626171**. This is a new best: **+0.900 percentage points** versus S05 0.642, using exact decimal arithmetic. The public-score gap to 70.0% is **4.900 points**. The matching source-author 0.651 remains a separate external result; our score is now independently displayed by Kaggle.
+
+Fresh public-leaderboard snapshot on **30 October 2026**: Watchman 777 is **713 of 3,967**, score **0.651**, seven entries. The displayed leader is **Lian Matsuo, 0.736** and tenth is **Wilmer E. Henao, 0.692**. Exact-decimal gaps are **8.500 percentage points** to the leader and **4.100 points** to tenth. **70.0% would still be below the current 73.6% leader**; it is not a first-place target at this snapshot. These are current public standings, not final private placement or guaranteed future cutoffs. [Live leaderboard](https://www.kaggle.com/competitions/name-that-llm/leaderboard).
+
+The official hidden-test submission is terminal **Succeeded**. No actual hidden-run duration, final logs or guard count is asserted; **12224.2 seconds and 40/40 checks belong to the three-row private preview**. Final private evaluation and final rank are unknown. The final-selection display remains automatic **0/2**, and no controls, code, inputs, parameters or paid services were changed by this result check. No new run or submission was launched.
+
+Next: preserve S07 as the current best and record this verified outcome. Do not infer a route to 70% from the public-score gain or start a parameter/blend sweep from this result. Any further experiment needs its own prospective rationale and development evidence. The successful public reproduction is not, by itself, an original-method or publication claim.
+
+[Official submissions](https://www.kaggle.com/competitions/name-that-llm/submissions) · [exact V10](https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363626171) · [S07 final result](../submissions/S07_FINAL_RESULT.json)
+
+
+## Historical submission checkpoint — 30 October 2026
 
 **S07 was submitted once from exact saved V10 363626171**, using `submission.parquet` and the recorded description beginning **`S07: Stage12 V10 (363626171)`**. The official submissions page confirms **Notebook Running**, and the row links to the exact private notebook version. No S07 public score is displayed. The reviewed code and input bindings were not changed. The pre-submission intent was committed as `360f44f9e77ef1aa0fab9b7dff6cf985059d2bfd` before the single Submit click.
 
@@ -115,4 +128,5 @@ The complete V3 report is **448,138 bytes**, verified through **11 compressed tr
 [Exact CPU V3](https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=362258945) · [pinned author source](https://www.kaggle.com/code/dhruvtibarewal/nlm-v27?scriptVersionId=362013743) · [exact compressed report](REAL_INPUT_AUDIT_V3.json.gz) · [independent actual review](CPU_V3_ACTUAL_REVIEW.json) · [V2 diagnosis](CPU_V2_DIAGNOSIS_REVIEW.json) · [V3 auditor admission](CPU_V3_CORRECTION_REVIEW.json).
 
 The separately prepared Stage12B experiment reuses the established S05 assets; it does not use this blocked 31-input/Llama recipe. Its status and results belong to its own records.
+
 

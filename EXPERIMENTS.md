@@ -1,5 +1,9 @@
 # Experiment log
 
+## Current official checkpoint — 30 October 2026
+
+S07 is **Succeeded at 0.651 official public balanced accuracy**, our new best. Exact-decimal comparison: **+0.900 percentage points** over S05 0.642; **4.900 points** below a 0.700 public score. This checkpoint adds no fit, tuning or new submission. Earlier dated entries remain historical. [Final result receipt](results/submissions/S07_FINAL_RESULT.json).
+
 ## Baseline 01 — 16 October 2026
 
 - Data: supplied official ZIP, 2,699 labelled passages, 150 prompts, 18 models.
@@ -435,4 +439,18 @@ Next: inspect V10 actual logs for worker `gpus 2` and `smoke False`, each expect
 **No new official submission or score exists. S05 remains our best official public balanced accuracy at 0.642.** The source author's 0.651 is external. CPU checks and configured/allocated hardware do not establish completed model coverage, full vendor-payload finiteness, hidden-test runtime or accuracy; original-author input-version/content parity remains unverified. No paid service or final-selection change was used.
 
 [V10 live logs](https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit/log?scriptVersionId=363626171) · [verified Quick V9](https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363604858) · [GPU run receipt](results/stage_12/GPU_V10_RUN_RECEIPT.json)
+
+
+
+## S07 — completed unchanged Stage12 reproduction — verified 30 October 2026
+
+**S07 succeeded with our own official public balanced accuracy of 0.651 (65.1%)**, freshly verified on 30 October 2026 from the exact submissions row for private Stage12 **V10 363626171**. This is a new best: **+0.900 percentage points** versus S05 0.642, using exact decimal arithmetic. The public-score gap to 70.0% is **4.900 points**. The matching source-author 0.651 remains a separate external result; our score is now independently displayed by Kaggle.
+
+Fresh public-leaderboard snapshot on **30 October 2026**: Watchman 777 is **713 of 3,967**, score **0.651**, seven entries. The displayed leader is **Lian Matsuo, 0.736** and tenth is **Wilmer E. Henao, 0.692**. Exact-decimal gaps are **8.500 percentage points** to the leader and **4.100 points** to tenth. **70.0% would still be below the current 73.6% leader**; it is not a first-place target at this snapshot. These are current public standings, not final private placement or guaranteed future cutoffs. [Live leaderboard](https://www.kaggle.com/competitions/name-that-llm/leaderboard).
+
+The official hidden-test submission is terminal **Succeeded**. No actual hidden-run duration, final logs or guard count is asserted; **12224.2 seconds and 40/40 checks belong to the three-row private preview**. Final private evaluation and final rank are unknown. The final-selection display remains automatic **0/2**, and no controls, code, inputs, parameters or paid services were changed by this result check. No new run or submission was launched.
+
+Next: preserve S07 as the current best and record this verified outcome. Do not infer a route to 70% from the public-score gain or start a parameter/blend sweep from this result. Any further experiment needs its own prospective rationale and development evidence. The successful public reproduction is not, by itself, an original-method or publication claim.
+
+[Final result receipt](results/submissions/S07_FINAL_RESULT.json)
 

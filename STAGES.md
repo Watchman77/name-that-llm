@@ -1,11 +1,11 @@
 # Project stages and current state
 
-Current checkpoint, 29 October 2026: **S05 remains best at 0.642 official public balanced accuracy. The unchanged private GPU V10 363626171 is Running, with GPU T4x2 shown by its committed viewer.** Quick V9 363604858 was recovered and verified against all seven exact reviewed code cells and 31 pinned-V7 resource metadata entries. CPU V8 passed 71/71 input checks and 20/20 independent review checks. Worker device count, model coverage and final outputs remain unverified at the latest 95.9-second log observation. Saved V10 has all seven exact canonical code cells and all 31 resource entries identical to V9. The editor displayed original 2026-10-22 container while the actual viewer reports Latest Container Image; its numerical effect is unresolved. No new official submission or score exists. Earlier observations below are historical checkpoints.
+Current checkpoint, 30 October 2026: **S07 is our new best at 0.651 official public balanced accuracy (65.1%); exact private Stage12 V10 363626171 is Succeeded.** The exact-decimal gain versus S05 0.642 is **+0.900 percentage points**, leaving **4.900 points** to a 70.0% public score. Final selection remains automatic 0/2. The private preview succeeded in 12224.2s with 40/40 output checks; those are not hidden-run duration or guard evidence. No actual hidden final logs/runtime/guard count or final private score/rank is claimed. [Final result](results/submissions/S07_FINAL_RESULT.json). Fresh public leaderboard: rank **713 of 3,967**, leader **0.736**, tenth **0.692**; 70.0% is below the current leader. Earlier observations below are historical checkpoints.
 
 
 ## Competition goal
 
-Target first place in the final private evaluation. At an earlier recorded 17 October 2026 check, S02 scored **0.549**, the public leader **0.600** (5.1 percentage points ahead), and tenth place **0.559** (1.0 point ahead). Our rank was **181 of 1,212 teams**. No fresh leaderboard check accompanies this update. S01 remains frozen at 0.354. Public standings are time-specific; the final private result is unknown. The user's request to adopt stronger public methods was completed as one frozen external-baseline reproduction, not an original-method claim or parameter search.
+Target first place in the final private evaluation. At an earlier recorded 17 October 2026 check, S02 scored **0.549**, the public leader **0.600** (5.1 percentage points ahead), and tenth place **0.559** (1.0 point ahead). Our rank was **181 of 1,212 teams**. That 17 October snapshot is historical; the fresh 30 October leaderboard checkpoint above supersedes it for current standings. S01 remains frozen at 0.354. Public standings are time-specific; the final private result is unknown. The user's request to adopt stronger public methods was completed as one frozen external-baseline reproduction, not an original-method claim or parameter search.
 
 | Stage | Status | Evidence / next decision |
 |---|---|---|
@@ -197,4 +197,18 @@ All 14 dataset bindings were explicitly pinned and verified after reloading. The
 Private source-only **Quick V7 363602111** preserves the six reviewed upstream code cells plus the separate output guard. The seven-cell notebook was restored again after V8; the three critical dataset pins still persisted. A final source-only QuickSave was requested with intended Version 9, but browser commands subsequently stalled. Its immutable identity and final source/configuration readback remain **unverified**. **No GPU Save & Run launch was requested and no model inference has started.** Inspect existing versions first; do not create a duplicate snapshot or confuse a QuickSave with inference.
 
 Next: confirm the latest saved production snapshot has seven exact code cells and the explicit pin bindings; select T4 x2, Internet off and **Run with GPU for all sessions** at Save & Run. Verify the committed accelerator profile and worker `gpus 2`, `smoke False` startup. Free quota was last freshly displayed as 29 hours and the competition specifies a 9-hour runtime limit; recheck if the session changes. CPU admission does not prove full vendor payload finiteness, GPU behavior, hidden runtime or accuracy. Original-author input-version/content parity remains unverified. Our best official public balanced accuracy remains **S05 0.642**; upstream 0.651 is external.
+
+
+
+## S07 official result — verified 30 October 2026
+
+**S07 succeeded with our own official public balanced accuracy of 0.651 (65.1%)**, freshly verified on 30 October 2026 from the exact submissions row for private Stage12 **V10 363626171**. This is a new best: **+0.900 percentage points** versus S05 0.642, using exact decimal arithmetic. The public-score gap to 70.0% is **4.900 points**. The matching source-author 0.651 remains a separate external result; our score is now independently displayed by Kaggle.
+
+Fresh public-leaderboard snapshot on **30 October 2026**: Watchman 777 is **713 of 3,967**, score **0.651**, seven entries. The displayed leader is **Lian Matsuo, 0.736** and tenth is **Wilmer E. Henao, 0.692**. Exact-decimal gaps are **8.500 percentage points** to the leader and **4.100 points** to tenth. **70.0% would still be below the current 73.6% leader**; it is not a first-place target at this snapshot. These are current public standings, not final private placement or guaranteed future cutoffs. [Live leaderboard](https://www.kaggle.com/competitions/name-that-llm/leaderboard).
+
+The official hidden-test submission is terminal **Succeeded**. No actual hidden-run duration, final logs or guard count is asserted; **12224.2 seconds and 40/40 checks belong to the three-row private preview**. Final private evaluation and final rank are unknown. The final-selection display remains automatic **0/2**, and no controls, code, inputs, parameters or paid services were changed by this result check. No new run or submission was launched.
+
+Next: preserve S07 as the current best and record this verified outcome. Do not infer a route to 70% from the public-score gain or start a parameter/blend sweep from this result. Any further experiment needs its own prospective rationale and development evidence. The successful public reproduction is not, by itself, an original-method or publication claim.
+
+[Final result receipt](results/submissions/S07_FINAL_RESULT.json)
 
