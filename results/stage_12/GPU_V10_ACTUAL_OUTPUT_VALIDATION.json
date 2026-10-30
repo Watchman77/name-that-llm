@@ -1,0 +1,112 @@
+{
+  "atlas_budget_positive": true,
+  "atlas_budget_seconds": 25393,
+  "canonical_label_axis_sha256": "088b14188775e41a314f269da3af74f96144a56caa242ccbeacc9e3c817a7e08",
+  "checks_passed": [
+    "notebook_namespace_present",
+    "diagnostic_override_absent_NTL_SMOKE",
+    "diagnostic_override_absent_NTL_FAKE_TEST",
+    "diagnostic_override_absent_NTL_TINY",
+    "frozen_intentional_q35_omission",
+    "source_complement_start_recorded",
+    "source_complement_wall_seconds_valid",
+    "source_atlas_budget_matches_frozen_formula",
+    "source_six_main_group_names",
+    "source_start_not_in_future",
+    "test_csv_present",
+    "test_exact_column_order",
+    "test_nonempty",
+    "test_ids_nonnull",
+    "test_ids_nonempty_strings",
+    "test_ids_unique",
+    "submission_present_nonempty",
+    "submission_fresh_for_this_execution",
+    "comp_logit_present_nonempty",
+    "comp_logit_fresh_for_this_execution",
+    "comp_meta_present_nonempty",
+    "comp_meta_fresh_for_this_execution",
+    "submission_written_after_complement_artifacts",
+    "submission_exact_column_order",
+    "submission_row_count_matches_test",
+    "submission_no_nulls",
+    "submission_string_ids",
+    "submission_ids_unique",
+    "submission_exact_test_id_order",
+    "submission_string_models",
+    "submission_allowed_18_labels",
+    "comp_metadata_exact_schema",
+    "comp_exact_test_id_order",
+    "comp_named_class_axis_matches_frozen_sorted_order",
+    "comp_worker_seconds_positive_finite",
+    "comp_worker_seconds_within_notebook_wall_time",
+    "comp_saved_array_is_ndarray",
+    "comp_exact_n_by_18_shape",
+    "comp_logits_real_floating_dtype",
+    "comp_all_saved_logits_finite"
+  ],
+  "checks_passed_count": 40,
+  "comp_dtype": "float64",
+  "comp_shape": [
+    3,
+    18
+  ],
+  "comp_values_are": "raw_weighted_log_evidence_not_normalized_probabilities",
+  "comp_worker_seconds": 3870.2106742858887,
+  "complementary_notebook_wall_seconds": 3886.20658659935,
+  "development_accuracy_verified": false,
+  "expert_coverage_verified": false,
+  "files": {
+    "comp_logit": {
+      "bytes": 560,
+      "sha256": "290d49e304894d426b654785a23163d19bacac7a04b6c670b4018224bae2a1b9"
+    },
+    "comp_meta": {
+      "bytes": 406,
+      "sha256": "4ccc401d0120a89305fbe7ab9f02856cce16a332f0c379d78add87e0e53601fc"
+    },
+    "submission": {
+      "bytes": 1755,
+      "sha256": "2d26e7de920e646e14db358bafe001e292800b4fed1d3c19c077d5eae204e9ba"
+    }
+  },
+  "final_argmax_reconstructed": false,
+  "full_main_finiteness_verified": false,
+  "full_mixture_verified": false,
+  "guard_passed": true,
+  "hidden_runtime_verified": false,
+  "input_is_three_rows": true,
+  "limitations": [
+    "Main member probabilities, aggregate scores and postprocessing arrays are unsaved.",
+    "Finite saved complementary logits do not prove finite main internals.",
+    "No independent main/COMP/ATLAS mixture or final-argmax reconstruction is possible.",
+    "COMP/ATLAS fallback and missing-member SKIP branches require full own-log review.",
+    "Shell pipeline success does not prove complementary-worker success or expert coverage.",
+    "Three-row source execution is real inference, not a format-only shortcut.",
+    "Small-input in-sample checks are not development or out-of-fold accuracy.",
+    "No official public/private score, complete runtime, or GPU admission is established here."
+  ],
+  "manual_log_checks": [
+    "COMP STACK DONE and all expected complementary member contributions",
+    "no missing-checkpoint SKIP for the four complementary LoRA members",
+    "all six main groups completed: q14v5, q8v5, ll8v5, n14b, q25_14, deb",
+    "comp stack loaded; no COMP SKIPPED fallback",
+    "ATLAS selection and successful mixing; no ATLAS SKIPPED fallback",
+    "final wrote submission.parquet and complete execution without failure",
+    "nonfinite-row warnings, replacements, retries and in-sample checks reviewed"
+  ],
+  "manual_log_review_required": true,
+  "official_score_verified": false,
+  "parquet_readback": "pandas.read_parquet_actual_saved_file",
+  "row_count": 3,
+  "schema_version": 1,
+  "source_has_format_only_preview_shortcut": false,
+  "source_script_version_id": 362013743,
+  "status": "PASS_SAVED_OUTPUT_CONTRACT",
+  "submission_class_counts": {
+    "claude-sonnet-5": 1,
+    "gemini-3.1-pro-preview": 1,
+    "gpt-5.6-sol": 1
+  },
+  "test_id_axis_sha256": "7e4a2ab3a76980a9ee861c28f9969dd0fce68641f7ab3b5236f1707839f0e551",
+  "validation_scope": "saved_parquet_and_complementary_logit_contract_only"
+}

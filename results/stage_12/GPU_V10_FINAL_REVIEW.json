@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-30",
+  "script_version_id": 363626171,
+  "notebook_version": 10,
+  "execution_state": "Succeeded",
+  "runtime_seconds": 12224.2,
+  "accelerator": "GPU T4 x2",
+  "container_image": "Latest Container Image",
+  "output_display": "876.62 MB",
+  "page_refreshed_before_terminal_verification": true,
+  "admission": "PASS_PRIVATE_TECHNICAL_PREVIEW_NOT_ACCURACY",
+  "main_group_completion_logs": [
+    "7777.9s [   3433s] q14v5 done gpu0:0.0GB gpu1:0.0GB",
+    "9395.2s [   5050s] q8v5 done gpu0:0.0GB gpu1:0.0GB",
+    "10720.5s [   6376s] ll8v5 done gpu0:0.0GB gpu1:0.0GB",
+    "11093.4s [   6749s] n14b done gpu0:0.0GB gpu1:0.0GB",
+    "11491.8s [   7147s] q25_14 done gpu0:0.0GB gpu1:0.0GB",
+    "11501.5s [   7157s] deb done gpu0:0.0GB gpu1:0.0GB"
+  ],
+  "comp_completion_logs": [
+    "4333.9s COMP STACK DONE 3870s",
+    "11501.5s [   7157s] comp stack loaded (3870s)"
+  ],
+  "complement_component_completion_logs": [
+    "763.1s   + stylegram            weight 1.516 on 3 rows  (299s)",
+    "878.7s   + stylometry_lgb       weight 0.063 on 3 rows  (415s)",
+    "2153.6s   + debv3l               weight 0.050 on 3 rows  (1690s)",
+    "2334.2s   + electl               weight 0.032 on 3 rows  (1871s)",
+    "2502.4s   + desk                 weight 0.132 on 3 rows  (2039s)",
+    "2553.6s   + lora24_seed7         weight 0.113 on 3 rows  (2090s)",
+    "2577.9s   + lora24_claude        weight 0.177 on 3 rows  (2114s)",
+    "2611.3s   + lora20_q25_instyle   weight 0.170 on 3 rows  (2148s)",
+    "2641.4s   + tokattn_deb          weight 0.185 on 3 rows  (2178s)",
+    "4333.9s   + ultrabert            weight 0.095 on 3 rows  (3870s)"
+  ],
+  "atlas_logs": [
+    "11501.5s [   7157s] atlas on 3/3 rows (top-2 margin < 0.3)",
+    "12207.2s [   7862s] atlas /kaggle/input/datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/atlas_adapter/atlas_adapter mixed at 0.1 gpu0:0.0GB gpu1:0.0GB"
+  ],
+  "only_missing_checkpoint_skip": [
+    "2537.2s   SKIP lora24_public: checkpoint not attached (**/lora24/final/COMPLETE.json)"
+  ],
+  "missing_checkpoint_skip_predeclared_and_allowed": true,
+  "adapter_completion_log_count": 40,
+  "nonzero_bf16_redo_batch_log_count": 0,
+  "inspected_traceback_exception_failure_fallback_nonfinite_marker_matches": [],
+  "known_loader_report_review": {
+    "status": "CONSISTENT_WITH_INTENTIONAL_PRUNED_TRUNK_LOADS",
+    "unexpected_report_timestamp_group_count": 15,
+    "main_discarded_layer_tails": {
+      "q14v5": "27..39",
+      "q8v5": "24..35",
+      "ll8v5": "24..31",
+      "n14b": "27..39",
+      "q25_14": "32..47"
+    },
+    "lm_head_unused_by_AutoModel": true,
+    "source_reference": "55cf8622c592690c98f67b65c3e9b6381a726b32",
+    "scope": "Known reported layer tails and unused causal-LM head; not a blanket dismissal of arbitrary loader warnings."
+  },
+  "actual_guard": {
+    "checks_passed": 40,
+    "unique_checks": 40,
+    "status": "PASS_SAVED_OUTPUT_CONTRACT",
+    "scope": "saved_parquet_and_complementary_logit_contract_only",
+    "row_count": 3,
+    "comp_shape": [
+      3,
+      18
+    ],
+    "comp_dtype": "float64",
+    "comp_logits_all_finite": true,
+    "parquet_readback": "pandas.read_parquet_actual_saved_file"
+  },
+  "source_atlas_budget_formula": "int(8.3 * 3600 - COMP_SEC - 600)",
+  "actual_atlas_budget_seconds": 25393,
+  "runtime_limit_hours_recorded": 9,
+  "hidden_runtime_verified": false,
+  "seen_training_sanity_checks_are_accuracy_evidence": false,
+  "container_label_discrepancy_resolved": false,
+  "full_main_internal_finiteness_verified": false,
+  "full_mixture_or_argmax_reconstructed": false,
+  "original_author_input_version_content_parity_verified": false,
+  "official_submissions_check": {
+    "date": "2026-10-30",
+    "displayed": [
+      "S06",
+      "S05",
+      "S04",
+      "S03",
+      "S02",
+      "S01"
+    ],
+    "new_candidate_submitted": false,
+    "best_submission": "S05",
+    "best_official_public_balanced_accuracy": 0.642,
+    "automatic_selection_display": "0/2",
+    "selection_controls_changed": false
+  },
+  "paid_services_used": false,
+  "raw_rows_predictions_arrays_weights_exported": false
+}

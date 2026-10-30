@@ -1,6 +1,19 @@
-# Stage 12 — unchanged private GPU V10 running
+# Stage 12 — private GPU V10 technical preview succeeded
 
-## Progress check — 29 October 2026
+## Current result — 30 October 2026
+
+**Private V10 363626171 succeeded in 12224.2 seconds (3h 23m 44.2s)** on GPU T4 x2, verified after refreshing the authoritative logs page. Output display: 876.62 MB. The three-row execution is real inference. All **40 unique saved-output checks** pass, including actual saved-parquet readback and finite 3×18 complementary logits.
+
+Manual actual-log review confirms all six main groups (`q14v5`, `q8v5`, `ll8v5`, `n14b`, `q25_14`, `deb`) completed, `COMP STACK DONE` and successful loading appeared, and ATLAS ran on 3/3 rows and mixed at 0.1. All 40 adapter completion logs report zero bf16 redo batches. The only missing-checkpoint skip is the predeclared source-allowed `lora24_public`. No inspected traceback, exception, failure, COMP/ATLAS fallback, or nonfinite marker appeared. Known unexpected-weight reports match the intentionally discarded layer tails and unused causal-LM heads in the reviewed source; they are not by themselves a blocker. Debugger and notebook-rendering warnings are recorded separately from model completion.
+
+**Admitted: completed technical preview and saved-output contract.** This does not establish full-main internal finiteness, independent mixture/argmax reconstruction, hidden-test runtime, or accuracy. The small-input sanity checks use seen training rows. Original-author input-content parity and the original/latest-container label discrepancy remain unverified. No recipe changes or paid services were used.
+
+A fresh official submissions-page check shows only **S01–S06**, with **S05 0.642** still best; V10 has not been submitted and has no official score. Automatic final selection remains 0/2 and no selection controls were changed. Next is one unchanged official hidden-test rerun; do not infer its score from the author's 0.651 or from this successful preview.
+
+[V10 final logs](https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit/log?scriptVersionId=363626171) · [actual saved-output guard](GPU_V10_ACTUAL_OUTPUT_VALIDATION.json) · [final technical review](GPU_V10_FINAL_REVIEW.json)
+
+
+## Historical progress check — 29 October 2026
 
 V10 remains **Running at 3466.1 seconds (about 58 minutes)** on T4 x2. Actual worker logs at 464.0s confirm **`gpus 2` and `smoke False`**. Nine component completion markers have appeared: stylegram, stylometry_lgb, debv3l, electl, desk, lora24_seed7, lora24_claude, lora20_q25_instyle and tokattn_deb. Later weight-loader progress reached 220/220; this does not identify or prove completion of the remaining model groups. No inspected traceback/error/failure or COMP/ATLAS skip marker appeared. The viewer still shows 0 B; no final guard, saved submission or readback is verified. Full ensemble completion remains pending.
 

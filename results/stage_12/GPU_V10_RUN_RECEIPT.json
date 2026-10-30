@@ -1,7 +1,7 @@
 {
   "stage": 12,
-  "date": "2026-10-29",
-  "status": "RUNNING_REAL_GPU_DEVICES_AND_COMPONENT_EXECUTION_VERIFIED",
+  "date": "2026-10-30",
+  "status": "SUCCEEDED_PRIVATE_PREVIEW_TECHNICAL_REVIEW_PASS",
   "notebook": "watchman777/name-that-llm-stage-12-public-651-audit",
   "version": 10,
   "script_version_id": 363626171,
@@ -57,9 +57,9 @@
   },
   "gpu_worker_gpus_2_verified": true,
   "worker_smoke_false_verified": true,
-  "model_group_execution_verified": false,
-  "final_output_guard_verified": false,
-  "saved_parquet_readback_verified": false,
+  "model_group_execution_verified": true,
+  "final_output_guard_verified": true,
+  "saved_parquet_readback_verified": true,
   "gpu_quota_before_launch": "00:51 / 30 hrs used; prior whole-hour display 29 hours remaining",
   "source_allowed_missing_member": "lora24_public",
   "expected_model_groups": [
@@ -110,16 +110,13 @@
     }
   ],
   "latest_observation": {
-    "state": "Running",
-    "elapsed_seconds": 3466.1,
+    "state": "Succeeded",
+    "runtime_seconds": 12224.2,
     "accelerator": "GPU T4 x2",
     "container_image": "Latest Container Image",
-    "output_bytes": 0,
-    "last_weight_load_log_timestamp_seconds": 3398.3,
-    "last_weight_load_display": "100% 220/220",
-    "inspected_failure_marker_matches": [],
-    "final_output_guard_seen": false,
-    "saved_submission_parquet_seen": false
+    "output_display": "876.62 MB",
+    "observed_date": "2026-10-30",
+    "page_refreshed_before_terminal_verification": true
   },
   "any_component_execution_verified": true,
   "worker_device_log": {
@@ -173,5 +170,17 @@
       "rows": 3
     }
   ],
-  "seen_training_self_tests": "The 54-row self-tests use seen training data and are not validation, development or competition accuracy."
+  "seen_training_self_tests": "The 54-row self-tests use seen training data and are not validation, development or competition accuracy.",
+  "execution_state": "Succeeded",
+  "runtime_seconds": 12224.2,
+  "output_display": "876.62 MB",
+  "all_six_expected_main_groups_completed": true,
+  "final_saved_output_checks_passed": 40,
+  "final_saved_output_checks_total": 40,
+  "full_main_finiteness_verified": false,
+  "full_mixture_reconstructed": false,
+  "hidden_test_runtime_verified": false,
+  "final_review_receipt": "GPU_V10_FINAL_REVIEW.json",
+  "actual_guard_receipt": "GPU_V10_ACTUAL_OUTPUT_VALIDATION.json",
+  "terminal_review": "CPU input gate, source equality, all six main completion logs, COMP STACK DONE/loaded, ATLAS mixing, saved output guard and terminal success admitted. No official score or full-main numerical proof."
 }
