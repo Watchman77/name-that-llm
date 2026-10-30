@@ -1,12 +1,20 @@
 # Name That LLM
 
-Private competition workspace for reproducible LLM authorship attribution.
+Workspace for reproducible LLM authorship attribution.
 
-The competitive goal is **first place in the final private evaluation**. An earlier 17 October 2026 leaderboard observation showed a 60.0% public leader (previously 59.3%); standings have not been refreshed during these diagnostic runs and are not a fixed winning threshold.
+The competitive goal is **first place in the final private evaluation**. At the verified 30 October 2026 public snapshot, the leader scored 0.736; 70% remains a milestone rather than a guaranteed winning score.
 
 ## Current stage
 
-**Our best confirmed official public score is now 0.549 (54.9%), from S02**, the unchanged Lucas Boesen V3 reproduction. This improves S01's 0.354 by **19.5 percentage points** and matches the source score at displayed precision. At the earlier recorded 17 October check, our rank was **181 of 1,212 teams**; tenth was 0.559 and the leader 0.600. These are historical standings, not a fresh leaderboard check. The final private result remains unknown. See [S02 outcome](results/submissions/S02_REPORT.md), [source attribution](vendor/NOTICE.md) and [reproduction protocol](plans/STAGE_05_PUBLIC_REPRODUCTION.md). No paid services were used.
+**S07 is our best confirmed official public result: 0.651 (65.1%) balanced accuracy**, from exact private Stage12 V10 **363626171**. It succeeded and improves S05 0.642 by **0.900 percentage points**. The verified 30 October public snapshot places Watchman 777 at **713 of 3,967**, with tenth at 0.692 and the leader at 0.736. Final private performance remains unknown. [Verified outcome](results/submissions/S07_FINAL_RESULT.json).
+
+**Next: Stage13, a clean development reference followed by one balancing-robustness hypothesis.** We do not have honest full-S07 OOF predictions: several components saw all official training rows. First verify prompt exclusions and prepare a common-fold reduced reference; then freeze one CPU comparison. No Stage13 fitting, candidate evaluation, GPU job or official submission has run. [Plan and gates](plans/STAGE_13_DEVELOPMENT_REFERENCE_AND_BALANCING.md).
+
+## Historical development checkpoints
+
+The following S02/Stage06 observations are retained as historical evidence; current status is above.
+
+**At this historical S02 checkpoint, our best confirmed official public score was 0.549 (54.9%)**, the unchanged Lucas Boesen V3 reproduction. This improves S01's 0.354 by **19.5 percentage points** and matches the source score at displayed precision. At the earlier recorded 17 October check, our rank was **181 of 1,212 teams**; tenth was 0.559 and the leader 0.600. These are historical standings, not a fresh leaderboard check. The final private result remains unknown. See [S02 outcome](results/submissions/S02_REPORT.md), [source attribution](vendor/NOTICE.md) and [reproduction protocol](plans/STAGE_05_PUBLIC_REPRODUCTION.md). No paid services were used.
 
 Stage 06A verified all 2,699 public LoRA held-out predictions. Stage 06B has now completed a fixed CPU DeBERTa centering comparison and repeated it with identical scenario scores. Mean component development BA improves from **46.57% to 47.25%** across three lexical context simulations (**+0.68 percentage points**, paired prompt 95% interval **+0.09 to +1.30**). Some classes regress: Qwen recall falls 8 points in the three-response scenario. This is a provisional component gain, not a new S02 official score or a full-ensemble result. No paid services or GPU were used. See [results and limits](results/stage_06b/REPORT.md), [component inventory](results/stage_06/COMPONENT_INVENTORY.json), and [next mixed-grouping confirmation](plans/STAGE_06C_MIXED_GROUP_VALIDATION.md). 70% remains a stretch goal.
 
