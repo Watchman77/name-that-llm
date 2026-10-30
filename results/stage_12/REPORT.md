@@ -1,6 +1,15 @@
-# Stage 12 — private GPU V10 technical preview succeeded
+# Stage 12 — official S07 running; private V10 preview succeeded
 
-## Current result — 30 October 2026
+## Current official submission — 30 October 2026
+
+**S07 was submitted once from exact saved V10 363626171**, using `submission.parquet` and the recorded description beginning **`S07: Stage12 V10 (363626171)`**. The official submissions page confirms **Notebook Running**, and the row links to the exact private notebook version. No S07 public score is displayed. The reviewed code and input bindings were not changed. The pre-submission intent was committed as `360f44f9e77ef1aa0fab9b7dff6cf985059d2bfd` before the single Submit click.
+
+This is the official hidden-test rerun; the earlier 12224.2-second, 40-check success belongs to the three-row private preview. No actual hidden duration, guard count or final hidden-run logs are asserted. Our best confirmed official public balanced accuracy remains **S05 0.642**. Compare S07 only after a real displayed score. Final selection remains automatic **0/2** and no selection controls were changed. No paid service or new monitoring automation was used.
+
+[Official submissions](https://www.kaggle.com/competitions/name-that-llm/submissions) · [S07 run receipt](../submissions/S07_RUN_RECEIPT.json)
+
+
+## Completed private-preview result — 30 October 2026
 
 **Private V10 363626171 succeeded in 12224.2 seconds (3h 23m 44.2s)** on GPU T4 x2, verified after refreshing the authoritative logs page. Output display: 876.62 MB. The three-row execution is real inference. All **40 unique saved-output checks** pass, including actual saved-parquet readback and finite 3×18 complementary logits.
 
