@@ -1,0 +1,43 @@
+{
+  "submission": "S07",
+  "date": "2026-10-30",
+  "state": "PREPARED_NOT_YET_SUBMITTED",
+  "authorization": "User explicitly requested proceeding with official hidden-test submission after completed preview review.",
+  "competition": "name-that-llm",
+  "account": "watchman777",
+  "notebook": "watchman777/name-that-llm-stage-12-public-651-audit",
+  "notebook_version": 10,
+  "script_version_id": 363626171,
+  "notebook_version_name": "Frozen GPU inference after CPU V8 admission",
+  "immutable_notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-12-public-651-audit?scriptVersionId=363626171",
+  "output_file": "submission.parquet",
+  "description": "S07: Stage12 V10 (363626171). Frozen Dhruv nlm-v27 V1 362013743; six source cells unchanged + output guard. Git 55cf8622c592690c98f67b65c3e9b6381a726b32. 31 inputs; 14 dataset pins. CPU 71/71 + review 20/20. Real 3-row preview 12224.2s T4x2; 40 output checks incl. finite COMP logits/parquet readback; six main groups, COMP, ATLAS completed. Allowed lora24_public skip retained. Author 0.651 not ours. No tuning/paid APIs. Hidden runtime/accuracy unverified.",
+  "description_characters": 458,
+  "source_freeze": "55cf8622c592690c98f67b65c3e9b6381a726b32",
+  "technical_admission_commit": "c83363f68ba8ac13a86eee1b281674a03c708014",
+  "preview": {
+    "state": "Succeeded",
+    "runtime_seconds": 12224.2,
+    "rows": 3,
+    "accelerator": "GPU T4 x2",
+    "saved_output_checks": 40,
+    "saved_output_checks_total": 40,
+    "all_six_main_groups_comp_and_atlas_log_review_passed": true
+  },
+  "fixed_candidate": true,
+  "code_or_input_changes_for_submission": false,
+  "official_public_score": null,
+  "best_official_reference": {
+    "submission": "S05",
+    "balanced_accuracy": "0.642"
+  },
+  "source_author_score": "0.651 (external, not our measured result)",
+  "final_selection_controls_to_preserve": "automatic 0/2; no changes",
+  "paid_services": false,
+  "feedback_protocol": "Observe this one unchanged official run. Compare to S05 only after a real displayed official S07 score, using exact decimal percentage-point arithmetic; no inference from preview checks or seen-training sanity accuracy.",
+  "remaining_limits": [
+    "Hidden-test runtime and accuracy unverified.",
+    "Unsaved full-main numerical arrays and complete mixture/argmax cannot be independently reconstructed.",
+    "Original-author input-content and environment parity unverified; actual preview used Latest Container Image."
+  ]
+}
