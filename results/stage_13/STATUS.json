@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "phase": "CPU_FEATURE_ADMISSION_PREPARED_NOT_EXECUTED",
+  "phase": "CPU_AUDIT_PREPARED_SAVED_SOURCE_UNVERIFIED_BROWSER_TIMEOUT",
   "official_best_submission": "S07",
   "official_best_public_balanced_accuracy": "0.651",
   "static_s07_provenance_review_complete": true,
@@ -23,5 +23,13 @@
   "balancing_comparison_started": false,
   "new_official_submission_started": false,
   "paid_services_used": false,
-  "final_selection_controls_changed": false
+  "final_selection_controls_changed": false,
+  "source_freeze_commit": "d8d600d5f3151e0f6a4ab131f58fb8db54befa3f",
+  "independent_notebook_structural_source_checks_passed": 10,
+  "independent_readback_fixtures_passed": 35,
+  "source_only_quick_save_attempted": true,
+  "source_only_save_verified": false,
+  "saved_source_settings_verified": false,
+  "actual_cache_execution_verified": false,
+  "save_and_run_requested": false
 }

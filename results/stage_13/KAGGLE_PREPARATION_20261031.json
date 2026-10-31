@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-31",
+  "status": "PREPARED_SOURCE_SAVE_UNVERIFIED_BROWSER_TIMEOUT",
+  "private_editor_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-13a-cache-admission/edit",
+  "intended_input_bindings": [
+    {
+      "sourceType": "competition",
+      "sourceId": 170484
+    },
+    {
+      "sourceType": "kernelVersion",
+      "sourceId": 359405443
+    }
+  ],
+  "observed_editor_inputs": [
+    "Name That LLM",
+    "Name That LLM - Stage 06C Mixed Grouping"
+  ],
+  "created_from_immutable_own_cache_output_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-06c-mixed-grouping/output?scriptVersionId=359405443",
+  "observed_accelerator": "None",
+  "observed_internet_checkbox_after_uncheck": false,
+  "source_import_requested_from_frozen_git": true,
+  "source_import_url": "https://raw.githubusercontent.com/Watchman77/name-that-llm/d8d600d5f3151e0f6a4ab131f58fb8db54befa3f/notebooks/Stage_13A_Cache_Admission.ipynb",
+  "expected_code_cell_count": 3,
+  "saved_code_readback_verified": false,
+  "saved_kaggle_input_metadata_verified": false,
+  "quick_save_attempted": true,
+  "quick_save_name": "Reviewed CPU audit source; no execution",
+  "quick_script_version_id": null,
+  "save_and_run_requested": false,
+  "actual_cache_execution_verified": false,
+  "observed_limitation": "Browser-control calls stopped returning during the source-only save and subsequent cheap state/documentation reads. No saved version ID, exact code/settings readback or real-cache execution result was verified.",
+  "next_action": "Reconnect the same browser; inspect existing versions and active events first. Verify exact three source strings, two expected input IDs, CPU and Internet off before one Save & Run All. Do not repeat a source save or launch without inspection.",
+  "new_model_fitting_or_inference": false,
+  "new_official_submission": false,
+  "s07_unchanged": true,
+  "paid_services_used": false,
+  "final_selection_controls_changed": false
+}
