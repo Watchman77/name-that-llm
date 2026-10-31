@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-31",
+  "phase": "CPU_FEATURE_ADMISSION_PREPARED_NOT_EXECUTED",
+  "official_best_submission": "S07",
+  "official_best_public_balanced_accuracy": "0.651",
+  "static_s07_provenance_review_complete": true,
+  "full_s07_oof_admitted": false,
+  "clean_development_reference_admitted": false,
+  "real_glm_cache_admission_complete": false,
+  "implementation_unit_tests_passed": 18,
+  "independent_supplemental_checks_passed": 6,
+  "intended_inputs": [
+    170484,
+    359405443
+  ],
+  "intended_accelerator": "None",
+  "intended_internet": false,
+  "notebook": "notebooks/Stage_13A_Cache_Admission.ipynb",
+  "private_editor_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-13a-cache-admission/edit",
+  "actual_script_version_id": null,
+  "new_fit_started": false,
+  "new_model_inference_started": false,
+  "balancing_comparison_started": false,
+  "new_official_submission_started": false,
+  "paid_services_used": false,
+  "final_selection_controls_changed": false
+}

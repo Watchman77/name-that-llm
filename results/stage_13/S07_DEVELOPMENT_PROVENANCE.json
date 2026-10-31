@@ -1,0 +1,963 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-31",
+  "review_type": "STATIC_SOURCE_AND_RECORDED_EVIDENCE_PROVENANCE_LEDGER",
+  "repository": "Watchman77/name-that-llm",
+  "reviewed_repository_ref": "6a73f73602fb7e91dab1224bd60c61989205741f",
+  "source_reference": {
+    "path": "notebooks/Stage_12_Public_651_Reproduction.ipynb",
+    "git_freeze": "55cf8622c592690c98f67b65c3e9b6381a726b32",
+    "upstream_script_version_id": 362013743,
+    "own_production_script_version_id": 363626171
+  },
+  "scope": "No model execution, imports of vendor/custom model code, new fitting, browser actions or mounted-input validation. Source intent and recorded audit evidence are separated from checkpoint training-exclusion proof.",
+  "current_official_reference": {
+    "submission": "S07",
+    "script_version_id": 363626171,
+    "public_balanced_accuracy": "0.651",
+    "evidence_path": "results/submissions/S07_FINAL_RESULT.json"
+  },
+  "full_s07_oof_admitted": false,
+  "common_fold_scoring_reference_admitted": false,
+  "fresh_cache_admission_pending": true,
+  "reason": "No complete chain of held-out scoring-batch prompt exclusions is verified across the active production inference ensemble. Production all-official fits and averaged final/fold checkpoints cannot be labelled OOF.",
+  "status_vocabulary": {
+    "EXPLICIT_FULL_OFFICIAL_FIT": "Production source fits all official rows; zero official holdout.",
+    "MIXED_FOLD_AND_SOURCE_DECLARED_FULL_DATA_CHECKPOINTS": "Source averages fold-named artifacts and a full-data artifact for every scoring row; artifact names are not an exclusion manifest.",
+    "UNKNOWN_CHECKPOINT_TRAINING_EXCLUSION": "Pretrained/adapted state and readouts require verifiable prompt exclusions; unknown is not a pass.",
+    "NONLEARNED_BATCH_COUPLED": "No current supervised fit, but changes one row using peer-row evidence; all upstream models must exclude every scoring-batch prompt."
+  },
+  "main_branches": [
+    {
+      "id": "main.q14v5",
+      "kind": "adapted_decoder_plain_and_centered",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "3.0",
+        "centered_log_evidence_effective": "1.05",
+        "centered_multiplier_formula": "3.0 * adapt_w(1.0) * twin(0.35)"
+      },
+      "development_classification": "MIXED_FOLD_AND_SOURCE_DECLARED_FULL_DATA_CHECKPOINTS",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 1: AQ14V5/AQ8V5/ALL8V5 lists",
+        "code cell 3: l24_predict averages every adapter's plain/centered log evidence; last adapter is explicitly called full-data",
+        "code cell 6: active MODELS"
+      ],
+      "base_model_path": "models/qwen-lm/qwen-3/transformers/14b-base/1",
+      "adapter_paths": [
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5_f0",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5_f1",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5_f2",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5_f3",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5_f4",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q14v5"
+      ],
+      "keep_layers": 27,
+      "max_length": 384,
+      "adapter_count": 6,
+      "source_declared_fold_names": 5,
+      "source_declared_full_data_names": 1,
+      "verified_adapter_training_prompt_manifests": 0,
+      "blocker": "All six adapters are averaged for each scoring row. Fold names do not establish exclusion; selecting all fold adapters plus a source-declared full-data adapter is not an OOF path.",
+      "checkpoint_source_version_mapping": "Mounted paths and identities were audited in CPU V8; this ledger does not invent a mapping from UI dataset version values to notebook metadata source IDs."
+    },
+    {
+      "id": "main.q14v5_gauss",
+      "kind": "shared_prompt_gaussian",
+      "production_active": true,
+      "source_weights": {
+        "log_evidence": "0.70",
+        "temperatures": "T1=Tg=3.0"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_FIT_WITH_FULL_DATA_ADAPTED_FEATURES",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 3: train_texts branch retains features only for the last full-data adapter",
+        "code cell 3: _ga.fit(Ztr_g,y,Gtr,...)"
+      ],
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "eligible_test_group_sizes": "2..18",
+      "blocker": "Both representation supervision and Gaussian fit must exclude scoring prompts; refitting the Gaussian alone does not remove adapter exposure."
+    },
+    {
+      "id": "main.q8v5",
+      "kind": "adapted_decoder_plain_and_centered",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "2.0",
+        "centered_log_evidence_effective": "0.70",
+        "centered_multiplier_formula": "2.0 * adapt_w(1.0) * twin(0.35)"
+      },
+      "development_classification": "MIXED_FOLD_AND_SOURCE_DECLARED_FULL_DATA_CHECKPOINTS",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 1: AQ14V5/AQ8V5/ALL8V5 lists",
+        "code cell 3: l24_predict averages every adapter's plain/centered log evidence; last adapter is explicitly called full-data",
+        "code cell 6: active MODELS"
+      ],
+      "base_model_path": "models/qwen-lm/qwen-3/transformers/8b-base/1",
+      "adapter_paths": [
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5_f0",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5_f1",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5_f2",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5_f3",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5_f4",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/q8v5"
+      ],
+      "keep_layers": 24,
+      "max_length": 384,
+      "adapter_count": 6,
+      "source_declared_fold_names": 5,
+      "source_declared_full_data_names": 1,
+      "verified_adapter_training_prompt_manifests": 0,
+      "blocker": "All six adapters are averaged for each scoring row. Fold names do not establish exclusion; selecting all fold adapters plus a source-declared full-data adapter is not an OOF path.",
+      "checkpoint_source_version_mapping": "Mounted paths and identities were audited in CPU V8; this ledger does not invent a mapping from UI dataset version values to notebook metadata source IDs."
+    },
+    {
+      "id": "main.q8v5_gauss",
+      "kind": "shared_prompt_gaussian",
+      "production_active": true,
+      "source_weights": {
+        "log_evidence": "0.44",
+        "temperatures": "T1=Tg=3.0"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_FIT_WITH_FULL_DATA_ADAPTED_FEATURES",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 3: train_texts branch retains features only for the last full-data adapter",
+        "code cell 3: _ga.fit(Ztr_g,y,Gtr,...)"
+      ],
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "eligible_test_group_sizes": "2..18",
+      "blocker": "Both representation supervision and Gaussian fit must exclude scoring prompts; refitting the Gaussian alone does not remove adapter exposure."
+    },
+    {
+      "id": "main.ll8v5",
+      "kind": "adapted_decoder_plain_and_centered",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "1.0",
+        "centered_log_evidence_effective": "0.35",
+        "centered_multiplier_formula": "1.0 * adapt_w(1.0) * twin(0.35)"
+      },
+      "development_classification": "MIXED_FOLD_AND_SOURCE_DECLARED_FULL_DATA_CHECKPOINTS",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 1: AQ14V5/AQ8V5/ALL8V5 lists",
+        "code cell 3: l24_predict averages every adapter's plain/centered log evidence; last adapter is explicitly called full-data",
+        "code cell 6: active MODELS"
+      ],
+      "base_model_path": "models/metaresearch/llama-3.1/transformers/8b/2",
+      "adapter_paths": [
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5_f0",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5_f1",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5_f2",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5_f3",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5_f4",
+        "datasets/dhruvtibarewal/nlm-l24-adapters-v5/ll8v5"
+      ],
+      "keep_layers": 24,
+      "max_length": 384,
+      "adapter_count": 6,
+      "source_declared_fold_names": 5,
+      "source_declared_full_data_names": 1,
+      "verified_adapter_training_prompt_manifests": 0,
+      "blocker": "All six adapters are averaged for each scoring row. Fold names do not establish exclusion; selecting all fold adapters plus a source-declared full-data adapter is not an OOF path.",
+      "checkpoint_source_version_mapping": "Mounted paths and identities were audited in CPU V8; this ledger does not invent a mapping from UI dataset version values to notebook metadata source IDs."
+    },
+    {
+      "id": "main.n14b",
+      "kind": "adapted_decoder_plain_and_centered",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "2.5",
+        "centered_log_evidence_effective": "0.875",
+        "centered_multiplier_formula": "2.5 * adapt_w(1.0) * twin(0.35)"
+      },
+      "development_classification": "UNKNOWN_CHECKPOINT_TRAINING_EXCLUSION",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 1: nmeta selectors",
+        "code cell 3: l24_predict reads fixed adapter and plain/centered heads",
+        "code cell 6: one-adapter active MODELS entry"
+      ],
+      "checkpoint_path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen3_14b",
+      "base_model_path": "models/qwen-lm/qwen-3/transformers/14b-base/1",
+      "keep_layers": 27,
+      "max_length": 447,
+      "adapter_count": 1,
+      "verified_adapter_training_prompt_manifests": 0,
+      "blocker": "Inference does not retrain adapter or readouts. No common outer-prompt exclusion manifest is established in reviewed records."
+    },
+    {
+      "id": "main.q25_14",
+      "kind": "adapted_decoder_plain_and_centered",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "1.0",
+        "centered_log_evidence_effective": "0.35",
+        "centered_multiplier_formula": "1.0 * adapt_w(1.0) * twin(0.35)"
+      },
+      "development_classification": "UNKNOWN_CHECKPOINT_TRAINING_EXCLUSION",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 1: nmeta selectors",
+        "code cell 3: l24_predict reads fixed adapter and plain/centered heads",
+        "code cell 6: one-adapter active MODELS entry"
+      ],
+      "checkpoint_path": "datasets/nishantdahal/ntl-handwriting-blend/lora_qwen25_14b",
+      "base_model_path": "models/qwen-lm/qwen2.5/transformers/14b/1",
+      "keep_layers": 32,
+      "max_length": 447,
+      "adapter_count": 1,
+      "verified_adapter_training_prompt_manifests": 0,
+      "blocker": "Inference does not retrain adapter or readouts. No common outer-prompt exclusion manifest is established in reviewed records."
+    },
+    {
+      "id": "main.deb",
+      "kind": "fine_tuned_deberta",
+      "production_active": true,
+      "source_weights": {
+        "log_evidence": "1.0"
+      },
+      "development_classification": "UNKNOWN_FINE_TUNED_ENCODER_AND_READOUT_TRAINING_EXCLUSION",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 3: type enc loads encoder and head.safetensors; source calls it fully fine-tuned",
+        "code cell 6: deb active MODELS"
+      ],
+      "checkpoint_path": "datasets/nishantdahal/ntl-handwriting-blend/deberta_v3_large",
+      "max_length": 384,
+      "blocker": "This is the fine-tuned production DeBERTa, not the untouched pretrained encoder eligible for a new fold-local proxy head."
+    },
+    {
+      "id": "main.svc4",
+      "kind": "four_view_text_svc",
+      "production_active": true,
+      "source_weights": {
+        "log_evidence": "1.5"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_PLUS_EXTERNAL_POOL_FIT",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 3: svc4 fits train texts plus --pool texts at runtime",
+        "code cell 6: --svc_w 1.5 --pool POOL"
+      ],
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "feature_views": [
+        "char n-gram",
+        "word n-gram",
+        "shape",
+        "function-word"
+      ],
+      "external_training_path_selector": "**/nlm_pool_v5.parquet",
+      "external_prompt_exclusion_verified": false,
+      "blocker": "Refit vectorizers/SVC in every common outer fold and exclude external rows derived from scoring prompts. --sim removes official rows but does not automatically exclude overlapping external-pool prompts."
+    }
+  ],
+  "complement_branches": [
+    {
+      "id": "comp.stylegram",
+      "kind": "stylegram_plain_with_conditional_centered_replacement",
+      "production_active": true,
+      "source_weights": {
+        "log_evidence": "1.516"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_PLUS_EXTERNAL_FIT",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: StyleGrams.fit(TR+EX_T); plain and centered SVC fits official + extra labels; eligible test groups replace plain predictions"
+      ],
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "external_sources": "Six CSV filename patterns; preprocessing/deduplication/source prompts and weights are source-defined",
+      "external_prompt_exclusion_verified": false,
+      "blocker": "Rebuild text transforms and both classifiers inside common folds; public extra-prompt origins must also be excluded. Existing Stage06E stylegram OOF is a separate historical implementation/reference."
+    },
+    {
+      "id": "comp.stylometry_lgb",
+      "kind": "handcrafted_style_lgbm",
+      "production_active": true,
+      "source_weights": {
+        "log_evidence": "0.063"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_FIT",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: F_tr from all TR; LGBMClassifier(...).fit(F_tr,y)"
+      ],
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "blocker": "Deterministic style features can be reused; each supervised LightGBM fit requires common outer-prompt exclusions."
+    },
+    {
+      "id": "comp.glm9b",
+      "kind": "frozen_feature_encoder_with_runtime_supervised_readouts",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "0.0",
+        "centered_log_evidence": "0.165",
+        "gaussian_log_evidence": "0.165"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_READOUT_AND_GAUSSIAN_FITS",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: LM_HEADS/ENC_HEADS, plain_and_twin and gaussian_group_head",
+        "code cell 4: scalers/LR/Gaussian fit Etr,y,PROMPT without production holdout"
+      ],
+      "model_type": "glm4",
+      "hidden_size": 4096,
+      "recorded_input_path": "notebooks/lucasboesen/name-that-llm-glm4-9b-trunc25/glm4_9b_trunc25",
+      "recorded_kernel_version_id": 358683059,
+      "plain_head_features": "L8_mean+L3_mean",
+      "gaussian_feature": "L8_mean",
+      "backbone_classification": "Source treats this as pretrained/frozen; recorded byte identity is not a retraining audit of vendor history.",
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "conditional_group_evidence": true,
+      "zero_plain_weight_not_inactive_branch": true,
+      "blocker": "Frozen-base features may support new common-fold fits after provenance/cache admission; production readouts fit all official labels and are not OOF. Test-side standardization/centering and Gaussian groups couple rows."
+    },
+    {
+      "id": "comp.q3_8b",
+      "kind": "frozen_feature_encoder_with_runtime_supervised_readouts",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "0.0",
+        "centered_log_evidence": "0.3285",
+        "gaussian_log_evidence": "0.3285"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_READOUT_AND_GAUSSIAN_FITS",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: LM_HEADS/ENC_HEADS, plain_and_twin and gaussian_group_head",
+        "code cell 4: scalers/LR/Gaussian fit Etr,y,PROMPT without production holdout"
+      ],
+      "model_type": "qwen3",
+      "hidden_size": 4096,
+      "recorded_input_path": "models/qwen-lm/qwen-3/transformers/8b-base/1",
+      "recorded_kernel_version_id": null,
+      "plain_head_features": "L7_mean+L22_mean",
+      "gaussian_feature": "L22_mean",
+      "backbone_classification": "Source treats this as pretrained/frozen; recorded byte identity is not a retraining audit of vendor history.",
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "conditional_group_evidence": true,
+      "zero_plain_weight_not_inactive_branch": true,
+      "blocker": "Frozen-base features may support new common-fold fits after provenance/cache admission; production readouts fit all official labels and are not OOF. Test-side standardization/centering and Gaussian groups couple rows."
+    },
+    {
+      "id": "comp.q25_7b",
+      "kind": "frozen_feature_encoder_with_runtime_supervised_readouts",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "0.0",
+        "centered_log_evidence": "0.2115"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_READOUT_AND_GAUSSIAN_FITS",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: LM_HEADS/ENC_HEADS, plain_and_twin and gaussian_group_head",
+        "code cell 4: scalers/LR/Gaussian fit Etr,y,PROMPT without production holdout"
+      ],
+      "model_type": "qwen2",
+      "hidden_size": 3584,
+      "recorded_input_path": "models/qwen-lm/qwen2.5/transformers/7b/1",
+      "recorded_kernel_version_id": null,
+      "plain_head_features": "L6_mean+L20_mean",
+      "gaussian_feature": null,
+      "backbone_classification": "Source treats this as pretrained/frozen; recorded byte identity is not a retraining audit of vendor history.",
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "conditional_group_evidence": true,
+      "zero_plain_weight_not_inactive_branch": true,
+      "blocker": "Frozen-base features may support new common-fold fits after provenance/cache admission; production readouts fit all official labels and are not OOF. Test-side standardization/centering and Gaussian groups couple rows."
+    },
+    {
+      "id": "comp.q3_4b",
+      "kind": "frozen_feature_encoder_with_runtime_supervised_readouts",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "0.0",
+        "centered_log_evidence": "0.1245",
+        "gaussian_log_evidence": "0.1245"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_READOUT_AND_GAUSSIAN_FITS",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: LM_HEADS/ENC_HEADS, plain_and_twin and gaussian_group_head",
+        "code cell 4: scalers/LR/Gaussian fit Etr,y,PROMPT without production holdout"
+      ],
+      "model_type": "qwen3",
+      "hidden_size": 2560,
+      "recorded_input_path": "models/qwen-lm/qwen-3/transformers/4b-base/1",
+      "recorded_kernel_version_id": null,
+      "plain_head_features": "L4_style+L7_style",
+      "gaussian_feature": "L4_mean",
+      "backbone_classification": "Source treats this as pretrained/frozen; recorded byte identity is not a retraining audit of vendor history.",
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "conditional_group_evidence": true,
+      "zero_plain_weight_not_inactive_branch": true,
+      "blocker": "Frozen-base features may support new common-fold fits after provenance/cache admission; production readouts fit all official labels and are not OOF. Test-side standardization/centering and Gaussian groups couple rows."
+    },
+    {
+      "id": "comp.debv3l",
+      "kind": "frozen_feature_encoder_with_runtime_supervised_readouts",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "0.05",
+        "centered_log_evidence": "0.25",
+        "gaussian_log_evidence": "0.25"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_READOUT_AND_GAUSSIAN_FITS",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: LM_HEADS/ENC_HEADS, plain_and_twin and gaussian_group_head",
+        "code cell 4: scalers/LR/Gaussian fit Etr,y,PROMPT without production holdout"
+      ],
+      "model_type": "deberta-v2",
+      "hidden_size": 1024,
+      "recorded_input_path": "notebooks/lucasboesen/name-that-llm-extract-encoders2/deberta-v3-large",
+      "recorded_kernel_version_id": 358745836,
+      "plain_head_features": "L24_mean+L6_mean",
+      "gaussian_feature": "L24_mean",
+      "backbone_classification": "Source treats this as pretrained/frozen; recorded byte identity is not a retraining audit of vendor history.",
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "conditional_group_evidence": true,
+      "zero_plain_weight_not_inactive_branch": false,
+      "blocker": "Frozen-base features may support new common-fold fits after provenance/cache admission; production readouts fit all official labels and are not OOF. Test-side standardization/centering and Gaussian groups couple rows."
+    },
+    {
+      "id": "comp.electl",
+      "kind": "frozen_feature_encoder_with_runtime_supervised_readouts",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "0.032"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_READOUT_AND_GAUSSIAN_FITS",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: LM_HEADS/ENC_HEADS, plain_and_twin and gaussian_group_head",
+        "code cell 4: scalers/LR/Gaussian fit Etr,y,PROMPT without production holdout"
+      ],
+      "model_type": "electra",
+      "hidden_size": 1024,
+      "recorded_input_path": "notebooks/lucasboesen/name-that-llm-electra-large-weights/electra-large-discriminator",
+      "recorded_kernel_version_id": 358758062,
+      "plain_head_features": "L21_mean+L24_style",
+      "gaussian_feature": null,
+      "backbone_classification": "Source treats this as pretrained/frozen; recorded byte identity is not a retraining audit of vendor history.",
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "conditional_group_evidence": false,
+      "zero_plain_weight_not_inactive_branch": false,
+      "blocker": "Frozen-base features may support new common-fold fits after provenance/cache admission; production readouts fit all official labels and are not OOF. Test-side standardization/centering and Gaussian groups couple rows."
+    },
+    {
+      "id": "comp.desk",
+      "kind": "frozen_feature_encoder_with_runtime_supervised_readouts",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "0.132"
+      },
+      "development_classification": "EXPLICIT_FULL_OFFICIAL_READOUT_AND_GAUSSIAN_FITS",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: LM_HEADS/ENC_HEADS, plain_and_twin and gaussian_group_head",
+        "code cell 4: scalers/LR/Gaussian fit Etr,y,PROMPT without production holdout"
+      ],
+      "model_type": "deberta-v2",
+      "hidden_size": 1024,
+      "recorded_input_path": "notebooks/lucasboesen/name-that-llm-desklib-weights/desklib-detector",
+      "recorded_kernel_version_id": 358770408,
+      "plain_head_features": "L23_mean+L23_style",
+      "gaussian_feature": null,
+      "backbone_classification": "Source treats this as pretrained/frozen; recorded byte identity is not a retraining audit of vendor history.",
+      "official_fit_rows_in_production": 2699,
+      "official_fit_prompts_in_production": 150,
+      "official_heldout_rows_in_production": 0,
+      "conditional_group_evidence": false,
+      "zero_plain_weight_not_inactive_branch": false,
+      "blocker": "Frozen-base features may support new common-fold fits after provenance/cache admission; production readouts fit all official labels and are not OOF. Test-side standardization/centering and Gaussian groups couple rows."
+    },
+    {
+      "id": "comp.lora24_seed7",
+      "kind": "fixed_final_adapted_checkpoint_and_readouts",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "0.113"
+      },
+      "development_classification": "UNKNOWN_FINAL_CHECKPOINT_TRAINING_EXCLUSION",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: LORA_RUNS and score_lora_checkpoints; job_final/final adapter plus readouts.npz; not outer-checkpoint routing"
+      ],
+      "checkpoint_path": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final",
+      "checkpoint_selector": null,
+      "recorded_kernel_version_id": 358911769,
+      "blocker": "Separate historical held-out outputs, where available, do not make the loaded final production adapter held-out. Need verified exclusions for the actual backbone, norms and every readout and all prompts sharing a scoring batch."
+    },
+    {
+      "id": "comp.lora24_claude",
+      "kind": "fixed_final_adapted_checkpoint_and_readouts",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "0.177",
+        "centered_log_evidence": "0.15"
+      },
+      "development_classification": "UNKNOWN_FINAL_CHECKPOINT_TRAINING_EXCLUSION",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: LORA_RUNS and score_lora_checkpoints; job_final/final adapter plus readouts.npz; not outer-checkpoint routing"
+      ],
+      "checkpoint_path": "datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final",
+      "checkpoint_selector": "**/ntl-qwen3-8b-lora-claude-head/**/final/COMPLETE.json",
+      "recorded_kernel_version_id": null,
+      "blocker": "Separate historical held-out outputs, where available, do not make the loaded final production adapter held-out. Need verified exclusions for the actual backbone, norms and every readout and all prompts sharing a scoring batch."
+    },
+    {
+      "id": "comp.lora20_q25_instyle",
+      "kind": "fixed_final_adapted_checkpoint_and_readouts",
+      "production_active": true,
+      "source_weights": {
+        "plain_log_evidence": "0.170"
+      },
+      "development_classification": "UNKNOWN_FINAL_CHECKPOINT_TRAINING_EXCLUSION",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: LORA_RUNS and score_lora_checkpoints; job_final/final adapter plus readouts.npz; not outer-checkpoint routing"
+      ],
+      "checkpoint_path": "notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final",
+      "checkpoint_selector": null,
+      "recorded_kernel_version_id": 359652568,
+      "blocker": "Separate historical held-out outputs, where available, do not make the loaded final production adapter held-out. Need verified exclusions for the actual backbone, norms and every readout and all prompts sharing a scoring batch."
+    },
+    {
+      "id": "comp.tokattn_deb",
+      "kind": "fixed_final_supervised_token_attention_head",
+      "production_active": true,
+      "source_weights": {
+        "log_evidence": "0.185"
+      },
+      "development_classification": "UNKNOWN_FINAL_HEAD_TRAINING_EXCLUSION",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: TOKATTN_HEADS and token_attention_probs; TINY comment explicitly calls training-row test in-sample"
+      ],
+      "checkpoint_path": "notebooks/lucasboesen/name-that-llm-train-tokattn2/tokattn_debl23_final.pt",
+      "recorded_kernel_version_id": 358948428,
+      "recorded_checkpoint_sha256": "ed384fd1af244ad1e9dca42194e423ad7fc2cce7e1926820344bffec6de3c561",
+      "separate_historical_oof_npz_available": true,
+      "blocker": "Historical tokattn_debl23_oof.npz has source seed0 prompt-disjoint evidence, but the final .pt used by S07 is not those held-out predictions; arbitrary pooling with other fold schemes cannot admit coupled balancing."
+    },
+    {
+      "id": "comp.ultrabert",
+      "kind": "five_checkpoint_supervised_encoder_average",
+      "production_active": true,
+      "source_weights": {
+        "log_evidence": "0.095"
+      },
+      "development_classification": "UNKNOWN_OUTER_PROMPT_EXCLUSION_FOR_FIVE_FOLD_AVERAGE",
+      "whole_scoring_batch_prompt_exclusion_verified": false,
+      "admitted_as_full_s07_oof": false,
+      "evidence": [
+        "code cell 4: ultrabert_probs loads fold0..fold4 and averages all predictions for every scoring row",
+        "results/stage_06g/REPRESENTATION_COVERAGE.md: fold provenance/OOF unresolved"
+      ],
+      "checkpoint_path": "datasets/pjmathematician/ultrabert-380m-ntl",
+      "dataset_display_name": "UltraBERT-380M Name That LLM 5-fold",
+      "recorded_ui_dataset_version": 1,
+      "recorded_ui_version_value": "21895589",
+      "checkpoint_count": 5,
+      "blocker": "Fold directory names/configs are not training-prompt manifests. Averaging all folds is an inference ensemble, not OOF."
+    }
+  ],
+  "auxiliary_and_inactive_paths": [
+    {
+      "id": "comp.family_gates",
+      "production_scoring_contribution": "NOT_CONSUMED_BY_SAVED_LOGIT_IN_REVIEWED_CODE",
+      "fits": "Family style classifiers fit official+extra family-labelled rows; Claude LoRA gate also computed.",
+      "source": "code cell 4: GATES assignments; saved output is LOGIT written immediately after token attention/UltraBERT",
+      "exclusion": "Do not count comments about re-ranking as an active score path. Any future activation is a new candidate with its own fold-local/external exclusion requirements."
+    },
+    {
+      "id": "comp.BALANCE_ALPHA",
+      "production_scoring_contribution": "DECLARED_NOT_CONSUMED_IN_SAVED_LOGIT_PATH",
+      "value": "0.5",
+      "source": "code cell 4 constant versus final np.save(LOGIT)"
+    },
+    {
+      "id": "comp.lora24_public",
+      "production_scoring_contribution": "PREDECLARED_ALLOWED_SKIP",
+      "configured_plain_log_weight": "0.177",
+      "configured_centered_log_weight": "0.15",
+      "selector": "**/lora24/final/COMPLETE.json",
+      "source": "code cell 4 LORA_RUNS; absence confirmed in own preview",
+      "exclusion": "Not an active S07 member; the separate historical Stage06A original public LoRA OOF bank cannot substitute silently."
+    },
+    {
+      "id": "comp.tokattn_q35",
+      "production_scoring_contribution": "INTENTIONALLY_DISABLED",
+      "configured_log_weight": "0.153",
+      "control": "NTL_DROP_Q35=1",
+      "source": "code cell 5 sets environment; code cell 4 filters TOKATTN_HEADS",
+      "exclusion": "Not an active S07 member; enabling it is a changed candidate."
+    }
+  ],
+  "atlas_branch": {
+    "id": "atlas",
+    "kind": "source_conditioned_likelihood_adapter",
+    "production_active": true,
+    "source_weights": {
+      "probability_mix_weight": "0.10",
+      "selection": "top-two margin <0.3 when N>=50; all rows for smaller input"
+    },
+    "development_classification": "UNKNOWN_BUNDLE_TRAINING_PROMPT_EXCLUSION",
+    "whole_scoring_batch_prompt_exclusion_verified": false,
+    "admitted_as_full_s07_oof": false,
+    "evidence": [
+      "code cell 3: atlas_scores loads training_config and adapters.safetensors from fixed bundle, no fold-specific routing"
+    ],
+    "checkpoint_path": "datasets/josephadamski91/ntl-atlas-qwen3-8b-v1/atlas_adapter/atlas_adapter",
+    "dataset_display_name": "NTL ATLAS Qwen3 8B v1",
+    "recorded_ui_dataset_version": 3,
+    "recorded_ui_version_value": "22180590",
+    "base_model_path": "models/qwen-lm/qwen-3/transformers/8b-base/1",
+    "blocker": "Source-bundle inference and input hashes do not verify exclusion of official/external scoring prompts. Need adapter/pool training manifests or refitting."
+  },
+  "postprocessing": [
+    {
+      "id": "post.main_comp_mixture",
+      "kind": "probability_mixture",
+      "settings": {
+        "comp_mix": "0.15",
+        "atlas_mix": "0.10 where selected",
+        "pre_comp_division": "number of active nonzero LP members when sk_div=1"
+      },
+      "classification": "NO_CURRENT_FIT_BUT_UPSTREAM_EXCLUSION_REQUIRED",
+      "note": "Different test grouping/active branches can alter the pre-mixture member count. All contributing supervised paths must exclude the whole scoring batch."
+    },
+    {
+      "id": "post.sinkhorn",
+      "kind": "batch_coupled_probability_marginal_balancing",
+      "settings": {
+        "alpha": "1.0",
+        "iterations": 100,
+        "activation": "N>=18",
+        "column_mass_target": "N/18"
+      },
+      "classification": "NO_SUPERVISED_FIT_BUT_BATCH_COUPLED",
+      "note": "Uniform expected probability column mass, not guaranteed equal final label counts. Pooled mixed-source-fold OOF can leak supervised peer information through this operation."
+    },
+    {
+      "id": "post.typography_guards",
+      "kind": "hardcoded_label_conditioned_allowed_sets",
+      "classification": "RULE_DERIVATION_PROMPT_EXCLUSION_UNVERIFIED",
+      "note": "Hardcoded source allowed-label sets reportedly derived from train/matched-pool typography. No fold-local rule-derivation proof is supplied. Exclude from a balancing-only reduced screen or freeze a justified identical handling before evaluation."
+    },
+    {
+      "id": "post.dense_group_hungarian",
+      "kind": "test_group_coupled_injective_assignment",
+      "settings": {
+        "dense_group_size": "12..18"
+      },
+      "classification": "NO_CURRENT_FIT_BUT_BATCH_COUPLED",
+      "note": "Source assumes injective class assignments in inferred dense groups; all upstream scoring-batch prompt exclusions must hold."
+    }
+  ],
+  "ten_unconditional_positive_weight_complement_members": [
+    "stylegram",
+    "stylometry_lgb",
+    "debv3l",
+    "electl",
+    "desk",
+    "lora24_seed7",
+    "lora24_claude",
+    "lora20_q25_instyle",
+    "tokattn_deb",
+    "ultrabert"
+  ],
+  "conditional_complement_evidence": {
+    "frozen_centered_twins": [
+      "q3_8b",
+      "q25_7b",
+      "q3_4b",
+      "glm9b",
+      "debv3l"
+    ],
+    "gaussian_heads": [
+      "gauss_q3_8b_L22",
+      "gauss_glm9b_L8",
+      "gauss_q3_4b_L4",
+      "gauss_debv3l_L24"
+    ],
+    "adapted_centered_twins": [
+      "lora24_claude"
+    ],
+    "note": "Ten unconditional positive-weight contributions are not the full count of production evidence paths. Conditional grouped paths may be inactive on singleton preview rows."
+  },
+  "historical_input_receipt": {
+    "cpu_version": 8,
+    "script_version_id": 363603066,
+    "raw_report_sha256": "dd38302b9f4c135cd2a0d632e9af52c74dbb3f2c847ca2c3aa09dbe4d5a45db2",
+    "input_checks_passed": 71,
+    "independent_review_checks_passed": 20,
+    "serialized_torch_head_schemas_inspected": 37,
+    "scope": "Input paths/schema/content hashes; not holdout training provenance or hidden execution proof.",
+    "source_has_named_meta_missing_warnings": 37
+  },
+  "recorded_input_binding_versions": {
+    "source": "results/stage_12/DATASET_PIN_RECONCILIATION_20261029.json",
+    "dataset_pin_count": 14,
+    "pins": [
+      {
+        "display_name": "prvsiyan's Extended Name That LLM Dataset",
+        "selected_version_label": "Version 6 - Licence clarification: dataset CC BY 4.0 as a whole; only the 150 reproduced train_regen prompt texts in prompts.csv stay CC BY-SA 4.0 (pjmathematician). README/changelog updated.",
+        "ui_version_value": "22269045"
+      },
+      {
+        "display_name": "NTL free-proxy GPT and Gemini generations",
+        "selected_version_label": "Version 8 - Add prompt-bank-v2 batches v2b06-v2b10 (1,197 passages; now 5,452 passages on 1,344 prompts)",
+        "ui_version_value": "22401889"
+      },
+      {
+        "display_name": "Name That LLM: extra GPT and Gemini generations",
+        "selected_version_label": "Version 2 - batch 3: Gemini 3.1 Pro + GPT-6 Astra",
+        "ui_version_value": "22177031"
+      },
+      {
+        "display_name": "Name That LLM: free-proxy generations",
+        "selected_version_label": "Version 1 - Initial release",
+        "ui_version_value": "22010600"
+      },
+      {
+        "display_name": "Name That LLM: Qwen3-8B LoRA + Claude Head",
+        "selected_version_label": "Version 1 - Initial release",
+        "ui_version_value": "21994138"
+      },
+      {
+        "display_name": "NTL two-stage LoRA checkpoints and public pool",
+        "selected_version_label": "Version 1 - Initial release",
+        "ui_version_value": "22100594"
+      },
+      {
+        "display_name": "NTL two-stage LoRA part two",
+        "selected_version_label": "Version 1 - Initial release",
+        "ui_version_value": "22292189"
+      },
+      {
+        "display_name": "NTL Two-Stage LoRA24 Adapters (120k pool)",
+        "selected_version_label": "Version 1 - Initial release",
+        "ui_version_value": "22377778"
+      },
+      {
+        "display_name": "UltraBERT-380M Name That LLM 5-fold",
+        "selected_version_label": "Version 1 - Initial release",
+        "ui_version_value": "21895589"
+      },
+      {
+        "display_name": "Name That LLM: Extra API Passages",
+        "selected_version_label": "Version 2 - v1.1: same data; README.md synced with the corrected description (fixes broken characters and a cut-off description); file and column descriptions",
+        "ui_version_value": "21981458"
+      },
+      {
+        "display_name": "nlm-offline-wheels",
+        "selected_version_label": "Version 2 - add peft",
+        "ui_version_value": "22022378"
+      },
+      {
+        "display_name": "nlm-matched-clean",
+        "selected_version_label": "Version 3 - add pool_v5: 120k public passages (122k clean pool + own generations, mark + train-leak filters)",
+        "ui_version_value": "22318518"
+      },
+      {
+        "display_name": "NTL ATLAS Qwen3 8B v1",
+        "selected_version_label": "Version 3 - Add CC BY-SA 4.0 license for adapter weights and package documentation, Apache 2.0 license for bundled Python code, and credits. Model weights, inference code and original files are unchanged.",
+        "ui_version_value": "22180590"
+      },
+      {
+        "display_name": "Identify the model behind text",
+        "selected_version_label": "Version 7 - add seed-7 Qwen3-8B two-stage adapters (max_len 512; 5 folds + full)",
+        "ui_version_value": "22233098"
+      }
+    ],
+    "kernel_version_ids": [
+      358683059,
+      358745836,
+      358758062,
+      358770408,
+      358911769,
+      358928013,
+      358948428,
+      359652568
+    ],
+    "model_instance_version_ids": [
+      104433,
+      166254,
+      166265,
+      363135,
+      363139,
+      363140,
+      363149,
+      363153
+    ],
+    "mapping_limit": "UI version radio values are not assumed equivalent to saved notebook metadata sourceId values; exact per-path mapping is only supplied above where source evidence identifies it."
+  },
+  "proxy_feature_admission_leads": [
+    {
+      "id": "proxy.glm_frozen_cache",
+      "historical_status": "VERIFIED_FEATURE_CACHE_NOT_CLASSIFIER_OOF",
+      "source_script_version_id": 359405443,
+      "backbone_source_kernel_version_id": 358683059,
+      "path": "glm_features.npz",
+      "sha256": "2b41585a9482cef825962a8cc096697933c0b1237e8ede0712d1f8ab361d9414",
+      "shape": [
+        2699,
+        3,
+        4096
+      ],
+      "layers": [
+        8,
+        3,
+        24
+      ],
+      "dtype": "float32",
+      "role": "L8+L3 classifier features; L24 grouping geometry",
+      "fits_performed_by_feature_extraction": 0,
+      "recorded_order_and_finiteness_verified": true,
+      "fresh_mounted_gate_passed": false,
+      "new_fold_local_readout_required": true,
+      "common_fold_readout_ready": false,
+      "eligibility": "Best-prepared feature admission lead; requires actual bytes/hash/alignment/source checks then separately frozen fold-local fits. Adding existing GLM evidence is reference coverage, not a new S07 gain."
+    },
+    {
+      "id": "proxy.pretrained_deberta_cache",
+      "historical_status": "VERIFIED_FEATURE_CACHE_WITH_QUANTIZATION_AND_METADATA_LIMITS",
+      "source_script_version_id": 358745836,
+      "path": "enc_debv3l2_train.npz",
+      "sha256": "11eed58762ad128f97457dde9cc4ab03c7932e1b4b04845ec6664c834b1b1dda",
+      "role": "Pretrained DeBERTa mean L24+L6 for new common-fold supervised readouts; not main.deb fine-tuned checkpoint",
+      "dtype": "historical fp16 cache",
+      "fresh_mounted_gate_passed": false,
+      "new_fold_local_readout_required": true,
+      "eligibility": "Use only after actual safe alignment/schema/provenance admission. Object metadata must not be unpickled or bypassed; unknown alignment blocks admission."
+    },
+    {
+      "id": "proxy.text_style",
+      "historical_status": "RECIPE_AND_PRIOR_FOLD_LOCAL_OOF_EVIDENCE",
+      "role": "Deterministic style features and fold-local vectorizers/readouts rebuilt from official training data",
+      "fresh_fold_local_fit_completed": false,
+      "eligibility": "Can be rebuilt in common folds after exact implementation/parameters/context freeze; source all-row fitted transforms or external-pool rows cannot be reused as held-out."
+    }
+  ],
+  "historical_heldout_evidence": [
+    {
+      "id": "historical.lora1_oof",
+      "source_script_version_id": 358831649,
+      "evidence_path": "results/stage_06/LOra_COMPONENT_PROVENANCE.json",
+      "status": "VERIFIED_STANDALONE_PUBLIC_COMPONENT_OOF",
+      "exclusion_proof": "Recorded five outer fits each exclude 30 prompts, complete 2699 rows, no row/prompt overlap; saved numeric artifacts reconstructed.",
+      "limit": "Not an active S07 lora24_public checkpoint and not full-S07 OOF; source folds differ from other banks."
+    },
+    {
+      "id": "historical.seed7_lora_oof",
+      "source_script_version_id": 358911769,
+      "evidence_path": "results/stage_06b/component_audits.json",
+      "status": "RECONSTRUCTED_STANDALONE_HELDOUT_READOUT_OUTPUTS",
+      "limit": "Separate outer cache only; production uses job_final. Different fold scheme cannot be pooled for batch-coupled evaluation without whole-batch exclusion."
+    },
+    {
+      "id": "historical.token_attention_oof",
+      "source_script_version_ids": [
+        358928013,
+        358948428
+      ],
+      "evidence_path": "results/stage_06b/component_audits.json",
+      "status": "SOURCE_SEED0_PROMPT_DISJOINT_NUMERIC_OOF_VERIFIED",
+      "limit": "Training was not rerun; outer token-state/head banks unavailable for independent re-inference. Final head != OOF bank."
+    },
+    {
+      "id": "historical.stage06e_proxy",
+      "source_script_version_id": 359514801,
+      "evidence_path": "results/stage_06e/REPORT.md",
+      "status": "VALID_RAW_AVAILABLE_COMPONENT_PROXY_WITH_REUSED_DEVELOPMENT_PROMPTS",
+      "mean_balanced_accuracy": "0.548122 (historical raw proxy)",
+      "limit": "Seven branches, not S07. Report explicitly excludes balanced diagnostic from selection due to mixed source-fold peer supervision. Common-fold refitting required for coupled balancing."
+    }
+  ],
+  "common_fold_admission_requirements": [
+    "For each supervised adapter/norm/readout/preprocessor/calibrator and any external data, verify exclusion of every scoring-batch prompt, not only the current row.",
+    "Retain all same-prompt responses together and ensure all learned transforms fit only the outer training side; unlabelled test grouping must follow its declared protocol.",
+    "Use exact cached bytes/IDs/classes/fold mappings; no unpickle or fallback row-order assumptions.",
+    "Keep reused canonical folds labelled exploratory, not an untouched final holdout.",
+    "Do not evaluate balancing on pooled incompatible supervised OOF banks. Use common folds/refits from eligible frozen-base features or block the test.",
+    "Freeze reference members, fitting settings, context/stress construction and numerical fixtures before any candidate score.",
+    "Keep raw row IDs/passages/predictions/arrays/weights private; publish aggregate provenance and checks only."
+  ],
+  "no_raw_rows_or_predictions_exported": true,
+  "no_model_fit_or_inference_performed": true,
+  "no_gpu_or_paid_service_used": true,
+  "new_development_score": null,
+  "evidence_references": {
+    "source": {
+      "path": "notebooks/Stage_12_Public_651_Reproduction.ipynb",
+      "git_freeze": "55cf8622c592690c98f67b65c3e9b6381a726b32",
+      "upstream_script_version_id": 362013743,
+      "own_production_script_version_id": 363626171
+    },
+    "cpu": {
+      "path": "results/stage_12/CPU_V8_INDEPENDENT_ACTUAL_REVIEW.json",
+      "script_version_id": 363603066,
+      "scope": "Input/content admission, not training exclusion"
+    },
+    "coverage": {
+      "path": "results/stage_06g/REPRESENTATION_COVERAGE.md"
+    },
+    "e": {
+      "path": "results/stage_06e/REPORT.md",
+      "script_version_id": 359514801
+    },
+    "pin": {
+      "path": "results/stage_12/DATASET_PIN_RECONCILIATION_20261029.json"
+    }
+  }
+}

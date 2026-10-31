@@ -1,0 +1,55 @@
+{
+  "browser_or_github_writes": false,
+  "independent_supplemental_checks": {
+    "canonical_class_axis_hash": true,
+    "canonical_fold_map_hash": true,
+    "canonical_source_hash": true,
+    "cli_failure_output_sanitized": true,
+    "cli_production_defaults_fail_synthetic_input": true,
+    "existing_output_file_preserved": true
+  },
+  "py_compile_passed": true,
+  "raw_rows_passages_predictions_exported": false,
+  "real_private_data_examined": false,
+  "resolved_finding": {
+    "code": "REPORT_WRITE_FAILURE_PRIVACY",
+    "detail": "Report persistence failures are sanitized, return FAILED_INPUT_ADMISSION, and revoke future-fit eligibility; no exception text/path is exported.",
+    "status": "FIXED_AND_TESTED"
+  },
+  "review_date": "2026-10-31",
+  "reviewed_repository_reference": "6a73f73602fb7e91dab1224bd60c61989205741f",
+  "runner": {
+    "bytes": 13935,
+    "path": "scripts/stage13a_cache_admission.py",
+    "sha256": "4b30488d126bc6213d8e1d128d50d7f0641b33e90b13192af55abe413ae49629"
+  },
+  "schema_version": 1,
+  "scope_limits": [
+    "Only source and synthetic fixtures were reviewed; real mounted Kaggle cache execution remains pending.",
+    "Input-version identities need saved UI verification, separate from filesystem byte hashes.",
+    "Feature admission does not establish trained prompt-held-out predictions, a development score, full-S07 OOF, or balancing-test admission.",
+    "Canonical folds were reused historically and remain exploratory development data.",
+    "The recorded fold-source SHA is provenance for the fixed mapping; the runtime audit does not load that source file."
+  ],
+  "source_review": {
+    "canonical_future_prompt_fold_mapping_checked": true,
+    "cli_has_no_fixture_contract_override": true,
+    "exact_ids_texts_layers_train_binding": true,
+    "fresh_outputs_preserved": true,
+    "hash_first_input_checks": true,
+    "no_fitting_inference_balancing_or_score": true,
+    "numeric_unicode_only_allow_pickle_false": true,
+    "prompt_exclusion_checked": true,
+    "runtime_versions_recorded": true,
+    "strict_six_key_npz_schema_and_header_bounds": true
+  },
+  "status": "PASS_IMPLEMENTATION_FOR_CPU_FEATURE_ADMISSION_ONLY",
+  "tests": {
+    "bytes": 8208,
+    "command": "python -m unittest discover -s stage13_work/tests -p 'test_stage13a_cache_admission.py' -v",
+    "passed": 18,
+    "path": "tests/test_stage13a_cache_admission.py",
+    "sha256": "7085c5b3679c0add3700a6582335b9f5304b39daa271e6123f768630fccec2ec",
+    "total": 18
+  }
+}

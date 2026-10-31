@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-31",
+  "status": "PRE_EXECUTION_BUILD_HASHES",
+  "files": [
+    {
+      "path": "scripts/stage13a_cache_admission.py",
+      "bytes": 13935,
+      "sha256": "4b30488d126bc6213d8e1d128d50d7f0641b33e90b13192af55abe413ae49629"
+    },
+    {
+      "path": "scripts/build_stage13a_notebook.py",
+      "bytes": 6661,
+      "sha256": "56507a41e9c62160133718c35ca22b590224c2d65a814503499ef0f067f5e3b6"
+    },
+    {
+      "path": "tests/test_stage13a_cache_admission.py",
+      "bytes": 8208,
+      "sha256": "7085c5b3679c0add3700a6582335b9f5304b39daa271e6123f768630fccec2ec"
+    },
+    {
+      "path": "notebooks/Stage_13A_Cache_Admission.ipynb",
+      "bytes": 72154,
+      "sha256": "6b332df8bea3dc2931c6519558b595de4cacab0cd0c9678cb9e1431d78b710b4"
+    },
+    {
+      "path": "plans/STAGE_13A_CACHE_ADMISSION.md",
+      "bytes": 4210,
+      "sha256": "1ceb6a5252d57e0f291989367f8a7e547b1143a44aaa39069383c9c0c64b26c6"
+    },
+    {
+      "path": "results/stage_13/S07_DEVELOPMENT_PROVENANCE.json",
+      "bytes": 47461,
+      "sha256": "a4ad782567010180bebbe5bec81442560f3a619fcb712d3b5848926c9f1bb8f4"
+    },
+    {
+      "path": "results/stage_13/STAGE13A_PROVENANCE_REVIEW.md",
+      "bytes": 7743,
+      "sha256": "6e914ec4f1057613936b0608814f90e826586a68d81e576503aeac1da8cb3e93"
+    },
+    {
+      "path": "results/stage_13/INDEPENDENT_IMPLEMENTATION_REVIEW.json",
+      "bytes": 2497,
+      "sha256": "40bc30ea97125e18b3be18a57cc52e07f8dc21d2528196d7006df61e5e08b887"
+    },
+    {
+      "path": "results/stage_13/INDEPENDENT_NOTEBOOK_PACKAGING_REVIEW.json",
+      "bytes": 4014,
+      "sha256": "6326c9cefe8e186becb5309ab73394b42745b0e8965e607f5ad346492ffc079f"
+    }
+  ],
+  "manifest_self_hash_excluded": true,
+  "actual_cache_execution": false,
+  "model_fit_or_inference": false
+}
+

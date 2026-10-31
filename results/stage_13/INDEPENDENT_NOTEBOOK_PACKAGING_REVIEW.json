@@ -1,0 +1,93 @@
+{
+  "builder": {
+    "path": "scripts/build_stage13a_notebook.py",
+    "sha256": "56507a41e9c62160133718c35ca22b590224c2d65a814503499ef0f067f5e3b6"
+  },
+  "embedded_sources": {
+    "both_exact_to_reviewed_files": true,
+    "runner_sha256": "4b30488d126bc6213d8e1d128d50d7f0641b33e90b13192af55abe413ae49629",
+    "static_ledger_sha256": "a4ad782567010180bebbe5bec81442560f3a619fcb712d3b5848926c9f1bb8f4"
+  },
+  "execution_scope": {
+    "actual_private_cache_execution": false,
+    "builder_rebuilt_in_temporary_directory": true,
+    "code_cell_ast_and_compilation": true,
+    "models_fit_or_invoked": false,
+    "only_saved_readback_cell_executed_with_fake_path": true,
+    "setup_and_audit_cells_executed": false
+  },
+  "limitations": [
+    "nbformat and nbclient are unavailable locally; formal nbformat-library validation and full notebook execution were not performed. JSON/cell structural invariants, AST and compilation passed instead.",
+    "Actual saved Kaggle source, CPU/Internet settings, immutable input bindings and real audit results require separate live verification.",
+    "No held-out model predictions, development score, full-S07 OOF or balancing comparison is established."
+  ],
+  "notebook": {
+    "bytes": 72154,
+    "code_cells": 3,
+    "path": "notebooks/Stage_13A_Cache_Admission.ipynb",
+    "sha256": "6b332df8bea3dc2931c6519558b595de4cacab0cd0c9678cb9e1431d78b710b4",
+    "total_cells": 8
+  },
+  "resolved_packaging_finding": {
+    "code": "SAVED_RESULT_SCOPE_GATING",
+    "detail": "Exact scope, true production/report-written flags and all eight false exclusion flags are now required; missing fields or truthy strings fail.",
+    "status": "FIXED_AND_TESTED"
+  },
+  "review_date": "2026-10-31",
+  "saved_readback_fixture_checks": {
+    "cases": [
+      "valid_aggregate_fixture_and_bounded_output",
+      "unselected_fields_not_printed",
+      "missing_scope",
+      "missing_contract_is_production",
+      "missing_report_written",
+      "missing_fit_performed",
+      "missing_model_inference_performed",
+      "missing_balancing_performed",
+      "missing_held_out_predictions_produced",
+      "missing_development_reference_admitted",
+      "missing_full_s07_oof_admitted",
+      "missing_stage13b_batch_coupled_comparison_admitted",
+      "missing_official_score_estimated",
+      "wrong_scope_wrong_scope",
+      "wrong_contract_is_production_False",
+      "wrong_contract_is_production_true",
+      "wrong_report_written_False",
+      "wrong_report_written_true",
+      "wrong_status_PASS_SYNTHETIC_FEATURE_ADMISSION_ONLY",
+      "forbidden_fit_performed_True",
+      "forbidden_fit_performed_false",
+      "forbidden_model_inference_performed_True",
+      "forbidden_model_inference_performed_false",
+      "forbidden_balancing_performed_True",
+      "forbidden_balancing_performed_false",
+      "forbidden_held_out_predictions_produced_True",
+      "forbidden_held_out_predictions_produced_false",
+      "forbidden_development_reference_admitted_True",
+      "forbidden_development_reference_admitted_false",
+      "forbidden_full_s07_oof_admitted_True",
+      "forbidden_full_s07_oof_admitted_false",
+      "forbidden_stage13b_batch_coupled_comparison_admitted_True",
+      "forbidden_stage13b_batch_coupled_comparison_admitted_false",
+      "forbidden_official_score_estimated_True",
+      "forbidden_official_score_estimated_false"
+    ],
+    "only_synthetic_aggregate_fixture_used": true,
+    "passed": 35,
+    "total": 35
+  },
+  "schema_version": 1,
+  "status": "PASS_NOTEBOOK_PACKAGING_FOR_CPU_ADMISSION",
+  "structural_and_source_checks": {
+    "audit_subprocess_requires_success": true,
+    "cell_schema_and_unique_ids": true,
+    "embedded_ledger_exact": true,
+    "embedded_runner_exact": true,
+    "independent_deterministic_rebuild_exact": true,
+    "intended_inputs_cpu_offline_metadata": true,
+    "metadata_hashes_exact": true,
+    "notebook_v4_minor5": true,
+    "setup_asserts_both_expected_hashes": true,
+    "three_inert_compilable_code_cells": true
+  }
+}
