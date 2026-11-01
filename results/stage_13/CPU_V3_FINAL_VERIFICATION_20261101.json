@@ -1,0 +1,77 @@
+{
+  "verification_date": "2026-11-01",
+  "status": "SUCCEEDED_FEATURE_CACHE_ADMISSION_ONLY",
+  "script_version_id": 364509756,
+  "notebook_version": 3,
+  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-13a-cache-admission?scriptVersionId=364509756",
+  "terminal_viewer_display": "28.9 second run - successful",
+  "displayed_notebook_runtime_seconds": "28.9",
+  "audit_compute_seconds": 2.582699,
+  "version_panel_header": "Viewing Version 3:done_all Save & Run All • October 31, 2026 at 10:43 AM",
+  "version_panel_date_timezone_unspecified": true,
+  "saved_code_cells": 3,
+  "code_checks": [
+    {
+      "cell": 1,
+      "sha256": "47f6946c928b9ff7d9be14476e639debfed1262e61170841e1c203008397e754",
+      "exact": true
+    },
+    {
+      "cell": 2,
+      "sha256": "705766e548817ba8e6d50d74cd2eedc8d7795efbe44c6be012ba3cb59acc53f0",
+      "exact": true
+    },
+    {
+      "cell": 3,
+      "sha256": "1ee5f22c7edc447c556d791c4dd60dc7f62ec248f94cae9bfa6855f8f8db7103",
+      "exact": true
+    }
+  ],
+  "saved_kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 359405443
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "original_source_freeze_commit": "d8d600d5f3151e0f6a4ab131f58fb8db54befa3f",
+  "admission_status": "PASS_FROZEN_BASE_FEATURE_ADMISSION_ONLY",
+  "admission_checks_passed": 7,
+  "rows": 2699,
+  "prompts": 150,
+  "saved_report_readback_marker": true,
+  "rendered_actual_report_recovered": true,
+  "rendered_actual_report_file": "ACTUAL_CPU_V3_RENDERED_REPORT.json",
+  "output_file_downloaded_or_byte_verified": false,
+  "no_new_run_or_rerun": true,
+  "model_fitting_performed": false,
+  "held_out_predictions_produced": false,
+  "balancing_comparison_performed": false,
+  "new_official_submission": false,
+  "last_verified_official_best": {
+    "submission": "S07",
+    "public_balanced_accuracy": "0.651",
+    "verified_date": "2026-10-30"
+  },
+  "supersedes_pending_final_state_in": [
+    "CPU_V3_RUN_RECEIPT.json",
+    "ACTUAL_CPU_V3_LOG_SUMMARY.json"
+  ],
+  "limits": [
+    "A technical cache-admission pass supplies no accuracy score.",
+    "No full-S07 OOF or clean development reference is admitted.",
+    "28.9 is Kaggle's displayed whole-notebook duration; 2.582699 is audit computation only.",
+    "The complete report is parsed from visible rendered notebook output, not independently downloaded runtime-file bytes."
+  ],
+  "next_action": "Freeze and review common-prompt-fold readout fitting before any model fitting; no balancing or official submission admitted by this cache audit."
+}

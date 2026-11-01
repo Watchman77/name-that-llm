@@ -1,26 +1,23 @@
-# Stage 13A — actual cache checks passed; final notebook verification pending
+# Stage 13A — real CPU cache admission complete
 
-Date: 1 November 2026.
+Verified: 1 November 2026.
 
-Private CPU **V3 364509756** visibly reported **PASS_FROZEN_BASE_FEATURE_ADMISSION_ONLY** and passed all **seven grouped admission checks** against the real mounted inputs. The logs also printed **STAGE13A_SAVED_REPORT_READBACK PASS_FROZEN_BASE_FEATURE_ADMISSION_ONLY**. The cache covers **2,699 rows, 150 prompts and 18 classes**, with finite float32 features of shape **[2699, 3, 4096]**, exact train/cache hashes and zero fit/validation prompt overlap in each of the five planned partitions. Audit computation took **2.582699 seconds**; this is not total notebook duration.
+Private CPU **V3 364509756 succeeded**. Its exact Kaggle viewer displays **28.9 second run - successful**, and the saved-version panel displays **done_all Save & Run All**. All **three saved code cells** exactly match the frozen notebook at **d8d600d5f3151e0f6a4ab131f58fb8db54befa3f**. Saved metadata confirms competition **170484**, own Stage06C output **359405443**, accelerator **None**, Internet **off** and GPU false. Browser access recovered and these checks close the earlier terminal/source uncertainty without another run.
 
-This admits the frozen-base GLM cache for subsequently frozen fold-local readout fitting. **No model fitting, model inference, held-out predictions, balancing comparison, clean development reference or full-S07 OOF result was produced. There is no new accuracy score.** This cache check does not validate the supervised production branches of S07 as held out.
+Actual output reports **PASS_FROZEN_BASE_FEATURE_ADMISSION_ONLY**, passing all **seven grouped checks** for **2,699 rows, 150 prompts and 18 classes**. Exact train/cache hashes, row/text alignment, finite float32 GLM features of shape **[2699, 3, 4096]**, and zero fit/validation prompt overlap in all five planned folds pass. The saved-report readback marker also passes. Audit computation took **2.582699 seconds**, distinct from the displayed **28.9-second whole-notebook run**.
 
-The last explicit V3 header observed was **Running for 30.8s**. A later Notebook view displayed rounded **Runtime 29s**, which is not an explicit terminal-status check. During the subsequent source/status inspection, browser control stalled; a fresh connection attempt then returned **No connected browser was found for the originating browser instance**. V3's final terminal state, exact whole-notebook duration and final saved-source/settings readback remain **unverified**. Do not relaunch the audit blindly; inspect existing V3 first. The preserved evidence contains selected aggregate fields transcribed from actual visible logs, not a byte-identical download of the output report.
+The complete aggregate report was parsed from actual rendered notebook output. This is not an independent runtime-file download or byte identity check. The source-only V2 snapshot was verified before the single V3 CPU execution; the final V3 source/settings have now also been verified. The earlier source-only V1, preparation timeout and commit error are historical and are not separate actual audit executions. Prior pending-state receipts remain unchanged as historical records, superseded by the final verification below.
 
-Before execution, recovered source-only **V2 364509282** was independently read back: all three code strings exactly matched the frozen notebook; saved inputs were competition **170484** and kernel version **359405443**, accelerator **None**, Internet **off**. Exactly one actual Save & Run All was then requested for V3 with **Run without an accelerator for this session**. Its actual viewer showed **Accelerator None**, private visibility and the latest container image. V2's saved source/settings evidence does not replace final V3 readback.
+**This is feature-cache admission only. No model fitting, model inference, held-out predictions, clean development reference, full-S07 OOF, balancing comparison or new accuracy score was produced.** The GLM frozen-base cache is eligible for separately frozen fold-local readouts; this does not validate S07's adapted/full-fit production branches as held out.
 
-Recovery also found that the earlier imported notebook was in Script format and that Kaggle had displayed a generic commit error. It was converted through File > Editor Type > Notebook, and the three canonical code strings, including terminal newlines, were restored and read back before saving V2. The earlier pending V1 is source-only and is not an actual cache-audit execution. The 31 October preparation receipt remains historical.
+Preparation review passed **18 implementation tests, six supplemental checks, ten notebook structure/source checks and 35 saved-report fixtures**. A separate arithmetic/scope review reconciled the selected actual aggregates with **16/16 checks**. The source and static ledger remain frozen; no new model run or official submission was initiated during final verification.
 
-The source and static ledger remain frozen at **d8d600d5f3151e0f6a4ab131f58fb8db54befa3f**. Independent preparation review passed **18 implementation tests, six supplemental checks, ten notebook structure/source checks and 35 saved-report readback fixtures**. The deterministic notebook rebuild was byte-identical. Local nbformat/nbclient were unavailable; JSON structure and code compilation were checked. Actual Kaggle audit execution is now observed, with the terminal-state limitation above.
+**S07 remains the last verified official public best: 0.651 (65.1%), verified 30 October 2026.** Next: freeze and review the exact common-prompt-fold probability-cache producer, then fit readouts using only the training prompts. Generate held-out predictions before admitting any batch-coupled balancing comparison. Reused folds remain exploratory development; no proxy gain can be added to the official score. No paid services or final-selection changes occurred.
 
-**S07 remains the last verified official public best at 0.651 (65.1%), verified 30 October 2026.** No new official submission, paid service or final-selection change occurred. Separately freeze common-prompt-fold readouts next, then generate held-out predictions before admitting any batch-coupled balancing comparison. Reused folds remain exploratory development; do not claim an untouched holdout or add a proxy gain to the official score.
-
-- [Actual V3](https://www.kaggle.com/code/watchman777/name-that-llm-stage-13a-cache-admission?scriptVersionId=364509756)
-- [Actual V3 logs](https://www.kaggle.com/code/watchman777/name-that-llm-stage-13a-cache-admission/log?scriptVersionId=364509756)
-- [Run receipt](CPU_V3_RUN_RECEIPT.json)
-- [Selected actual aggregate log evidence](ACTUAL_CPU_V3_LOG_SUMMARY.json)
-- [Independent arithmetic and scope review](INDEPENDENT_CPU_V3_AGGREGATE_REVIEW.json)
-- [Historical preparation receipt](KAGGLE_PREPARATION_20261031.json)
+- [Verified V3](https://www.kaggle.com/code/watchman777/name-that-llm-stage-13a-cache-admission?scriptVersionId=364509756)
+- [Final source/status verification](CPU_V3_FINAL_VERIFICATION_20261101.json)
+- [Complete aggregate report from rendered output](ACTUAL_CPU_V3_RENDERED_REPORT.json)
+- [Independent aggregate review](INDEPENDENT_CPU_V3_AGGREGATE_REVIEW.json)
+- [Historical first observed run receipt](CPU_V3_RUN_RECEIPT.json)
 - [Static S07 provenance](S07_DEVELOPMENT_PROVENANCE.json)
 - [Execution protocol](../../plans/STAGE_13A_CACHE_ADMISSION.md)

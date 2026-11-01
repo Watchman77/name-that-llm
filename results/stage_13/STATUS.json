@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "phase": "REAL_CACHE_CHECKS_PASS_FINAL_NOTEBOOK_VERIFICATION_PENDING",
+  "phase": "CPU_CACHE_ADMISSION_COMPLETE",
   "official_best_submission": "S07",
   "official_best_public_balanced_accuracy": "0.651",
   "static_s07_provenance_review_complete": true,
@@ -38,14 +38,17 @@
   "actual_notebook_version": 3,
   "actual_notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-13a-cache-admission?scriptVersionId=364509756",
   "actual_saved_report_readback_observed": true,
-  "actual_notebook_terminal_state": null,
+  "actual_notebook_terminal_state": "Succeeded",
   "last_explicit_actual_notebook_state": "Running",
   "exact_actual_notebook_runtime_seconds": null,
   "source_only_verified_script_version_id": 364509282,
   "source_only_v2_saved_source_settings_verified": true,
-  "actual_v3_saved_source_settings_verified": false,
+  "actual_v3_saved_source_settings_verified": true,
   "save_and_run_count": 1,
   "held_out_predictions_produced": false,
-  "browser_access_limitation": "No connected browser was found for the originating browser instance during final verification.",
-  "next_action": "Verify existing V3 terminal state and saved source/settings without rerunning; separately freeze common-prompt-fold readout fitting."
+  "browser_access_limitation": null,
+  "next_action": "Freeze and review common-prompt-fold readout fitting before any model fitting; no balancing or official submission admitted by this cache audit.",
+  "notebook_terminal_evidence": "Exact V3 viewer displays: 28.9 second run - successful; saved-version panel displays done_all Save & Run All.",
+  "actual_notebook_displayed_runtime_seconds": "28.9",
+  "final_verification_date": "2026-11-01"
 }
