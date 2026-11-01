@@ -3,7 +3,7 @@
 Current checkpoint, 30 October 2026: **S07 is our new best at 0.651 official public balanced accuracy (65.1%); exact private Stage12 V10 363626171 is Succeeded.** The exact-decimal gain versus S05 0.642 is **+0.900 percentage points**, leaving **4.900 points** to a 70.0% public score. Final selection remains automatic 0/2. The private preview succeeded in 12224.2s with 40/40 output checks; those are not hidden-run duration or guard evidence. No actual hidden final logs/runtime/guard count or final private score/rank is claimed. [Final result](results/submissions/S07_FINAL_RESULT.json). Fresh public leaderboard: rank **713 of 3,967**, leader **0.736**, tenth **0.692**; 70.0% is below the current leader. Earlier observations below are historical checkpoints.
 
 
-Next phase: **Stage13A implementation prepared; real mounted-cache audit unverified.** The static S07 provenance ledger and CPU admission notebook are frozen. Eighteen implementation tests, six independent checks, ten notebook checks and 35 readback fixtures passed. Browser control stalled during the source-only save; exact saved source/settings must be inspected before one CPU execution. No new fit, model inference, balancing evaluation or official submission was requested. [Current checkpoint](results/stage_13/REPORT.md) · [Prospective sequence](plans/STAGE_13_DEVELOPMENT_REFERENCE_AND_BALANCING.md).
+Next phase: **Stage13A real cache checks passed; final notebook verification pending (1 November 2026).** Private CPU V3 **364509756** visibly passed seven admission groups for all 2,699 rows/150 prompts and printed the saved-report readback pass marker. No fits, model inference, held-out predictions, balancing evaluation or official submission were performed. The final V3 terminal label and saved-source/settings readback remain unverified after the browser disconnected. V2 **364509282** was separately verified source-only with all three exact frozen code cells, the two intended inputs, CPU and Internet off. Recover the existing V3 before considering any rerun; separately freeze common-prompt-fold readouts next. [Current checkpoint](results/stage_13/REPORT.md) · [Prospective sequence](plans/STAGE_13_DEVELOPMENT_REFERENCE_AND_BALANCING.md).
 
 ## Competition goal
 
@@ -213,4 +213,13 @@ The official hidden-test submission is terminal **Succeeded**. No actual hidden-
 Next: preserve S07 as the current best and record this verified outcome. Do not infer a route to 70% from the public-score gain or start a parameter/blend sweep from this result. Any further experiment needs its own prospective rationale and development evidence. The successful public reproduction is not, by itself, an original-method or publication claim.
 
 [Final result receipt](results/submissions/S07_FINAL_RESULT.json)
+
+
+## Stage13A actual CPU cache admission — 1 November 2026
+
+Private CPU **V3 364509756** printed **PASS_FROZEN_BASE_FEATURE_ADMISSION_ONLY**, passing all seven grouped checks in **2.582699 seconds of audit computation**. This is not the whole notebook runtime. Actual logs establish 2,699 rows, 150 prompts, 18 classes, finite float32 GLM features of shape [2699, 3, 4096], exact train/cache hashes, and five planned partitions with zero fit/validation prompt overlap. The saved-report readback pass marker was also observed.
+
+These observations admit this frozen-base cache for separately frozen fold-local readout fitting. They do not produce held-out predictions, validate the full S07 ensemble as OOF, estimate an official gain or run the balancing comparison. No model fitting, inference, new official submission, paid service or final-selection change occurred.
+
+V2's saved three-code-cell source and CPU/offline/input settings were verified before the single actual V3 launch. The last explicit V3 header read Running; a later rounded Runtime 29s display does not prove terminal success. Browser control stalled and then reported no connected browser during final verification. V3's terminal state, exact total notebook duration and final saved-source/settings readback remain pending. Inspect this existing version before any rerun. Selected aggregate log evidence is preserved, not a byte-identical downloaded runtime artifact. [Run receipt](results/stage_13/CPU_V3_RUN_RECEIPT.json) · [Log summary](results/stage_13/ACTUAL_CPU_V3_LOG_SUMMARY.json).
 

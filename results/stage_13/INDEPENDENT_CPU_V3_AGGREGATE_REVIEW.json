@@ -1,0 +1,49 @@
+{
+  "review_date": "2026-11-01",
+  "status": "PASS_SELECTED_VISIBLE_LOG_AGGREGATE_RECONCILIATION_ONLY",
+  "script_version_id": 364509756,
+  "input_evidence_type": "Parent-captured selected aggregate fields from actual V3 visible Kaggle logs; not downloaded output bytes.",
+  "reviewed_files": [
+    "ACTUAL_CPU_V3_LOG_SUMMARY.json",
+    "CPU_V3_RUN_RECEIPT.json"
+  ],
+  "checks": {
+    "same_v3_identity": true,
+    "scope_explicit_feature_only": true,
+    "seven_unique_check_groups": true,
+    "class_supports_total": true,
+    "fold_validation_total": true,
+    "each_fold_complements_rows": true,
+    "fold_training_total": true,
+    "fold_prompt_counts": true,
+    "feature_schema_matches_contract": true,
+    "recorded_digests_match_frozen_contract": true,
+    "recorded_label_axis_matches_frozen_classes": true,
+    "reported_v2_source_hashes_match_reviewed_notebook": true,
+    "no_terminal_or_duration_claim": true,
+    "no_artifact_byte_download_claim": true,
+    "no_fitting_scoring_reference_claim": true,
+    "v3_final_readback_explicitly_pending": true
+  },
+  "checks_passed": 16,
+  "checks_total": 16,
+  "arithmetic": {
+    "validation_rows_total": 2699,
+    "training_rows_total": 10796,
+    "expected_training_rows_total": 10796,
+    "class_supports_total": 2699,
+    "feature_values": 33165312,
+    "feature_payload_bytes_uncompressed": 132661248
+  },
+  "interpretation": "Visible production feature-admission and saved-report-readback evidence is internally coherent. This is not fitted held-out predictions, a development reference or an accuracy result.",
+  "remaining_verification": [
+    "Explicit final V3 terminal state and exact total notebook duration.",
+    "Final V3 saved source, inputs and Internet settings readback.",
+    "Independent output-file byte download/readback if that stronger claim is desired."
+  ],
+  "final_v3_terminal_state_verified": false,
+  "runtime_artifact_independently_downloaded_or_byte_verified": false,
+  "browser_or_github_writes": false,
+  "model_execution_by_reviewer": false,
+  "source_check_scope": "Reported V2 code hashes independently match the reviewed canonical local notebook. This does not establish final V3 saved-source parity."
+}

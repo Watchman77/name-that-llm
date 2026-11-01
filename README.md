@@ -8,7 +8,7 @@ The competitive goal is **first place in the final private evaluation**. At the 
 
 **S07 is our best confirmed official public result: 0.651 (65.1%) balanced accuracy**, from exact private Stage12 V10 **363626171**. It succeeded and improves S05 0.642 by **0.900 percentage points**. The verified 30 October public snapshot places Watchman 777 at **713 of 3,967**, with tenth at 0.692 and the leader at 0.736. Final private performance remains unknown. [Verified outcome](results/submissions/S07_FINAL_RESULT.json).
 
-**Stage13A is implemented; the real cache audit is still unverified.** The S07 provenance ledger, CPU admission runner and private notebook are frozen. Independent review passed 18 implementation tests, six supplemental checks, ten notebook structure/source checks and 35 saved-report fixtures. Browser control stopped responding during the source-only save, so the saved code/settings and mounted-cache result are pending. No Save & Run All, model fitting, balancing experiment or official submission was requested. [Current checkpoint](results/stage_13/REPORT.md) · [Stage13 plan](plans/STAGE_13_DEVELOPMENT_REFERENCE_AND_BALANCING.md).
+**Stage13A's real CPU cache checks passed on 1 November 2026.** Private V3 **364509756** reports all seven admission groups passed for 2,699 rows and 150 prompts, with exact hashes, finite GLM features, zero fit/validation prompt overlap and saved-report readback. No model fitting, inference, held-out predictions, balancing comparison or new accuracy result was produced. The browser disconnected before final V3 terminal-state and saved-source/settings verification; those remain pending. S07 remains the last verified official best at 65.1%. [Current checkpoint](results/stage_13/REPORT.md) · [Stage13 plan](plans/STAGE_13_DEVELOPMENT_REFERENCE_AND_BALANCING.md).
 
 ## Historical development checkpoints
 
@@ -71,3 +71,4 @@ Attach the **Name That LLM** competition as an input, import the notebook or scr
 Competition source: https://www.kaggle.com/competitions/name-that-llm
 
 The original training and test data are excluded from git. Keep this repository private during the competition and limit access to the owner and official teammates. Check the competition rules before any public release, private code sharing outside the team, paid synthetic-data generation or data redistribution. Winner licensing obligations will be addressed if applicable; no open-source licence is assigned to this private working repository yet.
+

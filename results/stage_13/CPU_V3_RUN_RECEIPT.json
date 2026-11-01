@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-01",
+  "status": "REAL_CACHE_CHECKS_PASS_FINAL_NOTEBOOK_STATE_UNVERIFIED",
+  "source_freeze_commit": "d8d600d5f3151e0f6a4ab131f58fb8db54befa3f",
+  "script_version_id": 364509756,
+  "notebook_version": 3,
+  "version_name": "CPU cache admission; no fitting or scoring",
+  "private_viewer_verified": true,
+  "actual_viewer_accelerator": "None",
+  "actual_viewer_environment": "Latest Container Image",
+  "single_save_and_run_all_requested": true,
+  "save_time_policy": "Run without an accelerator for this session",
+  "actual_checks_passed": 7,
+  "actual_saved_report_readback_observed": true,
+  "actual_log_summary": "ACTUAL_CPU_V3_LOG_SUMMARY.json",
+  "last_explicit_notebook_state": "Running",
+  "notebook_terminal_state": null,
+  "exact_notebook_runtime_seconds": null,
+  "quick_source_snapshot": {
+    "version": 2,
+    "script_version_id": 364509282,
+    "save_type": "Quick Save",
+    "code_cells": 3,
+    "all_three_exact_to_frozen_source": true,
+    "code_sha256": [
+      "47f6946c928b9ff7d9be14476e639debfed1262e61170841e1c203008397e754",
+      "705766e548817ba8e6d50d74cd2eedc8d7795efbe44c6be012ba3cb59acc53f0",
+      "1ee5f22c7edc447c556d791c4dd60dc7f62ec248f94cae9bfa6855f8f8db7103"
+    ],
+    "saved_kaggle_metadata": {
+      "accelerator": "none",
+      "dataSources": [
+        {
+          "sourceType": "competition",
+          "sourceId": 170484
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 359405443
+        }
+      ],
+      "isInternetEnabled": false,
+      "language": "python",
+      "sourceType": "notebook",
+      "isGpuEnabled": false
+    }
+  },
+  "recovery_notes": [
+    "Recovered editor was Script type; the imported notebook had become one script with cell markers.",
+    "Converted through File > Editor Type > Notebook and restored the three canonical source strings including their terminal newlines.",
+    "Kaggle had displayed a generic error while committing kernel; that is separately recorded from the previous browser timeout.",
+    "The earlier V1 is a source-only Quick Version, not evidence of an actual cache-audit execution.",
+    "V3 produced an actual production admission report and saved-report readback. Subsequent source/final-state inspection stalled."
+  ],
+  "new_model_training": false,
+  "new_model_inference": false,
+  "new_official_submission": false,
+  "s07_unchanged": true,
+  "official_best_last_verified": "0.651",
+  "paid_services_used": false,
+  "final_selection_controls_changed": false,
+  "next_action": "Verify existing V3 final status and saved source/settings before any rerun. Then separately freeze common-fold readout fitting; cache admission alone is not held-out predictions or a score.",
+  "final_browser_access_error": "No connected browser was found for the originating browser instance."
+}

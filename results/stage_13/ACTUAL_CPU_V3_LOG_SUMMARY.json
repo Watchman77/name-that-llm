@@ -1,0 +1,127 @@
+{
+  "verification_date": "2026-11-01",
+  "evidence_type": "SELECTED_AGGREGATE_FIELDS_FROM_VISIBLE_ACTUAL_KAGGLE_LOGS",
+  "byte_for_byte_download_of_output_report": false,
+  "script_version_id": 364509756,
+  "notebook_version": 3,
+  "notebook_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-13a-cache-admission?scriptVersionId=364509756",
+  "logs_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-13a-cache-admission/log?scriptVersionId=364509756",
+  "audit_status": "PASS_FROZEN_BASE_FEATURE_ADMISSION_ONLY",
+  "audit_compute_seconds": 2.582699,
+  "checks_passed": [
+    "fresh_output_directory",
+    "unique_required_inputs",
+    "exact_input_file_hashes",
+    "official_train_axis_contract",
+    "numeric_unicode_npz_headers",
+    "glm_values_alignment_and_finiteness",
+    "canonical_future_prompt_fold_partitions"
+  ],
+  "checks_passed_count": 7,
+  "contract_is_production": true,
+  "scope": "frozen_base_feature_admission_only",
+  "report_written": true,
+  "saved_report_readback_marker_observed": true,
+  "rows": 2699,
+  "prompts": 150,
+  "classes": 18,
+  "class_supports_summary": {
+    "claude-fable-5": 149,
+    "each_of_other_17_classes": 150
+  },
+  "feature_shape": [
+    2699,
+    3,
+    4096
+  ],
+  "feature_dtype": "float32",
+  "layers": [
+    8,
+    3,
+    24
+  ],
+  "all_feature_values_finite": true,
+  "files": {
+    "official_train": {
+      "bytes": 2139418,
+      "sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707"
+    },
+    "glm_cache": {
+      "bytes": 122680275,
+      "sha256": "2b41585a9482cef825962a8cc096697933c0b1237e8ede0712d1f8ab361d9414"
+    }
+  },
+  "canonical_prompt_fold_mapping_sha256": "a55b035686cb7b31f6fbe852ac990668709aec4b913c5d0928d89d843bdbfe62",
+  "ordered_text_sha256": "6496071874da8f911fafebd9eec6191e56134a97f00226dd8c78805d31f07e36",
+  "id_axis_sha256": "707edf645b0f09bba8f0983b5bc9f522595c95e8ca5b763b38babeb38200368d",
+  "label_axis_sha256": "088b14188775e41a314f269da3af74f96144a56caa242ccbeacc9e3c817a7e08",
+  "fold_partitions": [
+    {
+      "fold": 1,
+      "fit_rows": 2159,
+      "valid_rows": 540,
+      "fit_prompts": 120,
+      "valid_prompts": 30,
+      "prompt_overlap": 0
+    },
+    {
+      "fold": 2,
+      "fit_rows": 2159,
+      "valid_rows": 540,
+      "fit_prompts": 120,
+      "valid_prompts": 30,
+      "prompt_overlap": 0
+    },
+    {
+      "fold": 3,
+      "fit_rows": 2159,
+      "valid_rows": 540,
+      "fit_prompts": 120,
+      "valid_prompts": 30,
+      "prompt_overlap": 0
+    },
+    {
+      "fold": 4,
+      "fit_rows": 2159,
+      "valid_rows": 540,
+      "fit_prompts": 120,
+      "valid_prompts": 30,
+      "prompt_overlap": 0
+    },
+    {
+      "fold": 5,
+      "fit_rows": 2160,
+      "valid_rows": 539,
+      "fit_prompts": 120,
+      "valid_prompts": 30,
+      "prompt_overlap": 0
+    }
+  ],
+  "recorded_token_length_min": 44,
+  "recorded_token_length_max": 381,
+  "runtime_versions": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.6.1"
+  },
+  "eligible_for_future_fold_local_readout_fitting": true,
+  "fit_performed": false,
+  "model_inference_performed": false,
+  "balancing_performed": false,
+  "held_out_predictions_produced": false,
+  "development_reference_admitted": false,
+  "stage13b_batch_coupled_comparison_admitted": false,
+  "full_s07_oof_admitted": false,
+  "official_score_estimated": false,
+  "object_deserialization_performed": false,
+  "raw_rows_or_predictions_exported": false,
+  "notebook_terminal_state": null,
+  "last_explicit_notebook_state": "Running",
+  "last_explicit_running_display_seconds": 30.8,
+  "later_notebook_view_runtime_display_rounded_seconds": 29,
+  "exact_notebook_total_runtime_seconds": null,
+  "final_v3_saved_source_settings_readback_verified": false,
+  "limitation": "Visible audit result and saved-report readback passed. Browser control stopped returning during subsequent source/terminal-state verification. No exact final duration, terminal success or actual-output-file byte identity is claimed.",
+  "final_browser_access_error": "No connected browser was found for the originating browser instance."
+}
