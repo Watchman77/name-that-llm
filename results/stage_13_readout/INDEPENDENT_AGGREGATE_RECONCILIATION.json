@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-11",
+  "status": "PASS_VISIBLE_AGGREGATE_RECONCILIATION_ONLY",
+  "script_version_id": 368292220,
+  "pooled_balanced_accuracy_fraction": "61547/134100",
+  "pooled_balanced_accuracy": 0.4589634601043996,
+  "ordinary_accuracy_correct": 1239,
+  "ordinary_accuracy_total": 2699,
+  "per_fold_validation_rows": [
+    540,
+    540,
+    540,
+    540,
+    539
+  ],
+  "per_fold_correct_reconciled_from_equal_or_known_supports": [
+    254,
+    252,
+    245,
+    246,
+    242
+  ],
+  "two_way_confusions": [
+    {
+      "classes": [
+        "gemini-3.7-flash",
+        "gemini-3.8-flash"
+      ],
+      "errors": 81
+    },
+    {
+      "classes": [
+        "glm-5.3",
+        "glm-5.3-flash"
+      ],
+      "errors": 61
+    },
+    {
+      "classes": [
+        "gemini-3.6-flash",
+        "gemini-3.7-flash"
+      ],
+      "errors": 58
+    }
+  ],
+  "limits": "Reconciled aggregate counts, supports and fold scores; no independent private cache replay or byte download."
+}

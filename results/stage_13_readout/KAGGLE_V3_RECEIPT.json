@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-11",
+  "status": "SUCCEEDED_STANDALONE_GLM_DEVELOPMENT_REFERENCE",
+  "script_version_id": 368292220,
+  "notebook_version": 3,
+  "kaggle_url": "https://www.kaggle.com/code/watchman777/name-that-llm-stage-13-glm-readout?scriptVersionId=368292220",
+  "displayed_runtime_seconds": "152.2",
+  "actual_runner_seconds": 127.012631,
+  "visibility": "Private",
+  "actual_accelerator": "None",
+  "actual_environment": "Latest Container Image",
+  "saved_kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 359405443
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "source_freeze_commit": "72e16e20cdac267833946454143d85b9d1eac51a",
+  "all_three_saved_code_cells_exact": true,
+  "source_cell_sha256": [
+    "684976843a963367b0ab7d8ffe56a0b438223f4cd1147010f5e0352f7ccaf385",
+    "35dddc8b62deb37b8c6220090a15fa0f279b8fe8472a9192ba40e97bba095937",
+    "657c02f675f5f83491a2137766bbd5b4a701e7e6d039dacde73e510e616f4331"
+  ],
+  "source_only_versions": [
+    {
+      "version": 1,
+      "verified_exact_source": true,
+      "internet_saved": true,
+      "fit": false
+    },
+    {
+      "version": 2,
+      "verified_exact_source": true,
+      "internet_saved": false,
+      "fit": false
+    }
+  ],
+  "real_save_and_run_all_count": 1,
+  "readback_marker": "STAGE13_GLM_READOUT_SAVED_REPORT_READBACK_PASS {\"development_balanced_accuracy\": 0.4589634601043996, \"folds\": 5, \"heldout_cache_sha256\": \"565df6f8e652a9850ff11cf4e8b6a81fcccbc7db593186ff7f53358e7190bd16\", \"rows\": 2699}",
+  "actual_aggregate_report": "ACTUAL_V3_REPORT.json",
+  "report_provenance": "Parsed actual rendered private Kaggle notebook output; not a downloaded file byte comparison.",
+  "rows": 2699,
+  "prompts": 150,
+  "folds_completed": 5,
+  "pooled_development_balanced_accuracy": 0.4589634601043996,
+  "heldout_cache_readback_passed": true,
+  "heldout_cache_kept_private": true,
+  "full_s07_oof_admitted": false,
+  "stage13b_batch_coupled_comparison_admitted": false,
+  "balancing_performed": false,
+  "official_submission_started": false,
+  "last_verified_official_best": {
+    "submission": "S07",
+    "public_balanced_accuracy": "0.651",
+    "as_of": "2026-11-10"
+  },
+  "final_selection_changed": false
+}
