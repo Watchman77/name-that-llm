@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-11",
+  "status": "SUCCEEDED_REDUCED_COMPLEMENT_SCREEN_PASSED",
+  "script_version_id": 368302297,
+  "notebook_version": 2,
+  "notebook_url": "https://www.kaggle.com/code/watchman777/notebook1d8c573cc3?scriptVersionId=368302297",
+  "logs_url": "https://www.kaggle.com/code/watchman777/notebook1d8c573cc3/log?scriptVersionId=368302297",
+  "private_visibility_verified": true,
+  "actual_accelerator": "None",
+  "actual_environment": "Latest Container Image",
+  "displayed_runtime_seconds": "52.4",
+  "runner_seconds": 27.665381,
+  "saved_v2_code_exact": true,
+  "saved_v2_kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 368292220
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "source_only_v1_verified": true,
+  "source_freeze_commit": "5de111e93b08cfaafd0f9a68889401cb08953060",
+  "real_save_and_run_all_count": 1,
+  "fit_performed": true,
+  "folds_completed": 5,
+  "control_replayed": true,
+  "passes_proxy_screen": true,
+  "official_submission_started": false,
+  "final_selection_changed": false,
+  "latest_verified_official": {
+    "submission": "S07",
+    "public_balanced_accuracy": "0.651",
+    "as_of": "2026-11-10"
+  },
+  "actual_report": "ACTUAL_V2_REPORT.json",
+  "actual_report_provenance": "Parsed aggregate JSON from visible actual Kaggle logs; duplicate copies identical. No independent report-byte download or row-level export.",
+  "saved_report_readback_marker": "43.2s\t15\tSTAGE13C_SAVED_REPORT_READBACK_PASS {\"candidate_ba\": 0.47565001242853583, \"conditional_delta_ci95_pp\": [0.5945631873484222, 2.4444444444444446], \"control_ba\": 0.4608252547849864, \"deberta_alone_ba\": 0.4578970917225951, \"delta_pp\": 1.482475764354959, \"passes_proxy_screen\": true}"
+}

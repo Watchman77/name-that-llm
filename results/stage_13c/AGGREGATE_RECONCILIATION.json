@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-11",
+  "status": "PASS_VISIBLE_AGGREGATE_RECONCILIATION_ONLY",
+  "script_version_id": 368302297,
+  "exact_delta_pp": "1988/1341",
+  "control_correct": 1244,
+  "candidate_correct": 1284,
+  "corrected_by_candidate": 92,
+  "broken_by_candidate": 52,
+  "changed_by_candidate": 276,
+  "fold_delta_pp": [
+    1.6666666666666718,
+    0.18518518518518268,
+    2.777777777777779,
+    1.8518518518518545,
+    0.9195402298850686
+  ],
+  "positive_folds": 5,
+  "worst_class_delta": {
+    "class": "gpt-5.6-sol",
+    "delta_pp": -3.3333333333333335
+  },
+  "best_class_delta": {
+    "class": "claude-sonnet-5",
+    "delta_pp": 6.666666666666667
+  },
+  "fixed_criteria": {
+    "conditional_ci_lower_positive": true,
+    "every_class_recall_loss_le_five_pp": true,
+    "pooled_gain_at_least_half_pp": true
+  },
+  "limits": "Recomputed from aggregate confusion counts, verified reported interval bounds without replaying private row-level bootstrap draws.",
+  "independent_exact_control_ba": "18539/40230",
+  "independent_exact_candidate_ba": "95677/201150",
+  "incorrect_to_incorrect_changes": 132
+}

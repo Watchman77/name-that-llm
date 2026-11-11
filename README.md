@@ -14,6 +14,8 @@ The competitive goal is **first place in the final private evaluation**. At the 
 
 **Stage 13B balancing screen complete (11 November 2026).** Private CPU V2 **368298172** succeeded in **23.7 seconds**. Turning uniform balancing off failed the fixed GLM proxy screen: **−0.186 pp** on original folds, **−0.167 pp** on a matched balanced subset, **+0.019 pp** and **−0.652 pp** in opposite class-skew scenarios. All four conditional intervals include zero. Retain the existing balancing setting. No training or official submission; S07 stays at **65.1%**. [Run report](results/stage_13b/REPORT.md).
 
+**Stage 13C DeBERTa complement passed (11 November 2026).** Private CPU V2 **368302297** succeeded in **52.4 seconds**. The fixed 75% GLM / 25% pretrained DeBERTa blend raised development balanced accuracy from **46.083% to 47.565%** (**+1.482 pp**, conditional 95% interval **[+0.595, +2.444] pp**), with improvements in all five folds and all fixed gates passed. This is a reduced development proxy; S07's verified official score stays **65.1%**. [Run report](results/stage_13c/REPORT.md).
+
 ## Historical development checkpoints
 
 The following S02/Stage06 observations are retained as historical evidence; current status is above.
