@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-11",
+  "status": "PROSPECTIVE_SOURCE_FREEZE_BEFORE_REAL_COMPARISON",
+  "source_version_id": 368292220,
+  "files": {
+    "scripts/stage13b_balancing_stress.py": {
+      "sha256": "f4981f385074f60ee034b979d4aa6672c7d28eaa408c374d5caf55a7c446fbd9",
+      "bytes": 14604
+    },
+    "scripts/build_stage13b_notebook.py": {
+      "sha256": "f24373f3ed5ea9e78c862da06333af46e24a81e50bdae103b1d8f90f4cbd64a6",
+      "bytes": 7541
+    },
+    "notebooks/Stage_13B_Balancing_Stress.ipynb": {
+      "sha256": "4acb480bb1f60b5538e9d314e5113af4d2a1d9dfd1ac2465a3a591e10e8d5954",
+      "bytes": 21932
+    },
+    "tests/test_stage13b_balancing_stress.py": {
+      "sha256": "3e62ffc7e52bf86ef1a60012ba909936ddd05d72bc69bb2ca5a5aaf54e81d75a",
+      "bytes": 2972
+    },
+    "plans/STAGE_13B_BALANCING_STRESS.md": {
+      "sha256": "256f0e1b057490bbffacd9e16b2df3484b96cb9bf7c571ee1dd3417b292104a1",
+      "bytes": 7372
+    }
+  },
+  "kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 368292220
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "code_cell_sha256": [
+    "e6f1fd2df9f319c0d45d4873d465dce96cc2a1cdb9b8afd527df8c3c732dd349",
+    "5b72e49f8a292679eecf95eb7b96c275fa692b30af093bfe4a29687023bf3db6",
+    "4ad4d060fc58b77407e3d877240bbafbf83e5685f2ec6cfd995b2b23d04e197e"
+  ],
+  "synthetic_runner_checks_passed": 4,
+  "synthetic_notebook_readback_rejections_passed": 9,
+  "independent_review": "PASS_AFTER_PROTOCOL_ALIGN_BOOTSTRAP_FAILURE",
+  "real_comparison_launched": false,
+  "fit_performed": false
+}
