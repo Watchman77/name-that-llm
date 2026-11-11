@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-11",
+  "status": "PROSPECTIVE_SOURCE_FREEZE_BEFORE_REAL_FIT",
+  "input_version_ids": [
+    170484,
+    368292220,
+    358745836
+  ],
+  "files": {
+    "scripts/stage13d_broader_complement.py": {
+      "sha256": "6c492c45445546c2adee3adb6371944aff7b203dae0219545653f25648e67b14",
+      "bytes": 16562
+    },
+    "scripts/build_stage13d_notebook.py": {
+      "sha256": "9a7aa61994a36c24ae2a3f3948811beb6721a6e3a825bcd734a801e3f88d71b2",
+      "bytes": 11866
+    },
+    "notebooks/Stage_13D_Broader_Complement.ipynb": {
+      "sha256": "44fecbe884d45a67d0c8c3732c75edd8a7d7963dd3f7d37699a9a87431b660b9",
+      "bytes": 61897
+    },
+    "tests/test_stage13d_broader_complement.py": {
+      "sha256": "3f2a436732a3cdb2633c03696868e678df598f5a896fbcea0d57fe12cfed00e9",
+      "bytes": 5547
+    },
+    "plans/STAGE_13D_BROADER_COMPLEMENT.md": {
+      "sha256": "3930a6f74f3218ec15600b1152b7deb5c2b3af0d1ff31849527354c663de8686",
+      "bytes": 6405
+    },
+    "scripts/stage13b_balancing_stress.py": {
+      "sha256": "f4981f385074f60ee034b979d4aa6672c7d28eaa408c374d5caf55a7c446fbd9",
+      "bytes": 14604
+    },
+    "scripts/stage13c_deberta_complement.py": {
+      "sha256": "b9b6f523b8a6b1f9f1dae556c863f7fee34f56fddfb27adb0946021e1f17181e",
+      "bytes": 16844
+    }
+  },
+  "kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 368292220
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "code_cell_sha256": [
+    "44824a530aa3475e34a23f6fadb974af53dca46e8a11bdd1806b693f282a707e",
+    "bbcbfff41512967c7103b449958876d84a77e648152b934fe9c306f8033e650a",
+    "609b57668a19afdd77cd084a200d30e43b2f8a3dc2fc5d9c942388d1439d0a6e"
+  ],
+  "synthetic_runner_checks_passed": 5,
+  "synthetic_notebook_valid_readbacks_passed": 2,
+  "synthetic_notebook_readback_rejections_passed": 30,
+  "independent_source_review": "PASS",
+  "real_fit_started": false,
+  "official_submission_started": false
+}
