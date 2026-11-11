@@ -1,0 +1,80 @@
+{
+  "audit_scope": "external_proxy_stage13c_vs_stage13d",
+  "dataset": "prvsiyan/prvsiyans-extended-name-that-llm-dataset",
+  "dataset_version": 12,
+  "eligible_prompt_groups": 0,
+  "envelope_failure_rows": {},
+  "input_sha256": {
+    "official_train.csv": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+    "passages_clean.csv": "502653b8cc053bc1ef08920d0ddda892e8b656f14229e38e0755d8a2f079eaf9",
+    "prompts.csv": "b9cc5716fb4381d5490a311240fcc1f14e31f97b8fbffd58f365976eff6cf987",
+    "provenance.jsonl": "c61592e33462ed4fd62dfca92d9397c8b6a25cb6ba808bacf597117c0d525d2a"
+  },
+  "limits": [
+    "Host prompt wording is unavailable; metadata, exact deduplication and response similarity cannot prove semantic independence.",
+    "Publisher API records are evidence, not independent provider attestations.",
+    "The source declarations and envelope checks do not resolve every upstream use condition.",
+    "Older versions contributed data to S07; this audit cannot establish an unseen panel for S07."
+  ],
+  "official_response_overlap": {
+    "character_cosine_rows": 0,
+    "evaluated_rows": 0,
+    "exact_rows": 0,
+    "maximum_character_cosine": null,
+    "normalized_rows": 0,
+    "punctuation_rows": 0,
+    "shared_8gram_rows": 0,
+    "substring_rows": 0
+  },
+  "official_test_read": false,
+  "panel_manifest_sha256": null,
+  "prior_prompt_exclusions_count": 150,
+  "ranking_salt": "Stage13E-prvsiyan-panel-v1-20261111",
+  "raw_rows_or_identifiers_exported": false,
+  "schema_version": 1,
+  "selected_blocks": 0,
+  "selected_prompt_groups": 0,
+  "selected_rows": 0,
+  "selection_rule": "maximum up to 90 in blocks of 30 by fixed salted normalized-prompt hash",
+  "source_declared_public_snapshot_only": true,
+  "stage_counts_by_split": {
+    "after_clean_provider_identity_quality_screen": {
+      "new": 0,
+      "new2": 0
+    },
+    "after_exact_publisher_raw_envelope_checks": {
+      "new": 0,
+      "new2": 0
+    },
+    "after_external_text_duplicate_screen": {
+      "new": 81,
+      "new2": 0
+    },
+    "after_official_response_overlap_checks": {
+      "new": 0,
+      "new2": 0
+    },
+    "after_prior_exposure_exclusions": {
+      "new": 81,
+      "new2": 8
+    },
+    "after_prompt_origin_license_duplicate_screen": {
+      "new": 81,
+      "new2": 0
+    },
+    "complete_18_class_prompt_groups": {
+      "new": 231,
+      "new2": 8
+    },
+    "input_distinct_prompt_ids": {
+      "new": 231,
+      "new2": 8
+    },
+    "selected_prompt_groups": {
+      "new": 0,
+      "new2": 0
+    }
+  },
+  "status": "BLOCKED_INSUFFICIENT_FRESH_COMPLETE_PROMPT_GROUPS",
+  "trained_or_scored": false
+}

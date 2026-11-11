@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-11",
+  "source_freeze_commit": "ce260d3e08f4f7318bd7fed66233b0ade3e2a68c",
+  "runner_sha256": "f59aa0507717c895cc9d94a8d51de82d91a445c85d98255d0f80902a4a363121",
+  "kaggle": {
+    "account": "watchman777",
+    "private": true,
+    "execution_kind": "Save & Run All",
+    "notebook_version": 1,
+    "script_version_id": 368354781,
+    "logs_url": "https://www.kaggle.com/code/watchman777/notebook4268adde48/log?scriptVersionId=368354781",
+    "status": "SUCCEEDED",
+    "elapsed_seconds": 36.1,
+    "accelerator": "none",
+    "internet_enabled": false,
+    "competition": "name-that-llm",
+    "external_dataset_version": 12,
+    "draft_cell_copyback_exact": true,
+    "identical_repeated_report_lines": 2
+  },
+  "admission_status": "BLOCKED_INSUFFICIENT_FRESH_COMPLETE_PROMPT_GROUPS",
+  "official_submission_created": false,
+  "final_selection_changed": false,
+  "training_or_scoring_performed": false
+}
