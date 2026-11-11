@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-11",
+  "status": "PROSPECTIVE_SOURCE_FREEZE_BEFORE_REAL_FIT",
+  "input_version_ids": [
+    368292220,
+    358745836
+  ],
+  "files": {
+    "scripts/stage13c_deberta_complement.py": {
+      "sha256": "b9b6f523b8a6b1f9f1dae556c863f7fee34f56fddfb27adb0946021e1f17181e",
+      "bytes": 16844
+    },
+    "scripts/build_stage13c_notebook.py": {
+      "sha256": "af125b56668ee631f550603ee558c401ba78cbb7df460cc2712e1381036edd23",
+      "bytes": 9006
+    },
+    "notebooks/Stage_13C_DeBERTa_Complement.ipynb": {
+      "sha256": "d5bff8dc67fb0444ad261892e4601629990d48168359be51c13864d8b0930bc7",
+      "bytes": 41307
+    },
+    "tests/test_stage13c_deberta_complement.py": {
+      "sha256": "f747c603b25313adbc8cd773bf12e6351e98ff467bb7ea0c350df4e080464ec6",
+      "bytes": 5288
+    },
+    "plans/STAGE_13C_DEBERTA_COMPLEMENT.md": {
+      "sha256": "7403c12f39c97074f769955200d49ced78245dedee745a2563d841e6e423c980",
+      "bytes": 5943
+    },
+    "scripts/stage13b_balancing_stress.py": {
+      "sha256": "f4981f385074f60ee034b979d4aa6672c7d28eaa408c374d5caf55a7c446fbd9",
+      "bytes": 14604
+    }
+  },
+  "kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 368292220
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 358745836
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "code_cell_sha256": [
+    "ad2e404ce1822fc5b869f6a03231fcc8ca0aebcf5ce45e972f7364d9c419bbfa",
+    "ef056ee7c7ed908100526bb6feecd6a6d51b520cc69bb6c1d01ac0a746f6dd4a",
+    "6d6111492bfea2d20df240a679b237603f9c82351a732c85fe028c8039ae81e2"
+  ],
+  "synthetic_runner_checks_passed": 5,
+  "synthetic_notebook_readback_rejections_passed": 17,
+  "independent_review": "PASS_AFTER_PROTOCOL_DTYPE_ALIGNMENT",
+  "real_fit_started": false,
+  "official_submission_started": false
+}
