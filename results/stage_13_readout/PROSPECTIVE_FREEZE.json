@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-11",
+  "status": "PROSPECTIVE_SOURCE_FREEZE_BEFORE_REAL_FIT",
+  "scope": "glm_only_prompt_heldout_development",
+  "prior_audit_version": 364509756,
+  "input_versions": [
+    170484,
+    359405443
+  ],
+  "kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceType": "competition",
+        "sourceId": 170484
+      },
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 359405443
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "files": {
+    "scripts/stage13a_cache_admission.py": {
+      "sha256": "4b30488d126bc6213d8e1d128d50d7f0641b33e90b13192af55abe413ae49629",
+      "bytes": 13935
+    },
+    "scripts/stage13_glm_readout.py": {
+      "sha256": "a4fe8b337162fbbbf409e3bb8bc0fcfb84711bfbef52bb61bdc5ca69b8329596",
+      "bytes": 13463
+    },
+    "scripts/build_stage13_readout_notebook.py": {
+      "sha256": "b0a3da6fb499fbb7e95f475ee14b63dd1c02a8000542af273fd0aa7f58919331",
+      "bytes": 8424
+    },
+    "notebooks/Stage_13_GLM_Readout.ipynb": {
+      "sha256": "4e4b85cf74caca1a75bb126efc4568f169a48590961dd3d82e97b9db48c2bc03",
+      "bytes": 36302
+    },
+    "tests/test_stage13_glm_readout.py": {
+      "sha256": "4aced0328dc6752636e04c13cd0127bfb525cdc7f5a041be6403fb9d35936805",
+      "bytes": 3664
+    },
+    "plans/STAGE_13_GLM_READOUT.md": {
+      "sha256": "151cc32b96d382562a5fb3d88d9c8daea7cd48767d16773aa4d581c1bbb98425",
+      "bytes": 6609
+    }
+  },
+  "notebook_code_sha256": [
+    "684976843a963367b0ab7d8ffe56a0b438223f4cd1147010f5e0352f7ccaf385",
+    "35dddc8b62deb37b8c6220090a15fa0f279b8fe8472a9192ba40e97bba095937",
+    "657c02f675f5f83491a2137766bbd5b4a701e7e6d039dacde73e510e616f4331"
+  ],
+  "synthetic_runner_tests_passed": 4,
+  "synthetic_notebook_readback_rejections_passed": 7,
+  "independent_static_boundary_review": "PASS_NO_BLOCKER",
+  "real_fit_launched": false,
+  "official_submission_launched": false,
+  "public_contents": "source and aggregate evidence only"
+}
