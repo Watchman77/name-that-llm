@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-11",
+  "status": "PASS_VISIBLE_AGGREGATE_RECONCILIATION_ONLY",
+  "script_version_id": 368298172,
+  "scenarios": {
+    "natural_full": {
+      "rows": 2699,
+      "off_ba": 0.4589634601043997,
+      "uniform_ba": 0.4608252547849863,
+      "delta_pp": -0.18617946805866148,
+      "off_correct": 1239,
+      "uniform_correct": 1244,
+      "worst_class": "claude-opus-4-6",
+      "worst_class_delta_pp": -6.000000000000005,
+      "corrected_by_off": 82,
+      "broken_by_off": 87,
+      "changed_by_off": 304
+    },
+    "matched_balanced": {
+      "rows": 1800,
+      "off_ba": 0.4583333333333333,
+      "uniform_ba": 0.4600000000000001,
+      "delta_pp": -0.16666666666667607,
+      "off_correct": 825,
+      "uniform_correct": 828,
+      "worst_class": "claude-opus-4-6",
+      "worst_class_delta_pp": -6.999999999999995,
+      "corrected_by_off": 64,
+      "broken_by_off": 67,
+      "changed_by_off": 224
+    },
+    "skew_a": {
+      "rows": 1800,
+      "off_ba": 0.45077556188667284,
+      "uniform_ba": 0.4505856283634062,
+      "delta_pp": 0.01899335232666277,
+      "off_correct": 838,
+      "uniform_correct": 830,
+      "worst_class": "gemini-3.1-pro-preview",
+      "worst_class_delta_pp": -7.692307692307687,
+      "corrected_by_off": 65,
+      "broken_by_off": 57,
+      "changed_by_off": 239
+    },
+    "skew_b": {
+      "rows": 1800,
+      "off_ba": 0.46277302943969606,
+      "uniform_ba": 0.4692940804051915,
+      "delta_pp": -0.6521050965495434,
+      "off_correct": 809,
+      "uniform_correct": 799,
+      "worst_class": "gpt-6-astra",
+      "worst_class_delta_pp": -10.769230769230775,
+      "corrected_by_off": 72,
+      "broken_by_off": 62,
+      "changed_by_off": 234
+    }
+  },
+  "limits": "Recomputed count-derived scores and pairing from aggregates; prompt bootstrap and cached rows not independently exported or replayed.",
+  "independent_exact_delta_pp": {
+    "natural_full": "-749/4023",
+    "matched_balanced": "-1/6",
+    "skew_a": "20/1053",
+    "skew_b": "-2060/3159"
+  }
+}

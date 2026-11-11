@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-11",
+  "status": "SUCCEEDED_PROXY_SCREEN_OFF_REJECTED",
+  "script_version_id": 368298172,
+  "notebook_version": 2,
+  "notebook_url": "https://www.kaggle.com/code/watchman777/notebook8382801096?scriptVersionId=368298172",
+  "logs_url": "https://www.kaggle.com/code/watchman777/notebook8382801096/log?scriptVersionId=368298172",
+  "displayed_runtime_seconds": "23.7",
+  "runner_seconds": 1.019503,
+  "source_freeze_commit": "c4c14b2fe623a40d651347291c47aa144b7b25b2",
+  "actual_accelerator": "None",
+  "actual_environment": "Latest Container Image",
+  "private_visibility_verified": true,
+  "source_only_version": 1,
+  "source_only_settings_verified": true,
+  "saved_v2_code_exact": true,
+  "saved_v2_kaggle_metadata": {
+    "accelerator": "none",
+    "dataSources": [
+      {
+        "sourceType": "kernelVersion",
+        "sourceId": 368292220
+      }
+    ],
+    "isInternetEnabled": false,
+    "language": "python",
+    "sourceType": "notebook",
+    "isGpuEnabled": false
+  },
+  "real_save_and_run_all_count": 1,
+  "input_version_id": 368292220,
+  "input_cache_sha256": "565df6f8e652a9850ff11cf4e8b6a81fcccbc7db593186ff7f53358e7190bd16",
+  "actual_report": "ACTUAL_V2_REPORT.json",
+  "actual_report_provenance": "Parsed aggregate JSON from visible actual Kaggle logs; duplicate copies identical, no downloaded-file byte claim.",
+  "saved_report_readback_marker": "14.8s\t15\tSTAGE13B_SAVED_REPORT_READBACK_PASS {\"passes_proxy_screen\": false, \"scenario_delta_pp\": {\"matched_balanced\": -0.16666666666667607, \"natural_full\": -0.18617946805868368, \"skew_a\": 0.018993352326684976, \"skew_b\": -0.6521050965495379}}",
+  "passes_proxy_screen": false,
+  "fit_performed": false,
+  "official_submission_started": false,
+  "final_selection_changed": false,
+  "official_best": {
+    "submission": "S07",
+    "public_balanced_accuracy": "0.651",
+    "last_verified": "2026-11-10"
+  }
+}

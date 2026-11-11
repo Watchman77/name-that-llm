@@ -12,6 +12,8 @@ The competitive goal is **first place in the final private evaluation**. At the 
 
 **Stage 13 GLM readout complete (11 November 2026).** Private CPU V3 **368292220** succeeded in **152.2 seconds**. All five whole-prompt folds and saved-cache readback passed, yielding **45.896346% development balanced accuracy** for the single plain GLM classifier. This is an exploratory benchmark, separate from S07's **65.1% official public score**. No balancing or new official submission. [Run report](results/stage_13_readout/REPORT.md).
 
+**Stage 13B balancing screen complete (11 November 2026).** Private CPU V2 **368298172** succeeded in **23.7 seconds**. Turning uniform balancing off failed the fixed GLM proxy screen: **−0.186 pp** on original folds, **−0.167 pp** on a matched balanced subset, **+0.019 pp** and **−0.652 pp** in opposite class-skew scenarios. All four conditional intervals include zero. Retain the existing balancing setting. No training or official submission; S07 stays at **65.1%**. [Run report](results/stage_13b/REPORT.md).
+
 ## Historical development checkpoints
 
 The following S02/Stage06 observations are retained as historical evidence; current status is above.
