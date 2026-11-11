@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-11",
+  "source_freeze_commit": "8766a6704f49515f91a7806f16f643366b804a5e",
+  "kaggle": {
+    "account": "watchman777",
+    "visibility": "private",
+    "notebook_url": "https://www.kaggle.com/code/watchman777/notebook0770477e92?scriptVersionId=368344717",
+    "logs_url": "https://www.kaggle.com/code/watchman777/notebook0770477e92/log?scriptVersionId=368344717",
+    "version": 2,
+    "script_version_id": 368344717,
+    "version_name": "Stage 13D broader complement CPU",
+    "source_only_version": 1,
+    "source_only_settings_and_code_match": true,
+    "run_settings_and_code_match": true,
+    "run_kind": "Save & Run All",
+    "status": "SUCCEEDED",
+    "elapsed_seconds": 149.1,
+    "status_display": "Successfully ran in 149.1s",
+    "saved_settings": {
+      "accelerator": "none",
+      "dataSources": [
+        {
+          "sourceType": "competition",
+          "sourceId": 170484
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 368292220
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 358745836
+        }
+      ],
+      "isInternetEnabled": false,
+      "language": "python",
+      "sourceType": "notebook",
+      "isGpuEnabled": false
+    }
+  },
+  "log_evidence": {
+    "stage13c_exact_replay_passed": true,
+    "character_folds_completed": 5,
+    "duplicate_report_logs_identical": true,
+    "saved_report_readback_pass": {
+      "broader_conditional_ci95_pp": [
+        -0.6681684235255665,
+        0.44420208799403427
+      ],
+      "broader_control_admitted": false,
+      "broader_control_ba": 0.4597141436738752,
+      "broader_delta_pp": -0.1111111111111111,
+      "candidate_ba": 0.49120805369127524,
+      "conditional_delta_ci95_pp": [
+        2.074074074074074,
+        4.2592592592592595
+      ],
+      "delta_pp": 3.149391001739995,
+      "glm_control_ba": 0.4608252547849864,
+      "passes_proxy_screen": false
+    }
+  },
+  "official_submission_created": false,
+  "final_selection_changed": false
+}

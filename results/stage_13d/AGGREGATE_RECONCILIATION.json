@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "kaggle_script_version_id": 368344717,
+  "method": "Recompute pooled balanced accuracy and exact deltas from aggregate confusion counts; cross-check paired summary, shared comparator, and predeclared gates. Bootstrap endpoints read from the saved result; no row-level bootstrap replay.",
+  "shared_broader_confusion_identical": true,
+  "broader_vs_glm": {
+    "control_ba": 0.4608252547849863,
+    "treatment_ba": 0.4597141436738752,
+    "delta_pp": -0.1111111111111111,
+    "delta_pp_exact": "-1/9",
+    "conditional_ci95_pp": [
+      -0.6681684235255665,
+      0.44420208799403427
+    ],
+    "correct": [
+      1244,
+      1241
+    ],
+    "corrected": 33,
+    "broken": 36,
+    "changed": 125,
+    "smallest_class_delta_pp": -2.6666666666666665,
+    "smallest_class": "gpt-5.6-sol",
+    "rules": {
+      "gain_at_least_half_pp": false,
+      "ci_lower_positive": false,
+      "class_loss_within_five_pp": true
+    }
+  },
+  "candidate_vs_broader": {
+    "control_ba": 0.4597141436738752,
+    "treatment_ba": 0.4912080536912752,
+    "delta_pp": 3.149391001739995,
+    "delta_pp_exact": "12670/4023",
+    "conditional_ci95_pp": [
+      2.074074074074074,
+      4.2592592592592595
+    ],
+    "correct": [
+      1241,
+      1326
+    ],
+    "corrected": 155,
+    "broken": 70,
+    "changed": 386,
+    "smallest_class_delta_pp": 0.6666666666666666,
+    "smallest_class": "gemini-3.6-flash",
+    "rules": {
+      "gain_at_least_half_pp": true,
+      "ci_lower_positive": true,
+      "class_loss_within_five_pp": true
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "broader_delta_pp": 0,
+      "candidate_delta_pp": 3.703703703703698
+    },
+    {
+      "fold": 2,
+      "broader_delta_pp": -0.5555555555555536,
+      "candidate_delta_pp": 1.6666666666666607
+    },
+    {
+      "fold": 3,
+      "broader_delta_pp": -1.1102230246251565e-14,
+      "candidate_delta_pp": 3.1481481481481612
+    },
+    {
+      "fold": 4,
+      "broader_delta_pp": 0.18518518518518268,
+      "candidate_delta_pp": 3.3333333333333437
+    },
+    {
+      "fold": 5,
+      "broader_delta_pp": -0.18518518518517157,
+      "candidate_delta_pp": 3.888888888888875
+    }
+  ],
+  "broader_control_admitted": false,
+  "marginal_gate_pass": true,
+  "overall_gate_pass": false
+}

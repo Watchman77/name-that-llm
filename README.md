@@ -14,6 +14,8 @@ The competitive goal is **first place in the final private evaluation**. At the 
 
 **Stage 13B balancing screen complete (11 November 2026).** Private CPU V2 **368298172** succeeded in **23.7 seconds**. Turning uniform balancing off failed the fixed GLM proxy screen: **−0.186 pp** on original folds, **−0.167 pp** on a matched balanced subset, **+0.019 pp** and **−0.652 pp** in opposite class-skew scenarios. All four conditional intervals include zero. Retain the existing balancing setting. No training or official submission; S07 stays at **65.1%**. [Run report](results/stage_13b/REPORT.md).
 
+**Stage 13D broader complement completed (11 November 2026).** Private CPU V2 **368344717** succeeded in **149.1 seconds**. Character TF-IDF reduced GLM development balanced accuracy from **46.083% to 45.971%**; the broader control failed admission. DeBERTa improved that blend to **49.121%** (**+3.149 pp**, conditional 95% interval **[+2.074, +4.259] pp**), but the overall screen failed. S07 remains **65.1%** official. [Result](results/stage_13d/REPORT.md) · [Kaggle](https://www.kaggle.com/code/watchman777/notebook0770477e92?scriptVersionId=368344717)
+
 **Stage 13C DeBERTa complement passed (11 November 2026).** Private CPU V2 **368302297** succeeded in **52.4 seconds**. The fixed 75% GLM / 25% pretrained DeBERTa blend raised development balanced accuracy from **46.083% to 47.565%** (**+1.482 pp**, conditional 95% interval **[+0.595, +2.444] pp**), with improvements in all five folds and all fixed gates passed. This is a reduced development proxy; S07's verified official score stays **65.1%**. [Run report](results/stage_13c/REPORT.md).
 
 ## Historical development checkpoints
