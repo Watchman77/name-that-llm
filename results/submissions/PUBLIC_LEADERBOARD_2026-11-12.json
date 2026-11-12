@@ -1,0 +1,36 @@
+{
+  "competition": "name-that-llm",
+  "date": "2026-11-12",
+  "url": "https://www.kaggle.com/competitions/name-that-llm/leaderboard",
+  "metric": "public balanced accuracy",
+  "top3": [
+    {
+      "rank": 1,
+      "team": "NguyenThanhNhan",
+      "score": "0.769"
+    },
+    {
+      "rank": 2,
+      "team": "James Liebel",
+      "score": "0.765"
+    },
+    {
+      "rank": 3,
+      "team": "You’re Absolutely Right!",
+      "score": "0.756"
+    }
+  ],
+  "tenth": {
+    "rank": 10,
+    "team": "Lian Matsuo",
+    "score": "0.747"
+  },
+  "ours": {
+    "rank": 2117,
+    "team": "Watchman 777",
+    "score": "0.651",
+    "entries": 7
+  },
+  "approximate_public_test_share": 0.4,
+  "approximate_final_test_share": 0.6
+}

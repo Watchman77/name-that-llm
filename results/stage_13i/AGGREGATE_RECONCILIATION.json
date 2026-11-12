@@ -1,0 +1,102 @@
+{
+  "status": "COMPLETE_STAGE13I_GEMINI_SPECIALIST",
+  "decision": "KEEP_FROZEN_CONTROL_PAIRED_GATE_FAILED",
+  "rows": 2699,
+  "eligible": 223,
+  "eligibleCorrect": [
+    128,
+    112
+  ],
+  "withinFamilyErrors": [
+    91,
+    107
+  ],
+  "pooledCorrect": [
+    1659,
+    1643
+  ],
+  "baseline": 0.6146184439473029,
+  "candidate": 0.6086925180213769,
+  "delta": -0.5925925925925926,
+  "exact": "-16/27",
+  "ci": [
+    -1.037037037037037,
+    -0.14814814814814814
+  ],
+  "corrected": 14,
+  "broken": 30,
+  "changed": 64,
+  "worst": {
+    "label": "gemini-3.6-flash",
+    "pp": -6.666666666666667
+  },
+  "classChanges": [
+    [
+      "gemini-3.1-pro-preview",
+      -4
+    ],
+    [
+      "gemini-3.6-flash",
+      -6.666666666666667
+    ],
+    [
+      "gemini-3.7-flash",
+      -0.6666666666666666
+    ],
+    [
+      "gemini-3.8-flash",
+      0.6666666666666666
+    ]
+  ],
+  "pairGemini37To38": [
+    18,
+    18
+  ],
+  "pairGemini38To37": [
+    8,
+    15
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "eligible": 56,
+      "delta": -0.5555555555555536,
+      "corrected": 6,
+      "broken": 9
+    },
+    {
+      "fold": 2,
+      "eligible": 30,
+      "delta": -1.1102230246251565e-14,
+      "corrected": 1,
+      "broken": 1
+    },
+    {
+      "fold": 3,
+      "eligible": 35,
+      "delta": -0.92592592592593,
+      "corrected": 1,
+      "broken": 6
+    },
+    {
+      "fold": 4,
+      "eligible": 46,
+      "delta": -0.9259259259259189,
+      "corrected": 3,
+      "broken": 8
+    },
+    {
+      "fold": 5,
+      "eligible": 56,
+      "delta": -0.5555555555555536,
+      "corrected": 3,
+      "broken": 6
+    }
+  ],
+  "gates": {
+    "gain_at_least_half_pp": false,
+    "ci_lower_positive": false,
+    "no_class_loss_over_five_pp": false
+  },
+  "runner_seconds": 37.083182
+}

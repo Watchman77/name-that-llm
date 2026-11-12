@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "source_freeze_commit": "b28a0dd0f6e0ca990a3eba3e3f35e0f0ac5dd5a1",
+  "runner_sha256": "d23c37bb3b35dd36c7de61490aa398f3a0303c655b34c714dd2b707f35e76f54",
+  "kaggle": {
+    "account": "watchman777",
+    "private": true,
+    "execution_kind": "Save & Run All",
+    "notebook_version": 1,
+    "script_version_id": 368935266,
+    "logs_url": "https://www.kaggle.com/code/watchman777/notebook87183f1de7/log?scriptVersionId=368935266",
+    "status": "SUCCEEDED",
+    "elapsed_seconds": 59.6,
+    "accelerator": "none",
+    "internet_enabled": false,
+    "saved_metadata": {
+      "accelerator": "none",
+      "dataSources": [
+        {
+          "sourceType": "competition",
+          "sourceId": 170484
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 358745836
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 368292220
+        }
+      ],
+      "isInternetEnabled": false,
+      "language": "python",
+      "sourceType": "notebook",
+      "isGpuEnabled": false
+    },
+    "run_code_and_settings_match": true,
+    "identical_repeated_report_lines": 2
+  },
+  "specialist_status": "COMPLETE_STAGE13I_GEMINI_SPECIALIST",
+  "official_submission_created": false,
+  "final_selection_changed": false,
+  "official_score_estimated": false
+}
