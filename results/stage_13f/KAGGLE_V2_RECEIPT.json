@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "source_freeze_commit": "621361eb044ae3f2fdb2c29fbb7c81f2b56d6d4d",
+  "runner_sha256": "be418f7603ec61a1920061bd063494eb17d609ad5c64495b3c404672adf0f720",
+  "kaggle": {
+    "account": "watchman777",
+    "private": true,
+    "execution_kind": "Save & Run All",
+    "notebook_version": 2,
+    "source_only_version": 1,
+    "script_version_id": 368776259,
+    "logs_url": "https://www.kaggle.com/code/watchman777/fork-of-notebook0770477e92/log?scriptVersionId=368776259",
+    "status": "SUCCEEDED",
+    "elapsed_seconds": 61.8,
+    "accelerator": "none",
+    "internet_enabled": false,
+    "saved_metadata": {
+      "accelerator": "none",
+      "dataSources": [
+        {
+          "sourceType": "competition",
+          "sourceId": 170484
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 358745836
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 368292220
+        }
+      ],
+      "isInternetEnabled": false,
+      "language": "python",
+      "sourceType": "notebook",
+      "isGpuEnabled": false
+    },
+    "source_only_code_and_settings_match": true,
+    "run_code_and_settings_match": true,
+    "identical_repeated_report_lines": 2
+  },
+  "proxy_status": "COMPLETE_PAIRED_ASSIGNMENT_PROXY",
+  "official_submission_created": false,
+  "final_selection_changed": false,
+  "official_score_estimated": false
+}

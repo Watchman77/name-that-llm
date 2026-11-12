@@ -1,0 +1,69 @@
+{
+  "status": "COMPLETE_PAIRED_ASSIGNMENT_PROXY",
+  "rows": 2699,
+  "eligibleRows": 1889,
+  "eligibleClusters": 112,
+  "coverage": 0.6998888477213783,
+  "allPure": true,
+  "off": 0.47565001242853594,
+  "on": 0.6146184439473029,
+  "delta": 13.896843151876709,
+  "exact": "55907/4023",
+  "ci": [
+    11.718218218218219,
+    16.12265990823038
+  ],
+  "corrected": 502,
+  "broken": 127,
+  "changed": 900,
+  "correctCounts": [
+    1284,
+    1659
+  ],
+  "worst": {
+    "label": "glm-5.3",
+    "pp": 4.666666666666667
+  },
+  "best": {
+    "label": "gpt-5.5",
+    "pp": 25.333333333333332
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "rows": 540,
+      "eligible": 356,
+      "delta": 8.333333333333325
+    },
+    {
+      "fold": 2,
+      "rows": 540,
+      "eligible": 449,
+      "delta": 15.185185185185185
+    },
+    {
+      "fold": 3,
+      "rows": 540,
+      "eligible": 424,
+      "delta": 20.000000000000007
+    },
+    {
+      "fold": 4,
+      "rows": 540,
+      "eligible": 330,
+      "delta": 12.592592592592588
+    },
+    {
+      "fold": 5,
+      "rows": 539,
+      "eligible": 330,
+      "delta": 13.3780332056194
+    }
+  ],
+  "gates": {
+    "gain_at_least_half_pp": true,
+    "ci_lower_positive": true,
+    "no_class_loss_over_five_pp": true
+  },
+  "runner_seconds": 34.379591
+}
