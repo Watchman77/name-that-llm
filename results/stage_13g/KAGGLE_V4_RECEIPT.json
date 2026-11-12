@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "source_freeze_commit": "095201965b0b3a7efd98cfa20f5af97bd9db659d",
+  "runner_sha256": "369e05debbd7084495ebd0925c1c89d4ec0381a419e69db149ceeb19dcf77c63",
+  "kaggle": {
+    "account": "watchman777",
+    "private": true,
+    "execution_kind": "Save & Run All",
+    "notebook_version": 4,
+    "source_only_offline_version": 3,
+    "script_version_id": 368807303,
+    "logs_url": "https://www.kaggle.com/code/watchman777/notebook219dd00182/log?scriptVersionId=368807303",
+    "status": "SUCCEEDED",
+    "elapsed_seconds": 63.6,
+    "accelerator": "none",
+    "internet_enabled": false,
+    "saved_metadata": {
+      "accelerator": "none",
+      "dataSources": [
+        {
+          "sourceType": "competition",
+          "sourceId": 170484
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 358745836
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 368292220
+        }
+      ],
+      "isInternetEnabled": false,
+      "language": "python",
+      "sourceType": "notebook",
+      "isGpuEnabled": false
+    },
+    "source_only_code_and_settings_match": true,
+    "run_code_and_settings_match": true,
+    "identical_repeated_report_lines": 2
+  },
+  "excluded_versions": [
+    {
+      "version": 1,
+      "kind": "Save & Run All",
+      "reason": "saved Internet flag enabled despite editor's pre-run off display",
+      "used_for_decision": false
+    },
+    {
+      "version": 2,
+      "kind": "Quick Version",
+      "reason": "saved Internet flag still enabled",
+      "used_for_decision": false
+    }
+  ],
+  "proxy_status": "COMPLETE_SMALL_GROUP_PAIRED_PROXY",
+  "official_submission_created": false,
+  "final_selection_changed": false,
+  "official_score_estimated": false
+}

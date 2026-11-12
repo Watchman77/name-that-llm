@@ -1,0 +1,77 @@
+{
+  "status": "COMPLETE_SMALL_GROUP_PAIRED_PROXY",
+  "rows": 2699,
+  "eligibleRows": 82,
+  "eligibleClusters": 8,
+  "previouslyUntouched": 810,
+  "allPure": true,
+  "oldCorrect": 1659,
+  "newCorrect": 1667,
+  "baseline": 0.6146184439473029,
+  "candidate": 0.6175789212030822,
+  "delta": 0.2960477255779269,
+  "exact": "397/1341",
+  "ci": [
+    -0.07556549838429029,
+    0.8153119562515534
+  ],
+  "corrected": 16,
+  "broken": 8,
+  "changed": 39,
+  "worst": {
+    "label": "claude-fable-5",
+    "pp": -0.6711409395973155
+  },
+  "best": {
+    "label": "gpt-5.6-sol",
+    "pp": 1.3333333333333333
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "rows": 540,
+      "extension": 20,
+      "delta": -0.37037037037035425,
+      "corrected": 1,
+      "broken": 3
+    },
+    {
+      "fold": 2,
+      "rows": 540,
+      "extension": 10,
+      "delta": 0.37037037037036535,
+      "corrected": 3,
+      "broken": 1
+    },
+    {
+      "fold": 3,
+      "rows": 540,
+      "extension": 0,
+      "delta": 0,
+      "corrected": 0,
+      "broken": 0
+    },
+    {
+      "fold": 4,
+      "rows": 540,
+      "extension": 42,
+      "delta": 0.7407407407407418,
+      "corrected": 8,
+      "broken": 4
+    },
+    {
+      "fold": 5,
+      "rows": 539,
+      "extension": 10,
+      "delta": 0.7407407407407529,
+      "corrected": 4,
+      "broken": 0
+    }
+  ],
+  "gates": {
+    "gain_at_least_half_pp": false,
+    "ci_lower_positive": false,
+    "no_class_loss_over_five_pp": true
+  },
+  "runner_seconds": 35.445075
+}
