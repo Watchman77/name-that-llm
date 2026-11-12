@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "source_freeze_commit": "b6e42fb616bad079ccddbff898f0931ddd160b73",
+  "runner_sha256": "577a991478da210c5100fbad892168e5580c203a1fd9edb617dce0296d199c9e",
+  "kaggle": {
+    "account": "watchman777",
+    "private": true,
+    "execution_kind": "Save & Run All",
+    "notebook_version": 1,
+    "script_version_id": 368859699,
+    "logs_url": "https://www.kaggle.com/code/watchman777/notebook40a2743b57/log?scriptVersionId=368859699",
+    "status": "SUCCEEDED",
+    "elapsed_seconds": 45.7,
+    "accelerator": "none",
+    "internet_enabled": false,
+    "saved_metadata": {
+      "accelerator": "none",
+      "dataSources": [
+        {
+          "sourceType": "competition",
+          "sourceId": 170484
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 358745836
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 368292220
+        }
+      ],
+      "isInternetEnabled": false,
+      "language": "python",
+      "sourceType": "notebook",
+      "isGpuEnabled": false
+    },
+    "run_code_and_settings_match": true,
+    "identical_repeated_report_lines": 2
+  },
+  "diagnostic_status": "COMPLETE_STAGE13H_RESIDUAL_DIAGNOSTIC",
+  "new_variant_scored": false,
+  "official_submission_created": false,
+  "final_selection_changed": false,
+  "official_score_estimated": false
+}

@@ -1,0 +1,123 @@
+{
+  "status": "COMPLETE_STAGE13H_RESIDUAL_DIAGNOSTIC",
+  "baselineBA": 0.6146184439473029,
+  "baselineCorrect": 1659,
+  "assigned": {
+    "rows": 1889,
+    "pre": 899,
+    "post": 1274,
+    "errors": 615,
+    "ba": 0.6767691397349592
+  },
+  "unassigned": {
+    "rows": 810,
+    "correct": 385,
+    "errors": 425,
+    "ba": 0.46738270485469147,
+    "rank2": 183,
+    "rank3": 103,
+    "below3": 139,
+    "withinGeminiErrors": 91,
+    "margin": [
+      {
+        "correct": 14,
+        "errors": 64,
+        "errors_with_true_top2": 31,
+        "errors_with_true_top3": 50,
+        "lower_inclusive": 0,
+        "rows": 78,
+        "upper_exclusive": 0.1
+      },
+      {
+        "correct": 27,
+        "errors": 71,
+        "errors_with_true_top2": 32,
+        "errors_with_true_top3": 48,
+        "lower_inclusive": 0.1,
+        "rows": 98,
+        "upper_exclusive": 0.25
+      },
+      {
+        "correct": 39,
+        "errors": 85,
+        "errors_with_true_top2": 41,
+        "errors_with_true_top3": 61,
+        "lower_inclusive": 0.25,
+        "rows": 124,
+        "upper_exclusive": 0.5
+      },
+      {
+        "correct": 99,
+        "errors": 112,
+        "errors_with_true_top2": 41,
+        "errors_with_true_top3": 71,
+        "lower_inclusive": 0.5,
+        "rows": 211,
+        "upper_exclusive": 1
+      },
+      {
+        "correct": 122,
+        "errors": 79,
+        "errors_with_true_top2": 33,
+        "errors_with_true_top3": 48,
+        "lower_inclusive": 1,
+        "rows": 201,
+        "upper_exclusive": 2
+      },
+      {
+        "correct": 84,
+        "errors": 14,
+        "errors_with_true_top2": 5,
+        "errors_with_true_top3": 8,
+        "lower_inclusive": 2,
+        "rows": 98,
+        "upper_exclusive": null
+      }
+    ]
+  },
+  "topDirected": [
+    {
+      "actual": "gemini-3.7-flash",
+      "predicted": "gemini-3.8-flash",
+      "errors": 18,
+      "support": 56,
+      "folds": 5
+    },
+    {
+      "actual": "gemini-3.7-flash",
+      "predicted": "gemini-3.6-flash",
+      "errors": 12,
+      "support": 56,
+      "folds": 5
+    },
+    {
+      "actual": "gemini-3.6-flash",
+      "predicted": "gemini-3.1-pro-preview",
+      "errors": 11,
+      "support": 57,
+      "folds": 5
+    },
+    {
+      "actual": "gemini-3.8-flash",
+      "predicted": "gemini-3.6-flash",
+      "errors": 11,
+      "support": 57,
+      "folds": 4
+    },
+    {
+      "actual": "claude-fable-5",
+      "predicted": "glm-5.3-flash",
+      "errors": 9,
+      "support": 41,
+      "folds": 3
+    },
+    {
+      "actual": "gemini-3.6-flash",
+      "predicted": "gemini-3.7-flash",
+      "errors": 8,
+      "support": 57,
+      "folds": 4
+    }
+  ],
+  "runner_seconds": 23.379482
+}
