@@ -21,7 +21,7 @@ from threadpoolctl import threadpool_limits
 import stage13a_cache_admission as glm_admission
 import stage13_glm_readout as glm_readout
 import stage13c_deberta_complement as deberta_readout
-from stage14_native_input_audit import stable_hash
+from stage14_native_input_audit import read_json, stable_hash
 from stage14_native_oof_audit import ID_SHA, ROWS, PROMPTS, FOLDS, split_axes
 
 
@@ -94,6 +94,9 @@ def read_train(path):
 
 def read_folds(assets, prompts, y):
     split_files = {}
+    # Stage 14A's receipt hashes the class manifest together with the five splits.
+    manifest = read_json(assets / "manifest.json", "manifest.json", split_files)
+    check(manifest.get("classes") == list(CLASSES), "stage14_q8_manifest_class_axis")
     folds, mapping, counts, official_axes, canonical = split_axes(assets, prompts, split_files)
     check(stable_hash(split_files) == SPLIT_FILES_SHA and stable_hash(mapping) == PROMPT_FOLD_SHA
           and official_axes == [True] * FOLDS and canonical is False, "stage14_q8_split_pin")
