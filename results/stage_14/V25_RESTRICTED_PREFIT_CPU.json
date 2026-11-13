@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-13",
+  "source_script_version_id": 368561683,
+  "private_input_version_id": 369157610,
+  "scope": "offline Kaggle CPU interactive",
+  "status": "STAGE14C_RESTRICTED_PREFIT_CPU_PASS",
+  "decoder_sha256": "ab10cb59a5d4cf170476732aca0fc887b5ee95aaaa5b5ecced45c0f431a1b548",
+  "cell_sha256": "469a422e05cd9d98b4acf0d53d025d1add305dee4e9e31047cbc94803b8bfe7e",
+  "ordinary_joblib_deserialization_performed": false,
+  "vectorizers": [
+    {
+      "analyzer": "char",
+      "features": 84347,
+      "idf_dtype": "float64",
+      "member": "distort/vectorizer-0.joblib",
+      "ngram_range": [
+        2,
+        6
+      ],
+      "serialized_callable_invoked": false,
+      "sha256": "141df312a79bbaf717af891394e0a7556c0d186a9272641c06c69ebd1c0f09d4",
+      "source_sklearn_version": "1.6.1",
+      "unpickling_performed": false
+    },
+    {
+      "analyzer": "word",
+      "features": 73037,
+      "idf_dtype": "float64",
+      "member": "distort/vectorizer-1.joblib",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "serialized_callable_invoked": false,
+      "sha256": "26723d9fa1d83084533d0b401e93c519812421dcfcaf0aab5c538c61aacf6f41",
+      "source_sklearn_version": "1.6.1",
+      "unpickling_performed": false
+    },
+    {
+      "analyzer": "char",
+      "features": 250000,
+      "idf_dtype": "float32",
+      "member": "svc4/vectorizer-0.joblib",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "serialized_callable_invoked": false,
+      "sha256": "81739e3bcf94930db252f151310301dc50e52b805602139fbeb84a3d87aa866e",
+      "source_sklearn_version": "1.6.1",
+      "unpickling_performed": false
+    },
+    {
+      "analyzer": "word",
+      "features": 180000,
+      "idf_dtype": "float32",
+      "member": "svc4/vectorizer-1.joblib",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "serialized_callable_invoked": false,
+      "sha256": "c930c731c24cf492eb0ea8ffe5b9cdbaba806f5a74da0afbb91d9ee2ad06ae57",
+      "source_sklearn_version": "1.6.1",
+      "unpickling_performed": false
+    },
+    {
+      "analyzer": "char",
+      "features": 60000,
+      "idf_dtype": "float32",
+      "member": "svc4/vectorizer-2.joblib",
+      "ngram_range": [
+        2,
+        6
+      ],
+      "serialized_callable_invoked": false,
+      "sha256": "3b0940a3e3679b7b4fe961ea7742bf68f21a0759c7a0c882c12f5feba60cde23",
+      "source_sklearn_version": "1.6.1",
+      "unpickling_performed": false
+    },
+    {
+      "analyzer": "word",
+      "features": 50000,
+      "idf_dtype": "float32",
+      "member": "svc4/vectorizer-3.joblib",
+      "ngram_range": [
+        1,
+        3
+      ],
+      "serialized_callable_invoked": false,
+      "sha256": "a322a5aa10e7383026d1f3f9393125cb7712a9404cf8d8597ab1c099fffc43aa",
+      "source_sklearn_version": "1.6.1",
+      "unpickling_performed": false
+    },
+    {
+      "analyzer": "char_wb",
+      "features": 60000,
+      "idf_dtype": "float64",
+      "member": "tfidf/vectorizer-0.joblib",
+      "ngram_range": [
+        2,
+        5
+      ],
+      "serialized_callable_invoked": false,
+      "sha256": "3f5a5325c9ebe8be92916e8dffb8dd98b2d3682c921769304db395b612b585e7",
+      "source_sklearn_version": "1.6.1",
+      "unpickling_performed": false
+    },
+    {
+      "analyzer": "word",
+      "features": 30000,
+      "idf_dtype": "float64",
+      "member": "tfidf/vectorizer-1.joblib",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "serialized_callable_invoked": false,
+      "sha256": "fc28806e37a28893cc3ed362096b4e29c587b5086f92419a4e5d06b1d3433405",
+      "source_sklearn_version": "1.6.1",
+      "unpickling_performed": false
+    }
+  ]
+}
