@@ -1,0 +1,181 @@
+{
+  "date": "2026-11-13",
+  "kaggle": {
+    "owner": "watchman777",
+    "notebook": "notebookb97e20c6ce",
+    "script_version_id": 369035674,
+    "successful_runtime_seconds": 38,
+    "accelerator": "CPU",
+    "internet_enabled": false,
+    "private": true,
+    "artifacts_version_selected": 22
+  },
+  "results": [
+    {
+      "base_model_shards_checked": false,
+      "class_order_sha256": "088b14188775e41a314f269da3af74f96144a56caa242ccbeacc9e3c817a7e08",
+      "classes": 18,
+      "depths": [
+        3,
+        6,
+        9,
+        12,
+        18,
+        24,
+        30,
+        36
+      ],
+      "external_tree_fingerprint_matched": false,
+      "folds": 5,
+      "model_or_gpu_execution_performed": false,
+      "official_score_measured": false,
+      "official_train_hash_matched": true,
+      "oof_predictions_admitted": false,
+      "schema_version": 1,
+      "source_notebook_blob_sha1": "26fa9032d4bfcfe69a95674f273baaa1eae62e38",
+      "status": "PASS_Q8_TASK_ASSET_INPUT_AUDIT_ONLY",
+      "task_asset_tree_sha256": "11edf4b782207937ad132828c5e18e22ae9d7191438e6932687fa084779e5228",
+      "task_assets": {
+        "base/config.json": {
+          "bytes": 729,
+          "sha256": "dcccf7c7890c8debc4af8dace8d6acd8dd50bd56d50d4d8b60529381ba3de3d7"
+        },
+        "base/merges.txt": {
+          "bytes": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        },
+        "base/model.safetensors.index.json": {
+          "bytes": 30432,
+          "sha256": "ceaf1429bfa18eecc75d079737e8d1fe8dc0627f5ec7e6a985514626d1ac6a77"
+        },
+        "base/tokenizer.json": {
+          "bytes": 11422947,
+          "sha256": "83cdf8c3a34f68862319cb1810ee7b1e2c0a44e0864ae930194ddb76bb7feb8d"
+        },
+        "base/tokenizer_config.json": {
+          "bytes": 7256,
+          "sha256": "2f58f4bbd7bbce15d683f525954ef3a92cd82f5e06415a9c513859bf8ab72436"
+        },
+        "base/vocab.json": {
+          "bytes": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        },
+        "calibration/fold0.json": {
+          "bytes": 6213,
+          "sha256": "6413e7e2e9d726a928fc04c412672515d5672c391bb1124bea893a82254d74a0"
+        },
+        "calibration/fold1.json": {
+          "bytes": 6298,
+          "sha256": "2a52de3b2c7ad39974d502ffc3b6105a02c773a5661f83f7ef2283669355e57a"
+        },
+        "calibration/fold2.json": {
+          "bytes": 6294,
+          "sha256": "67edd736b11eb7301bda549b79c71fa3bbac21c50a29c3da09a3e469babf989c"
+        },
+        "calibration/fold3.json": {
+          "bytes": 6301,
+          "sha256": "d047be51506197eef5fb8b1e1b4cdc37db34584b7ffa51dee81e4cdec9f30a13"
+        },
+        "calibration/fold4.json": {
+          "bytes": 6294,
+          "sha256": "6a6295d0a7e17b6e02d734f03b651c06f3eebf15c01a014d17a72f4e16a65e13"
+        },
+        "fold0/trainables.safetensors": {
+          "bytes": 179647656,
+          "f32_tensors": 524,
+          "sha256": "cf6c8061e67edc20a88d0b0f3021fc0354cbd713ed0adc40df8b7daf2915592c"
+        },
+        "fold1/trainables.safetensors": {
+          "bytes": 179647656,
+          "f32_tensors": 524,
+          "sha256": "ed8853f1e113d0b8dd1e991b2f2242a696b94e9d842fe65417dbf0a9802603ab"
+        },
+        "fold2/trainables.safetensors": {
+          "bytes": 179647656,
+          "f32_tensors": 524,
+          "sha256": "b2175fe6576a9d70d48ddd0c9c0a5b68eb5ce903a96937c08d59a0567ca2d455"
+        },
+        "fold3/trainables.safetensors": {
+          "bytes": 179647656,
+          "f32_tensors": 524,
+          "sha256": "4c69c0d2372d45b953e56eb7194a7f8e7ceb8d3feea5bc0f85b2dad1f501822b"
+        },
+        "fold4/trainables.safetensors": {
+          "bytes": 179647656,
+          "f32_tensors": 524,
+          "sha256": "fdb0ec60a1de09eef0e1840176ce290bfaafa0e71adaddd10c4a31f24d130016"
+        },
+        "manifest.json": {
+          "bytes": 5470,
+          "sha256": "051f8a1049366c806405324aba219102925e19cb339dd4822f6180cc32a93853"
+        }
+      },
+      "task_base_shard_index_checked": true,
+      "tensors_per_fold": 524,
+      "tokenizer_execution_parity_checked": false,
+      "training_prompt_exclusion_verified": false,
+      "tree_name": "ntl-native-q8-multidepth-fivefold-0679",
+      "upstream_script_version_id": 365653660
+    },
+    {
+      "centered_scores_interpreted": false,
+      "classes": 18,
+      "contract": {
+        "class_order_sha256": "088b14188775e41a314f269da3af74f96144a56caa242ccbeacc9e3c817a7e08",
+        "official_train_sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707",
+        "ordered_fold_files_sha256": "bf073280a69cf3d427b14e2c057dd5c7b5199051cdbdc8e3c49fcf0926cd4bad",
+        "ordered_official_id_sha256": "707edf645b0f09bba8f0983b5bc9f522595c95e8ca5b763b38babeb38200368d",
+        "prompt_fold_map_sha256": "449f2facc165d51d1898d1225eba8a30fa4a280d126722376a6704e6950d4b36",
+        "reference_sha256": "e76067d20c23f5661ee99098049304b63a718c51068977670eb461e1e245d872",
+        "task_tree_sha256": "11edf4b782207937ad132828c5e18e22ae9d7191438e6932687fa084779e5228"
+      },
+      "declared_official_train_rows_checked_by_fold": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "fold_counts": [
+        {
+          "validation_prompts": 30,
+          "validation_rows": 540
+        },
+        {
+          "validation_prompts": 30,
+          "validation_rows": 540
+        },
+        {
+          "validation_prompts": 30,
+          "validation_rows": 540
+        },
+        {
+          "validation_prompts": 30,
+          "validation_rows": 539
+        },
+        {
+          "validation_prompts": 30,
+          "validation_rows": 540
+        }
+      ],
+      "official_score_measured": false,
+      "prompts": 150,
+      "raw_plain_development_balanced_accuracy": null,
+      "raw_rows_or_predictions_exported": false,
+      "reference_embedded_axes": {
+        "classes": false,
+        "folds": false,
+        "ids": false
+      },
+      "reused_official_train_prompts": true,
+      "rows": 2699,
+      "schema_version": 1,
+      "stage13f_paired_comparison_performed": false,
+      "stage13f_prompt_partition_matches_up_to_fold_numbering": false,
+      "status": "Q8_REFERENCE_STRUCTURAL_PREFLIGHT_ONLY",
+      "training_exclusion_independently_reviewed_receipt_sha256": null,
+      "training_source_provenance": "unverified_external_official_selection_and_calibration_inputs",
+      "validation_prompt_partition_verified": true
+    }
+  ]
+}

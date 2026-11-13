@@ -1,0 +1,200 @@
+{
+  "date": "2026-11-13",
+  "kaggle": {
+    "owner": "watchman777",
+    "notebook": "notebookb97e20c6ce",
+    "script_version_id": 369038196,
+    "successful_runtime_seconds": 121.2,
+    "accelerator": "GPU T4 x2",
+    "internet_enabled": false,
+    "private": true,
+    "artifacts_version_selected": 22,
+    "qwen_model_version_selected": 1
+  },
+  "result": {
+    "accuracy_measured": false,
+    "backbone_parameter_bytes_per_device": {
+      "0": 7494320128,
+      "1": 7814858752
+    },
+    "base_shard_headers": {
+      "model-00001-of-00004.safetensors": {
+        "bytes": 4900037024,
+        "header_sha256": "0d74855f08f7ebab77bfa3128201d31a1b9d82b6ce877286c116defe296eb929",
+        "tensors": 107
+      },
+      "model-00002-of-00004.safetensors": {
+        "bytes": 4915959512,
+        "header_sha256": "870ec1430725526b5e1eabbe65cde3006d7ed3b507c3c20e4b1eeb9c53f7018f",
+        "tensors": 142
+      },
+      "model-00003-of-00004.safetensors": {
+        "bytes": 4983067656,
+        "header_sha256": "470ef904edea8b3c1e3fc8fdb44c44d605695b0dffd56bc700c698013a117d52",
+        "tensors": 140
+      },
+      "model-00004-of-00004.safetensors": {
+        "bytes": 335570376,
+        "header_sha256": "9c74dafe16e5b1a290366aeff25212c54adb1a8a8597c7c9f7b16eadd98c30a2",
+        "tensors": 9
+      }
+    },
+    "base_shard_payload_hashes_checked": false,
+    "batch_size": 4,
+    "class_order_sha256": "088b14188775e41a314f269da3af74f96144a56caa242ccbeacc9e3c817a7e08",
+    "classes": 18,
+    "dependency_versions": {
+      "accelerate": "1.15.0",
+      "numpy": "2.1.3",
+      "safetensors": "0.8.0",
+      "torch": "2.11.0+cu130",
+      "transformers": "5.20.2"
+    },
+    "device_names": [
+      "Tesla T4",
+      "Tesla T4"
+    ],
+    "device_total_bytes": [
+      15636037632,
+      15636037632
+    ],
+    "elapsed_seconds": 99.693,
+    "folds": [
+      {
+        "cuda": [
+          {
+            "allocated_peak_bytes": 8009140736,
+            "device": 0,
+            "reserved_peak_bytes": 8212447232
+          },
+          {
+            "allocated_peak_bytes": 8337516032,
+            "device": 1,
+            "reserved_peak_bytes": 8545894400
+          }
+        ],
+        "fold": 0,
+        "seconds_including_adapter_load": 8.63
+      },
+      {
+        "cuda": [
+          {
+            "allocated_peak_bytes": 8009140736,
+            "device": 0,
+            "reserved_peak_bytes": 8212447232
+          },
+          {
+            "allocated_peak_bytes": 8337516032,
+            "device": 1,
+            "reserved_peak_bytes": 8545894400
+          }
+        ],
+        "fold": 1,
+        "seconds_including_adapter_load": 6.165
+      },
+      {
+        "cuda": [
+          {
+            "allocated_peak_bytes": 8009140736,
+            "device": 0,
+            "reserved_peak_bytes": 8212447232
+          },
+          {
+            "allocated_peak_bytes": 8337516032,
+            "device": 1,
+            "reserved_peak_bytes": 8545894400
+          }
+        ],
+        "fold": 2,
+        "seconds_including_adapter_load": 6.186
+      },
+      {
+        "cuda": [
+          {
+            "allocated_peak_bytes": 8009140736,
+            "device": 0,
+            "reserved_peak_bytes": 8212447232
+          },
+          {
+            "allocated_peak_bytes": 8337516032,
+            "device": 1,
+            "reserved_peak_bytes": 8545894400
+          }
+        ],
+        "fold": 3,
+        "seconds_including_adapter_load": 6.204
+      },
+      {
+        "cuda": [
+          {
+            "allocated_peak_bytes": 8009140736,
+            "device": 0,
+            "reserved_peak_bytes": 8212447232
+          },
+          {
+            "allocated_peak_bytes": 8337516032,
+            "device": 1,
+            "reserved_peak_bytes": 8545894400
+          }
+        ],
+        "fold": 4,
+        "seconds_including_adapter_load": 6.224
+      }
+    ],
+    "full_ensemble_run": false,
+    "length_quartiles": [
+      {
+        "max_weighted_tokens": 84,
+        "min_weighted_tokens": 43,
+        "multiwindow_rows": 0,
+        "quartile": 1,
+        "rows": 8,
+        "windows": 8
+      },
+      {
+        "max_weighted_tokens": 129,
+        "min_weighted_tokens": 84,
+        "multiwindow_rows": 0,
+        "quartile": 2,
+        "rows": 8,
+        "windows": 8
+      },
+      {
+        "max_weighted_tokens": 197,
+        "min_weighted_tokens": 129,
+        "multiwindow_rows": 0,
+        "quartile": 3,
+        "rows": 8,
+        "windows": 8
+      },
+      {
+        "max_weighted_tokens": 379,
+        "min_weighted_tokens": 197,
+        "multiwindow_rows": 0,
+        "quartile": 4,
+        "rows": 8,
+        "windows": 8
+      }
+    ],
+    "model_setup_seconds": 49.759,
+    "official_train_sha256_verified": true,
+    "sample_rows": 32,
+    "sample_sha256": "ad953d27d72cf4cdf0436b65bf122f28f792aa7b732daae95cdce81801ff837e",
+    "setup_cuda_peaks": [
+      {
+        "allocated_peak_bytes": 7499310080,
+        "device": 0,
+        "reserved_peak_bytes": 7518289920
+      },
+      {
+        "allocated_peak_bytes": 7814870016,
+        "device": 1,
+        "reserved_peak_bytes": 7818182656
+      }
+    ],
+    "status": "PASS_NATIVE_Q8_GPU_FEASIBILITY_ONLY",
+    "synthetic_group_calibration_checked": true,
+    "task_asset_tree_sha256": "11edf4b782207937ad132828c5e18e22ae9d7191438e6932687fa084779e5228",
+    "worker_sha256": "5d5b712d601712d3834d7775194b0aafe70bc782f35027c41f74790528e6da92"
+  }
+}
