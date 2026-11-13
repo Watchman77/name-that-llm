@@ -1,0 +1,677 @@
+{
+  "date": "2026-11-13",
+  "candidate": "Alex V25 source plus official Qwen2.5-7B V1; private draft; no scoring code run",
+  "source_script_version_id": 368561683,
+  "private_draft": "https://www.kaggle.com/code/watchman777/name-that-llm-0-684-all-public-what-failed/edit",
+  "audit_cell_sha256": "097d44ebfb135b80b0c013582edda99f9dbc1afefbcd07156794833bd0c416af",
+  "repaired_mount": {
+    "prompt": "[2]:",
+    "failures": [
+      "source_ambiguous:ntl-olmo2-native24-final-inference-assets"
+    ],
+    "selected7b": [
+      {
+        "bytes": 686,
+        "path": "models/qwen-lm/qwen2.5/transformers/7b/1/config.json",
+        "sha256": "267ce68584c5f24c3b267d934db2de68dd21d1ca677fb78ed809eb60067f7642"
+      }
+    ]
+  },
+  "static_inventory": {
+    "failures": {},
+    "executed_upstream_code": false,
+    "pickle_loaded": false,
+    "models_loaded": false,
+    "test_data_read": false,
+    "status": "PASS_STATIC_V25_EXECUTABLE_INVENTORY_ONLY",
+    "checks": {
+      "prefit": {
+        "active_readout_targets": {
+          "distort": [
+            {
+              "bytes": 1975,
+              "path": "ntl666-prefit/core/distort/metadata.json",
+              "sha256": "3cc52cc4eeec70fabffbf4a7b03903b35a11035b02cb3660e7c66a933caade23"
+            },
+            {
+              "bytes": 18585630,
+              "path": "ntl666-prefit/core/distort/model.npz",
+              "sha256": "c06fa038143d161b10ef3192a2fabba3f08916488abfe507c195824ab5785073"
+            },
+            {
+              "bytes": 709505,
+              "path": "ntl666-prefit/core/distort/vectorizer-0.joblib",
+              "sha256": "141df312a79bbaf717af891394e0a7556c0d186a9272641c06c69ebd1c0f09d4"
+            },
+            {
+              "bytes": 690266,
+              "path": "ntl666-prefit/core/distort/vectorizer-1.joblib",
+              "sha256": "26723d9fa1d83084533d0b401e93c519812421dcfcaf0aab5c538c61aacf6f41"
+            }
+          ],
+          "svc4": [
+            {
+              "bytes": 1105,
+              "path": "ntl666-prefit/core/svc4/metadata.json",
+              "sha256": "6b20bfe35782d09f2b82f6783b52a7da5383e328cb0dd8ff92170c063aadd378"
+            },
+            {
+              "bytes": 69000369,
+              "path": "ntl666-prefit/core/svc4/model.npz",
+              "sha256": "8019acce191e14210af71c666cec50f461d33dd03ef840e9c078d2cb15a8b2c7"
+            },
+            {
+              "bytes": 2532156,
+              "path": "ntl666-prefit/core/svc4/vectorizer-0.joblib",
+              "sha256": "81739e3bcf94930db252f151310301dc50e52b805602139fbeb84a3d87aa866e"
+            },
+            {
+              "bytes": 2276970,
+              "path": "ntl666-prefit/core/svc4/vectorizer-1.joblib",
+              "sha256": "c930c731c24cf492eb0ea8ffe5b9cdbaba806f5a74da0afbb91d9ee2ad06ae57"
+            },
+            {
+              "bytes": 510409,
+              "path": "ntl666-prefit/core/svc4/vectorizer-2.joblib",
+              "sha256": "3b0940a3e3679b7b4fe961ea7742bf68f21a0759c7a0c882c12f5feba60cde23"
+            },
+            {
+              "bytes": 544486,
+              "path": "ntl666-prefit/core/svc4/vectorizer-3.joblib",
+              "sha256": "a322a5aa10e7383026d1f3f9393125cb7712a9404cf8d8597ab1c099fffc43aa"
+            }
+          ],
+          "tfidf": [
+            {
+              "bytes": 788,
+              "path": "ntl666-prefit/core/tfidf/metadata.json",
+              "sha256": "f2cfad12d1bc30b76cab4280c009d8983a6692a8a697216139323cff286502c7"
+            },
+            {
+              "bytes": 11764231,
+              "path": "ntl666-prefit/core/tfidf/model.npz",
+              "sha256": "9815503ec557ff3f1345c85e0f06a087dd921b81caf75a9538af0a4175d13549"
+            },
+            {
+              "bytes": 612734,
+              "path": "ntl666-prefit/core/tfidf/vectorizer-0.joblib",
+              "sha256": "3f5a5325c9ebe8be92916e8dffb8dd98b2d3682c921769304db395b612b585e7"
+            },
+            {
+              "bytes": 357394,
+              "path": "ntl666-prefit/core/tfidf/vectorizer-1.joblib",
+              "sha256": "fc28806e37a28893cc3ed362096b4e29c587b5086f92419a4e5d06b1d3433405"
+            }
+          ]
+        },
+        "archive_extracted": false,
+        "archive_member_inventory_sha256": "d6cbe9584194a0f94dc02d5d9f771220a3651acfba5b92200e8a4d2ff8e755c7",
+        "archive_members": 22,
+        "manifest": {
+          "bytes": 831,
+          "path": "ntl-olmo2-native24-final-inference-assets/ntl666-cache-parts.json",
+          "sha256": "95d2fa07b4bcf56c3d258caf3a6c3db1a2fd5ef4bec7b059ba7aff9ccf8898bf"
+        },
+        "parts": [
+          {
+            "bytes": 25165824,
+            "path": "ntl-olmo2-native24-final-inference-assets/ntl666-prefit.part000.bin",
+            "sha256": "eabd58431f888395ebadb36e1585b1435504db3bc7a3fbac64bda9b89b23ae8c"
+          },
+          {
+            "bytes": 25165824,
+            "path": "ntl-olmo2-native24-final-inference-assets/ntl666-prefit.part001.bin",
+            "sha256": "7b55766b47bbf8a7328c5ab0658647602f0485f0ef84bdfed7664a5a899bfb93"
+          },
+          {
+            "bytes": 25165824,
+            "path": "ntl-olmo2-native24-final-inference-assets/ntl666-prefit.part002.bin",
+            "sha256": "3fb78715edb887c477349c691a3ceaf5f2410b7cfefe5f777df03a5389e86e2d"
+          },
+          {
+            "bytes": 25165824,
+            "path": "ntl-olmo2-native24-final-inference-assets/ntl666-prefit.part003.bin",
+            "sha256": "f2a66dcd1609659d52820935411c37dc322843c9903e37c3a5b70c653d4f51b8"
+          },
+          {
+            "bytes": 6962099,
+            "path": "ntl-olmo2-native24-final-inference-assets/ntl666-prefit.part004.bin",
+            "sha256": "2bc76d3e10d1b4b5bc16b5ca0d9ad2e26adedd068d696276f853f871e43f4022"
+          }
+        ],
+        "parts_bound_to_prior_receipt": true,
+        "pickle_loaded": false
+      },
+      "qwen25": {
+        "config_matches_s07_q25": true,
+        "hidden_size": 3584,
+        "metadata": [
+          {
+            "bytes": 686,
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/config.json",
+            "sha256": "267ce68584c5f24c3b267d934db2de68dd21d1ca677fb78ed809eb60067f7642"
+          },
+          {
+            "bytes": 7031645,
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/tokenizer.json",
+            "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+          },
+          {
+            "bytes": 7228,
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/tokenizer_config.json",
+            "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9"
+          },
+          {
+            "bytes": 2776833,
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/vocab.json",
+            "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+          },
+          {
+            "bytes": 1671839,
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/merges.txt",
+            "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+          },
+          {
+            "bytes": 27752,
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/model.safetensors.index.json",
+            "sha256": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028"
+          }
+        ],
+        "model_type": "qwen2",
+        "shards": [
+          {
+            "bytes": 3945441440,
+            "header_sha256": "3afb560369ab8160cae46cbd11dad701a835c20a3ad9dd4562d0b2696e445cae",
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/model-00001-of-00004.safetensors",
+            "tensors": 82
+          },
+          {
+            "bytes": 3864726352,
+            "header_sha256": "20e0d104bddf53b6cf4ec70ff5bc40fdaef61da779ed2f57527d6390bb6abc67",
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/model-00002-of-00004.safetensors",
+            "tensors": 97
+          },
+          {
+            "bytes": 3864726424,
+            "header_sha256": "7d4c92793e1771da420b91e721c5d6858076b06691f1bf1bca16b457ec8ed52a",
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/model-00003-of-00004.safetensors",
+            "tensors": 97
+          },
+          {
+            "bytes": 3556377672,
+            "header_sha256": "ce6c55b46ee119c95277aa1dadfdb6031f130e44f6ead73f83280278ce92e896",
+            "path": "models/qwen-lm/qwen2.5/transformers/7b/1/model-00004-of-00004.safetensors",
+            "tensors": 63
+          }
+        ],
+        "weight_payload_hashed": false
+      },
+      "main_torch_heads": {
+        "deberta_attention": {
+          "bytes": 284355,
+          "member_inventory_sha256": "39b77b5d3d490f227ebd943853770fda458f28345514f2a18c6c1d713b7b8747",
+          "members": 14,
+          "path": "notebooks/lucasboesen/name-that-llm-train-tokattn2/tokattn_debl23_final.pt",
+          "pickle_bytes": 1316,
+          "pickle_loaded": false,
+          "pickle_sha256": "f6454f5746f935e04be40b254c54f12618b8db247ef76d02145af06a7918f496",
+          "sha256": "ed384fd1af244ad1e9dca42194e423ad7fc2cce7e1926820344bffec6de3c561",
+          "tensor_storages": 8
+        },
+        "ll8v5": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "2401fdfe9d191c17cdb3793e4371acd4e17795b987a2e078648484473cbf0073",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/ll8v5/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "f22d0c240de816b0d5f26ed32bf92e72a49b17a2ab13af2e3c54232fc58616ae",
+          "tensor_storages": 20
+        },
+        "ll8v5_f0": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "49482795f83bffa822bc513828a3d222155e10c515603954a7beb4eeda0c8f72",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/ll8v5_f0/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "9b3bd8a610fb1a74c02615ae80fe19a4447023436292d583ed1ad7e04ce9180b",
+          "tensor_storages": 20
+        },
+        "ll8v5_f1": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "eed0b17a62a9015b208ea681139e3fd1c3ac175546e64a75352e439dd91b3d28",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/ll8v5_f1/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "8834c527186fd7f3f2b7742289c45d7190fe574bfb876825c250baa273629e1a",
+          "tensor_storages": 20
+        },
+        "ll8v5_f2": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "031725ce10ba302e554a9fa40eeb6f528823a5bb023cbd0e41dd8776ee89e8a9",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/ll8v5_f2/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "eb159c9fa2485ae82fdac8f4eb111d68ed7dcdb2aa74eb3a7d17e945a48dcf91",
+          "tensor_storages": 20
+        },
+        "ll8v5_f3": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "cf8e428dfded5f1a682c890905b9044aee3ae63682ff1aa65507562699dcfe72",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/ll8v5_f3/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "c6a71b7ddd074cd951146c274835d603665b71b3101192de47f464356828ca39",
+          "tensor_storages": 20
+        },
+        "ll8v5_f4": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "154a444035bd70a4949a5ae2b9fa8f36070925eaa8404e3cb448f14080c87e62",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/ll8v5_f4/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "1ac81a3353d8d59b959547411afd34c52fb733cbdfdacda46a2d268ba563265f",
+          "tensor_storages": 20
+        },
+        "q14v5": {
+          "bytes": 6231923,
+          "member_inventory_sha256": "ae569f163e6519ed15abd7aa69f2de6a9b72fc2ced2c6230f5238222423eb191",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q14v5/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "9dcf6534e14bb6c9686a8003add366e7f0fc5f473ef05721195772d8f3358e40",
+          "sha256": "cafdbade649017d666c2da623adb6539877e1125a996f2736133127ae6121b3d",
+          "tensor_storages": 20
+        },
+        "q14v5_f0": {
+          "bytes": 6231923,
+          "member_inventory_sha256": "7bd66ff8cfd6152a2f4c69ca2d647ffe19dbf0b7e508c516a0b1e87e5e395040",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q14v5_f0/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "9dcf6534e14bb6c9686a8003add366e7f0fc5f473ef05721195772d8f3358e40",
+          "sha256": "3d25feb9f749517c2ad7f967bc5821710c1ff328fc43d52e3c7a7d3b3fbaa770",
+          "tensor_storages": 20
+        },
+        "q14v5_f1": {
+          "bytes": 6231923,
+          "member_inventory_sha256": "b094f3ecd99bbd0b6f34021af931abb3c5590b125ca76c677c8af188c57aa8db",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q14v5_f1/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "9dcf6534e14bb6c9686a8003add366e7f0fc5f473ef05721195772d8f3358e40",
+          "sha256": "95ff78ca650e8ba0cb74cc343180d33f13758e904eadf0d1bbb1b32e52bbb7df",
+          "tensor_storages": 20
+        },
+        "q14v5_f2": {
+          "bytes": 6231923,
+          "member_inventory_sha256": "12f288b30c33dcd378cea5371c3c2a8510322823b02f62f49e2d5b5b0a8129ba",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q14v5_f2/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "9dcf6534e14bb6c9686a8003add366e7f0fc5f473ef05721195772d8f3358e40",
+          "sha256": "1d21573d7ca32a011b8c816aff3413198b84e29009d237312eba7688276c3eb1",
+          "tensor_storages": 20
+        },
+        "q14v5_f3": {
+          "bytes": 6231923,
+          "member_inventory_sha256": "4346eb999077fbd62b719b2724cbbd5641d0495ee67f68539e38d598fb0928c4",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q14v5_f3/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "9dcf6534e14bb6c9686a8003add366e7f0fc5f473ef05721195772d8f3358e40",
+          "sha256": "3b240fdcb324f3d70e1216c00f4b82d8ea1055881b85c688b9a26031b6ad2008",
+          "tensor_storages": 20
+        },
+        "q14v5_f4": {
+          "bytes": 6231923,
+          "member_inventory_sha256": "824b9b067914ead003301512a1e2116080d0ef31eb74171b39a3a301f5f55896",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q14v5_f4/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "9dcf6534e14bb6c9686a8003add366e7f0fc5f473ef05721195772d8f3358e40",
+          "sha256": "d1599763e9b650c59358983f9d63ff43dc9db9fe49478f11816c12521d3d187f",
+          "tensor_storages": 20
+        },
+        "q8v5": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "a5d6b70fb40b23e11eaafea152de8c704c4fe600017d60c3762fdc2f81fa5488",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q8v5/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "31868cd0e9618fac506c93a08f118ee00202041d67426890e609d13e2cd33f0a",
+          "tensor_storages": 20
+        },
+        "q8v5_f0": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "f5eec9108f22ef60e704e4e2d9923f98d8d998fe3c2f1831e7a8f4344348b7f0",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q8v5_f0/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "7d5897029e329eaaea05e5fc92812f82bfc361d2b4888cb0fd2cbccc19e65d3c",
+          "tensor_storages": 20
+        },
+        "q8v5_f1": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "d0d4b5cc5a778c595b398b68ed62338bd31192098825068518616324c73e88a8",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q8v5_f1/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "ebda1b199bf48614c268fa62b1b2bcd1e08315ba5f7a103270d6cec8acc85170",
+          "tensor_storages": 20
+        },
+        "q8v5_f2": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "cb6793141405e6e46a7a9d3a6c97b0e00080d07a7d84aae16baa4989df1a29a9",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q8v5_f2/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "e83c982d972ba6207b2a884f1d0feebdcdd609dc78acb66d7e572695c6ab9e76",
+          "tensor_storages": 20
+        },
+        "q8v5_f3": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "06375742086608d6de3497543540f2ace5b41d5426f4d0a9832a149a58a63626",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q8v5_f3/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "597fd55464ae5c16965e1493c94db879744bdefa56b9e54401ebf0c1b542dd28",
+          "tensor_storages": 20
+        },
+        "q8v5_f4": {
+          "bytes": 4986739,
+          "member_inventory_sha256": "03fa32f1f17e2a4ed97ba8485c3ba8fbc00eb0845e802904892b5403fad6ddb1",
+          "members": 26,
+          "path": "nlm-l24-adapters-v5/q8v5_f4/heads.pt",
+          "pickle_bytes": 2054,
+          "pickle_loaded": false,
+          "pickle_sha256": "40ac9ca0daa39cf3de3eaf57a0147560b574f843ac6d63e31ae9c7b52b7f45f5",
+          "sha256": "cdf6acf7f4b1ec8187d48c31f17dfb8461a85cd34d1e3b8a669a7d7e689afa37",
+          "tensor_storages": 20
+        }
+      },
+      "ultrabert": [
+        {
+          "config": {
+            "bytes": 2739,
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/config.json",
+            "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+          },
+          "local_auto_map_targets": [
+            "configuration_ultrabert.UltrabertConfig",
+            "modeling_ultrabert.UltrabertForMaskedLM",
+            "modeling_ultrabert.UltrabertForQuestionAnswering",
+            "modeling_ultrabert.UltrabertForSequenceClassification",
+            "modeling_ultrabert.UltrabertForTokenClassification",
+            "modeling_ultrabert.UltrabertModel"
+          ],
+          "python": [
+            {
+              "bytes": 2209,
+              "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/configuration_ultrabert.py",
+              "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+            },
+            {
+              "bytes": 30581,
+              "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/modeling_ultrabert.py",
+              "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+            }
+          ],
+          "tokenizer_config": {
+            "bytes": 814,
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/tokenizer_config.json",
+            "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+          }
+        },
+        {
+          "config": {
+            "bytes": 2739,
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/config.json",
+            "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+          },
+          "local_auto_map_targets": [
+            "configuration_ultrabert.UltrabertConfig",
+            "modeling_ultrabert.UltrabertForMaskedLM",
+            "modeling_ultrabert.UltrabertForQuestionAnswering",
+            "modeling_ultrabert.UltrabertForSequenceClassification",
+            "modeling_ultrabert.UltrabertForTokenClassification",
+            "modeling_ultrabert.UltrabertModel"
+          ],
+          "python": [
+            {
+              "bytes": 2209,
+              "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/configuration_ultrabert.py",
+              "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+            },
+            {
+              "bytes": 30581,
+              "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/modeling_ultrabert.py",
+              "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+            }
+          ],
+          "tokenizer_config": {
+            "bytes": 814,
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/tokenizer_config.json",
+            "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+          }
+        },
+        {
+          "config": {
+            "bytes": 2739,
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/config.json",
+            "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+          },
+          "local_auto_map_targets": [
+            "configuration_ultrabert.UltrabertConfig",
+            "modeling_ultrabert.UltrabertForMaskedLM",
+            "modeling_ultrabert.UltrabertForQuestionAnswering",
+            "modeling_ultrabert.UltrabertForSequenceClassification",
+            "modeling_ultrabert.UltrabertForTokenClassification",
+            "modeling_ultrabert.UltrabertModel"
+          ],
+          "python": [
+            {
+              "bytes": 2209,
+              "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/configuration_ultrabert.py",
+              "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+            },
+            {
+              "bytes": 30581,
+              "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/modeling_ultrabert.py",
+              "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+            }
+          ],
+          "tokenizer_config": {
+            "bytes": 814,
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/tokenizer_config.json",
+            "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+          }
+        },
+        {
+          "config": {
+            "bytes": 2739,
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/config.json",
+            "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+          },
+          "local_auto_map_targets": [
+            "configuration_ultrabert.UltrabertConfig",
+            "modeling_ultrabert.UltrabertForMaskedLM",
+            "modeling_ultrabert.UltrabertForQuestionAnswering",
+            "modeling_ultrabert.UltrabertForSequenceClassification",
+            "modeling_ultrabert.UltrabertForTokenClassification",
+            "modeling_ultrabert.UltrabertModel"
+          ],
+          "python": [
+            {
+              "bytes": 2209,
+              "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/configuration_ultrabert.py",
+              "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+            },
+            {
+              "bytes": 30581,
+              "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/modeling_ultrabert.py",
+              "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+            }
+          ],
+          "tokenizer_config": {
+            "bytes": 814,
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/tokenizer_config.json",
+            "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+          }
+        },
+        {
+          "config": {
+            "bytes": 2739,
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/config.json",
+            "sha256": "028d1e1b7dc55e67fa4020040e6e91d3b5221357d93da2c4be65035a591f93cd"
+          },
+          "local_auto_map_targets": [
+            "configuration_ultrabert.UltrabertConfig",
+            "modeling_ultrabert.UltrabertForMaskedLM",
+            "modeling_ultrabert.UltrabertForQuestionAnswering",
+            "modeling_ultrabert.UltrabertForSequenceClassification",
+            "modeling_ultrabert.UltrabertForTokenClassification",
+            "modeling_ultrabert.UltrabertModel"
+          ],
+          "python": [
+            {
+              "bytes": 2209,
+              "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/configuration_ultrabert.py",
+              "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+            },
+            {
+              "bytes": 30581,
+              "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/modeling_ultrabert.py",
+              "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+            }
+          ],
+          "tokenizer_config": {
+            "bytes": 814,
+            "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/tokenizer_config.json",
+            "sha256": "5f4e066c2f4bde1de6d0a82a1bbd6e5c4027ec818f955ccfbc41bd5202454bab"
+          }
+        }
+      ],
+      "gsq": {
+        "base_inventory": [
+          {
+            "bytes": 5038,
+            "path": "ntl-olmo2-native24-final-inference-assets/gsq3-base/qwen38-27b-gsq3/config.json",
+            "sha256": "3c44b7ff4556e7779226d04448408aa727b8a2a0f893a2a2f2869aaaa6cbd384"
+          },
+          {
+            "bytes": 3353259,
+            "path": "ntl-olmo2-native24-final-inference-assets/gsq3-base/qwen38-27b-gsq3/merges.txt",
+            "sha256": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d"
+          },
+          {
+            "bytes": 198539,
+            "path": "ntl-olmo2-native24-final-inference-assets/gsq3-base/qwen38-27b-gsq3/model.safetensors.index.json",
+            "sha256": "62e4b73617b957c130a91dedcd3de6e95cde7de9028ee899823127181c56135d"
+          },
+          {
+            "bytes": 12809320,
+            "path": "ntl-olmo2-native24-final-inference-assets/gsq3-base/qwen38-27b-gsq3/tokenizer.json",
+            "sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3"
+          },
+          {
+            "bytes": 17928,
+            "path": "ntl-olmo2-native24-final-inference-assets/gsq3-base/qwen38-27b-gsq3/tokenizer_config.json",
+            "sha256": "b11349aafa7cdc6a320767cf7ceb29ed82f7eda5d65e8e0819e76f0ce947bf27"
+          },
+          {
+            "bytes": 6722759,
+            "path": "ntl-olmo2-native24-final-inference-assets/gsq3-base/qwen38-27b-gsq3/vocab.json",
+            "sha256": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003"
+          },
+          {
+            "bytes": 2272369784,
+            "path": "ntl-olmo2-native24-final-inference-assets/gsq3-base/qwen38-27b-gsq3/model-00001-of-00003.safetensors"
+          },
+          {
+            "bytes": 4777704120,
+            "path": "ntl-olmo2-native24-final-inference-assets/gsq3-base/qwen38-27b-gsq3/model-00002-of-00003.safetensors"
+          },
+          {
+            "bytes": 4777704376,
+            "path": "ntl-olmo2-native24-final-inference-assets/gsq3-base/qwen38-27b-gsq3/model-00003-of-00003.safetensors"
+          }
+        ],
+        "complete": {
+          "bytes": 675,
+          "path": "ntl-olmo2-native24-final-inference-assets/gsq120k-trained/gsq120k-inference/gsq/COMPLETE.json",
+          "sha256": "55584b0d3c87d112f1f8403c94c860bdfe895b29f382c6bd0ba3546b1b1f7ed0"
+        },
+        "final": {
+          "bytes": 64605840,
+          "header_sha256": "a02e96db3a991ef29a68e9db8cff895a5b935a31ddcbfbb2e7cbff3ca3abd6f9",
+          "path": "ntl-olmo2-native24-final-inference-assets/gsq120k-trained/gsq120k-inference/gsq/final.safetensors",
+          "sha256": "979758c31ec396c29272b411bd9a7d5ee1a920814932813dba9a109f03a11c33",
+          "tensors": 144
+        },
+        "final_matches_declared_sha": true,
+        "manifest": {
+          "bytes": 1354,
+          "path": "ntl-olmo2-native24-final-inference-assets/gsq120k-trained/gsq120k-inference/gsq/final.json",
+          "sha256": "07cd6d0fbef3dda32817e990d8b0b3a7cd887b25cb137bf69a9e2d2514d2ba02"
+        }
+      }
+    }
+  },
+  "wheels_match_pypi_published_sha256": {
+    "accelerate-1.15.0-py3-none-any.whl": {
+      "sha256": "97eacca0b73e45cb867dbf8c5d5d4dc32219544300e0c8992c7334dc2ef33cec",
+      "source": "https://pypi.org/project/accelerate/1.15.0/#files"
+    },
+    "bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl": {
+      "sha256": "55348a9a4a21bfd99cf8c7b32fe67b4030ae5c2a05738e03c1747f65fa6ec283",
+      "source": "https://pypi.org/project/bitsandbytes/0.50.2/#files"
+    },
+    "huggingface_hub-1.32.0-py3-none-any.whl": {
+      "sha256": "b0c7c80561969d9cdacdd55fce67ba9584cca0b9d4ea80957a3a5c1445fac5c8",
+      "source": "https://pypi.org/project/huggingface-hub/1.32.0/#files"
+    },
+    "safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+      "sha256": "fd6f3f93c9a0a7cc2788ee63fb763353d4bd2e89b0751bc78fcf7dda00bea774",
+      "source": "https://pypi.org/project/safetensors/0.8.0/#files"
+    },
+    "tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": {
+      "sha256": "369cc9fc8cc10cb24143873a0d95438bb8ee257bb80c71989e3ee290e8d72c67",
+      "source": "https://pypi.org/project/tokenizers/0.22.2/#files"
+    },
+    "transformers-5.14.1-py3-none-any.whl": {
+      "sha256": "9db974c4079ede2d1a3ea7ca5a240df33f2cc26fc2b36ba64c5f2a4f43b6e725",
+      "source": "https://pypi.org/project/transformers/5.14.1/#files"
+    }
+  },
+  "all_18_primary_head_bytes_match_s07": true,
+  "private_quick_save_script_version_id": 369157610,
+  "source_version_full_execution_performed": false
+}

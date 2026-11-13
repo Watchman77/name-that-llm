@@ -1,0 +1,479 @@
+{
+  "date": "2026-11-13",
+  "source_script_version_id": 368561683,
+  "private_draft": "https://www.kaggle.com/code/watchman777/name-that-llm-0-684-all-public-what-failed/edit",
+  "cpu_internet_off": true,
+  "artifact_hub_explicitly_pinned_version": 22,
+  "qwen25_7b_attachment_present_at_time_of_audit": false,
+  "audit_cell_sha256": "3cafe41892ec7da750d236a14f089a463a9193275ef2a1cfbdd2bbc5b8bcbc4c",
+  "report": {
+    "status": "BLOCK_STATIC_V25_MOUNT",
+    "failures": [
+      "source_ambiguous:ntl-olmo2-native24-final-inference-assets",
+      "qwen2_3584_comp_7b_missing",
+      "checkpoint_selector_missing:qwen2_3584_comp_7b"
+    ],
+    "notes": [],
+    "nonmodel_mounts": {
+      "name-that-llm-desklib-weights": [
+        "notebooks/lucasboesen/name-that-llm-desklib-weights"
+      ],
+      "name-that-llm-electra-large-weights": [
+        "notebooks/lucasboesen/name-that-llm-electra-large-weights"
+      ],
+      "name-that-llm-extract-encoders2": [
+        "notebooks/lucasboesen/name-that-llm-extract-encoders2"
+      ],
+      "name-that-llm-glm4-9b-trunc25": [
+        "notebooks/lucasboesen/name-that-llm-glm4-9b-trunc25"
+      ],
+      "name-that-llm-open-pool": [
+        "name-that-llm-open-pool"
+      ],
+      "name-that-llm-train-lora24-s7": [
+        "notebooks/lucasboesen/name-that-llm-train-lora24-s7"
+      ],
+      "name-that-llm-train-tokattn": [
+        "notebooks/lucasboesen/name-that-llm-train-tokattn"
+      ],
+      "name-that-llm-train-tokattn2": [
+        "notebooks/lucasboesen/name-that-llm-train-tokattn2"
+      ],
+      "nlm-l24-adapters": [
+        "nlm-l24-adapters"
+      ],
+      "nlm-l24-adapters-v5": [
+        "nlm-l24-adapters-v5"
+      ],
+      "nlm-matched-clean": [
+        "nlm-matched-clean"
+      ],
+      "nlm-offline-wheels": [
+        "nlm-offline-wheels"
+      ],
+      "ntl-extra-api-passages": [
+        "datasets/seyitkaangunes/ntl-extra-api-passages"
+      ],
+      "ntl-free-proxy-generations": [
+        "datasets/lucasboesen/ntl-free-proxy-generations"
+      ],
+      "ntl-generations": [
+        "datasets/abdullah1afify/ntl-generations"
+      ],
+      "ntl-handwriting-blend": [
+        "ntl-handwriting-blend"
+      ],
+      "ntl-olmo2-native24-final-inference-assets": [
+        "ntl-olmo2-native24-final-inference-assets",
+        "ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/ntl-olmo2-native24-final-inference-assets"
+      ],
+      "ntl-proxy-generations": [
+        "datasets/dophuchung/ntl-proxy-generations"
+      ],
+      "ntl-q14-lora": [
+        "ntl-q14-lora"
+      ],
+      "ntl-q14-lora-v4": [
+        "ntl-q14-lora-v4"
+      ],
+      "ntl-qwen3-8b-lora-claude-head": [
+        "datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head"
+      ],
+      "ntl-train-lora-qwen25-instyle": [
+        "notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle"
+      ],
+      "ntl-two-stage-lora": [
+        "datasets/nishantdahal/ntl-two-stage-lora"
+      ],
+      "prvsiyans-extended-name-that-llm-dataset": [
+        "datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset"
+      ],
+      "ultrabert-380m-ntl": [
+        "datasets/pjmathematician/ultrabert-380m-ntl"
+      ]
+    },
+    "model_mounts": {
+      "llama-3-1-8b-base/transformers/default/1": [
+        "models/alexchilton/llama-3-1-8b-base/transformers/default/1"
+      ],
+      "qwen-3-embedding/transformers/8b/1": [
+        "models/qwen-lm/qwen-3-embedding/transformers/8b/1"
+      ],
+      "qwen-3/transformers/14b-base/1": [
+        "models/qwen-lm/qwen-3/transformers/14b-base/1"
+      ],
+      "qwen-3/transformers/14b/1": [
+        "models/qwen-lm/qwen-3/transformers/14b/1"
+      ],
+      "qwen-3/transformers/4b-base/1": [
+        "models/qwen-lm/qwen-3/transformers/4b-base/1"
+      ],
+      "qwen-3/transformers/8b-base/1": [
+        "models/qwen-lm/qwen-3/transformers/8b-base/1"
+      ],
+      "qwen-3/transformers/8b/1": [
+        "models/qwen-lm/qwen-3/transformers/8b/1"
+      ],
+      "qwen2.5/transformers/14b/1": [
+        "models/qwen-lm/qwen2.5/transformers/14b/1"
+      ]
+    },
+    "checkpoint_selectors_source_sort": {
+      "glm4_4096": [
+        {
+          "bytes": 786,
+          "path": "notebooks/lucasboesen/name-that-llm-glm4-9b-trunc25/glm4_9b_trunc25/config.json",
+          "sha256": "22b5515c8520e7aa3463b0fc07e601e99a11119c736efb754035ea59637fa3ed"
+        }
+      ],
+      "qwen2_3584_comp_7b": [],
+      "qwen3_2560": [
+        {
+          "bytes": 727,
+          "path": "models/qwen-lm/qwen-3/transformers/4b-base/1/config.json",
+          "sha256": "304b2545a258d35620f1d4bf46940c0471d9baa00715ff8e77f84c2fca5057c1"
+        }
+      ],
+      "qwen3_4096": [
+        {
+          "bytes": 728,
+          "path": "models/qwen-lm/qwen-3/transformers/8b/1/config.json",
+          "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30"
+        },
+        {
+          "bytes": 729,
+          "path": "models/qwen-lm/qwen-3/transformers/8b-base/1/config.json",
+          "sha256": "3bd01d7ad7a2e203ecbbe84e24087a51c6d2a108ee4bcc42d0016bf49564983a"
+        },
+        {
+          "bytes": 729,
+          "path": "models/qwen-lm/qwen-3-embedding/transformers/8b/1/config.json",
+          "sha256": "dcccf7c7890c8debc4af8dace8d6acd8dd50bd56d50d4d8b60529381ba3de3d7"
+        },
+        {
+          "bytes": 1332,
+          "path": "ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/ntl-lora24-fivefold-training/lora24/final/base_config/config.json",
+          "sha256": "d9a04fdd6dd68c2129a07b40c2534823f77b7970192934759e35402e5cca1a3e"
+        },
+        {
+          "bytes": 729,
+          "path": "ntl-olmo2-native24-final-inference-assets/ntl-native-q8-multidepth-fivefold-0679/base/config.json",
+          "sha256": "dcccf7c7890c8debc4af8dace8d6acd8dd50bd56d50d4d8b60529381ba3de3d7"
+        }
+      ]
+    },
+    "llama_mirror": {
+      "license_readme_notice": [
+        {
+          "bytes": 7627,
+          "mentions_built_with_llama": false,
+          "mentions_llama_3_1": true,
+          "path": "models/alexchilton/llama-3-1-8b-base/transformers/default/1/LICENSE",
+          "sha256": "64e1b2889b7892e6bbe7a7ed5bfe6ff793c61f9d584345f8f41cf9f5cb30a369"
+        },
+        {
+          "bytes": 40883,
+          "mentions_built_with_llama": true,
+          "mentions_llama_3_1": true,
+          "path": "models/alexchilton/llama-3-1-8b-base/transformers/default/1/README.md",
+          "sha256": "6615eaa410934067ed31834ab66285acb0dc2d0a36056771601dad47efce194a"
+        },
+        {
+          "bytes": 4691,
+          "mentions_built_with_llama": false,
+          "mentions_llama_3_1": true,
+          "path": "models/alexchilton/llama-3-1-8b-base/transformers/default/1/USE_POLICY.md",
+          "sha256": "a568f2ebc73cec3fd74ba2afd992d4e945a8c7a9d851f9b66163aac834b7b859"
+        }
+      ],
+      "metadata": {
+        "config.json": {
+          "bytes": 826,
+          "matches_s07_first_party": true,
+          "path": "models/alexchilton/llama-3-1-8b-base/transformers/default/1/config.json",
+          "sha256": "54acfad3cffe057640904ca8a1e83525e6551c70c7a04c641f5a9eda0bbf64bd"
+        },
+        "model.safetensors.index.json": {
+          "bytes": 23950,
+          "matches_s07_first_party": true,
+          "path": "models/alexchilton/llama-3-1-8b-base/transformers/default/1/model.safetensors.index.json",
+          "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b"
+        },
+        "special_tokens_map.json": {
+          "bytes": 73,
+          "matches_s07_first_party": true,
+          "path": "models/alexchilton/llama-3-1-8b-base/transformers/default/1/special_tokens_map.json",
+          "sha256": "462d91939dbc37178aa5a3eae7068d1990ccc92e09f288cc71f42cdf139d69cc"
+        },
+        "tokenizer.json": {
+          "bytes": 9085658,
+          "matches_s07_first_party": true,
+          "path": "models/alexchilton/llama-3-1-8b-base/transformers/default/1/tokenizer.json",
+          "sha256": "76e48799b099d43365bd24ccd8ecc5aedac831718da780552f03b0a6eb4412aa"
+        },
+        "tokenizer_config.json": {
+          "bytes": 50500,
+          "matches_s07_first_party": true,
+          "path": "models/alexchilton/llama-3-1-8b-base/transformers/default/1/tokenizer_config.json",
+          "sha256": "8004530facf809ac432114de2a4dcc65fcb632da5ec16d666091aeb6a2ee444a"
+        }
+      },
+      "shards": {
+        "model-00001-of-00004.safetensors": {
+          "bytes": 4976698672,
+          "matches_s07_first_party_size": true
+        },
+        "model-00002-of-00004.safetensors": {
+          "bytes": 4999802720,
+          "matches_s07_first_party_size": true
+        },
+        "model-00003-of-00004.safetensors": {
+          "bytes": 4915916176,
+          "matches_s07_first_party_size": true
+        },
+        "model-00004-of-00004.safetensors": {
+          "bytes": 1168138808,
+          "matches_s07_first_party_size": true
+        }
+      },
+      "weight_payload_hashes_compared": false
+    },
+    "ultrabert_code": {
+      "configuration_ultrabert.py": [
+        {
+          "bytes": 2209,
+          "matches_s07_reviewed": true,
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/configuration_ultrabert.py",
+          "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+        },
+        {
+          "bytes": 2209,
+          "matches_s07_reviewed": true,
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/configuration_ultrabert.py",
+          "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+        },
+        {
+          "bytes": 2209,
+          "matches_s07_reviewed": true,
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/configuration_ultrabert.py",
+          "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+        },
+        {
+          "bytes": 2209,
+          "matches_s07_reviewed": true,
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/configuration_ultrabert.py",
+          "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+        },
+        {
+          "bytes": 2209,
+          "matches_s07_reviewed": true,
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/configuration_ultrabert.py",
+          "sha256": "823d10bda19f5164da4f79f8f9c01e5ebd7a75569abce78c0a26b7674fc78cd9"
+        }
+      ],
+      "modeling_ultrabert.py": [
+        {
+          "bytes": 30581,
+          "matches_s07_reviewed": true,
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold0/modeling_ultrabert.py",
+          "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+        },
+        {
+          "bytes": 30581,
+          "matches_s07_reviewed": true,
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold1/modeling_ultrabert.py",
+          "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+        },
+        {
+          "bytes": 30581,
+          "matches_s07_reviewed": true,
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold2/modeling_ultrabert.py",
+          "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+        },
+        {
+          "bytes": 30581,
+          "matches_s07_reviewed": true,
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold3/modeling_ultrabert.py",
+          "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+        },
+        {
+          "bytes": 30581,
+          "matches_s07_reviewed": true,
+          "path": "datasets/pjmathematician/ultrabert-380m-ntl/fold4/modeling_ultrabert.py",
+          "sha256": "bfca1bd08af72cd170e58b5a048c67b52bc9d06a2a42847c7a387751f527f333"
+        }
+      ]
+    },
+    "deberta_attention": [
+      {
+        "bytes": 284355,
+        "path": "notebooks/lucasboesen/name-that-llm-train-tokattn2/tokattn_debl23_final.pt",
+        "sha256": "ed384fd1af244ad1e9dca42194e423ad7fc2cce7e1926820344bffec6de3c561"
+      }
+    ],
+    "official_train_identity": {
+      "bytes": 2139418,
+      "path": "competitions/name-that-llm/train.csv",
+      "sha256": "40a22ce8d88c5f46feb4637a099db815bef5f713ffe53e89dbe1b7b21de77707"
+    },
+    "dataset_inventory": {
+      "gen_passages.csv": [
+        {
+          "bytes": 7666492,
+          "path": "datasets/lucasboesen/ntl-free-proxy-generations/gen_passages.csv",
+          "required_selector_column_present": true,
+          "retained_before_text_filters": 7714,
+          "rows": 7906,
+          "sha256": "b855fc128375984111d51ed4ae6bf23ca0fbec667b58d5ad2370bdb310495271"
+        }
+      ],
+      "nlm_matched_clean.parquet": [
+        {
+          "bytes": 11146946,
+          "path": "nlm-matched-clean/nlm_matched_clean.parquet",
+          "sha256": "000f8d541f7c4c5942a18c4fcf557aa01756882931307414cf2530ac21980482"
+        }
+      ],
+      "ntl_extra_passages_claude.csv": [
+        {
+          "bytes": 4387162,
+          "path": "datasets/seyitkaangunes/ntl-extra-api-passages/ntl_extra_passages_claude.csv",
+          "required_selector_column_present": true,
+          "retained_before_text_filters": 4998,
+          "rows": 4998,
+          "sha256": "710dbe484fda23f0dee9b67c20e5bef9376bf754af05584ad142bc17845cd4b9"
+        }
+      ],
+      "ntl_generated*.csv": [],
+      "ntl_generations.csv": [
+        {
+          "bytes": 4637223,
+          "path": "datasets/abdullah1afify/ntl-generations/ntl_generations.csv",
+          "required_selector_column_present": true,
+          "retained_before_text_filters": 2312,
+          "rows": 5726,
+          "sha256": "f1776e378bbc01be6e33a0c7a10fca5d907286101e3abb48dd70823384982f64"
+        }
+      ],
+      "ntl_open_pool.parquet": [
+        {
+          "bytes": 111560867,
+          "path": "name-that-llm-open-pool/ntl_open_pool.parquet",
+          "sha256": "28ee85d9f9e29d749639b163e0569f574fbbfa34b3d68ecdc8094641d2d987b8"
+        }
+      ],
+      "ntl_proxy_generations.csv": [
+        {
+          "bytes": 889391,
+          "path": "datasets/dophuchung/ntl-proxy-generations/ntl_proxy_generations.csv",
+          "required_selector_column_present": true,
+          "retained_before_text_filters": 1029,
+          "rows": 1029,
+          "sha256": "593708f7fd55636bd270824c0e129447b2a5808b1e224bb3dbf43bf2383fdf9c"
+        }
+      ],
+      "passages_clean.csv": [
+        {
+          "bytes": 7519791,
+          "path": "datasets/prvsiyan/prvsiyans-extended-name-that-llm-dataset/passages_clean.csv",
+          "required_selector_column_present": true,
+          "retained_before_text_filters": 5070,
+          "rows": 5070,
+          "sha256": "502653b8cc053bc1ef08920d0ddda892e8b656f14229e38e0755d8a2f079eaf9"
+        }
+      ]
+    },
+    "offline_wheels": {
+      "bitsandbytes": [
+        {
+          "bytes": 43139553,
+          "path": "nlm-offline-wheels/bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl",
+          "sha256": "55348a9a4a21bfd99cf8c7b32fe67b4030ae5c2a05738e03c1747f65fa6ec283"
+        },
+        {
+          "bytes": 43139553,
+          "path": "ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl",
+          "sha256": "55348a9a4a21bfd99cf8c7b32fe67b4030ae5c2a05738e03c1747f65fa6ec283"
+        }
+      ],
+      "gsq": [
+        {
+          "bytes": 394295,
+          "path": "ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/accelerate-1.15.0-py3-none-any.whl",
+          "sha256": "97eacca0b73e45cb867dbf8c5d5d4dc32219544300e0c8992c7334dc2ef33cec"
+        },
+        {
+          "bytes": 43139553,
+          "path": "ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/bitsandbytes-0.50.2-py3-none-manylinux_2_24_x86_64.whl",
+          "sha256": "55348a9a4a21bfd99cf8c7b32fe67b4030ae5c2a05738e03c1747f65fa6ec283"
+        },
+        {
+          "bytes": 842906,
+          "path": "ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/huggingface_hub-1.32.0-py3-none-any.whl",
+          "sha256": "b0c7c80561969d9cdacdd55fce67ba9584cca0b9d4ea80957a3a5c1445fac5c8"
+        },
+        {
+          "bytes": 516040,
+          "path": "ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "fd6f3f93c9a0a7cc2788ee63fb763353d4bd2e89b0751bc78fcf7dda00bea774"
+        },
+        {
+          "bytes": 3274982,
+          "path": "ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "369cc9fc8cc10cb24143873a0d95438bb8ee257bb80c71989e3ee290e8d72c67"
+        },
+        {
+          "bytes": 11625234,
+          "path": "ntl-olmo2-native24-final-inference-assets/name-that-llm-artifacts/qwen38-offline-linux/transformers-5.14.1-py3-none-any.whl",
+          "sha256": "9db974c4079ede2d1a3ea7ca5a240df33f2cc26fc2b36ba64c5f2a4f43b6e725"
+        }
+      ]
+    },
+    "prefit_parts": {
+      "archive_member_count_declared": 22,
+      "archive_opened": false,
+      "manifest": {
+        "bytes": 831,
+        "path": "ntl-olmo2-native24-final-inference-assets/ntl666-cache-parts.json",
+        "sha256": "95d2fa07b4bcf56c3d258caf3a6c3db1a2fd5ef4bec7b059ba7aff9ccf8898bf"
+      },
+      "parts": [
+        {
+          "bytes": 25165824,
+          "matches_declared_sha256": null,
+          "path": "ntl-olmo2-native24-final-inference-assets/ntl666-prefit.part000.bin",
+          "sha256": "eabd58431f888395ebadb36e1585b1435504db3bc7a3fbac64bda9b89b23ae8c"
+        },
+        {
+          "bytes": 25165824,
+          "matches_declared_sha256": null,
+          "path": "ntl-olmo2-native24-final-inference-assets/ntl666-prefit.part001.bin",
+          "sha256": "7b55766b47bbf8a7328c5ab0658647602f0485f0ef84bdfed7664a5a899bfb93"
+        },
+        {
+          "bytes": 25165824,
+          "matches_declared_sha256": null,
+          "path": "ntl-olmo2-native24-final-inference-assets/ntl666-prefit.part002.bin",
+          "sha256": "3fb78715edb887c477349c691a3ceaf5f2410b7cfefe5f777df03a5389e86e2d"
+        },
+        {
+          "bytes": 25165824,
+          "matches_declared_sha256": null,
+          "path": "ntl-olmo2-native24-final-inference-assets/ntl666-prefit.part003.bin",
+          "sha256": "f2a66dcd1609659d52820935411c37dc322843c9903e37c3a5b70c653d4f51b8"
+        },
+        {
+          "bytes": 6962099,
+          "matches_declared_sha256": null,
+          "path": "ntl-olmo2-native24-final-inference-assets/ntl666-prefit.part004.bin",
+          "sha256": "2bc76d3e10d1b4b5bc16b5ca0d9ad2e26adedd068d696276f853f871e43f4022"
+        }
+      ]
+    },
+    "test_data_read": false,
+    "upstream_code_run": false,
+    "pickle_loaded": false,
+    "model_weights_loaded": false,
+    "official_score_measured": false
+  }
+}

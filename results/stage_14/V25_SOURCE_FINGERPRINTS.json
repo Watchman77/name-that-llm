@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-13",
+  "owner": "alexchilton",
+  "version_ordinal": 25,
+  "script_version_id": 368561683,
+  "source_surface": "rendered Kaggle code input cells, not downloaded notebook JSON",
+  "ordered_source_json_sha256": "16cc17fc08cd81a7a6b62da3c060fb98727a18579a66f02813b6ced303d0ea0f",
+  "native_worker_sha256": "5d5b712d601712d3834d7775194b0aafe70bc782f35027c41f74790528e6da92",
+  "cells": [
+    {
+      "index": 0,
+      "bytes": 1032,
+      "sha256": "67fc7aed2c6170ba2129e268caf4ef7f42dac9e9055360c0ab60d9ff4103efea",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 1,
+      "bytes": 2922,
+      "sha256": "e25a3ae1b64bb7f3020c1f88b89bb2ad39a68118685152410a22968c373af530",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 2,
+      "bytes": 6683,
+      "sha256": "76518140dbda44efdc41043bdcd3ed85ec2bf40bbea0bb8d9b38e54284c836e4",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 3,
+      "bytes": 3227,
+      "sha256": "9d6cd28f87f60c086fd32bd78628a11ba746e4ea4486fd47f89cce6de10804a3",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 4,
+      "bytes": 6270,
+      "sha256": "b11ad8b9a5f2c9be3584e37c4a2d68fa7c2b71ca328a7ca80cd17d3a155ee9db",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 5,
+      "bytes": 13479,
+      "sha256": "a93fac558059f7e7b3d3cfa7144487f0bdc8d11e509524bbbdfe042cc45fd1b2",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 6,
+      "bytes": 13846,
+      "sha256": "ce7555ba42a6fa5f47466aab0e596b20413efb7f3898e92e1c6be238c61f3b0b",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 7,
+      "bytes": 6118,
+      "sha256": "0976c135dac02fcd9994d72b18eeaab368d7b4386ec1f0ea55cab70dab421162",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 8,
+      "bytes": 10640,
+      "sha256": "8abba2d27f9687bb4bebf214f9ef6cd75d0f95243e2e6b035d5a846581c71513",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 9,
+      "bytes": 3051,
+      "sha256": "a88cb6d1e1a61c0a6eefc5a7428cdf35236e2face5dd74470852fdbc7f734feb",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 10,
+      "bytes": 3600,
+      "sha256": "1ba068037be943f2731972745e2a1327173b7254bc8702240013d7ffbcd44e2b",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 11,
+      "bytes": 2266,
+      "sha256": "a559797d817ddba0fcf9e0a7ecdec89fa1302041f0c603da3bfa88dbae197cd4",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 12,
+      "bytes": 7061,
+      "sha256": "822de2923f3af71c7723b562541a172f359970659d075ed00a8b8b2783571e3b",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 13,
+      "bytes": 4458,
+      "sha256": "b254e7b0398e014a08a04c24b440fd7db1f38afd7d87eaa4f0f99a62836c9cb7",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 14,
+      "bytes": 4221,
+      "sha256": "4040feffe9bc48e01f8ce1c833b97941027b8a7aad4a41fe46daac8583988fd6",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 15,
+      "bytes": 33160,
+      "sha256": "deb86d8ecd29e730ec0322a2c7b86a2fe3f4fc3bd713999e9f5528a91dbfffbe",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 16,
+      "bytes": 46458,
+      "sha256": "3da698827ce95cc1dc37cb000cd543842147576c7e8ea40b5538e7564f62b37a",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 17,
+      "bytes": 543,
+      "sha256": "b3def3130b4e86725a9fc4c45f476173bbbc3d8ca18a5e02e01df00420bb77e7",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 18,
+      "bytes": 2574,
+      "sha256": "ccfe93c86561a0267563396ae918729060f618211fa77437012713dd80f9bfae",
+      "python_static_compilation_passed": true
+    },
+    {
+      "index": 19,
+      "bytes": 600,
+      "sha256": "e1cd485d0a90ccc6e3de833d653fafe0cbad7b9526f18eea2b5ab60d1a61fb49",
+      "python_static_compilation_passed": true
+    }
+  ],
+  "third_party_code_executed": false
+}
