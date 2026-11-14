@@ -112,6 +112,22 @@ def overlay_v25(cells):
     return cells
 
 
+def fix_v25_qwen_checkpoint_selection(comp_source, config_sha256):
+    """Pin only COMP's generic Qwen3 4096 selector to the causal base."""
+    need(re.fullmatch(r"[0-9a-f]{64}", config_sha256) is not None, "invalid causal checkpoint pin")
+    anchor = "def find_checkpoint(model_type, hidden=None, dir_name=None):\n"
+    pin = f'''    if dir_name is None and (model_type, hidden) == ('qwen3', 4096):
+        import hashlib
+        home = pathlib.Path('/kaggle/input/models/qwen-lm/qwen-3/transformers/8b-base/1')
+        cfg = home / 'config.json'
+        if hashlib.sha256(cfg.read_bytes()).hexdigest() != {config_sha256!r}:
+            raise RuntimeError('Pinned causal Qwen3 checkpoint mismatch')
+        print('STAGE14C_COMP_CAUSAL_CHECKPOINT', home, flush=True)
+        return str(home)
+'''
+    return replace_exact(comp_source, anchor, anchor + pin)
+
+
 V25_CANARY_BOOTSTRAP = """from pathlib import Path
 import os, tempfile
 from stage14_fullpath_guard import stage as stage14c_fixture
@@ -299,10 +315,20 @@ def report(query, parquet, comp, comp_meta, native, log, branch, read_parquet):
             "accuracy_measured": False, "hidden_runtime_measured": False, "raw_rows_exported": False}
 
 
-def report_v25(data, run_dir, read_parquet):
+def report_v25(data, run_dir, read_parquet, *, causal_checkpoint=False):
+    branch = V25_BRANCHES
+    if causal_checkpoint:
+        branch = {
+            'required': {**branch['required'], 'causal_and_lora': [
+                'STAGE14C_COMP_CAUSAL_CHECKPOINT /kaggle/input/models/qwen-lm/qwen-3/transformers/8b-base/1',
+                *[f'+ {name:20s} weight' for name in (
+                    'lora24_public', 'lora24_seed7', 'lora24_claude', 'lora20_q25_instyle')],
+            ]},
+            'forbidden': {**branch['forbidden'], 'fallback': [*branch['forbidden']['fallback'], 'SKIP lora24_public:']},
+        }
     return report(data / "test.csv", run_dir / "canary_predictions.parquet", run_dir / "comp_logit.npy",
                   run_dir / "comp_meta.json", run_dir / "stage14c_native/native.npz", run_dir / "stage14c_branch.log",
-                  V25_BRANCHES, read_parquet)
+                  branch, read_parquet)
 
 
 def main():

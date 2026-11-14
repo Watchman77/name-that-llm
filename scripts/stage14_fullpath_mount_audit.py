@@ -115,7 +115,9 @@ def audit(root):
         if len({(root / p).resolve() for p in models[suffix]}) != 1:
             failures.append("model_missing_or_ambiguous:" + suffix)
 
-    configs = sorted(root.rglob("config.json"))
+    # V25 sorts full path strings, not pathlib's component tuples. In particular,
+    # qwen-3-embedding sorts before qwen-3/ and can shadow the causal backbone.
+    configs = sorted(root.rglob("config.json"), key=str)
     selectors = {
         "qwen2_3584_comp_7b": ("qwen2", 3584), "qwen3_4096": ("qwen3", 4096),
         "qwen3_2560": ("qwen3", 2560), "glm4_4096": ("glm4", 4096),

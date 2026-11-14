@@ -1,0 +1,120 @@
+{
+  "anchors": {
+    "lora20_q25_instyle": {
+      "adapter": "notebooks/vnton37nguyn/ntl-train-lora-qwen25-instyle/lora_out/job_final",
+      "adapter_auto_mapping": {
+        "base_model_class": "Qwen2Model",
+        "parent_library": "transformers.models.qwen2.modeling_qwen2"
+      },
+      "adapter_reported_base": "/kaggle/input/models/qwen-lm/qwen2.5/transformers/7b/1",
+      "base": "models/qwen-lm/qwen2.5/transformers/7b/1",
+      "bundled_base_config": null,
+      "bundled_base_config_sha256": null,
+      "files_sha256": {
+        "COMPLETE.json": "ed24f3ec9e73878b99ee97730591ad17ebdff69e4f59e3f3dee90ea29d8ded8d",
+        "adapter/adapter_config.json": "01f4767094380c58a8092eae287325c7b97f47905132076776d60afbe8e6af8e",
+        "adapter/adapter_model.safetensors": "509626893eb960bf6ce0fc9075c7a3c196ffa4994aba46dcf44508b8ab8c646b",
+        "norms.safetensors": "29b8845f58771d6a0756cf66e3b303110b53e7e8f5939013706abf93e2db50ec",
+        "tokenizer/tokenizer.json": "0bf86e7bd1b719430e67169321519a1ba441a691eb763fd7abb0dc305eb41120",
+        "tokenizer/tokenizer_config.json": "5f007d04324afa93876e2a484190e868136c69dfe0e1a29a1063eae583df9d32",
+        "valid_features.npz": "e5b70afe2850986124c8485b2c0ac1d99ceafa7977ff45de67d4a52b9aad23a4"
+      },
+      "known_s07_bytes_checked": true,
+      "max_abs": 0.015331268310546875,
+      "mean_rel": 0.0011168640339747071,
+      "passes": true,
+      "rows": 3
+    },
+    "lora24_claude": {
+      "adapter": "datasets/zbigniewkirchner/ntl-qwen3-8b-lora-claude-head/final",
+      "adapter_auto_mapping": {
+        "base_model_class": "Qwen3Model",
+        "parent_library": "transformers.models.qwen3.modeling_qwen3"
+      },
+      "adapter_reported_base": "/kaggle/input/models/qwen-lm/qwen-3/transformers/8b-base/1",
+      "base": "models/qwen-lm/qwen-3/transformers/8b-base/1",
+      "bundled_base_config": null,
+      "bundled_base_config_sha256": null,
+      "files_sha256": {
+        "COMPLETE.json": "4a9f1ee827240c221c2e83bc0686df644aa3d16c2cef08e0b5e1e71c463b2a54",
+        "adapter/adapter_config.json": "e37c54313ad1d0886f0f4562e82e7934cea51b9433f7465fca9df9f765fe6176",
+        "adapter/adapter_model.safetensors": "9aed9517bf5954c90c14ad22a95af64b90c3ad23407de2910c05bc18c804c505",
+        "anchor_features.npz": "556cfc1a0a64915e99a8338789badb675496b910546cb2d2fdc8a5a9df69c4df",
+        "heads.safetensors": "79fcbbc4b313450b4580565d5addba4cd769e80f10d5d68a2068e694b50619aa",
+        "tokenizer/tokenizer.json": "b3744d3112b8c3d04760859bfdbf9a7ce00d5539512b5fc5d5bfb3f76eec0d9d",
+        "tokenizer/tokenizer_config.json": "2e3bd3cb5055f7a903a54e7062b2fd14d21b70f4174c3ffcd9fc81ec50a25631"
+      },
+      "known_s07_bytes_checked": true,
+      "max_abs": 0.008616060018539429,
+      "mean_rel": 0.0011071840999647975,
+      "passes": true,
+      "rows": 3
+    },
+    "lora24_public": {
+      "adapter": "ntl-olmo2-native24-final-inference-assets/notebook-inputs/notebook-inputs/ntl-lora24-fivefold-training/lora24/final",
+      "adapter_auto_mapping": {
+        "base_model_class": "Qwen3Model",
+        "parent_library": "transformers.models.qwen3.modeling_qwen3"
+      },
+      "adapter_reported_base": "/kaggle/input/models/qwen-lm/qwen-3/transformers/8b-base/1",
+      "base": "models/qwen-lm/qwen-3/transformers/8b-base/1",
+      "bundled_base_config": {
+        "_name_or_path": null,
+        "architectures": [
+          "Qwen3ForCausalLM"
+        ],
+        "hidden_size": 4096,
+        "model_type": "qwen3",
+        "num_hidden_layers": 24
+      },
+      "bundled_base_config_sha256": "d9a04fdd6dd68c2129a07b40c2534823f77b7970192934759e35402e5cca1a3e",
+      "files_sha256": {
+        "COMPLETE.json": "3a7706a211a393fd175aba2ed56ed03481c6f6e73904b5daf1bc40881c5680eb",
+        "adapter/adapter_config.json": "255d5014cbb6981357f42eba6be2742ba90909bec14c10a3409178a85bc19085",
+        "adapter/adapter_model.safetensors": "a6aff409ae2df897717875373d038635fe5012fbf93557c90aea3457fda0e7f8",
+        "anchor_features.npz": "4ee316fb2ae1b0684ef091af52427c5849191548ec9ea886f4fb477d4a34ecc0",
+        "heads.safetensors": "2176ade29e6eb97bd3a6c204f944959f9757a80c6f1ff475898c23bce60ecd96",
+        "tokenizer/tokenizer.json": "b3744d3112b8c3d04760859bfdbf9a7ce00d5539512b5fc5d5bfb3f76eec0d9d",
+        "tokenizer/tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95"
+      },
+      "known_s07_bytes_checked": false,
+      "max_abs": 0.01010286808013916,
+      "mean_rel": 0.0009217844344675541,
+      "passes": true,
+      "rows": 3
+    },
+    "lora24_seed7": {
+      "adapter": "notebooks/lucasboesen/name-that-llm-train-lora24-s7/lora_out/job_final",
+      "adapter_auto_mapping": {
+        "base_model_class": "Qwen3Model",
+        "parent_library": "transformers.models.qwen3.modeling_qwen3"
+      },
+      "adapter_reported_base": "/kaggle/input/models/qwen-lm/qwen-3/transformers/8b-base/1",
+      "base": "models/qwen-lm/qwen-3/transformers/8b-base/1",
+      "bundled_base_config": null,
+      "bundled_base_config_sha256": null,
+      "files_sha256": {
+        "COMPLETE.json": "e92a525842d44c1d4a7f3c55bbcdfdc46ed96a545b90b80717fc86f6cb22c2d5",
+        "adapter/adapter_config.json": "3b786d83737e6890ccb19a2cddbaee5c8b1aae1bc2c13840161970909165711c",
+        "adapter/adapter_model.safetensors": "a045cbdc521b957736e828a3d8f1eee4a844e5ce1a8c2a17e1b0531f86212682",
+        "norms.safetensors": "709a8214889291cc9d779928bbdf3ba4849d97e023c005f6ba11f9b704d75126",
+        "tokenizer/tokenizer.json": "b3744d3112b8c3d04760859bfdbf9a7ce00d5539512b5fc5d5bfb3f76eec0d9d",
+        "tokenizer/tokenizer_config.json": "2e3bd3cb5055f7a903a54e7062b2fd14d21b70f4174c3ffcd9fc81ec50a25631",
+        "valid_features.npz": "7e9b8316f6c984b204b7d451514d6c04f2380165441ba85a4de078cf99472fec"
+      },
+      "known_s07_bytes_checked": true,
+      "max_abs": 0.015972137451171875,
+      "mean_rel": 0.0009911763481795788,
+      "passes": true,
+      "rows": 3
+    }
+  },
+  "full_ensemble_run": false,
+  "official_accuracy_measured": false,
+  "rows": 3,
+  "status": "PASS_V25_LORA_ANCHORS",
+  "test_rows_read": false,
+  "threshold_strictly_below": 0.02,
+  "torch_version": "2.11.0+cu130",
+  "transformers_version": "5.20.2"
+}
