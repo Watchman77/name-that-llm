@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-15",
+  "notebook_script_version_id": 369820537,
+  "execution_profile": "CPU, internet off",
+  "open_pool_attachment": "https://www.kaggle.com/datasets/crtproduction/name-that-llm-open-pool",
+  "open_pool_pinned_dataset_version": 16,
+  "source_cell_sha256": "4d8cc3e15cabe90e1d1b91f745a9e2c5cd570805a131d83b7f3949cdbaccf259",
+  "live_kaggle_log_url": "https://www.kaggle.com/code/watchman777/name-that-llm-0-684-all-public-what-failed/log?scriptVersionId=369820537",
+  "receipt": {
+    "all_lock_identities_found_somewhere": true,
+    "all_v4_locks_pass_as_written": true,
+    "counts": {
+      "alias_match_only": 0,
+      "exact_match": 108,
+      "no_identity_match": 0
+    },
+    "inference_run": false,
+    "lock_sha256": "0d19b86dea044dc4df10e9cccfbc70b7a33767c638d43d10297e01b823bbc298",
+    "locks_checked": 108,
+    "nonexact_locks": {},
+    "official_score_measured": false,
+    "open_pool": {
+      "alias_matches": [],
+      "as_locked": {
+        "bytes": 111560867,
+        "sha256": "28ee85d9f9e29d749639b163e0569f574fbbfa34b3d68ecdc8094641d2d987b8",
+        "status": "match"
+      },
+      "expected_bytes": 111560867,
+      "expected_sha256": "28ee85d9f9e29d749639b163e0569f574fbbfa34b3d68ecdc8094641d2d987b8",
+      "other_candidates": {},
+      "status": "exact_match"
+    },
+    "private_v4_cell_sha256": "2a2a69c7ec8d890d3f84d56fc241562e8c79218683d120a4022d4daf353aa9bf",
+    "rows_read_or_exported": false,
+    "seconds": 12.454,
+    "status": "COMPLETE_STAGE14C_MOUNT_PREFLIGHT",
+    "third_party_code_imported": false
+  }
+}
