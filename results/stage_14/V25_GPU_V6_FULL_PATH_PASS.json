@@ -1,0 +1,80 @@
+{
+  "verified_on": "2026-11-20",
+  "kaggle_account": "watchman777",
+  "script_version_id": 369822712,
+  "notebook_private": true,
+  "source_cell_sha256": "2a2a69c7ec8d890d3f84d56fc241562e8c79218683d120a4022d4daf353aa9bf",
+  "source_log_url": "https://www.kaggle.com/code/watchman777/name-that-llm-0-684-all-public-what-failed/log?scriptVersionId=369822712",
+  "execution_profile": "GPU T4 x2, Internet off",
+  "receipt_time_seconds": 5049.3,
+  "notebook_elapsed_seconds_reported": 4957,
+  "hidden_runtime_verified": false,
+  "official_accuracy_measured": false,
+  "upstream_author_score_is_ours": false,
+  "guard_receipt": {
+    "accuracy_measured": false,
+    "branch_checks": {
+      "causal_and_lora": true,
+      "comp": true,
+      "fallback": true,
+      "full_path": true,
+      "gsq": true,
+      "main_members": true,
+      "native": true,
+      "qwen_grouping": true
+    },
+    "branch_contract_sha256": "2e8f609663880610f7bc705deb2a5d3edd996cf5f145a7f8460a157ab83310ca",
+    "complement_shape": [
+      72,
+      18
+    ],
+    "distinct_predicted_labels": 18,
+    "fixture_sha256": "0cb953a4b54f2aafdb885d5256b0e5a950976b6bc8ef0088c23bfa51dfcef81b",
+    "hidden_runtime_measured": false,
+    "native_folds": 5,
+    "raw_rows_exported": false,
+    "rows": 72,
+    "status": "PRIVATE_FULL_PATH_CANARY_PASS"
+  },
+  "verified_log_lines": [
+    "48.8s 9 STAGE14C_LOCKED_INPUTS_VERIFIED 108",
+    "59.0s 10 STAGE14C_NATIVE_INPUT_IDENTITY_VERIFIED",
+    "97.1s 17 FAST_COMMIT False",
+    "3236.5s 375 + lora24_public        weight 0.177 on 72 rows  (2831s)",
+    "3248.9s 381 + lora24_seed7         weight 0.113 on 72 rows  (2844s)",
+    "3259.1s 386 + lora24_claude        weight 0.177 on 72 rows  (2854s)",
+    "3286.0s 432 + lora20_q25_instyle   weight 0.170 on 72 rows  (2881s)",
+    "3470.3s 649 comp stack exit code 0 wall 3077 s",
+    "3531.7s 690 [     57s] qwen groups 5 clusters (tf-idf 42 ) rows in groups of 2..18: qwen 1.0 tf-idf 0.722",
+    "3542.0s 692 [     68s] prefit core votes loaded {'svc4': 61.03, 'tfidf': 3.63, 'distort': 1.38}",
+    "4701.9s 1077 [   1228s] members failed: none",
+    "4900.5s 1086 [   1426s] GSQ 27B agreement with the blend 0.792",
+    "5049.3s 1133 infer exit code 0",
+    "5049.3s 1154 total 4957 s"
+  ],
+  "gsq": {
+    "rows": 72,
+    "inference_seconds": 185,
+    "agreement_with_blend": 0.792
+  },
+  "native": {
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "worker_exit_code": 0,
+    "rows_without_native": 0,
+    "non_finite_rows_all_folds": 0,
+    "agreement_with_blend_per_fold": [
+      0.917,
+      0.792,
+      0.694,
+      0.778,
+      0.861
+    ]
+  },
+  "next_gate": "Check input revision pins, active readout identity and conservative runtime at larger representative diagnostic scale before preparing a separately reviewed official candidate."
+}
